@@ -1,0 +1,23 @@
+{
+  "last_updated": "24 September 2026 - 11:00",
+  "matches": [
+    {
+      "league": "English Premier League",
+      "kickoff_time": "21:00",
+      "home_team": "Manchester City",
+      "away_team": "Arsenal",
+      "prediction": "Home Win (1)",
+      "odds": "1.85",
+      "win_rate": 78
+    },
+    {
+      "league": "Spanish La Liga",
+      "kickoff_time": "23:30",
+      "home_team": "Real Madrid",
+      "away_team": "Barcelona",
+      "prediction": "Over 2.5 Goals",
+      "odds": "1.65",
+      "win_rate": 82
+    }
+  ]
+}
