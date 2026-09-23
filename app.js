@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
   fetch('data/today.json')
     .then(response => {
@@ -12,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .catch(err => {
       console.error(err);
       document.getElementById('match-container').innerHTML = `
-        <div class="col-span-full text-center py-12 text-slate-400">
+        <div class="col-span-full text-center py-12 text-organic-muted">
           <p>Belum ada prediksi yang dirilis untuk hari ini.</p>
         </div>
       `;
@@ -24,34 +23,39 @@ function renderMatches(matches) {
   container.innerHTML = '';
 
   if (!matches || matches.length === 0) {
-    container.innerHTML = `<p class="col-span-full text-center text-slate-400 py-8">Tidak ada pertandingan terpilih.</p>`;
+    container.innerHTML = `<p class="col-span-full text-center text-organic-muted py-8">Tidak ada pertandingan terpilih.</p>`;
     return;
   }
 
   matches.forEach((item, index) => {
     const card = `
-      <div class="bg-sbobet-card rounded border border-sbobet-border hover:border-sbobet-accent/50 transition overflow-hidden">
-        <div class="bg-sbobet-header px-4 py-2 border-b border-sbobet-border flex justify-between items-center text-xs">
-          <span class="font-bold text-sbobet-accent uppercase tracking-wider">#${index + 1} ${item.league}</span>
-          <span class="text-slate-300 font-mono">${item.kickoff_time} WIB</span>
-        </div>
-        <div class="p-4">
-          <div class="flex justify-between items-center mb-4">
-            <div class="w-2/5 text-right font-bold text-sm text-white">${item.home_team}</div>
-            <div class="w-1/5 text-center text-xs font-mono font-bold bg-sbobet-header py-1 px-2 rounded text-slate-400 border border-sbobet-border">VS</div>
-            <div class="w-2/5 text-left font-bold text-sm text-white">${item.away_team}</div>
+      <div class="bg-organic-card rounded-2xl p-5 border border-organic-border shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+        <div>
+          <!-- Header Liga -->
+          <div class="flex justify-between items-center text-xs text-organic-muted pb-3 mb-3 border-b border-organic-border">
+            <span class="font-medium text-organic-text">#${index + 1} ${item.league}</span>
+            <span class="font-mono">${item.kickoff_time} WIB</span>
           </div>
-          <div class="bg-sbobet-header rounded border border-sbobet-border p-2.5 flex justify-between items-center">
-            <div>
-              <div class="text-[10px] text-slate-400 uppercase font-bold tracking-wider">Tips AI (Pasaran)</div>
-              <div class="text-sm font-extrabold text-sbobet-accent">
-                ${item.prediction} <span class="text-xs text-white">@${item.odds}</span>
-              </div>
+
+          <!-- Tim Bertanding -->
+          <div class="flex justify-between items-center my-2">
+            <div class="w-2/5 text-right font-semibold text-sm text-organic-text">${item.home_team}</div>
+            <div class="w-1/5 text-center text-xs text-organic-muted font-serif italic">vs</div>
+            <div class="w-2/5 text-left font-semibold text-sm text-organic-text">${item.away_team}</div>
+          </div>
+        </div>
+
+        <!-- Panel Prediksi -->
+        <div class="mt-4 pt-3 bg-organic-accentBg rounded-xl p-3 flex justify-between items-center">
+          <div>
+            <div class="text-[10px] text-organic-muted uppercase tracking-wider font-semibold">Rekomendasi</div>
+            <div class="text-sm font-bold text-organic-accent">
+              ${item.prediction} <span class="text-xs text-organic-muted font-normal">(@${item.odds})</span>
             </div>
-            <div class="text-right">
-              <div class="text-[10px] text-slate-400 uppercase font-bold tracking-wider">Win Rate</div>
-              <div class="text-sm font-black text-sbobet-green font-mono">${item.win_rate}%</div>
-            </div>
+          </div>
+          <div class="text-right">
+            <div class="text-[10px] text-organic-muted uppercase tracking-wider font-semibold">Win Rate</div>
+            <div class="text-sm font-bold text-organic-accent font-mono">${item.win_rate}%</div>
           </div>
         </div>
       </div>
