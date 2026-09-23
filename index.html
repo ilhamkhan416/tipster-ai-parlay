@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ParlayIQ - Prediksi Parlay Sepak Bola Berbasis AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sbobet: {
+              bg: '#0c192c',
+              card: '#162a45',
+              header: '#112238',
+              accent: '#ffb800',
+              border: '#233a5e',
+              green: '#00e676'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-sbobet-bg text-slate-100 min-h-screen font-sans">
+
+  <!-- Header -->
+  <header class="bg-sbobet-header border-b border-sbobet-border sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <span class="text-2xl font-black tracking-wider text-sbobet-accent">PARLAY<span class="text-white">IQ</span></span>
+        <span class="text-[10px] bg-sbobet-accent/20 text-sbobet-accent px-2 py-0.5 rounded font-mono font-bold uppercase">AI PREDICTION</span>
+      </div>
+      <nav class="flex space-x-4 text-sm font-semibold">
+        <a href="index.html" class="text-sbobet-accent border-b-2 border-sbobet-accent pb-1">Hari Ini</a>
+        <a href="history.html" class="text-slate-300 hover:text-white transition">Riwayat Win Rate</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-5xl mx-auto px-4 pt-6 pb-4 text-center">
+    <h1 class="text-2xl md:text-3xl font-bold text-white uppercase">10 Partai Terpilih Hari Ini</h1>
+    <p class="text-slate-300 text-xs md:text-sm mt-1">
+      Diperbarui Setiap Hari Jam 11.00 WIB | Win Rate 70%+ Berbasis AI & Matematika Probabilitas
+    </p>
+    <div class="inline-flex items-center gap-2 mt-3 bg-sbobet-card px-3 py-1.5 rounded border border-sbobet-border text-xs text-slate-300">
+      <span class="w-2 h-2 rounded-full bg-sbobet-green animate-pulse"></span>
+      Status Rilis: <span id="last-update" class="font-bold text-sbobet-accent">Memuat data...</span>
+    </div>
+  </section>
+
+  <!-- Container Pertandingan -->
+  <main class="max-w-5xl mx-auto px-4 pb-16">
+    <div id="match-container" class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <div class="p-5 bg-sbobet-card rounded border border-sbobet-border animate-pulse h-36"></div>
+      <div class="p-5 bg-sbobet-card rounded border border-sbobet-border animate-pulse h-36"></div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
 
