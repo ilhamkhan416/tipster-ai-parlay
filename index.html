@@ -3,22 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ParlayIQ - Analisis Prediksi Sepak Bola</title>
-  <!-- Tailwind CSS via CDN -->
+  <title>ParlayIQ - Analisis Prediksi Sepak Bola Kuantitatif</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            organic: {
-              bg: '#fcfbf7',        /* Soft Warm Cream */
-              card: '#ffffff',      /* Clean Pure White */
-              text: '#1c1917',      /* Warm Charcoal */
-              muted: '#78716c',     /* Warm Muted Gray */
-              border: '#e7e5e4',    /* Soft Border */
-              accent: '#2d5a27',    /* Forest / Organic Green */
-              accentBg: '#f2f7f1'  /* Light Soft Green Tint */
+            pro: {
+              bg: '#0f172a',       /* Slate 900 - Latar Belakang Gelap Solid */
+              card: '#1e293b',     /* Slate 800 - Kartu Kontras Tinggi */
+              header: '#020617',   /* Slate 950 - Navbar & Header */
+              border: '#334155',   /* Slate 700 - Border Garis Tipis */
+              accent: '#38bdf8',   /* Sky Blue - Aksen Utama */
+              highlight: '#f59e0b',/* Amber/Gold - Highlight Odds */
+              green: '#10b981'     /* Emerald Green - Win Rate */
             }
           }
         }
@@ -26,40 +25,46 @@
     }
   </script>
 </head>
-<body class="bg-organic-bg text-organic-text min-h-screen font-sans antialiased">
+<body class="bg-pro-bg text-slate-100 min-h-screen font-sans antialiased">
 
-  <!-- Header / Navbar Clean -->
-  <header class="bg-organic-card border-b border-organic-border sticky top-0 z-50">
-    <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+  <!-- Navbar Profesional -->
+  <header class="bg-pro-header border-b border-pro-border sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
       <div class="flex items-center space-x-3">
-        <span class="text-xl font-bold tracking-tight text-organic-text">ParlayIQ</span>
-        <span class="text-xs text-organic-muted border-l border-organic-border pl-3 hidden sm:inline">Data & Analisis Bola</span>
+        <span class="text-xl font-bold tracking-tight text-white">PARLAY<span class="text-pro-accent">IQ</span></span>
+        <span class="hidden sm:inline-block text-[11px] bg-pro-card text-slate-300 px-2 py-0.5 rounded border border-pro-border font-medium">Sports Analytics</span>
       </div>
       <nav class="flex space-x-6 text-sm font-medium">
-        <a href="index.html" class="text-organic-accent border-b-2 border-organic-accent pb-1">Hari Ini</a>
-        <a href="history.html" class="text-organic-muted hover:text-organic-text transition">Riwayat Win Rate</a>
+        <a href="index.html" class="text-pro-accent border-b-2 border-pro-accent pb-1">Hari Ini</a>
+        <a href="history.html" class="text-slate-400 hover:text-white transition">Riwayat Win Rate</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="max-w-4xl mx-auto px-6 pt-10 pb-6 text-center">
-    <h1 class="text-2xl md:text-3xl font-bold text-organic-text tracking-tight">10 Partai Terpilih Hari Ini</h1>
-    <p class="text-organic-muted text-sm mt-2 max-w-lg mx-auto leading-relaxed">
-      Disaring setiap hari jam 11.00 WIB berdasarkan kalkulasi statistik performa dan matematika probabilitas.[span_0](start_span)[span_0](end_span)
-    </p>
-    <div class="mt-4 inline-flex items-center gap-2 text-xs text-organic-muted bg-organic-card px-3 py-1.5 rounded-full border border-organic-border shadow-sm">
-      <span class="w-2 h-2 rounded-full bg-organic-accent"></span>
-      Diperbarui: <span id="last-update" class="font-semibold text-organic-text">Memuat data...</span>
+  <!-- Hero Section & Stats Bar -->
+  <section class="max-w-5xl mx-auto px-4 pt-8 pb-6">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-pro-card p-5 rounded-lg border border-pro-border">
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold text-white tracking-wide">10 PARTAI TERPILIH HARI INI</h1>
+        <p class="text-slate-400 text-xs md:text-sm mt-1">
+          Dianalisis menggunakan kalkulasi matematika probabilitas &amp; statistik performa tim.[span_0](start_span)[span_0](end_span)
+        </p>
+      </div>
+      <div class="flex items-center gap-3 bg-pro-header px-4 py-2.5 rounded border border-pro-border self-start md:self-auto">
+        <span class="w-2.5 h-2.5 rounded-full bg-pro-green animate-pulse"></span>
+        <div class="text-xs">
+          <div class="text-slate-400 uppercase font-semibold text-[10px]">Rilis Harian</div>
+          <div id="last-update" class="font-bold text-pro-accent font-mono">Memuat data...</div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Main Content / Match List -->
-  <main class="max-w-4xl mx-auto px-6 pb-20">
+  <!-- Daftar Pertandingan -->
+  <main class="max-w-5xl mx-auto px-4 pb-16">
     <div id="match-container" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <!-- Loading Skeleton -->
-      <div class="p-6 bg-organic-card rounded-2xl border border-organic-border animate-pulse h-40"></div>
-      <div class="p-6 bg-organic-card rounded-2xl border border-organic-border animate-pulse h-40"></div>
+      <div class="p-5 bg-pro-card rounded-lg border border-pro-border animate-pulse h-36"></div>
+      <div class="p-5 bg-pro-card rounded-lg border border-pro-border animate-pulse h-36"></div>
     </div>
   </main>
 
