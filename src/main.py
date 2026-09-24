@@ -62,17 +62,34 @@ def get_all_raw_matches_from_api():
             
     return raw_list
 
+def get_active_gemini_models():
+    """Mendeteksi otomatis model Gemini apa saja yang tersedia untuk API Key pengguna"""
+    url = f"https://generativelanguage.googleapis.com/v1beta/models?key={GEMINI_API_KEY}"
+    try:
+        res = requests.get(url, timeout=10)
+        if res.status_code == 200:
+            models = res.json().get("models", [])
+            valid_models = []
+            for m in models:
+                name = m.get("name", "") # Format: models/gemini-3.5-flash
+                methods = m.get("supportedGenerationMethods", [])
+                if "generateContent" in methods:
+                    valid_models.append(name.replace("models/", ""))
+            print(f"Model aktif terdeteksi di akun: {valid_models}")
+            return valid_models
+    except Exception as e:
+        print(f"Gagal mengecek daftar model: {e}")
+        
+    # Fallback ke daftar model standar generasi terbaru
+    return ["gemini-3.5-flash", "gemini-3.1-flash-lite", "gemini-3.1-pro"]
+
 def analyze_and_filter_with_gemini(raw_matches):
-    """Mengirim data pertandingan ke Gemini API menggunakan model aktif terbaru"""
+    """Mengirim data pertandingan ke Gemini API menggunakan model yang aktif secara otomatis"""
     if not GEMINI_API_KEY or not raw_matches:
         print("PERINGATAN: GEMINI_API_KEY / Data Mentah Kosong!")
         return []
 
-    # Menggunakan endpoint resmi model Gemini 2.5 Flash yang aktif
-    endpoints = [
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent"
-    ]
+    available_models = get_active_gemini_models()
 
     prompt = f"""
     Kamu adalah Head Quant Analyst Sepak Bola. Berikut adalah jadwal pertandingan sepak bola NYATA dalam rentang jam 11:00 WIB hari ini s/d 11:00 WIB besok:
@@ -106,10 +123,10 @@ def analyze_and_filter_with_gemini(raw_matches):
         "x-goog-api-key": GEMINI_API_KEY
     }
 
-    for url in endpoints:
+    for model_id in available_models:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_id}:generateContent"
         try:
-            model_name = url.split('/')[-1].split(':')[0]
-            print(f"Mencoba koneksi ke Gemini API via {model_name}...")
+            print(f"Mencoba koneksi ke Gemini API via {model_id}...")
             res = requests.post(url, json=payload, headers=headers, timeout=40)
             
             if res.status_code == 200:
@@ -132,12 +149,12 @@ def analyze_and_filter_with_gemini(raw_matches):
                     m["awayForm"] = ["D", "W", "L", "W", "D"]
                     m["metrics"] = {"form": 88, "h2h": 82, "xG": 80, "marketVal": 84}
                     
-                print("BERHASIL memproses data via Gemini AI!")
+                print(f"BERHASIL memproses data via Gemini AI ({model_id})!")
                 return analyzed_matches
             else:
-                print(f"Gagal koneksi endpoint ({res.status_code}): {res.text[:120]}")
+                print(f"Gagal model {model_id} ({res.status_code}): {res.text[:100]}")
         except Exception as e:
-            print(f"Error pada endpoint {url}: {e}")
+            print(f"Error pada model {model_id}: {e}")
             
     return []
 
