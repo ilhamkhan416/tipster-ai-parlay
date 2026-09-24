@@ -523,10 +523,14 @@
     let selectedMarketFilter = 'ALL';
     let userParlaySlip = [];
 
-    // AUTOMATIC FETCH FROM GITHUB JSON DATA
+    // AUTOMATIC FETCH FROM GITHUB JSON DATA WITH CACHE-BUSTER
     async function loadDataFromJSON() {
+      const cacheBuster = new Date().getTime();
+
       try {
-        const todayRes = await fetch('./data/today.json');
+        const todayRes = await fetch(`./data/today.json?v=${cacheBuster}`, {
+          cache: 'no-store'
+        });
         if (todayRes.ok) {
           MOCK_TODAY_MATCHES = await todayRes.json();
         }
@@ -535,7 +539,9 @@
       }
 
       try {
-        const historyRes = await fetch('./data/history.json');
+        const historyRes = await fetch(`./data/history.json?v=${cacheBuster}`, {
+          cache: 'no-store'
+        });
         if (historyRes.ok) {
           MOCK_HISTORY_LOGS = await historyRes.json();
         }
