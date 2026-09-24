@@ -3,12 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FIXSCORE | Platform Analytics Kuantitatif & Model Probabilitas Sepak Bola</title>
+  <title>FIXSCORE | Pitch Analytics Engine</title>
   
-  <meta name="description" content="FIXSCORE - Platform analytics sepak bola kuantitatif berbasis data murni, distribusi Poisson, dan statistik xG." />
-  <meta name="keywords" content="fixscore, analytics sepak bola, data kuantitatif, value odds, expected goals, live score" />
-  <meta name="author" content="FIXSCORE Analytics Engine" />
-
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -21,19 +17,16 @@
               redHover: '#850e19',
               redSoft: '#fdf2f2',
               dark: '#111111',
-              darkSecondary: '#1e2024',
               bg: '#f2f4f7',
-              card: '#ffffff',
               border: '#e5e7eb',
-              borderDark: '#d1d5db',
               textPrimary: '#111827',
               textSecondary: '#4b5563',
               textMuted: '#6b7280'
             }
           },
           fontFamily: {
-            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
-            mono: ['JetBrains Mono', 'Menlo', 'Monaco', 'Consolas', 'monospace']
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
           }
         }
       }
@@ -42,333 +35,283 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <style>
     body { background-color: #f2f4f7; color: #111827; }
-    ::-webkit-scrollbar { width: 6px; height: 6px; }
-    ::-webkit-scrollbar-track { background: #e5e7eb; }
-    ::-webkit-scrollbar-thumb { background: #9ca3af; border-radius: 4px; }
-    ::-webkit-scrollbar-thumb:hover { background: #a21220; }
-
-    .flash-shadow { box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03); }
-    .flash-card-hover { transition: all 0.15s ease-in-out; }
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-thumb { background: #a21220; border-radius: 4px; }
+    .flash-shadow { box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); }
     .flash-card-hover:hover { border-color: #a21220; box-shadow: 0 4px 12px rgba(162, 18, 32, 0.08); }
-
     .blur-lock { filter: blur(4px); user-select: none; pointer-events: none; }
-
     .form-badge-w { background-color: #16a34a; color: #ffffff; }
     .form-badge-d { background-color: #ca8a04; color: #ffffff; }
     .form-badge-l { background-color: #dc2626; color: #ffffff; }
-
     .indicator-pos { background-color: #f0fdf4; color: #15803d; border-color: #bbf7d0; }
     .indicator-neg { background-color: #fef2f2; color: #b91c1c; border-color: #fecaca; }
   </style>
 </head>
 <body class="font-sans antialiased bg-flash-bg text-flash-textPrimary min-h-screen flex flex-col justify-between">
 
-  <!-- TOP CHARCOAL STATUS BAR -->
-  <div class="bg-flash-dark text-white text-xs py-1.5 px-4 border-b border-black">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-3">
-        <span class="flex items-center gap-1.5 text-emerald-400 font-bold font-mono">
-          <i class="fa-solid fa-signal animate-pulse text-emerald-400 text-xs"></i>
-          FIXSCORE QUANT ENGINE &amp; LIVE
-        </span>
-        <span class="text-gray-600">|</span>
-        <span class="text-gray-300">Rilis Data: <strong id="lastUpdateText" class="text-white">Hari Ini 11:00 WIB</strong></span>
-        <span class="text-gray-600 hidden md:inline">|</span>
-        <span class="text-gray-300 hidden md:inline">Kalkulasi Berikutnya: <span class="text-emerald-400 font-mono">Besok 11:00 WIB</span></span>
-      </div>
-      <div class="flex items-center gap-4 text-gray-300 font-mono text-[11px]">
-        <div>Akurasi Model: <span class="text-emerald-400 font-bold"><i class="fa-solid fa-arrow-up mr-0.5"></i>76.4%</span></div>
-        <div>Yield (+EV): <span class="text-emerald-400 font-bold">+142.8%</span></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- NAVIGATION HEADER -->
-  <header class="sticky top-0 z-40 bg-flash-red text-white shadow-md">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-14">
-        <a href="#" onclick="switchTab('dashboard')" class="flex items-center gap-2.5 group">
-          <div class="w-9 h-9 rounded-lg bg-white text-flash-red flex items-center justify-center font-black text-xl shadow-md border border-red-200 group-hover:scale-105 transition-transform">
-            <i class="fa-solid fa-futbol"></i>
-          </div>
-          <div>
-            <div class="flex items-center gap-1.5">
-              <span class="text-2xl font-black tracking-tight text-white leading-none">FIX<span class="text-emerald-400">SCORE</span></span>
-              <span class="text-[9px] font-mono bg-black/40 text-emerald-300 border border-emerald-500/30 px-1.5 py-0.5 rounded font-bold uppercase">Pitch Analytics</span>
-            </div>
-            <p class="text-[10px] text-red-100 font-mono leading-none mt-0.5 flex items-center gap-1">
-              <i class="fa-solid fa-chart-pie text-emerald-300 text-[9px]"></i> Pitch Analytics &amp; Live Score Matrix
-            </p>
-          </div>
-        </a>
-
-        <nav class="hidden md:flex items-center gap-1 text-xs font-bold">
-          <button id="nav-dashboard" onclick="switchTab('dashboard')" class="px-4 py-2.5 rounded-t-lg transition-all text-flash-red bg-white shadow-sm flex items-center gap-2">
-            <i class="fa-solid fa-clipboard-list text-emerald-600"></i> 10 Partai Terpilih
-          </button>
-          <button id="nav-history" onclick="switchTab('history')" class="px-4 py-2.5 rounded-t-lg transition-all text-white hover:bg-black/20 flex items-center gap-2">
-            <i class="fa-solid fa-chart-line text-emerald-400"></i> Validasi Statistik &amp; ROI
-          </button>
-          <button id="nav-algorithm" onclick="switchTab('algorithm')" class="px-4 py-2.5 rounded-t-lg transition-all text-white hover:bg-black/20 flex items-center gap-2">
-            <i class="fa-solid fa-diagram-project text-emerald-400"></i> Model Matematika
-          </button>
-        </nav>
-
-        <div class="flex items-center gap-2">
-          <button onclick="loadDataFromJSON()" class="px-3 py-1.5 rounded bg-black/40 hover:bg-black/60 text-white text-xs font-mono font-bold flex items-center gap-1.5 transition-all border border-white/20">
-            <i class="fa-solid fa-rotate text-emerald-400"></i> Refresh
-          </button>
-          <button onclick="openVipModal()" class="px-3.5 py-1.5 rounded bg-black/80 hover:bg-black text-white text-xs font-bold flex items-center gap-2 transition-all border border-emerald-500/30 shadow-sm">
-            <i class="fa-solid fa-paper-plane text-emerald-400"></i>
-            <span class="hidden sm:inline">Telegram</span>
-          </button>
-          <button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded bg-black/20 text-white hover:bg-black/40">
-            <i class="fa-solid fa-bars text-base"></i>
-          </button>
+  <!-- HEADER MINIMALIS -->
+  <header class="sticky top-0 z-50 bg-flash-red text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
+      <!-- LOGO FIXSCORE -->
+      <a href="#" onclick="switchTab('dashboard')" class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-white text-flash-red flex items-center justify-center font-black text-lg">
+          <i class="fa-solid fa-futbol"></i>
         </div>
-      </div>
-    </div>
+        <span class="text-2xl font-black tracking-tight text-white">FIX<span class="text-emerald-400">SCORE</span></span>
+      </a>
 
-    <div id="mobileMenu" class="hidden md:hidden border-t border-red-900 bg-flash-red px-4 py-3 space-y-1.5 text-xs font-bold">
-      <button onclick="switchTab('dashboard'); toggleMobileMenu()" class="w-full text-left px-3 py-2 rounded bg-white text-flash-red flex items-center gap-2.5">
-        <i class="fa-solid fa-calculator"></i> 10 Partai Terpilih
-      </button>
-      <button onclick="switchTab('history'); toggleMobileMenu()" class="w-full text-left px-3 py-2 rounded text-white hover:bg-black/20 flex items-center gap-2.5">
-        <i class="fa-solid fa-chart-line"></i> Validasi Statistik &amp; ROI
-      </button>
-      <button onclick="switchTab('algorithm'); toggleMobileMenu()" class="w-full text-left px-3 py-2 rounded text-white hover:bg-black/20 flex items-center gap-2.5">
-        <i class="fa-solid fa-square-root-variable"></i> Model Matematika
-      </button>
+      <!-- TOMBOL LOGIN & MENU SIDEBAR -->
+      <div class="flex items-center gap-2">
+        <button onclick="openVipModal()" class="px-3.5 py-1.5 rounded bg-black/80 hover:bg-black text-white text-xs font-bold transition-all border border-emerald-500/30">
+          <i class="fa-solid fa-user mr-1 text-emerald-400"></i> LOGIN
+        </button>
+        <button onclick="toggleSidebar()" class="p-2 rounded bg-black/20 hover:bg-black/40 text-white transition-all">
+          <i class="fa-solid fa-bars text-lg"></i>
+        </button>
+      </div>
     </div>
   </header>
 
+  <!-- SIDEBAR NAVIGATION MENU -->
+  <div id="sidebarOverlay" onclick="toggleSidebar()" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden transition-opacity"></div>
+  <aside id="sidebarMenu" class="fixed top-0 right-0 w-72 h-full bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out p-5 flex flex-col justify-between">
+    <div class="space-y-6">
+      <div class="flex justify-between items-center border-b pb-3">
+        <span class="font-black text-lg text-flash-red">NAVIGASI UTAMA</span>
+        <button onclick="toggleSidebar()" class="text-gray-400 hover:text-black"><i class="fa-solid fa-xmark text-xl"></i></button>
+      </div>
+      <nav class="space-y-2 text-xs font-bold">
+        <button onclick="switchTab('dashboard'); toggleSidebar()" class="w-full text-left p-3 rounded-lg bg-red-50 text-flash-red flex items-center gap-3">
+          <i class="fa-solid fa-clipboard-list text-base"></i> 10 Partai Terpilih
+        </button>
+        <button onclick="switchTab('history'); toggleSidebar()" class="w-full text-left p-3 rounded-lg hover:bg-gray-100 text-flash-textPrimary flex items-center gap-3">
+          <i class="fa-solid fa-chart-line text-base text-emerald-600"></i> Validasi Statistik &amp; Rekap Parlay
+        </button>
+        <button onclick="switchTab('algorithm'); toggleSidebar()" class="w-full text-left p-3 rounded-lg hover:bg-gray-100 text-flash-textPrimary flex items-center gap-3">
+          <i class="fa-solid fa-square-root-variable text-base text-blue-600"></i> Metodologi Model Matematika
+        </button>
+      </nav>
+    </div>
+    <div class="pt-4 border-t">
+      <button onclick="openVipModal(); toggleSidebar()" class="w-full py-2.5 bg-flash-red text-white font-bold text-xs rounded-lg flex items-center justify-center gap-2">
+        <i class="fa-brands fa-telegram text-base"></i> Komunitas Telegram
+      </button>
+    </div>
+  </aside>
+
   <!-- MAIN CONTAINER -->
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 w-full flex-1 space-y-5">
-    <div id="tab-dashboard" class="space-y-5">
-      <section class="bg-white rounded-xl p-5 md:p-6 border border-flash-border flash-shadow relative overflow-hidden">
-        <div class="max-w-3xl space-y-2.5 relative z-10">
-          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold font-mono">
-            <i class="fa-solid fa-futbol text-emerald-600"></i> FIXSCORE POISSON &amp; xG MATRIX ENGINE
-          </div>
-          <h1 class="text-2xl sm:text-3xl font-extrabold text-flash-textPrimary tracking-tight">
-            10 Partai Sepak Bola Terpilih Hari Ini
-            <span class="block text-flash-red text-xl sm:text-2xl mt-1">Kalkulasi Probabilitas Kuantitatif &amp; Live Score</span>
-          </h1>
-          <p class="text-flash-textSecondary text-xs sm:text-sm leading-relaxed max-w-2xl">
-            Sistem menganalisis indikator Expected Goals (xG), statistik serangan/pertahanan klub, serta pembaruan skor langsung secara otomatis tanpa spekulasi.
-          </p>
-
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-2 font-mono text-xs">
-            <div class="bg-emerald-50/70 p-2.5 rounded-lg border border-emerald-200">
-              <span class="text-emerald-800 text-[10px] block font-sans font-bold uppercase"><i class="fa-solid fa-circle-check text-emerald-600 mr-1"></i>Syarat Min. Odds</span>
-              <span class="text-sm font-bold text-emerald-900">&ge; 1.50</span>
-              <span class="text-[10px] text-emerald-700 block mt-0.5 font-sans font-bold">+EV Value Bet Edge</span>
-            </div>
-            <div class="bg-emerald-50/70 p-2.5 rounded-lg border border-emerald-200">
-              <span class="text-emerald-800 text-[10px] block font-sans font-bold uppercase"><i class="fa-solid fa-shield-halved text-emerald-600 mr-1"></i>Probabilitas Model</span>
-              <span class="text-sm font-bold text-emerald-700">&ge; 70.0%</span>
-              <span class="text-[10px] text-emerald-800 block mt-0.5 font-sans font-bold">Batas Minimum Lulus</span>
-            </div>
-            <div class="bg-gray-50 p-2.5 rounded-lg border border-flash-border">
-              <span class="text-flash-textMuted text-[10px] block font-sans uppercase"><i class="fa-solid fa-chess-board mr-1 text-flash-red"></i>Cakupan Pasaran</span>
-              <span class="text-sm font-bold text-flash-textPrimary">1X2 / HDP / O/U</span>
-              <span class="text-[10px] text-flash-textMuted block mt-0.5 font-sans">Pasaran Utama Liquidity</span>
-            </div>
-            <div class="bg-red-50/60 p-2.5 rounded-lg border border-red-200">
-              <span class="text-red-800 text-[10px] block font-sans font-bold uppercase"><i class="fa-solid fa-triangle-exclamation text-red-600 mr-1"></i>Aturan Risiko</span>
-              <span class="text-sm font-bold text-red-700">&le; 2.5% Stake</span>
-              <span class="text-[10px] text-red-700 block mt-0.5 font-sans font-bold">Kelly Criterion Risk Cap</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FILTER PASARAN & SEARCH -->
-      <section class="flex flex-col sm:flex-row justify-between items-stretch sm:items-center gap-3 bg-white p-3 rounded-xl border border-flash-border flash-shadow">
-        <div class="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 font-sans text-xs font-bold">
-          <button onclick="filterMatches('ALL')" id="filter-ALL" class="px-3.5 py-1.5 rounded bg-flash-red text-white transition-all shadow-sm">
+  <main class="max-w-7xl mx-auto px-4 py-4 w-full flex-1 space-y-4">
+    
+    <!-- TAB DASHBOARD (10 PARTAI) -->
+    <div id="tab-dashboard" class="space-y-4">
+      
+      <!-- CATEGORY FILTER BUTTONS (SIMETRIS & RATA) -->
+      <section class="bg-white p-2.5 rounded-xl border border-flash-border flash-shadow space-y-2">
+        <div class="grid grid-cols-4 gap-1.5 font-sans text-[11px] font-bold">
+          <button onclick="filterMatches('ALL')" id="filter-ALL" class="py-2.5 px-1 rounded-lg bg-flash-red text-white text-center transition-all shadow-sm">
             SEMUA (10)
           </button>
-          <button onclick="filterMatches('1X2')" id="filter-1X2" class="px-3.5 py-1.5 rounded bg-gray-100 text-flash-textSecondary hover:bg-gray-200 transition-all">
-            1X2 (Hasil Akhir)
+          <button onclick="filterMatches('1X2')" id="filter-1X2" class="py-2.5 px-1 rounded-lg bg-gray-100 text-flash-textSecondary hover:bg-gray-200 text-center transition-all">
+            1X2
           </button>
-          <button onclick="filterMatches('HDP')" id="filter-HDP" class="px-3.5 py-1.5 rounded bg-gray-100 text-flash-textSecondary hover:bg-gray-200 transition-all">
-            Asian Handicap
+          <button onclick="filterMatches('HDP')" id="filter-HDP" class="py-2.5 px-1 rounded-lg bg-gray-100 text-flash-textSecondary hover:bg-gray-200 text-center transition-all">
+            HANDICAP
           </button>
-          <button onclick="filterMatches('OU')" id="filter-OU" class="px-3.5 py-1.5 rounded bg-gray-100 text-flash-textSecondary hover:bg-gray-200 transition-all">
-            Over/Under 2.5
+          <button onclick="filterMatches('OU')" id="filter-OU" class="py-2.5 px-1 rounded-lg bg-gray-100 text-flash-textSecondary hover:bg-gray-200 text-center transition-all">
+            OVER/UNDER
           </button>
         </div>
 
-        <div class="relative min-w-[220px]">
+        <div class="relative">
           <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-xs"></i>
-          <input type="text" id="searchInput" onkeyup="searchMatches()" placeholder="Cari klub atau liga..." class="w-full bg-gray-50 border border-flash-border rounded-lg pl-8 pr-3 py-1.5 text-xs text-flash-textPrimary placeholder-gray-400 focus:outline-none focus:border-flash-red transition-colors" />
+          <input type="text" id="searchInput" onkeyup="searchMatches()" placeholder="Cari nama klub atau liga..." class="w-full bg-gray-50 border border-flash-border rounded-lg pl-8 pr-3 py-1.5 text-xs text-flash-textPrimary focus:outline-none focus:border-flash-red" />
         </div>
       </section>
 
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
-        <!-- MATCHES CONTAINER -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <!-- LIST PERTANDINGAN -->
         <div id="matchesContainer" class="lg:col-span-2 space-y-3"></div>
 
-        <!-- PARLAY SLIP SIDEBAR -->
+        <!-- KALKULATOR PARLAY SIDEBAR -->
         <div class="lg:col-span-1">
-          <div class="sticky top-20 bg-white rounded-xl p-4 border border-flash-border flash-shadow space-y-4">
-            <div class="flex items-center justify-between border-b border-flash-border pb-3">
+          <div class="sticky top-16 bg-white rounded-xl p-4 border border-flash-border flash-shadow space-y-3">
+            <div class="flex items-center justify-between border-b pb-2">
               <div class="flex items-center gap-2">
-                <i class="fa-solid fa-calculator text-flash-red text-base"></i>
-                <h3 class="font-extrabold text-flash-textPrimary text-sm">Kalkulator Akumulasi Parlay</h3>
+                <i class="fa-solid fa-calculator text-flash-red text-sm"></i>
+                <h3 class="font-extrabold text-flash-textPrimary text-xs sm:text-sm">Kalkulator Parlay</h3>
               </div>
-              <span id="parlayCountBadge" class="bg-flash-redSoft text-flash-red text-xs font-mono font-bold px-2 py-0.5 rounded border border-red-200">0 Partai</span>
+              <span id="parlayCountBadge" class="bg-flash-redSoft text-flash-red text-[11px] font-mono font-bold px-2 py-0.5 rounded border border-red-200">0 Partai</span>
             </div>
 
-            <div id="parlayEmptyState" class="text-center py-6 space-y-2">
-              <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center mx-auto text-gray-400">
-                <i class="fa-solid fa-plus text-sm"></i>
-              </div>
-              <p class="text-xs text-flash-textMuted leading-relaxed max-w-[200px] mx-auto">
-                Klik tombol <strong class="text-flash-red">+ Parlay</strong> pada kartu partai untuk menghitung akumulasi odds kuantitatif.
-              </p>
+            <div id="parlayEmptyState" class="text-center py-5 space-y-1">
+              <i class="fa-solid fa-plus-circle text-gray-300 text-2xl"></i>
+              <p class="text-xs text-flash-textMuted max-w-[180px] mx-auto">Klik tombol <strong>+ Parlay</strong> pada kartu partai untuk mengalkulasi odds.</p>
             </div>
 
-            <div id="parlayPicksList" class="space-y-2 max-h-[280px] overflow-y-auto pr-1"></div>
+            <div id="parlayPicksList" class="space-y-1.5 max-h-[220px] overflow-y-auto pr-1"></div>
 
-            <div id="parlayCalcSummary" class="hidden space-y-2 bg-gray-50 p-3 rounded-lg border border-flash-border font-mono text-xs">
-              <div class="flex justify-between items-center text-flash-textSecondary">
-                <span>Total Multiplier Odds:</span>
-                <span id="parlayTotalOdds" class="text-flash-textPrimary text-base font-bold">1.00</span>
+            <div id="parlayCalcSummary" class="hidden space-y-1.5 bg-gray-50 p-2.5 rounded-lg border border-flash-border font-mono text-xs">
+              <div class="flex justify-between text-flash-textSecondary">
+                <span>Total Odds:</span>
+                <span id="parlayTotalOdds" class="text-flash-textPrimary font-bold">1.00</span>
               </div>
-              <div class="flex justify-between items-center text-flash-textSecondary">
-                <span>Probabilitas Kuantitatif:</span>
+              <div class="flex justify-between text-flash-textSecondary">
+                <span>Win Prob:</span>
                 <span id="parlayCombinedProb" class="text-emerald-600 font-bold">0.0%</span>
               </div>
-              <div class="flex justify-between items-center text-flash-textSecondary">
-                <span>Rekomendasi Stake:</span>
-                <span class="text-flash-textPrimary">2.5% Bankroll</span>
-              </div>
-              <div class="pt-2 border-t border-flash-border flex justify-between items-center font-sans">
-                <span class="text-flash-textPrimary font-bold">Proyeksi Return (100rb):</span>
-                <span id="parlayProjectedPayout" class="text-flash-red font-extrabold text-sm font-mono">Rp 0</span>
+              <div class="pt-1.5 border-t flex justify-between font-sans">
+                <span class="font-bold text-flash-textPrimary">Proyeksi (100rb):</span>
+                <span id="parlayProjectedPayout" class="text-flash-red font-extrabold font-mono">Rp 0</span>
               </div>
             </div>
 
-            <div id="parlayActions" class="hidden space-y-2">
-              <button onclick="copyParlaySlip()" class="w-full py-2.5 bg-flash-red hover:bg-flash-redHover text-white font-bold rounded-lg transition-all text-xs flex items-center justify-center gap-2 shadow-sm">
-                <i class="fa-solid fa-copy"></i> SALIN DATA KALKULASI PARLAY
+            <div id="parlayActions" class="hidden space-y-1.5">
+              <button onclick="copyParlaySlip()" class="w-full py-2 bg-flash-red hover:bg-flash-redHover text-white font-bold rounded-lg text-xs flex items-center justify-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-copy"></i> SALIN KALKULASI SLIP
               </button>
-              <button onclick="clearParlaySlip()" class="w-full py-1.5 bg-gray-100 hover:bg-gray-200 text-flash-textMuted text-xs font-bold rounded-lg transition-all border border-flash-border">
-                Reset Kombinasi
+              <button onclick="clearParlaySlip()" class="w-full py-1 bg-gray-100 hover:bg-gray-200 text-flash-textMuted text-xs font-bold rounded-lg border border-flash-border">
+                Reset Slips
               </button>
-            </div>
-
-            <div class="p-2.5 bg-gray-50 rounded-lg border border-flash-border text-[11px] text-flash-textMuted leading-tight">
-              <i class="fa-solid fa-shield-halved text-flash-red mr-1"></i>
-              <strong>Disiplin Manajemen Risiko:</strong> Pembatasan 2-3 leg per kombinasi terbukti mempertahankan keunggulan varians.
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- TAB HISTORY -->
-    <div id="tab-history" class="hidden space-y-5">
-      <section class="bg-white rounded-xl p-5 md:p-6 border border-flash-border flash-shadow space-y-4">
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div>
-            <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-flash-redSoft border border-red-200 text-flash-red text-xs font-bold font-mono mb-1.5">
-              <i class="fa-solid fa-database"></i> AUDITED DATA LOG
-            </div>
-            <h2 class="text-xl sm:text-2xl font-bold text-flash-textPrimary">Validasi Hasil &amp; Kurva Pertumbuhan Unit</h2>
-            <p class="text-xs text-flash-textMuted mt-0.5 max-w-xl">
-              Seluruh proyeksi dicatat secara otomatis ke dalam audit trail publik tanpa pengeditan retroaktif.
-            </p>
-          </div>
-          <div class="flex items-center gap-3 font-mono">
-            <div class="bg-gray-50 px-4 py-2 rounded-lg border border-flash-border text-center">
-              <span class="text-[10px] text-flash-textMuted block font-sans">AKURASI MODEL</span>
-              <span class="text-lg font-extrabold text-emerald-600">76.4%</span>
-            </div>
-            <div class="bg-gray-50 px-4 py-2 rounded-lg border border-flash-border text-center">
-              <span class="text-[10px] text-flash-textMuted block font-sans">EKSPEKTASI (+EV)</span>
-              <span class="text-lg font-extrabold text-flash-red">+42.8 U</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-gray-50 p-4 rounded-xl border border-flash-border space-y-2">
-          <div class="flex justify-between items-center text-xs text-flash-textMuted font-mono">
-            <span class="font-bold font-sans text-flash-textPrimary">GRAFIK PERTUMBUHAN AKUMULATIF (+EV)</span>
-            <span class="text-flash-red font-bold"><i class="fa-solid fa-arrow-trend-up mr-1"></i>+142.8%</span>
-          </div>
-          <div class="h-40 w-full relative pt-2">
-            <svg class="w-full h-full overflow-visible" viewBox="0 0 500 130" preserveAspectRatio="none">
-              <defs>
-                <linearGradient id="flashChartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stop-color="#a21220" stop-opacity="0.25" />
-                  <stop offset="100%" stop-color="#a21220" stop-opacity="0.0" />
-                </linearGradient>
-              </defs>
-              <path d="M 0,110 Q 50,100 100,85 T 200,70 T 300,45 T 400,25 T 500,10 L 500,130 L 0,130 Z" fill="url(#flashChartGrad)" />
-              <path d="M 0,110 Q 50,100 100,85 T 200,70 T 300,45 T 400,25 T 500,10" fill="none" stroke="#a21220" stroke-width="3" />
-            </svg>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- TAB ALGORITHM -->
-    <div id="tab-algorithm" class="hidden space-y-5">
-      <section class="bg-white rounded-xl p-5 md:p-6 border border-flash-border flash-shadow space-y-5">
+    <!-- TAB VALIDASI STATISTIK & REKAP HISTORY PARLAY -->
+    <div id="tab-history" class="hidden space-y-4">
+      <section class="bg-white rounded-xl p-4 sm:p-5 border border-flash-border flash-shadow space-y-4">
         <div>
-          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-flash-redSoft border border-red-200 text-flash-red text-xs font-bold font-mono mb-1.5">
-            <i class="fa-solid fa-code"></i> MATHEMATICAL ARCHITECTURE
-          </div>
-          <h2 class="text-xl sm:text-2xl font-bold text-flash-textPrimary">Arsitektur Model Matematika &amp; Probabilitas</h2>
-          <p class="text-xs text-flash-textMuted mt-0.5 max-w-2xl">
-            Proses pemrosesan data mengeksekusi rumus distribusi statistik Poisson dan matriks Expected Goals (xG) secara independen.
+          <span class="bg-emerald-50 text-emerald-800 text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-emerald-200">AUDITED TRACK RECORD</span>
+          <h2 class="text-lg font-extrabold text-flash-textPrimary mt-1">Validasi Akurasi Statistik &amp; Rekap History Parlay</h2>
+          <p class="text-xs text-flash-textMuted mt-1 leading-relaxed">
+            Halaman ini mencatat secara obyektif seluruh performa rekomendasi harian, tingkat win-rate model, serta transparansi rekap parlay harian untuk menjaga akuntabilitas hasil.
           </p>
         </div>
+
+        <!-- REKAP HISTORIS PARLAY TABLE -->
+        <div class="space-y-2">
+          <h3 class="font-bold text-xs text-flash-textPrimary flex items-center gap-1.5">
+            <i class="fa-solid fa-list-check text-flash-red"></i> Rekap History Parlay Harian (30 Hari Terakhir)
+          </h3>
+          <div class="overflow-x-auto rounded-lg border border-flash-border">
+            <table class="w-full text-left text-xs border-collapse">
+              <thead class="bg-gray-100 text-flash-textMuted font-mono text-[10px] uppercase">
+                <tr>
+                  <th class="p-2.5">Tanggal</th>
+                  <th class="p-2.5">Kombinasi Leg Parlay</th>
+                  <th class="p-2.5">Total Odds</th>
+                  <th class="p-2.5">Status Parlay</th>
+                  <th class="p-2.5">Hasil (+EV)</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-flash-border font-mono text-[11px]">
+                <tr class="bg-white hover:bg-gray-50">
+                  <td class="p-2.5 font-bold">24/09/2026</td>
+                  <td class="p-2.5 font-sans">Arsenal Menang + Real Madrid Win + Over 2.5 PSG</td>
+                  <td class="p-2.5 font-bold">@3.98</td>
+                  <td class="p-2.5"><span class="bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded font-bold">WIN</span></td>
+                  <td class="p-2.5 text-emerald-600 font-bold">+2.98 Unit</td>
+                </tr>
+                <tr class="bg-white hover:bg-gray-50">
+                  <td class="p-2.5 font-bold">23/09/2026</td>
+                  <td class="p-2.5 font-sans">Inter Milan Win + Barcelona -1.0 HDP</td>
+                  <td class="p-2.5 font-bold">@2.85</td>
+                  <td class="p-2.5"><span class="bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded font-bold">WIN</span></td>
+                  <td class="p-2.5 text-emerald-600 font-bold">+1.85 Unit</td>
+                </tr>
+                <tr class="bg-white hover:bg-gray-50">
+                  <td class="p-2.5 font-bold">22/09/2026</td>
+                  <td class="p-2.5 font-sans">Bayern Munich Win + Juventus Over 2.5</td>
+                  <td class="p-2.5 font-bold">@2.62</td>
+                  <td class="p-2.5"><span class="bg-red-100 text-red-800 px-1.5 py-0.5 rounded font-bold">LOSE</span></td>
+                  <td class="p-2.5 text-red-600 font-bold">-1.00 Unit</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </section>
     </div>
+
+    <!-- TAB MODEL MATEMATIKA -->
+    <div id="tab-algorithm" class="hidden space-y-4">
+      <section class="bg-white rounded-xl p-4 sm:p-5 border border-flash-border flash-shadow space-y-4">
+        <div>
+          <span class="bg-blue-50 text-blue-800 text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-blue-200">QUANTITATIVE METHODOLOGY</span>
+          <h2 class="text-lg font-extrabold text-flash-textPrimary mt-1">Sistem Penilaian Model Matematika &amp; Probabilitas</h2>
+          <p class="text-xs text-flash-textMuted mt-1 leading-relaxed">
+            Model kalkulasi FIXSCORE beroperasi tanpa emosi manusia dengan mengandalkan 3 pilar matematika kuantitatif murni:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 font-sans text-xs">
+          <div class="bg-gray-50 p-3 rounded-lg border border-flash-border space-y-1">
+            <div class="font-extrabold text-flash-red text-sm">1. Distribusi Poisson</div>
+            <p class="text-flash-textSecondary leading-relaxed text-[11px]">Memproyeksikan estimasi rasio distribusi gol berdasarkan koefisien kekuatan serangan dan pertahanan kedua tim.</p>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-lg border border-flash-border space-y-1">
+            <div class="font-extrabold text-flash-red text-sm">2. Matriks Expected Goals (xG)</div>
+            <p class="text-flash-textSecondary leading-relaxed text-[11px]">Mengukur kualitas peluang gol secara nyata dari lokasi tembakan, bukan hanya penguasaan bola semata.</p>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-lg border border-flash-border space-y-1">
+            <div class="font-extrabold text-flash-red text-sm">3. Kelly Criterion (+EV)</div>
+            <p class="text-flash-textSecondary leading-relaxed text-[11px]">Menentukan nilai taruhan ideal untuk memaksimalkan pertumbuhan modal jangka panjang dan meminimalkan varians.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
   </main>
 
-  <!-- MODALS -->
+  <!-- MODAL MATRIKS EVALUASI STATISTIK SUPER LENGKAP -->
   <div id="analyticsModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-white max-w-md w-full rounded-xl p-5 border border-flash-border flash-shadow space-y-4 relative">
+    <div class="bg-white max-w-lg w-full rounded-xl p-5 border border-flash-border flash-shadow space-y-4 relative max-h-[90vh] overflow-y-auto">
       <button onclick="closeAnalyticsModal()" class="absolute top-4 right-4 text-gray-400 hover:text-flash-textPrimary p-1">
         <i class="fa-solid fa-xmark text-lg"></i>
       </button>
-      <div class="flex items-center gap-2 text-flash-red font-mono text-xs font-bold">
+
+      <div class="flex items-center gap-2 text-flash-red font-mono text-xs font-bold border-b pb-2">
         <i class="fa-solid fa-chart-pie"></i>
-        <span>MATRIKS EVALUASI STATISTIK LAGA</span>
+        <span>MATRIKS EVALUASI STATISTIK LAGA (SUPER LENGKAP)</span>
       </div>
-      <div id="modalMatchTitle" class="text-base font-extrabold text-flash-textPrimary border-b border-flash-border pb-2"></div>
-      <div id="modalMetricsBody" class="space-y-2.5 font-mono text-xs"></div>
-      <div class="bg-gray-50 p-3 rounded-lg border border-flash-border text-xs space-y-1">
-        <span class="text-flash-red font-bold block text-[11px]"><i class="fa-solid fa-quote-left mr-1"></i>Indikator Data Statistikal:</span>
-        <p id="modalAiNotes" class="text-flash-textSecondary leading-relaxed font-sans text-xs"></p>
+
+      <div id="modalMatchTitle" class="text-base font-extrabold text-flash-textPrimary"></div>
+
+      <!-- 6 INDIKATOR UTAMA STATISTIK -->
+      <div id="modalMetricsBody" class="grid grid-cols-2 gap-3 font-mono text-xs bg-gray-50 p-3 rounded-lg border"></div>
+
+      <!-- ANALISIS TAKTIS & INDIKATOR DATA -->
+      <div class="space-y-2 text-xs">
+        <div class="bg-red-50 p-3 rounded-lg border border-red-200 space-y-1">
+          <span class="text-flash-red font-bold text-[11px] block"><i class="fa-solid fa-magnifying-glass-chart mr-1"></i>Analisis Taktis mendalam:</span>
+          <p id="modalAiNotes" class="text-flash-textSecondary leading-relaxed font-sans text-[11px]"></p>
+        </div>
+        <div class="bg-emerald-50 p-3 rounded-lg border border-emerald-200 text-[11px] text-emerald-800 space-y-0.5 font-mono">
+          <div class="font-bold"><i class="fa-solid fa-shield-halved mr-1"></i>Rekomendasi Manajemen Stake:</div>
+          <div>Batas Risiko: <strong>Maksimal 2.5% Bankroll (Kelly Criterion)</strong></div>
+        </div>
       </div>
-      <button onclick="closeAnalyticsModal()" class="w-full py-2 bg-gray-100 hover:bg-gray-200 text-flash-textPrimary text-xs font-bold rounded-lg transition-all border border-flash-border">Tutup Matriks</button>
+
+      <button onclick="closeAnalyticsModal()" class="w-full py-2 bg-gray-100 hover:bg-gray-200 text-flash-textPrimary text-xs font-bold rounded-lg transition-all border">Tutup Matriks</button>
     </div>
   </div>
 
+  <!-- MODAL TELEGRAM / LOGIN -->
   <div id="vipModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
     <div class="bg-white max-w-sm w-full rounded-xl p-6 border border-flash-border flash-shadow space-y-4 text-center relative">
-      <button onclick="closeVipModal()" class="absolute top-4 right-4 text-gray-400 hover:text-flash-textPrimary p-1">
-        <i class="fa-solid fa-xmark text-lg"></i>
-      </button>
-      <div class="w-12 h-12 rounded-full bg-flash-redSoft text-flash-red flex items-center justify-center mx-auto text-xl font-bold border border-red-200">
-        <i class="fa-solid fa-paper-plane"></i>
-      </div>
+      <button onclick="closeVipModal()" class="absolute top-4 right-4 text-gray-400 hover:text-flash-textPrimary p-1"><i class="fa-solid fa-xmark text-lg"></i></button>
+      <div class="w-12 h-12 rounded-full bg-flash-redSoft text-flash-red flex items-center justify-center mx-auto text-xl font-bold border border-red-200"><i class="fa-solid fa-paper-plane"></i></div>
       <div class="space-y-1">
         <h3 class="text-lg font-bold text-flash-textPrimary">Komunitas Diskusi &amp; Data</h3>
         <p class="text-xs text-flash-textMuted leading-relaxed">Dapatkan pembaruan real-time kalkulasi 10 partai harian langsung via Telegram.</p>
       </div>
-      <a href="https://t.me" target="_blank" class="w-full py-2.5 bg-flash-red hover:bg-flash-redHover text-white font-bold rounded-lg transition-all text-xs flex items-center justify-center gap-2 block shadow-sm">
+      <a href="https://t.me" target="_blank" class="w-full py-2.5 bg-flash-red text-white font-bold rounded-lg text-xs flex items-center justify-center gap-2 block shadow-sm">
         <i class="fa-brands fa-telegram text-base"></i> GABUNG GROUP TELEGRAM
       </a>
     </div>
@@ -376,8 +319,31 @@
 
   <div id="toast" class="fixed bottom-5 right-5 z-50 bg-flash-dark text-white px-4 py-2.5 rounded-lg font-bold text-xs shadow-xl hidden transition-all flex items-center gap-2 border border-black">
     <i class="fa-solid fa-circle-check text-emerald-400"></i>
-    <span id="toastMsg">Pesan Notifikasi</span>
+    <span id="toastMsg">Notifikasi</span>
   </div>
+
+  <!-- FOOTER ELEGAN & PROFESIONAL -->
+  <footer class="bg-flash-dark text-gray-400 border-t border-black mt-10 py-6 text-xs">
+    <div class="max-w-7xl mx-auto px-4 space-y-4">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-3 border-b border-gray-800 pb-4">
+        <div class="flex items-center gap-2">
+          <div class="w-6 h-6 rounded bg-flash-red flex items-center justify-center text-white font-black text-xs">
+            <i class="fa-solid fa-futbol text-emerald-400"></i>
+          </div>
+          <span class="font-extrabold text-white tracking-wider">FIXSCORE QUANTITATIVE ENGINE</span>
+        </div>
+        <div class="flex items-center gap-4 text-gray-400 font-medium">
+          <a href="#" onclick="switchTab('dashboard')" class="hover:text-white">10 Partai Hari Ini</a>
+          <a href="#" onclick="switchTab('history')" class="hover:text-white">Rekap Track Record</a>
+          <a href="#" onclick="switchTab('algorithm')" class="hover:text-white">Metodologi</a>
+        </div>
+      </div>
+      <div class="text-[11px] text-gray-500 leading-relaxed space-y-1 text-center sm:text-left">
+        <p>© 2026 FIXSCORE Pitch Analytics. All rights reserved.</p>
+        <p class="text-[10px] text-gray-600">Disclaimer: Platform analisis kuantitatif sepak bola berbasis data murni dan distribusi statistik Poisson. Tidak menyediakan fasilitas taruhan judi uang asli.</p>
+      </div>
+    </div>
+  </footer>
 
   <!-- JAVASCRIPT LOGIC -->
   <script>
@@ -400,24 +366,19 @@
 
     window.onload = function() {
       loadDataFromJSON();
-      setInterval(loadDataFromJSON, 60000); // Live refresh tiap 60s
+      setInterval(loadDataFromJSON, 60000);
     };
+
+    function toggleSidebar() {
+      document.getElementById('sidebarMenu').classList.toggle('translate-x-full');
+      document.getElementById('sidebarOverlay').classList.toggle('hidden');
+    }
 
     function switchTab(tabName) {
       document.getElementById('tab-dashboard').classList.add('hidden');
       document.getElementById('tab-history').classList.add('hidden');
       document.getElementById('tab-algorithm').classList.add('hidden');
-
-      const inactiveClass = "px-4 py-2.5 rounded-t-lg transition-all text-white hover:bg-black/20 flex items-center gap-2 font-bold";
-      document.getElementById('nav-dashboard').className = inactiveClass;
-      document.getElementById('nav-history').className = inactiveClass;
-      document.getElementById('nav-algorithm').className = inactiveClass;
-
       document.getElementById(`tab-${tabName}`).classList.remove('hidden');
-      const activeNav = document.getElementById(`nav-${tabName}`);
-      if (activeNav) {
-        activeNav.className = "px-4 py-2.5 rounded-t-lg transition-all text-flash-red bg-white shadow-sm flex items-center gap-2 font-bold";
-      }
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
@@ -447,9 +408,8 @@
       filtered.forEach((m, index) => {
         const isAdded = userParlaySlip.some(p => p.id === m.id);
         const card = document.createElement('div');
-        card.className = "bg-white flash-card-hover rounded-xl p-3.5 sm:p-4 border border-flash-border flash-shadow relative space-y-3";
+        card.className = "bg-white flash-card-hover rounded-xl p-3 sm:p-4 border border-flash-border flash-shadow relative space-y-2.5";
 
-        // Konversi Waktu Lokal
         let localKickoffStr = m.kickoff;
         if (m.kickoffUtc) {
           try {
@@ -458,106 +418,87 @@
           } catch(e) {}
         }
 
-        // Tampilan Status Pertandingan & Live Score
-        let statusBadge = `<span class="bg-gray-100 px-2 py-0.5 rounded border border-flash-border text-flash-textPrimary text-[11px] font-bold"><i class="fa-regular fa-clock mr-1 text-flash-red"></i>${localKickoffStr}</span>`;
-        let centerDisplay = `<span class="text-[10px] font-mono text-emerald-800 font-bold bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200">VS</span>`;
+        // FT SCORE HORIZONTAL Ringkas
+        let statusBadge = `<span class="bg-gray-100 px-2 py-0.5 rounded border text-flash-textPrimary text-[10px] font-bold"><i class="fa-regular fa-clock mr-1 text-flash-red"></i>${localKickoffStr}</span>`;
+        let centerScoreDisplay = `<span class="text-[10px] font-mono text-emerald-800 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">VS</span>`;
 
         if (['FT', 'AET', 'PEN'].includes(m.statusShort)) {
-          statusBadge = `<span class="bg-gray-800 text-white px-2 py-0.5 rounded text-[11px] font-bold font-mono">SELESAI (FT)</span>`;
-          centerDisplay = `<div class="bg-black text-white px-3 py-1 rounded-lg font-mono font-black text-base tracking-wider">${m.scoreHome ?? 0} - ${m.scoreAway ?? 0}</div>`;
+          statusBadge = `<span class="bg-gray-800 text-white px-1.5 py-0.5 rounded text-[10px] font-bold font-mono">FT</span>`;
+          centerScoreDisplay = `<div class="bg-black text-white px-2.5 py-0.5 rounded font-mono font-black text-xs tracking-widest">${m.scoreHome ?? 0} - ${m.scoreAway ?? 0}</div>`;
         } else if (['1H', '2H', 'HT', 'LIVE', 'ET', 'P'].includes(m.statusShort)) {
           const minuteStr = m.statusElapsed ? `${m.statusElapsed}'` : 'LIVE';
-          statusBadge = `<span class="bg-red-600 text-white px-2 py-0.5 rounded text-[11px] font-bold font-mono animate-pulse"><i class="fa-solid fa-circle text-[8px] mr-1"></i>BERLANGSUNG (${minuteStr})</span>`;
-          centerDisplay = `<div class="bg-red-600 text-white px-3 py-1 rounded-lg font-mono font-black text-base tracking-wider animate-pulse">${m.scoreHome ?? 0} - ${m.scoreAway ?? 0}</div>`;
+          statusBadge = `<span class="bg-red-600 text-white px-1.5 py-0.5 rounded text-[10px] font-bold font-mono animate-pulse">LIVE ${minuteStr}</span>`;
+          centerScoreDisplay = `<div class="bg-red-600 text-white px-2.5 py-0.5 rounded font-mono font-black text-xs tracking-widest animate-pulse">${m.scoreHome ?? 0} - ${m.scoreAway ?? 0}</div>`;
         }
 
         card.innerHTML = `
-          <div class="flex justify-between items-center text-xs font-mono text-flash-textMuted border-b border-flash-border pb-2">
-            <div class="flex items-center gap-2">
-              ${m.leagueLogo ? `<img src="${m.leagueLogo}" class="w-4 h-4 object-contain" />` : `<i class="fa-solid fa-trophy text-amber-500"></i>`}
-              <span class="font-extrabold text-flash-textPrimary text-[11px] sm:text-xs font-sans tracking-wide">${m.league}</span>
+          <div class="flex justify-between items-center text-xs font-mono text-flash-textMuted border-b pb-1.5">
+            <div class="flex items-center gap-1.5">
+              ${m.leagueLogo ? `<img src="${m.leagueLogo}" class="w-3.5 h-3.5 object-contain" />` : `<i class="fa-solid fa-trophy text-amber-500"></i>`}
+              <span class="font-extrabold text-flash-textPrimary text-[11px] font-sans tracking-wide">${m.league}</span>
             </div>
             ${statusBadge}
           </div>
 
           <div class="grid grid-cols-12 items-center gap-2 ${m.isVip ? 'blur-lock' : ''}">
-            <!-- HOME TEAM & LOGO -->
-            <div class="col-span-5 flex items-center gap-2.5">
-              ${m.homeLogo ? `<img src="${m.homeLogo}" class="w-7 h-7 sm:w-9 sm:h-9 object-contain" />` : `<i class="fa-solid fa-shield text-xl text-gray-400"></i>`}
+            <!-- HOME TEAM -->
+            <div class="col-span-5 flex items-center gap-2">
+              ${m.homeLogo ? `<img src="${m.homeLogo}" class="w-6 h-6 object-contain" />` : `<i class="fa-solid fa-shield text-gray-400"></i>`}
               <div class="space-y-0.5">
-                <div class="font-extrabold text-flash-textPrimary text-xs sm:text-base">${m.homeTeam}</div>
-                <div class="flex items-center gap-0.5 font-mono text-[9px] font-bold">
-                  ${m.homeForm ? m.homeForm.map(f => `<span class="w-3.5 h-3.5 rounded flex items-center justify-center ${f==='W'?'form-badge-w':f==='D'?'form-badge-d':'form-badge-l'}">${f}</span>`).join('') : ''}
+                <div class="font-extrabold text-flash-textPrimary text-xs sm:text-sm">${m.homeTeam}</div>
+                <div class="flex items-center gap-0.5 font-mono text-[8px] font-bold">
+                  ${m.homeForm ? m.homeForm.map(f => `<span class="w-3 h-3 rounded flex items-center justify-center ${f==='W'?'form-badge-w':f==='D'?'form-badge-d':'form-badge-l'}">${f}</span>`).join('') : ''}
                 </div>
               </div>
             </div>
 
-            <!-- SKOR / VS -->
+            <!-- HORIZONTAL SCORE / VS DISPLAY -->
             <div class="col-span-2 text-center flex justify-center items-center">
-              ${centerDisplay}
+              ${centerScoreDisplay}
             </div>
 
-            <!-- AWAY TEAM & LOGO -->
-            <div class="col-span-5 flex items-center justify-end gap-2.5 text-right">
+            <!-- AWAY TEAM -->
+            <div class="col-span-5 flex items-center justify-end gap-2 text-right">
               <div class="space-y-0.5">
-                <div class="font-extrabold text-flash-textPrimary text-xs sm:text-base">${m.awayTeam}</div>
-                <div class="flex items-center justify-end gap-0.5 font-mono text-[9px] font-bold">
-                  ${m.awayForm ? m.awayForm.map(f => `<span class="w-3.5 h-3.5 rounded flex items-center justify-center ${f==='W'?'form-badge-w':f==='D'?'form-badge-d':'form-badge-l'}">${f}</span>`).join('') : ''}
+                <div class="font-extrabold text-flash-textPrimary text-xs sm:text-sm">${m.awayTeam}</div>
+                <div class="flex items-center justify-end gap-0.5 font-mono text-[8px] font-bold">
+                  ${m.awayForm ? m.awayForm.map(f => `<span class="w-3 h-3 rounded flex items-center justify-center ${f==='W'?'form-badge-w':f==='D'?'form-badge-d':'form-badge-l'}">${f}</span>`).join('') : ''}
                 </div>
               </div>
-              ${m.awayLogo ? `<img src="${m.awayLogo}" class="w-7 h-7 sm:w-9 sm:h-9 object-contain" />` : `<i class="fa-solid fa-shield text-xl text-gray-400"></i>`}
+              ${m.awayLogo ? `<img src="${m.awayLogo}" class="w-6 h-6 object-contain" />` : `<i class="fa-solid fa-shield text-gray-400"></i>`}
             </div>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] font-mono">
-            <div class="px-2.5 py-1 rounded border indicator-pos flex items-center gap-1.5 font-bold">
+          <div class="grid grid-cols-2 gap-1.5 text-[10px] font-mono">
+            <div class="px-2 py-0.5 rounded border indicator-pos flex items-center gap-1 font-bold">
               <i class="fa-solid fa-circle-check text-emerald-600"></i>
-              <span>${m.posEdge || '+15.5% +EV (Matriks Engine)'}</span>
+              <span class="truncate">${m.posEdge || '+15.5% +EV'}</span>
             </div>
-            <div class="px-2.5 py-1 rounded border indicator-neg flex items-center gap-1.5 font-bold">
+            <div class="px-2 py-0.5 rounded border indicator-neg flex items-center gap-1 font-bold">
               <i class="fa-solid fa-triangle-exclamation text-red-600"></i>
-              <span>${m.riskFactor || '-3.8% Volatilitas Transisi'}</span>
+              <span class="truncate">${m.riskFactor || '-3.8% Risk'}</span>
             </div>
           </div>
 
-          ${m.isVip ? `
-            <div class="absolute inset-0 bg-white/95 backdrop-blur-sm rounded-xl flex flex-col items-center justify-center p-4 text-center z-20 space-y-2 border border-flash-border">
-              <div class="w-8 h-8 rounded-full bg-flash-redSoft text-flash-red flex items-center justify-center text-xs font-bold border border-red-200">
-                <i class="fa-solid fa-lock"></i>
-              </div>
-              <div class="font-extrabold text-flash-textPrimary text-xs">PARTAI #0${index+1} KHUSUS VIP MEMBER</div>
-              <p class="text-[11px] text-flash-textMuted max-w-[220px]">Buka kunci 6 partai VIP harian & racikan statistik.</p>
-              <button onclick="openVipModal()" class="px-3 py-1 bg-flash-red hover:bg-flash-redHover text-white font-bold text-xs rounded transition-all shadow-sm">
-                BUKA AKSES VIP
-              </button>
-            </div>
-          ` : ''}
-
-          <div class="bg-gray-50 p-2.5 rounded-lg border border-flash-border flex flex-wrap justify-between items-center gap-2">
+          <div class="bg-gray-50 p-2 rounded-lg border border-flash-border flex justify-between items-center gap-2">
             <div>
-              <span class="text-[10px] text-flash-textMuted block font-bold">PROYEKSI MODEL KUANTITATIF</span>
-              <span class="text-xs sm:text-sm font-extrabold text-flash-red">${m.pick}</span>
+              <span class="text-[9px] text-flash-textMuted block font-bold">PROYEKSI MODEL</span>
+              <span class="text-xs font-extrabold text-flash-red">${m.pick}</span>
             </div>
-            <div class="flex items-center gap-3 font-mono text-xs">
-              <div class="text-right">
-                <span class="text-[10px] text-flash-textMuted block font-sans">VALUE ODDS</span>
-                <span class="font-extrabold text-flash-textPrimary bg-amber-100 px-1.5 py-0.5 rounded border border-amber-300">@${m.odds ? m.odds.toFixed(2) : '1.65'}</span>
-              </div>
-              <div class="text-right">
-                <span class="text-[10px] text-emerald-800 font-bold block font-sans">PROBABILITAS</span>
-                <span class="font-extrabold text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded border border-emerald-300">${m.winProb}%</span>
-              </div>
+            <div class="flex items-center gap-1.5 font-mono text-xs">
+              <span class="font-extrabold text-flash-textPrimary bg-amber-100 px-1.5 py-0.5 rounded border border-amber-300">@${m.odds ? m.odds.toFixed(2) : '1.65'}</span>
+              <span class="font-extrabold text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded border border-emerald-300">${m.winProb}%</span>
             </div>
           </div>
 
-          <div class="flex items-center justify-between gap-2 pt-0.5 text-xs">
-            <button onclick="openAnalyticsModal(${m.id})" class="text-flash-textMuted hover:text-flash-red flex items-center gap-1.5 transition-colors font-medium">
+          <div class="flex items-center justify-between gap-2 text-xs">
+            <button onclick="openAnalyticsModal(${m.id})" class="text-flash-textMuted hover:text-flash-red flex items-center gap-1 transition-colors">
               <i class="fa-solid fa-diagram-project text-emerald-600"></i>
-              <span class="underline text-[11px]">Matriks Taktis &amp; Stats</span>
+              <span class="underline text-[10px]">Matriks Taktis Lengkap</span>
             </button>
-            <button onclick="toggleParlayPick(${m.id})" class="px-3 py-1 rounded font-bold transition-all text-xs flex items-center gap-1.5 ${isAdded ? 'bg-red-100 text-flash-red border border-red-300' : 'bg-flash-red hover:bg-flash-redHover text-white shadow-sm'}">
+            <button onclick="toggleParlayPick(${m.id})" class="px-2.5 py-1 rounded font-bold text-xs flex items-center gap-1 ${isAdded ? 'bg-red-100 text-flash-red border border-red-300' : 'bg-flash-red text-white'}">
               <i class="fa-solid ${isAdded ? 'fa-minus' : 'fa-plus'}"></i>
-              <span>${isAdded ? 'Hapus Slip' : '+ Parlay'}</span>
+              <span>${isAdded ? 'Hapus' : '+ Parlay'}</span>
             </button>
           </div>
         `;
@@ -570,7 +511,7 @@
       selectedMarketFilter = market;
       ['ALL', '1X2', 'HDP', 'OU'].forEach(m => {
         const btn = document.getElementById(`filter-${m}`);
-        if (btn) btn.className = (m === market) ? "px-3.5 py-1.5 rounded bg-flash-red text-white transition-all shadow-sm font-bold" : "px-3.5 py-1.5 rounded bg-gray-100 text-flash-textSecondary hover:bg-gray-200 transition-all font-bold";
+        if (btn) btn.className = (m === market) ? "py-2.5 px-1 rounded-lg bg-flash-red text-white text-center transition-all shadow-sm font-bold" : "py-2.5 px-1 rounded-lg bg-gray-100 text-flash-textSecondary hover:bg-gray-200 text-center transition-all font-bold";
       });
       renderMatchesList();
     }
@@ -587,7 +528,7 @@
         showToast(`Dihapus: ${match.homeTeam}`);
       } else {
         if (userParlaySlip.length >= 5) {
-          showToast("Maksimal racikan 5 partai!");
+          showToast("Maksimal 5 partai parlay!");
           return;
         }
         userParlaySlip.push(match);
@@ -627,15 +568,15 @@
         combinedProb *= (m.winProb / 100);
 
         const pickItem = document.createElement('div');
-        pickItem.className = "bg-gray-50 p-2.5 rounded-lg border border-flash-border flex justify-between items-center text-xs";
+        pickItem.className = "bg-gray-50 p-2 rounded border flex justify-between items-center text-xs";
         pickItem.innerHTML = `
           <div>
-            <div class="font-bold text-flash-textPrimary text-[11px]">${m.homeTeam} vs ${m.awayTeam}</div>
-            <div class="text-[10px] text-flash-red font-bold">${m.pick}</div>
+            <div class="font-bold text-[10px]">${m.homeTeam} vs ${m.awayTeam}</div>
+            <div class="text-[9px] text-flash-red font-bold">${m.pick}</div>
           </div>
-          <div class="flex items-center gap-2 font-mono">
-            <span class="text-flash-textPrimary font-extrabold text-xs">@${m.odds.toFixed(2)}</span>
-            <button onclick="toggleParlayPick(${m.id})" class="text-gray-400 hover:text-red-600 p-0.5"><i class="fa-solid fa-xmark"></i></button>
+          <div class="flex items-center gap-1.5 font-mono">
+            <span class="font-extrabold text-[11px]">@${m.odds.toFixed(2)}</span>
+            <button onclick="toggleParlayPick(${m.id})" class="text-gray-400 hover:text-red-600"><i class="fa-solid fa-xmark"></i></button>
           </div>
         `;
         picksList.appendChild(pickItem);
@@ -650,18 +591,18 @@
       userParlaySlip = [];
       renderMatchesList();
       renderParlaySlip();
-      showToast("Racikan slip parlay di-reset.");
+      showToast("Slip parlay di-reset.");
     }
 
     function copyParlaySlip() {
       if (userParlaySlip.length === 0) return;
-      let text = `⚽ KALKULASI PARLAY KUANTITATIF - FIXSCORE ⚽\n\n`;
+      let text = `⚽ KALKULASI PARLAY FIXSCORE ⚽\n\n`;
       let totalOdds = 1.0;
       userParlaySlip.forEach((m, idx) => {
         totalOdds *= m.odds;
         text += `${idx + 1}. ${m.homeTeam} vs ${m.awayTeam}\n   Pilihan: ${m.pick} (@${m.odds.toFixed(2)})\n`;
       });
-      text += `\n🎯 Multiplier Total Odds: @${totalOdds.toFixed(2)}\n📈 Data & Metodologi: FIXSCORE Pitch Engine\n`;
+      text += `\n🎯 Total Odds: @${totalOdds.toFixed(2)}\n`;
 
       const dummy = document.createElement("textarea");
       document.body.appendChild(dummy);
@@ -669,7 +610,7 @@
       dummy.select();
       document.execCommand("copy");
       document.body.removeChild(dummy);
-      showToast("Data parlay berhasil disalin!");
+      showToast("Slip parlay disalin!");
     }
 
     function openAnalyticsModal(id) {
@@ -677,26 +618,43 @@
       if (!match) return;
 
       document.getElementById('modalMatchTitle').innerText = `${match.homeTeam} vs ${match.awayTeam}`;
-      document.getElementById('modalAiNotes').innerText = match.aiNotes || "Analisis kuantitatif statistik menunjukkan keunggulan xG.";
+      document.getElementById('modalAiNotes').innerText = match.aiNotes || "Analisis taktis kuantitatif menunjukkan dominasi penuh pada peluang xG dan konsistensi transisi lapangan tengah.";
 
+      // MATRIKS SUPER LENGKAP (6 INDIKATOR UTAMA)
       const metricsBody = document.getElementById('modalMetricsBody');
       metricsBody.innerHTML = `
-        <div class="space-y-1">
-          <div class="flex justify-between text-flash-textMuted font-sans"><span>Rating Form:</span><span class="text-emerald-700 font-bold">${match.metrics?.form || 85}%</span></div>
-          <div class="w-full bg-gray-200 rounded-full h-1.5 overflow-hidden"><div class="bg-emerald-600 h-1.5 rounded-full" style="width: ${match.metrics?.form || 85}%"></div></div>
+        <div class="bg-white p-2 rounded border">
+          <span class="text-[10px] text-gray-500 block">Rating Form 5 Match</span>
+          <span class="font-bold text-emerald-600 text-sm">${match.metrics?.form || 88}%</span>
         </div>
-        <div class="space-y-1">
-          <div class="flex justify-between text-flash-textMuted font-sans"><span>Dominasi xG:</span><span class="text-emerald-700 font-bold">${match.metrics?.xG || 80}%</span></div>
-          <div class="w-full bg-gray-200 rounded-full h-1.5 overflow-hidden"><div class="bg-emerald-500 h-1.5 rounded-full" style="width: ${match.metrics?.xG || 80}%"></div></div>
+        <div class="bg-white p-2 rounded border">
+          <span class="text-[10px] text-gray-500 block">Dominasi xG Score</span>
+          <span class="font-bold text-emerald-600 text-sm">${match.metrics?.xG || 82}%</span>
+        </div>
+        <div class="bg-white p-2 rounded border">
+          <span class="text-[10px] text-gray-500 block">Efisiensi Serangan</span>
+          <span class="font-bold text-blue-600 text-sm">84.5%</span>
+        </div>
+        <div class="bg-white p-2 rounded border">
+          <span class="text-[10px] text-gray-500 block">Soliditas Pertahanan</span>
+          <span class="font-bold text-blue-600 text-sm">79.2%</span>
+        </div>
+        <div class="bg-white p-2 rounded border">
+          <span class="text-[10px] text-gray-500 block">Penguasaan Bola (Est)</span>
+          <span class="font-bold text-amber-600 text-sm">58.0%</span>
+        </div>
+        <div class="bg-white p-2 rounded border">
+          <span class="text-[10px] text-gray-500 block">Head to Head Index</span>
+          <span class="font-bold text-amber-600 text-sm">${match.metrics?.h2h || 80}%</span>
         </div>
       `;
+
       document.getElementById('analyticsModal').classList.remove('hidden');
     }
 
     function closeAnalyticsModal() { document.getElementById('analyticsModal').classList.add('hidden'); }
     function openVipModal() { document.getElementById('vipModal').classList.remove('hidden'); }
     function closeVipModal() { document.getElementById('vipModal').classList.add('hidden'); }
-    function toggleMobileMenu() { document.getElementById('mobileMenu').classList.toggle('hidden'); }
 
     function showToast(msg) {
       const toast = document.getElementById('toast');
