@@ -14,7 +14,7 @@ HEADERS_SPORTS = {
 }
 
 def get_all_raw_matches_from_api():
-    """Mengambil SELURUH jadwal pertandingan hari ini & besok lengkap dengan Logo, Skor, dan Status"""
+    """Mengambil SELURUH jadwal pertandingan hari ini & besok dari API-SPORTS (Filter Jam 11 s/d 11)"""
     now_wib = datetime.now(WIB)
     today_str = now_wib.strftime("%Y-%m-%d")
     tomorrow_str = (now_wib + timedelta(days=1)).strftime("%Y-%m-%d")
@@ -56,13 +56,13 @@ def get_all_raw_matches_from_api():
                             "fixtureId": fixture.get("id"),
                             "league": league_name,
                             "leagueLogo": league_logo,
-                            "homeTeam": teams.get("home", {}).get("name"),
-                            "homeLogo": teams.get("home", {}).get("logo"),
-                            "awayTeam": teams.get("away", {}).get("name"),
-                            "awayLogo": teams.get("away", {}).get("logo"),
+                            "homeTeam": teams.get("home", {}).get("name", "Home"),
+                            "homeLogo": teams.get("home", {}).get("logo", ""),
+                            "awayTeam": teams.get("away", {}).get("name", "Away"),
+                            "awayLogo": teams.get("away", {}).get("logo", ""),
                             "kickoffUtc": date_utc_str,
                             "kickoffWib": match_dt_wib.strftime("%H:%M") + " WIB",
-                            "statusShort": status.get("short", "NS"), # FT, 1H, 2H, HT, NS
+                            "statusShort": status.get("short", "NS"),
                             "statusElapsed": status.get("elapsed", 0),
                             "scoreHome": goals.get("home"),
                             "scoreAway": goals.get("away")
@@ -103,15 +103,18 @@ def analyze_and_filter_with_gemini(raw_matches):
 
     available_models = get_active_gemini_models()
 
+    # Batasi sampel maksimal 50 pertandingan agar prompt Gemini tidak overload
+    sample_data = raw_matches[:50]
+
     prompt = f"""
-    Kamu adalah Head Quant Analyst Sepak Bola. Berikut adalah jadwal pertandingan sepak bola NYATA dalam rentang jam 11:00 WIB hari ini s/d 11:00 WIB besok:
-    {json.dumps(raw_matches, indent=2)}
+    Kamu adalah Head Quant Analyst Sepak Bola. Berikut adalah jadwal pertandingan sepak bola NYATA:
+    {json.dumps(sample_data, indent=2)}
 
     TUGAS UTAMA:
-    1. Pilih maksimal 10 pertandingan TERBAIK dari daftar di atas yang melibatkan klub/liga papan atas (Premier League, La Liga, Serie A, Champions League, Eredivisie, dll).
+    1. Pilih maksimal 10 pertandingan TERBAIK dari daftar di atas yang melibatkan klub/liga papan atas.
     2. Tentukan proyeksi pilihan pasaran paling masuk akal (1X2, Asian Handicap -1.0, atau Over/Under 2.5).
-    3. Pertahankan properti data mentah (fixtureId, homeLogo, awayLogo, scoreHome, scoreAway, statusShort).
-    4. Output WAJIB berupa JSON ARRAY MURNI tanpa teks/markdown tambahan:
+    3. Pertahankan properti data mentah (fixtureId, homeLogo, awayLogo, scoreHome, scoreAway, statusShort, statusElapsed).
+    4. Output WAJIB berupa JSON ARRAY MURNI tanpa teks/markdown/penjelasan tambahan:
     [
       {{
         "fixtureId": 12345,
@@ -123,10 +126,10 @@ def analyze_and_filter_with_gemini(raw_matches):
         "awayLogo": "URL_LOGO_AWAY",
         "kickoffUtc": "ISO String Waktu UTC",
         "kickoff": "HH:MM WIB",
-        "statusShort": "FT/1H/NS",
-        "statusElapsed": 45,
-        "scoreHome": 2,
-        "scoreAway": 1,
+        "statusShort": "NS",
+        "statusElapsed": 0,
+        "scoreHome": null,
+        "scoreAway": null,
         "pick": "Rekomendasi Pilihan",
         "marketType": "1X2 / HDP / OU",
         "odds": 1.65,
@@ -154,6 +157,7 @@ def analyze_and_filter_with_gemini(raw_matches):
                 result = res.json()
                 text_response = result['candidates'][0]['content']['parts'][0]['text']
                 
+                # Pembersihan string JSON dari balasan Gemini
                 text_cleaned = text_response.strip()
                 if "```json" in text_cleaned:
                     text_cleaned = text_cleaned.split("```json")[1].split("```")[0].strip()
@@ -179,7 +183,7 @@ def analyze_and_filter_with_gemini(raw_matches):
     return []
 
 if __name__ == "__main__":
-    print("Menjalankan FIXSCORE Quant Engine (Live Score & Logo Support)...")
+    print("Menjalankan FIXSCORE Quant Engine...")
     raw_data = get_all_raw_matches_from_api()
     print(f"Total laga nyata ditemukan: {len(raw_data)} pertandingan.")
     
@@ -191,4 +195,4 @@ if __name__ == "__main__":
             json.dump(final_matches, f, indent=2)
         print(f"SELESAI! {len(final_matches)} pertandingan NYATA disimpan ke data/today.json")
     else:
-        print("Gagal memproses Gemini API.")
+        print("Gagal memproses Gemini API. Menampilkan log error.")
