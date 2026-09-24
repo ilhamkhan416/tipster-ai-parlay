@@ -63,19 +63,24 @@ def get_all_raw_matches_from_api():
     return raw_list
 
 def analyze_and_filter_with_gemini(raw_matches):
-    """Mengirim data pertandingan nyata ke Gemini AI untuk disaring"""
+    """Mengirim data pertandingan ke Gemini AI dengan multiple endpoint fallback"""
     if not GEMINI_API_KEY or not raw_matches:
-        print("PERINGATAN: Gemini API Key / Data Mentah Kosong! Beralih ke fallback.")
+        print("PERINGATAN: GEMINI_API_KEY / Data Mentah Kosong!")
         return []
 
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
-    
+    # Daftar endpoint model yang dicoba secara berurutan
+    endpoints = [
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent",
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent",
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent"
+    ]
+
     prompt = f"""
     Kamu adalah Head Quant Analyst Sepak Bola. Berikut adalah jadwal pertandingan sepak bola NYATA dalam rentang jam 11:00 WIB hari ini s/d 11:00 WIB besok:
     {json.dumps(raw_matches, indent=2)}
 
     TUGAS UTAMA:
-    1. Pilih maksimal 10 pertandingan TERBAIK dari daftar di atas yang melibatkan klub/liga papan atas.
+    1. Pilih maksimal 10 pertandingan TERBAIK dari daftar di atas yang melibatkan klub/liga papan atas (Premier League, La Liga, Serie A, Champions League, Eredivisie, dll).
     2. Tentukan proyeksi pilihan pasaran paling masuk akal (1X2, Asian Handicap -1.0, atau Over/Under 2.5).
     3. Output WAJIB berupa JSON ARRAY MURNI tanpa teks/markdown tambahan:
     [
@@ -97,34 +102,45 @@ def analyze_and_filter_with_gemini(raw_matches):
     """
 
     payload = {"contents": [{"parts": [{"text": prompt}]}]}
+    
+    # Pengiriman API Key lewat Header Resmi Google AI Studio
+    headers = {
+        "Content-Type": "application/json",
+        "x-goog-api-key": GEMINI_API_KEY
+    }
 
-    try:
-        res = requests.post(url, json=payload, headers={"Content-Type": "application/json"}, timeout=40)
-        if res.status_code == 200:
-            result = res.json()
-            text_response = result['candidates'][0]['content']['parts'][0]['text']
+    for url in endpoints:
+        try:
+            print(f"Mencoba koneksi ke Gemini API via {url.split('/')[-1]}...")
+            res = requests.post(url, json=payload, headers=headers, timeout=40)
             
-            # Pembersihan string JSON dari balasan Gemini
-            text_cleaned = text_response.strip()
-            if text_cleaned.startswith("```"):
-                text_cleaned = text_cleaned.split("\n", 1)[1]
-            if text_cleaned.endswith("```"):
-                text_cleaned = text_cleaned.rsplit("\n", 1)[0]
-            text_cleaned = text_cleaned.replace("```json", "").replace("```", "").strip()
-
-            analyzed_matches = json.loads(text_cleaned)
-            
-            for idx, m in enumerate(analyzed_matches):
-                m["id"] = idx + 1
-                m["isVip"] = True if idx >= 4 else False
-                m["homeForm"] = ["W", "W", "D", "W", "L"]
-                m["awayForm"] = ["D", "W", "L", "W", "D"]
-                m["metrics"] = {"form": 88, "h2h": 82, "xG": 80, "marketVal": 84}
+            if res.status_code == 200:
+                result = res.json()
+                text_response = result['candidates'][0]['content']['parts'][0]['text']
                 
-            return analyzed_matches
-    except Exception as e:
-        print(f"Error pada pemrosesan Gemini API: {e}")
-        
+                # Pembersihan string JSON
+                text_cleaned = text_response.strip()
+                if "```json" in text_cleaned:
+                    text_cleaned = text_cleaned.split("```json")[1].split("```")[0].strip()
+                elif "```" in text_cleaned:
+                    text_cleaned = text_cleaned.split("```")[1].split("```")[0].strip()
+
+                analyzed_matches = json.loads(text_cleaned)
+                
+                for idx, m in enumerate(analyzed_matches):
+                    m["id"] = idx + 1
+                    m["isVip"] = True if idx >= 4 else False
+                    m["homeForm"] = ["W", "W", "D", "W", "L"]
+                    m["awayForm"] = ["D", "W", "L", "W", "D"]
+                    m["metrics"] = {"form": 88, "h2h": 82, "xG": 80, "marketVal": 84}
+                    
+                print("BERHASIL memproses data via Gemini AI!")
+                return analyzed_matches
+            else:
+                print(f"Gagal koneksi endpoint ({res.status_code}): {res.text[:100]}")
+        except Exception as e:
+            print(f"Error pada endpoint {url}: {e}")
+            
     return []
 
 if __name__ == "__main__":
@@ -138,6 +154,6 @@ if __name__ == "__main__":
         os.makedirs("data", exist_ok=True)
         with open("data/today.json", "w") as f:
             json.dump(final_matches, f, indent=2)
-        print(f"BERHASIL! {len(final_matches)} pertandingan NYATA disimpan ke data/today.json")
+        print(f"SELESAI! {len(final_matches)} pertandingan NYATA hasil analisis Gemini disimpan ke data/today.json")
     else:
-        print("Gagal memproses data API nyata. Menampilkan data fallback...")
+        print("Gagal memproses Gemini API. Menampilkan log error.")
