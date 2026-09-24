@@ -1,1 +1,352 @@
-[]
+[
+  {
+    "id": 1,
+    "league": "GOIANO - 2",
+    "kickoff": "00:00 WIB",
+    "homeTeam": "Goian\u00e9sia",
+    "awayTeam": "Rio Verde",
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "pick": "Goian\u00e9sia Menang (1X2)",
+    "marketType": "1X2",
+    "odds": 1.5,
+    "winProb": 70,
+    "isVip": false,
+    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
+    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "metrics": {
+      "form": 85,
+      "h2h": 80,
+      "xG": 78,
+      "marketVal": 82
+    },
+    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Goian\u00e9sia."
+  },
+  {
+    "id": 2,
+    "league": "LIGA FEMENINA",
+    "kickoff": "00:00 WIB",
+    "homeTeam": "Santa Fe W",
+    "awayTeam": "Deportivo Cali W",
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "pick": "Santa Fe W Menang (1X2)",
+    "marketType": "1X2",
+    "odds": 1.58,
+    "winProb": 73,
+    "isVip": false,
+    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
+    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "metrics": {
+      "form": 85,
+      "h2h": 80,
+      "xG": 78,
+      "marketVal": 82
+    },
+    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Santa Fe W."
+  },
+  {
+    "id": 3,
+    "league": "PRIMERA A",
+    "kickoff": "00:30 WIB",
+    "homeTeam": "America de Cali",
+    "awayTeam": "\u00c1guilas Doradas",
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "pick": "America de Cali Menang (1X2)",
+    "marketType": "1X2",
+    "odds": 1.66,
+    "winProb": 76,
+    "isVip": false,
+    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
+    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "metrics": {
+      "form": 85,
+      "h2h": 80,
+      "xG": 78,
+      "marketVal": 82
+    },
+    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada America de Cali."
+  },
+  {
+    "id": 4,
+    "league": "PRIMERA DIVISION",
+    "kickoff": "01:00 WIB",
+    "homeTeam": "Firpo",
+    "awayTeam": "Cacahuatique",
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "pick": "Firpo Menang (1X2)",
+    "marketType": "1X2",
+    "odds": 1.74,
+    "winProb": 79,
+    "isVip": false,
+    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
+    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "metrics": {
+      "form": 85,
+      "h2h": 80,
+      "xG": 78,
+      "marketVal": 82
+    },
+    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Firpo."
+  },
+  {
+    "id": 5,
+    "league": "PRIMERA DIVISION",
+    "kickoff": "01:00 WIB",
+    "homeTeam": "Alianza",
+    "awayTeam": "Fuerte San Francisco",
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "pick": "Alianza Menang (1X2)",
+    "marketType": "1X2",
+    "odds": 1.82,
+    "winProb": 82,
+    "isVip": true,
+    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
+    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "metrics": {
+      "form": 85,
+      "h2h": 80,
+      "xG": 78,
+      "marketVal": 82
+    },
+    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Alianza."
+  },
+  {
+    "id": 6,
+    "league": "MAJOR LEAGUE SOCCER",
+    "kickoff": "01:30 WIB",
+    "homeTeam": "Seattle Sounders",
+    "awayTeam": "Real Salt Lake",
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "pick": "Seattle Sounders Menang (1X2)",
+    "marketType": "1X2",
+    "odds": 1.5,
+    "winProb": 70,
+    "isVip": true,
+    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
+    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "metrics": {
+      "form": 85,
+      "h2h": 80,
+      "xG": 78,
+      "marketVal": 82
+    },
+    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Seattle Sounders."
+  },
+  {
+    "id": 7,
+    "league": "CANADIAN PREMIER LEAGUE",
+    "kickoff": "02:00 WIB",
+    "homeTeam": "Vancouver FC",
+    "awayTeam": "York United",
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "pick": "Vancouver FC Menang (1X2)",
+    "marketType": "1X2",
+    "odds": 1.58,
+    "winProb": 73,
+    "isVip": true,
+    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
+    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "metrics": {
+      "form": 85,
+      "h2h": 80,
+      "xG": 78,
+      "marketVal": 82
+    },
+    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Vancouver FC."
+  },
+  {
+    "id": 8,
+    "league": "LIGA NACIONAL",
+    "kickoff": "02:00 WIB",
+    "homeTeam": "Xelaj\u00fa",
+    "awayTeam": "Antigua GFC",
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "pick": "Xelaj\u00fa Menang (1X2)",
+    "marketType": "1X2",
+    "odds": 1.66,
+    "winProb": 76,
+    "isVip": true,
+    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
+    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "metrics": {
+      "form": 85,
+      "h2h": 80,
+      "xG": 78,
+      "marketVal": 82
+    },
+    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Xelaj\u00fa."
+  },
+  {
+    "id": 9,
+    "league": "FRIENDLIES",
+    "kickoff": "04:00 WIB",
+    "homeTeam": "Solomon Islands",
+    "awayTeam": "Vanuatu",
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "pick": "Solomon Islands Menang (1X2)",
+    "marketType": "1X2",
+    "odds": 1.74,
+    "winProb": 79,
+    "isVip": true,
+    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
+    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "metrics": {
+      "form": 85,
+      "h2h": 80,
+      "xG": 78,
+      "marketVal": 82
+    },
+    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Solomon Islands."
+  },
+  {
+    "id": 10,
+    "league": "FRIENDLIES",
+    "kickoff": "07:00 WIB",
+    "homeTeam": "Papua New Guinea",
+    "awayTeam": "New Caledonia",
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "pick": "Papua New Guinea Menang (1X2)",
+    "marketType": "1X2",
+    "odds": 1.82,
+    "winProb": 82,
+    "isVip": true,
+    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
+    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "metrics": {
+      "form": 85,
+      "h2h": 80,
+      "xG": 78,
+      "marketVal": 82
+    },
+    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Papua New Guinea."
+  }
+]
