@@ -1,0 +1,63 @@
+/* FIXSCORE CUSTOM STYLES */
+
+body {
+  background-color: #f2f4f7;
+  color: #111827;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #e5e7eb;
+}
+::-webkit-scrollbar-thumb {
+  background: #a21220;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #850e19;
+}
+
+/* Card Effects */
+.flash-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.flash-card-hover {
+  transition: all 0.15s ease-in-out;
+}
+.flash-card-hover:hover {
+  border-color: #a21220;
+  box-shadow: 0 4px 12px rgba(162, 18, 32, 0.08);
+}
+
+/* Form Badges & Indicators */
+.blur-lock {
+  filter: blur(4px);
+  user-select: none;
+  pointer-events: none;
+}
+.form-badge-w {
+  background-color: #16a34a;
+  color: #ffffff;
+}
+.form-badge-d {
+  background-color: #ca8a04;
+  color: #ffffff;
+}
+.form-badge-l {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+.indicator-pos {
+  background-color: #f0fdf4;
+  color: #15803d;
+  border-color: #bbf7d0;
+}
+.indicator-neg {
+  background-color: #fef2f2;
+  color: #b91c1c;
+  border-color: #fecaca;
+}
