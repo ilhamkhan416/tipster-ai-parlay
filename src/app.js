@@ -1,8 +1,23 @@
-// FIXSCORE APPLICATION LOGIC (FIXED SCORE HORIZONTAL & PREDICTION BLUR LOCK)
+// FIXSCORE APPLICATION LOGIC (BROKEN IMAGE AUTO-FALLBACK & NO-BREAK HORIZONTAL SCORE)
 
 let MOCK_TODAY_MATCHES = [];
 let selectedMarketFilter = 'ALL';
 let userParlaySlip = [];
+
+// Fallback untuk penanganan URL gambar logo yang rusak dari API external
+function getTeamLogoHtml(logoUrl, teamName) {
+  if (logoUrl && logoUrl.trim() !== "") {
+    return `<img src="${logoUrl}" alt="${teamName}" class="w-7 h-7 sm:w-8 sm:h-8 object-contain shrink-0" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fa-solid fa-shield-halved text-slate-400 text-lg sm:text-xl shrink-0\'></i>';" />`;
+  }
+  return `<i class="fa-solid fa-shield-halved text-slate-400 text-lg sm:text-xl shrink-0"></i>`;
+}
+
+function getLeagueLogoHtml(logoUrl, leagueName) {
+  if (logoUrl && logoUrl.trim() !== "") {
+    return `<img src="${logoUrl}" alt="${leagueName}" class="w-4 h-4 object-contain shrink-0" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fa-solid fa-trophy text-amber-500 text-xs shrink-0\'></i>';" />`;
+  }
+  return `<i class="fa-solid fa-trophy text-amber-500 text-xs shrink-0"></i>`;
+}
 
 // Memuat data dari today.json
 async function loadDataFromJSON() {
@@ -74,20 +89,20 @@ function renderMatchesList() {
       } catch(e) {}
     }
 
-    // FT SCORE HORIZONTAL RAPAT (PANGKAT FIXED WIDE - 100% TIDAK PERNAH PATAH/TERPOTONG)
+    // FT SCORE HORIZONTAL DENGAN DUKUNGAN LAYOUT LEBAR (TIDAK PERNAH TERPOTONG KEBAWAH)
     let statusBadge = `<span class="bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200 text-slate-700 text-[10px] font-bold"><i class="fa-regular fa-clock mr-1 text-flash-red"></i>${localKickoffStr}</span>`;
-    let centerScoreDisplay = `<span class="text-[10px] font-mono text-emerald-800 font-bold bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200">VS</span>`;
+    let centerScoreDisplay = `<span class="text-[10px] font-mono text-emerald-800 font-bold bg-emerald-50 px-2.5 py-0.5 rounded-md border border-emerald-200">VS</span>`;
 
     if (['FT', 'AET', 'PEN'].includes(m.statusShort)) {
       statusBadge = `<span class="bg-slate-800 text-white px-2 py-0.5 rounded-md text-[10px] font-bold font-mono">FT</span>`;
-      centerScoreDisplay = `<div class="inline-flex items-center justify-center bg-slate-900 text-white px-3 py-1 rounded-lg font-mono font-black text-xs tracking-widest whitespace-nowrap min-w-[65px] text-center shadow-inner">${m.scoreHome ?? 0}&nbsp;-&nbsp;${m.scoreAway ?? 0}</div>`;
+      centerScoreDisplay = `<div class="inline-flex items-center justify-center bg-slate-900 text-white px-3.5 py-1 rounded-lg font-mono font-black text-xs tracking-widest whitespace-nowrap min-w-[70px] text-center shadow-sm">${m.scoreHome ?? 0}&nbsp;-&nbsp;${m.scoreAway ?? 0}</div>`;
     } else if (['1H', '2H', 'HT', 'LIVE', 'ET', 'P'].includes(m.statusShort)) {
       const minuteStr = m.statusElapsed ? `${m.statusElapsed}'` : 'LIVE';
       statusBadge = `<span class="bg-red-600 text-white px-2 py-0.5 rounded-md text-[10px] font-bold font-mono animate-pulse">LIVE ${minuteStr}</span>`;
-      centerScoreDisplay = `<div class="inline-flex items-center justify-center bg-red-600 text-white px-3 py-1 rounded-lg font-mono font-black text-xs tracking-widest whitespace-nowrap min-w-[65px] text-center shadow-inner animate-pulse">${m.scoreHome ?? 0}&nbsp;-&nbsp;${m.scoreAway ?? 0}</div>`;
+      centerScoreDisplay = `<div class="inline-flex items-center justify-center bg-red-600 text-white px-3.5 py-1 rounded-lg font-mono font-black text-xs tracking-widest whitespace-nowrap min-w-[70px] text-center shadow-sm animate-pulse">${m.scoreHome ?? 0}&nbsp;-&nbsp;${m.scoreAway ?? 0}</div>`;
     }
 
-    // SECTION PREDIKSI MODEL JIKA TERKUNCI (VIP)
+    // PROYEKSI PREDIKSI MODEL (DIBLUR KHUSUS PARTAI VIP)
     let projectionContent = '';
     if (m.isVip) {
       projectionContent = `
@@ -131,17 +146,17 @@ function renderMatchesList() {
       <!-- LEAGUE HEADER -->
       <div class="flex justify-between items-center text-xs font-mono text-slate-500 border-b border-slate-100 pb-2">
         <div class="flex items-center gap-1.5">
-          ${m.leagueLogo ? `<img src="${m.leagueLogo}" class="w-4 h-4 object-contain" />` : `<i class="fa-solid fa-trophy text-amber-500"></i>`}
+          ${getLeagueLogoHtml(m.leagueLogo, m.league)}
           <span class="font-extrabold text-slate-900 text-[11px] font-sans tracking-wide truncate max-w-[180px] sm:max-w-none">${m.league}</span>
         </div>
         ${statusBadge}
       </div>
 
-      <!-- MATCH MAIN DETAILS (NAMA TIM & SCORE TERLIHAT JELAS 100%) -->
-      <div class="grid grid-cols-12 items-center gap-1 sm:gap-2">
+      <!-- MATCH MAIN DETAILS (NAMA TIM & LOGO DENGAN AUTO-FALLBACK GAMBAR RUSAK) -->
+      <div class="flex items-center justify-between gap-2">
         <!-- HOME TEAM -->
-        <div class="col-span-4 sm:col-span-5 flex items-center gap-1.5 sm:gap-2 min-w-0">
-          ${m.homeLogo ? `<img src="${m.homeLogo}" class="w-7 h-7 sm:w-8 sm:h-8 object-contain shrink-0" />` : `<i class="fa-solid fa-shield text-slate-300 text-lg shrink-0"></i>`}
+        <div class="flex-1 flex items-center gap-2 min-w-0">
+          ${getTeamLogoHtml(m.homeLogo, m.homeTeam)}
           <div class="space-y-0.5 min-w-0">
             <div class="font-extrabold text-slate-900 text-xs sm:text-sm truncate">${m.homeTeam}</div>
             <div class="flex items-center gap-0.5 font-mono text-[8px] font-bold">
@@ -151,19 +166,19 @@ function renderMatchesList() {
         </div>
 
         <!-- HORIZONTAL SCORE DISPLAY -->
-        <div class="col-span-4 sm:col-span-2 text-center flex justify-center items-center px-1">
+        <div class="shrink-0 text-center px-1">
           ${centerScoreDisplay}
         </div>
 
         <!-- AWAY TEAM -->
-        <div class="col-span-4 sm:col-span-5 flex items-center justify-end gap-1.5 sm:gap-2 text-right min-w-0">
+        <div class="flex-1 flex items-center justify-end gap-2 text-right min-w-0">
           <div class="space-y-0.5 min-w-0">
             <div class="font-extrabold text-slate-900 text-xs sm:text-sm truncate">${m.awayTeam}</div>
             <div class="flex items-center justify-end gap-0.5 font-mono text-[8px] font-bold">
               ${m.awayForm ? m.awayForm.map(f => `<span class="w-3.5 h-3.5 rounded flex items-center justify-center ${f==='W'?'form-badge-w':f==='D'?'form-badge-d':'form-badge-l'}">${f}</span>`).join('') : ''}
             </div>
           </div>
-          ${m.awayLogo ? `<img src="${m.awayLogo}" class="w-7 h-7 sm:w-8 sm:h-8 object-contain shrink-0" />` : `<i class="fa-solid fa-shield text-slate-300 text-lg shrink-0"></i>`}
+          ${getTeamLogoHtml(m.awayLogo, m.awayTeam)}
         </div>
       </div>
 
@@ -179,7 +194,7 @@ function renderMatchesList() {
         </div>
       </div>
 
-      <!-- PROYEKSI PREDIKSI MODEL (DIBLUR KHUSUS PARTAI VIP) -->
+      <!-- PROYEKSI PREDIKSI MODEL -->
       ${projectionContent}
 
       <!-- CARD FOOTER BUTTONS -->
@@ -347,7 +362,7 @@ function openAnalyticsModal(id) {
 
 function closeAnalyticsModal() { document.getElementById('analyticsModal').classList.add('hidden'); }
 function openVipModal() { document.getElementById('vipModal').classList.remove('hidden'); }
-function closeVipModal() { document.getElementById('vipModal').classList.add('hidden'); }
+function closeVipModal() { document.getElementById('vipModal').classList.remove('hidden'); }
 
 function showToast(msg) {
   const toast = document.getElementById('toast');
