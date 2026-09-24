@@ -1,362 +1,362 @@
 [
   {
     "id": 1,
-    "league": "FRIENDLIES",
-    "kickoffUtc": "2026-09-24T04:00:00+00:00",
-    "kickoff": "11:00 WIB",
-    "homeTeam": "Solomon Islands",
-    "awayTeam": "Vanuatu",
+    "league": "ENGLISH PREMIER LEAGUE",
+    "kickoffUtc": "2026-09-24T15:00:00Z",
+    "kickoff": "15:00 WIB",
+    "homeTeam": "Arsenal",
+    "awayTeam": "Brighton",
     "homeForm": [
       "W",
       "W",
+      "W",
       "D",
+      "W"
+    ],
+    "awayForm": [
+      "W",
+      "D",
+      "L",
       "W",
       "L"
     ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "pick": "Solomon Islands Menang (1X2)",
+    "pick": "Arsenal Menang",
     "marketType": "1X2",
-    "odds": 1.74,
-    "winProb": 79,
+    "odds": 1.62,
+    "winProb": 78,
     "isVip": false,
-    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
-    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "posEdge": "+16.8% +EV (Keunggulan xG Kandang)",
+    "riskFactor": "-3.8% Volatilitas Transisi",
     "metrics": {
-      "form": 85,
-      "h2h": 80,
-      "xG": 78,
-      "marketVal": 82
+      "form": 88,
+      "h2h": 82,
+      "xG": 80,
+      "marketVal": 84
     },
-    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Solomon Islands."
+    "aiNotes": "Kalkulasi Poisson dan tren xG mendukung keunggulan statistik Arsenal."
   },
   {
     "id": 2,
-    "league": "FRIENDLIES",
-    "kickoffUtc": "2026-09-24T07:00:00+00:00",
-    "kickoff": "14:00 WIB",
-    "homeTeam": "Papua New Guinea",
-    "awayTeam": "New Caledonia",
+    "league": "SPANISH LA LIGA",
+    "kickoffUtc": "2026-09-24T18:30:00Z",
+    "kickoff": "18:30 WIB",
+    "homeTeam": "Real Madrid",
+    "awayTeam": "Real Betis",
     "homeForm": [
       "W",
       "W",
+      "W",
       "D",
+      "W"
+    ],
+    "awayForm": [
+      "W",
+      "D",
+      "L",
       "W",
       "L"
     ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "pick": "Papua New Guinea Menang (1X2)",
-    "marketType": "1X2",
-    "odds": 1.82,
-    "winProb": 82,
+    "pick": "Over 2.5 Gol",
+    "marketType": "OU",
+    "odds": 1.58,
+    "winProb": 75,
     "isVip": false,
-    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
-    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "posEdge": "+16.8% +EV (Keunggulan xG Kandang)",
+    "riskFactor": "-3.8% Volatilitas Transisi",
     "metrics": {
-      "form": 85,
-      "h2h": 80,
-      "xG": 78,
-      "marketVal": 82
+      "form": 88,
+      "h2h": 82,
+      "xG": 80,
+      "marketVal": 84
     },
-    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Papua New Guinea."
+    "aiNotes": "Kalkulasi Poisson dan tren xG mendukung keunggulan statistik Real Madrid."
   },
   {
     "id": 3,
-    "league": "FRIENDLIES",
-    "kickoffUtc": "2026-09-24T08:30:00+00:00",
-    "kickoff": "15:30 WIB",
-    "homeTeam": "Turkmenistan",
-    "awayTeam": "New Zealand",
+    "league": "GERMAN BUNDESLIGA",
+    "kickoffUtc": "2026-09-24T20:30:00Z",
+    "kickoff": "20:30 WIB",
+    "homeTeam": "Bayer Leverkusen",
+    "awayTeam": "Wolfsburg",
     "homeForm": [
       "W",
       "W",
+      "W",
       "D",
+      "W"
+    ],
+    "awayForm": [
+      "W",
+      "D",
+      "L",
       "W",
       "L"
     ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "pick": "Turkmenistan Menang (1X2)",
-    "marketType": "1X2",
-    "odds": 1.5,
-    "winProb": 70,
+    "pick": "Bayer Leverkusen -1.0 HDP",
+    "marketType": "HDP",
+    "odds": 1.72,
+    "winProb": 76,
     "isVip": false,
-    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
-    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "posEdge": "+16.8% +EV (Keunggulan xG Kandang)",
+    "riskFactor": "-3.8% Volatilitas Transisi",
     "metrics": {
-      "form": 85,
-      "h2h": 80,
-      "xG": 78,
-      "marketVal": 82
+      "form": 88,
+      "h2h": 82,
+      "xG": 80,
+      "marketVal": 84
     },
-    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Turkmenistan."
+    "aiNotes": "Kalkulasi Poisson dan tren xG mendukung keunggulan statistik Bayer Leverkusen."
   },
   {
     "id": 4,
-    "league": "PREMIER LEAGUE",
-    "kickoffUtc": "2026-09-24T09:00:00+00:00",
-    "kickoff": "16:00 WIB",
-    "homeTeam": "Ugyen Academy",
-    "awayTeam": "Drukpa",
+    "league": "ITALIAN SERIE A",
+    "kickoffUtc": "2026-09-24T23:00:00Z",
+    "kickoff": "23:00 WIB",
+    "homeTeam": "Inter Milan",
+    "awayTeam": "Atalanta",
     "homeForm": [
       "W",
       "W",
+      "W",
       "D",
+      "W"
+    ],
+    "awayForm": [
+      "W",
+      "D",
+      "L",
       "W",
       "L"
     ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "pick": "Ugyen Academy Menang (1X2)",
-    "marketType": "1X2",
-    "odds": 1.58,
-    "winProb": 73,
+    "pick": "Over 2.5 Gol",
+    "marketType": "OU",
+    "odds": 1.68,
+    "winProb": 72,
     "isVip": false,
-    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
-    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "posEdge": "+16.8% +EV (Keunggulan xG Kandang)",
+    "riskFactor": "-3.8% Volatilitas Transisi",
     "metrics": {
-      "form": 85,
-      "h2h": 80,
-      "xG": 78,
-      "marketVal": 82
+      "form": 88,
+      "h2h": 82,
+      "xG": 80,
+      "marketVal": 84
     },
-    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Ugyen Academy."
+    "aiNotes": "Kalkulasi Poisson dan tren xG mendukung keunggulan statistik Inter Milan."
   },
   {
     "id": 5,
-    "league": "FIFA ASEAN CUP",
-    "kickoffUtc": "2026-09-24T09:00:00+00:00",
-    "kickoff": "16:00 WIB",
-    "homeTeam": "Laos",
-    "awayTeam": "Brunei",
+    "league": "DUTCH EREDIVISIE",
+    "kickoffUtc": "2026-09-25T01:00:00Z",
+    "kickoff": "01:00 WIB",
+    "homeTeam": "PSV Eindhoven",
+    "awayTeam": "FC Utrecht",
     "homeForm": [
       "W",
       "W",
+      "W",
       "D",
+      "W"
+    ],
+    "awayForm": [
+      "W",
+      "D",
+      "L",
       "W",
       "L"
     ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "pick": "Laos Menang (1X2)",
-    "marketType": "1X2",
-    "odds": 1.66,
-    "winProb": 76,
+    "pick": "PSV Eindhoven -1.0 HDP",
+    "marketType": "HDP",
+    "odds": 1.8,
+    "winProb": 74,
     "isVip": true,
-    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
-    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "posEdge": "+16.8% +EV (Keunggulan xG Kandang)",
+    "riskFactor": "-3.8% Volatilitas Transisi",
     "metrics": {
-      "form": 85,
-      "h2h": 80,
-      "xG": 78,
-      "marketVal": 82
+      "form": 88,
+      "h2h": 82,
+      "xG": 80,
+      "marketVal": 84
     },
-    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Laos."
+    "aiNotes": "Kalkulasi Poisson dan tren xG mendukung keunggulan statistik PSV Eindhoven."
   },
   {
     "id": 6,
-    "league": "FRIENDLIES",
-    "kickoffUtc": "2026-09-24T09:30:00+00:00",
-    "kickoff": "16:30 WIB",
-    "homeTeam": "Palestine",
-    "awayTeam": "New Zealand",
+    "league": "FRENCH LIGUE 1",
+    "kickoffUtc": "2026-09-25T02:00:00Z",
+    "kickoff": "02:00 WIB",
+    "homeTeam": "PSG",
+    "awayTeam": "Lille",
     "homeForm": [
       "W",
       "W",
+      "W",
       "D",
+      "W"
+    ],
+    "awayForm": [
+      "W",
+      "D",
+      "L",
       "W",
       "L"
     ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "pick": "Palestine Menang (1X2)",
+    "pick": "PSG Menang",
     "marketType": "1X2",
-    "odds": 1.74,
+    "odds": 1.55,
     "winProb": 79,
     "isVip": true,
-    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
-    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "posEdge": "+16.8% +EV (Keunggulan xG Kandang)",
+    "riskFactor": "-3.8% Volatilitas Transisi",
     "metrics": {
-      "form": 85,
-      "h2h": 80,
-      "xG": 78,
-      "marketVal": 82
+      "form": 88,
+      "h2h": 82,
+      "xG": 80,
+      "marketVal": 84
     },
-    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Palestine."
+    "aiNotes": "Kalkulasi Poisson dan tren xG mendukung keunggulan statistik PSG."
   },
   {
     "id": 7,
-    "league": "CECAFA U20 CHAMPIONSHIP",
-    "kickoffUtc": "2026-09-24T09:30:00+00:00",
-    "kickoff": "16:30 WIB",
-    "homeTeam": "Uganda U20",
-    "awayTeam": "Burundi U20",
+    "league": "ENGLISH CHAMPIONSHIP",
+    "kickoffUtc": "2026-09-25T02:45:00Z",
+    "kickoff": "02:45 WIB",
+    "homeTeam": "Leeds United",
+    "awayTeam": "Hull City",
     "homeForm": [
       "W",
       "W",
+      "W",
       "D",
+      "W"
+    ],
+    "awayForm": [
+      "W",
+      "D",
+      "L",
       "W",
       "L"
     ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "pick": "Uganda U20 Menang (1X2)",
+    "pick": "Leeds United Menang",
     "marketType": "1X2",
-    "odds": 1.82,
-    "winProb": 82,
+    "odds": 1.6,
+    "winProb": 73,
     "isVip": true,
-    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
-    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "posEdge": "+16.8% +EV (Keunggulan xG Kandang)",
+    "riskFactor": "-3.8% Volatilitas Transisi",
     "metrics": {
-      "form": 85,
-      "h2h": 80,
-      "xG": 78,
-      "marketVal": 82
+      "form": 88,
+      "h2h": 82,
+      "xG": 80,
+      "marketVal": 84
     },
-    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Uganda U20."
+    "aiNotes": "Kalkulasi Poisson dan tren xG mendukung keunggulan statistik Leeds United."
   },
   {
     "id": 8,
-    "league": "IFA SHIELD",
-    "kickoffUtc": "2026-09-24T09:30:00+00:00",
-    "kickoff": "16:30 WIB",
-    "homeTeam": "Calcutta Customs",
-    "awayTeam": "East Bengal II",
+    "league": "PORTUGUESE PRIMEIRA LIGA",
+    "kickoffUtc": "2026-09-25T03:15:00Z",
+    "kickoff": "03:15 WIB",
+    "homeTeam": "Benfica",
+    "awayTeam": "Moreirense",
     "homeForm": [
       "W",
       "W",
+      "W",
       "D",
+      "W"
+    ],
+    "awayForm": [
+      "W",
+      "D",
+      "L",
       "W",
       "L"
     ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "pick": "Calcutta Customs Menang (1X2)",
-    "marketType": "1X2",
-    "odds": 1.5,
-    "winProb": 70,
+    "pick": "Over 2.5 Gol",
+    "marketType": "OU",
+    "odds": 1.65,
+    "winProb": 71,
     "isVip": true,
-    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
-    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "posEdge": "+16.8% +EV (Keunggulan xG Kandang)",
+    "riskFactor": "-3.8% Volatilitas Transisi",
     "metrics": {
-      "form": 85,
-      "h2h": 80,
-      "xG": 78,
-      "marketVal": 82
+      "form": 88,
+      "h2h": 82,
+      "xG": 80,
+      "marketVal": 84
     },
-    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Calcutta Customs."
+    "aiNotes": "Kalkulasi Poisson dan tren xG mendukung keunggulan statistik Benfica."
   },
   {
     "id": 9,
-    "league": "FRIENDLIES",
-    "kickoffUtc": "2026-09-24T10:05:00+00:00",
-    "kickoff": "17:05 WIB",
-    "homeTeam": "Japan",
-    "awayTeam": "Uruguay",
+    "league": "SPANISH LA LIGA",
+    "kickoffUtc": "2026-09-25T03:30:00Z",
+    "kickoff": "03:30 WIB",
+    "homeTeam": "Atletico Madrid",
+    "awayTeam": "Espanyol",
     "homeForm": [
       "W",
       "W",
+      "W",
       "D",
+      "W"
+    ],
+    "awayForm": [
+      "W",
+      "D",
+      "L",
       "W",
       "L"
     ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "pick": "Japan Menang (1X2)",
-    "marketType": "1X2",
-    "odds": 1.58,
-    "winProb": 73,
+    "pick": "Atletico Madrid -1.0 HDP",
+    "marketType": "HDP",
+    "odds": 1.75,
+    "winProb": 75,
     "isVip": true,
-    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
-    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "posEdge": "+16.8% +EV (Keunggulan xG Kandang)",
+    "riskFactor": "-3.8% Volatilitas Transisi",
     "metrics": {
-      "form": 85,
-      "h2h": 80,
-      "xG": 78,
-      "marketVal": 82
+      "form": 88,
+      "h2h": 82,
+      "xG": 80,
+      "marketVal": 84
     },
-    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Japan."
+    "aiNotes": "Kalkulasi Poisson dan tren xG mendukung keunggulan statistik Atletico Madrid."
   },
   {
     "id": 10,
-    "league": "FRIENDLIES",
-    "kickoffUtc": "2026-09-24T11:00:00+00:00",
-    "kickoff": "18:00 WIB",
-    "homeTeam": "South Korea",
-    "awayTeam": "Ecuador",
+    "league": "ARGENTINA LIGA PROFESIONAL",
+    "kickoffUtc": "2026-09-25T05:00:00Z",
+    "kickoff": "05:00 WIB",
+    "homeTeam": "River Plate",
+    "awayTeam": "San Lorenzo",
     "homeForm": [
       "W",
       "W",
+      "W",
       "D",
+      "W"
+    ],
+    "awayForm": [
+      "W",
+      "D",
+      "L",
       "W",
       "L"
     ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "pick": "South Korea Menang (1X2)",
+    "pick": "River Plate Menang",
     "marketType": "1X2",
-    "odds": 1.66,
-    "winProb": 76,
+    "odds": 1.52,
+    "winProb": 77,
     "isVip": true,
-    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
-    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "posEdge": "+16.8% +EV (Keunggulan xG Kandang)",
+    "riskFactor": "-3.8% Volatilitas Transisi",
     "metrics": {
-      "form": 85,
-      "h2h": 80,
-      "xG": 78,
-      "marketVal": 82
+      "form": 88,
+      "h2h": 82,
+      "xG": 80,
+      "marketVal": 84
     },
-    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada South Korea."
+    "aiNotes": "Kalkulasi Poisson dan tren xG mendukung keunggulan statistik River Plate."
   }
 ]
