@@ -1,4 +1,4 @@
-// FIXSCORE APPLICATION LOGIC (PURE SVG SHIELD & CLEAN PURE BLUR VIP PREDICTIONS)
+// FIXSCORE APPLICATION LOGIC + AUTOMATIC LIVE SCORE UPDATER
 
 let MOCK_TODAY_MATCHES = [];
 let selectedMarketFilter = 'ALL';
@@ -39,15 +39,51 @@ async function loadDataFromJSON() {
     if (todayRes.ok) {
       MOCK_TODAY_MATCHES = await todayRes.json();
       renderMatchesList();
+      checkLiveMatchesUpdate(); // Periksa jika ada laga yang butuh update live
     }
   } catch (e) {
     console.log("Error loading JSON data.");
   }
 }
 
+// UPDATE SKOR REAL-TIME LANGSUNG DI BROWSER DENGAN FETCH SKOR
+async function checkLiveMatchesUpdate() {
+  const liveMatches = MOCK_TODAY_MATCHES.filter(m => 
+    ['1H', '2H', 'HT', 'LIVE', 'ET', 'P', '79'].includes(String(m.statusShort)) ||
+    (m.kickoffUtc && new Date(m.kickoffUtc) <= new Date() && m.statusShort !== 'FT')
+  );
+
+  if (liveMatches.length === 0) return;
+
+  // Memanggil endpoint publik cepat untuk memperbarui skor & status laga yang berjalan
+  try {
+    for (let match of liveMatches) {
+      if (match.fixtureId) {
+        const res = await fetch(`https://v3.football.api-sports.io/fixtures?id=${match.fixtureId}`, {
+          headers: { 'x-apisports-key': 'd1b2c3a4b5c6d7e8f90' } // Ganti jika pakai API key tersendiri
+        });
+        if (res.ok) {
+          const apiData = await res.json();
+          if (apiData.response && apiData.response.length > 0) {
+            const fix = apiData.response[0];
+            match.scoreHome = fix.goals.home ?? match.scoreHome;
+            match.scoreAway = fix.goals.away ?? match.scoreAway;
+            match.statusShort = fix.fixture.status.short;
+            match.statusElapsed = fix.fixture.status.elapsed;
+          }
+        }
+      }
+    }
+    renderMatchesList(); // Re-render tampilan skor terbaru
+  } catch (err) {
+    console.log("Live score check fallback.");
+  }
+}
+
 window.onload = function() {
   loadDataFromJSON();
-  setInterval(loadDataFromJSON, 60000); // Refresh otomatis tiap 60 detik
+  // Auto check live score tiap 45 detik langsung di browser tanpa perlu GitHub Actions
+  setInterval(loadDataFromJSON, 45000); 
 };
 
 function toggleSidebar() {
@@ -101,7 +137,7 @@ function renderMatchesList() {
       } catch(e) {}
     }
 
-    // FT SCORE HORIZONTAL RAPAT (100% TIDAK PERNAH PATAH/TERPOTONG KEBAWAH)
+    // FT SCORE HORIZONTAL RAPAT
     let statusBadge = `<span class="bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200 text-slate-700 text-[10px] font-bold"><i class="fa-regular fa-clock mr-1 text-flash-red"></i>${localKickoffStr}</span>`;
     let centerScoreDisplay = `<span class="text-[10px] font-mono text-emerald-800 font-bold bg-emerald-50 px-2.5 py-0.5 rounded-md border border-emerald-200">VS</span>`;
 
@@ -119,7 +155,6 @@ function renderMatchesList() {
     if (m.isVip) {
       projectionContent = `
         <div class="relative bg-slate-50/80 p-2.5 rounded-xl border border-slate-200 overflow-hidden flex items-center justify-between">
-          <!-- TEKS MODEL DI-BLUR TEBAL MURNI (TANPA BANNER HITAM PEKAT) -->
           <div class="filter blur-md select-none opacity-40 pointer-events-none flex items-center justify-between w-full pr-28">
             <div>
               <span class="text-[9px] text-slate-400 block font-bold uppercase tracking-wider">PROYEKSI MODEL</span>
@@ -130,8 +165,6 @@ function renderMatchesList() {
               <span class="font-extrabold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-md border border-emerald-300">56%</span>
             </div>
           </div>
-
-          <!-- KETERANGAN TERKUNCI & TOMBOL BUKA EKSKLUSIF DI ATAS BLUR -->
           <div class="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-2">
             <span class="text-[10px] font-bold text-amber-600 font-mono flex items-center gap-1 hidden sm:inline-flex">
               <i class="fa-solid fa-lock text-flash-red"></i> VIP
@@ -167,7 +200,7 @@ function renderMatchesList() {
         ${statusBadge}
       </div>
 
-      <!-- MATCH MAIN DETAILS (NAMA TIM & LOGO PERISAI SVG MANGLING 100% BEBAS BROKEN IMAGE) -->
+      <!-- MATCH MAIN DETAILS -->
       <div class="flex items-center justify-between gap-2">
         <!-- HOME TEAM -->
         <div class="flex-1 flex items-center gap-2 min-w-0">
@@ -343,7 +376,6 @@ function openAnalyticsModal(id) {
   document.getElementById('modalMatchTitle').innerText = `${match.homeTeam} vs ${match.awayTeam}`;
   document.getElementById('modalAiNotes').innerText = match.aiNotes || "Analisis taktis kuantitatif menunjukkan dominasi penuh pada peluang xG dan konsistensi transisi lapangan tengah.";
 
-  // MATRIKS SUPER LENGKAP (6 INDIKATOR UTAMA)
   const metricsBody = document.getElementById('modalMetricsBody');
   metricsBody.innerHTML = `
     <div class="bg-white p-2.5 rounded-xl border border-slate-200">
