@@ -14,7 +14,7 @@ HEADERS_SPORTS = {
 }
 
 def get_all_raw_matches_from_api():
-    """Mengambil SELURUH jadwal pertandingan hari ini & besok dari API-SPORTS (Filter Jam 11 s/d 11)"""
+    """Mengambil SELURUH jadwal pertandingan hari ini & besok lengkap dengan Logo, Skor, dan Status"""
     now_wib = datetime.now(WIB)
     today_str = now_wib.strftime("%Y-%m-%d")
     tomorrow_str = (now_wib + timedelta(days=1)).strftime("%Y-%m-%d")
@@ -33,29 +33,39 @@ def get_all_raw_matches_from_api():
                     data = res.json().get("response", [])
                     for item in data:
                         fixture = item.get("fixture", {})
-                        league = item.get("league", {}).get("name", "").upper()
+                        league = item.get("league", {})
+                        league_name = league.get("name", "").upper()
+                        league_logo = league.get("logo", "")
                         teams = item.get("teams", {})
+                        goals = item.get("goals", {})
+                        status = fixture.get("status", {})
                         
                         # Filter membuang liga gurem / kelompok umur
-                        if any(bad in league for bad in ["U19", "U20", "U21", "RESERVE", "WOMEN", "AMATEUR", "YOUTH"]):
+                        if any(bad in league_name for bad in ["U19", "U20", "U21", "RESERVE", "WOMEN", "AMATEUR", "YOUTH"]):
                             continue
                             
                         date_utc_str = fixture.get("date", "")
                         if date_utc_str:
                             match_dt_wib = datetime.fromisoformat(date_utc_str.replace("Z", "+00:00")).astimezone(WIB)
-                            
-                            # RENTANG KETAT: Hanya ambil laga antara Jam 11:00 WIB Hari Ini s/d Jam 11:00 WIB Besok
                             if not (cutoff_today <= match_dt_wib < cutoff_tomorrow):
                                 continue
                         else:
                             continue
                             
                         raw_list.append({
-                            "league": league,
+                            "fixtureId": fixture.get("id"),
+                            "league": league_name,
+                            "leagueLogo": league_logo,
                             "homeTeam": teams.get("home", {}).get("name"),
+                            "homeLogo": teams.get("home", {}).get("logo"),
                             "awayTeam": teams.get("away", {}).get("name"),
+                            "awayLogo": teams.get("away", {}).get("logo"),
                             "kickoffUtc": date_utc_str,
-                            "kickoffWib": match_dt_wib.strftime("%H:%M") + " WIB"
+                            "kickoffWib": match_dt_wib.strftime("%H:%M") + " WIB",
+                            "statusShort": status.get("short", "NS"), # FT, 1H, 2H, HT, NS
+                            "statusElapsed": status.get("elapsed", 0),
+                            "scoreHome": goals.get("home"),
+                            "scoreAway": goals.get("away")
                         })
             except Exception as e:
                 print(f"Error fetch raw matches ({date_target}): {e}")
@@ -63,28 +73,30 @@ def get_all_raw_matches_from_api():
     return raw_list
 
 def get_active_gemini_models():
-    """Mendeteksi otomatis model Gemini apa saja yang tersedia untuk API Key pengguna"""
+    """Mendeteksi model Gemini aktif di akun"""
+    priority_models = [
+        "gemini-flash-lite-latest",
+        "gemini-flash-latest",
+        "gemini-3.5-flash",
+        "gemini-3.1-flash-lite"
+    ]
     url = f"https://generativelanguage.googleapis.com/v1beta/models?key={GEMINI_API_KEY}"
     try:
         res = requests.get(url, timeout=10)
         if res.status_code == 200:
             models = res.json().get("models", [])
-            valid_models = []
-            for m in models:
-                name = m.get("name", "") # Format: models/gemini-3.5-flash
-                methods = m.get("supportedGenerationMethods", [])
-                if "generateContent" in methods:
-                    valid_models.append(name.replace("models/", ""))
-            print(f"Model aktif terdeteksi di akun: {valid_models}")
-            return valid_models
+            detected = [m.get("name", "").replace("models/", "") for m in models if "generateContent" in m.get("supportedGenerationMethods", [])]
+            final_list = [m for m in priority_models if m in detected]
+            for m in detected:
+                if m not in final_list:
+                    final_list.append(m)
+            return final_list
     except Exception as e:
         print(f"Gagal mengecek daftar model: {e}")
-        
-    # Fallback ke daftar model standar generasi terbaru
-    return ["gemini-3.5-flash", "gemini-3.1-flash-lite", "gemini-3.1-pro"]
+    return priority_models
 
 def analyze_and_filter_with_gemini(raw_matches):
-    """Mengirim data pertandingan ke Gemini API menggunakan model yang aktif secara otomatis"""
+    """Mengirim data pertandingan ke Gemini API untuk disaring"""
     if not GEMINI_API_KEY or not raw_matches:
         print("PERINGATAN: GEMINI_API_KEY / Data Mentah Kosong!")
         return []
@@ -98,14 +110,23 @@ def analyze_and_filter_with_gemini(raw_matches):
     TUGAS UTAMA:
     1. Pilih maksimal 10 pertandingan TERBAIK dari daftar di atas yang melibatkan klub/liga papan atas (Premier League, La Liga, Serie A, Champions League, Eredivisie, dll).
     2. Tentukan proyeksi pilihan pasaran paling masuk akal (1X2, Asian Handicap -1.0, atau Over/Under 2.5).
-    3. Output WAJIB berupa JSON ARRAY MURNI tanpa teks/markdown tambahan:
+    3. Pertahankan properti data mentah (fixtureId, homeLogo, awayLogo, scoreHome, scoreAway, statusShort).
+    4. Output WAJIB berupa JSON ARRAY MURNI tanpa teks/markdown tambahan:
     [
       {{
+        "fixtureId": 12345,
         "league": "NAMA LIGA",
+        "leagueLogo": "URL_LOGO_LIGA",
         "homeTeam": "Tim Kandang",
+        "homeLogo": "URL_LOGO_HOME",
         "awayTeam": "Tim Tandang",
+        "awayLogo": "URL_LOGO_AWAY",
         "kickoffUtc": "ISO String Waktu UTC",
         "kickoff": "HH:MM WIB",
+        "statusShort": "FT/1H/NS",
+        "statusElapsed": 45,
+        "scoreHome": 2,
+        "scoreAway": 1,
         "pick": "Rekomendasi Pilihan",
         "marketType": "1X2 / HDP / OU",
         "odds": 1.65,
@@ -133,7 +154,6 @@ def analyze_and_filter_with_gemini(raw_matches):
                 result = res.json()
                 text_response = result['candidates'][0]['content']['parts'][0]['text']
                 
-                # Pembersihan string JSON dari balasan Gemini
                 text_cleaned = text_response.strip()
                 if "```json" in text_cleaned:
                     text_cleaned = text_cleaned.split("```json")[1].split("```")[0].strip()
@@ -159,7 +179,7 @@ def analyze_and_filter_with_gemini(raw_matches):
     return []
 
 if __name__ == "__main__":
-    print("Menjalankan FIXSCORE Quant Engine...")
+    print("Menjalankan FIXSCORE Quant Engine (Live Score & Logo Support)...")
     raw_data = get_all_raw_matches_from_api()
     print(f"Total laga nyata ditemukan: {len(raw_data)} pertandingan.")
     
@@ -169,6 +189,6 @@ if __name__ == "__main__":
         os.makedirs("data", exist_ok=True)
         with open("data/today.json", "w") as f:
             json.dump(final_matches, f, indent=2)
-        print(f"SELESAI! {len(final_matches)} pertandingan NYATA hasil analisis Gemini disimpan ke data/today.json")
+        print(f"SELESAI! {len(final_matches)} pertandingan NYATA disimpan ke data/today.json")
     else:
         print("Gagal memproses Gemini API.")
