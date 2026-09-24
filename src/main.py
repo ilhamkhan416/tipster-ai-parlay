@@ -63,16 +63,15 @@ def get_all_raw_matches_from_api():
     return raw_list
 
 def analyze_and_filter_with_gemini(raw_matches):
-    """Mengirim data pertandingan ke Gemini AI dengan multiple endpoint fallback"""
+    """Mengirim data pertandingan ke Gemini API menggunakan model aktif terbaru"""
     if not GEMINI_API_KEY or not raw_matches:
         print("PERINGATAN: GEMINI_API_KEY / Data Mentah Kosong!")
         return []
 
-    # Daftar endpoint model yang dicoba secara berurutan
+    # Menggunakan endpoint resmi model Gemini 2.5 Flash yang aktif
     endpoints = [
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent",
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent",
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent"
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent"
     ]
 
     prompt = f"""
@@ -102,8 +101,6 @@ def analyze_and_filter_with_gemini(raw_matches):
     """
 
     payload = {"contents": [{"parts": [{"text": prompt}]}]}
-    
-    # Pengiriman API Key lewat Header Resmi Google AI Studio
     headers = {
         "Content-Type": "application/json",
         "x-goog-api-key": GEMINI_API_KEY
@@ -111,14 +108,15 @@ def analyze_and_filter_with_gemini(raw_matches):
 
     for url in endpoints:
         try:
-            print(f"Mencoba koneksi ke Gemini API via {url.split('/')[-1]}...")
+            model_name = url.split('/')[-1].split(':')[0]
+            print(f"Mencoba koneksi ke Gemini API via {model_name}...")
             res = requests.post(url, json=payload, headers=headers, timeout=40)
             
             if res.status_code == 200:
                 result = res.json()
                 text_response = result['candidates'][0]['content']['parts'][0]['text']
                 
-                # Pembersihan string JSON
+                # Pembersihan string JSON dari balasan Gemini
                 text_cleaned = text_response.strip()
                 if "```json" in text_cleaned:
                     text_cleaned = text_cleaned.split("```json")[1].split("```")[0].strip()
@@ -137,7 +135,7 @@ def analyze_and_filter_with_gemini(raw_matches):
                 print("BERHASIL memproses data via Gemini AI!")
                 return analyzed_matches
             else:
-                print(f"Gagal koneksi endpoint ({res.status_code}): {res.text[:100]}")
+                print(f"Gagal koneksi endpoint ({res.status_code}): {res.text[:120]}")
         except Exception as e:
             print(f"Error pada endpoint {url}: {e}")
             
@@ -156,4 +154,4 @@ if __name__ == "__main__":
             json.dump(final_matches, f, indent=2)
         print(f"SELESAI! {len(final_matches)} pertandingan NYATA hasil analisis Gemini disimpan ke data/today.json")
     else:
-        print("Gagal memproses Gemini API. Menampilkan log error.")
+        print("Gagal memproses Gemini API.")
