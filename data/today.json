@@ -1,288 +1,9 @@
 [
   {
     "id": 1,
-    "league": "GOIANO - 2",
-    "kickoff": "00:00 WIB",
-    "homeTeam": "Goian\u00e9sia",
-    "awayTeam": "Rio Verde",
-    "homeForm": [
-      "W",
-      "W",
-      "D",
-      "W",
-      "L"
-    ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "pick": "Goian\u00e9sia Menang (1X2)",
-    "marketType": "1X2",
-    "odds": 1.5,
-    "winProb": 70,
-    "isVip": false,
-    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
-    "riskFactor": "-4.2% Volatilitas Serangan Balik",
-    "metrics": {
-      "form": 85,
-      "h2h": 80,
-      "xG": 78,
-      "marketVal": 82
-    },
-    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Goian\u00e9sia."
-  },
-  {
-    "id": 2,
-    "league": "LIGA FEMENINA",
-    "kickoff": "00:00 WIB",
-    "homeTeam": "Santa Fe W",
-    "awayTeam": "Deportivo Cali W",
-    "homeForm": [
-      "W",
-      "W",
-      "D",
-      "W",
-      "L"
-    ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "pick": "Santa Fe W Menang (1X2)",
-    "marketType": "1X2",
-    "odds": 1.58,
-    "winProb": 73,
-    "isVip": false,
-    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
-    "riskFactor": "-4.2% Volatilitas Serangan Balik",
-    "metrics": {
-      "form": 85,
-      "h2h": 80,
-      "xG": 78,
-      "marketVal": 82
-    },
-    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Santa Fe W."
-  },
-  {
-    "id": 3,
-    "league": "PRIMERA A",
-    "kickoff": "00:30 WIB",
-    "homeTeam": "America de Cali",
-    "awayTeam": "\u00c1guilas Doradas",
-    "homeForm": [
-      "W",
-      "W",
-      "D",
-      "W",
-      "L"
-    ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "pick": "America de Cali Menang (1X2)",
-    "marketType": "1X2",
-    "odds": 1.66,
-    "winProb": 76,
-    "isVip": false,
-    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
-    "riskFactor": "-4.2% Volatilitas Serangan Balik",
-    "metrics": {
-      "form": 85,
-      "h2h": 80,
-      "xG": 78,
-      "marketVal": 82
-    },
-    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada America de Cali."
-  },
-  {
-    "id": 4,
-    "league": "PRIMERA DIVISION",
-    "kickoff": "01:00 WIB",
-    "homeTeam": "Firpo",
-    "awayTeam": "Cacahuatique",
-    "homeForm": [
-      "W",
-      "W",
-      "D",
-      "W",
-      "L"
-    ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "pick": "Firpo Menang (1X2)",
-    "marketType": "1X2",
-    "odds": 1.74,
-    "winProb": 79,
-    "isVip": false,
-    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
-    "riskFactor": "-4.2% Volatilitas Serangan Balik",
-    "metrics": {
-      "form": 85,
-      "h2h": 80,
-      "xG": 78,
-      "marketVal": 82
-    },
-    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Firpo."
-  },
-  {
-    "id": 5,
-    "league": "PRIMERA DIVISION",
-    "kickoff": "01:00 WIB",
-    "homeTeam": "Alianza",
-    "awayTeam": "Fuerte San Francisco",
-    "homeForm": [
-      "W",
-      "W",
-      "D",
-      "W",
-      "L"
-    ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "pick": "Alianza Menang (1X2)",
-    "marketType": "1X2",
-    "odds": 1.82,
-    "winProb": 82,
-    "isVip": true,
-    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
-    "riskFactor": "-4.2% Volatilitas Serangan Balik",
-    "metrics": {
-      "form": 85,
-      "h2h": 80,
-      "xG": 78,
-      "marketVal": 82
-    },
-    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Alianza."
-  },
-  {
-    "id": 6,
-    "league": "MAJOR LEAGUE SOCCER",
-    "kickoff": "01:30 WIB",
-    "homeTeam": "Seattle Sounders",
-    "awayTeam": "Real Salt Lake",
-    "homeForm": [
-      "W",
-      "W",
-      "D",
-      "W",
-      "L"
-    ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "pick": "Seattle Sounders Menang (1X2)",
-    "marketType": "1X2",
-    "odds": 1.5,
-    "winProb": 70,
-    "isVip": true,
-    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
-    "riskFactor": "-4.2% Volatilitas Serangan Balik",
-    "metrics": {
-      "form": 85,
-      "h2h": 80,
-      "xG": 78,
-      "marketVal": 82
-    },
-    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Seattle Sounders."
-  },
-  {
-    "id": 7,
-    "league": "CANADIAN PREMIER LEAGUE",
-    "kickoff": "02:00 WIB",
-    "homeTeam": "Vancouver FC",
-    "awayTeam": "York United",
-    "homeForm": [
-      "W",
-      "W",
-      "D",
-      "W",
-      "L"
-    ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "pick": "Vancouver FC Menang (1X2)",
-    "marketType": "1X2",
-    "odds": 1.58,
-    "winProb": 73,
-    "isVip": true,
-    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
-    "riskFactor": "-4.2% Volatilitas Serangan Balik",
-    "metrics": {
-      "form": 85,
-      "h2h": 80,
-      "xG": 78,
-      "marketVal": 82
-    },
-    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Vancouver FC."
-  },
-  {
-    "id": 8,
-    "league": "LIGA NACIONAL",
-    "kickoff": "02:00 WIB",
-    "homeTeam": "Xelaj\u00fa",
-    "awayTeam": "Antigua GFC",
-    "homeForm": [
-      "W",
-      "W",
-      "D",
-      "W",
-      "L"
-    ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "pick": "Xelaj\u00fa Menang (1X2)",
-    "marketType": "1X2",
-    "odds": 1.66,
-    "winProb": 76,
-    "isVip": true,
-    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
-    "riskFactor": "-4.2% Volatilitas Serangan Balik",
-    "metrics": {
-      "form": 85,
-      "h2h": 80,
-      "xG": 78,
-      "marketVal": 82
-    },
-    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Xelaj\u00fa."
-  },
-  {
-    "id": 9,
     "league": "FRIENDLIES",
-    "kickoff": "04:00 WIB",
+    "kickoffUtc": "2026-09-24T04:00:00+00:00",
+    "kickoff": "11:00 WIB",
     "homeTeam": "Solomon Islands",
     "awayTeam": "Vanuatu",
     "homeForm": [
@@ -303,7 +24,7 @@
     "marketType": "1X2",
     "odds": 1.74,
     "winProb": 79,
-    "isVip": true,
+    "isVip": false,
     "posEdge": "+15.5% +EV (Kalkulasi Engine)",
     "riskFactor": "-4.2% Volatilitas Serangan Balik",
     "metrics": {
@@ -315,9 +36,10 @@
     "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Solomon Islands."
   },
   {
-    "id": 10,
+    "id": 2,
     "league": "FRIENDLIES",
-    "kickoff": "07:00 WIB",
+    "kickoffUtc": "2026-09-24T07:00:00+00:00",
+    "kickoff": "14:00 WIB",
     "homeTeam": "Papua New Guinea",
     "awayTeam": "New Caledonia",
     "homeForm": [
@@ -338,7 +60,7 @@
     "marketType": "1X2",
     "odds": 1.82,
     "winProb": 82,
-    "isVip": true,
+    "isVip": false,
     "posEdge": "+15.5% +EV (Kalkulasi Engine)",
     "riskFactor": "-4.2% Volatilitas Serangan Balik",
     "metrics": {
@@ -348,5 +70,293 @@
       "marketVal": 82
     },
     "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Papua New Guinea."
+  },
+  {
+    "id": 3,
+    "league": "FRIENDLIES",
+    "kickoffUtc": "2026-09-24T08:30:00+00:00",
+    "kickoff": "15:30 WIB",
+    "homeTeam": "Turkmenistan",
+    "awayTeam": "New Zealand",
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "pick": "Turkmenistan Menang (1X2)",
+    "marketType": "1X2",
+    "odds": 1.5,
+    "winProb": 70,
+    "isVip": false,
+    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
+    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "metrics": {
+      "form": 85,
+      "h2h": 80,
+      "xG": 78,
+      "marketVal": 82
+    },
+    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Turkmenistan."
+  },
+  {
+    "id": 4,
+    "league": "PREMIER LEAGUE",
+    "kickoffUtc": "2026-09-24T09:00:00+00:00",
+    "kickoff": "16:00 WIB",
+    "homeTeam": "Ugyen Academy",
+    "awayTeam": "Drukpa",
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "pick": "Ugyen Academy Menang (1X2)",
+    "marketType": "1X2",
+    "odds": 1.58,
+    "winProb": 73,
+    "isVip": false,
+    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
+    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "metrics": {
+      "form": 85,
+      "h2h": 80,
+      "xG": 78,
+      "marketVal": 82
+    },
+    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Ugyen Academy."
+  },
+  {
+    "id": 5,
+    "league": "FIFA ASEAN CUP",
+    "kickoffUtc": "2026-09-24T09:00:00+00:00",
+    "kickoff": "16:00 WIB",
+    "homeTeam": "Laos",
+    "awayTeam": "Brunei",
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "pick": "Laos Menang (1X2)",
+    "marketType": "1X2",
+    "odds": 1.66,
+    "winProb": 76,
+    "isVip": true,
+    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
+    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "metrics": {
+      "form": 85,
+      "h2h": 80,
+      "xG": 78,
+      "marketVal": 82
+    },
+    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Laos."
+  },
+  {
+    "id": 6,
+    "league": "FRIENDLIES",
+    "kickoffUtc": "2026-09-24T09:30:00+00:00",
+    "kickoff": "16:30 WIB",
+    "homeTeam": "Palestine",
+    "awayTeam": "New Zealand",
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "pick": "Palestine Menang (1X2)",
+    "marketType": "1X2",
+    "odds": 1.74,
+    "winProb": 79,
+    "isVip": true,
+    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
+    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "metrics": {
+      "form": 85,
+      "h2h": 80,
+      "xG": 78,
+      "marketVal": 82
+    },
+    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Palestine."
+  },
+  {
+    "id": 7,
+    "league": "CECAFA U20 CHAMPIONSHIP",
+    "kickoffUtc": "2026-09-24T09:30:00+00:00",
+    "kickoff": "16:30 WIB",
+    "homeTeam": "Uganda U20",
+    "awayTeam": "Burundi U20",
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "pick": "Uganda U20 Menang (1X2)",
+    "marketType": "1X2",
+    "odds": 1.82,
+    "winProb": 82,
+    "isVip": true,
+    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
+    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "metrics": {
+      "form": 85,
+      "h2h": 80,
+      "xG": 78,
+      "marketVal": 82
+    },
+    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Uganda U20."
+  },
+  {
+    "id": 8,
+    "league": "IFA SHIELD",
+    "kickoffUtc": "2026-09-24T09:30:00+00:00",
+    "kickoff": "16:30 WIB",
+    "homeTeam": "Calcutta Customs",
+    "awayTeam": "East Bengal II",
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "pick": "Calcutta Customs Menang (1X2)",
+    "marketType": "1X2",
+    "odds": 1.5,
+    "winProb": 70,
+    "isVip": true,
+    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
+    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "metrics": {
+      "form": 85,
+      "h2h": 80,
+      "xG": 78,
+      "marketVal": 82
+    },
+    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Calcutta Customs."
+  },
+  {
+    "id": 9,
+    "league": "FRIENDLIES",
+    "kickoffUtc": "2026-09-24T10:05:00+00:00",
+    "kickoff": "17:05 WIB",
+    "homeTeam": "Japan",
+    "awayTeam": "Uruguay",
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "pick": "Japan Menang (1X2)",
+    "marketType": "1X2",
+    "odds": 1.58,
+    "winProb": 73,
+    "isVip": true,
+    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
+    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "metrics": {
+      "form": 85,
+      "h2h": 80,
+      "xG": 78,
+      "marketVal": 82
+    },
+    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada Japan."
+  },
+  {
+    "id": 10,
+    "league": "FRIENDLIES",
+    "kickoffUtc": "2026-09-24T11:00:00+00:00",
+    "kickoff": "18:00 WIB",
+    "homeTeam": "South Korea",
+    "awayTeam": "Ecuador",
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "pick": "South Korea Menang (1X2)",
+    "marketType": "1X2",
+    "odds": 1.66,
+    "winProb": 76,
+    "isVip": true,
+    "posEdge": "+15.5% +EV (Kalkulasi Engine)",
+    "riskFactor": "-4.2% Volatilitas Serangan Balik",
+    "metrics": {
+      "form": 85,
+      "h2h": 80,
+      "xG": 78,
+      "marketVal": 82
+    },
+    "aiNotes": "Analisis Poisson & xG menunjukkan keunggulan statistik pada South Korea."
   }
 ]
