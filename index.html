@@ -3,13 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FIXSCORE | Platform Analytics Kuantitatif</title>
+  <title>FIXSCORE | Platform Analytics Kuantitatif & Model Probabilitas Sepak Bola</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="FIXSCORE - Platform analytics sepak bola kuantitatif berbasis data murni, distribusi Poisson, dan statistik xG. Tanpa spekulasi, 10 partai dengan kalkulasi matematis rilis setiap hari." />
+  <meta name="keywords" content="fixscore, analytics sepak bola, data kuantitatif, value odds, expected goals, distribusi poisson, model matematika parlay" />
+  <meta name="author" content="FIXSCORE Analytics Engine" />
 
-  <!-- CDN Tailwind CSS -->
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Konfigurasi Warna & Theme Tailwind -->
-  <script src="tailwind.config.js"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            flash: {
+              red: '#a21220',
+              redHover: '#850e19',
+              redSoft: '#fdf2f2',
+              dark: '#111111',
+              darkSecondary: '#1e2024',
+              bg: '#f2f4f7',
+              card: '#ffffff',
+              border: '#e5e7eb',
+              borderDark: '#d1d5db',
+              textPrimary: '#111827',
+              textSecondary: '#4b5563',
+              textMuted: '#6b7280'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+            mono: ['JetBrains Mono', 'Menlo', 'Monaco', 'Consolas', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
 
   <!-- Google Fonts & FontAwesome Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,153 +48,896 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body class="bg-flash-bg text-flash-textPrimary font-sans antialiased min-h-screen flex flex-col selection:bg-flash-red selection:text-white">
+  <style>
+    body {
+      background-color: #f2f4f7;
+      color: #111827;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #e5e7eb;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #9ca3af;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #a21220;
+    }
 
-  <!-- Top Status Bar -->
-  <div class="bg-flash-dark text-gray-300 text-xs py-2 px-4 border-b border-gray-800">
-    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
-      <div class="flex items-center space-x-2">
-        <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-        <span class="font-mono text-emerald-400 font-semibold uppercase tracking-wider">FIXSCORE QUANT ENGINE</span>
+    .flash-shadow {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+    }
+    .flash-card-hover {
+      transition: all 0.15s ease-in-out;
+    }
+    .flash-card-hover:hover {
+      border-color: #a21220;
+      box-shadow: 0 4px 12px rgba(162, 18, 32, 0.08);
+    }
+
+    .blur-lock {
+      filter: blur(4px);
+      user-select: none;
+      pointer-events: none;
+    }
+
+    /* Form Badges */
+    .form-badge-w { background-color: #16a34a; color: #ffffff; }
+    .form-badge-d { background-color: #ca8a04; color: #ffffff; }
+    .form-badge-l { background-color: #dc2626; color: #ffffff; }
+
+    /* Green Positive & Red Negative Indicator Styles */
+    .indicator-pos { background-color: #f0fdf4; color: #15803d; border-color: #bbf7d0; }
+    .indicator-neg { background-color: #fef2f2; color: #b91c1c; border-color: #fecaca; }
+  </style>
+</head>
+<body class="font-sans antialiased bg-flash-bg text-flash-textPrimary min-h-screen flex flex-col justify-between">
+
+  <!-- TOP CHARCOAL STATUS BAR -->
+  <div class="bg-flash-dark text-white text-xs py-1.5 px-4 border-b border-black">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-3">
+        <span class="flex items-center gap-1.5 text-emerald-400 font-bold font-mono">
+          <i class="fa-solid fa-futbol animate-spin text-emerald-400 text-xs"></i>
+          FIXSCORE QUANT ENGINE
+        </span>
         <span class="text-gray-600">|</span>
-        <span class="text-gray-400">Rilis Data: <span id="last-update" class="font-mono text-gray-200">Hari ini 11:00 WIB</span></span>
-      </div>
-      <div class="flex items-center space-x-4 font-mono">
-        <span>Akurasi Model (30 Hari): <span class="text-emerald-400 font-semibold"><i class="fa-solid fa-arrow-up-right"></i> 76.4% (Positif)</span></span>
+        <span class="text-gray-300">Rilis Data: <strong id="lastUpdateText" class="text-white">Hari Ini 11:00 WIB</strong></span>
         <span class="text-gray-600 hidden md:inline">|</span>
-        <span class="hidden md:inline">Yield Ekspektasi (+EV): <span class="text-emerald-400 font-semibold">+142.8%</span></span>
+        <span class="text-gray-300 hidden md:inline">Kalkulasi Berikutnya: <span class="text-emerald-400 font-mono">Besok 11:00 WIB</span></span>
+      </div>
+      <div class="flex items-center gap-4 text-gray-300 font-mono text-[11px]">
+        <div>Akurasi Model (30 Hari): <span class="text-emerald-400 font-bold"><i class="fa-solid fa-arrow-up mr-0.5"></i>76.4% (Positif)</span></div>
+        <div>Yield Ekspektasi (+EV): <span class="text-emerald-400 font-bold">+142.8%</span></div>
       </div>
     </div>
   </div>
 
-  <!-- Header & Navigation -->
-  <header class="bg-flash-red text-white shadow-md sticky top-0 z-50 border-b border-red-900">
+  <!-- NAVIGATION HEADER -->
+  <header class="sticky top-0 z-40 bg-flash-red text-white shadow-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
+      <div class="flex items-center justify-between h-14">
+        
         <!-- Brand Logo -->
-        <div class="flex items-center space-x-3">
-          <div class="bg-white text-flash-red w-10 h-10 rounded-lg flex items-center justify-center font-black text-xl shadow">
-            FS
+        <a href="#" onclick="switchTab('dashboard')" class="flex items-center gap-2.5 group">
+          <div class="w-9 h-9 rounded-lg bg-white text-flash-red flex items-center justify-center font-black text-xl shadow-md border border-red-200 group-hover:scale-105 transition-transform">
+            <i class="fa-solid fa-futbol"></i>
           </div>
           <div>
-            <span class="text-2xl font-black tracking-tight uppercase flex items-center gap-2">
-              FIX<span class="text-yellow-300">SCORE</span>
-            </span>
-            <span class="text-[10px] tracking-widest text-red-200 block -mt-1 font-mono uppercase">Pitch Analytics</span>
+            <div class="flex items-center gap-1.5">
+              <span class="text-2xl font-black tracking-tight text-white leading-none">FIX<span class="text-emerald-400">SCORE</span></span>
+              <span class="text-[9px] font-mono bg-black/40 text-emerald-300 border border-emerald-500/30 px-1.5 py-0.5 rounded font-bold uppercase">Pitch Analytics</span>
+            </div>
+            <p class="text-[10px] text-red-100 font-mono leading-none mt-0.5 flex items-center gap-1">
+              <i class="fa-solid fa-chart-pie text-emerald-300 text-[9px]"></i> Mathematical Football Probability & Value Matrix
+            </p>
           </div>
-        </div>
+        </a>
 
-        <!-- Call to Action -->
-        <div class="flex items-center space-x-3">
-          <a href="https://t.me" target="_blank" class="bg-flash-dark hover:bg-gray-900 text-white text-xs font-semibold px-4 py-2.5 rounded-md transition duration-200 shadow flex items-center space-x-2 border border-gray-700">
-            <i class="fa-brands fa-telegram text-sky-400 text-sm"></i>
+        <!-- Desktop Navigation Tabs -->
+        <nav class="hidden md:flex items-center gap-1 text-xs font-bold">
+          <button id="nav-dashboard" onclick="switchTab('dashboard')" class="px-4 py-2.5 rounded-t-lg transition-all text-flash-red bg-white shadow-sm flex items-center gap-2">
+            <i class="fa-solid fa-clipboard-list text-emerald-600"></i> 10 Partai Terpilih
+          </button>
+          <button id="nav-history" onclick="switchTab('history')" class="px-4 py-2.5 rounded-t-lg transition-all text-white hover:bg-black/20 flex items-center gap-2">
+            <i class="fa-solid fa-chart-line text-emerald-400"></i> Validasi Statistik & ROI
+          </button>
+          <button id="nav-algorithm" onclick="switchTab('algorithm')" class="px-4 py-2.5 rounded-t-lg transition-all text-white hover:bg-black/20 flex items-center gap-2">
+            <i class="fa-solid fa-diagram-project text-emerald-400"></i> Model Matematika
+          </button>
+        </nav>
+
+        <!-- CTA & Mobile Trigger -->
+        <div class="flex items-center gap-3">
+          <button onclick="openVipModal()" class="px-3.5 py-1.5 rounded bg-black/80 hover:bg-black text-white text-xs font-bold flex items-center gap-2 transition-all border border-emerald-500/30 shadow-sm">
+            <i class="fa-solid fa-paper-plane text-emerald-400"></i>
             <span>Komunitas Telegram</span>
-          </a>
-          <button id="mobile-menu-btn" class="md:hidden text-white p-2 focus:outline-none">
-            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+          
+          <button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded bg-black/20 text-white hover:bg-black/40">
+            <i class="fa-solid fa-bars text-base"></i>
           </button>
         </div>
       </div>
     </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-red-900 bg-flash-red px-4 py-3 space-y-1.5 text-xs font-bold">
+      <button onclick="switchTab('dashboard'); toggleMobileMenu()" class="w-full text-left px-3 py-2 rounded bg-white text-flash-red flex items-center gap-2.5">
+        <i class="fa-solid fa-calculator"></i> 10 Partai Terpilih
+      </button>
+      <button onclick="switchTab('history'); toggleMobileMenu()" class="w-full text-left px-3 py-2 rounded text-white hover:bg-black/20 flex items-center gap-2.5">
+        <i class="fa-solid fa-chart-line"></i> Validasi Statistik & ROI
+      </button>
+      <button onclick="switchTab('algorithm'); toggleMobileMenu()" class="w-full text-left px-3 py-2 rounded text-white hover:bg-black/20 flex items-center gap-2.5">
+        <i class="fa-solid fa-square-root-variable"></i> Model Matematika
+      </button>
+    </div>
   </header>
 
-  <!-- Hero & Information Banner -->
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-2">
-    <div class="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-flash-border">
-      <div class="max-w-3xl">
-        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 mb-3">
-          <i class="fa-solid fa-chart-pie"></i> FIXSCORE POISSON & xG MATRIX ENGINE
-        </span>
-        <h1 class="text-2xl sm:text-3xl font-extrabold text-flash-textPrimary tracking-tight">
-          10 Partai Sepak Bola Terpilih Hari Ini
-        </h1>
-        <h2 class="text-lg font-bold text-gray-700 mt-1 mb-3">
-          Kalkulasi Probabilitas Kuantitatif & Data Murni Laga
-        </h2>
-        <p class="text-sm text-flash-textSecondary leading-relaxed">
-          Sistem menganalisis indikator Expected Goals (xG), statistik serangan/pertahanan klub, serta distribusi Poisson untuk menentukan 10 laga dengan rasio ekspektasi positif (+EV) terbaik secara jujur tanpa asumsi.
-        </p>
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 w-full flex-1 space-y-5">
+
+    <!-- ==================== TAB 1: DASHBOARD (TOP 10 MATCHES) ==================== -->
+    <div id="tab-dashboard" class="space-y-5">
+
+      <!-- Hero Header Banner -->
+      <section class="bg-white rounded-xl p-5 md:p-6 border border-flash-border flash-shadow relative overflow-hidden">
+        <div class="max-w-3xl space-y-2.5 relative z-10">
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold font-mono">
+            <i class="fa-solid fa-futbol text-emerald-600"></i> FIXSCORE POISSON & xG MATRIX ENGINE
+          </div>
+          <h1 class="text-2xl sm:text-3xl font-extrabold text-flash-textPrimary tracking-tight">
+            10 Partai Sepak Bola Terpilih Hari Ini
+            <span class="block text-flash-red text-xl sm:text-2xl mt-1">Kalkulasi Probabilitas Kuantitatif &amp; Data Murni Laga</span>
+          </h1>
+          <p class="text-flash-textSecondary text-xs sm:text-sm leading-relaxed max-w-2xl">
+            Sistem menganalisis indikator Expected Goals (xG), statistik serangan/pertahanan klub, serta distribusi Poisson untuk menentukan 10 laga dengan rasio ekspektasi positif (+EV) terbaik secara jujur tanpa asumsi.
+          </p>
+
+          <!-- Core Filter Metrics Summary Boxes -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-2 font-mono text-xs">
+            <div class="bg-emerald-50/70 p-2.5 rounded-lg border border-emerald-200">
+              <span class="text-emerald-800 text-[10px] block font-sans font-bold uppercase"><i class="fa-solid fa-circle-check text-emerald-600 mr-1"></i>Syarat Min. Odds</span>
+              <span class="text-sm font-bold text-emerald-900">&ge; 1.50</span>
+              <span class="text-[10px] text-emerald-700 block mt-0.5 font-sans font-bold">+EV Value Bet Edge</span>
+            </div>
+            <div class="bg-emerald-50/70 p-2.5 rounded-lg border border-emerald-200">
+              <span class="text-emerald-800 text-[10px] block font-sans font-bold uppercase"><i class="fa-solid fa-shield-halved text-emerald-600 mr-1"></i>Probabilitas Model</span>
+              <span class="text-sm font-bold text-emerald-700">&ge; 70.0%</span>
+              <span class="text-[10px] text-emerald-800 block mt-0.5 font-sans font-bold">Batas Minimum Lulus</span>
+            </div>
+            <div class="bg-gray-50 p-2.5 rounded-lg border border-flash-border">
+              <span class="text-flash-textMuted text-[10px] block font-sans uppercase"><i class="fa-solid fa-chess-board mr-1 text-flash-red"></i>Cakupan Pasaran</span>
+              <span class="text-sm font-bold text-flash-textPrimary">1X2 / HDP / O/U</span>
+              <span class="text-[10px] text-flash-textMuted block mt-0.5 font-sans">Pasaran Utama Liquidity</span>
+            </div>
+            <div class="bg-red-50/60 p-2.5 rounded-lg border border-red-200">
+              <span class="text-red-800 text-[10px] block font-sans font-bold uppercase"><i class="fa-solid fa-triangle-exclamation text-red-600 mr-1"></i>Aturan Risiko</span>
+              <span class="text-sm font-bold text-red-700">&le; 2.5% Stake</span>
+              <span class="text-[10px] text-red-700 block mt-0.5 font-sans font-bold">Kelly Criterion Risk Cap</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Filter Controls & Live Search Bar -->
+      <section class="flex flex-col sm:flex-row justify-between items-stretch sm:items-center gap-3 bg-white p-3 rounded-xl border border-flash-border flash-shadow">
+        <div class="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 font-sans text-xs font-bold">
+          <button onclick="filterMatches('ALL')" id="filter-ALL" class="px-3.5 py-1.5 rounded bg-flash-red text-white transition-all shadow-sm">
+            SEMUA (10)
+          </button>
+          <button onclick="filterMatches('1X2')" id="filter-1X2" class="px-3.5 py-1.5 rounded bg-gray-100 text-flash-textSecondary hover:bg-gray-200 transition-all">
+            1X2 (Hasil Akhir)
+          </button>
+          <button onclick="filterMatches('HDP')" id="filter-HDP" class="px-3.5 py-1.5 rounded bg-gray-100 text-flash-textSecondary hover:bg-gray-200 transition-all">
+            Asian Handicap
+          </button>
+          <button onclick="filterMatches('OU')" id="filter-OU" class="px-3.5 py-1.5 rounded bg-gray-100 text-flash-textSecondary hover:bg-gray-200 transition-all">
+            Over/Under 2.5
+          </button>
+        </div>
+
+        <div class="relative min-w-[220px]">
+          <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-xs"></i>
+          <input type="text" id="searchInput" onkeyup="searchMatches()" placeholder="Cari klub atau liga..." class="w-full bg-gray-50 border border-flash-border rounded-lg pl-8 pr-3 py-1.5 text-xs text-flash-textPrimary placeholder-gray-400 focus:outline-none focus:border-flash-red transition-colors" />
+        </div>
+      </section>
+
+      <!-- Main Layout Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        
+        <!-- Left Column: Match Cards List -->
+        <div id="matchesContainer" class="lg:col-span-2 space-y-3">
+          <!-- Rendered dynamically via JS -->
+        </div>
+
+        <!-- Right Column: Parlay Builder Slip -->
+        <div class="lg:col-span-1">
+          <div class="sticky top-20 bg-white rounded-xl p-4 border border-flash-border flash-shadow space-y-4">
+            
+            <div class="flex items-center justify-between border-b border-flash-border pb-3">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-calculator text-flash-red text-base"></i>
+                <h3 class="font-extrabold text-flash-textPrimary text-sm">Kalkulator Akumulasi Parlay</h3>
+              </div>
+              <span id="parlayCountBadge" class="bg-flash-redSoft text-flash-red text-xs font-mono font-bold px-2 py-0.5 rounded border border-red-200">
+                0 Partai
+              </span>
+            </div>
+
+            <!-- Empty State -->
+            <div id="parlayEmptyState" class="text-center py-6 space-y-2">
+              <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center mx-auto text-gray-400">
+                <i class="fa-solid fa-plus text-sm"></i>
+              </div>
+              <p class="text-xs text-flash-textMuted leading-relaxed max-w-[200px] mx-auto">
+                Klik tombol <strong class="text-flash-red">+ Parlay</strong> pada kartu partai untuk menghitung akumulasi odds kuantitatif.
+              </p>
+            </div>
+
+            <!-- Selected Picks List Container -->
+            <div id="parlayPicksList" class="space-y-2 max-h-[280px] overflow-y-auto pr-1">
+              <!-- Rendered via JS -->
+            </div>
+
+            <!-- Odds & Projected Calculation Summary -->
+            <div id="parlayCalcSummary" class="hidden space-y-2 bg-gray-50 p-3 rounded-lg border border-flash-border font-mono text-xs">
+              <div class="flex justify-between items-center text-flash-textSecondary">
+                <span>Total Multiplier Odds:</span>
+                <span id="parlayTotalOdds" class="text-flash-textPrimary text-base font-bold">1.00</span>
+              </div>
+              <div class="flex justify-between items-center text-flash-textSecondary">
+                <span>Probabilitas Kuantitatif Gabungan:</span>
+                <span id="parlayCombinedProb" class="text-emerald-600 font-bold">0.0%</span>
+              </div>
+              <div class="flex justify-between items-center text-flash-textSecondary">
+                <span>Rekomendasi Stake (Kelly Criterion):</span>
+                <span class="text-flash-textPrimary">2.5% Bankroll</span>
+              </div>
+              <div class="pt-2 border-t border-flash-border flex justify-between items-center font-sans">
+                <span class="text-flash-textPrimary font-bold">Proyeksi Return (100rb Unit):</span>
+                <span id="parlayProjectedPayout" class="text-flash-red font-extrabold text-sm font-mono">Rp 0</span>
+              </div>
+            </div>
+
+            <!-- Slip Action Buttons -->
+            <div id="parlayActions" class="hidden space-y-2">
+              <button onclick="copyParlaySlip()" class="w-full py-2.5 bg-flash-red hover:bg-flash-redHover text-white font-bold rounded-lg transition-all text-xs flex items-center justify-center gap-2 shadow-sm">
+                <i class="fa-solid fa-copy"></i> SALIN DATA KALKULASI PARLAY
+              </button>
+              <button onclick="clearParlaySlip()" class="w-full py-1.5 bg-gray-100 hover:bg-gray-200 text-flash-textMuted text-xs font-bold rounded-lg transition-all border border-flash-border">
+                Reset Kombinasi
+              </button>
+            </div>
+
+            <div class="p-2.5 bg-gray-50 rounded-lg border border-flash-border text-[11px] text-flash-textMuted leading-tight">
+              <i class="fa-solid fa-shield-halved text-flash-red mr-1"></i>
+              <strong>Disiplin Manajemen Risiko:</strong> Pembatasan 2-3 leg per kombinasi terbukti secara matematis mempertahankan keunggulan varians jangka panjang.
+            </div>
+
+          </div>
+        </div>
+
       </div>
-
-      <!-- Quick Criteria Badges -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6 pt-6 border-t border-gray-100">
-        <div class="bg-emerald-50/50 p-3 rounded-lg border border-emerald-100">
-          <span class="text-[11px] font-bold text-emerald-800 uppercase tracking-wider block mb-1">
-            <i class="fa-solid fa-check-circle text-emerald-600"></i> Syarat Min. Odds
-          </span>
-          <span class="text-lg font-mono font-bold text-emerald-900">≥ 1.50</span>
-          <span class="text-[10px] text-emerald-600 block mt-0.5">+EV Value Bet Edge</span>
-        </div>
-        <div class="bg-emerald-50/50 p-3 rounded-lg border border-emerald-100">
-          <span class="text-[11px] font-bold text-emerald-800 uppercase tracking-wider block mb-1">
-            <i class="fa-solid fa-shield-halved text-emerald-600"></i> Probabilitas Model
-          </span>
-          <span class="text-lg font-mono font-bold text-emerald-900">≥ 70.0%</span>
-          <span class="text-[10px] text-emerald-600 block mt-0.5">Batas Minimum Lulus</span>
-        </div>
-        <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
-          <span class="text-[11px] font-bold text-gray-700 uppercase tracking-wider block mb-1">
-            <i class="fa-solid fa-shapes text-gray-500"></i> Cakupan Pasaran
-          </span>
-          <span class="text-sm font-bold text-gray-800 block mt-1">1X2 / HDP / O/U</span>
-          <span class="text-[10px] text-gray-500 block mt-0.5">Pasaran Utama Liquidity</span>
-        </div>
-        <div class="bg-flash-redSoft p-3 rounded-lg border border-red-200">
-          <span class="text-[11px] font-bold text-flash-red uppercase tracking-wider block mb-1">
-            <i class="fa-solid fa-triangle-exclamation text-flash-red"></i> Aturan Risiko
-          </span>
-          <span class="text-lg font-mono font-bold text-flash-red">≤ 2.5% Stake</span>
-          <span class="text-[10px] text-red-600 block mt-0.5">Kelly Criterion Risk Cap</span>
-        </div>
-      </div>
     </div>
-  </section>
 
-  <!-- Market Filter Tabs -->
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
-    <div class="flex items-center space-x-2 overflow-x-auto pb-2 scrollbar-none" id="filter-tabs">
-      <button data-filter="all" class="filter-btn active bg-flash-dark text-white px-4 py-2 rounded-lg text-xs font-semibold whitespace-nowrap shadow-sm">
-        Semua Laga (10)
-      </button>
-      <button data-filter="1X2" class="filter-btn bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 px-4 py-2 rounded-lg text-xs font-semibold whitespace-nowrap">
-        1X2 (Hasil Akhir)
-      </button>
-      <button data-filter="HDP" class="filter-btn bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 px-4 py-2 rounded-lg text-xs font-semibold whitespace-nowrap">
-        Asian Handicap
-      </button>
-      <button data-filter="OU" class="filter-btn bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 px-4 py-2 rounded-lg text-xs font-semibold whitespace-nowrap">
-        Over/Under 2.5
-      </button>
-    </div>
-  </section>
+    <!-- ==================== TAB 2: TRACK RECORD & ROI ==================== -->
+    <div id="tab-history" class="hidden space-y-5">
+      
+      <section class="bg-white rounded-xl p-5 md:p-6 border border-flash-border flash-shadow space-y-4">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-flash-redSoft border border-red-200 text-flash-red text-xs font-bold font-mono mb-1.5">
+              <i class="fa-solid fa-database"></i> AUDITED DATA LOG
+            </div>
+            <h2 class="text-xl sm:text-2xl font-bold text-flash-textPrimary">Validasi Hasil &amp; Kurva Pertumbuhan Unit</h2>
+            <p class="text-xs text-flash-textMuted mt-0.5 max-w-xl">
+              Seluruh proyeksi dicatat secara otomatis ke dalam audit trail publik tanpa pengeditan retroaktif.
+            </p>
+          </div>
+          
+          <div class="flex items-center gap-3 font-mono">
+            <div class="bg-gray-50 px-4 py-2 rounded-lg border border-flash-border text-center">
+              <span class="text-[10px] text-flash-textMuted block font-sans">AKURASI MODEL (30 HARI)</span>
+              <span class="text-lg font-extrabold text-emerald-600">76.4%</span>
+            </div>
+            <div class="bg-gray-50 px-4 py-2 rounded-lg border border-flash-border text-center">
+              <span class="text-[10px] text-flash-textMuted block font-sans">AKUMULASI EKSPEKTASI (+EV)</span>
+              <span class="text-lg font-extrabold text-flash-red">+42.8 U</span>
+            </div>
+          </div>
+        </div>
 
-  <!-- Main Match List -->
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex-grow">
-    <div id="matches-container" class="space-y-4">
-      <!-- Data pertandingan dirender oleh app.js -->
+        <!-- ROI Growth Chart -->
+        <div class="bg-gray-50 p-4 rounded-xl border border-flash-border space-y-2">
+          <div class="flex justify-between items-center text-xs text-flash-textMuted font-mono">
+            <span class="font-bold font-sans text-flash-textPrimary">GRAFIK PERTUMBUHAN AKUMULATIF EKSPEKTASI VALUE (+EV)</span>
+            <span class="text-flash-red font-bold"><i class="fa-solid fa-arrow-trend-up mr-1"></i>+142.8%</span>
+          </div>
+          <div class="h-40 w-full relative pt-2">
+            <svg class="w-full h-full overflow-visible" viewBox="0 0 500 130" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="flashChartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#a21220" stop-opacity="0.25" />
+                  <stop offset="100%" stop-color="#a21220" stop-opacity="0.0" />
+                </linearGradient>
+              </defs>
+              <path d="M 0,110 Q 50,100 100,85 T 200,70 T 300,45 T 400,25 T 500,10 L 500,130 L 0,130 Z" fill="url(#flashChartGrad)" />
+              <path d="M 0,110 Q 50,100 100,85 T 200,70 T 300,45 T 400,25 T 500,10" fill="none" stroke="#a21220" stroke-width="3" />
+              <circle cx="100" cy="85" r="4" class="fill-flash-red" />
+              <circle cx="200" cy="70" r="4" class="fill-flash-red" />
+              <circle cx="300" cy="45" r="4" class="fill-flash-red" />
+              <circle cx="400" cy="25" r="4" class="fill-flash-red" />
+              <circle cx="500" cy="10" r="5" class="fill-flash-red stroke-white stroke-2" />
+            </svg>
+          </div>
+          <div class="flex justify-between text-[10px] text-flash-textMuted font-mono pt-2 border-t border-flash-border">
+            <span>Awal Periode</span>
+            <span>Minggu 2</span>
+            <span>Minggu 3</span>
+            <span>Hari Ini</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- History Log Table -->
+      <section class="bg-white rounded-xl overflow-hidden border border-flash-border flash-shadow">
+        <div class="p-3.5 bg-gray-100 border-b border-flash-border flex justify-between items-center text-xs">
+          <h3 class="font-extrabold text-flash-textPrimary">Log Hasil Pertandingan &amp; Validasi Model</h3>
+          <span class="text-flash-textMuted font-mono">Arsip Laga Terakhir</span>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs">
+            <thead>
+              <tr class="border-b border-flash-border bg-gray-50 text-flash-textMuted font-mono uppercase text-[10px]">
+                <th class="p-3">Tanggal / Liga</th>
+                <th class="p-3">Partai (Kandang vs Tandang)</th>
+                <th class="p-3">Pilihan Model</th>
+                <th class="p-3">Odds Pasaran</th>
+                <th class="p-3">Skor Akhir</th>
+                <th class="p-3">Status Matriks</th>
+              </tr>
+            </thead>
+            <tbody id="historyTableBody" class="divide-y divide-flash-border text-flash-textPrimary">
+              <!-- Rendered via JS -->
+            </tbody>
+          </table>
+        </div>
+      </section>
     </div>
+
+    <!-- ==================== TAB 3: MATHEMATICAL METHODOLOGY ==================== -->
+    <div id="tab-algorithm" class="hidden space-y-5">
+      <section class="bg-white rounded-xl p-5 md:p-6 border border-flash-border flash-shadow space-y-5">
+        <div>
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-flash-redSoft border border-red-200 text-flash-red text-xs font-bold font-mono mb-1.5">
+            <i class="fa-solid fa-code"></i> MATHEMATICAL ARCHITECTURE
+          </div>
+          <h2 class="text-xl sm:text-2xl font-bold text-flash-textPrimary">Arsitektur Model Matematika &amp; Probabilitas</h2>
+          <p class="text-xs text-flash-textMuted mt-0.5 max-w-2xl">
+            Proses pemrosesan data mengeksekusi rumus distribusi statistik Poisson dan matriks Expected Goals (xG) secara independen tanpa campur tangan intuisi manusia.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+          <div class="bg-gray-50 p-4 rounded-lg border border-flash-border space-y-1.5">
+            <div class="w-7 h-7 rounded bg-flash-red text-white font-mono font-bold flex items-center justify-center text-xs">01</div>
+            <h3 class="font-extrabold text-flash-textPrimary text-sm">Pengumpulan Data Historis Laga</h3>
+            <p class="text-xs text-flash-textMuted leading-relaxed">Mengagregasi statistik tembakan, rasio penguasaan bola, catatan H2H, serta tingkat kebobolan per laga.</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg border border-flash-border space-y-1.5">
+            <div class="w-7 h-7 rounded bg-flash-red text-white font-mono font-bold flex items-center justify-center text-xs">02</div>
+            <h3 class="font-extrabold text-flash-textPrimary text-sm">Matriks Distribusi Poisson &amp; xG</h3>
+            <p class="text-xs text-flash-textMuted leading-relaxed">Menghitung koefisien daya serang dan daya bertahan tiap tim untuk memproyeksikan estimasi distribusi skor.</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg border border-flash-border space-y-1.5">
+            <div class="w-7 h-7 rounded bg-flash-red text-white font-mono font-bold flex items-center justify-center text-xs">03</div>
+            <h3 class="font-extrabold text-flash-textPrimary text-sm">Penyaringan Value Odds (&ge; 1.50)</h3>
+            <p class="text-xs text-flash-textMuted leading-relaxed">Hanya partai dengan persentase kalkulasi matematis &ge; 70% dan rasio multiplier odds &ge; 1.50 yang lulus filter.</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg border border-flash-border space-y-1.5">
+            <div class="w-7 h-7 rounded bg-flash-red text-white font-mono font-bold flex items-center justify-center text-xs">04</div>
+            <h3 class="font-extrabold text-flash-textPrimary text-sm">Penerbitan Terminal Kuantitatif</h3>
+            <p class="text-xs text-flash-textMuted leading-relaxed">Hasil kalkulasi disajikan secara instan ke dalam papan data <code class="text-flash-red font-mono font-bold">today.json</code> setiap hari pukul 10:30 WIB.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-flash-dark text-gray-400 text-xs py-8 border-t border-gray-800 mt-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
-      <div class="flex justify-center items-center space-x-2 text-white font-bold text-lg">
-        <span>FIX<span class="text-yellow-400">SCORE</span></span>
+  <!-- ==================== MODALS ==================== -->
+  <div id="analyticsModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white max-w-md w-full rounded-xl p-5 border border-flash-border flash-shadow space-y-4 relative">
+      <button onclick="closeAnalyticsModal()" class="absolute top-4 right-4 text-gray-400 hover:text-flash-textPrimary p-1">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+      <div class="flex items-center gap-2 text-flash-red font-mono text-xs font-bold">
+        <i class="fa-solid fa-chart-pie"></i>
+        <span>MATRIKS EVALUASI STATISTIK LAGA</span>
       </div>
-      <p class="max-w-xl mx-auto text-gray-500 leading-relaxed">
-        FIXSCORE adalah platform analisis independen berbasis statistik matematika dan model kuantitatif. Kami tidak menyelenggarakan perjudian dalam bentuk apa pun.
+      <div id="modalMatchTitle" class="text-base font-extrabold text-flash-textPrimary border-b border-flash-border pb-2"></div>
+      <div id="modalMetricsBody" class="space-y-2.5 font-mono text-xs"></div>
+      <div class="bg-gray-50 p-3 rounded-lg border border-flash-border text-xs space-y-1">
+        <span class="text-flash-red font-bold block text-[11px]"><i class="fa-solid fa-quote-left mr-1"></i>Indikator Data Statistikal:</span>
+        <p id="modalAiNotes" class="text-flash-textSecondary leading-relaxed font-sans text-xs"></p>
+      </div>
+      <button onclick="closeAnalyticsModal()" class="w-full py-2 bg-gray-100 hover:bg-gray-200 text-flash-textPrimary text-xs font-bold rounded-lg transition-all border border-flash-border">Tutup Matriks</button>
+    </div>
+  </div>
+
+  <div id="vipModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white max-w-sm w-full rounded-xl p-6 border border-flash-border flash-shadow space-y-4 text-center relative">
+      <button onclick="closeVipModal()" class="absolute top-4 right-4 text-gray-400 hover:text-flash-textPrimary p-1">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+      <div class="w-12 h-12 rounded-full bg-flash-redSoft text-flash-red flex items-center justify-center mx-auto text-xl font-bold border border-red-200">
+        <i class="fa-solid fa-paper-plane"></i>
+      </div>
+      <div class="space-y-1">
+        <h3 class="text-lg font-bold text-flash-textPrimary">Komunitas Diskusi &amp; Data</h3>
+        <p class="text-xs text-flash-textMuted leading-relaxed">Dapatkan pembaruan real-time kalkulasi 10 partai harian serta analisis matriks varians parlay langsung via Telegram.</p>
+      </div>
+      <a href="https://t.me" target="_blank" class="w-full py-2.5 bg-flash-red hover:bg-flash-redHover text-white font-bold rounded-lg transition-all text-xs flex items-center justify-center gap-2 block shadow-sm">
+        <i class="fa-brands fa-telegram text-base"></i> GABUNG GROUP TELEGRAM
+      </a>
+    </div>
+  </div>
+
+  <div id="toast" class="fixed bottom-5 right-5 z-50 bg-flash-dark text-white px-4 py-2.5 rounded-lg font-bold text-xs shadow-xl hidden transition-all flex items-center gap-2 border border-black">
+    <i class="fa-solid fa-circle-check text-emerald-400"></i>
+    <span id="toastMsg">Pesan Notifikasi</span>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-black bg-flash-dark mt-10 py-6 text-xs text-gray-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-3">
+        <div class="flex items-center gap-2">
+          <div class="w-6 h-6 rounded bg-flash-red flex items-center justify-center text-white font-black text-xs">
+            <i class="fa-solid fa-futbol text-emerald-400"></i>
+          </div>
+          <span class="font-extrabold text-white tracking-wider">FIXSCORE QUANTITATIVE FOOTBALL ANALYTICS</span>
+        </div>
+        <div class="flex items-center gap-4 text-gray-300">
+          <a href="#" onclick="switchTab('dashboard')" class="hover:text-white">10 Partai Hari Ini</a>
+          <a href="#" onclick="switchTab('history')" class="hover:text-white">Validasi Data</a>
+          <a href="#" onclick="switchTab('algorithm')" class="hover:text-white">Metodologi</a>
+        </div>
+      </div>
+      <p class="text-[11px] text-gray-500 leading-relaxed border-t border-gray-800 pt-3">
+        Disclaimer: FIXSCORE adalah platform analisis kuantitatif sepak bola independen berbasis perhitungan matematika, probabilitas statistik, dan expected goals (xG). Kami tidak menyediakan fasilitas pertaruhan atau perjudian uang asli.
       </p>
-      <div class="text-gray-600 font-mono pt-2">
-        &copy; 2026 FIXSCORE Quantitative Engine. All Rights Reserved.
-      </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+  <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+  <script>
+    let MOCK_TODAY_MATCHES = [];
+    let MOCK_HISTORY_LOGS = [];
+    let selectedMarketFilter = 'ALL';
+    let userParlaySlip = [];
+
+    // AUTOMATIC FETCH FROM GITHUB JSON DATA
+    async function loadDataFromJSON() {
+      try {
+        const todayRes = await fetch('./data/today.json');
+        if (todayRes.ok) {
+          MOCK_TODAY_MATCHES = await todayRes.json();
+        }
+      } catch (e) {
+        console.log("Data today belum tersedia.");
+      }
+
+      try {
+        const historyRes = await fetch('./data/history.json');
+        if (historyRes.ok) {
+          MOCK_HISTORY_LOGS = await historyRes.json();
+        }
+      } catch (e) {
+        console.log("Data history belum tersedia.");
+      }
+
+      renderMatchesList();
+      renderHistoryTable();
+    }
+
+    window.onload = function() {
+      loadDataFromJSON();
+    };
+
+    function switchTab(tabName) {
+      document.getElementById('tab-dashboard').classList.add('hidden');
+      document.getElementById('tab-history').classList.add('hidden');
+      document.getElementById('tab-algorithm').classList.add('hidden');
+
+      const inactiveClass = "px-4 py-2.5 rounded-t-lg transition-all text-white hover:bg-black/20 flex items-center gap-2 font-bold";
+      document.getElementById('nav-dashboard').className = inactiveClass;
+      document.getElementById('nav-history').className = inactiveClass;
+      document.getElementById('nav-algorithm').className = inactiveClass;
+
+      document.getElementById(`tab-${tabName}`).classList.remove('hidden');
+      const activeNav = document.getElementById(`nav-${tabName}`);
+      if (activeNav) {
+        activeNav.className = "px-4 py-2.5 rounded-t-lg transition-all text-flash-red bg-white shadow-sm flex items-center gap-2 font-bold";
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function renderMatchesList() {
+      const container = document.getElementById('matchesContainer');
+      container.innerHTML = '';
+
+      let filtered = MOCK_TODAY_MATCHES.filter(m => {
+        if (selectedMarketFilter === 'ALL') return true;
+        return m.marketType === selectedMarketFilter;
+      });
+
+      const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+      if (searchTerm) {
+        filtered = filtered.filter(m => 
+          m.homeTeam.toLowerCase().includes(searchTerm) || 
+          m.awayTeam.toLowerCase().includes(searchTerm) || 
+          m.league.toLowerCase().includes(searchTerm)
+        );
+      }
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div class="bg-white p-6 rounded-xl text-center space-y-2 border border-flash-border">
+            <i class="fa-solid fa-futbol text-xl text-gray-400"></i>
+            <p class="text-xs text-flash-textMuted">Belum ada data pertandingan hari ini atau kriteria pencarian tidak cocok.</p>
+          </div>
+        `;
+        return;
+      }
+
+      filtered.forEach((m, index) => {
+        const isAdded = userParlaySlip.some(p => p.id === m.id);
+        const card = document.createElement('div');
+        card.className = "bg-white flash-card-hover rounded-xl p-3.5 sm:p-4 border border-flash-border flash-shadow relative space-y-3";
+
+        card.innerHTML = `
+          <div class="flex justify-between items-center text-xs font-mono text-flash-textMuted border-b border-flash-border pb-2">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-futbol text-emerald-600 text-xs"></i>
+              <span class="font-extrabold text-flash-textPrimary text-[11px] sm:text-xs font-sans tracking-wide">${m.league}</span>
+            </div>
+            <span class="bg-gray-100 px-2 py-0.5 rounded border border-flash-border text-flash-textPrimary text-[11px] font-bold">
+              <i class="fa-regular fa-clock mr-1 text-flash-red"></i>${m.kickoff}
+            </span>
+          </div>
+
+          <div class="grid grid-cols-12 items-center gap-2 ${m.isVip ? 'blur-lock' : ''}">
+            <div class="col-span-5 space-y-1">
+              <div class="font-extrabold text-flash-textPrimary text-sm sm:text-base flex items-center gap-1.5">
+                <i class="fa-solid fa-shirt text-xs text-flash-red"></i>
+                <span>${m.homeTeam}</span>
+              </div>
+              <div class="flex items-center gap-1 font-mono text-[9px] font-bold">
+                <span class="text-gray-400 font-sans font-normal">Form:</span>
+                ${m.homeForm.map(f => `<span class="w-4 h-4 rounded flex items-center justify-center ${f==='W'?'form-badge-w':f==='D'?'form-badge-d':'form-badge-l'}">${f}</span>`).join('')}
+              </div>
+            </div>
+
+            <div class="col-span-2 text-center">
+              <span class="text-[10px] font-mono text-emerald-800 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">VS</span>
+            </div>
+
+            <div class="col-span-5 text-right space-y-1">
+              <div class="font-extrabold text-flash-textPrimary text-sm sm:text-base flex items-center justify-end gap-1.5">
+                <span>${m.awayTeam}</span>
+                <i class="fa-solid fa-shirt text-xs text-gray-500"></i>
+              </div>
+              <div class="flex items-center justify-end gap-1 font-mono text-[9px] font-bold">
+                <span class="text-gray-400 font-sans font-normal">Form:</span>
+                ${m.awayForm.map(f => `<span class="w-4 h-4 rounded flex items-center justify-center ${f==='W'?'form-badge-w':f==='D'?'form-badge-d':'form-badge-l'}">${f}</span>`).join('')}
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] font-mono">
+            <div class="px-2.5 py-1 rounded border indicator-pos flex items-center gap-1.5 font-bold">
+              <i class="fa-solid fa-circle-check text-emerald-600"></i>
+              <span>${m.posEdge}</span>
+            </div>
+            <div class="px-2.5 py-1 rounded border indicator-neg flex items-center gap-1.5 font-bold">
+              <i class="fa-solid fa-triangle-exclamation text-red-600"></i>
+              <span>${m.riskFactor}</span>
+            </div>
+          </div>
+
+          ${m.isVip ? `
+            <div class="absolute inset-0 bg-white/95 backdrop-blur-sm rounded-xl flex flex-col items-center justify-center p-4 text-center z-20 space-y-2 border border-flash-border">
+              <div class="w-8 h-8 rounded-full bg-flash-redSoft text-flash-red flex items-center justify-center text-xs font-bold border border-red-200">
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <div class="font-extrabold text-flash-textPrimary text-xs">PARTAI #0${index+1} KHUSUS VIP MEMBER</div>
+              <p class="text-[11px] text-flash-textMuted max-w-[220px]">Buka kunci 6 partai VIP harian & racikan statistik.</p>
+              <button onclick="openVipModal()" class="px-3 py-1 bg-flash-red hover:bg-flash-redHover text-white font-bold text-xs rounded transition-all shadow-sm">
+                BUKA AKSES VIP
+              </button>
+            </div>
+          ` : ''}
+
+          <div class="bg-gray-50 p-2.5 rounded-lg border border-flash-border flex flex-wrap justify-between items-center gap-2">
+            <div>
+              <span class="text-[10px] text-flash-textMuted block font-bold">PROYEKSI MODEL KUANTITATIF</span>
+              <span class="text-xs sm:text-sm font-extrabold text-flash-red">${m.pick}</span>
+            </div>
+
+            <div class="flex items-center gap-3 font-mono text-xs">
+              <div class="text-right">
+                <span class="text-[10px] text-flash-textMuted block font-sans">VALUE ODDS</span>
+                <span class="font-extrabold text-flash-textPrimary bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded border border-amber-300">${m.odds.toFixed(2)}</span>
+              </div>
+              <div class="text-right">
+                <span class="text-[10px] text-emerald-800 font-bold block font-sans">PROBABILITAS</span>
+                <span class="font-extrabold text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded border border-emerald-300">${m.winProb}%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between gap-2 pt-0.5 text-xs">
+            <button onclick="openAnalyticsModal(${m.id})" class="text-flash-textMuted hover:text-flash-red flex items-center gap-1.5 transition-colors font-medium">
+              <i class="fa-solid fa-diagram-project text-emerald-600"></i>
+              <span class="underline text-[11px]">Matriks Taktis &amp; Stats</span>
+            </button>
+
+            <button onclick="toggleParlayPick(${m.id})" class="px-3 py-1 rounded font-bold transition-all text-xs flex items-center gap-1.5 ${isAdded ? 'bg-red-100 text-flash-red border border-red-300' : 'bg-flash-red hover:bg-flash-redHover text-white shadow-sm'}">
+              <i class="fa-solid ${isAdded ? 'fa-minus' : 'fa-plus'}"></i>
+              <span>${isAdded ? 'Hapus Slip' : '+ Parlay'}</span>
+            </button>
+          </div>
+        `;
+
+        container.appendChild(card);
+      });
+    }
+
+    function filterMatches(market) {
+      selectedMarketFilter = market;
+      ['ALL', '1X2', 'HDP', 'OU'].forEach(m => {
+        const btn = document.getElementById(`filter-${m}`);
+        if (btn) {
+          if (m === market) {
+            btn.className = "px-3.5 py-1.5 rounded bg-flash-red text-white transition-all shadow-sm font-bold";
+          } else {
+            btn.className = "px-3.5 py-1.5 rounded bg-gray-100 text-flash-textSecondary hover:bg-gray-200 transition-all font-bold";
+          }
+        }
+      });
+      renderMatchesList();
+    }
+
+    function searchMatches() {
+      renderMatchesList();
+    }
+
+    function toggleParlayPick(id) {
+      const match = MOCK_TODAY_MATCHES.find(m => m.id === id);
+      if (!match) return;
+
+      const index = userParlaySlip.findIndex(p => p.id === id);
+      if (index > -1) {
+        userParlaySlip.splice(index, 1);
+        showToast(`Dihapus dari racikan: ${match.homeTeam}`);
+      } else {
+        if (userParlaySlip.length >= 5) {
+          showToast("Maksimal racikan 5 partai dalam 1 slip parlay!");
+          return;
+        }
+        userParlaySlip.push(match);
+        showToast(`Ditambahkan ke racikan: ${match.homeTeam}`);
+      }
+
+      renderMatchesList();
+      renderParlaySlip();
+    }
+
+    function renderParlaySlip() {
+      const picksList = document.getElementById('parlayPicksList');
+      const emptyState = document.getElementById('parlayEmptyState');
+      const calcSummary = document.getElementById('parlayCalcSummary');
+      const actions = document.getElementById('parlayActions');
+      const countBadge = document.getElementById('parlayCountBadge');
+
+      countBadge.innerText = `${userParlaySlip.length} Partai`;
+
+      if (userParlaySlip.length === 0) {
+        emptyState.classList.remove('hidden');
+        picksList.innerHTML = '';
+        calcSummary.classList.add('hidden');
+        actions.classList.add('hidden');
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+      calcSummary.classList.remove('hidden');
+      actions.classList.remove('hidden');
+
+      picksList.innerHTML = '';
+      let totalOdds = 1.0;
+      let combinedProb = 1.0;
+
+      userParlaySlip.forEach(m => {
+        totalOdds *= m.odds;
+        combinedProb *= (m.winProb / 100);
+
+        const pickItem = document.createElement('div');
+        pickItem.className = "bg-gray-50 p-2.5 rounded-lg border border-flash-border flex justify-between items-center text-xs";
+        pickItem.innerHTML = `
+          <div>
+            <div class="font-bold text-flash-textPrimary text-[11px]">${m.homeTeam} vs ${m.awayTeam}</div>
+            <div class="text-[10px] text-flash-red font-bold">${m.pick}</div>
+          </div>
+          <div class="flex items-center gap-2 font-mono">
+            <span class="text-flash-textPrimary font-extrabold text-xs">@${m.odds.toFixed(2)}</span>
+            <button onclick="toggleParlayPick(${m.id})" class="text-gray-400 hover:text-red-600 p-0.5">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        `;
+        picksList.appendChild(pickItem);
+      });
+
+      document.getElementById('parlayTotalOdds').innerText = totalOdds.toFixed(2);
+      document.getElementById('parlayCombinedProb').innerText = (combinedProb * 100).toFixed(1) + '%';
+      
+      const projectedReturn = Math.round(100000 * totalOdds);
+      document.getElementById('parlayProjectedPayout').innerText = `Rp ${projectedReturn.toLocaleString('id-ID')}`;
+    }
+
+    function clearParlaySlip() {
+      userParlaySlip = [];
+      renderMatchesList();
+      renderParlaySlip();
+      showToast("Racikan slip parlay di-reset.");
+    }
+
+    function copyParlaySlip() {
+      if (userParlaySlip.length === 0) return;
+
+      let text = `⚽ KALKULASI PARLAY KUANTITATIF - FIXSCORE ⚽\n`;
+      text += `📅 Tanggal Rilis: ${new Date().toLocaleDateString('id-ID')}\n\n`;
+
+      let totalOdds = 1.0;
+      userParlaySlip.forEach((m, idx) => {
+        totalOdds *= m.odds;
+        text += `${idx + 1}. ${m.homeTeam} vs ${m.awayTeam}\n   Pilihan Model: ${m.pick} (@${m.odds.toFixed(2)})\n`;
+      });
+
+      text += `\n🎯 Multiplier Total Odds: @${totalOdds.toFixed(2)}\n`;
+      text += `📈 Data & Metodologi: FIXSCORE Quantitative Pitch Engine\n`;
+
+      const dummy = document.createElement("textarea");
+      document.body.appendChild(dummy);
+      dummy.value = text;
+      dummy.select();
+      document.execCommand("copy");
+      document.body.removeChild(dummy);
+
+      showToast("Data kalkulasi FIXSCORE berhasil disalin!");
+    }
+
+    function openAnalyticsModal(id) {
+      const match = MOCK_TODAY_MATCHES.find(m => m.id === id);
+      if (!match) return;
+
+      document.getElementById('modalMatchTitle').innerText = `${match.homeTeam} vs ${match.awayTeam}`;
+      document.getElementById('modalAiNotes').innerText = match.aiNotes;
+
+      const metricsBody = document.getElementById('modalMetricsBody');
+      metricsBody.innerHTML = `
+        <div class="space-y-1">
+          <div class="flex justify-between text-flash-textMuted font-sans">
+            <span>Performa Form 5 Match:</span>
+            <span class="text-emerald-700 font-bold font-mono">${match.metrics.form}% (Positif)</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-1.5 overflow-hidden">
+            <div class="bg-emerald-600 h-1.5 rounded-full" style="width: ${match.metrics.form}%"></div>
+          </div>
+        </div>
+
+        <div class="space-y-1">
+          <div class="flex justify-between text-flash-textMuted font-sans">
+            <span>Rating Head-to-Head:</span>
+            <span class="text-flash-textPrimary font-bold font-mono">${match.metrics.h2h}%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-1.5 overflow-hidden">
+            <div class="bg-gray-600 h-1.5 rounded-full" style="width: ${match.metrics.h2h}%"></div>
+          </div>
+        </div>
+
+        <div class="space-y-1">
+          <div class="flex justify-between text-flash-textMuted font-sans">
+            <span>Matriks Expected Goals (xG):</span>
+            <span class="text-emerald-700 font-bold font-mono">${match.metrics.xG}% (Unggul)</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-1.5 overflow-hidden">
+            <div class="bg-emerald-500 h-1.5 rounded-full" style="width: ${match.metrics.xG}%"></div>
+          </div>
+        </div>
+
+        <div class="space-y-1">
+          <div class="flex justify-between text-flash-textMuted font-sans">
+            <span>Market Value Edge Index:</span>
+            <span class="text-amber-700 font-bold font-mono">${match.metrics.marketVal}%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-1.5 overflow-hidden">
+            <div class="bg-amber-500 h-1.5 rounded-full" style="width: ${match.metrics.marketVal}%"></div>
+          </div>
+        </div>
+      `;
+
+      document.getElementById('analyticsModal').classList.remove('hidden');
+    }
+
+    function closeAnalyticsModal() {
+      document.getElementById('analyticsModal').classList.add('hidden');
+    }
+
+    function openVipModal() {
+      document.getElementById('vipModal').classList.remove('hidden');
+    }
+
+    function closeVipModal() {
+      document.getElementById('vipModal').classList.add('hidden');
+    }
+
+    function renderHistoryTable() {
+      const tbody = document.getElementById('historyTableBody');
+      tbody.innerHTML = '';
+
+      if (MOCK_HISTORY_LOGS.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="6" class="p-4 text-center text-gray-400">Belum ada data riwayat pertandingan.</td></tr>`;
+        return;
+      }
+
+      MOCK_HISTORY_LOGS.forEach(log => {
+        const tr = document.createElement('tr');
+        tr.className = "hover:bg-gray-50 transition-colors";
+        tr.innerHTML = `
+          <td class="p-3 font-mono text-flash-textMuted text-[11px]">
+            <div class="font-bold text-flash-textPrimary">${log.date}</div>
+            <div class="text-[10px] text-gray-400 font-sans">${log.league}</div>
+          </td>
+          <td class="p-3 font-bold text-flash-textPrimary text-xs flex items-center gap-1.5">
+            <i class="fa-solid fa-futbol text-[10px] text-gray-400"></i>
+            <span>${log.match}</span>
+          </td>
+          <td class="p-3 font-bold text-flash-red text-xs">${log.pick}</td>
+          <td class="p-3 font-mono font-extrabold text-flash-textPrimary text-xs">@${log.odds.toFixed(2)}</td>
+          <td class="p-3 font-mono font-extrabold text-flash-textPrimary text-xs">${log.score}</td>
+          <td class="p-3">
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono flex items-center gap-1 w-fit ${log.status === 'WIN' ? 'bg-emerald-100 text-emerald-800 border border-emerald-300' : 'bg-red-100 text-red-800 border border-red-300'}">
+              <i class="fa-solid ${log.status === 'WIN' ? 'fa-check text-emerald-600' : 'fa-xmark text-red-600'}"></i>
+              ${log.status}
+            </span>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function toggleMobileMenu() {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toastMsg').innerText = msg;
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 3000);
+    }
+  </script>
 </body>
 </html>
