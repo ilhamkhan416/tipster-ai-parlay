@@ -1,10 +1,13 @@
-// FIXSCORE APPLICATION LOGIC WITH AUTOMATIC LIVE SCORE CALCULATOR
+// FIXSCORE APPLICATION LOGIC WITH REAL-TIME API-SPORTS LIVE SCORE
 
 let MOCK_TODAY_MATCHES = [];
 let selectedMarketFilter = 'ALL';
 let userParlaySlip = [];
 
-// Penanganan logo klub yang 100% aman (Menggunakan SVG Shield Murni tanpa bergantung pada tag <img> eksternal)
+// API KEY UTAMA KAMU (API-SPORTS)
+const API_SPORTS_KEY = 'c34a8c442012a28b459b7887380fb8be';
+
+// Penanganan logo klub yang 100% aman (Menggunakan SVG Shield Murni jika logo error/broken)
 function getTeamLogoHtml(logoUrl, teamName) {
   if (logoUrl && logoUrl.trim() !== "" && !logoUrl.includes("undefined")) {
     return `<div class="w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center shrink-0">
@@ -31,55 +34,72 @@ function getLeagueLogoHtml(logoUrl, leagueName) {
   return `<i class="fa-solid fa-trophy text-amber-500 text-xs shrink-0"></i>`;
 }
 
-// Memuat data dari today.json & otomatis menghitung status Live Score berdasarkan waktu
+// Memuat data dari today.json
 async function loadDataFromJSON() {
   const cacheBuster = new Date().getTime();
   try {
     const todayRes = await fetch(`./data/today.json?v=${cacheBuster}`, { cache: 'no-store' });
     if (todayRes.ok) {
       MOCK_TODAY_MATCHES = await todayRes.json();
-      autoUpdateLiveStatus(); // Otomatis mengkalkulasi waktu & update status LIVE/FT
       renderMatchesList();
+      checkLiveMatchesUpdate(); // Otomatis cek update skor real-time dari API
     }
   } catch (e) {
     console.log("Error loading JSON data.");
   }
 }
 
-// KALKULATOR LIVE SCORE AUTOMATIS (Waktu Nyata)
-// Mengubah LIVE menjadi FT secara otomatis saat pertandingan sudah lewat dari 105 menit
-function autoUpdateLiveStatus() {
-  const now = new Date();
+// UPDATE SKOR REAL-TIME LANGSUNG DARI API-SPORTS
+async function checkLiveMatchesUpdate() {
+  // Hanya ambil pertandingan yang sedang jalan / hari ini agar hemat kuota API
+  const liveMatches = MOCK_TODAY_MATCHES.filter(m => 
+    ['1H', '2H', 'HT', 'LIVE', 'ET', 'P'].includes(String(m.statusShort)) ||
+    (m.kickoffUtc && new Date(m.kickoffUtc) <= new Date() && m.statusShort !== 'FT')
+  );
 
-  MOCK_TODAY_MATCHES.forEach(m => {
-    if (m.kickoffUtc) {
-      const matchTime = new Date(m.kickoffUtc);
-      const diffMinutes = Math.floor((now - matchTime) / (1000 * 60));
+  if (liveMatches.length === 0) return;
 
-      // Jika belum Kick-off
-      if (diffMinutes < 0) {
-        m.statusShort = 'NS'; // Not Started
-      } 
-      // Jika dalam rentang waktu babak 1 & 2 (0 s/d 105 menit)
-      else if (diffMinutes >= 0 && diffMinutes <= 105) {
-        if (m.statusShort !== 'FT') {
-          m.statusShort = 'LIVE';
-          m.statusElapsed = diffMinutes > 90 ? '90+' : diffMinutes;
+  let hasUpdates = false;
+
+  for (let match of liveMatches) {
+    if (match.fixtureId) {
+      try {
+        const res = await fetch(`https://v3.football.api-sports.io/fixtures?id=${match.fixtureId}`, {
+          method: 'GET',
+          headers: {
+            'x-apisports-key': API_SPORTS_KEY
+          }
+        });
+
+        if (res.ok) {
+          const apiData = await res.json();
+          if (apiData.response && apiData.response.length > 0) {
+            const fix = apiData.response[0];
+            
+            // Perbarui skor dan status jika ada perubahan dari API
+            match.scoreHome = fix.goals.home ?? match.scoreHome;
+            match.scoreAway = fix.goals.away ?? match.scoreAway;
+            match.statusShort = fix.fixture.status.short;
+            match.statusElapsed = fix.fixture.status.elapsed;
+            hasUpdates = true;
+          }
         }
-      } 
-      // Jika sudah lebih dari 105 menit sejak kickoff -> OTOMATIS FT (FULL TIME)
-      else if (diffMinutes > 105) {
-        m.statusShort = 'FT';
-        m.statusElapsed = 90;
+      } catch (err) {
+        console.log("Gagal fetch live match ID:", match.fixtureId);
       }
     }
-  });
+  }
+
+  // Jika ada skor/menit yang diperbarui dari API, re-render tampilan
+  if (hasUpdates) {
+    renderMatchesList();
+  }
 }
 
 window.onload = function() {
   loadDataFromJSON();
-  // Update otomatis tiap 30 detik langsung di browser tanpa perlu re-run workflow
-  setInterval(loadDataFromJSON, 30000); 
+  // Cek update Live Score tiap 45 detik langsung dari browser
+  setInterval(loadDataFromJSON, 45000); 
 };
 
 function toggleSidebar() {
@@ -133,7 +153,7 @@ function renderMatchesList() {
       } catch(e) {}
     }
 
-    // FT SCORE HORIZONTAL RAPAT (SEJAJAR & TIDAK KEBAWAH)
+    // FT SCORE HORIZONTAL RAPAT (SEJAJAR 100%)
     let statusBadge = `<span class="bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200 text-slate-700 text-[10px] font-bold"><i class="fa-regular fa-clock mr-1 text-flash-red"></i>${localKickoffStr}</span>`;
     let centerScoreDisplay = `<span class="text-[10px] font-mono text-emerald-800 font-bold bg-emerald-50 px-2.5 py-0.5 rounded-md border border-emerald-200">VS</span>`;
 
