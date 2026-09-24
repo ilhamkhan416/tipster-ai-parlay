@@ -1,362 +1,290 @@
 [
   {
+    "league": "UEFA NATIONS LEAGUE",
+    "homeTeam": "Netherlands",
+    "awayTeam": "Germany",
+    "kickoffUtc": "2026-09-24T18:45:00+00:00",
+    "kickoff": "01:45 WIB",
+    "pick": "Over 2.5",
+    "marketType": "OU",
+    "odds": 1.78,
+    "winProb": 62,
+    "posEdge": "+10.3% +EV (Kalkulasi Engine)",
+    "riskFactor": "-4.2% Volatilitas Transisi",
+    "aiNotes": "Duel klasik Eropa dengan karakteristik transisi cepat dan lini serang agresif dari kedua tim.",
     "id": 1,
-    "league": "ENGLISH PREMIER LEAGUE",
-    "kickoffUtc": "2026-09-24T15:00:00Z",
-    "kickoff": "15:00 WIB",
-    "homeTeam": "Arsenal",
-    "awayTeam": "Brighton",
+    "isVip": false,
     "homeForm": [
       "W",
       "W",
-      "W",
       "D",
-      "W"
-    ],
-    "awayForm": [
-      "W",
-      "D",
-      "L",
       "W",
       "L"
     ],
-    "pick": "Arsenal Menang",
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "metrics": {
+      "form": 88,
+      "h2h": 82,
+      "xG": 80,
+      "marketVal": 84
+    }
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE",
+    "homeTeam": "Portugal",
+    "awayTeam": "Wales",
+    "kickoffUtc": "2026-09-24T18:45:00+00:00",
+    "kickoff": "01:45 WIB",
+    "pick": "Portugal -1.0",
+    "marketType": "HDP",
+    "odds": 1.85,
+    "winProb": 68,
+    "posEdge": "+12.1% +EV (Kalkulasi Engine)",
+    "riskFactor": "-3.1% Volatilitas Transisi",
+    "aiNotes": "Dominasi penguasaan bola dan kedalaman skuad Portugal jauh di atas Wales.",
+    "id": 2,
+    "isVip": false,
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "metrics": {
+      "form": 88,
+      "h2h": 82,
+      "xG": 80,
+      "marketVal": 84
+    }
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE",
+    "homeTeam": "Serbia",
+    "awayTeam": "Greece",
+    "kickoffUtc": "2026-09-24T18:45:00+00:00",
+    "kickoff": "01:45 WIB",
+    "pick": "Serbia",
+    "marketType": "1X2",
+    "odds": 1.72,
+    "winProb": 65,
+    "posEdge": "+11.8% +EV (Kalkulasi Engine)",
+    "riskFactor": "-4.5% Volatilitas Transisi",
+    "aiNotes": "Serbia memiliki rekor kandang yang solid serta efektivitas bola mati yang tinggi.",
+    "id": 3,
+    "isVip": false,
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "metrics": {
+      "form": 88,
+      "h2h": 82,
+      "xG": 80,
+      "marketVal": 84
+    }
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE",
+    "homeTeam": "Norway",
+    "awayTeam": "Denmark",
+    "kickoffUtc": "2026-09-24T18:45:00+00:00",
+    "kickoff": "01:45 WIB",
+    "pick": "Over 2.5",
+    "marketType": "OU",
+    "odds": 1.9,
+    "winProb": 58,
+    "posEdge": "+10.2% +EV (Kalkulasi Engine)",
+    "riskFactor": "-5.1% Volatilitas Transisi",
+    "aiNotes": "Pertemuan Skandinavia ini diprediksi terbuka berkat ketajaman lini depan kedua kubu.",
+    "id": 4,
+    "isVip": false,
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "metrics": {
+      "form": 88,
+      "h2h": 82,
+      "xG": 80,
+      "marketVal": 84
+    }
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE",
+    "homeTeam": "Austria",
+    "awayTeam": "Israel",
+    "kickoffUtc": "2026-09-24T18:45:00+00:00",
+    "kickoff": "01:45 WIB",
+    "pick": "Austria",
     "marketType": "1X2",
     "odds": 1.62,
-    "winProb": 78,
-    "isVip": false,
-    "posEdge": "+16.8% +EV (Keunggulan xG Kandang)",
-    "riskFactor": "-3.8% Volatilitas Transisi",
+    "winProb": 70,
+    "posEdge": "+13.4% +EV (Kalkulasi Engine)",
+    "riskFactor": "-3.0% Volatilitas Transisi",
+    "aiNotes": "Intensitas pressing tinggi dari Austria menyulitkan build-up pertahanan Israel.",
+    "id": 5,
+    "isVip": true,
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
     "metrics": {
       "form": 88,
       "h2h": 82,
       "xG": 80,
       "marketVal": 84
-    },
-    "aiNotes": "Kalkulasi Poisson dan tren xG mendukung keunggulan statistik Arsenal."
+    }
   },
   {
-    "id": 2,
-    "league": "SPANISH LA LIGA",
-    "kickoffUtc": "2026-09-24T18:30:00Z",
-    "kickoff": "18:30 WIB",
-    "homeTeam": "Real Madrid",
-    "awayTeam": "Real Betis",
-    "homeForm": [
-      "W",
-      "W",
-      "W",
-      "D",
-      "W"
-    ],
-    "awayForm": [
-      "W",
-      "D",
-      "L",
-      "W",
-      "L"
-    ],
-    "pick": "Over 2.5 Gol",
+    "league": "FRIENDLIES",
+    "homeTeam": "Japan",
+    "awayTeam": "Uruguay",
+    "kickoffUtc": "2026-09-24T10:05:00+00:00",
+    "kickoff": "17:05 WIB",
+    "pick": "Over 2.5",
     "marketType": "OU",
-    "odds": 1.58,
-    "winProb": 75,
-    "isVip": false,
-    "posEdge": "+16.8% +EV (Keunggulan xG Kandang)",
-    "riskFactor": "-3.8% Volatilitas Transisi",
+    "odds": 1.82,
+    "winProb": 60,
+    "posEdge": "+9.2% +EV (Kalkulasi Engine)",
+    "riskFactor": "-4.8% Volatilitas Transisi",
+    "aiNotes": "Laga uji coba internasional yang mempertemukan dua tim dengan transisi menyerang yang sangat cepat.",
+    "id": 6,
+    "isVip": true,
+    "homeForm": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
     "metrics": {
       "form": 88,
       "h2h": 82,
       "xG": 80,
       "marketVal": 84
-    },
-    "aiNotes": "Kalkulasi Poisson dan tren xG mendukung keunggulan statistik Real Madrid."
+    }
   },
   {
-    "id": 3,
-    "league": "GERMAN BUNDESLIGA",
-    "kickoffUtc": "2026-09-24T20:30:00Z",
-    "kickoff": "20:30 WIB",
-    "homeTeam": "Bayer Leverkusen",
-    "awayTeam": "Wolfsburg",
-    "homeForm": [
-      "W",
-      "W",
-      "W",
-      "D",
-      "W"
-    ],
-    "awayForm": [
-      "W",
-      "D",
-      "L",
-      "W",
-      "L"
-    ],
-    "pick": "Bayer Leverkusen -1.0 HDP",
-    "marketType": "HDP",
-    "odds": 1.72,
-    "winProb": 76,
-    "isVip": false,
-    "posEdge": "+16.8% +EV (Keunggulan xG Kandang)",
-    "riskFactor": "-3.8% Volatilitas Transisi",
-    "metrics": {
-      "form": 88,
-      "h2h": 82,
-      "xG": 80,
-      "marketVal": 84
-    },
-    "aiNotes": "Kalkulasi Poisson dan tren xG mendukung keunggulan statistik Bayer Leverkusen."
-  },
-  {
-    "id": 4,
-    "league": "ITALIAN SERIE A",
-    "kickoffUtc": "2026-09-24T23:00:00Z",
-    "kickoff": "23:00 WIB",
-    "homeTeam": "Inter Milan",
-    "awayTeam": "Atalanta",
-    "homeForm": [
-      "W",
-      "W",
-      "W",
-      "D",
-      "W"
-    ],
-    "awayForm": [
-      "W",
-      "D",
-      "L",
-      "W",
-      "L"
-    ],
-    "pick": "Over 2.5 Gol",
+    "league": "FRIENDLIES",
+    "homeTeam": "Uzbekistan",
+    "awayTeam": "Iran",
+    "kickoffUtc": "2026-09-24T14:00:00+00:00",
+    "kickoff": "21:00 WIB",
+    "pick": "Under 2.5",
     "marketType": "OU",
     "odds": 1.68,
-    "winProb": 72,
-    "isVip": false,
-    "posEdge": "+16.8% +EV (Keunggulan xG Kandang)",
-    "riskFactor": "-3.8% Volatilitas Transisi",
-    "metrics": {
-      "form": 88,
-      "h2h": 82,
-      "xG": 80,
-      "marketVal": 84
-    },
-    "aiNotes": "Kalkulasi Poisson dan tren xG mendukung keunggulan statistik Inter Milan."
-  },
-  {
-    "id": 5,
-    "league": "DUTCH EREDIVISIE",
-    "kickoffUtc": "2026-09-25T01:00:00Z",
-    "kickoff": "01:00 WIB",
-    "homeTeam": "PSV Eindhoven",
-    "awayTeam": "FC Utrecht",
-    "homeForm": [
-      "W",
-      "W",
-      "W",
-      "D",
-      "W"
-    ],
-    "awayForm": [
-      "W",
-      "D",
-      "L",
-      "W",
-      "L"
-    ],
-    "pick": "PSV Eindhoven -1.0 HDP",
-    "marketType": "HDP",
-    "odds": 1.8,
-    "winProb": 74,
-    "isVip": true,
-    "posEdge": "+16.8% +EV (Keunggulan xG Kandang)",
-    "riskFactor": "-3.8% Volatilitas Transisi",
-    "metrics": {
-      "form": 88,
-      "h2h": 82,
-      "xG": 80,
-      "marketVal": 84
-    },
-    "aiNotes": "Kalkulasi Poisson dan tren xG mendukung keunggulan statistik PSV Eindhoven."
-  },
-  {
-    "id": 6,
-    "league": "FRENCH LIGUE 1",
-    "kickoffUtc": "2026-09-25T02:00:00Z",
-    "kickoff": "02:00 WIB",
-    "homeTeam": "PSG",
-    "awayTeam": "Lille",
-    "homeForm": [
-      "W",
-      "W",
-      "W",
-      "D",
-      "W"
-    ],
-    "awayForm": [
-      "W",
-      "D",
-      "L",
-      "W",
-      "L"
-    ],
-    "pick": "PSG Menang",
-    "marketType": "1X2",
-    "odds": 1.55,
-    "winProb": 79,
-    "isVip": true,
-    "posEdge": "+16.8% +EV (Keunggulan xG Kandang)",
-    "riskFactor": "-3.8% Volatilitas Transisi",
-    "metrics": {
-      "form": 88,
-      "h2h": 82,
-      "xG": 80,
-      "marketVal": 84
-    },
-    "aiNotes": "Kalkulasi Poisson dan tren xG mendukung keunggulan statistik PSG."
-  },
-  {
+    "winProb": 66,
+    "posEdge": "+10.9% +EV (Kalkulasi Engine)",
+    "riskFactor": "-3.5% Volatilitas Transisi",
+    "aiNotes": "Kedua tim memiliki struktur pertahanan rapat dan disiplin taktis yang kuat.",
     "id": 7,
-    "league": "ENGLISH CHAMPIONSHIP",
-    "kickoffUtc": "2026-09-25T02:45:00Z",
-    "kickoff": "02:45 WIB",
-    "homeTeam": "Leeds United",
-    "awayTeam": "Hull City",
+    "isVip": true,
     "homeForm": [
       "W",
       "W",
-      "W",
       "D",
-      "W"
-    ],
-    "awayForm": [
-      "W",
-      "D",
-      "L",
       "W",
       "L"
     ],
-    "pick": "Leeds United Menang",
-    "marketType": "1X2",
-    "odds": 1.6,
-    "winProb": 73,
-    "isVip": true,
-    "posEdge": "+16.8% +EV (Keunggulan xG Kandang)",
-    "riskFactor": "-3.8% Volatilitas Transisi",
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
     "metrics": {
       "form": 88,
       "h2h": 82,
       "xG": 80,
       "marketVal": 84
-    },
-    "aiNotes": "Kalkulasi Poisson dan tren xG mendukung keunggulan statistik Leeds United."
+    }
   },
   {
+    "league": "PRIMERA A",
+    "homeTeam": "Atletico Nacional",
+    "awayTeam": "Millonarios",
+    "kickoffUtc": "2026-09-25T00:30:00+00:00",
+    "kickoff": "07:30 WIB",
+    "pick": "Atletico Nacional",
+    "marketType": "1X2",
+    "odds": 2.05,
+    "winProb": 54,
+    "posEdge": "+10.7% +EV (Kalkulasi Engine)",
+    "riskFactor": "-5.5% Volatilitas Transisi",
+    "aiNotes": "Keunggulan kandang dan performa xG yang konsisten menjadikan tuan rumah unggultipis.",
     "id": 8,
-    "league": "PORTUGUESE PRIMEIRA LIGA",
-    "kickoffUtc": "2026-09-25T03:15:00Z",
-    "kickoff": "03:15 WIB",
-    "homeTeam": "Benfica",
-    "awayTeam": "Moreirense",
+    "isVip": true,
     "homeForm": [
       "W",
       "W",
-      "W",
       "D",
-      "W"
-    ],
-    "awayForm": [
-      "W",
-      "D",
-      "L",
       "W",
       "L"
     ],
-    "pick": "Over 2.5 Gol",
-    "marketType": "OU",
-    "odds": 1.65,
-    "winProb": 71,
-    "isVip": true,
-    "posEdge": "+16.8% +EV (Keunggulan xG Kandang)",
-    "riskFactor": "-3.8% Volatilitas Transisi",
+    "awayForm": [
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
     "metrics": {
       "form": 88,
       "h2h": 82,
       "xG": 80,
       "marketVal": 84
-    },
-    "aiNotes": "Kalkulasi Poisson dan tren xG mendukung keunggulan statistik Benfica."
-  },
-  {
-    "id": 9,
-    "league": "SPANISH LA LIGA",
-    "kickoffUtc": "2026-09-25T03:30:00Z",
-    "kickoff": "03:30 WIB",
-    "homeTeam": "Atletico Madrid",
-    "awayTeam": "Espanyol",
-    "homeForm": [
-      "W",
-      "W",
-      "W",
-      "D",
-      "W"
-    ],
-    "awayForm": [
-      "W",
-      "D",
-      "L",
-      "W",
-      "L"
-    ],
-    "pick": "Atletico Madrid -1.0 HDP",
-    "marketType": "HDP",
-    "odds": 1.75,
-    "winProb": 75,
-    "isVip": true,
-    "posEdge": "+16.8% +EV (Keunggulan xG Kandang)",
-    "riskFactor": "-3.8% Volatilitas Transisi",
-    "metrics": {
-      "form": 88,
-      "h2h": 82,
-      "xG": 80,
-      "marketVal": 84
-    },
-    "aiNotes": "Kalkulasi Poisson dan tren xG mendukung keunggulan statistik Atletico Madrid."
-  },
-  {
-    "id": 10,
-    "league": "ARGENTINA LIGA PROFESIONAL",
-    "kickoffUtc": "2026-09-25T05:00:00Z",
-    "kickoff": "05:00 WIB",
-    "homeTeam": "River Plate",
-    "awayTeam": "San Lorenzo",
-    "homeForm": [
-      "W",
-      "W",
-      "W",
-      "D",
-      "W"
-    ],
-    "awayForm": [
-      "W",
-      "D",
-      "L",
-      "W",
-      "L"
-    ],
-    "pick": "River Plate Menang",
-    "marketType": "1X2",
-    "odds": 1.52,
-    "winProb": 77,
-    "isVip": true,
-    "posEdge": "+16.8% +EV (Keunggulan xG Kandang)",
-    "riskFactor": "-3.8% Volatilitas Transisi",
-    "metrics": {
-      "form": 88,
-      "h2h": 82,
-      "xG": 80,
-      "marketVal": 84
-    },
-    "aiNotes": "Kalkulasi Poisson dan tren xG mendukung keunggulan statistik River Plate."
+    }
   }
 ]
