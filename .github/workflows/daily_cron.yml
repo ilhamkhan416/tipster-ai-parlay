@@ -2,9 +2,9 @@ name: Daily Fixscore Automation Cron
 
 on:
   schedule:
-    # Berjalan otomatis setiap hari jam 03:30 UTC (sama dengan 10:30 WIB)
+    # Berjalan otomatis setiap jam 03:30 UTC (10:30 WIB)
     - cron: '30 3 * * *'
-  workflow_dispatch: # Menyediakan tombol untuk 'Run Manual' kapan saja
+  workflow_dispatch:
 
 jobs:
   build-and-update:
@@ -21,16 +21,17 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests pandas numpy
+          pip install requests
 
       - name: Run Engine Script
         env:
           RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python src/main.py
 
       - name: Commit and Push Updated Data
         run: |
           git config --global user.name "Fixscore-Bot"
-          git config --global user.email "bot@fixscore.ai"
+          git config --global user.email "bot@fixscore.local"
           git add data/today.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update 10 partai harian [Cron]" && git push)
