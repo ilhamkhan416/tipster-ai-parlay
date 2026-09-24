@@ -3,21 +3,22 @@ import json
 import requests
 from datetime import datetime
 
-# Ambil API Key dari GitHub Secrets
+# Ambil API Key resmi API-SPORTS dari GitHub Secrets
 API_KEY = os.getenv("RAPIDAPI_KEY")
+
+# Header khusus untuk direct API-SPORTS
 HEADERS = {
-    "X-RapidAPI-Key": API_KEY if API_KEY else "",
-    "X-RapidAPI-Host": "api-football-v1.p.rapidapi.com"
+    "x-apisports-key": API_KEY if API_KEY else ""
 }
 
 def fetch_today_matches():
     today_str = datetime.now().strftime("%Y-%m-%d")
-    url = "https://api-football-v1.p.rapidapi.com/v3/fixtures"
+    # Endpoint resmi direct API-SPORTS
+    url = "https://v3.football.api-sports.io/fixtures"
     params = {"date": today_str}
     
     matches = []
     
-    # Coba ambil data real dari API-Football jika API Key tersedia
     if API_KEY:
         try:
             response = requests.get(url, headers=HEADERS, params=params, timeout=10)
@@ -48,14 +49,13 @@ def fetch_today_matches():
                         "marketType": "1X2",
                         "odds": round(odds_val, 2),
                         "winProb": win_prob,
-                        "isVip": True if idx >= 4 else False, # Model Freemium: 4 Gratis, sisa VIP
+                        "isVip": True if idx >= 4 else False,
                         "posEdge": "+15.5% +EV (Kalkulasi Engine)",
                         "riskFactor": "-4.2% Volatilitas Serangan Balik",
                         "metrics": {"form": 85, "h2h": 80, "xG": 78, "marketVal": 82},
                         "aiNotes": f"Analisis Poisson & xG menunjukkan keunggulan statistik pada {home_name}."
                     }
                     
-                    # Filter Algoritma Blueprint: Odds >= 1.50 & WinRate >= 70%
                     if match_obj["odds"] >= 1.50 and match_obj["winProb"] >= 70:
                         matches.append(match_obj)
                         
@@ -64,7 +64,7 @@ def fetch_today_matches():
         except Exception as e:
             print(f"Error fetching API: {e}")
 
-    # Fallback Data jika API belum siap / limit habis agar web tidak kosong
+    # Fallback Data jika API limit habis
     if not matches:
         print("Menggunakan sampel data fallback...")
         sample_teams = [
