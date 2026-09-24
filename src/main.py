@@ -23,11 +23,9 @@ def get_all_raw_matches_from_api():
     cutoff_tomorrow = cutoff_today + timedelta(days=1)
     
     url = "https://v3.football.api-sports.io/fixtures"
-    
     raw_list = []
     
     if API_SPORTS_KEY:
-        # Tarik data hari ini dan besok untuk mengover laga dini hari
         for date_target in [today_str, tomorrow_str]:
             try:
                 res = requests.get(url, headers=HEADERS_SPORTS, params={"date": date_target}, timeout=15)
@@ -38,7 +36,7 @@ def get_all_raw_matches_from_api():
                         league = item.get("league", {}).get("name", "").upper()
                         teams = item.get("teams", {})
                         
-                        # Filter membuang liga gurem/kelompok umur
+                        # Filter membuang liga gurem / kelompok umur
                         if any(bad in league for bad in ["U19", "U20", "U21", "RESERVE", "WOMEN", "AMATEUR", "YOUTH"]):
                             continue
                             
@@ -65,23 +63,21 @@ def get_all_raw_matches_from_api():
     return raw_list
 
 def analyze_and_filter_with_gemini(raw_matches):
-    """Mengirim SELURUH data pertandingan rentang 24 jam ke Gemini AI"""
+    """Mengirim data pertandingan nyata ke Gemini AI untuk disaring"""
     if not GEMINI_API_KEY or not raw_matches:
-        print("Gemini API Key tidak ditemukan atau data mentah kosong. Menggunakan pemroses internal...")
+        print("PERINGATAN: Gemini API Key / Data Mentah Kosong! Beralih ke fallback.")
         return []
 
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
     
-    # Kirim SELURUH data mentah tanpa dipotong (raw_matches)
     prompt = f"""
-    Kamu adalah Head Quant Analyst Sepak Bola. Berikut adalah SELURUH jadwal pertandingan sepak bola dalam rentang jam 11:00 WIB hari ini s/d 11:00 WIB besok:
+    Kamu adalah Head Quant Analyst Sepak Bola. Berikut adalah jadwal pertandingan sepak bola NYATA dalam rentang jam 11:00 WIB hari ini s/d 11:00 WIB besok:
     {json.dumps(raw_matches, indent=2)}
 
     TUGAS UTAMA:
-    1. Dari seluruh daftar di atas, analisa dan pilih 10 pertandingan TERBAIK yang melibatkan klub-klub besar / liga-liga Bereputasi Tinggi (Premier League, La Liga, Serie A, Champions League, Eredivisie, dll).
-    2. Abaikan pertandingan antar tim papan bawah atau liga yang kurang populer.
-    3. Tentukan proyeksi pilihan pasaran paling aman (1X2, Asian Handicap -1.0, atau Over/Under 2.5).
-    4. Berikan output WAJIB berupa JSON ARRAY MURNI tanpa penjelasan/markdown tambahan, dengan struktur tiap objek:
+    1. Pilih maksimal 10 pertandingan TERBAIK dari daftar di atas yang melibatkan klub/liga papan atas.
+    2. Tentukan proyeksi pilihan pasaran paling masuk akal (1X2, Asian Handicap -1.0, atau Over/Under 2.5).
+    3. Output WAJIB berupa JSON ARRAY MURNI tanpa teks/markdown tambahan:
     [
       {{
         "league": "NAMA LIGA",
@@ -95,14 +91,12 @@ def analyze_and_filter_with_gemini(raw_matches):
         "winProb": 78,
         "posEdge": "+16.5% +EV (Kalkulasi Engine)",
         "riskFactor": "-3.8% Volatilitas Transisi",
-        "aiNotes": "Analisis taktis profesional 1-2 kalimat mengenai alasan pilihan ini."
+        "aiNotes": "Analisis taktis 1-2 kalimat."
       }}
     ]
     """
 
-    payload = {
-        "contents": [{"parts": [{"text": prompt}]}]
-    }
+    payload = {"contents": [{"parts": [{"text": prompt}]}]}
 
     try:
         res = requests.post(url, json=payload, headers={"Content-Type": "application/json"}, timeout=40)
@@ -110,7 +104,14 @@ def analyze_and_filter_with_gemini(raw_matches):
             result = res.json()
             text_response = result['candidates'][0]['content']['parts'][0]['text']
             
-            text_cleaned = text_response.replace("```json", "").replace("```", "").strip()
+            # Pembersihan string JSON dari balasan Gemini
+            text_cleaned = text_response.strip()
+            if text_cleaned.startswith("```"):
+                text_cleaned = text_cleaned.split("\n", 1)[1]
+            if text_cleaned.endswith("```"):
+                text_cleaned = text_cleaned.rsplit("\n", 1)[0]
+            text_cleaned = text_cleaned.replace("```json", "").replace("```", "").strip()
+
             analyzed_matches = json.loads(text_cleaned)
             
             for idx, m in enumerate(analyzed_matches):
@@ -122,56 +123,21 @@ def analyze_and_filter_with_gemini(raw_matches):
                 
             return analyzed_matches
     except Exception as e:
-        print(f"Error Gemini API: {e}")
+        print(f"Error pada pemrosesan Gemini API: {e}")
         
     return []
 
 if __name__ == "__main__":
-    print("Menjalankan FIXSCORE Quant Engine (Full 24-Hour Scan)...")
+    print("Menjalankan FIXSCORE Quant Engine...")
     raw_data = get_all_raw_matches_from_api()
-    print(f"Total pertandingan ditemukan dalam rentang 11:00 - 11:00 WIB: {len(raw_data)} laga.")
+    print(f"Total laga nyata ditemukan: {len(raw_data)} pertandingan.")
     
     final_matches = analyze_and_filter_with_gemini(raw_data)
     
-    # Fallback Data
-    if not final_matches:
-        print("Menggunakan data fallback terstruktur...")
-        sample_teams = [
-            ("Arsenal", "Brighton", "ENGLISH PREMIER LEAGUE", "2026-09-24T15:00:00Z", "15:00 WIB", 1.62, 78, "1X2"),
-            ("Real Madrid", "Real Betis", "SPANISH LA LIGA", "2026-09-24T18:30:00Z", "18:30 WIB", 1.58, 75, "OU"),
-            ("Bayer Leverkusen", "Wolfsburg", "GERMAN BUNDESLIGA", "2026-09-24T20:30:00Z", "20:30 WIB", 1.72, 76, "HDP"),
-            ("Inter Milan", "Atalanta", "ITALIAN SERIE A", "2026-09-24T23:00:00Z", "23:00 WIB", 1.68, 72, "OU"),
-            ("PSV Eindhoven", "FC Utrecht", "DUTCH EREDIVISIE", "2026-09-25T01:00:00Z", "01:00 WIB", 1.80, 74, "HDP"),
-            ("PSG", "Lille", "FRENCH LIGUE 1", "2026-09-25T02:00:00Z", "02:00 WIB", 1.55, 79, "1X2"),
-            ("Leeds United", "Hull City", "ENGLISH CHAMPIONSHIP", "2026-09-25T02:45:00Z", "02:45 WIB", 1.60, 73, "1X2"),
-            ("Benfica", "Moreirense", "PORTUGUESE PRIMEIRA LIGA", "2026-09-25T03:15:00Z", "03:15 WIB", 1.65, 71, "OU"),
-            ("Atletico Madrid", "Espanyol", "SPANISH LA LIGA", "2026-09-25T03:30:00Z", "03:30 WIB", 1.75, 75, "HDP"),
-            ("River Plate", "San Lorenzo", "ARGENTINA LIGA PROFESIONAL", "2026-09-25T05:00:00Z", "05:00 WIB", 1.52, 77, "1X2")
-        ]
-        final_matches = []
-        for idx, (home, away, league_name, utc_time, kickoff, odds, prob, market) in enumerate(sample_teams):
-            final_matches.append({
-                "id": idx + 1,
-                "league": league_name,
-                "kickoffUtc": utc_time,
-                "kickoff": kickoff,
-                "homeTeam": home,
-                "awayTeam": away,
-                "homeForm": ["W", "W", "W", "D", "W"],
-                "awayForm": ["W", "D", "L", "W", "L"],
-                "pick": f"{home} Menang" if market == "1X2" else ("Over 2.5 Gol" if market == "OU" else f"{home} -1.0 HDP"),
-                "marketType": market,
-                "odds": odds,
-                "winProb": prob,
-                "isVip": True if idx >= 4 else False,
-                "posEdge": "+16.8% +EV (Keunggulan xG Kandang)",
-                "riskFactor": "-3.8% Volatilitas Transisi",
-                "metrics": {"form": 88, "h2h": 82, "xG": 80, "marketVal": 84},
-                "aiNotes": f"Kalkulasi Poisson dan tren xG mendukung keunggulan statistik {home}."
-            })
-
-    os.makedirs("data", exist_ok=True)
-    with open("data/today.json", "w") as f:
-        json.dump(final_matches, f, indent=2)
-        
-    print(f"Selesai! {len(final_matches)} partai hasil pemrosesan penuh Gemini disimpan ke data/today.json")
+    if final_matches:
+        os.makedirs("data", exist_ok=True)
+        with open("data/today.json", "w") as f:
+            json.dump(final_matches, f, indent=2)
+        print(f"BERHASIL! {len(final_matches)} pertandingan NYATA disimpan ke data/today.json")
+    else:
+        print("Gagal memproses data API nyata. Menampilkan data fallback...")
