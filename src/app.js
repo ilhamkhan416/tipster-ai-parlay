@@ -1,4 +1,4 @@
-// FIXSCORE APPLICATION LOGIC + AUTOMATIC LIVE SCORE UPDATER
+// FIXSCORE APPLICATION LOGIC WITH AUTOMATIC LIVE SCORE CALCULATOR
 
 let MOCK_TODAY_MATCHES = [];
 let selectedMarketFilter = 'ALL';
@@ -31,59 +31,55 @@ function getLeagueLogoHtml(logoUrl, leagueName) {
   return `<i class="fa-solid fa-trophy text-amber-500 text-xs shrink-0"></i>`;
 }
 
-// Memuat data dari today.json
+// Memuat data dari today.json & otomatis menghitung status Live Score berdasarkan waktu
 async function loadDataFromJSON() {
   const cacheBuster = new Date().getTime();
   try {
     const todayRes = await fetch(`./data/today.json?v=${cacheBuster}`, { cache: 'no-store' });
     if (todayRes.ok) {
       MOCK_TODAY_MATCHES = await todayRes.json();
+      autoUpdateLiveStatus(); // Otomatis mengkalkulasi waktu & update status LIVE/FT
       renderMatchesList();
-      checkLiveMatchesUpdate(); // Periksa jika ada laga yang butuh update live
     }
   } catch (e) {
     console.log("Error loading JSON data.");
   }
 }
 
-// UPDATE SKOR REAL-TIME LANGSUNG DI BROWSER DENGAN FETCH SKOR
-async function checkLiveMatchesUpdate() {
-  const liveMatches = MOCK_TODAY_MATCHES.filter(m => 
-    ['1H', '2H', 'HT', 'LIVE', 'ET', 'P', '79'].includes(String(m.statusShort)) ||
-    (m.kickoffUtc && new Date(m.kickoffUtc) <= new Date() && m.statusShort !== 'FT')
-  );
+// KALKULATOR LIVE SCORE AUTOMATIS (Waktu Nyata)
+// Mengubah LIVE menjadi FT secara otomatis saat pertandingan sudah lewat dari 105 menit
+function autoUpdateLiveStatus() {
+  const now = new Date();
 
-  if (liveMatches.length === 0) return;
+  MOCK_TODAY_MATCHES.forEach(m => {
+    if (m.kickoffUtc) {
+      const matchTime = new Date(m.kickoffUtc);
+      const diffMinutes = Math.floor((now - matchTime) / (1000 * 60));
 
-  // Memanggil endpoint publik cepat untuk memperbarui skor & status laga yang berjalan
-  try {
-    for (let match of liveMatches) {
-      if (match.fixtureId) {
-        const res = await fetch(`https://v3.football.api-sports.io/fixtures?id=${match.fixtureId}`, {
-          headers: { 'x-apisports-key': 'd1b2c3a4b5c6d7e8f90' } // Ganti jika pakai API key tersendiri
-        });
-        if (res.ok) {
-          const apiData = await res.json();
-          if (apiData.response && apiData.response.length > 0) {
-            const fix = apiData.response[0];
-            match.scoreHome = fix.goals.home ?? match.scoreHome;
-            match.scoreAway = fix.goals.away ?? match.scoreAway;
-            match.statusShort = fix.fixture.status.short;
-            match.statusElapsed = fix.fixture.status.elapsed;
-          }
+      // Jika belum Kick-off
+      if (diffMinutes < 0) {
+        m.statusShort = 'NS'; // Not Started
+      } 
+      // Jika dalam rentang waktu babak 1 & 2 (0 s/d 105 menit)
+      else if (diffMinutes >= 0 && diffMinutes <= 105) {
+        if (m.statusShort !== 'FT') {
+          m.statusShort = 'LIVE';
+          m.statusElapsed = diffMinutes > 90 ? '90+' : diffMinutes;
         }
+      } 
+      // Jika sudah lebih dari 105 menit sejak kickoff -> OTOMATIS FT (FULL TIME)
+      else if (diffMinutes > 105) {
+        m.statusShort = 'FT';
+        m.statusElapsed = 90;
       }
     }
-    renderMatchesList(); // Re-render tampilan skor terbaru
-  } catch (err) {
-    console.log("Live score check fallback.");
-  }
+  });
 }
 
 window.onload = function() {
   loadDataFromJSON();
-  // Auto check live score tiap 45 detik langsung di browser tanpa perlu GitHub Actions
-  setInterval(loadDataFromJSON, 45000); 
+  // Update otomatis tiap 30 detik langsung di browser tanpa perlu re-run workflow
+  setInterval(loadDataFromJSON, 30000); 
 };
 
 function toggleSidebar() {
@@ -137,7 +133,7 @@ function renderMatchesList() {
       } catch(e) {}
     }
 
-    // FT SCORE HORIZONTAL RAPAT
+    // FT SCORE HORIZONTAL RAPAT (SEJAJAR & TIDAK KEBAWAH)
     let statusBadge = `<span class="bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200 text-slate-700 text-[10px] font-bold"><i class="fa-regular fa-clock mr-1 text-flash-red"></i>${localKickoffStr}</span>`;
     let centerScoreDisplay = `<span class="text-[10px] font-mono text-emerald-800 font-bold bg-emerald-50 px-2.5 py-0.5 rounded-md border border-emerald-200">VS</span>`;
 
@@ -150,7 +146,7 @@ function renderMatchesList() {
       centerScoreDisplay = `<div class="inline-flex items-center justify-center bg-red-600 text-white px-3.5 py-1 rounded-lg font-mono font-black text-xs tracking-widest whitespace-nowrap min-w-[70px] text-center shadow-sm animate-pulse">${m.scoreHome ?? 0}&nbsp;-&nbsp;${m.scoreAway ?? 0}</div>`;
     }
 
-    // PROYEKSI PREDIKSI MODEL (SISTEM BLUR MURNI DENGAN TOMBOL VIP)
+    // PROYEKSI PREDIKSI MODEL (DIBLUR KHUSUS PARTAI VIP)
     let projectionContent = '';
     if (m.isVip) {
       projectionContent = `
@@ -158,11 +154,11 @@ function renderMatchesList() {
           <div class="filter blur-md select-none opacity-40 pointer-events-none flex items-center justify-between w-full pr-28">
             <div>
               <span class="text-[9px] text-slate-400 block font-bold uppercase tracking-wider">PROYEKSI MODEL</span>
-              <span class="text-xs sm:text-sm font-extrabold text-flash-red">Penarol Away Win</span>
+              <span class="text-xs sm:text-sm font-extrabold text-flash-red">Home Win / Over 2.5</span>
             </div>
             <div class="flex items-center gap-2 font-mono text-xs">
-              <span class="font-extrabold text-slate-900 bg-amber-100 px-2 py-0.5 rounded-md border border-amber-300">@2.10</span>
-              <span class="font-extrabold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-md border border-emerald-300">56%</span>
+              <span class="font-extrabold text-slate-900 bg-amber-100 px-2 py-0.5 rounded-md border border-amber-300">@1.85</span>
+              <span class="font-extrabold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-md border border-emerald-300">82%</span>
             </div>
           </div>
           <div class="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-2">
