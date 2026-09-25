@@ -1,11 +1,11 @@
 {
-  "updatedAt": "25/09/2026 15:09 WIB",
+  "updatedAt": "25/09/2026 15:21 WIB",
   "parlay3": [
     {
       "match": "Team A vs Team B #1",
       "league": "Major League",
       "pick": "Home Win",
-      "odds": 2.17,
+      "odds": 2.13,
       "winProb": 66,
       "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
     },
@@ -13,7 +13,7 @@
       "match": "Team A vs Team B #2",
       "league": "Major League",
       "pick": "Over 2.5",
-      "odds": 2.17,
+      "odds": 2.13,
       "winProb": 67,
       "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
     },
@@ -21,7 +21,7 @@
       "match": "LIVE",
       "league": "Major League",
       "pick": "Home Win",
-      "odds": 2.17,
+      "odds": 2.13,
       "winProb": 68,
       "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
     }
@@ -31,7 +31,7 @@
       "match": "Team A vs Team B #1",
       "league": "Major League",
       "pick": "Home Win",
-      "odds": 2.17,
+      "odds": 2.13,
       "winProb": 66,
       "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
     },
@@ -39,7 +39,7 @@
       "match": "Team A vs Team B #2",
       "league": "Major League",
       "pick": "Over 2.5",
-      "odds": 2.17,
+      "odds": 2.13,
       "winProb": 67,
       "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
     },
@@ -47,7 +47,7 @@
       "match": "LIVE",
       "league": "Major League",
       "pick": "Home Win",
-      "odds": 2.17,
+      "odds": 2.13,
       "winProb": 68,
       "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
     },
@@ -55,7 +55,7 @@
       "match": "LIVE",
       "league": "Major League",
       "pick": "Over 2.5",
-      "odds": 2.17,
+      "odds": 2.13,
       "winProb": 69,
       "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
     },
@@ -63,7 +63,7 @@
       "match": "LIVE",
       "league": "Major League",
       "pick": "Home Win",
-      "odds": 1.55,
+      "odds": 1.52,
       "winProb": 70,
       "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
     }
@@ -73,7 +73,7 @@
       "match": "Team A vs Team B #1",
       "league": "Major League",
       "pick": "Home Win",
-      "odds": 2.17,
+      "odds": 2.13,
       "winProb": 66,
       "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
     },
@@ -81,7 +81,7 @@
       "match": "Team A vs Team B #2",
       "league": "Major League",
       "pick": "Over 2.5",
-      "odds": 2.17,
+      "odds": 2.13,
       "winProb": 67,
       "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
     },
@@ -89,7 +89,7 @@
       "match": "LIVE",
       "league": "Major League",
       "pick": "Home Win",
-      "odds": 2.17,
+      "odds": 2.13,
       "winProb": 68,
       "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
     },
@@ -97,7 +97,7 @@
       "match": "LIVE",
       "league": "Major League",
       "pick": "Over 2.5",
-      "odds": 2.17,
+      "odds": 2.13,
       "winProb": 69,
       "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
     },
@@ -105,7 +105,7 @@
       "match": "LIVE",
       "league": "Major League",
       "pick": "Home Win",
-      "odds": 1.55,
+      "odds": 1.52,
       "winProb": 70,
       "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
     },
@@ -113,7 +113,7 @@
       "match": "LIVE",
       "league": "Major League",
       "pick": "Over 2.5",
-      "odds": 2.45,
+      "odds": 2.43,
       "winProb": 71,
       "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
     },
@@ -129,7 +129,7 @@
       "match": "LIVE",
       "league": "Major League",
       "pick": "Over 2.5",
-      "odds": 1.64,
+      "odds": 1.65,
       "winProb": 73,
       "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
     },
