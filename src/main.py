@@ -48,32 +48,31 @@ def analyze_with_groq_ai(filtered_matches):
         print("⚠️ GROQ_API_KEY tidak ditemukan di environment. Menggunakan fallback.")
         return generate_fallback_data(filtered_matches)
 
-    prompt = f"""
-    Kamu adalah pakar data analis sepak bola kuantitatif (+EV) dan handicapper profesional.
-    Berikut daftar pertandingan hari ini beserta data pasaran:
-    {json.dumps(filtered_matches[:20], ensure_ascii=False)}
+    matches_json_str = json.dumps(filtered_matches[:20], ensure_ascii=False)
 
-    Tugasmu:
-    Evaluasi rekor Head-to-Head (H2H), tren performa, dan keunggulan taktis.
-    Susun menjadi 3 paket rekomendasi parlay:
-    1. "parlay3": 3 partai paling solid (Aman).
-    2. "parlay5": 5 partai seimbang (Medium).
-    3. "parlay10": 10 partai potensial odds tinggi (High).
-
-    Format keluaran WAJIB HANYA berupa JSON MURNI tanpa teks pembuka/penutup seperti ini:
-    {{
-      "parlay3": [{"match": "Tim A vs Tim B", "league": "Liga", "pick": "Home Win", "odds": 1.85, "winProb": 75, "aiReason": "Alasan H2H taktis"}],
-      "parlay5": [... 5 objek ...],
-      "parlay10": [... 10 objek ...]
-    }}
-    """
+    prompt = (
+        "Kamu adalah pakar data analis sepak bola kuantitatif (+EV) dan handicapper profesional.\n"
+        "Berikut daftar pertandingan hari ini beserta data pasaran:\n"
+        + matches_json_str + "\n\n"
+        "Tugasmu:\n"
+        "Evaluasi rekor Head-to-Head (H2H), tren performa, dan keunggulan taktis.\n"
+        "Susun menjadi 3 paket rekomendasi parlay:\n"
+        '1. "parlay3": 3 partai paling solid (Aman).\n'
+        '2. "parlay5": 5 partai seimbang (Medium).\n'
+        '3. "parlay10": 10 partai potensial odds tinggi (High).\n\n'
+        "Format keluaran WAJIB HANYA berupa JSON MURNI tanpa teks pembuka/penutup dengan struktur:\n"
+        '{\n'
+        '  "parlay3": [{"match": "Tim A vs Tim B", "league": "Liga", "pick": "Home Win", "odds": 1.85, "winProb": 75, "aiReason": "Alasan H2H taktis"}],\n'
+        '  "parlay5": [... 5 objek ...],\n'
+        '  "parlay10": [... 10 objek ...]\n'
+        '}'
+    )
 
     headers = {
         "Authorization": f"Bearer {GROQ_API_KEY}",
         "Content-Type": "application/json"
     }
 
-    # Menggunakan model paling stabil di Groq tanpa parameter terlarang
     candidate_models = [
         "llama-3.3-70b-versatile",
         "llama3-8b-8192"
@@ -96,7 +95,6 @@ def analyze_with_groq_ai(filtered_matches):
                 result = response.json()
                 content = result['choices'][0]['message']['content']
                 
-                # Ekstrak blok JSON dari respon teks AI
                 json_match = re.search(r'\{.*\}', content, re.DOTALL)
                 if json_match:
                     clean_json_str = json_match.group(0)
