@@ -1,357 +1,147 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FIXSCORE | Pitch Analytics Engine</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIXSCORE - Quantitative Sports Analytics & Parlay AI</title>
   
-  <meta name="description" content="FIXSCORE - Platform analytics sepak bola kuantitatif berbasis data murni, distribusi Poisson, statistik xG, dan Live Score." />
-  <meta name="author" content="FIXSCORE Analytics Engine" />
-
-  <!-- Tailwind CSS & Font Awesome -->
+  <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
-      darkMode: 'class',
       theme: {
         extend: {
           colors: {
-            flash: {
-              red: '#a21220',
-              redHover: '#850e19',
-              redSoft: '#fdf2f2',
-              dark: '#0f172a',
-              bg: '#f8fafc',
-              border: '#e2e8f0',
-              textPrimary: '#0f172a',
-              textSecondary: '#475569',
-              textMuted: '#64748b'
-            }
-          },
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            mono: ['JetBrains Mono', 'monospace']
+            'flash-red': '#EF4444',
           }
         }
       }
     }
   </script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-  <!-- Custom CSS Eksternal -->
-  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Font Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
 </head>
-<body class="font-sans antialiased bg-flash-bg text-flash-textPrimary min-h-screen flex flex-col justify-between">
+<body class="bg-slate-50 text-slate-900 min-h-screen pb-12">
 
-  <!-- HEADER BRANDING FIXSCORE -->
-  <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md text-white border-b border-slate-800 shadow-lg">
-    <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
+  <!-- HEADER UTAMA -->
+  <header class="bg-white border-b border-slate-100 sticky top-0 z-50">
+    <div class="max-w-xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 bg-flash-red rounded-xl flex items-center justify-center font-black text-white text-base shadow-md shadow-red-500/20">
+          F
+        </div>
+        <div>
+          <h1 class="text-base font-black tracking-tight text-slate-900 leading-none">FIXSCORE <span class="text-flash-red text-[10px] font-extrabold uppercase px-1.5 py-0.5 bg-red-50 rounded border border-red-100">PRO +EV</span></h1>
+          <p class="text-[10px] font-bold text-slate-400 mt-0.5" id="last-updated-time">Diperbarui: Memuat data...</p>
+        </div>
+      </div>
       
-      <!-- LOGO FIXSCORE: VEKTOR GARIS TENGAH LAPANGAN TANPA BORDER -->
-      <a href="#" onclick="switchTab('dashboard')" class="flex items-center gap-2.5 group">
-        <div class="w-8 h-8 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
-          <svg viewBox="0 0 40 40" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Outfield Ring / Pitch Boundary -->
-            <rect x="2" y="2" width="36" height="36" rx="8" stroke="#a21220" stroke-width="2.5" />
-            <!-- Halfway Line -->
-            <line x1="2" y1="20" x2="38" y2="20" stroke="#a21220" stroke-width="2" />
-            <!-- Center Circle -->
-            <circle cx="20" cy="20" r="7" stroke="#10b981" stroke-width="2.5" />
-            <!-- Center Spot -->
-            <circle cx="20" cy="20" r="2" fill="#10b981" />
-          </svg>
-        </div>
-        <div class="flex items-baseline">
-          <span class="text-xl font-black tracking-tight text-white">FIX<span class="text-emerald-400">SCORE</span></span>
-          <span class="text-[9px] font-mono font-bold text-slate-400 ml-1.5 uppercase tracking-wider hidden sm:inline">PRO QUANT</span>
-        </div>
-      </a>
-
-      <!-- ACTION BUTTONS -->
-      <div class="flex items-center gap-2.5">
-        <button onclick="openVipModal()" class="px-3.5 py-1.5 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-xs font-bold transition-all border border-emerald-500/30 flex items-center gap-1.5">
-          <i class="fa-solid fa-circle-user text-sm"></i>
-          <span>LOGIN</span>
+      <!-- NAVIGASI TAB UTAMA -->
+      <nav class="flex gap-1 bg-slate-100 p-1 rounded-xl">
+        <button id="nav-btn-today" onclick="switchMainTab('today')" class="px-3 py-1.5 text-xs font-extrabold text-flash-red border-b-2 border-flash-red transition-all">
+          Hari Ini
         </button>
-        <button onclick="toggleSidebar()" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition-all border border-slate-700/60">
-          <i class="fa-solid fa-bars-staggered text-base"></i>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- SIDEBAR NAVIGATION MENU -->
-  <div id="sidebarOverlay" onclick="toggleSidebar()" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 hidden transition-opacity"></div>
-  <aside id="sidebarMenu" class="fixed top-0 right-0 w-72 h-full bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out p-5 flex flex-col justify-between border-l border-slate-200">
-    <div class="space-y-6">
-      <div class="flex justify-between items-center border-b pb-3 border-slate-100">
-        <div class="flex items-center gap-2">
-          <div class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></div>
-          <span class="font-black text-sm tracking-wider text-slate-900">FIXSCORE MENU</span>
-        </div>
-        <button onclick="toggleSidebar()" class="text-slate-400 hover:text-slate-800 p-1"><i class="fa-solid fa-xmark text-lg"></i></button>
-      </div>
-      <nav class="space-y-2 text-xs font-bold">
-        <button onclick="switchTab('dashboard'); toggleSidebar()" class="w-full text-left p-3 rounded-xl bg-red-50 text-flash-red flex items-center gap-3 font-semibold">
-          <i class="fa-solid fa-layer-group text-base"></i> 10 Partai Terpilih
-        </button>
-        <button onclick="switchTab('history'); toggleSidebar()" class="w-full text-left p-3 rounded-xl hover:bg-slate-100 text-slate-700 flex items-center gap-3 font-semibold">
-          <i class="fa-solid fa-chart-line text-base text-emerald-600"></i> Validasi Statistik &amp; History
-        </button>
-        <button onclick="switchTab('algorithm'); toggleSidebar()" class="w-full text-left p-3 rounded-xl hover:bg-slate-100 text-slate-700 flex items-center gap-3 font-semibold">
-          <i class="fa-solid fa-calculator text-base text-blue-600"></i> Metodologi Matematika
+        <button id="nav-btn-history" onclick="switchMainTab('history')" class="px-3 py-1.5 text-xs font-bold text-slate-400 hover:text-slate-600 transition-all">
+          History Rekap
         </button>
       </nav>
     </div>
-    <div class="pt-4 border-t border-slate-100">
-      <button onclick="openVipModal(); toggleSidebar()" class="w-full py-2.5 bg-slate-900 text-white font-bold text-xs rounded-xl flex items-center justify-center gap-2 shadow-sm">
-        <i class="fa-brands fa-telegram text-base text-emerald-400"></i> Komunitas VIP Telegram
-      </button>
-    </div>
-  </aside>
+  </header>
 
-  <!-- MAIN CONTAINER -->
-  <main class="max-w-7xl mx-auto px-4 py-4 w-full flex-1 space-y-4">
-    
-    <!-- TAB DASHBOARD (10 PARTAI) -->
-    <div id="tab-dashboard" class="space-y-4">
+  <!-- UTAMA CONTAINER -->
+  <main class="max-w-xl mx-auto px-4 mt-4">
+
+    <!-- TAB 1: REKOMENDASI HARI INI -->
+    <div id="tab-content-today" class="space-y-4">
       
-      <!-- CATEGORY FILTER BUTTONS -->
-      <section class="bg-white p-2.5 rounded-2xl border border-slate-200/80 shadow-sm space-y-2">
-        <div class="grid grid-cols-4 gap-1.5 font-sans text-[11px] font-bold">
-          <button onclick="filterMatches('ALL')" id="filter-ALL" class="py-2.5 px-1 rounded-xl bg-flash-red text-white text-center transition-all shadow-sm">
-            SEMUA (10)
-          </button>
-          <button onclick="filterMatches('1X2')" id="filter-1X2" class="py-2.5 px-1 rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 text-center transition-all">
-            1X2
-          </button>
-          <button onclick="filterMatches('HDP')" id="filter-HDP" class="py-2.5 px-1 rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 text-center transition-all">
-            HANDICAP
-          </button>
-          <button onclick="filterMatches('OU')" id="filter-OU" class="py-2.5 px-1 rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 text-center transition-all">
-            OVER/UNDER
-          </button>
-        </div>
+      <!-- FILTER KATEGORI PAKET PARLAY -->
+      <div class="bg-white p-2 rounded-2xl border border-slate-100 shadow-sm flex items-center justify-between gap-1 overflow-x-auto">
+        <button onclick="switchParlayCategory(3)" id="btn-parlay-3" class="flex-1 py-2 px-3 rounded-xl text-xs font-extrabold transition-all bg-flash-red text-white shadow-md shadow-red-500/20 text-center">
+          🔥 3 Partai (Aman)
+        </button>
+        <button onclick="switchParlayCategory(5)" id="btn-parlay-5" class="flex-1 py-2 px-3 rounded-xl text-xs font-bold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200 text-center">
+          ⚡ 5 Partai (Medium)
+        </button>
+        <button onclick="switchParlayCategory(10)" id="btn-parlay-10" class="flex-1 py-2 px-3 rounded-xl text-xs font-bold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200 text-center">
+          🚀 10 Partai (High)
+        </button>
+      </div>
 
-        <div class="relative">
-          <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
-          <input type="text" id="searchInput" onkeyup="searchMatches()" placeholder="Cari nama klub atau liga..." class="w-full bg-slate-50 border border-slate-200 rounded-xl pl-9 pr-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-flash-red transition-all" />
-        </div>
-      </section>
-
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-        <!-- LIST PERTANDINGAN -->
-        <div id="matchesContainer" class="lg:col-span-2 space-y-3"></div>
-
-        <!-- KALKULATOR PARLAY SIDEBAR -->
-        <div class="lg:col-span-1">
-          <div class="sticky top-20 bg-white rounded-2xl p-4 border border-slate-200/80 shadow-sm space-y-3">
-            <div class="flex items-center justify-between border-b border-slate-100 pb-2.5">
-              <div class="flex items-center gap-2">
-                <i class="fa-solid fa-calculator text-flash-red text-sm"></i>
-                <h3 class="font-extrabold text-slate-900 text-xs sm:text-sm">Kalkulator Parlay</h3>
-              </div>
-              <span id="parlayCountBadge" class="bg-red-50 text-flash-red text-[11px] font-mono font-bold px-2 py-0.5 rounded-md border border-red-200">0 Partai</span>
-            </div>
-
-            <div id="parlayEmptyState" class="text-center py-6 space-y-1.5">
-              <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center mx-auto text-sm">
-                <i class="fa-solid fa-plus"></i>
-              </div>
-              <p class="text-xs text-slate-500 max-w-[190px] mx-auto">Klik tombol <strong>+ Parlay</strong> pada kartu partai untuk mengalkulasi odds.</p>
-            </div>
-
-            <div id="parlayPicksList" class="space-y-1.5 max-h-[220px] overflow-y-auto pr-1"></div>
-
-            <div id="parlayCalcSummary" class="hidden space-y-1.5 bg-slate-50 p-3 rounded-xl border border-slate-200 font-mono text-xs">
-              <div class="flex justify-between text-slate-600">
-                <span>Total Odds:</span>
-                <span id="parlayTotalOdds" class="text-slate-900 font-bold">1.00</span>
-              </div>
-              <div class="flex justify-between text-slate-600">
-                <span>Win Prob:</span>
-                <span id="parlayCombinedProb" class="text-emerald-600 font-bold">0.0%</span>
-              </div>
-              <div class="pt-2 border-t border-slate-200 flex justify-between font-sans">
-                <span class="font-bold text-slate-900">Proyeksi (100rb):</span>
-                <span id="parlayProjectedPayout" class="text-flash-red font-extrabold font-mono">Rp 0</span>
-              </div>
-            </div>
-
-            <div id="parlayActions" class="hidden space-y-1.5">
-              <button onclick="copyParlaySlip()" class="w-full py-2.5 bg-flash-red hover:bg-flash-redHover text-white font-bold rounded-xl text-xs flex items-center justify-center gap-1.5 shadow-sm">
-                <i class="fa-solid fa-copy"></i> SALIN KALKULASI SLIP
-              </button>
-              <button onclick="clearParlaySlip()" class="w-full py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-500 text-xs font-bold rounded-xl border border-slate-200">
-                Reset Slips
-              </button>
-            </div>
-          </div>
+      <!-- LIST MATCHES CONTAINER (RENDER VIA APP.JS) -->
+      <div id="matches-container" class="space-y-3">
+        <!-- Rendered dynamically -->
+        <div class="bg-white rounded-2xl p-8 text-center border border-slate-100">
+          <p class="text-slate-400 text-xs font-bold">Sedang memuat data rekomendasi AI...</p>
         </div>
       </div>
+
+      <!-- KALKULATOR RINGKASAN PARLAY SLIP -->
+      <div class="bg-slate-900 text-white rounded-2xl p-4 shadow-xl space-y-3">
+        <div class="flex justify-between items-center pb-2 border-b border-slate-800">
+          <span class="text-xs font-bold text-slate-400">RINGKASAN KOMBINASI SLIP</span>
+          <span id="summary-count" class="text-xs font-extrabold bg-slate-800 px-2 py-0.5 rounded text-emerald-400 font-mono">0 Leg</span>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-4 my-2">
+          <div>
+            <span class="text-[10px] text-slate-400 uppercase font-bold block">TOTAL ODDS (+EV)</span>
+            <span id="summary-total-odds" class="text-lg font-black text-amber-400 font-mono">@1.00</span>
+          </div>
+          <div class="text-right">
+            <span class="text-[10px] text-slate-400 uppercase font-bold block">ESTIMASI PAYOUT (x100k)</span>
+            <span id="summary-est-win" class="text-lg font-black text-emerald-400 font-mono">Rp 0</span>
+          </div>
+        </div>
+
+        <div class="pt-2 border-t border-slate-800 flex items-center justify-between gap-2">
+          <label class="text-[10px] font-bold text-slate-400">SIMULASI MODAL (x1.000):</label>
+          <input type="number" id="stake-input" value="100" class="w-24 bg-slate-800 border border-slate-700 text-white font-mono text-xs font-bold px-2 py-1 rounded text-right focus:outline-none focus:border-flash-red">
+        </div>
+      </div>
+
     </div>
 
-    <!-- TAB VALIDASI STATISTIK & REKAP HISTORY PARLAY -->
-    <div id="tab-history" class="hidden space-y-4">
-      <section class="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/80 shadow-sm space-y-4">
-        <div>
-          <span class="bg-emerald-50 text-emerald-800 text-[10px] font-mono font-bold px-2 py-0.5 rounded-md border border-emerald-200">AUDITED TRACK RECORD</span>
-          <h2 class="text-lg font-extrabold text-slate-900 mt-1">Validasi Akurasi Statistik &amp; Rekap History Parlay</h2>
-          <p class="text-xs text-slate-500 mt-1 leading-relaxed">
-            Halaman ini mencatat secara obyektif seluruh performa rekomendasi harian, tingkat win-rate model, serta transparansi rekap parlay harian.
-          </p>
-        </div>
+    <!-- TAB 2: VALIDASI STATISTIK & HISTORY REKAP -->
+    <div id="tab-content-history" class="hidden space-y-4">
+      <div class="bg-white rounded-2xl p-4 border border-slate-100 shadow-sm">
+        <h2 class="text-sm font-extrabold text-slate-900 mb-1">Validasi Transparansi Performa</h2>
+        <p class="text-[11px] text-slate-400 leading-relaxed mb-4">
+          Rekap riwayat evaluasi matematis harian berdasarkan skor akhir nyata pertandingan.
+        </p>
 
-        <div class="space-y-2">
-          <h3 class="font-bold text-xs text-slate-900 flex items-center gap-1.5">
-            <i class="fa-solid fa-list-check text-flash-red"></i> Rekap History Parlay Harian (30 Hari Terakhir)
-          </h3>
-          <div class="overflow-x-auto rounded-xl border border-slate-200">
-            <table class="w-full text-left text-xs border-collapse">
-              <thead class="bg-slate-50 text-slate-500 font-mono text-[10px] uppercase">
-                <tr>
-                  <th class="p-3">Tanggal</th>
-                  <th class="p-3">Kombinasi Leg Parlay</th>
-                  <th class="p-3">Total Odds</th>
-                  <th class="p-3">Status Parlay</th>
-                  <th class="p-3">Hasil (+EV)</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-slate-100 font-mono text-[11px]">
-                <tr class="bg-white hover:bg-slate-50/50">
-                  <td class="p-3 font-bold">24/09/2026</td>
-                  <td class="p-3 font-sans">Arsenal Menang + Real Madrid Win + Over 2.5 PSG</td>
-                  <td class="p-3 font-bold">@3.98</td>
-                  <td class="p-3"><span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-md font-bold">WIN</span></td>
-                  <td class="p-3 text-emerald-600 font-bold">+2.98 Unit</td>
-                </tr>
-                <tr class="bg-white hover:bg-slate-50/50">
-                  <td class="p-3 font-bold">23/09/2026</td>
-                  <td class="p-3 font-sans">Inter Milan Win + Barcelona -1.0 HDP</td>
-                  <td class="p-3 font-bold">@2.85</td>
-                  <td class="p-3"><span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-md font-bold">WIN</span></td>
-                  <td class="p-3 text-emerald-600 font-bold">+1.85 Unit</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <!-- TABEL REKAP HISTORY -->
+        <div class="overflow-x-auto">
+          <table id="tab-history" class="w-full text-left border-collapse">
+            <thead>
+              <tr class="border-b border-slate-100 text-[10px] font-black uppercase text-slate-400 bg-slate-50">
+                <th class="p-3 rounded-l-lg">Tanggal</th>
+                <th class="p-3">Ringkasan Hasil</th>
+                <th class="p-3">Leg</th>
+                <th class="p-3">Status</th>
+                <th class="p-3 rounded-r-lg">Yield Unit</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 font-mono text-[11px]">
+              <!-- Rendered dynamically via app.js -->
+            </tbody>
+          </table>
         </div>
-      </section>
-    </div>
-
-    <!-- TAB MODEL MATEMATIKA -->
-    <div id="tab-algorithm" class="hidden space-y-4">
-      <section class="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/80 shadow-sm space-y-4">
-        <div>
-          <span class="bg-blue-50 text-blue-800 text-[10px] font-mono font-bold px-2 py-0.5 rounded-md border border-blue-200">QUANTITATIVE METHODOLOGY</span>
-          <h2 class="text-lg font-extrabold text-slate-900 mt-1">Sistem Penilaian Model Matematika &amp; Probabilitas</h2>
-          <p class="text-xs text-slate-500 mt-1 leading-relaxed">
-            Model kalkulasi FIXSCORE beroperasi tanpa emosi manusia dengan mengandalkan 3 pilar matematika kuantitatif murni:
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 font-sans text-xs">
-          <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="font-extrabold text-flash-red text-sm">1. Distribusi Poisson</div>
-            <p class="text-slate-600 leading-relaxed text-[11px]">Memproyeksikan estimasi rasio distribusi gol berdasarkan koefisien kekuatan serangan dan pertahanan kedua tim.</p>
-          </div>
-          <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="font-extrabold text-flash-red text-sm">2. Matriks Expected Goals (xG)</div>
-            <p class="text-slate-600 leading-relaxed text-[11px]">Mengukur kualitas peluang gol secara nyata dari lokasi tembakan, bukan hanya penguasaan bola semata.</p>
-          </div>
-          <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="font-extrabold text-flash-red text-sm">3. Kelly Criterion (+EV)</div>
-            <p class="text-slate-600 leading-relaxed text-[11px]">Menentukan nilai taruhan ideal untuk memaksimalkan pertumbuhan modal jangka panjang dan meminimalkan varians.</p>
-          </div>
-        </div>
-      </section>
+      </div>
     </div>
 
   </main>
 
-  <!-- MODAL MATRIKS EVALUASI STATISTIK SUPER LENGKAP -->
-  <div id="analyticsModal" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-white max-w-lg w-full rounded-2xl p-5 border border-slate-200 shadow-2xl space-y-4 relative max-h-[90vh] overflow-y-auto">
-      <button onclick="closeAnalyticsModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-800 p-1">
-        <i class="fa-solid fa-xmark text-lg"></i>
-      </button>
-
-      <div class="flex items-center gap-2 text-flash-red font-mono text-xs font-bold border-b pb-2.5">
-        <i class="fa-solid fa-chart-pie"></i>
-        <span>MATRIKS EVALUASI STATISTIK LAGA (SUPER LENGKAP)</span>
-      </div>
-
-      <div id="modalMatchTitle" class="text-base font-extrabold text-slate-900"></div>
-
-      <div id="modalMetricsBody" class="grid grid-cols-2 gap-2.5 font-mono text-xs bg-slate-50 p-3 rounded-xl border border-slate-200"></div>
-
-      <div class="space-y-2 text-xs">
-        <div class="bg-red-50 p-3 rounded-xl border border-red-200 space-y-1">
-          <span class="text-flash-red font-bold text-[11px] block"><i class="fa-solid fa-magnifying-glass-chart mr-1"></i>Analisis Taktis mendalam:</span>
-          <p id="modalAiNotes" class="text-slate-600 leading-relaxed font-sans text-[11px]"></p>
-        </div>
-        <div class="bg-emerald-50 p-3 rounded-xl border border-emerald-200 text-[11px] text-emerald-800 space-y-0.5 font-mono">
-          <div class="font-bold"><i class="fa-solid fa-shield-halved mr-1"></i>Rekomendasi Manajemen Stake:</div>
-          <div>Batas Risiko: <strong>Maksimal 2.5% Bankroll (Kelly Criterion)</strong></div>
-        </div>
-      </div>
-
-      <button onclick="closeAnalyticsModal()" class="w-full py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold rounded-xl transition-all border border-slate-200">Tutup Matriks</button>
-    </div>
-  </div>
-
-  <!-- MODAL TELEGRAM / LOGIN -->
-  <div id="vipModal" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-white max-w-sm w-full rounded-2xl p-6 border border-slate-200 shadow-2xl space-y-4 text-center relative">
-      <button onclick="closeVipModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-800 p-1"><i class="fa-solid fa-xmark text-lg"></i></button>
-      <div class="w-12 h-12 rounded-2xl bg-red-50 text-flash-red flex items-center justify-center mx-auto text-xl font-bold border border-red-200"><i class="fa-solid fa-paper-plane"></i></div>
-      <div class="space-y-1">
-        <h3 class="text-lg font-extrabold text-slate-900">Komunitas Diskusi &amp; Data</h3>
-        <p class="text-xs text-slate-500 leading-relaxed">Dapatkan pembaruan real-time kalkulasi 10 partai harian langsung via Telegram.</p>
-      </div>
-      <a href="https://t.me" target="_blank" class="w-full py-2.5 bg-flash-red hover:bg-flash-redHover text-white font-bold rounded-xl text-xs flex items-center justify-center gap-2 block shadow-sm">
-        <i class="fa-brands fa-telegram text-base"></i> GABUNG GROUP TELEGRAM
-      </a>
-    </div>
-  </div>
-
-  <div id="toast" class="fixed bottom-5 right-5 z-50 bg-slate-900 text-white px-4 py-2.5 rounded-xl font-bold text-xs shadow-2xl hidden transition-all flex items-center gap-2 border border-slate-800">
-    <i class="fa-solid fa-circle-check text-emerald-400"></i>
-    <span id="toastMsg">Notifikasi</span>
-  </div>
-
-  <!-- FOOTER ELEGAN -->
-  <footer class="bg-slate-900 text-slate-400 border-t border-slate-800 mt-10 py-6 text-xs">
-    <div class="max-w-7xl mx-auto px-4 space-y-4">
-      <div class="flex flex-col sm:flex-row justify-between items-center gap-3 border-b border-slate-800 pb-4">
-        <div class="flex items-center gap-2">
-          <div class="w-6 h-6 flex items-center justify-center">
-            <svg viewBox="0 0 40 40" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="2" y="2" width="36" height="36" rx="8" stroke="#a21220" stroke-width="2.5" />
-              <line x1="2" y1="20" x2="38" y2="20" stroke="#a21220" stroke-width="2" />
-              <circle cx="20" cy="20" r="7" stroke="#10b981" stroke-width="2.5" />
-            </svg>
-          </div>
-          <span class="font-extrabold text-white tracking-wider">FIXSCORE QUANT ENGINE</span>
-        </div>
-        <div class="flex items-center gap-4 text-slate-400 font-medium">
-          <a href="#" onclick="switchTab('dashboard')" class="hover:text-white">10 Partai Hari Ini</a>
-          <a href="#" onclick="switchTab('history')" class="hover:text-white">Rekap Track Record</a>
-          <a href="#" onclick="switchTab('algorithm')" class="hover:text-white">Metodologi</a>
-        </div>
-      </div>
-      <div class="text-[11px] text-slate-500 leading-relaxed space-y-1 text-center sm:text-left">
-        <p>© 2026 FIXSCORE Pitch Analytics. All rights reserved.</p>
-        <p class="text-[10px] text-slate-600">Disclaimer: Platform analisis kuantitatif sepak bola berbasis data murni dan distribusi statistik Poisson.</p>
-      </div>
-    </div>
+  <!-- FOOTER -->
+  <footer class="max-w-xl mx-auto px-4 mt-8 text-center">
+    <p class="text-[10px] font-bold text-slate-400">FIXSCORE &copy; 2026 - Quantitative Sports Analytics & Backtest Engine.</p>
   </footer>
 
-  <!-- App JavaScript Eksternal -->
-  <script src="src/app.js"></script>
+  <!-- SCRIPT UTAMA -->
+  <script src="./src/app.js"></script>
 </body>
 </html>
