@@ -1,5 +1,5 @@
 {
-  "updatedAt": "25/09/2026 16:28 WIB",
+  "updatedAt": "25/09/2026 16:35 WIB",
   "parlay3": [
     {
       "match": "Team A vs Team B #1",
@@ -113,7 +113,7 @@
       "match": "LIVE",
       "league": "Major League",
       "pick": "Over 2.5",
-      "odds": 2.45,
+      "odds": 2.43,
       "winProb": 76,
       "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
     },
