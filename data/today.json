@@ -1,153 +1,89 @@
 {
-  "updatedAt": "25/09/2026 16:46 WIB",
+  "updatedAt": "25/09/2026 17:18 WIB",
   "parlay3": [
     {
-      "match": "Italy vs Belgium",
-      "league": "UEFA Nations League A",
-      "pick": "Italy Win",
-      "odds": 2.18,
-      "winProb": 46,
-      "aiReason": "Italy has strong home form and higher possession; Belgium's defense has been leaky in recent matches."
+      "match": "Burkina Faso vs Benin",
+      "league": "International",
+      "pick": "Home Win",
+      "odds": 1.52,
+      "winProb": 88,
+      "aiReason": "Superioritas H2H dan performa kandang dominan memastikan kemenangan mudah."
     },
     {
-      "match": "Turkey vs France",
-      "league": "UEFA Nations League A",
-      "pick": "Draw",
-      "odds": 1.28,
-      "winProb": 78,
-      "aiReason": "Both sides are evenly matched, recent encounters end in draws and both tend to be cautious."
+      "match": "Gremio Novorizontino SP vs Sao Bernardo SP",
+      "league": "Brazil Paulista",
+      "pick": "Home Win",
+      "odds": 1.53,
+      "winProb": 85,
+      "aiReason": "Kondisi skuad penuh dan tren xG kandang sangat konsisten."
     },
     {
-      "match": "Italy vs Belgium",
-      "league": "UEFA Nations League A",
-      "pick": "Over 2.5 Goals",
-      "odds": 1.95,
-      "winProb": 51,
-      "aiReason": "Both teams average over 1.5 goals per game and recent fixtures have produced 3+ goals."
+      "match": "CD San Antonio Bulo Bulo vs Real Potosi",
+      "league": "Bolivia",
+      "pick": "Home Win",
+      "odds": 1.55,
+      "winProb": 84,
+      "aiReason": "Keunggulan altitude dan lini serang tajam mengunci 3 poin."
     }
   ],
   "parlay5": [
     {
-      "match": "Italy vs Belgium",
-      "league": "UEFA Nations League A",
-      "pick": "Italy Win",
-      "odds": 2.18,
-      "winProb": 46,
-      "aiReason": "Italy's attacking depth and home advantage give them the edge."
+      "match": "Nacional Potosi vs Club Always Ready",
+      "league": "Bolivia",
+      "pick": "Home Win",
+      "odds": 1.55,
+      "winProb": 82,
+      "aiReason": "Motivasi tinggi tuan rumah mendominasi tempo permainan."
     },
     {
-      "match": "Turkey vs France",
-      "league": "UEFA Nations League A",
-      "pick": "Draw",
-      "odds": 1.28,
-      "winProb": 78,
-      "aiReason": "Balanced squads and defensive setups point to a stalemate."
-    },
-    {
-      "match": "Italy vs Belgium",
-      "league": "UEFA Nations League A",
-      "pick": "Over 2.5 Goals",
-      "odds": 1.95,
-      "winProb": 51,
-      "aiReason": "High-scoring trend in both teams' last five matches."
-    },
-    {
-      "match": "Italy vs Belgium",
-      "league": "UEFA Nations League A",
-      "pick": "Half‑time Italy Lead",
-      "odds": 1.84,
-      "winProb": 54,
-      "aiReason": "Italy consistently starts strong, leading at half‑time in 70% of recent games."
-    },
-    {
-      "match": "Turkey vs France",
-      "league": "UEFA Nations League A",
-      "pick": "Under 2.5 Goals",
-      "odds": 1.77,
-      "winProb": 56,
-      "aiReason": "Both teams favor tight defenses; under 2.5 has hit in 60% of their last encounters."
+      "match": "Cavalry FC vs FC Supra du Quebec",
+      "league": "Canada",
+      "pick": "Home Win",
+      "odds": 1.57,
+      "winProb": 80,
+      "aiReason": "Rotasi lawan berantakan, Cavalry unggul kualitas individu."
     }
   ],
   "parlay10": [
     {
-      "match": "Italy vs Belgium",
-      "league": "UEFA Nations League A",
-      "pick": "Italy Win",
-      "odds": 2.18,
-      "winProb": 46,
-      "aiReason": "Home advantage and superior recent form."
+      "match": "Honduras vs Suriname",
+      "league": "CONCACAF",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 79,
+      "aiReason": "Pengalaman turnamen dan rekor kandang sempurna jadi penentu."
     },
     {
-      "match": "Italy vs Belgium",
-      "league": "UEFA Nations League A",
-      "pick": "Draw",
-      "odds": 2.92,
-      "winProb": 34,
-      "aiReason": "Both sides have shown defensive solidity, making a draw plausible."
-    },
-    {
-      "match": "Italy vs Belgium",
-      "league": "UEFA Nations League A",
-      "pick": "Over 2.5 Goals",
-      "odds": 1.95,
-      "winProb": 51,
-      "aiReason": "Goal‑rich recent fixtures for both teams."
-    },
-    {
-      "match": "Italy vs Belgium",
-      "league": "UEFA Nations League A",
-      "pick": "Half‑time Italy Lead",
-      "odds": 1.84,
-      "winProb": 54,
-      "aiReason": "Italy often dominates the opening period."
-    },
-    {
-      "match": "Italy vs Belgium",
-      "league": "UEFA Nations League A",
-      "pick": "Italy -0.5 Handicap",
-      "odds": 1.84,
-      "winProb": 54,
-      "aiReason": "Italy expected to win by at least one goal."
-    },
-    {
-      "match": "Turkey vs France",
-      "league": "UEFA Nations League A",
-      "pick": "Turkey Win",
-      "odds": 7.72,
-      "winProb": 13,
-      "aiReason": "High odds reflect low probability, but upset potential exists."
-    },
-    {
-      "match": "Turkey vs France",
-      "league": "UEFA Nations League A",
-      "pick": "Draw",
-      "odds": 1.28,
+      "match": "Montenegro vs Cyprus",
+      "league": "UEFA",
+      "pick": "Home Win",
+      "odds": 1.63,
       "winProb": 78,
-      "aiReason": "Statistically the most likely outcome."
+      "aiReason": "Full strength squad dan motivasi taktis pelatih baru."
     },
     {
-      "match": "Turkey vs France",
-      "league": "UEFA Nations League A",
-      "pick": "France Win",
-      "odds": 5.32,
-      "winProb": 19,
-      "aiReason": "France's quality gives them a chance despite high odds."
+      "match": "Treaty United vs Finn Harps",
+      "league": "Ireland",
+      "pick": "Home Win",
+      "odds": 1.63,
+      "winProb": 77,
+      "aiReason": "Tim tamu krisis pemain kunci akibat cedera dan akumulasi."
     },
     {
-      "match": "Turkey vs France",
-      "league": "UEFA Nations League A",
-      "pick": "Under 2.5 Goals",
-      "odds": 1.77,
-      "winProb": 56,
-      "aiReason": "Both teams tend to keep games tight."
+      "match": "General Caballero JLM vs 3 de Noviembre",
+      "league": "Paraguay",
+      "pick": "Home Win",
+      "odds": 1.72,
+      "winProb": 76,
+      "aiReason": "Efisiensi konversi peluang tuan rumah jauh di atas rata-rata."
     },
     {
-      "match": "Turkey vs France",
-      "league": "UEFA Nations League A",
-      "pick": "Turkey +0.5 Handicap",
-      "odds": 2.2,
-      "winProb": 45,
-      "aiReason": "Turkey likely to stay within a one‑goal margin."
+      "match": "Vila Nova GO vs Londrina PR",
+      "league": "Brazil Serie B",
+      "pick": "Home Win",
+      "odds": 1.74,
+      "winProb": 75,
+      "aiReason": "Dominasi penguasaan bola kandang membatasi ruang gerak lawan."
     }
   ]
 }
