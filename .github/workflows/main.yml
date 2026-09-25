@@ -1,10 +1,9 @@
-name: Daily FIXSCORE Scraping & Gemini AI Pipeline
+name: Daily FIXSCORE Scraping & OpenAI Pipeline
 
 on:
   schedule:
-    # Berjalan otomatis 1x sehari pukul 10:50 WIB (02:50 UTC)
     - cron: '50 2 * * *'
-  workflow_dispatch: # Mengizinkan pemicu manual kapan saja dari tab Actions
+  workflow_dispatch:
 
 jobs:
   run-fixscore-pipeline:
@@ -22,26 +21,26 @@ jobs:
       - name: Install Python Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install playwright google-genai requests
+          pip install playwright requests
 
-      - name: Install Playwright Browsers (Chromium)
+      - name: Install Playwright Browsers
         run: |
           playwright install chromium
 
-      - name: Step 1 - Scrape Web Parlay (Playwright)
+      - name: Step 1 - Scrape Web Parlay
         run: |
           python src/scrape_parlay.py
 
-      - name: Step 2 - Filter Algoritma & Generasi Gemini AI
+      - name: Step 2 - Filter Algoritma & Generasi OpenAI
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           python src/main.py
 
-      - name: Step 3 - Auto Commit & Push Changes to Repository
+      - name: Step 3 - Auto Commit & Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
-          git commit -m "chore: auto update daily parlay recommendations [skip ci]" || echo "Tidak ada perubahan data untuk di-commit"
+          git commit -m "chore: auto update daily parlay recommendations [skip ci]" || echo "Tidak ada perubahan data"
           git push
