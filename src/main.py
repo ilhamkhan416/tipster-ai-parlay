@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import time
 from datetime import datetime
 from google import genai
 
@@ -8,7 +9,6 @@ RAW_DATA_PATH = "data/raw_scraped.json"
 TODAY_DATA_PATH = "data/today.json"
 HISTORY_DATA_PATH = "data/history.json"
 
-# Konfigurasi API Key Gemini (diambil dari Secrets GitHub Actions)
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 def load_scraped_data():
@@ -20,10 +20,7 @@ def load_scraped_data():
 
 def local_algorithm_filter(raw_matches):
     """
-    Filter awal menggunakan matematika/algoritma lokal (+EV):
-    1. Membersihkan teks dari baris scraping.
-    2. Mengabaikan pertandingan dengan struktur data tidak valid.
-    3. Menyaring pertandingan yang masuk dalam rentang odds masuk akal.
+    Filter awal menggunakan matematika/algoritma lokal (+EV)
     """
     filtered = []
     print("🧠 [ALGORITMA LOKAL] Memproses dan memfilter data pasaran mentah...")
@@ -34,15 +31,12 @@ def local_algorithm_filter(raw_matches):
             continue
 
         text_block = " ".join(raw_lines)
-        
-        # Ekstraksi angka odds (mencari angka desimal seperti 1.85, 2.10, dsb)
         odds_found = re.findall(r'\b\d+\.\d+\b', text_block)
         parsed_odds = [float(o) for o in odds_found if 1.10 <= float(o) <= 4.50]
 
         if not parsed_odds:
             continue
 
-        # Simpan objek pertandingan yang sudah terfilter
         filtered.append({
             "raw_text": text_block,
             "lines": raw_lines,
@@ -54,7 +48,7 @@ def local_algorithm_filter(raw_matches):
 
 def analyze_and_build_parlays_with_gemini(filtered_matches):
     """
-    Mengirimkan data hasil filter ke Gemini AI menggunakan SDK google-genai dengan model gemini-3.8-flash
+    Mengirimkan data ke Gemini AI dengan Retry Mechanism (Mencoba Ulang Otomatis jika Server 503 Overload)
     """
     print("🤖 [GEMINI AI] Mengirim data ke Gemini AI untuk analisis kuantitatif...")
     
@@ -62,7 +56,6 @@ def analyze_and_build_parlays_with_gemini(filtered_matches):
         print("⚠️ GEMINI_API_KEY tidak ditemukan di environment. Menggunakan fallback bawaan.")
         return generate_fallback_data(filtered_matches)
 
-    # Inisialisasi client dari SDK google-genai terbaru
     client = genai.Client(api_key=GEMINI_API_KEY)
 
     prompt = f"""
@@ -93,23 +86,32 @@ def analyze_and_build_parlays_with_gemini(filtered_matches):
     }}
     """
 
-    try:
-        # Menggunakan model gemini-3.8-flash sesuai petunjuk resmi
-        response = client.models.generate_content(
-            model='gemini-3.8-flash',
-            contents=prompt,
-        )
-        clean_text = response.text.replace("```json", "").replace("```", "").strip()
-        parsed_json = json.loads(clean_text)
-        print("✅ [GEMINI AI] Analisis selesai dan JSON berhasil dibuat.")
-        return parsed_json
-    except Exception as e:
-        print(f"❌ [GEMINI AI ERROR] Gagal memproses AI: {e}. Menggunakan fallback.")
-        return generate_fallback_data(filtered_matches)
+    # --- PENANGANAN OTOMATIS JIKA SERVER BUSY (503 OVERLOAD) ---
+    max_retries = 3
+    for attempt in range(1, max_retries + 1):
+        try:
+            print(f"🔄 [GEMINI AI] Mencoba request ke model (Percobaan {attempt}/{max_retries})...")
+            response = client.models.generate_content(
+                model='gemini-2.5-flash',
+                contents=prompt,
+            )
+            clean_text = response.text.replace("```json", "").replace("```", "").strip()
+            parsed_json = json.loads(clean_text)
+            print("✅ [GEMINI AI] Analisis selesai dan JSON berhasil dibuat!")
+            return parsed_json
+
+        except Exception as e:
+            print(f"⚠️ [GEMINI AI WARN] Percobaan {attempt} gagal: {e}")
+            if attempt < max_retries:
+                print("⏳ Server sibuk/busy. Menunggu 5 detik sebelum mencoba ulang...")
+                time.sleep(5)
+            else:
+                print("❌ [GEMINI AI ERROR] Seluruh percobaan gagal. Menggunakan fallback data.")
+                return generate_fallback_data(filtered_matches)
 
 def generate_fallback_data(filtered_matches):
     """
-    Fallback data jika Gemini API limit atau bermasalah.
+    Fallback data cadangan agar sistem tetap berjalan meskipun server Google down
     """
     base_list = []
     for i, m in enumerate(filtered_matches[:10], 1):
@@ -133,16 +135,10 @@ def generate_fallback_data(filtered_matches):
 def main():
     print("🚀 [PIPELINE] Memulai pemrosesan data harian FIXSCORE...")
     
-    # 1. Load Data Scraping Mentah
     raw_matches = load_scraped_data()
-    
-    # 2. Filter via Algoritma Lokal (+EV)
     filtered_matches = local_algorithm_filter(raw_matches)
-    
-    # 3. Analisis & Pembagian Paket oleh Gemini AI
     parlay_packages = analyze_and_build_parlays_with_gemini(filtered_matches)
     
-    # Tambahkan Timestamp Update
     now_str = datetime.now().strftime("%d/%m/%Y %H:%M WIB")
     final_output = {
         "updatedAt": now_str,
@@ -151,7 +147,6 @@ def main():
         "parlay10": parlay_packages.get("parlay10", [])
     }
     
-    # Simpan Hasil Akhir ke data/today.json
     os.makedirs("data", exist_ok=True)
     with open(TODAY_DATA_PATH, "w", encoding="utf-8") as f:
         json.dump(final_output, f, indent=2, ensure_ascii=False)
