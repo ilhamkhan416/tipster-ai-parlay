@@ -1,5 +1,5 @@
 {
-  "updatedAt": "25/09/2026 14:55 WIB",
+  "updatedAt": "25/09/2026 15:02 WIB",
   "parlay3": [
     {
       "match": "Team A vs Team B #1",
@@ -129,7 +129,7 @@
       "match": "LIVE",
       "league": "Major League",
       "pick": "Over 2.5",
-      "odds": 1.65,
+      "odds": 1.64,
       "winProb": 73,
       "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
     },
