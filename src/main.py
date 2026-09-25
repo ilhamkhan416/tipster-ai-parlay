@@ -73,9 +73,11 @@ def analyze_with_groq_ai(filtered_matches):
         "Content-Type": "application/json"
     }
 
+    # Model resmi aktif di Groq API
     candidate_models = [
-        "llama-3.3-70b-versatile",
-        "llama3-8b-8192"
+        "llama-3.1-8b-instant",
+        "mixtral-8x7b-32768",
+        "gemma2-9b-it"
     ]
 
     for model_name in candidate_models:
@@ -102,7 +104,7 @@ def analyze_with_groq_ai(filtered_matches):
                     print(f"✅ [GROQ SUCCESS] Analisis H2H & Taktis BERHASIL dengan model '{model_name}'!")
                     return parsed_json
             else:
-                print(f"⚠️ Model '{model_name}' merespon HTTP {response.status_code}. Mencoba model cadangan...")
+                print(f"⚠️ Model '{model_name}' merespon HTTP {response.status_code}: {response.text}")
         except Exception as e:
             print(f"⚠️ Error pada model '{model_name}': {e}. Mencoba model cadangan...")
 
