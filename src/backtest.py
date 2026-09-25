@@ -1,92 +1,114 @@
-import json
 import requests
+import json
 from datetime import datetime, timedelta
 
-API_KEY = "c34a8c442012a28b459b7887380fb8be"
-HEADERS = {'x-apisports-key': API_KEY}
+# API Publik Gratis (Tanpa Limit Harian Ketat & Tanpa API Key Terbatas)
+FREE_API_URL = "https://www.thesportsdb.com/api/v1/json/3/eventsday.php?d={date}&s=Soccer"
 
-def fetch_historical_fixtures(days_ago=3):
+def fetch_all_real_matches_free(days_ago=1):
     """
-    Mengambil data pertandingan selesai dari beberapa liga utama
+    Menarik SELURUH pertandingan nyata yang sudah selesai dari API Publik Gratis
     """
     target_date = (datetime.now() - timedelta(days=days_ago)).strftime('%Y-%m-%d')
-    print(f"🔄 Mengambil data historis tanggal: {target_date}...")
+    print(f"🔄 Menarik SELURUH data pertandingan nyata tanggal: {target_date} (Via Free Premium API)...")
+
+    url = FREE_API_URL.format(date=target_date)
     
-    # ID Liga Populer: Premier League (39), La Liga (140), Serie A (135), Bundesliga (78), Ligue 1 (61)
-    major_leagues = [39, 140, 135, 78, 61]
-    all_fixtures = []
-
-    for league_id in major_leagues:
-        url = f"https://v3.football.api-sports.io/fixtures?date={target_date}&league={league_id}&season=2026"
-        try:
-            response = requests.get(url, headers=HEADERS)
-            if response.status_code == 200:
-                data = response.json()
-                fixtures = data.get('response', [])
-                all_fixtures.extend(fixtures)
-        except Exception as e:
-            print(f"Error fetching league {league_id}: {e}")
-
-    # Fallback: Jika liga utama kosong pada tanggal tersebut, ambil semua jadwal umum tanpa filter status kaku
-    if not all_fixtures:
-        url = f"https://v3.football.api-sports.io/fixtures?date={target_date}"
-        response = requests.get(url, headers=HEADERS)
+    try:
+        response = requests.get(url, timeout=10)
         if response.status_code == 200:
             data = response.json()
-            all_fixtures = data.get('response', [])
+            events = data.get('events', [])
+            
+            if not events:
+                print("⚠️ Data tanggal ini kosong, mencoba hari sebelumnya...")
+                return []
 
-    return all_fixtures
+            # Filter hanya pertandingan yang punya skor akhir nyata
+            finished_matches = []
+            for ev in events:
+                if ev.get('intHomeScore') is not None and ev.get('intAwayScore') is not None:
+                    finished_matches.append({
+                        'league': ev.get('strLeague', 'Soccer League'),
+                        'home': ev.get('strHomeTeam'),
+                        'away': ev.get('strAwayTeam'),
+                        'score_home': int(ev.get('intHomeScore')),
+                        'score_away': int(ev.get('intAwayScore')),
+                    })
+            return finished_matches
+        else:
+            print(f"❌ HTTP Error: {response.status_code}")
+    except Exception as e:
+        print(f"❌ Error Request API: {e}")
+        
+    return []
 
-def evaluate_model_backtest(fixtures):
-    if not fixtures:
-        print("❌ Tidak ada data historis yang ditemukan pada tanggal tersebut.")
+def run_backtest_engine():
+    # Coba ambil data kemarin (1 hari lalu)
+    matches = fetch_all_real_matches_free(days_ago=1)
+
+    # Jika kemarin tidak ada data (misal jeda internasional), ambil 2 hari lalu
+    if not matches:
+        matches = fetch_all_real_matches_free(days_ago=2)
+
+    if not matches:
+        print("❌ Gagal mendapatkan data dari API Gratis. Silakan jalankan ulang nanti.")
         return
 
-    wins, losses, total_profit = 0, 0, 0.0
-    print(f"\n📊 MENGUJI ALGORITMA DENGAN {len(fixtures)} PERTANDINGAN HISTORIS...\n")
+    print(f"\n✅ BERHASIL MENDAPATKAN {len(matches)} PERTANDINGAN NYATA KEMARIN!\n")
+    print("==========================================================")
+    print("📊 MENJALANKAN BACKTEST MODEL AI DENGAN DATA NYATA")
+    print("==========================================================\n")
 
-    for match in fixtures:
-        status_short = match['fixture']['status']['short']
-        if status_short not in ['FT', 'AET', 'PEN']:
-            continue # Hanya proses yang sudah selesai
+    wins = 0
+    losses = 0
+    draws = 0
+    total_profit = 0.0
 
-        home = match['teams']['home']['name']
-        away = match['teams']['away']['name']
-        score_home = match['goals']['home']
-        score_away = match['goals']['away']
+    for idx, m in enumerate(matches, 1):
+        league = m['league']
+        home = m['home']
+        away = m['away']
+        s_home = m['score_home']
+        s_away = m['score_away']
 
-        if score_home is None or score_away is None:
-            continue
+        # --- LOGIKA PREDIKSI MODEL AI KAMU ---
+        # Contoh: Model memprediksi Tuan Rumah (Home) Win dengan Odds 1.85
+        predicted_pick = f"{home} Win"
+        odds = 1.85
 
-        # Logika Evaluasi Sederhana
-        diff = score_home - score_away
+        diff = s_home - s_away
+
+        # Evaluasi Hasil Nyata
         if diff > 0:
             status = "WIN"
-            profit = 0.85
+            profit = odds - 1.0
             wins += 1
+        elif diff == 0:
+            status = "DRAW"
+            profit = 0.0
+            draws += 1
         else:
             status = "LOSE"
             profit = -1.0
             losses += 1
 
         total_profit += profit
-        print(f"[{status}] {home} ({score_home}) vs ({score_away}) {away} | Profit: {profit:+.2f} U")
+        print(f"{idx}. [{status}] {league}: {home} ({s_home}) vs ({s_away}) {away} | Pick: {predicted_pick} | Profit: {profit:+.2f} U")
 
-    total_evaluated = wins + losses
-    if total_evaluated > 0:
-        win_rate = (wins / total_evaluated) * 100
-        print("\n==========================================")
-        print("🎯 HASIL EVALUASI BACKTESTING MODEL AI")
-        print("==========================================")
-        print(f"Total Pertandingan Evaluasi : {total_evaluated}")
-        print(f"Hasil                       : {wins} Win - {losses} Lose")
-        print(f"Win Rate                    : {win_rate:.1f}%")
-        print(f"Net Profit/Yield            : {total_profit:+.2f} Unit")
-        print("==========================================\n")
-    else:
-        print("⚠️ Tidak ada pertandingan dengan status Full-Time (FT) pada sampel tanggal ini.")
+    total_evaluated = wins + losses + draws
+    win_rate = (wins / total_evaluated * 100) if total_evaluated > 0 else 0
+    roi = (total_profit / total_evaluated * 100) if total_evaluated > 0 else 0
+
+    print("\n==========================================")
+    print("🎯 RINGKASAN HASIL PERFORMA BACKTEST MODEL AI")
+    print("==========================================")
+    print(f"Total Pertandingan Evaluasi : {total_evaluated}")
+    print(f"Hasil Akhir                 : {wins} Win - {draws} Draw - {losses} Lose")
+    print(f"Win Rate                    : {win_rate:.1f}%")
+    print(f"Total Net Yield             : {total_profit:+.2f} Unit")
+    print(f"ROI (+EV)                   : {roi:+.1f}%")
+    print("==========================================\n")
 
 if __name__ == "__main__":
-    # Coba tanggal 3 hari lalu
-    historical_data = fetch_historical_fixtures(days_ago=3)
-    evaluate_model_backtest(historical_data)
+    run_backtest_engine()
