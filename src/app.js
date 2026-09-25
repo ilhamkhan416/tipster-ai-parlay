@@ -1,378 +1,200 @@
-// FIXSCORE APPLICATION LOGIC (CLEAN VERSION - WITHOUT LIVE SCORE)
+// STATE GLOBAL APLIKASI
+let CURRENT_PARLAY_DATA = {
+  parlay3: [],
+  parlay5: [],
+  parlay10: []
+};
+let ACTIVE_CATEGORY = 3; // Default 3 Partai
 
-let MOCK_TODAY_MATCHES = [];
-let selectedMarketFilter = 'ALL';
-let userParlaySlip = [];
+// INITIALIZATION
+document.addEventListener('DOMContentLoaded', () => {
+  loadDataFromJSON();
+});
 
-// Penanganan logo klub yang 100% aman (Menggunakan SVG Shield Murni jika logo error)
-function getTeamLogoHtml(logoUrl, teamName) {
-  if (logoUrl && logoUrl.trim() !== "" && !logoUrl.includes("undefined")) {
-    return `<div class="w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center shrink-0">
-              <img src="${logoUrl}" alt="${teamName}" class="w-full h-full object-contain" 
-                   onerror="this.onerror=null; this.parentElement.innerHTML=getShieldSvg();" />
-            </div>`;
-  }
-  return `<div class="w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center shrink-0">${getShieldSvg()}</div>`;
-}
-
-function getShieldSvg() {
-  return `<svg class="w-6 h-6 sm:w-7 sm:h-7 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            <path d="M8 12h8"/>
-            <path d="M8 12h8"/>
-          </svg>`;
-}
-
-function getLeagueLogoHtml(logoUrl, leagueName) {
-  if (logoUrl && logoUrl.trim() !== "" && !logoUrl.includes("undefined")) {
-    return `<img src="${logoUrl}" alt="${leagueName}" class="w-4 h-4 object-contain shrink-0" 
-                 onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fa-solid fa-trophy text-amber-500 text-xs shrink-0\'></i>';" />`;
-  }
-  return `<i class="fa-solid fa-trophy text-amber-500 text-xs shrink-0"></i>`;
-}
-
-// Memuat data dari today.json
+// MEMUAT DATA HARI INI & HISTORY
 async function loadDataFromJSON() {
   const cacheBuster = new Date().getTime();
   try {
+    // 1. Memuat rekomendasi harian
     const todayRes = await fetch(`./data/today.json?v=${cacheBuster}`, { cache: 'no-store' });
     if (todayRes.ok) {
-      MOCK_TODAY_MATCHES = await todayRes.json();
+      const data = await todayRes.json();
+      CURRENT_PARLAY_DATA.parlay3 = data.parlay3 || [];
+      CURRENT_PARLAY_DATA.parlay5 = data.parlay5 || [];
+      CURRENT_PARLAY_DATA.parlay10 = data.parlay10 || [];
+
+      // Tampilkan timestamp update jika elemen tersedia
+      const timeElem = document.getElementById('last-updated-time');
+      if (timeElem && data.updatedAt) {
+        timeElem.innerText = `Diperbarui: ${data.updatedAt}`;
+      }
+
       renderMatchesList();
     }
+
+    // 2. Memuat data rekap history
+    const historyRes = await fetch(`./data/history.json?v=${cacheBuster}`, { cache: 'no-store' });
+    if (historyRes.ok) {
+      const historyData = await historyRes.json();
+      renderHistoryTable(historyData);
+    }
   } catch (e) {
-    console.log("Error loading JSON data.");
+    console.log("Memuat data JSON default/fallback.");
   }
 }
 
-window.onload = function() {
-  loadDataFromJSON();
-};
+// FUNGSI GANTI KATEGORI PARLAY (3, 5, 10 PARTAI)
+function switchParlayCategory(numLegs) {
+  ACTIVE_CATEGORY = numLegs;
 
-function toggleSidebar() {
-  document.getElementById('sidebarMenu').classList.toggle('translate-x-full');
-  document.getElementById('sidebarOverlay').classList.toggle('hidden');
+  // Update styling tombol aktif
+  [3, 5, 10].forEach(num => {
+    const btn = document.getElementById(`btn-parlay-${num}`);
+    if (btn) {
+      if (num === numLegs) {
+        btn.className = "px-4 py-2 rounded-xl text-xs font-bold transition-all bg-flash-red text-white shadow-md shadow-red-500/20";
+      } else {
+        btn.className = "px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200";
+      }
+    }
+  });
+
+  renderMatchesList();
 }
 
-function switchTab(tabName) {
-  document.getElementById('tab-dashboard').classList.add('hidden');
-  document.getElementById('tab-history').classList.add('hidden');
-  document.getElementById('tab-algorithm').classList.add('hidden');
-  document.getElementById(`tab-${tabName}`).classList.remove('hidden');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
+// RENDER LIST PERTANDINGAN BERDASARKAN KATEGORI AKTIF
 function renderMatchesList() {
-  const container = document.getElementById('matchesContainer');
+  const container = document.getElementById('matches-container');
   if (!container) return;
-  container.innerHTML = '';
 
-  let filtered = MOCK_TODAY_MATCHES.filter(m => {
-    if (selectedMarketFilter === 'ALL') return true;
-    return m.marketType === selectedMarketFilter;
-  });
+  const currentList = CURRENT_PARLAY_DATA[`parlay${ACTIVE_CATEGORY}`] || [];
 
-  const searchInput = document.getElementById('searchInput');
-  const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
-  if (searchTerm) {
-    filtered = filtered.filter(m => 
-      m.homeTeam.toLowerCase().includes(searchTerm) || 
-      m.awayTeam.toLowerCase().includes(searchTerm) || 
-      m.league.toLowerCase().includes(searchTerm)
-    );
-  }
-
-  if (filtered.length === 0) {
-    container.innerHTML = `<div class="bg-white p-6 rounded-2xl text-center text-xs text-slate-400">Belum ada data pertandingan yang sesuai.</div>`;
+  if (currentList.length === 0) {
+    container.innerHTML = `
+      <div class="bg-white rounded-2xl p-8 text-center border border-slate-100 shadow-sm">
+        <p class="text-slate-400 text-xs font-bold">Belum ada data pertandingan untuk kategori ${ACTIVE_CATEGORY} Partai hari ini.</p>
+      </div>
+    `;
+    updateParlaySummary(0, 0);
     return;
   }
 
-  filtered.forEach((m) => {
-    const isAdded = userParlaySlip.some(p => p.id === m.id);
-    const card = document.createElement('div');
-    card.className = "bg-white flash-card-hover rounded-2xl p-3.5 sm:p-4 border border-slate-200/80 shadow-sm relative space-y-3 overflow-hidden";
+  let html = '';
+  let totalCombinedOdds = 1.0;
 
-    let localKickoffStr = m.kickoff;
-    if (m.kickoffUtc) {
-      try {
-        const matchDate = new Date(m.kickoffUtc);
-        localKickoffStr = matchDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) + " (Jam Lokal)";
-      } catch(e) {}
-    }
+  currentList.forEach((m, idx) => {
+    const odds = m.odds ? parseFloat(m.odds) : 1.85;
+    totalCombinedOdds *= odds;
 
-    // BADGE STATUS JAM KICKOFF / FT DENGAN DISPLAY SEJAJAR
-    let statusBadge = `<span class="bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200 text-slate-700 text-[10px] font-bold"><i class="fa-regular fa-clock mr-1 text-flash-red"></i>${localKickoffStr}</span>`;
-    let centerScoreDisplay = `<span class="text-[10px] font-mono text-emerald-800 font-bold bg-emerald-50 px-2.5 py-0.5 rounded-md border border-emerald-200">VS</span>`;
-
-    if (['FT', 'AET', 'PEN'].includes(m.statusShort)) {
-      statusBadge = `<span class="bg-slate-800 text-white px-2 py-0.5 rounded-md text-[10px] font-bold font-mono">FT</span>`;
-      centerScoreDisplay = `<div class="inline-flex items-center justify-center bg-slate-900 text-white px-3.5 py-1 rounded-lg font-mono font-black text-xs tracking-widest whitespace-nowrap min-w-[70px] text-center shadow-sm">${m.scoreHome ?? 0}&nbsp;-&nbsp;${m.scoreAway ?? 0}</div>`;
-    }
-
-    // PROYEKSI PREDIKSI MODEL (DIBLUR KHUSUS PARTAI VIP)
-    let projectionContent = '';
-    if (m.isVip) {
-      projectionContent = `
-        <div class="relative bg-slate-50/80 p-2.5 rounded-xl border border-slate-200 overflow-hidden flex items-center justify-between">
-          <div class="filter blur-md select-none opacity-40 pointer-events-none flex items-center justify-between w-full pr-28">
-            <div>
-              <span class="text-[9px] text-slate-400 block font-bold uppercase tracking-wider">PROYEKSI MODEL</span>
-              <span class="text-xs sm:text-sm font-extrabold text-flash-red">Home Win / Over 2.5</span>
-            </div>
-            <div class="flex items-center gap-2 font-mono text-xs">
-              <span class="font-extrabold text-slate-900 bg-amber-100 px-2 py-0.5 rounded-md border border-amber-300">@1.85</span>
-              <span class="font-extrabold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-md border border-emerald-300">82%</span>
-            </div>
-          </div>
-          <div class="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-2">
-            <span class="text-[10px] font-bold text-amber-600 font-mono flex items-center gap-1 hidden sm:inline-flex">
-              <i class="fa-solid fa-lock text-flash-red"></i> VIP
-            </span>
-            <button onclick="openVipModal()" class="px-3 py-1.5 bg-flash-red hover:bg-flash-redHover text-white text-[10px] font-bold rounded-lg transition-all shadow-sm flex items-center gap-1">
-              <i class="fa-solid fa-lock text-[9px] sm:hidden"></i> BUKA EKSKLUSIF
-            </button>
-          </div>
+    html += `
+      <div class="bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:border-slate-200 transition-all">
+        <!-- HEADER MATCH: LIGA & PROBABILITAS -->
+        <div class="flex justify-between items-center mb-2 pb-2 border-b border-slate-50">
+          <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400">${m.league || 'Premier League'}</span>
+          <span class="text-[11px] font-extrabold text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-100">
+            Win Rate: ${m.winProb || 70}%
+          </span>
         </div>
-      `;
-    } else {
-      projectionContent = `
-        <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200/80 flex justify-between items-center gap-2">
+
+        <!-- TIM PERTANDINGAN -->
+        <div class="my-2">
+          <h3 class="text-sm font-extrabold text-slate-800">${m.match || 'Team A vs Team B'}</h3>
+        </div>
+
+        <!-- PROYEKSI AI (+EV) -->
+        <div class="bg-slate-50 p-3 rounded-xl border border-slate-100 flex justify-between items-center gap-2 my-2">
           <div>
-            <span class="text-[9px] text-slate-400 block font-bold uppercase tracking-wider">PROYEKSI MODEL</span>
-            <span class="text-xs sm:text-sm font-extrabold text-flash-red">${m.pick}</span>
+            <span class="text-[9px] text-slate-400 block font-bold uppercase tracking-wider">REKOMENDASI PICK (+EV)</span>
+            <span class="text-xs sm:text-sm font-black text-flash-red">${m.pick || 'Home Win'}</span>
           </div>
-          <div class="flex items-center gap-2 font-mono text-xs">
-            <span class="font-extrabold text-slate-900 bg-amber-100 px-2 py-0.5 rounded-md border border-amber-300">@${m.odds ? m.odds.toFixed(2) : '1.65'}</span>
-            <span class="font-extrabold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-md border border-emerald-300">${m.winProb}%</span>
-          </div>
-        </div>
-      `;
-    }
-
-    card.innerHTML = `
-      <!-- LEAGUE HEADER -->
-      <div class="flex justify-between items-center text-xs font-mono text-slate-500 border-b border-slate-100 pb-2">
-        <div class="flex items-center gap-1.5">
-          ${getLeagueLogoHtml(m.leagueLogo, m.league)}
-          <span class="font-extrabold text-slate-900 text-[11px] font-sans tracking-wide truncate max-w-[180px] sm:max-w-none">${m.league}</span>
-        </div>
-        ${statusBadge}
-      </div>
-
-      <!-- MATCH MAIN DETAILS -->
-      <div class="flex items-center justify-between gap-2">
-        <!-- HOME TEAM -->
-        <div class="flex-1 flex items-center gap-2 min-w-0">
-          ${getTeamLogoHtml(m.homeLogo, m.homeTeam)}
-          <div class="space-y-0.5 min-w-0">
-            <div class="font-extrabold text-slate-900 text-xs sm:text-sm truncate">${m.homeTeam}</div>
-            <div class="flex items-center gap-0.5 font-mono text-[8px] font-bold">
-              ${m.homeForm ? m.homeForm.map(f => `<span class="w-3.5 h-3.5 rounded flex items-center justify-center ${f==='W'?'form-badge-w':f==='D'?'form-badge-d':'form-badge-l'}">${f}</span>`).join('') : ''}
-            </div>
+          <div class="text-right">
+            <span class="text-[9px] text-slate-400 block font-bold uppercase tracking-wider">ODDS</span>
+            <span class="font-mono text-xs font-black text-slate-900 bg-amber-100 px-2 py-0.5 rounded-md border border-amber-200">
+              @${odds.toFixed(2)}
+            </span>
           </div>
         </div>
 
-        <!-- VS DISPLAY -->
-        <div class="shrink-0 text-center px-1">
-          ${centerScoreDisplay}
-        </div>
-
-        <!-- AWAY TEAM -->
-        <div class="flex-1 flex items-center justify-end gap-2 text-right min-w-0">
-          <div class="space-y-0.5 min-w-0">
-            <div class="font-extrabold text-slate-900 text-xs sm:text-sm truncate">${m.awayTeam}</div>
-            <div class="flex items-center justify-end gap-0.5 font-mono text-[8px] font-bold">
-              ${m.awayForm ? m.awayForm.map(f => `<span class="w-3.5 h-3.5 rounded flex items-center justify-center ${f==='W'?'form-badge-w':f==='D'?'form-badge-d':'form-badge-l'}">${f}</span>`).join('') : ''}
-            </div>
+        <!-- ANALISIS ANALITIK GEMINI AI -->
+        ${m.aiReason ? `
+          <div class="mt-2 text-[11px] text-slate-500 leading-relaxed bg-blue-50/50 p-2.5 rounded-lg border border-blue-100/50">
+            <span class="font-bold text-blue-700">💡 Analisis AI:</span> ${m.aiReason}
           </div>
-          ${getTeamLogoHtml(m.awayLogo, m.awayTeam)}
-        </div>
-      </div>
-
-      <!-- EV INDICATORS -->
-      <div class="grid grid-cols-2 gap-1.5 text-[10px] font-mono">
-        <div class="px-2 py-1 rounded-md border indicator-pos flex items-center gap-1.5 font-bold">
-          <i class="fa-solid fa-circle-check text-emerald-600"></i>
-          <span class="truncate">${m.posEdge || '+15.5% +EV'}</span>
-        </div>
-        <div class="px-2 py-1 rounded-md border indicator-neg flex items-center gap-1.5 font-bold">
-          <i class="fa-solid fa-triangle-exclamation text-red-600"></i>
-          <span class="truncate">${m.riskFactor || '-3.8% Risk'}</span>
-        </div>
-      </div>
-
-      <!-- PROYEKSI PREDIKSI MODEL -->
-      ${projectionContent}
-
-      <!-- CARD FOOTER BUTTONS -->
-      <div class="flex items-center justify-between gap-2 text-xs pt-0.5">
-        <button onclick="openAnalyticsModal(${m.id})" class="text-slate-500 hover:text-flash-red flex items-center gap-1.5 transition-colors font-medium">
-          <i class="fa-solid fa-diagram-project text-emerald-600"></i>
-          <span class="underline text-[10px]">Matriks Taktis Lengkap</span>
-        </button>
-        <button onclick="toggleParlayPick(${m.id})" class="px-3 py-1 rounded-lg font-bold text-xs flex items-center gap-1.5 ${isAdded ? 'bg-red-100 text-flash-red border border-red-300' : 'bg-flash-red hover:bg-flash-redHover text-white shadow-sm'}">
-          <i class="fa-solid ${isAdded ? 'fa-minus' : 'fa-plus'}"></i>
-          <span>${isAdded ? 'Hapus' : '+ Parlay'}</span>
-        </button>
+        ` : ''}
       </div>
     `;
+  });
 
-    container.appendChild(card);
+  container.innerHTML = html;
+  updateParlaySummary(currentList.length, totalCombinedOdds);
+}
+
+// UPDATE RINGKASAN PARLAY & KALKULATOR EST
+function updateParlaySummary(matchCount, totalOdds) {
+  const countElem = document.getElementById('summary-count');
+  const oddsElem = document.getElementById('summary-total-odds');
+  const estWinElem = document.getElementById('summary-est-win');
+  const stakeInput = document.getElementById('stake-input');
+
+  if (countElem) countElem.innerText = `${matchCount} Leg`;
+  if (oddsElem) oddsElem.innerText = `@${totalOdds.toFixed(2)}`;
+
+  const calculatePayout = () => {
+    const stake = stakeInput ? parseFloat(stakeInput.value) || 0 : 100;
+    const estPayout = stake * totalOdds;
+    if (estWinElem) {
+      estWinElem.innerText = `Rp ${Math.round(estPayout * 1000).toLocaleString('id-ID')}`;
+    }
+  };
+
+  if (stakeInput) {
+    stakeInput.oninput = calculatePayout;
+  }
+  calculatePayout();
+}
+
+// RENDER TABEL HISTORY REKAP
+function renderHistoryTable(historyData) {
+  const tbody = document.querySelector('#tab-history tbody');
+  if (!tbody || !historyData) return;
+
+  tbody.innerHTML = '';
+  historyData.forEach(item => {
+    let badgeClass = "bg-emerald-100 text-emerald-800";
+    if (item.status === "LOSE") badgeClass = "bg-red-100 text-red-800";
+    if (item.status === "DRAW" || item.status === "PUSH") badgeClass = "bg-slate-100 text-slate-800";
+    if (item.status === "WIN_HALF") badgeClass = "bg-teal-100 text-teal-800";
+    if (item.status === "LOSE_HALF") badgeClass = "bg-amber-100 text-amber-800";
+
+    const tr = document.createElement('tr');
+    tr.className = "bg-white hover:bg-slate-50/50 border-b border-slate-100";
+    tr.innerHTML = `
+      <td class="p-3 font-bold">${item.date || '-'}</td>
+      <td class="p-3 font-sans">${item.summary || 'Rekap Evaluasi Algoritma'}</td>
+      <td class="p-3 font-bold">${item.totalMatches || '10'} Leg</td>
+      <td class="p-3"><span class="${badgeClass} px-2 py-0.5 rounded-md font-bold text-[10px]">${item.status}</span></td>
+      <td class="p-3 font-bold ${item.units && item.units.includes('+') ? 'text-emerald-600' : 'text-red-600'}">${item.units || '0.00 Unit'}</td>
+    `;
+    tbody.appendChild(tr);
   });
 }
 
-function filterMatches(market) {
-  selectedMarketFilter = market;
-  ['ALL', '1X2', 'HDP', 'OU'].forEach(m => {
-    const btn = document.getElementById(`filter-${m}`);
-    if (btn) btn.className = (m === market) ? "py-2.5 px-1 rounded-xl bg-flash-red text-white text-center transition-all shadow-sm font-bold" : "py-2.5 px-1 rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 text-center transition-all font-bold";
-  });
-  renderMatchesList();
-}
+// NAVIGATION TAB (REKOMENDASI VS HISTORY)
+function switchMainTab(tabName) {
+  const tabToday = document.getElementById('tab-content-today');
+  const tabHistory = document.getElementById('tab-content-history');
+  const btnToday = document.getElementById('nav-btn-today');
+  const btnHistory = document.getElementById('nav-btn-history');
 
-function searchMatches() { renderMatchesList(); }
-
-function toggleParlayPick(id) {
-  const match = MOCK_TODAY_MATCHES.find(m => m.id === id);
-  if (!match) return;
-
-  const index = userParlaySlip.findIndex(p => p.id === id);
-  if (index > -1) {
-    userParlaySlip.splice(index, 1);
-    showToast(`Dihapus: ${match.homeTeam}`);
+  if (tabName === 'today') {
+    if (tabToday) tabToday.classList.remove('hidden');
+    if (tabHistory) tabHistory.classList.add('hidden');
+    if (btnToday) btnToday.className = "px-4 py-2 text-xs font-extrabold text-flash-red border-b-2 border-flash-red";
+    if (btnHistory) btnHistory.className = "px-4 py-2 text-xs font-bold text-slate-400 hover:text-slate-600";
   } else {
-    if (userParlaySlip.length >= 5) {
-      showToast("Maksimal 5 partai parlay!");
-      return;
-    }
-    userParlaySlip.push(match);
-    showToast(`Ditambahkan: ${match.homeTeam}`);
+    if (tabToday) tabToday.classList.add('hidden');
+    if (tabHistory) tabHistory.classList.remove('hidden');
+    if (btnToday) btnToday.className = "px-4 py-2 text-xs font-bold text-slate-400 hover:text-slate-600";
+    if (btnHistory) btnHistory.className = "px-4 py-2 text-xs font-extrabold text-flash-red border-b-2 border-flash-red";
   }
-  renderMatchesList();
-  renderParlaySlip();
-}
-
-function renderParlaySlip() {
-  const picksList = document.getElementById('parlayPicksList');
-  const emptyState = document.getElementById('parlayEmptyState');
-  const calcSummary = document.getElementById('parlayCalcSummary');
-  const actions = document.getElementById('parlayActions');
-  const countBadge = document.getElementById('parlayCountBadge');
-
-  if (!countBadge) return;
-  countBadge.innerText = `${userParlaySlip.length} Partai`;
-
-  if (userParlaySlip.length === 0) {
-    emptyState.classList.remove('hidden');
-    picksList.innerHTML = '';
-    calcSummary.classList.add('hidden');
-    actions.classList.add('hidden');
-    return;
-  }
-
-  emptyState.classList.add('hidden');
-  calcSummary.classList.remove('hidden');
-  actions.classList.remove('hidden');
-
-  picksList.innerHTML = '';
-  let totalOdds = 1.0;
-  let combinedProb = 1.0;
-
-  userParlaySlip.forEach(m => {
-    totalOdds *= m.odds;
-    combinedProb *= (m.winProb / 100);
-
-    const pickItem = document.createElement('div');
-    pickItem.className = "bg-slate-50 p-2.5 rounded-xl border border-slate-200 flex justify-between items-center text-xs";
-    pickItem.innerHTML = `
-      <div>
-        <div class="font-bold text-[10px] text-slate-900">${m.homeTeam} vs ${m.awayTeam}</div>
-        <div class="text-[9px] text-flash-red font-bold">${m.pick}</div>
-      </div>
-      <div class="flex items-center gap-1.5 font-mono">
-        <span class="font-extrabold text-[11px] text-slate-900">@${m.odds.toFixed(2)}</span>
-        <button onclick="toggleParlayPick(${m.id})" class="text-slate-400 hover:text-red-600"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-    `;
-    picksList.appendChild(pickItem);
-  });
-
-  document.getElementById('parlayTotalOdds').innerText = totalOdds.toFixed(2);
-  document.getElementById('parlayCombinedProb').innerText = (combinedProb * 100).toFixed(1) + '%';
-  document.getElementById('parlayProjectedPayout').innerText = `Rp ${Math.round(100000 * totalOdds).toLocaleString('id-ID')}`;
-}
-
-function clearParlaySlip() {
-  userParlaySlip = [];
-  renderMatchesList();
-  renderParlaySlip();
-  showToast("Slip parlay di-reset.");
-}
-
-function copyParlaySlip() {
-  if (userParlaySlip.length === 0) return;
-  let text = `⚽ KALKULASI PARLAY FIXSCORE ⚽\n\n`;
-  let totalOdds = 1.0;
-  userParlaySlip.forEach((m, idx) => {
-    totalOdds *= m.odds;
-    text += `${idx + 1}. ${m.homeTeam} vs ${m.awayTeam}\n   Pilihan: ${m.pick} (@${m.odds.toFixed(2)})\n`;
-  });
-  text += `\n🎯 Total Odds: @${totalOdds.toFixed(2)}\n`;
-
-  const dummy = document.createElement("textarea");
-  document.body.appendChild(dummy);
-  dummy.value = text;
-  dummy.select();
-  document.execCommand("copy");
-  document.body.removeChild(dummy);
-  showToast("Slip parlay disalin!");
-}
-
-function openAnalyticsModal(id) {
-  const match = MOCK_TODAY_MATCHES.find(m => m.id === id);
-  if (!match) return;
-
-  document.getElementById('modalMatchTitle').innerText = `${match.homeTeam} vs ${match.awayTeam}`;
-  document.getElementById('modalAiNotes').innerText = match.aiNotes || "Analisis taktis kuantitatif menunjukkan dominasi penuh pada peluang xG dan konsistensi transisi lapangan tengah.";
-
-  const metricsBody = document.getElementById('modalMetricsBody');
-  metricsBody.innerHTML = `
-    <div class="bg-white p-2.5 rounded-xl border border-slate-200">
-      <span class="text-[10px] text-slate-400 block font-bold">Rating Form 5 Match</span>
-      <span class="font-bold text-emerald-600 text-sm">${match.metrics?.form || 88}%</span>
-    </div>
-    <div class="bg-white p-2.5 rounded-xl border border-slate-200">
-      <span class="text-[10px] text-slate-400 block font-bold">Dominasi xG Score</span>
-      <span class="font-bold text-emerald-600 text-sm">${match.metrics?.xG || 82}%</span>
-    </div>
-    <div class="bg-white p-2.5 rounded-xl border border-slate-200">
-      <span class="text-[10px] text-slate-400 block font-bold">Efisiensi Serangan</span>
-      <span class="font-bold text-blue-600 text-sm">84.5%</span>
-    </div>
-    <div class="bg-white p-2.5 rounded-xl border border-slate-200">
-      <span class="text-[10px] text-slate-400 block font-bold">Soliditas Pertahanan</span>
-      <span class="font-bold text-blue-600 text-sm">79.2%</span>
-    </div>
-    <div class="bg-white p-2.5 rounded-xl border border-slate-200">
-      <span class="text-[10px] text-slate-400 block font-bold">Penguasaan Bola (Est)</span>
-      <span class="font-bold text-amber-600 text-sm">58.0%</span>
-    </div>
-    <div class="bg-white p-2.5 rounded-xl border border-slate-200">
-      <span class="text-[10px] text-slate-400 block font-bold">Head to Head Index</span>
-      <span class="font-bold text-amber-600 text-sm">${match.metrics?.h2h || 80}%</span>
-    </div>
-  `;
-
-  document.getElementById('analyticsModal').classList.remove('hidden');
-}
-
-function closeAnalyticsModal() { document.getElementById('analyticsModal').classList.add('hidden'); }
-function openVipModal() { document.getElementById('vipModal').classList.remove('hidden'); }
-function closeVipModal() { document.getElementById('vipModal').classList.add('hidden'); }
-
-function showToast(msg) {
-  const toast = document.getElementById('toast');
-  document.getElementById('toastMsg').innerText = msg;
-  toast.classList.remove('hidden');
-  setTimeout(() => { toast.classList.add('hidden'); }, 3000);
 }
