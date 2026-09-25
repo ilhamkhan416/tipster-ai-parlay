@@ -2,7 +2,7 @@ import json
 import os
 import re
 from datetime import datetime
-import google.generativeai as genai
+from google import genai
 
 RAW_DATA_PATH = "data/raw_scraped.json"
 TODAY_DATA_PATH = "data/today.json"
@@ -54,8 +54,7 @@ def local_algorithm_filter(raw_matches):
 
 def analyze_and_build_parlays_with_gemini(filtered_matches):
     """
-    Mengirimkan data hasil filter ke Gemini AI untuk menganalisis statistik,
-    memprediksi win probability, dan membaginya ke paket 3, 5, dan 10 Leg.
+    Mengirimkan data hasil filter ke Gemini AI menggunakan SDK google-genai baru
     """
     print("🤖 [GEMINI AI] Mengirim data ke Gemini AI untuk analisis kuantitatif...")
     
@@ -63,8 +62,8 @@ def analyze_and_build_parlays_with_gemini(filtered_matches):
         print("⚠️ GEMINI_API_KEY tidak ditemukan di environment. Menggunakan fallback bawaan.")
         return generate_fallback_data(filtered_matches)
 
-    genai.configure(api_key=GEMINI_API_KEY)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    # Inisialisasi client dari SDK google-genai terbaru
+    client = genai.Client(api_key=GEMINI_API_KEY)
 
     prompt = f"""
     Kamu adalah pakar taruhan kuantitatif (+EV) dan data analis sepak bola profesional.
@@ -95,7 +94,11 @@ def analyze_and_build_parlays_with_gemini(filtered_matches):
     """
 
     try:
-        response = model.generate_content(prompt)
+        # Menggunakan model gemini-2.5-flash dengan SDK baru
+        response = client.models.generate_content(
+            model='gemini-2.5-flash',
+            contents=prompt,
+        )
         clean_text = response.text.replace("```json", "").replace("```", "").strip()
         parsed_json = json.loads(clean_text)
         print("✅ [GEMINI AI] Analisis selesai dan JSON berhasil dibuat.")
