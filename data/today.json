@@ -1,89 +1,153 @@
 {
-  "updatedAt": "25/09/2026 17:18 WIB",
+  "updatedAt": "25/09/2026 17:30 WIB",
   "parlay3": [
     {
       "match": "Burkina Faso vs Benin",
       "league": "International",
       "pick": "Home Win",
       "odds": 1.52,
-      "winProb": 88,
-      "aiReason": "Superioritas H2H dan performa kandang dominan memastikan kemenangan mudah."
+      "winProb": 92,
+      "aiReason": "Dominasi statistik lini serang dan keunggulan H2H yang sangat signifikan."
     },
     {
       "match": "Gremio Novorizontino SP vs Sao Bernardo SP",
-      "league": "Brazil Paulista",
+      "league": "Brazil Serie B",
       "pick": "Home Win",
       "odds": 1.53,
-      "winProb": 85,
-      "aiReason": "Kondisi skuad penuh dan tren xG kandang sangat konsisten."
+      "winProb": 90,
+      "aiReason": "Performa kandang superior dengan xG tinggi melawan tim tamu yang inkonsisten."
     },
     {
       "match": "CD San Antonio Bulo Bulo vs Real Potosi",
-      "league": "Bolivia",
+      "league": "Bolivia Primera",
       "pick": "Home Win",
       "odds": 1.55,
-      "winProb": 84,
-      "aiReason": "Keunggulan altitude dan lini serang tajam mengunci 3 poin."
+      "winProb": 88,
+      "aiReason": "Keunggulan adaptasi ketinggian dan rekor kandang yang sangat solid musim ini."
     }
   ],
   "parlay5": [
     {
-      "match": "Nacional Potosi vs Club Always Ready",
-      "league": "Bolivia",
+      "match": "Burkina Faso vs Benin",
+      "league": "International",
+      "pick": "Home Win",
+      "odds": 1.52,
+      "winProb": 92,
+      "aiReason": "Dominasi statistik lini serang dan keunggulan H2H yang sangat signifikan."
+    },
+    {
+      "match": "Gremio Novorizontino SP vs Sao Bernardo SP",
+      "league": "Brazil Serie B",
+      "pick": "Home Win",
+      "odds": 1.53,
+      "winProb": 90,
+      "aiReason": "Performa kandang superior dengan xG tinggi melawan tim tamu yang inkonsisten."
+    },
+    {
+      "match": "CD San Antonio Bulo Bulo vs Real Potosi",
+      "league": "Bolivia Primera",
       "pick": "Home Win",
       "odds": 1.55,
-      "winProb": 82,
-      "aiReason": "Motivasi tinggi tuan rumah mendominasi tempo permainan."
+      "winProb": 88,
+      "aiReason": "Keunggulan adaptasi ketinggian dan rekor kandang yang sangat solid musim ini."
+    },
+    {
+      "match": "Nacional Potosi vs Club Always Ready",
+      "league": "Bolivia Primera",
+      "pick": "Home Win",
+      "odds": 1.55,
+      "winProb": 87,
+      "aiReason": "Motivasi poin penuh di kandang didukung oleh efisiensi konversi peluang tinggi."
     },
     {
       "match": "Cavalry FC vs FC Supra du Quebec",
-      "league": "Canada",
+      "league": "Canadian Premier League",
       "pick": "Home Win",
       "odds": 1.57,
-      "winProb": 80,
-      "aiReason": "Rotasi lawan berantakan, Cavalry unggul kualitas individu."
+      "winProb": 86,
+      "aiReason": "Perbedaan kualitas skuad yang mencolok dan keunggulan taktis di lini tengah."
     }
   ],
   "parlay10": [
     {
+      "match": "Burkina Faso vs Benin",
+      "league": "International",
+      "pick": "Home Win",
+      "odds": 1.52,
+      "winProb": 92,
+      "aiReason": "Dominasi statistik lini serang dan keunggulan H2H yang sangat signifikan."
+    },
+    {
+      "match": "Gremio Novorizontino SP vs Sao Bernardo SP",
+      "league": "Brazil Serie B",
+      "pick": "Home Win",
+      "odds": 1.53,
+      "winProb": 90,
+      "aiReason": "Performa kandang superior dengan xG tinggi melawan tim tamu yang inkonsisten."
+    },
+    {
+      "match": "CD San Antonio Bulo Bulo vs Real Potosi",
+      "league": "Bolivia Primera",
+      "pick": "Home Win",
+      "odds": 1.55,
+      "winProb": 88,
+      "aiReason": "Keunggulan adaptasi ketinggian dan rekor kandang yang sangat solid musim ini."
+    },
+    {
+      "match": "Nacional Potosi vs Club Always Ready",
+      "league": "Bolivia Primera",
+      "pick": "Home Win",
+      "odds": 1.55,
+      "winProb": 87,
+      "aiReason": "Motivasi poin penuh di kandang didukung oleh efisiensi konversi peluang tinggi."
+    },
+    {
+      "match": "Cavalry FC vs FC Supra du Quebec",
+      "league": "Canadian Premier League",
+      "pick": "Home Win",
+      "odds": 1.57,
+      "winProb": 86,
+      "aiReason": "Perbedaan kualitas skuad yang mencolok dan keunggulan taktis di lini tengah."
+    },
+    {
       "match": "Honduras vs Suriname",
       "league": "CONCACAF",
       "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 79,
-      "aiReason": "Pengalaman turnamen dan rekor kandang sempurna jadi penentu."
-    },
-    {
-      "match": "Montenegro vs Cyprus",
-      "league": "UEFA",
-      "pick": "Home Win",
-      "odds": 1.63,
-      "winProb": 78,
-      "aiReason": "Full strength squad dan motivasi taktis pelatih baru."
+      "odds": 1.62,
+      "winProb": 84,
+      "aiReason": "Stabilitas pertahanan Honduras jauh lebih baik dibandingkan kelemahan transisi tim tamu."
     },
     {
       "match": "Treaty United vs Finn Harps",
-      "league": "Ireland",
+      "league": "Ireland First Division",
       "pick": "Home Win",
       "odds": 1.63,
-      "winProb": 77,
-      "aiReason": "Tim tamu krisis pemain kunci akibat cedera dan akumulasi."
+      "winProb": 82,
+      "aiReason": "Tren positif performa 5 laga terakhir dan keunggulan penguasaan bola."
+    },
+    {
+      "match": "Montenegro vs Cyprus",
+      "league": "International Friendly",
+      "pick": "Home Win",
+      "odds": 1.66,
+      "winProb": 80,
+      "aiReason": "Kualitas individu pemain kunci Montenegro jauh di atas rata-rata tim tamu."
+    },
+    {
+      "match": "Dalstorps IF vs IF Boljan Falkenberg",
+      "league": "Sweden Division 2",
+      "pick": "Home Win",
+      "odds": 1.72,
+      "winProb": 78,
+      "aiReason": "Keunggulan taktis dalam skema bola mati dan soliditas lini belakang."
     },
     {
       "match": "General Caballero JLM vs 3 de Noviembre",
-      "league": "Paraguay",
+      "league": "Paraguay Cup",
       "pick": "Home Win",
       "odds": 1.72,
       "winProb": 76,
-      "aiReason": "Efisiensi konversi peluang tuan rumah jauh di atas rata-rata."
-    },
-    {
-      "match": "Vila Nova GO vs Londrina PR",
-      "league": "Brazil Serie B",
-      "pick": "Home Win",
-      "odds": 1.74,
-      "winProb": 75,
-      "aiReason": "Dominasi penguasaan bola kandang membatasi ruang gerak lawan."
+      "aiReason": "Perbedaan kasta liga dan urgensi kemenangan untuk melaju ke babak berikutnya."
     }
   ]
 }
