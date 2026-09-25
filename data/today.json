@@ -1,29 +1,29 @@
 {
-  "updatedAt": "25/09/2026 15:21 WIB",
+  "updatedAt": "25/09/2026 16:12 WIB",
   "parlay3": [
     {
       "match": "Team A vs Team B #1",
       "league": "Major League",
       "pick": "Home Win",
       "odds": 2.13,
-      "winProb": 66,
-      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+      "winProb": 71,
+      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
     },
     {
       "match": "Team A vs Team B #2",
       "league": "Major League",
       "pick": "Over 2.5",
       "odds": 2.13,
-      "winProb": 67,
-      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+      "winProb": 72,
+      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
     },
     {
       "match": "LIVE",
       "league": "Major League",
       "pick": "Home Win",
       "odds": 2.13,
-      "winProb": 68,
-      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+      "winProb": 73,
+      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
     }
   ],
   "parlay5": [
@@ -32,40 +32,40 @@
       "league": "Major League",
       "pick": "Home Win",
       "odds": 2.13,
-      "winProb": 66,
-      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+      "winProb": 71,
+      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
     },
     {
       "match": "Team A vs Team B #2",
       "league": "Major League",
       "pick": "Over 2.5",
       "odds": 2.13,
-      "winProb": 67,
-      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+      "winProb": 72,
+      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
     },
     {
       "match": "LIVE",
       "league": "Major League",
       "pick": "Home Win",
       "odds": 2.13,
-      "winProb": 68,
-      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+      "winProb": 73,
+      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
     },
     {
       "match": "LIVE",
       "league": "Major League",
       "pick": "Over 2.5",
       "odds": 2.13,
-      "winProb": 69,
-      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+      "winProb": 74,
+      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
     },
     {
       "match": "LIVE",
       "league": "Major League",
       "pick": "Home Win",
       "odds": 1.52,
-      "winProb": 70,
-      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+      "winProb": 75,
+      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
     }
   ],
   "parlay10": [
@@ -74,80 +74,80 @@
       "league": "Major League",
       "pick": "Home Win",
       "odds": 2.13,
-      "winProb": 66,
-      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+      "winProb": 71,
+      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
     },
     {
       "match": "Team A vs Team B #2",
       "league": "Major League",
       "pick": "Over 2.5",
       "odds": 2.13,
-      "winProb": 67,
-      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+      "winProb": 72,
+      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
     },
     {
       "match": "LIVE",
       "league": "Major League",
       "pick": "Home Win",
       "odds": 2.13,
-      "winProb": 68,
-      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+      "winProb": 73,
+      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
     },
     {
       "match": "LIVE",
       "league": "Major League",
       "pick": "Over 2.5",
       "odds": 2.13,
-      "winProb": 69,
-      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+      "winProb": 74,
+      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
     },
     {
       "match": "LIVE",
       "league": "Major League",
       "pick": "Home Win",
       "odds": 1.52,
-      "winProb": 70,
-      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+      "winProb": 75,
+      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
     },
     {
       "match": "LIVE",
       "league": "Major League",
       "pick": "Over 2.5",
       "odds": 2.43,
+      "winProb": 76,
+      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
+    },
+    {
+      "match": "LIVE",
+      "league": "Major League",
+      "pick": "Home Win",
+      "odds": 1.28,
+      "winProb": 77,
+      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
+    },
+    {
+      "match": "LIVE",
+      "league": "Major League",
+      "pick": "Over 2.5",
+      "odds": 1.67,
+      "winProb": 70,
+      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
+    },
+    {
+      "match": "LIVE",
+      "league": "Major League",
+      "pick": "Home Win",
+      "odds": 2.2,
       "winProb": 71,
-      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
     },
     {
       "match": "LIVE",
       "league": "Major League",
-      "pick": "Home Win",
-      "odds": 1.29,
+      "pick": "Over 2.5",
+      "odds": 1.48,
       "winProb": 72,
-      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
-    },
-    {
-      "match": "LIVE",
-      "league": "Major League",
-      "pick": "Over 2.5",
-      "odds": 1.65,
-      "winProb": 73,
-      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
-    },
-    {
-      "match": "LIVE",
-      "league": "Major League",
-      "pick": "Home Win",
-      "odds": 2.17,
-      "winProb": 74,
-      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
-    },
-    {
-      "match": "LIVE",
-      "league": "Major League",
-      "pick": "Over 2.5",
-      "odds": 1.46,
-      "winProb": 65,
-      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
     }
   ]
 }
