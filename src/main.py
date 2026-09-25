@@ -7,8 +7,7 @@ from datetime import datetime
 RAW_DATA_PATH = "data/raw_scraped.json"
 TODAY_DATA_PATH = "data/today.json"
 
-# Menggunakan API Key OpenAI (Disimpan di GitHub Secrets sebagai OPENAI_API_KEY)
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 def load_scraped_data():
     if not os.path.exists(RAW_DATA_PATH):
@@ -42,11 +41,11 @@ def local_algorithm_filter(raw_matches):
     print(f"✅ [PRE-FILTER] Berhasil menyaring {len(filtered)} pertandingan potensial.")
     return filtered
 
-def analyze_with_openai(filtered_matches):
-    print("🤖 [OPENAI GPT-4o] Mengirim data ke OpenAI untuk analisis H2H, Form, & Taktis...")
+def analyze_with_groq_ai(filtered_matches):
+    print("🤖 [GROQ LLAMA 3.3] Mengirim data ke Groq AI untuk analisis H2H & Taktis...")
     
-    if not OPENAI_API_KEY:
-        print("⚠️ OPENAI_API_KEY tidak ditemukan di environment. Menggunakan fallback.")
+    if not GROQ_API_KEY:
+        print("⚠️ GROQ_API_KEY tidak ditemukan di environment. Menggunakan fallback.")
         return generate_fallback_data(filtered_matches)
 
     prompt = f"""
@@ -79,32 +78,32 @@ def analyze_with_openai(filtered_matches):
     """
 
     headers = {
-        "Authorization": f"Bearer {OPENAI_API_KEY}",
+        "Authorization": f"Bearer {GROQ_API_KEY}",
         "Content-Type": "application/json"
     }
 
     payload = {
-        "model": "gpt-4o-mini",
+        "model": "llama-3.3-70b-versatile",
         "messages": [
             {"role": "system", "content": "Kamu adalah AI analis taruhan olahraga kuantitatif (+EV) profesional."},
             {"role": "user", "content": prompt}
         ],
-        "temperature": 0.3,
+        "temperature": 0.2,
         "response_format": {"type": "json_object"}
     }
 
     try:
-        response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload, timeout=45)
+        response = requests.post("https://api.groq.com/openai/v1/chat/completions", headers=headers, json=payload, timeout=30)
         if response.status_code == 200:
             result = response.json()
             content = result['choices'][0]['message']['content']
             parsed_json = json.loads(content)
-            print("✅ [OPENAI SUCCESS] Analisis GPT-4o selesai dan JSON berhasil diproses!")
+            print("✅ [GROQ SUCCESS] Analisis Llama 3.3 selesai dan JSON berhasil diproses!")
             return parsed_json
         else:
-            print(f"❌ [OPENAI ERROR] HTTP {response.status_code}: {response.text}")
+            print(f"❌ [GROQ ERROR] HTTP {response.status_code}: {response.text}")
     except Exception as e:
-        print(f"❌ [OPENAI ERROR] Request gagal: {e}")
+        print(f"❌ [GROQ ERROR] Request gagal: {e}")
 
     return generate_fallback_data(filtered_matches)
 
@@ -133,7 +132,7 @@ def main():
     
     raw_matches = load_scraped_data()
     filtered_matches = local_algorithm_filter(raw_matches)
-    parlay_packages = analyze_with_openai(filtered_matches)
+    parlay_packages = analyze_with_groq_ai(filtered_matches)
     
     now_str = datetime.now().strftime("%d/%m/%Y %H:%M WIB")
     final_output = {
@@ -147,7 +146,7 @@ def main():
     with open(TODAY_DATA_PATH, "w", encoding="utf-8") as f:
         json.dump(final_output, f, indent=2, ensure_ascii=False)
         
-    print(f"💾 [PIPELINE] Selesai! Hasil analisis OpenAI disimpan di '{TODAY_DATA_PATH}'.")
+    print(f"💾 [PIPELINE] Selesai! Hasil analisis Groq AI disimpan di '{TODAY_DATA_PATH}'.")
 
 if __name__ == "__main__":
     main()
