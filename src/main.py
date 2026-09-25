@@ -42,7 +42,7 @@ def local_algorithm_filter(raw_matches):
     return filtered
 
 def analyze_with_groq_ai(filtered_matches):
-    print("🤖 [GROQ LLAMA3] Mengirim data ke Groq AI untuk analisis H2H & Taktis...")
+    print("🤖 [GROQ AI] Mengirim data ke Groq AI untuk analisis H2H & Taktis...")
     
     if not GROQ_API_KEY:
         print("⚠️ GROQ_API_KEY tidak ditemukan di environment. Menggunakan fallback.")
@@ -82,30 +82,39 @@ def analyze_with_groq_ai(filtered_matches):
         "Content-Type": "application/json"
     }
 
-    # Model resmi aktif di Groq API
-    payload = {
-        "model": "llama3-70b-8192",
-        "messages": [
-            {"role": "system", "content": "Kamu adalah AI analis taruhan olahraga kuantitatif (+EV) profesional."},
-            {"role": "user", "content": prompt}
-        ],
-        "temperature": 0.2,
-        "response_format": {"type": "json_object"}
-    }
+    # Daftar model cadangan otomatis di Groq jika salah satu dipensiunkan
+    candidate_models = [
+        "llama-3.3-70b-specdec",
+        "llama-3.1-8b-instant",
+        "mixtral-8x7b-32768"
+    ]
 
-    try:
-        response = requests.post("https://api.groq.com/openai/v1/chat/completions", headers=headers, json=payload, timeout=30)
-        if response.status_code == 200:
-            result = response.json()
-            content = result['choices'][0]['message']['content']
-            parsed_json = json.loads(content)
-            print("✅ [GROQ SUCCESS] Analisis Llama3 selesai dan JSON berhasil diproses!")
-            return parsed_json
-        else:
-            print(f"❌ [GROQ ERROR] HTTP {response.status_code}: {response.text}")
-    except Exception as e:
-        print(f"❌ [GROQ ERROR] Request gagal: {e}")
+    for model_name in candidate_models:
+        payload = {
+            "model": model_name,
+            "messages": [
+                {"role": "system", "content": "Kamu adalah AI analis taruhan olahraga kuantitatif (+EV) profesional."},
+                {"role": "user", "content": prompt}
+            ],
+            "temperature": 0.2,
+            "response_format": {"type": "json_object"}
+        }
 
+        try:
+            print(f"🔄 [GROQ AI] Mencoba request menggunakan model '{model_name}'...")
+            response = requests.post("https://api.groq.com/openai/v1/chat/completions", headers=headers, json=payload, timeout=30)
+            if response.status_code == 200:
+                result = response.json()
+                content = result['choices'][0]['message']['content']
+                parsed_json = json.loads(content)
+                print(f"✅ [GROQ SUCCESS] Analisis selesai dengan model {model_name}!")
+                return parsed_json
+            else:
+                print(f"⚠️ Model {model_name} gagal (HTTP {response.status_code}). Mencoba model cadangan...")
+        except Exception as e:
+            print(f"⚠️ Error pada model {model_name}: {e}. Mencoba model cadangan...")
+
+    print("❌ [GROQ ERROR] Seluruh model Groq gagal. Menggunakan fallback.")
     return generate_fallback_data(filtered_matches)
 
 def generate_fallback_data(filtered_matches):
