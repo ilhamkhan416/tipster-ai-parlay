@@ -42,7 +42,7 @@ def local_algorithm_filter(raw_matches):
     return filtered
 
 def analyze_with_groq_ai(filtered_matches):
-    print("🤖 [GROQ LLAMA 3.3] Mengirim data ke Groq AI untuk analisis H2H & Taktis...")
+    print("🤖 [GROQ LLAMA3] Mengirim data ke Groq AI untuk analisis H2H & Taktis...")
     
     if not GROQ_API_KEY:
         print("⚠️ GROQ_API_KEY tidak ditemukan di environment. Menggunakan fallback.")
@@ -82,8 +82,9 @@ def analyze_with_groq_ai(filtered_matches):
         "Content-Type": "application/json"
     }
 
+    # Model resmi aktif di Groq API
     payload = {
-        "model": "llama-3.3-70b-versatile",
+        "model": "llama3-70b-8192",
         "messages": [
             {"role": "system", "content": "Kamu adalah AI analis taruhan olahraga kuantitatif (+EV) profesional."},
             {"role": "user", "content": prompt}
@@ -98,7 +99,7 @@ def analyze_with_groq_ai(filtered_matches):
             result = response.json()
             content = result['choices'][0]['message']['content']
             parsed_json = json.loads(content)
-            print("✅ [GROQ SUCCESS] Analisis Llama 3.3 selesai dan JSON berhasil diproses!")
+            print("✅ [GROQ SUCCESS] Analisis Llama3 selesai dan JSON berhasil diproses!")
             return parsed_json
         else:
             print(f"❌ [GROQ ERROR] HTTP {response.status_code}: {response.text}")
