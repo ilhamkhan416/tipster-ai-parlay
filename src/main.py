@@ -54,7 +54,7 @@ def local_algorithm_filter(raw_matches):
 
 def analyze_and_build_parlays_with_gemini(filtered_matches):
     """
-    Mengirimkan data hasil filter ke Gemini AI menggunakan SDK google-genai baru
+    Mengirimkan data hasil filter ke Gemini AI menggunakan SDK google-genai dengan model gemini-3.8-flash
     """
     print("🤖 [GEMINI AI] Mengirim data ke Gemini AI untuk analisis kuantitatif...")
     
@@ -94,9 +94,9 @@ def analyze_and_build_parlays_with_gemini(filtered_matches):
     """
 
     try:
-        # Menggunakan model gemini-2.5-flash dengan SDK baru
+        # Menggunakan model gemini-3.8-flash sesuai petunjuk resmi
         response = client.models.generate_content(
-            model='gemini-2.5-flash',
+            model='gemini-3.8-flash',
             contents=prompt,
         )
         clean_text = response.text.replace("```json", "").replace("```", "").strip()
