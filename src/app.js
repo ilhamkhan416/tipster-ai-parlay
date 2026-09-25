@@ -1,13 +1,10 @@
-// FIXSCORE APPLICATION LOGIC WITH REAL-TIME API-SPORTS LIVE SCORE
+// FIXSCORE APPLICATION LOGIC (CLEAN VERSION - WITHOUT LIVE SCORE)
 
 let MOCK_TODAY_MATCHES = [];
 let selectedMarketFilter = 'ALL';
 let userParlaySlip = [];
 
-// API KEY UTAMA KAMU (API-SPORTS)
-const API_SPORTS_KEY = 'c34a8c442012a28b459b7887380fb8be';
-
-// Penanganan logo klub yang 100% aman (Menggunakan SVG Shield Murni jika logo error/broken)
+// Penanganan logo klub yang 100% aman (Menggunakan SVG Shield Murni jika logo error)
 function getTeamLogoHtml(logoUrl, teamName) {
   if (logoUrl && logoUrl.trim() !== "" && !logoUrl.includes("undefined")) {
     return `<div class="w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center shrink-0">
@@ -21,7 +18,7 @@ function getTeamLogoHtml(logoUrl, teamName) {
 function getShieldSvg() {
   return `<svg class="w-6 h-6 sm:w-7 sm:h-7 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            <path d="M12 8v8"/>
+            <path d="M8 12h8"/>
             <path d="M8 12h8"/>
           </svg>`;
 }
@@ -42,64 +39,14 @@ async function loadDataFromJSON() {
     if (todayRes.ok) {
       MOCK_TODAY_MATCHES = await todayRes.json();
       renderMatchesList();
-      checkLiveMatchesUpdate(); // Otomatis cek update skor real-time dari API
     }
   } catch (e) {
     console.log("Error loading JSON data.");
   }
 }
 
-// UPDATE SKOR REAL-TIME LANGSUNG DARI API-SPORTS
-async function checkLiveMatchesUpdate() {
-  // Hanya ambil pertandingan yang sedang jalan / hari ini agar hemat kuota API
-  const liveMatches = MOCK_TODAY_MATCHES.filter(m => 
-    ['1H', '2H', 'HT', 'LIVE', 'ET', 'P'].includes(String(m.statusShort)) ||
-    (m.kickoffUtc && new Date(m.kickoffUtc) <= new Date() && m.statusShort !== 'FT')
-  );
-
-  if (liveMatches.length === 0) return;
-
-  let hasUpdates = false;
-
-  for (let match of liveMatches) {
-    if (match.fixtureId) {
-      try {
-        const res = await fetch(`https://v3.football.api-sports.io/fixtures?id=${match.fixtureId}`, {
-          method: 'GET',
-          headers: {
-            'x-apisports-key': API_SPORTS_KEY
-          }
-        });
-
-        if (res.ok) {
-          const apiData = await res.json();
-          if (apiData.response && apiData.response.length > 0) {
-            const fix = apiData.response[0];
-            
-            // Perbarui skor dan status jika ada perubahan dari API
-            match.scoreHome = fix.goals.home ?? match.scoreHome;
-            match.scoreAway = fix.goals.away ?? match.scoreAway;
-            match.statusShort = fix.fixture.status.short;
-            match.statusElapsed = fix.fixture.status.elapsed;
-            hasUpdates = true;
-          }
-        }
-      } catch (err) {
-        console.log("Gagal fetch live match ID:", match.fixtureId);
-      }
-    }
-  }
-
-  // Jika ada skor/menit yang diperbarui dari API, re-render tampilan
-  if (hasUpdates) {
-    renderMatchesList();
-  }
-}
-
 window.onload = function() {
   loadDataFromJSON();
-  // Cek update Live Score tiap 45 detik langsung dari browser
-  setInterval(loadDataFromJSON, 45000); 
 };
 
 function toggleSidebar() {
@@ -140,7 +87,7 @@ function renderMatchesList() {
     return;
   }
 
-  filtered.forEach((m, index) => {
+  filtered.forEach((m) => {
     const isAdded = userParlaySlip.some(p => p.id === m.id);
     const card = document.createElement('div');
     card.className = "bg-white flash-card-hover rounded-2xl p-3.5 sm:p-4 border border-slate-200/80 shadow-sm relative space-y-3 overflow-hidden";
@@ -153,17 +100,13 @@ function renderMatchesList() {
       } catch(e) {}
     }
 
-    // FT SCORE HORIZONTAL RAPAT (SEJAJAR 100%)
+    // BADGE STATUS JAM KICKOFF / FT DENGAN DISPLAY SEJAJAR
     let statusBadge = `<span class="bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200 text-slate-700 text-[10px] font-bold"><i class="fa-regular fa-clock mr-1 text-flash-red"></i>${localKickoffStr}</span>`;
     let centerScoreDisplay = `<span class="text-[10px] font-mono text-emerald-800 font-bold bg-emerald-50 px-2.5 py-0.5 rounded-md border border-emerald-200">VS</span>`;
 
     if (['FT', 'AET', 'PEN'].includes(m.statusShort)) {
       statusBadge = `<span class="bg-slate-800 text-white px-2 py-0.5 rounded-md text-[10px] font-bold font-mono">FT</span>`;
       centerScoreDisplay = `<div class="inline-flex items-center justify-center bg-slate-900 text-white px-3.5 py-1 rounded-lg font-mono font-black text-xs tracking-widest whitespace-nowrap min-w-[70px] text-center shadow-sm">${m.scoreHome ?? 0}&nbsp;-&nbsp;${m.scoreAway ?? 0}</div>`;
-    } else if (['1H', '2H', 'HT', 'LIVE', 'ET', 'P'].includes(m.statusShort)) {
-      const minuteStr = m.statusElapsed ? `${m.statusElapsed}'` : 'LIVE';
-      statusBadge = `<span class="bg-red-600 text-white px-2 py-0.5 rounded-md text-[10px] font-bold font-mono animate-pulse">LIVE ${minuteStr}</span>`;
-      centerScoreDisplay = `<div class="inline-flex items-center justify-center bg-red-600 text-white px-3.5 py-1 rounded-lg font-mono font-black text-xs tracking-widest whitespace-nowrap min-w-[70px] text-center shadow-sm animate-pulse">${m.scoreHome ?? 0}&nbsp;-&nbsp;${m.scoreAway ?? 0}</div>`;
     }
 
     // PROYEKSI PREDIKSI MODEL (DIBLUR KHUSUS PARTAI VIP)
@@ -229,7 +172,7 @@ function renderMatchesList() {
           </div>
         </div>
 
-        <!-- HORIZONTAL SCORE DISPLAY -->
+        <!-- VS DISPLAY -->
         <div class="shrink-0 text-center px-1">
           ${centerScoreDisplay}
         </div>
