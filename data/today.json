@@ -1,442 +1,153 @@
-[
-  {
-    "fixtureId": 1583655,
-    "league": "FRIENDLIES",
-    "leagueLogo": "https://media.api-sports.io/football/leagues/10.png",
-    "homeTeam": "Australia",
-    "homeLogo": "https://media.api-sports.io/football/teams/20.png",
-    "awayTeam": "Brazil",
-    "awayLogo": "https://media.api-sports.io/football/teams/6.png",
-    "kickoffUtc": "2026-09-25T10:00:00+00:00",
-    "kickoff": "17:00 WIB",
-    "statusShort": "NS",
-    "statusElapsed": null,
-    "scoreHome": null,
-    "scoreAway": null,
-    "pick": "Brazil Over 1.5 Team Goals",
-    "marketType": "OU",
-    "odds": 1.62,
-    "winProb": 75,
-    "posEdge": "+14.2% +EV (Kalkulasi Engine)",
-    "riskFactor": "-4.1% Volatilitas Transisi",
-    "aiNotes": "Superioritas individu lini serang Selecao diperkirakan mendominasi blok pertahanan rendah Australia.",
-    "id": 1,
-    "isVip": false,
-    "homeForm": [
-      "W",
-      "W",
-      "D",
-      "W",
-      "L"
-    ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "metrics": {
-      "form": 88,
-      "h2h": 82,
-      "xG": 80,
-      "marketVal": 84
+{
+  "updatedAt": "25/09/2026 14:55 WIB",
+  "parlay3": [
+    {
+      "match": "Team A vs Team B #1",
+      "league": "Major League",
+      "pick": "Home Win",
+      "odds": 2.17,
+      "winProb": 66,
+      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+    },
+    {
+      "match": "Team A vs Team B #2",
+      "league": "Major League",
+      "pick": "Over 2.5",
+      "odds": 2.17,
+      "winProb": 67,
+      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+    },
+    {
+      "match": "LIVE",
+      "league": "Major League",
+      "pick": "Home Win",
+      "odds": 2.17,
+      "winProb": 68,
+      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
     }
-  },
-  {
-    "fixtureId": 1641703,
-    "league": "FIFA ASEAN CUP",
-    "leagueLogo": "https://media.api-sports.io/football/leagues/1247.png",
-    "homeTeam": "Indonesia",
-    "homeLogo": "https://media.api-sports.io/football/teams/1571.png",
-    "awayTeam": "Singapore",
-    "awayLogo": "https://media.api-sports.io/football/teams/1546.png",
-    "kickoffUtc": "2026-09-25T13:00:00+00:00",
-    "kickoff": "20:00 WIB",
-    "statusShort": "NS",
-    "statusElapsed": null,
-    "scoreHome": null,
-    "scoreAway": null,
-    "pick": "Indonesia -1.0",
-    "marketType": "HDP",
-    "odds": 1.85,
-    "winProb": 70,
-    "posEdge": "+12.8% +EV (Kalkulasi Engine)",
-    "riskFactor": "-5.5% Volatilitas Transisi",
-    "aiNotes": "Kedalaman skuad Garuda dan dukungan masif kandang memberikan xG superiority signifikan atas Singapura.",
-    "id": 2,
-    "isVip": false,
-    "homeForm": [
-      "W",
-      "W",
-      "D",
-      "W",
-      "L"
-    ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "metrics": {
-      "form": 88,
-      "h2h": 82,
-      "xG": 80,
-      "marketVal": 84
+  ],
+  "parlay5": [
+    {
+      "match": "Team A vs Team B #1",
+      "league": "Major League",
+      "pick": "Home Win",
+      "odds": 2.17,
+      "winProb": 66,
+      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+    },
+    {
+      "match": "Team A vs Team B #2",
+      "league": "Major League",
+      "pick": "Over 2.5",
+      "odds": 2.17,
+      "winProb": 67,
+      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+    },
+    {
+      "match": "LIVE",
+      "league": "Major League",
+      "pick": "Home Win",
+      "odds": 2.17,
+      "winProb": 68,
+      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+    },
+    {
+      "match": "LIVE",
+      "league": "Major League",
+      "pick": "Over 2.5",
+      "odds": 2.17,
+      "winProb": 69,
+      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+    },
+    {
+      "match": "LIVE",
+      "league": "Major League",
+      "pick": "Home Win",
+      "odds": 1.55,
+      "winProb": 70,
+      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
     }
-  },
-  {
-    "fixtureId": 1641702,
-    "league": "FIFA ASEAN CUP",
-    "leagueLogo": "https://media.api-sports.io/football/leagues/1247.png",
-    "homeTeam": "Bangladesh",
-    "homeLogo": "https://media.api-sports.io/football/teams/1560.png",
-    "awayTeam": "Malaysia",
-    "awayLogo": "https://media.api-sports.io/football/teams/1538.png",
-    "kickoffUtc": "2026-09-25T09:00:00+00:00",
-    "kickoff": "16:00 WIB",
-    "statusShort": "NS",
-    "statusElapsed": null,
-    "scoreHome": null,
-    "scoreAway": null,
-    "pick": "Malaysia",
-    "marketType": "1X2",
-    "odds": 1.72,
-    "winProb": 72,
-    "posEdge": "+13.1% +EV (Kalkulasi Engine)",
-    "riskFactor": "-4.8% Volatilitas Transisi",
-    "aiNotes": "Malaysia memiliki efisiensi transisi positif yang mampu menembus blok pertahanan rapat Bangladesh.",
-    "id": 3,
-    "isVip": false,
-    "homeForm": [
-      "W",
-      "W",
-      "D",
-      "W",
-      "L"
-    ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "metrics": {
-      "form": 88,
-      "h2h": 82,
-      "xG": 80,
-      "marketVal": 84
+  ],
+  "parlay10": [
+    {
+      "match": "Team A vs Team B #1",
+      "league": "Major League",
+      "pick": "Home Win",
+      "odds": 2.17,
+      "winProb": 66,
+      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+    },
+    {
+      "match": "Team A vs Team B #2",
+      "league": "Major League",
+      "pick": "Over 2.5",
+      "odds": 2.17,
+      "winProb": 67,
+      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+    },
+    {
+      "match": "LIVE",
+      "league": "Major League",
+      "pick": "Home Win",
+      "odds": 2.17,
+      "winProb": 68,
+      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+    },
+    {
+      "match": "LIVE",
+      "league": "Major League",
+      "pick": "Over 2.5",
+      "odds": 2.17,
+      "winProb": 69,
+      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+    },
+    {
+      "match": "LIVE",
+      "league": "Major League",
+      "pick": "Home Win",
+      "odds": 1.55,
+      "winProb": 70,
+      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+    },
+    {
+      "match": "LIVE",
+      "league": "Major League",
+      "pick": "Over 2.5",
+      "odds": 2.48,
+      "winProb": 71,
+      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+    },
+    {
+      "match": "LIVE",
+      "league": "Major League",
+      "pick": "Home Win",
+      "odds": 1.28,
+      "winProb": 72,
+      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+    },
+    {
+      "match": "LIVE",
+      "league": "Major League",
+      "pick": "Over 2.5",
+      "odds": 1.65,
+      "winProb": 73,
+      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+    },
+    {
+      "match": "LIVE",
+      "league": "Major League",
+      "pick": "Home Win",
+      "odds": 2.17,
+      "winProb": 74,
+      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
+    },
+    {
+      "match": "LIVE",
+      "league": "Major League",
+      "pick": "Over 2.5",
+      "odds": 1.46,
+      "winProb": 65,
+      "aiReason": "Model algoritma mendeteksi nilai +EV positif berdasarkan tren statistik terkini."
     }
-  },
-  {
-    "fixtureId": 1641615,
-    "league": "ASIAN GAMES",
-    "leagueLogo": "https://media.api-sports.io/football/leagues/803.png",
-    "homeTeam": "Korea Republic U23",
-    "homeLogo": "https://media.api-sports.io/football/teams/10177.png",
-    "awayTeam": "Vietnam U23",
-    "awayLogo": "https://media.api-sports.io/football/teams/10964.png",
-    "kickoffUtc": "2026-09-25T10:30:00+00:00",
-    "kickoff": "17:30 WIB",
-    "statusShort": "NS",
-    "statusElapsed": null,
-    "scoreHome": null,
-    "scoreAway": null,
-    "pick": "Over 2.5 Goals",
-    "marketType": "OU",
-    "odds": 1.75,
-    "winProb": 71,
-    "posEdge": "+15.0% +EV (Kalkulasi Engine)",
-    "riskFactor": "-6.2% Volatilitas Transisi",
-    "aiNotes": "Agresivitas pressing tinggi Korea U23 membuka ruang transisi cepat bagi Vietnam untuk mencetak gol.",
-    "id": 4,
-    "isVip": false,
-    "homeForm": [
-      "W",
-      "W",
-      "D",
-      "W",
-      "L"
-    ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "metrics": {
-      "form": 88,
-      "h2h": 82,
-      "xG": 80,
-      "marketVal": 84
-    }
-  },
-  {
-    "fixtureId": 1641614,
-    "league": "ASIAN GAMES",
-    "leagueLogo": "https://media.api-sports.io/football/leagues/803.png",
-    "homeTeam": "Uzbekistan U23",
-    "homeLogo": "https://media.api-sports.io/football/teams/10963.png",
-    "awayTeam": "Saudi Arabia U23",
-    "awayLogo": "https://media.api-sports.io/football/teams/10955.png",
-    "kickoffUtc": "2026-09-25T05:00:00+00:00",
-    "kickoff": "12:00 WIB",
-    "statusShort": "NS",
-    "statusElapsed": null,
-    "scoreHome": null,
-    "scoreAway": null,
-    "pick": "Under 2.5 Goals",
-    "marketType": "OU",
-    "odds": 1.8,
-    "winProb": 68,
-    "posEdge": "+11.5% +EV (Kalkulasi Engine)",
-    "riskFactor": "-3.5% Volatilitas Transisi",
-    "aiNotes": "Pertemuan dua kekuatan berimbang dengan struktur pertahanan ketat, meminimalisir peluang bersih.",
-    "id": 5,
-    "isVip": true,
-    "homeForm": [
-      "W",
-      "W",
-      "D",
-      "W",
-      "L"
-    ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "metrics": {
-      "form": 88,
-      "h2h": 82,
-      "xG": 80,
-      "marketVal": 84
-    }
-  },
-  {
-    "fixtureId": 1545831,
-    "league": "AFRICA CUP OF NATIONS - QUALIFICATION",
-    "leagueLogo": "https://media.api-sports.io/football/leagues/36.png",
-    "homeTeam": "Mozambique",
-    "homeLogo": "https://media.api-sports.io/football/teams/1512.png",
-    "awayTeam": "Senegal",
-    "awayLogo": "https://media.api-sports.io/football/teams/13.png",
-    "kickoffUtc": "2026-09-25T13:00:00+00:00",
-    "kickoff": "20:00 WIB",
-    "statusShort": "NS",
-    "statusElapsed": null,
-    "scoreHome": null,
-    "scoreAway": null,
-    "pick": "Senegal",
-    "marketType": "1X2",
-    "odds": 1.55,
-    "winProb": 79,
-    "posEdge": "+16.8% +EV (Kalkulasi Engine)",
-    "riskFactor": "-3.1% Volatilitas Transisi",
-    "aiNotes": "Senegal mendominasi metrik duel udara dan efisiensi konversi peluang tandang di fase kualifikasi.",
-    "id": 6,
-    "isVip": true,
-    "homeForm": [
-      "W",
-      "W",
-      "D",
-      "W",
-      "L"
-    ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "metrics": {
-      "form": 88,
-      "h2h": 82,
-      "xG": 80,
-      "marketVal": 84
-    }
-  },
-  {
-    "fixtureId": 1545835,
-    "league": "AFRICA CUP OF NATIONS - QUALIFICATION",
-    "leagueLogo": "https://media.api-sports.io/football/leagues/36.png",
-    "homeTeam": "Tanzania",
-    "homeLogo": "https://media.api-sports.io/football/teams/1489.png",
-    "awayTeam": "Guinea-Bissau",
-    "awayLogo": "https://media.api-sports.io/football/teams/1513.png",
-    "kickoffUtc": "2026-09-25T13:00:00+00:00",
-    "kickoff": "20:00 WIB",
-    "statusShort": "NS",
-    "statusElapsed": null,
-    "scoreHome": null,
-    "scoreAway": null,
-    "pick": "Under 2.5 Goals",
-    "marketType": "OU",
-    "odds": 1.6,
-    "winProb": 74,
-    "posEdge": "+12.1% +EV (Kalkulasi Engine)",
-    "riskFactor": "-4.0% Volatilitas Transisi",
-    "aiNotes": "Kedua tim cenderung bermain pragmatis dengan xG kumulatif yang rendah dalam laga kompetitif ketat.",
-    "id": 7,
-    "isVip": true,
-    "homeForm": [
-      "W",
-      "W",
-      "D",
-      "W",
-      "L"
-    ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "metrics": {
-      "form": 88,
-      "h2h": 82,
-      "xG": 80,
-      "marketVal": 84
-    }
-  },
-  {
-    "fixtureId": 1640058,
-    "league": "FRIENDLIES",
-    "leagueLogo": "https://media.api-sports.io/football/leagues/10.png",
-    "homeTeam": "Finland U17",
-    "homeLogo": "https://media.api-sports.io/football/teams/17952.png",
-    "awayTeam": "France U17",
-    "awayLogo": "https://media.api-sports.io/football/teams/12507.png",
-    "kickoffUtc": "2026-09-25T08:00:00+00:00",
-    "kickoff": "15:00 WIB",
-    "statusShort": "NS",
-    "statusElapsed": null,
-    "scoreHome": null,
-    "scoreAway": null,
-    "pick": "France U17 -1.0",
-    "marketType": "HDP",
-    "odds": 1.9,
-    "winProb": 73,
-    "posEdge": "+15.4% +EV (Kalkulasi Engine)",
-    "riskFactor": "-5.0% Volatilitas Transisi",
-    "aiNotes": "Akademi Prancis unggul telak secara teknis dan fisik atas struktur pertahanan Finlandia U17.",
-    "id": 8,
-    "isVip": true,
-    "homeForm": [
-      "W",
-      "W",
-      "D",
-      "W",
-      "L"
-    ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "metrics": {
-      "form": 88,
-      "h2h": 82,
-      "xG": 80,
-      "marketVal": 84
-    }
-  },
-  {
-    "fixtureId": 1640060,
-    "league": "FRIENDLIES",
-    "leagueLogo": "https://media.api-sports.io/football/leagues/10.png",
-    "homeTeam": "Poland U19",
-    "homeLogo": "https://media.api-sports.io/football/teams/10376.png",
-    "awayTeam": "Switzerland U19",
-    "awayLogo": "https://media.api-sports.io/football/teams/10350.png",
-    "kickoffUtc": "2026-09-25T09:30:00+00:00",
-    "kickoff": "16:30 WIB",
-    "statusShort": "NS",
-    "statusElapsed": null,
-    "scoreHome": null,
-    "scoreAway": null,
-    "pick": "Over 2.5 Goals",
-    "marketType": "OU",
-    "odds": 1.78,
-    "winProb": 69,
-    "posEdge": "+12.4% +EV (Kalkulasi Engine)",
-    "riskFactor": "-5.2% Volatilitas Transisi",
-    "aiNotes": "Gaya main terbuka tim usia muda kedua negara sering memproduksi duel dengan intensitas tempo tinggi.",
-    "id": 9,
-    "isVip": true,
-    "homeForm": [
-      "W",
-      "W",
-      "D",
-      "W",
-      "L"
-    ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "metrics": {
-      "form": 88,
-      "h2h": 82,
-      "xG": 80,
-      "marketVal": 84
-    }
-  },
-  {
-    "fixtureId": 1640824,
-    "league": "FRIENDLIES",
-    "leagueLogo": "https://media.api-sports.io/football/leagues/10.png",
-    "homeTeam": "Austria U18",
-    "homeLogo": "https://media.api-sports.io/football/teams/21460.png",
-    "awayTeam": "Japan U18",
-    "awayLogo": "https://media.api-sports.io/football/teams/22431.png",
-    "kickoffUtc": "2026-09-25T13:00:00+00:00",
-    "kickoff": "20:00 WIB",
-    "statusShort": "NS",
-    "statusElapsed": null,
-    "scoreHome": null,
-    "scoreAway": null,
-    "pick": "Japan U18",
-    "marketType": "1X2",
-    "odds": 2.1,
-    "winProb": 62,
-    "posEdge": "+10.2% +EV (Kalkulasi Engine)",
-    "riskFactor": "-6.1% Volatilitas Transisi",
-    "aiNotes": "Disiplin taktik dan kecepatan transisi positif Jepang U18 memberi nilai lebih (value) di bursa taruhan.",
-    "id": 10,
-    "isVip": true,
-    "homeForm": [
-      "W",
-      "W",
-      "D",
-      "W",
-      "L"
-    ],
-    "awayForm": [
-      "D",
-      "W",
-      "L",
-      "W",
-      "D"
-    ],
-    "metrics": {
-      "form": 88,
-      "h2h": 82,
-      "xG": 80,
-      "marketVal": 84
-    }
-  }
-]
+  ]
+}
