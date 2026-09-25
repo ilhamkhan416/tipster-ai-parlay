@@ -1,4 +1,4 @@
-name: Daily FIXSCORE Scraping & Groq AI Pipeline
+name: Daily FIXSCORE Scraping & Multi-AI Pipeline
 
 on:
   schedule:
@@ -31,8 +31,10 @@ jobs:
         run: |
           python src/scrape_parlay.py
 
-      - name: Step 2 - Filter Algoritma & Generasi Groq AI
+      - name: Step 2 - Filter Algoritma & Generasi Multi-AI Engine
         env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
           python src/main.py
