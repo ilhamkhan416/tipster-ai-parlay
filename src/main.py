@@ -49,31 +49,22 @@ def analyze_with_groq_ai(filtered_matches):
         return generate_fallback_data(filtered_matches)
 
     prompt = f"""
-    Kamu adalah pakar data analis sepak bola kuantitatif (+EV) dan handicapper profesional tingkat dunia.
-    Berikut adalah daftar pertandingan hari ini beserta data pasaran:
-    {json.dumps(filtered_matches[:25], ensure_ascii=False)}
+    Kamu adalah pakar data analis sepak bola kuantitatif (+EV) dan handicapper profesional.
+    Berikut daftar pertandingan hari ini beserta data pasaran:
+    {json.dumps(filtered_matches[:20], ensure_ascii=False)}
 
     Tugasmu:
-    Jangan hanya mengandalkan nilai Odds! Evaluasi juga rekor Head-to-Head (H2H), tren performa terkini, keunggulan taktis/playstyle, dan nilai Value Betting (+EV).
-    
+    Evaluasi rekor Head-to-Head (H2H), tren performa, dan keunggulan taktis.
     Susun menjadi 3 paket rekomendasi parlay:
-    1. "parlay3": 3 partai paling solid dengan H2H & Form terkuat (Aman).
-    2. "parlay5": 5 partai seimbang (Medium Risk).
-    3. "parlay10": 10 partai potensial odds tinggi (High Risk).
+    1. "parlay3": 3 partai paling solid (Aman).
+    2. "parlay5": 5 partai seimbang (Medium).
+    3. "parlay10": 10 partai potensial odds tinggi (High).
 
-    Format keluaran WAJIB berupa objek JSON murni dengan atribut:
-    - "match": Nama Tim Home vs Tim Away
-    - "league": Nama Liga
-    - "pick": Pilihan taruhan (contoh: "Arsenal Win", "Over 2.5", "Real Madrid -0.75 HDP")
-    - "odds": Nilai odds desimal (contoh: 1.85)
-    - "winProb": Estimasi probabilitas menang berdasarkan H2H & statistik (%)
-    - "aiReason": Alasan teknis mendalam berbasis H2H/Form/Taktis (Maksimal 15 kata).
-
-    Kembalikan HANYA format JSON valid tanpa teks atau markdown tambahan:
+    Format keluaran WAJIB HANYA berupa JSON MURNI tanpa teks pembuka/penutup seperti ini:
     {{
-      "parlay3": [...],
-      "parlay5": [...],
-      "parlay10": [...]
+      "parlay3": [{"match": "Tim A vs Tim B", "league": "Liga", "pick": "Home Win", "odds": 1.85, "winProb": 75, "aiReason": "Alasan H2H taktis"}],
+      "parlay5": [... 5 objek ...],
+      "parlay10": [... 10 objek ...]
     }}
     """
 
@@ -82,39 +73,42 @@ def analyze_with_groq_ai(filtered_matches):
         "Content-Type": "application/json"
     }
 
-    # Daftar model cadangan otomatis di Groq jika salah satu dipensiunkan
+    # Menggunakan model paling stabil di Groq tanpa parameter terlarang
     candidate_models = [
-        "llama-3.3-70b-specdec",
-        "llama-3.1-8b-instant",
-        "mixtral-8x7b-32768"
+        "llama-3.3-70b-versatile",
+        "llama3-8b-8192"
     ]
 
     for model_name in candidate_models:
         payload = {
             "model": model_name,
             "messages": [
-                {"role": "system", "content": "Kamu adalah AI analis taruhan olahraga kuantitatif (+EV) profesional."},
                 {"role": "user", "content": prompt}
             ],
-            "temperature": 0.2,
-            "response_format": {"type": "json_object"}
+            "temperature": 0.2
         }
 
         try:
-            print(f"🔄 [GROQ AI] Mencoba request menggunakan model '{model_name}'...")
+            print(f"🔄 [GROQ AI] Memproses request dengan model '{model_name}'...")
             response = requests.post("https://api.groq.com/openai/v1/chat/completions", headers=headers, json=payload, timeout=30)
+            
             if response.status_code == 200:
                 result = response.json()
                 content = result['choices'][0]['message']['content']
-                parsed_json = json.loads(content)
-                print(f"✅ [GROQ SUCCESS] Analisis selesai dengan model {model_name}!")
-                return parsed_json
+                
+                # Ekstrak blok JSON dari respon teks AI
+                json_match = re.search(r'\{.*\}', content, re.DOTALL)
+                if json_match:
+                    clean_json_str = json_match.group(0)
+                    parsed_json = json.loads(clean_json_str)
+                    print(f"✅ [GROQ SUCCESS] Analisis H2H & Taktis BERHASIL dengan model '{model_name}'!")
+                    return parsed_json
             else:
-                print(f"⚠️ Model {model_name} gagal (HTTP {response.status_code}). Mencoba model cadangan...")
+                print(f"⚠️ Model '{model_name}' merespon HTTP {response.status_code}. Mencoba model cadangan...")
         except Exception as e:
-            print(f"⚠️ Error pada model {model_name}: {e}. Mencoba model cadangan...")
+            print(f"⚠️ Error pada model '{model_name}': {e}. Mencoba model cadangan...")
 
-    print("❌ [GROQ ERROR] Seluruh model Groq gagal. Menggunakan fallback.")
+    print("❌ [GROQ ERROR] Seluruh model AI publik gagal. Menggunakan fallback data.")
     return generate_fallback_data(filtered_matches)
 
 def generate_fallback_data(filtered_matches):
