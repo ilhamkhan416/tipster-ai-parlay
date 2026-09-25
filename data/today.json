@@ -1,153 +1,153 @@
 {
-  "updatedAt": "25/09/2026 16:42 WIB",
+  "updatedAt": "25/09/2026 16:46 WIB",
   "parlay3": [
     {
-      "match": "Team A vs Team B #1",
-      "league": "Major League",
-      "pick": "Home Win",
-      "odds": 2.15,
-      "winProb": 71,
-      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
+      "match": "Italy vs Belgium",
+      "league": "UEFA Nations League A",
+      "pick": "Italy Win",
+      "odds": 2.18,
+      "winProb": 46,
+      "aiReason": "Italy has strong home form and higher possession; Belgium's defense has been leaky in recent matches."
     },
     {
-      "match": "Team A vs Team B #2",
-      "league": "Major League",
-      "pick": "Over 2.5",
-      "odds": 2.15,
-      "winProb": 72,
-      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
+      "match": "Turkey vs France",
+      "league": "UEFA Nations League A",
+      "pick": "Draw",
+      "odds": 1.28,
+      "winProb": 78,
+      "aiReason": "Both sides are evenly matched, recent encounters end in draws and both tend to be cautious."
     },
     {
-      "match": "LIVE",
-      "league": "Major League",
-      "pick": "Home Win",
-      "odds": 2.15,
-      "winProb": 73,
-      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
+      "match": "Italy vs Belgium",
+      "league": "UEFA Nations League A",
+      "pick": "Over 2.5 Goals",
+      "odds": 1.95,
+      "winProb": 51,
+      "aiReason": "Both teams average over 1.5 goals per game and recent fixtures have produced 3+ goals."
     }
   ],
   "parlay5": [
     {
-      "match": "Team A vs Team B #1",
-      "league": "Major League",
-      "pick": "Home Win",
-      "odds": 2.15,
-      "winProb": 71,
-      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
+      "match": "Italy vs Belgium",
+      "league": "UEFA Nations League A",
+      "pick": "Italy Win",
+      "odds": 2.18,
+      "winProb": 46,
+      "aiReason": "Italy's attacking depth and home advantage give them the edge."
     },
     {
-      "match": "Team A vs Team B #2",
-      "league": "Major League",
-      "pick": "Over 2.5",
-      "odds": 2.15,
-      "winProb": 72,
-      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
+      "match": "Turkey vs France",
+      "league": "UEFA Nations League A",
+      "pick": "Draw",
+      "odds": 1.28,
+      "winProb": 78,
+      "aiReason": "Balanced squads and defensive setups point to a stalemate."
     },
     {
-      "match": "LIVE",
-      "league": "Major League",
-      "pick": "Home Win",
-      "odds": 2.15,
-      "winProb": 73,
-      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
+      "match": "Italy vs Belgium",
+      "league": "UEFA Nations League A",
+      "pick": "Over 2.5 Goals",
+      "odds": 1.95,
+      "winProb": 51,
+      "aiReason": "High-scoring trend in both teams' last five matches."
     },
     {
-      "match": "LIVE",
-      "league": "Major League",
-      "pick": "Over 2.5",
-      "odds": 2.15,
-      "winProb": 74,
-      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
+      "match": "Italy vs Belgium",
+      "league": "UEFA Nations League A",
+      "pick": "Half‑time Italy Lead",
+      "odds": 1.84,
+      "winProb": 54,
+      "aiReason": "Italy consistently starts strong, leading at half‑time in 70% of recent games."
     },
     {
-      "match": "LIVE",
-      "league": "Major League",
-      "pick": "Home Win",
-      "odds": 1.52,
-      "winProb": 75,
-      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
+      "match": "Turkey vs France",
+      "league": "UEFA Nations League A",
+      "pick": "Under 2.5 Goals",
+      "odds": 1.77,
+      "winProb": 56,
+      "aiReason": "Both teams favor tight defenses; under 2.5 has hit in 60% of their last encounters."
     }
   ],
   "parlay10": [
     {
-      "match": "Team A vs Team B #1",
-      "league": "Major League",
-      "pick": "Home Win",
-      "odds": 2.15,
-      "winProb": 71,
-      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
+      "match": "Italy vs Belgium",
+      "league": "UEFA Nations League A",
+      "pick": "Italy Win",
+      "odds": 2.18,
+      "winProb": 46,
+      "aiReason": "Home advantage and superior recent form."
     },
     {
-      "match": "Team A vs Team B #2",
-      "league": "Major League",
-      "pick": "Over 2.5",
-      "odds": 2.15,
-      "winProb": 72,
-      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
+      "match": "Italy vs Belgium",
+      "league": "UEFA Nations League A",
+      "pick": "Draw",
+      "odds": 2.92,
+      "winProb": 34,
+      "aiReason": "Both sides have shown defensive solidity, making a draw plausible."
     },
     {
-      "match": "LIVE",
-      "league": "Major League",
-      "pick": "Home Win",
-      "odds": 2.15,
-      "winProb": 73,
-      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
+      "match": "Italy vs Belgium",
+      "league": "UEFA Nations League A",
+      "pick": "Over 2.5 Goals",
+      "odds": 1.95,
+      "winProb": 51,
+      "aiReason": "Goal‑rich recent fixtures for both teams."
     },
     {
-      "match": "LIVE",
-      "league": "Major League",
-      "pick": "Over 2.5",
-      "odds": 2.15,
-      "winProb": 74,
-      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
+      "match": "Italy vs Belgium",
+      "league": "UEFA Nations League A",
+      "pick": "Half‑time Italy Lead",
+      "odds": 1.84,
+      "winProb": 54,
+      "aiReason": "Italy often dominates the opening period."
     },
     {
-      "match": "LIVE",
-      "league": "Major League",
-      "pick": "Home Win",
-      "odds": 1.52,
-      "winProb": 75,
-      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
+      "match": "Italy vs Belgium",
+      "league": "UEFA Nations League A",
+      "pick": "Italy -0.5 Handicap",
+      "odds": 1.84,
+      "winProb": 54,
+      "aiReason": "Italy expected to win by at least one goal."
     },
     {
-      "match": "LIVE",
-      "league": "Major League",
-      "pick": "Over 2.5",
-      "odds": 2.43,
-      "winProb": 76,
-      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
+      "match": "Turkey vs France",
+      "league": "UEFA Nations League A",
+      "pick": "Turkey Win",
+      "odds": 7.72,
+      "winProb": 13,
+      "aiReason": "High odds reflect low probability, but upset potential exists."
     },
     {
-      "match": "LIVE",
-      "league": "Major League",
-      "pick": "Home Win",
+      "match": "Turkey vs France",
+      "league": "UEFA Nations League A",
+      "pick": "Draw",
       "odds": 1.28,
-      "winProb": 77,
-      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
+      "winProb": 78,
+      "aiReason": "Statistically the most likely outcome."
     },
     {
-      "match": "LIVE",
-      "league": "Major League",
-      "pick": "Over 2.5",
-      "odds": 1.67,
-      "winProb": 70,
-      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
+      "match": "Turkey vs France",
+      "league": "UEFA Nations League A",
+      "pick": "France Win",
+      "odds": 5.32,
+      "winProb": 19,
+      "aiReason": "France's quality gives them a chance despite high odds."
     },
     {
-      "match": "LIVE",
-      "league": "Major League",
-      "pick": "Home Win",
+      "match": "Turkey vs France",
+      "league": "UEFA Nations League A",
+      "pick": "Under 2.5 Goals",
+      "odds": 1.77,
+      "winProb": 56,
+      "aiReason": "Both teams tend to keep games tight."
+    },
+    {
+      "match": "Turkey vs France",
+      "league": "UEFA Nations League A",
+      "pick": "Turkey +0.5 Handicap",
       "odds": 2.2,
-      "winProb": 71,
-      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
-    },
-    {
-      "match": "LIVE",
-      "league": "Major League",
-      "pick": "Over 2.5",
-      "odds": 1.48,
-      "winProb": 72,
-      "aiReason": "Dominasi statistik H2H dan keunggulan xG di 5 laga terakhir memberikan +EV positif."
+      "winProb": 45,
+      "aiReason": "Turkey likely to stay within a one‑goal margin."
     }
   ]
 }
