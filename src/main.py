@@ -28,7 +28,7 @@ def load_scraped_data():
 
 def local_algorithm_filter(raw_matches):
     """
-    STEP 2: HARD FILTERING, ELIMINASI DRAW, & ELEMINASI LIGA BERISIKO
+    STEP 2: HARD FILTERING, ELIMINASI DRAW, & ELIMINASI LIGA BERISIKO
     Menyaring pertandingan berdasarkan logika matematis Odds +EV
     """
     filtered = []
