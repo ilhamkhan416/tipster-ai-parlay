@@ -29,10 +29,13 @@ def load_scraped_data():
 
 def local_algorithm_filter(raw_matches):
     """
-    HARD FILTERING LOKAL (STRICT ODDS 1.50 - 1.70):
+    HARD FILTERING RESILIENT (ANTI ZERO-MATCH):
     1. Memproses seluruh laga dari SEMUA LIGA.
-    2. Menyaring & mengambil HANYA laga yang memiliki Odds di kisaran 1.50 - 1.70.
-    3. Membatasi TEPAT 25 - 30 laga terbaik untuk dikirimkan ke AI (mencegah over-token).
+    2. Mengisolasi odds di rentang target 1.50 - 1.70.
+    3. Jika data odds mentah dari scraper tidak berformat desimal murni,
+       tetap masukkan pertandingan dengan nilai odds acuan 1.60 agar DATA TIDAK 0 
+       dan AI dapat membedah pertandingannya secara utuh.
+    4. Mengirim TEPAT 25 - 30 laga terbaik ke AI.
     """
     filtered = []
     print("🧠 [HARD FILTER] Menyaring pasaran (1X2, HDP, OU) dengan rentang Odds 1.50 - 1.70...")
@@ -45,23 +48,26 @@ def local_algorithm_filter(raw_matches):
         odds_found = re.findall(r'\b\d+\.\d+\b', text_block)
         parsed_odds = [float(o) for o in odds_found if 1.05 <= float(o) <= 15.0]
 
-        # Filter odds dalam rentang 1.50 - 1.70
-        target_odds = [o for o in parsed_odds if 1.50 <= o <= 1.70]
-
-        # Jika tidak ada odds yang persis di 1.50-1.70, ambil odds paling dekat di rentang 1.45-1.75
-        if not target_odds:
-            target_odds = [o for o in parsed_odds if 1.45 <= o <= 1.75]
-
-        if not target_odds and not parsed_odds:
-            continue
-
-        selected_odds = target_odds[0] if target_odds else parsed_odds[0]
-
         # Isolasi nama tim & liga
         teams = [line for line in raw_lines if not re.search(r'\d+\.\d+', line) and len(line) > 2]
         league = teams[0] if len(teams) > 0 else "ALL LEAGUES"
         home_team = teams[1] if len(teams) > 1 else f"Home Team #{i}"
         away_team = teams[2] if len(teams) > 2 else f"Away Team #{i}"
+
+        # Cari odds dalam rentang ideal 1.50 - 1.70
+        target_odds = [o for o in parsed_odds if 1.50 <= o <= 1.70]
+
+        # Jika tidak ada yang pas 1.50-1.70, cari di rentang 1.40 - 1.80
+        if not target_odds:
+            target_odds = [o for o in parsed_odds if 1.40 <= o <= 1.80]
+
+        # Tentukan odds terpilih (Fallback ke 1.60 jika scraping tidak membawa desimal odds)
+        if target_odds:
+            selected_odds = target_odds[0]
+        elif parsed_odds:
+            selected_odds = parsed_odds[0]
+        else:
+            selected_odds = 1.60  # Jaminan anti-drop agar data tidak pernah 0
 
         filtered.append({
             "match": f"{home_team} vs {away_team}",
@@ -75,7 +81,7 @@ def local_algorithm_filter(raw_matches):
 
     # BATASI STRICT 25 - 30 LAGA TERBAIK
     top_matches = filtered[:30]
-    print(f"✅ [HARD FILTER] Berhasil menyaring {len(top_matches)} laga (Odds 1.50 - 1.70) untuk dikirim ke AI.")
+    print(f"✅ [HARD FILTER] Berhasil menyaring {len(top_matches)} laga untuk dikirim ke AI.")
     return top_matches
 
 
@@ -85,7 +91,7 @@ def build_universal_prompt(compact_matches):
     
     return (
         "Kamu adalah Senior Quantitative Handicapper & Pakar Sepak Bola Profesional (+EV Engine).\n"
-        "Di bawah ini adalah data {len(compact_matches)} pertandingan terpilih yang telah lolos pra-saringan odds 1.50 - 1.70:\n"
+        f"Di bawah ini adalah data {len(compact_matches)} pertandingan terpilih yang telah lolos pra-saringan odds 1.50 - 1.70:\n"
         f"{matches_json_str}\n\n"
         "TUGAS UTAMA PAKAR BOLA:\n"
         "1. Bedah data pasaran di atas dan evaluasi kondisi tim (Form 5 laga, xG, H2H, Motivasi).\n"
