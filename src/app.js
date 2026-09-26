@@ -1,247 +1,223 @@
 // =========================================================
-// FIXSCORE PRO - Minimalist Frontend Controller
-// Handles 3 Leg, 5 Leg, 10 Leg & History Toggle
+// FIXSCORE PRO - Complete Flashscore Layout Controller
+// Position: /src/app.js
 // =========================================================
 
-let currentTodayData = null;
-let selectedLegKey = 'parlay3'; // Default: Paket 3 Leg
+let currentData = null;
+let activeLeg = 'parlay3'; // Default ke Paket 3 Leg
 
 document.addEventListener('DOMContentLoaded', () => {
-  setupNavigation();
+  setupTabs();
   loadTodayData();
 });
 
-// Setup Switcher Tab Utama (Rekomendasi vs History)
-function setupNavigation() {
+// ---------------------------------------------------------
+// NAVIGASI UTAMA (TAB REKOMENDASI VS HISTORY)
+// ---------------------------------------------------------
+function setupTabs() {
   const btnToday = document.getElementById('tab-today');
   const btnHistory = document.getElementById('tab-history');
 
   if (btnToday && btnHistory) {
     btnToday.addEventListener('click', () => {
-      setActiveTab(btnToday, btnHistory);
+      btnToday.classList.add('active');
+      btnHistory.classList.remove('active');
       loadTodayData();
     });
 
     btnHistory.addEventListener('click', () => {
-      setActiveTab(btnHistory, btnToday);
+      btnHistory.classList.add('active');
+      btnToday.classList.remove('active');
       loadHistoryData();
     });
   }
 }
 
-function setActiveTab(activeBtn, inactiveBtn) {
-  activeBtn.style.background = 'var(--accent-red)';
-  activeBtn.style.color = 'white';
-  inactiveBtn.style.background = 'transparent';
-  inactiveBtn.style.color = 'var(--text-secondary)';
-}
-
 // ---------------------------------------------------------
-// 1. REKOMENDASI HARI INI (data/today.json)
+// 1. RENDER DATA REKOMENDASI HARI INI (data/today.json)
 // ---------------------------------------------------------
 async function loadTodayData() {
   const container = document.getElementById('parlay-container');
   if (!container) return;
 
-  container.innerHTML = `<div style="text-align: center; padding: 24px; color: var(--text-muted); font-size: 13px;">Memuat analisis pertandingan hari ini...</div>`;
+  container.innerHTML = `<div class="loading-state">Memuat data pertandingan & analisis pasaran...</div>`;
 
   try {
-    const response = await fetch('data/today.json');
-    if (!response.ok) throw new Error('File today.json belum tersedia');
+    const res = await fetch('data/today.json');
+    if (!res.ok) throw new Error('File data/today.json tidak ditemukan');
+    currentData = await res.json();
 
-    currentTodayData = await response.json();
-
-    // Update timestamp di header
-    const lastUpdatedElem = document.getElementById('last-updated');
-    if (lastUpdatedElem && currentTodayData.updatedAt) {
-      lastUpdatedElem.textContent = `Diperbarui: ${currentTodayData.updatedAt}`;
+    const timeElem = document.getElementById('last-updated');
+    if (timeElem && currentData.updatedAt) {
+      timeElem.textContent = `UPDATED: ${currentData.updatedAt}`;
     }
 
-    renderTodayView();
-  } catch (error) {
-    console.error('Error loading today.json:', error);
-    container.innerHTML = `<div style="text-align: center; padding: 24px; color: var(--text-muted); font-size: 13px;">Gagal memuat data hari ini. Silakan coba beberapa saat lagi.</div>`;
+    renderTodayContent();
+  } catch (e) {
+    console.error('Error loading today.json:', e);
+    container.innerHTML = `<div class="loading-state">Data rekomendasi hari ini belum tersedia.</div>`;
   }
 }
 
-function renderTodayView() {
+function renderTodayContent() {
   const container = document.getElementById('parlay-container');
-  if (!container || !currentTodayData) return;
+  if (!container || !currentData) return;
 
   container.innerHTML = '';
 
-  // Tombol Selector Paket Leg (3, 5, 10 Leg)
-  const selectorWrapper = document.createElement('div');
-  selectorWrapper.style.cssText = 'display: flex; gap: 8px; margin-bottom: 20px; justify-content: center; flex-wrap: wrap;';
-
-  const legOptions = [
-    { key: 'parlay3', label: '🔥 3 Leg (High Win Rate)' },
-    { key: 'parlay5', label: '⚖️ 5 Leg (Balanced)' },
-    { key: 'parlay10', label: '🚀 10 Leg (High Return)' }
+  // Selector Tombol Piramida (3, 5, 10 Leg)
+  const legNav = document.createElement('div');
+  legNav.className = 'leg-selector';
+  
+  const options = [
+    { key: 'parlay3', label: '3 LEG (HIGH WIN RATE)' },
+    { key: 'parlay5', label: '5 LEG (BALANCED)' },
+    { key: 'parlay10', label: '10 LEG (HIGH RETURN)' }
   ];
 
-  legOptions.forEach(opt => {
+  options.forEach(opt => {
     const btn = document.createElement('button');
+    btn.className = `leg-btn ${activeLeg === opt.key ? 'active' : ''}`;
     btn.textContent = opt.label;
-    const isActive = selectedLegKey === opt.key;
-    
-    btn.style.cssText = `
-      padding: 8px 12px;
-      font-size: 11px;
-      font-weight: 800;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      border: 1px solid ${isActive ? 'var(--text-primary)' : 'var(--border-color)'};
-      background: ${isActive ? 'var(--text-primary)' : '#FFFFFF'};
-      color: ${isActive ? '#FFFFFF' : 'var(--text-secondary)'};
-    `;
-
     btn.onclick = () => {
-      selectedLegKey = opt.key;
-      renderTodayView();
+      activeLeg = opt.key;
+      renderTodayContent();
     };
-
-    selectorWrapper.appendChild(btn);
+    legNav.appendChild(btn);
   });
 
-  container.appendChild(selectorWrapper);
+  container.appendChild(legNav);
 
-  // Ambil data pertandingan sesuai pilihan leg
-  const matches = currentTodayData[selectedLegKey] || [];
-
+  // Ambil data pertandingan sesuai paket leg
+  const matches = currentData[activeLeg] || [];
   if (matches.length === 0) {
-    const emptyMsg = document.createElement('div');
-    emptyMsg.style.cssText = 'text-align: center; padding: 20px; color: var(--text-muted); font-size: 13px;';
-    emptyMsg.textContent = 'Belum ada pertandingan dalam paket ini.';
-    container.appendChild(emptyMsg);
+    container.innerHTML += `<div class="loading-state">Tidak ada pertandingan pada paket ini.</div>`;
     return;
   }
 
-  // Render Kartu Pertandingan
-  matches.forEach((item) => {
-    const card = document.createElement('div');
-    card.className = 'match-card';
+  // Render Baris Pertandingan Tipe Flashscore
+  matches.forEach(item => {
+    const rawMatch = item.match || 'Home Team vs Away Team';
+    const teams = rawMatch.split(' vs ');
+    const homeTeam = teams[0] ? teams[0].trim() : 'Home';
+    const awayTeam = teams[1] ? teams[1].trim() : 'Away';
 
-    // Format Form 5 Laga
-    const homeFormHtml = (item.analytics?.homeForm || []).map(res => 
-      `<span class="form-pill form-${res.toLowerCase()}">${res}</span>`
-    ).join(' ');
+    // Parse Form W/L/D
+    const homeForm = (item.analytics?.homeForm || []).map(r => 
+      `<span class="f-pill f-${r.toLowerCase()}">${r}</span>`
+    ).join('');
 
-    const awayFormHtml = (item.analytics?.awayForm || []).map(res => 
-      `<span class="form-pill form-${res.toLowerCase()}">${res}</span>`
-    ).join(' ');
+    const awayForm = (item.analytics?.awayForm || []).map(r => 
+      `<span class="f-pill f-${r.toLowerCase()}">${r}</span>`
+    ).join('');
 
-    const matchTitle = item.match ? item.match.replace(' vs ', ' <span class="vs">VS</span> ') : 'Match';
-
-    card.innerHTML = `
-      <div class="card-header">
-        <span class="league-tag">⚽ ${item.league || 'ALL LEAGUES'}</span>
-        <span class="confidence-badge">Win Rate: ${item.winProb || 80}%</span>
+    const wrapper = document.createElement('div');
+    wrapper.innerHTML = `
+      <div class="league-header">
+        <span>⚽ ${item.league || 'ALL LEAGUES'}</span>
+        <span class="win-rate-badge">WIN RATE: ${item.winProb || 80}%</span>
       </div>
 
-      <div class="teams-container">
-        ${matchTitle}
-      </div>
-
-      <div class="recommendation-box">
-        <div>
-          <span class="pick-label">REKOMENDASI PASARAN (+EV)</span>
-          <span class="pick-value">${item.pick}</span>
+      <div class="match-box">
+        <div class="teams-row">
+          <span class="team-name team-home">${homeTeam}</span>
+          <span class="vs-badge">VS</span>
+          <span class="team-name team-away">${awayTeam}</span>
         </div>
-        <div class="odds-badge">@${item.odds}</div>
-      </div>
 
-      <div class="expert-box">
-        <div class="expert-title">
-          <span class="bullet-red"></span>
-          CATATAN PAKAR BOLA
-        </div>
-        <div style="color: #374151;">${item.expertReason || item.aiReason || 'Evaluasi taktis dan efisiensi performa tim solid.'}</div>
-
-        ${item.analytics ? `
-          <div class="analytics-grid">
-            <div>Home Form: ${homeFormHtml || '-'}</div>
-            <div>Away Form: ${awayFormHtml || '-'}</div>
+        <div class="pick-bar">
+          <div>
+            <span class="pick-title">Rekomendasi Pasaran (+EV)</span>
+            <span class="pick-value">${item.pick}</span>
           </div>
-        ` : ''}
+          <div class="odds-value">@${item.odds}</div>
+        </div>
+
+        <div class="expert-reason">
+          <div class="expert-label">Catatan Analis</div>
+          <div>${item.expertReason || item.aiReason || 'Evaluasi taktis dan statistik tim terverifikasi.'}</div>
+
+          ${item.analytics ? `
+            <div class="form-grid">
+              <div>HOME: ${homeForm || '-'}</div>
+              <div>AWAY: ${awayForm || '-'}</div>
+            </div>
+          ` : ''}
+        </div>
       </div>
     `;
 
-    container.appendChild(card);
+    container.appendChild(wrapper);
   });
 }
 
 // ---------------------------------------------------------
-// 2. HISTORY REKAP (data/history.json)
+// 2. RENDER HISTORY REKAP (data/history.json)
 // ---------------------------------------------------------
 async function loadHistoryData() {
   const container = document.getElementById('parlay-container');
   if (!container) return;
 
-  container.innerHTML = `<div style="text-align: center; padding: 24px; color: var(--text-muted); font-size: 13px;">Memuat riwayat rekap pertandingan...</div>`;
+  container.innerHTML = `<div class="loading-state">Memuat riwayat rekap pertandingan...</div>`;
 
   try {
-    const response = await fetch('data/history.json');
-    if (!response.ok) throw new Error('File history.json belum tersedia');
+    const res = await fetch('data/history.json');
+    if (!res.ok) throw new Error('File data/history.json tidak ditemukan');
+    const historyList = await res.json();
 
-    const historyList = await response.json();
     container.innerHTML = '';
-
     if (!Array.isArray(historyList) || historyList.length === 0) {
-      container.innerHTML = `<div style="text-align: center; padding: 24px; color: var(--text-muted); font-size: 13px;">Belum ada riwayat rekap tersimpan.</div>`;
+      container.innerHTML = `<div class="loading-state">Belum ada riwayat rekap tersimpan.</div>`;
       return;
     }
 
-    historyList.forEach((dayGroup) => {
-      const dateHeader = document.createElement('div');
-      dateHeader.style.cssText = 'font-size: 13px; font-weight: 800; color: var(--text-secondary); margin: 16px 0 10px 0; border-bottom: 1px solid var(--border-color); padding-bottom: 4px;';
-      dateHeader.textContent = `📅 Rekap Tanggal: ${dayGroup.date}`;
-      container.appendChild(dateHeader);
+    historyList.forEach(group => {
+      const dateBar = document.createElement('div');
+      dateBar.style.cssText = 'background: #11161B; color: #FFFFFF; padding: 6px 10px; font-size: 11px; font-weight: 700; margin-top: 10px; text-transform: uppercase; border-left: 3px solid var(--accent-red);';
+      dateBar.textContent = `📅 REKAP TANGGAL: ${group.date}`;
+      container.appendChild(dateBar);
 
-      (dayGroup.matches || []).forEach((item) => {
+      (group.matches || []).forEach(item => {
+        const rawMatch = item.match || 'Home vs Away';
+        const teams = rawMatch.split(' vs ');
+        const homeTeam = teams[0] ? teams[0].trim() : 'Home';
+        const awayTeam = teams[1] ? teams[1].trim() : 'Away';
+        
+        let statusBg = '#777777';
+        if (item.status === 'W' || item.status === 'WH') statusBg = 'var(--green-win)';
+        if (item.status === 'L' || item.status === 'LH') statusBg = 'var(--red-loss)';
+
         const card = document.createElement('div');
-        card.className = 'match-card';
+        card.className = 'match-box';
+        card.style.borderTop = '1px solid var(--border-color)';
         
-        let statusBg = '#E5E7EB';
-        let statusColor = '#374151';
-        
-        if (item.status === 'W' || item.status === 'WH') {
-          statusBg = '#DCFCE7';
-          statusColor = '#166534';
-        } else if (item.status === 'L' || item.status === 'LH') {
-          statusBg = '#FEE2E2';
-          statusColor = '#991B1B';
-        }
-
-        const matchTitle = item.match ? item.match.replace(' vs ', ' <span class="vs">VS</span> ') : 'Match';
-
         card.innerHTML = `
-          <div class="card-header">
-            <span class="league-tag">⚽ ${item.league || 'LEAGUE'}</span>
-            <span class="confidence-badge" style="background: ${statusBg}; color: ${statusColor}; border: none;">
-              STATUS: ${item.status || 'PENDING'}
-            </span>
+          <div class="league-header" style="background: transparent; border: none; padding: 2px 0 6px 0;">
+            <span>⚽ ${item.league || 'LEAGUE'}</span>
           </div>
 
-          <div class="teams-container">
-            ${matchTitle}
+          <div class="teams-row">
+            <span class="team-name team-home">${homeTeam}</span>
+            <span class="vs-badge">VS</span>
+            <span class="team-name team-away">${awayTeam}</span>
           </div>
 
-          <div class="recommendation-box">
+          <div class="pick-bar">
             <div>
-              <span class="pick-label">PASARAN & SKOR AKHIR</span>
+              <span class="pick-title">Pasaran & Skor Akhir</span>
               <span class="pick-value">${item.pick} (Skor: ${item.score || 'N/A'})</span>
             </div>
-            <div class="odds-badge">@${item.odds}</div>
+            <div style="background: ${statusBg}; color: #FFFFFF; font-size: 10px; font-weight: 900; padding: 3px 6px; border-radius: 2px;">
+              ${item.status || 'PENDING'}
+            </div>
           </div>
         `;
 
         container.appendChild(card);
       });
     });
-  } catch (error) {
-    console.error('Error loading history.json:', error);
-    container.innerHTML = `<div style="text-align: center; padding: 24px; color: var(--text-muted); font-size: 13px;">Belum ada data riwayat rekap tersimpan.</div>`;
+  } catch (e) {
+    console.error('Error loading history.json:', e);
+    container.innerHTML = `<div class="loading-state">Belum ada data riwayat tersimpan.</div>`;
   }
 }
