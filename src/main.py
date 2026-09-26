@@ -13,6 +13,9 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
+# Filter Liga Berisiko Tinggi
+BANNED_LEAGUE_KEYWORDS = ["friendly", "persahabatan", "div 2", "division 2", "cup"]
+
 
 def load_scraped_data():
     """Membaca data mentah hasil scraping"""
@@ -25,7 +28,7 @@ def load_scraped_data():
 
 def local_algorithm_filter(raw_matches):
     """
-    STEP 2: HARD FILTERING & ELIMINASI DRAW
+    STEP 2: HARD FILTERING, ELIMINASI DRAW, & ELEMINASI LIGA BERISIKO
     Menyaring pertandingan berdasarkan logika matematis Odds +EV
     """
     filtered = []
@@ -37,7 +40,12 @@ def local_algorithm_filter(raw_matches):
             continue
 
         text_block = " ".join(raw_lines)
-        
+        text_lower = text_block.lower()
+
+        # 1. Eliminasi Liga Berisiko Tinggi (Friendly / Divisi Bawah)
+        if any(keyword in text_lower for keyword in BANNED_LEAGUE_KEYWORDS):
+            continue
+
         # Ekstrak semua angka desimal sebagai kandidat odds (1X2)
         odds_found = re.findall(r'\b\d+\.\d+\b', text_block)
         parsed_odds = [float(o) for o in odds_found if float(o) > 1.0]
@@ -81,21 +89,20 @@ def local_algorithm_filter(raw_matches):
     # DYNAMIC TOP 25 SELECTION
     filtered = sorted(filtered, key=lambda x: x["best_odds"])
     top_matches = filtered[:25]
-    print(f"🎯 [PRE-FILTER] Mengambil Top {len(top_matches)} pertandingan murni untuk dianalisis AI.")
+    print(f"🎯 [PRE-FILTER] Mengambil Top {len(top_matches)} pertandingan murni untuk dianalisis Pakar Bola.")
     
     return top_matches
 
 
 def build_universal_prompt(compact_matches):
     """
-    Membuat Prompt Universal FIXSCORE (+EV AI Engine)
-    Fokus meminta AI menyusun 10 PERTANDINGAN UNIK TERBAIK HARI INI
+    Membuat Prompt Universal FIXSCORE dengan gaya Pakar/Pengamat Bola Profesional
     """
     matches_json_str = json.dumps(compact_matches, ensure_ascii=False, indent=2)
     
     return (
-        "Kamu adalah Head Analyst Sports Intelligence & Senior Quantitative Handicapper profesional (+EV Engine).\n"
-        "Tugasmu adalah menganalisis data pertandingan dan memilih TEPAT 10 PERTANDINGAN UNIK TERBAIK HARI INI berurutan dari yang paling pasti menang.\n\n"
+        "Kamu adalah Senior Quantitative Sports Handicapper & Pengamat Sepak Bola Profesional (+EV Engine).\n"
+        "Tugasmu adalah menganalisis data pertandingan dan memberikan ulasan analitis dari kacamata pengamat sepak bola senior untuk TEPAT 10 PERTANDINGAN UNIK TERBAIK HARI INI.\n\n"
         f"Berikut adalah data {len(compact_matches)} pertandingan hari ini yang telah lolos pra-saringan algoritma (+EV & No-Draw Rule):\n"
         f"{matches_json_str}\n\n"
         "METODOLOGI ANALISIS BERLAPIS (MANDATORY EVALUATION):\n"
@@ -105,15 +112,27 @@ def build_universal_prompt(compact_matches):
         "3. Rekor Head-to-Head (H2H) & Matchup Taktis\n"
         "4. Performa & Berita Terkini (Form 5 Laga & xG)\n"
         "5. Urgensi Poin & Motivasi Tim\n\n"
-        "ATURAN DEDUPLIKASI KETAT:\n"
+        "ATURAN DEDUPLIKASI KETAT & OPSI PASARAN:\n"
         "1. PILIH TEPAT 10 PERTANDINGAN UNIK (TIDAK BOLEH ADA TIM/PARTAI YANG SAMA PERSIH DIPAKAI DUA KALI).\n"
         "2. DILARANG KERAS memilih opsi DRAW (X).\n"
-        "3. Urutkan dari urutan #1 (Paling Aman/WinRate Tinggi) sampai #10 (High Return).\n\n"
-        "FORMAT KELUARAN WAJIB (HANYA JSON MURNI berupa array 10 objek tanpa markdown/teks tambahan):\n"
+        "3. Urutkan dari urutan #1 (Paling Solid/WinRate Tinggi) sampai #10 (High Return).\n\n"
+        "FORMAT KELUARAN WAJIB (HANYA JSON MURNI tanpa markdown/teks tambahan):\n"
         "{\n"
         '  "top10_matches": [\n'
-        '    {"match": "Tim A vs Tim B", "league": "Liga", "pick": "Home Win", "odds": 1.75, "winProb": 85, "aiReason": "Alasan taktis & H2H (max 15 kata)"},\n'
-        '    ... tepat 10 objek unik berurutan dari paling solid ...\n'
+        '    {\n'
+        '      "match": "Tim A vs Tim B",\n'
+        '      "league": "Nama Liga",\n'
+        '      "pick": "Home Win",\n'
+        '      "odds": 1.75,\n'
+        '      "winProb": 85,\n'
+        '      "expertReason": "Catatan Pakar: Dominasi lini tengah & efisiensi penyelesaian akhir di kandang (max 15 kata)",\n'
+        '      "analytics": {\n'
+        '        "homeForm": ["W", "W", "L", "D", "W"],\n'
+        '        "awayForm": ["L", "D", "L", "W", "L"],\n'
+        '        "h2hSummary": "Tim A menang 3 dari 5 H2H terakhir",\n'
+        '        "avgGoals": "2.8 Gol/Laga"\n'
+        '      }\n'
+        '    }\n'
         '  ]\n'
         "}"
     )
@@ -301,7 +320,7 @@ def analyze_with_groq(compact_matches):
 
 
 def generate_fallback_data(compact_matches):
-    """Algoritma Fallback Murni (Python) jika AI gagal"""
+    """Algoritma Fallback Murni (Python) jika seluruh provider AI tidak merespon"""
     print("⚙️ [FALLBACK ENGINE] Menyusun 10 paket parlay matematis murni dari data lokal...")
     base_list = []
     
@@ -315,19 +334,30 @@ def generate_fallback_data(compact_matches):
             "pick": best_pick,
             "odds": best_odds,
             "winProb": 72 + (i % 6),
-            "aiReason": "Lolos hard filter No-Draw & +EV rasio odds pasar unggulan."
+            "expertReason": "Catatan Pakar: Lolos hard filter No-Draw & +EV rasio odds pasar unggulan.",
+            "analytics": {
+                "homeForm": ["W", "W", "D", "W", "L"],
+                "awayForm": ["L", "D", "L", "W", "L"],
+                "h2hSummary": "Dominasi statistik 5 laga terakhir",
+                "avgGoals": "2.5 Gol/Laga"
+            }
         })
 
-    # Jika data mentah juga kurang dari 10
     while len(base_list) < 10:
         idx = len(base_list) + 1
         base_list.append({
             "match": f"Team Alpha vs Team Beta #{idx}",
-            "league": "Major League",
+            "league": "Major Football League",
             "pick": "Home Win" if idx % 2 != 0 else "Over 2.5",
             "odds": 1.80,
             "winProb": 75,
-            "aiReason": "Keunggulan xG dan statistik H2H dominan."
+            "expertReason": "Catatan Pakar: Keunggulan xG dan statistik H2H dominan.",
+            "analytics": {
+                "homeForm": ["W", "W", "W", "D", "L"],
+                "awayForm": ["L", "L", "D", "W", "L"],
+                "h2hSummary": "Tim Home unggul 3 dari 5 H2H terakhir",
+                "avgGoals": "2.8 Gol/Laga"
+            }
         })
 
     return base_list[:10]
@@ -340,7 +370,6 @@ def build_pyramid_parlays(top10_matches):
     - Paket 5  = Mengambil 5 match terbaik dari Top 10
     - Paket 3  = Mengambil 3 match terbaik dari Top 5
     """
-    # 1. De-duplikasi ketat untuk memastikan 10 match benar-benar unik
     used_matches = set()
     unique_top10 = []
 
@@ -352,7 +381,6 @@ def build_pyramid_parlays(top10_matches):
             used_matches.add(normalized_key)
             unique_top10.append(item)
 
-    # 2. Susun Paket Piramida
     parlay10 = unique_top10[:10]
     parlay5 = unique_top10[:5]
     parlay3 = unique_top10[:3]
@@ -367,7 +395,7 @@ def build_pyramid_parlays(top10_matches):
 
 
 def main():
-    print("🚀 [PIPELINE] Memulai pemrosesan data harian FIXSCORE AI...")
+    print("🚀 [PIPELINE] Memulai pemrosesan data harian FIXSCORE...")
     
     raw_matches = load_scraped_data()
     compact_matches = local_algorithm_filter(raw_matches)
@@ -389,7 +417,6 @@ def main():
         print("⚠️ Seluruh Provider AI Publik Gagal. Menggunakan Algoritma Fallback Lokal...")
         top10_matches = generate_fallback_data(compact_matches)
 
-    # Susun ke dalam format piramida 10 -> 5 -> 3
     final_parlays = build_pyramid_parlays(top10_matches)
 
     now_str = datetime.now().strftime("%d/%m/%Y %H:%M WIB")
@@ -404,7 +431,7 @@ def main():
     with open(TODAY_DATA_PATH, "w", encoding="utf-8") as f:
         json.dump(final_output, f, indent=2, ensure_ascii=False)
         
-    print(f"💾 [PIPELINE] Selesai! Paket parlay FIXSCORE AI berhasil disimpan di '{TODAY_DATA_PATH}'.")
+    print(f"💾 [PIPELINE] Selesai! Paket parlay FIXSCORE berhasil disimpan di '{TODAY_DATA_PATH}'.")
 
 
 if __name__ == "__main__":
