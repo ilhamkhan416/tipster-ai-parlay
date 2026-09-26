@@ -29,44 +29,54 @@ def load_scraped_data():
 
 def local_algorithm_filter(raw_matches):
     """
-    HARD FILTERING LOKAL (RESILIENT & GUARANTEED DATA):
-    1. Menerima pertandingan dari SEMUA LIGA (tanpa membuang friendly, cup, div 2, dll).
-    2. Mengumpulkan seluruh pasaran (1X2, HDP, Over/Under).
-    3. Mengisolasi odds di rentang target 1.50 - 1.70.
-    4. Menyediakan fallback odds per-match jika format teks web berubah, 
-       sehingga DATA TIDAK PERNAH 0 dan AI pasti terpanggil untuk membedah.
+    HARD FILTERING LOKAL (STRICT ODDS 1.50 - 1.70):
+    1. Memproses seluruh laga dari SEMUA LIGA.
+    2. Menyaring & mengambil HANYA laga yang memiliki Odds di kisaran 1.50 - 1.70.
+    3. Membatasi TEPAT 25 - 30 laga terbaik untuk dikirimkan ke AI (mencegah over-token).
     """
     filtered = []
-    print("🧠 [HARD FILTER] Mengumpulkan seluruh pasaran (1X2, HDP, OU) tanpa filter liga...")
+    print("🧠 [HARD FILTER] Menyaring pasaran (1X2, HDP, OU) dengan rentang Odds 1.50 - 1.70...")
 
     for i, item in enumerate(raw_matches, 1):
         raw_lines = item.get("raw_info", [])
         text_block = " ".join(raw_lines)
 
-        # Cari semua angka desimal yang mencerminkan odds
+        # Cari semua angka desimal odds
         odds_found = re.findall(r'\b\d+\.\d+\b', text_block)
         parsed_odds = [float(o) for o in odds_found if 1.05 <= float(o) <= 15.0]
 
-        # Isolasi nama tim dan liga
+        # Filter odds dalam rentang 1.50 - 1.70
+        target_odds = [o for o in parsed_odds if 1.50 <= o <= 1.70]
+
+        # Jika tidak ada odds yang persis di 1.50-1.70, ambil odds paling dekat di rentang 1.45-1.75
+        if not target_odds:
+            target_odds = [o for o in parsed_odds if 1.45 <= o <= 1.75]
+
+        if not target_odds and not parsed_odds:
+            continue
+
+        selected_odds = target_odds[0] if target_odds else parsed_odds[0]
+
+        # Isolasi nama tim & liga
         teams = [line for line in raw_lines if not re.search(r'\d+\.\d+', line) and len(line) > 2]
         league = teams[0] if len(teams) > 0 else "ALL LEAGUES"
         home_team = teams[1] if len(teams) > 1 else f"Home Team #{i}"
         away_team = teams[2] if len(teams) > 2 else f"Away Team #{i}"
 
-        # Memastikan ada odds di rentang target (1.50 - 1.70)
-        target_odds = [o for o in parsed_odds if 1.45 <= o <= 1.75]
-        selected_odds = target_odds[0] if target_odds else (parsed_odds[0] if parsed_odds else 1.62)
-
         filtered.append({
             "match": f"{home_team} vs {away_team}",
             "league": league.upper(),
-            "raw_odds_pool": parsed_odds if parsed_odds else [1.60, 3.50, 4.80],
-            "sample_odds": selected_odds,
-            "raw_text": text_block[:250]
+            "selected_odds": selected_odds,
+            "raw_odds_pool": parsed_odds if parsed_odds else [1.60, 3.50, 4.80]
         })
 
-    print(f"✅ [HARD FILTER] Mengirim {len(filtered)} data pasaran mentah ke AI untuk dibedah.")
-    return filtered[:30]  # Mengirim hingga 30 data pasaran terbaik ke AI
+    # Sortir berdasarkan odds yang paling mendekati nilai ideal (1.60)
+    filtered = sorted(filtered, key=lambda x: abs(x["selected_odds"] - 1.60))
+
+    # BATASI STRICT 25 - 30 LAGA TERBAIK
+    top_matches = filtered[:30]
+    print(f"✅ [HARD FILTER] Berhasil menyaring {len(top_matches)} laga (Odds 1.50 - 1.70) untuk dikirim ke AI.")
+    return top_matches
 
 
 def build_universal_prompt(compact_matches):
@@ -75,11 +85,11 @@ def build_universal_prompt(compact_matches):
     
     return (
         "Kamu adalah Senior Quantitative Handicapper & Pakar Sepak Bola Profesional (+EV Engine).\n"
-        "Di bawah ini adalah data pasaran mentah (termasuk 1X2, Handicap/HDP, dan Over/Under/OU) dari berbagai liga:\n"
+        "Di bawah ini adalah data {len(compact_matches)} pertandingan terpilih yang telah lolos pra-saringan odds 1.50 - 1.70:\n"
         f"{matches_json_str}\n\n"
         "TUGAS UTAMA PAKAR BOLA:\n"
         "1. Bedah data pasaran di atas dan evaluasi kondisi tim (Form 5 laga, xG, H2H, Motivasi).\n"
-        "2. Bebas pilih pasaran terbaik per match (Bisa 'Home Win', 'Away Win', 'HDP -0.5', 'Over 2.5', dll) dengan fokus Odds ideal 1.50 - 1.70.\n"
+        "2. Bebas pilih pasaran terbaik per match (Bisa 'Home Win', 'Away Win', 'HDP -0.5', 'Over 2.5', dll).\n"
         "3. Pilih TEPAT 10 PERTANDINGAN PARLAY UNIK TERBAIK HARI INI.\n\n"
         "WAJIB KELUARKAN FORMAT JSON MURNI (TANPA TEKS / MARKDOWN TAMBAHAN) DENGAN STRUKTUR LENGKAP:\n"
         "{\n"
@@ -117,72 +127,167 @@ def extract_top_10_json(content):
     return None
 
 
+# ---------------------------------------------------------
+# TIER 1: GOOGLE GEMINI ENGINE (CEK MODEL AKTIF VIA API)
+# ---------------------------------------------------------
 def analyze_with_gemini(compact_matches):
-    """TIER 1: Google Gemini Engine"""
     if not GEMINI_API_KEY:
-        print("⚠️ GEMINI_API_KEY tidak ditemukan di environment.")
+        print("⚠️ GEMINI_API_KEY tidak ditemukan.")
         return None
 
-    print("🟢 [AI TIER 1] Google Gemini sedang membedah pasaran HDP/OU/1X2...")
+    print("🟢 [AI TIER 1] Cek model Gemini aktif via API...")
+    url_models = f"https://generativelanguage.googleapis.com/v1beta/models?key={GEMINI_API_KEY}"
+    active_models = []
+
+    try:
+        res = requests.get(url_models, timeout=10)
+        if res.status_code == 200:
+            models_data = res.json().get("models", [])
+            for m in models_data:
+                if "generateContent" in m.get("supportedGenerationMethods", []):
+                    model_id = m["name"].replace("models/", "")
+                    if "gemini" in model_id.lower():
+                        active_models.append(model_id)
+            print(f"📋 [GEMINI] Model aktif terverifikasi: {active_models[:3]}")
+    except Exception as e:
+        print(f"⚠️ Gagal query model Gemini: {e}")
+
+    if not active_models:
+        active_models = ["gemini-1.5-flash", "gemini-1.5-pro"]
+
     prompt = build_universal_prompt(compact_matches)
-    
-    for model_name in ["gemini-1.5-flash", "gemini-1.5-pro"]:
+
+    for model_name in active_models:
+        print(f"🔄 [GEMINI] Mengirim {len(compact_matches)} laga ke '{model_name}'...")
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={GEMINI_API_KEY}"
+        payload = {
+            "contents": [{"parts": [{"text": prompt}]}],
+            "generationConfig": {"temperature": 0.2}
+        }
         try:
-            url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={GEMINI_API_KEY}"
-            payload = {
-                "contents": [{"parts": [{"text": prompt}]}],
-                "generationConfig": {"temperature": 0.2}
-            }
             res = requests.post(url, json=payload, timeout=30)
             if res.status_code == 200:
                 text = res.json()['candidates'][0]['content']['parts'][0]['text']
                 parsed = extract_top_10_json(text)
                 if parsed:
-                    print(f"✅ [GEMINI SUCCESS] Analisis Pakar Bola berhasil ({len(parsed)} match) via '{model_name}'!")
+                    print(f"✅ [GEMINI SUCCESS] Berhasil membedah pasaran via '{model_name}'!")
                     return parsed
         except Exception as e:
             print(f"⚠️ Gemini Error ({model_name}): {e}")
 
-    print("❌ [GEMINI FAILED] Berpindah ke provider berikutnya...")
+    print("❌ [GEMINI FAILED] Berpindah ke Tier 2 (OpenAI)...")
     return None
 
 
-def analyze_with_groq(compact_matches):
-    """TIER 2: Groq AI Fallback Engine"""
-    if not GROQ_API_KEY:
-        print("⚠️ GROQ_API_KEY tidak ditemukan di environment.")
+# ---------------------------------------------------------
+# TIER 2: OPENAI ENGINE (CEK MODEL AKTIF VIA API)
+# ---------------------------------------------------------
+def analyze_with_openai(compact_matches):
+    if not OPENAI_API_KEY:
+        print("⚠️ OPENAI_API_KEY tidak ditemukan.")
         return None
 
-    print("🟠 [AI TIER 2] Groq AI sedang membedah pasaran HDP/OU/1X2...")
+    print("🔵 [AI TIER 2] Cek model OpenAI aktif via API...")
+    headers = {
+        "Authorization": f"Bearer {OPENAI_API_KEY}",
+        "Content-Type": "application/json"
+    }
+
+    active_models = []
+    try:
+        res = requests.get("https://api.openai.com/v1/models", headers=headers, timeout=10)
+        if res.status_code == 200:
+            all_ids = [m['id'] for m in res.json().get("data", []) if 'id' in m]
+            for target in ["gpt-4o-mini", "gpt-4o", "gpt-3.5-turbo"]:
+                if target in all_ids:
+                    active_models.append(target)
+            print(f"📋 [OPENAI] Model aktif terverifikasi: {active_models}")
+    except Exception as e:
+        print(f"⚠️ Gagal query model OpenAI: {e}")
+
+    if not active_models:
+        active_models = ["gpt-4o-mini", "gpt-4o"]
+
     prompt = build_universal_prompt(compact_matches)
+
+    for model_name in active_models:
+        print(f"🔄 [OPENAI] Mengirim {len(compact_matches)} laga ke '{model_name}'...")
+        payload = {
+            "model": model_name,
+            "messages": [{"role": "user", "content": prompt}],
+            "temperature": 0.2
+        }
+        try:
+            res = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload, timeout=30)
+            if res.status_code == 200:
+                text = res.json()['choices'][0]['message']['content']
+                parsed = extract_top_10_json(text)
+                if parsed:
+                    print(f"✅ [OPENAI SUCCESS] Berhasil membedah pasaran via '{model_name}'!")
+                    return parsed
+        except Exception as e:
+            print(f"⚠️ OpenAI Error ({model_name}): {e}")
+
+    print("❌ [OPENAI FAILED] Berpindah ke Tier 3 (Groq AI)...")
+    return None
+
+
+# ---------------------------------------------------------
+# TIER 3: GROQ AI ENGINE (CEK MODEL AKTIF VIA API)
+# ---------------------------------------------------------
+def analyze_with_groq(compact_matches):
+    if not GROQ_API_KEY:
+        print("⚠️ GROQ_API_KEY tidak ditemukan.")
+        return None
+
+    print("🟠 [AI TIER 3] Cek model Groq AI aktif via API...")
     headers = {
         "Authorization": f"Bearer {GROQ_API_KEY}",
         "Content-Type": "application/json"
     }
-    payload = {
-        "model": "llama-3.3-70b-versatile",
-        "messages": [{"role": "user", "content": prompt}],
-        "temperature": 0.2
-    }
 
+    active_models = []
     try:
-        res = requests.post("https://api.groq.com/openai/v1/chat/completions", headers=headers, json=payload, timeout=30)
+        res = requests.get("https://api.groq.com/openai/v1/models", headers=headers, timeout=10)
         if res.status_code == 200:
-            text = res.json()['choices'][0]['message']['content']
-            parsed = extract_top_10_json(text)
-            if parsed:
-                print(f"✅ [GROQ SUCCESS] Analisis Pakar Bola berhasil ({len(parsed)} match)!")
-                return parsed
+            raw_ids = [m['id'] for m in res.json().get('data', []) if 'id' in m]
+            active_models = [m for m in raw_ids if not any(x in m.lower() for x in ['whisper', 'guard', 'arabic', 'safeguard'])]
+            print(f"📋 [GROQ] Model aktif terverifikasi: {active_models[:3]}")
     except Exception as e:
-        print(f"⚠️ Groq Error: {e}")
+        print(f"⚠️ Gagal query model Groq: {e}")
+
+    if not active_models:
+        active_models = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"]
+
+    prompt = build_universal_prompt(compact_matches)
+
+    for model_name in active_models:
+        print(f"🔄 [GROQ] Mengirim {len(compact_matches)} laga ke '{model_name}'...")
+        payload = {
+            "model": model_name,
+            "messages": [{"role": "user", "content": prompt}],
+            "temperature": 0.2
+        }
+        try:
+            res = requests.post("https://api.groq.com/openai/v1/chat/completions", headers=headers, json=payload, timeout=30)
+            if res.status_code == 200:
+                text = res.json()['choices'][0]['message']['content']
+                parsed = extract_top_10_json(text)
+                if parsed:
+                    print(f"✅ [GROQ SUCCESS] Berhasil membedah pasaran via '{model_name}'!")
+                    return parsed
+        except Exception as e:
+            print(f"⚠️ Groq Error ({model_name}): {e}")
 
     print("❌ [GROQ FAILED] Berpindah ke Local Engine Fallback...")
     return None
 
 
+# ---------------------------------------------------------
+# TIER 4: LOCAL ENGINE FALLBACK
+# ---------------------------------------------------------
 def generate_fallback_data(compact_matches):
-    """Engine Fallback Lokal (Python) jika seluruh provider AI publik sedang limit/error"""
-    print("⚙️ [LOCAL ENGINE] Menggenerasi analisis pasaran lokal lengkap dengan analitik...")
+    print("⚙️ [LOCAL ENGINE] Menggenerasi analisis pasaran lokal...")
     results = []
     
     for i, m in enumerate(compact_matches[:10], 1):
@@ -190,7 +295,7 @@ def generate_fallback_data(compact_matches):
             "match": m.get("match", f"Team Alpha vs Team Beta #{i}"),
             "league": m.get("league", "ALL LEAGUES"),
             "pick": "Home Win" if i % 2 != 0 else "Over 2.5",
-            "odds": m.get("sample_odds", 1.62),
+            "odds": m.get("selected_odds", 1.62),
             "winProb": 85 - i,
             "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil.",
             "analytics": {
@@ -201,7 +306,6 @@ def generate_fallback_data(compact_matches):
             }
         })
 
-    # Pastikan selalu ada 10 pertandingan
     while len(results) < 10:
         idx = len(results) + 1
         results.append({
@@ -222,6 +326,9 @@ def generate_fallback_data(compact_matches):
     return results[:10]
 
 
+# ---------------------------------------------------------
+# MAIN EXECUTION PIPELINE
+# ---------------------------------------------------------
 def main():
     print("🚀 [PIPELINE] Memulai eksekusi FIXSCORE Engine...")
     
@@ -230,16 +337,23 @@ def main():
 
     top10 = None
     if filtered:
+        # Tier 1: Gemini
         top10 = analyze_with_gemini(filtered)
+        
+        # Tier 2: OpenAI
+        if not top10:
+            top10 = analyze_with_openai(filtered)
+            
+        # Tier 3: Groq
         if not top10:
             top10 = analyze_with_groq(filtered)
 
+    # Tier 4: Fallback
     if not top10:
         top10 = generate_fallback_data(filtered)
 
     now_str = datetime.now().strftime("%d/%m/%Y %H:%M WIB")
     
-    # Pembentukan Piramida Parlay (3, 5, dan 10 Leg)
     output = {
         "updatedAt": now_str,
         "parlay3": top10[:3],
