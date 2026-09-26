@@ -1,200 +1,187 @@
-// STATE GLOBAL APLIKASI
-let CURRENT_PARLAY_DATA = {
-  parlay3: [],
-  parlay5: [],
-  parlay10: []
-};
-let ACTIVE_CATEGORY = 3; // Default 3 Partai
+// =========================================================
+// FIXSCORE PRO - Frontend Controller
+// Render Data Rekomendasi & History Rekap
+// =========================================================
 
-// INITIALIZATION
 document.addEventListener('DOMContentLoaded', () => {
-  loadDataFromJSON();
+  const btnToday = document.getElementById('tab-today');
+  const btnHistory = document.getElementById('tab-history');
+
+  if (btnToday && btnHistory) {
+    btnToday.addEventListener('click', () => {
+      setActiveTab(btnToday, btnHistory);
+      loadTodayParlays();
+    });
+
+    btnHistory.addEventListener('click', () => {
+      setActiveTab(btnHistory, btnToday);
+      loadHistoryParlays();
+    });
+  }
+
+  // Load awal: Rekomendasi Hari Ini
+  loadTodayParlays();
 });
 
-// MEMUAT DATA HARI INI & HISTORY
-async function loadDataFromJSON() {
-  const cacheBuster = new Date().getTime();
-  try {
-    // 1. Memuat rekomendasi harian
-    const todayRes = await fetch(`./data/today.json?v=${cacheBuster}`, { cache: 'no-store' });
-    if (todayRes.ok) {
-      const data = await todayRes.json();
-      CURRENT_PARLAY_DATA.parlay3 = data.parlay3 || [];
-      CURRENT_PARLAY_DATA.parlay5 = data.parlay5 || [];
-      CURRENT_PARLAY_DATA.parlay10 = data.parlay10 || [];
-
-      // Tampilkan timestamp update jika elemen tersedia
-      const timeElem = document.getElementById('last-updated-time');
-      if (timeElem && data.updatedAt) {
-        timeElem.innerText = `Diperbarui: ${data.updatedAt}`;
-      }
-
-      renderMatchesList();
-    }
-
-    // 2. Memuat data rekap history
-    const historyRes = await fetch(`./data/history.json?v=${cacheBuster}`, { cache: 'no-store' });
-    if (historyRes.ok) {
-      const historyData = await historyRes.json();
-      renderHistoryTable(historyData);
-    }
-  } catch (e) {
-    console.log("Memuat data JSON default/fallback.");
-  }
+function setActiveTab(activeBtn, inactiveBtn) {
+  activeBtn.style.background = 'var(--accent-red)';
+  activeBtn.style.color = 'white';
+  inactiveBtn.style.background = 'transparent';
+  inactiveBtn.style.color = 'var(--text-secondary)';
 }
 
-// FUNGSI GANTI KATEGORI PARLAY (3, 5, 10 PARTAI)
-function switchParlayCategory(numLegs) {
-  ACTIVE_CATEGORY = numLegs;
-
-  // Update styling tombol aktif
-  [3, 5, 10].forEach(num => {
-    const btn = document.getElementById(`btn-parlay-${num}`);
-    if (btn) {
-      if (num === numLegs) {
-        btn.className = "px-4 py-2 rounded-xl text-xs font-bold transition-all bg-flash-red text-white shadow-md shadow-red-500/20";
-      } else {
-        btn.className = "px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200";
-      }
-    }
-  });
-
-  renderMatchesList();
-}
-
-// RENDER LIST PERTANDINGAN BERDASARKAN KATEGORI AKTIF
-function renderMatchesList() {
-  const container = document.getElementById('matches-container');
+// 1. RENDER REKOMENDASI HARI INI (data/today.json)
+async function loadTodayParlays() {
+  const container = document.getElementById('parlay-container');
   if (!container) return;
 
-  const currentList = CURRENT_PARLAY_DATA[`parlay${ACTIVE_CATEGORY}`] || [];
+  container.innerHTML = `<div style="text-align: center; padding: 20px; color: var(--text-muted); font-size: 13px;">Memuat analisis pertandingan hari ini...</div>`;
 
-  if (currentList.length === 0) {
-    container.innerHTML = `
-      <div class="bg-white rounded-2xl p-8 text-center border border-slate-100 shadow-sm">
-        <p class="text-slate-400 text-xs font-bold">Belum ada data pertandingan untuk kategori ${ACTIVE_CATEGORY} Partai hari ini.</p>
-      </div>
-    `;
-    updateParlaySummary(0, 0);
-    return;
-  }
+  try {
+    const response = await fetch('data/today.json');
+    if (!response.ok) throw new Error('File today.json belum tersedia');
 
-  let html = '';
-  let totalCombinedOdds = 1.0;
+    const data = await response.json();
 
-  currentList.forEach((m, idx) => {
-    const odds = m.odds ? parseFloat(m.odds) : 1.85;
-    totalCombinedOdds *= odds;
+    // Update waktu pembaruan di header
+    const lastUpdatedElem = document.getElementById('last-updated');
+    if (lastUpdatedElem && data.updatedAt) {
+      lastUpdatedElem.textContent = `Diperbarui: ${data.updatedAt}`;
+    }
 
-    html += `
-      <div class="bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:border-slate-200 transition-all">
-        <!-- HEADER MATCH: LIGA & PROBABILITAS -->
-        <div class="flex justify-between items-center mb-2 pb-2 border-b border-slate-50">
-          <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400">${m.league || 'Premier League'}</span>
-          <span class="text-[11px] font-extrabold text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-100">
-            Win Rate: ${m.winProb || 70}%
-          </span>
+    container.innerHTML = '';
+    const matches = data.parlay3 || data.parlay10 || [];
+
+    if (matches.length === 0) {
+      container.innerHTML = `<div style="text-align: center; padding: 20px; color: var(--text-muted); font-size: 13px;">Belum ada rekomendasi untuk hari ini.</div>`;
+      return;
+    }
+
+    matches.forEach((item) => {
+      const matchCard = document.createElement('div');
+      matchCard.className = 'match-card';
+
+      // Parse Form Indicators (W, L, D)
+      const homeFormHtml = (item.analytics?.homeForm || []).map(res => 
+        `<span class="form-pill form-${res.toLowerCase()}">${res}</span>`
+      ).join(' ');
+
+      const awayFormHtml = (item.analytics?.awayForm || []).map(res => 
+        `<span class="form-pill form-${res.toLowerCase()}">${res}</span>`
+      ).join(' ');
+
+      const formattedMatch = item.match ? item.match.replace(' vs ', ' <span class="vs">VS</span> ') : 'Match';
+
+      matchCard.innerHTML = `
+        <div class="card-header">
+          <span class="league-tag">⚽ ${item.league || 'FOOTBALL LEAGUE'}</span>
+          <span class="confidence-badge">Win Rate: ${item.winProb || 80}%</span>
         </div>
 
-        <!-- TIM PERTANDINGAN -->
-        <div class="my-2">
-          <h3 class="text-sm font-extrabold text-slate-800">${m.match || 'Team A vs Team B'}</h3>
+        <div class="teams-container">
+          ${formattedMatch}
         </div>
 
-        <!-- PROYEKSI AI (+EV) -->
-        <div class="bg-slate-50 p-3 rounded-xl border border-slate-100 flex justify-between items-center gap-2 my-2">
+        <div class="recommendation-box">
           <div>
-            <span class="text-[9px] text-slate-400 block font-bold uppercase tracking-wider">REKOMENDASI PICK (+EV)</span>
-            <span class="text-xs sm:text-sm font-black text-flash-red">${m.pick || 'Home Win'}</span>
+            <span class="pick-label">REKOMENDASI PASARAN (+EV)</span>
+            <span class="pick-value">${item.pick}</span>
           </div>
-          <div class="text-right">
-            <span class="text-[9px] text-slate-400 block font-bold uppercase tracking-wider">ODDS</span>
-            <span class="font-mono text-xs font-black text-slate-900 bg-amber-100 px-2 py-0.5 rounded-md border border-amber-200">
-              @${odds.toFixed(2)}
+          <div class="odds-badge">@${item.odds}</div>
+        </div>
+
+        <div class="expert-box">
+          <div class="expert-title">
+            <span class="bullet-red"></span>
+            CATATAN PAKAR BOLA
+          </div>
+          <div>${item.expertReason || item.aiReason || 'Performa tim sangat solid.'}</div>
+
+          ${item.analytics ? `
+            <div class="analytics-grid">
+              <div>Home Form: ${homeFormHtml || '-'}</div>
+              <div>Away Form: ${awayFormHtml || '-'}</div>
+            </div>
+          ` : ''}
+        </div>
+      `;
+
+      container.appendChild(matchCard);
+    });
+  } catch (error) {
+    console.error('Error loading today parlays:', error);
+    container.innerHTML = `<div style="text-align: center; padding: 20px; color: var(--text-muted); font-size: 13px;">Gagal memuat data hari ini. Silakan coba lagi nanti.</div>`;
+  }
+}
+
+// 2. RENDER HISTORY REKAP (data/history.json)
+async function loadHistoryParlays() {
+  const container = document.getElementById('parlay-container');
+  if (!container) return;
+
+  container.innerHTML = `<div style="text-align: center; padding: 20px; color: var(--text-muted); font-size: 13px;">Memuat riwayat rekap pertandingan...</div>`;
+
+  try {
+    const response = await fetch('data/history.json');
+    if (!response.ok) throw new Error('File history.json belum tersedia');
+
+    const historyData = await response.json();
+    container.innerHTML = '';
+
+    if (!Array.isArray(historyData) || historyData.length === 0) {
+      container.innerHTML = `<div style="text-align: center; padding: 20px; color: var(--text-muted); font-size: 13px;">Belum ada riwayat rekap tersimpan.</div>`;
+      return;
+    }
+
+    historyData.forEach((dayGroup) => {
+      const dateHeader = document.createElement('div');
+      dateHeader.style.cssText = 'font-size: 13px; font-weight: 800; color: var(--text-secondary); margin: 16px 0 8px 0; border-bottom: 1px solid var(--border-color); padding-bottom: 4px;';
+      dateHeader.textContent = `📅 Rekap Tanggal: ${dayGroup.date}`;
+      container.appendChild(dateHeader);
+
+      (dayGroup.matches || []).forEach((item) => {
+        const historyCard = document.createElement('div');
+        historyCard.className = 'match-card';
+        
+        // Warna indikator status (W, L, WH, LH, D)
+        let statusBg = '#E5E7EB';
+        let statusColor = '#374151';
+        if (item.status === 'W' || item.status === 'WH') {
+          statusBg = '#DCFCE7';
+          statusColor = '#166534';
+        } else if (item.status === 'L' || item.status === 'LH') {
+          statusBg = '#FEE2E2';
+          statusColor = '#991B1B';
+        }
+
+        const formattedMatch = item.match ? item.match.replace(' vs ', ' <span class="vs">VS</span> ') : 'Match';
+
+        historyCard.innerHTML = `
+          <div class="card-header">
+            <span class="league-tag">⚽ ${item.league || 'LEAGUE'}</span>
+            <span class="confidence-badge" style="background: ${statusBg}; color: ${statusColor}; border: none;">
+              STATUS: ${item.status || 'PENDING'}
             </span>
           </div>
-        </div>
 
-        <!-- ANALISIS ANALITIK GEMINI AI -->
-        ${m.aiReason ? `
-          <div class="mt-2 text-[11px] text-slate-500 leading-relaxed bg-blue-50/50 p-2.5 rounded-lg border border-blue-100/50">
-            <span class="font-bold text-blue-700">💡 Analisis AI:</span> ${m.aiReason}
+          <div class="teams-container">
+            ${formattedMatch}
           </div>
-        ` : ''}
-      </div>
-    `;
-  });
 
-  container.innerHTML = html;
-  updateParlaySummary(currentList.length, totalCombinedOdds);
-}
+          <div class="recommendation-box">
+            <div>
+              <span class="pick-label">PASARAN & SKOR AKHIR</span>
+              <span class="pick-value">${item.pick} (Skor: ${item.score || 'N/A'})</span>
+            </div>
+            <div class="odds-badge">@${item.odds}</div>
+          </div>
+        `;
 
-// UPDATE RINGKASAN PARLAY & KALKULATOR EST
-function updateParlaySummary(matchCount, totalOdds) {
-  const countElem = document.getElementById('summary-count');
-  const oddsElem = document.getElementById('summary-total-odds');
-  const estWinElem = document.getElementById('summary-est-win');
-  const stakeInput = document.getElementById('stake-input');
-
-  if (countElem) countElem.innerText = `${matchCount} Leg`;
-  if (oddsElem) oddsElem.innerText = `@${totalOdds.toFixed(2)}`;
-
-  const calculatePayout = () => {
-    const stake = stakeInput ? parseFloat(stakeInput.value) || 0 : 100;
-    const estPayout = stake * totalOdds;
-    if (estWinElem) {
-      estWinElem.innerText = `Rp ${Math.round(estPayout * 1000).toLocaleString('id-ID')}`;
-    }
-  };
-
-  if (stakeInput) {
-    stakeInput.oninput = calculatePayout;
-  }
-  calculatePayout();
-}
-
-// RENDER TABEL HISTORY REKAP
-function renderHistoryTable(historyData) {
-  const tbody = document.querySelector('#tab-history tbody');
-  if (!tbody || !historyData) return;
-
-  tbody.innerHTML = '';
-  historyData.forEach(item => {
-    let badgeClass = "bg-emerald-100 text-emerald-800";
-    if (item.status === "LOSE") badgeClass = "bg-red-100 text-red-800";
-    if (item.status === "DRAW" || item.status === "PUSH") badgeClass = "bg-slate-100 text-slate-800";
-    if (item.status === "WIN_HALF") badgeClass = "bg-teal-100 text-teal-800";
-    if (item.status === "LOSE_HALF") badgeClass = "bg-amber-100 text-amber-800";
-
-    const tr = document.createElement('tr');
-    tr.className = "bg-white hover:bg-slate-50/50 border-b border-slate-100";
-    tr.innerHTML = `
-      <td class="p-3 font-bold">${item.date || '-'}</td>
-      <td class="p-3 font-sans">${item.summary || 'Rekap Evaluasi Algoritma'}</td>
-      <td class="p-3 font-bold">${item.totalMatches || '10'} Leg</td>
-      <td class="p-3"><span class="${badgeClass} px-2 py-0.5 rounded-md font-bold text-[10px]">${item.status}</span></td>
-      <td class="p-3 font-bold ${item.units && item.units.includes('+') ? 'text-emerald-600' : 'text-red-600'}">${item.units || '0.00 Unit'}</td>
-    `;
-    tbody.appendChild(tr);
-  });
-}
-
-// NAVIGATION TAB (REKOMENDASI VS HISTORY)
-function switchMainTab(tabName) {
-  const tabToday = document.getElementById('tab-content-today');
-  const tabHistory = document.getElementById('tab-content-history');
-  const btnToday = document.getElementById('nav-btn-today');
-  const btnHistory = document.getElementById('nav-btn-history');
-
-  if (tabName === 'today') {
-    if (tabToday) tabToday.classList.remove('hidden');
-    if (tabHistory) tabHistory.classList.add('hidden');
-    if (btnToday) btnToday.className = "px-4 py-2 text-xs font-extrabold text-flash-red border-b-2 border-flash-red";
-    if (btnHistory) btnHistory.className = "px-4 py-2 text-xs font-bold text-slate-400 hover:text-slate-600";
-  } else {
-    if (tabToday) tabToday.classList.add('hidden');
-    if (tabHistory) tabHistory.classList.remove('hidden');
-    if (btnToday) btnToday.className = "px-4 py-2 text-xs font-bold text-slate-400 hover:text-slate-600";
-    if (btnHistory) btnHistory.className = "px-4 py-2 text-xs font-extrabold text-flash-red border-b-2 border-flash-red";
+        container.appendChild(historyCard);
+      });
+    });
+  } catch (error) {
+    console.error('Error loading history parlays:', error);
+    container.innerHTML = `<div style="text-align: center; padding: 20px; color: var(--text-muted); font-size: 13px;">Belum ada data riwayat rekap yang tersimpan.</div>`;
   }
 }
