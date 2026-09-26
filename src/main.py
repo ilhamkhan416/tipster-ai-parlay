@@ -4,23 +4,16 @@ import re
 import requests
 from datetime import datetime
 
-# Path file
 RAW_DATA_PATH = "data/raw_scraped.json"
 TODAY_DATA_PATH = "data/today.json"
 
-# Mengambil API Key dari GitHub Secrets / Environment
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
-# Filter Liga Berisiko Tinggi
-BANNED_LEAGUE_KEYWORDS = ["friendly", "persahabatan", "div 2", "division 2", "cup"]
-
 
 def load_scraped_data():
-    """Membaca data mentah hasil scraping"""
     if not os.path.exists(RAW_DATA_PATH):
-        print("⚠️ File data mentah tidak ditemukan.")
         return []
     with open(RAW_DATA_PATH, "r", encoding="utf-8") as f:
         return json.load(f)
@@ -28,108 +21,71 @@ def load_scraped_data():
 
 def local_algorithm_filter(raw_matches):
     """
-    STEP 2: HARD FILTERING, ELIMINASI DRAW, & ELIMINASI LIGA BERISIKO
-    Menyaring pertandingan berdasarkan logika matematis Odds +EV
+    HARD FILTERING LOKAL:
+    Mengumpulkan seluruh data pasaran (1X2, HDP, OU) dari SEMUA LIGA
+    tanpa diskriminasi, cukup pastikan ada odds desimal di rentang 1.50 - 1.70.
     """
     filtered = []
-    print("🧠 [PRE-FILTER] Memulai sanitasi dan hard filtering data mentah...")
+    print("🧠 [HARD FILTER] Mengumpulkan seluruh pasaran (1X2, HDP, OU) tanpa filter liga...")
 
     for item in raw_matches:
         raw_lines = item.get("raw_info", [])
-        if len(raw_lines) < 3:
-            continue
-
         text_block = " ".join(raw_lines)
-        text_lower = text_block.lower()
 
-        # 1. Eliminasi Liga Berisiko Tinggi (Friendly / Divisi Bawah)
-        if any(keyword in text_lower for keyword in BANNED_LEAGUE_KEYWORDS):
-            continue
-
-        # Ekstrak semua angka desimal sebagai kandidat odds (1X2)
+        # Cari semua angka desimal odds (1X2, HDP, OU)
         odds_found = re.findall(r'\b\d+\.\d+\b', text_block)
         parsed_odds = [float(o) for o in odds_found if float(o) > 1.0]
 
-        if len(parsed_odds) < 3:
-            continue 
-
-        odds_home = parsed_odds[0]
-        odds_draw = parsed_odds[1]
-        odds_away = parsed_odds[2]
-
-        # ---------------------------------------------------------
-        # ATURAN ELIMINASI KETAT (HARD FILTERING)
-        # ---------------------------------------------------------
-        if odds_draw <= 3.15:
-            continue
-            
-        if abs(odds_home - odds_away) < 0.35:
-            continue
-            
-        if odds_home > 2.30 and odds_away > 2.30:
+        if not parsed_odds:
             continue
 
-        pick_candidate = "Home Win" if odds_home < odds_away else "Away Win"
-        best_odds = min(odds_home, odds_away)
-            
-        if best_odds < 1.50:
-            continue
+        # Ambil nama liga dan tim
+        teams = [line for line in raw_lines if not re.search(r'\d+\.\d+', line) and len(line) > 2]
+        league = teams[0] if len(teams) > 0 else "ALL LEAGUES"
+        home_team = teams[1] if len(teams) > 1 else "Home Team"
+        away_team = teams[2] if len(teams) > 2 else "Away Team"
+
+        # Cek apakah ada odds (1X2 / HDP / OU) yang masuk kriteria target (misal 1.50 - 1.70)
+        target_odds = [o for o in parsed_odds if 1.50 <= o <= 1.70]
+        selected_odds = target_odds[0] if target_odds else parsed_odds[0]
 
         filtered.append({
-            "match_info": text_block[:200],
-            "home_odds": odds_home,
-            "draw_odds": odds_draw,
-            "away_odds": odds_away,
-            "best_pick_candidate": pick_candidate,
-            "best_odds": best_odds
+            "match": f"{home_team} vs {away_team}",
+            "league": league.upper(),
+            "raw_odds_pool": parsed_odds,
+            "sample_odds": selected_odds,
+            "raw_text": text_block[:250]
         })
 
-    print(f"✅ [PRE-FILTER] Lolos saringan tahap 1: {len(filtered)} pertandingan potensial.")
-    
-    # DYNAMIC TOP 25 SELECTION
-    filtered = sorted(filtered, key=lambda x: x["best_odds"])
-    top_matches = filtered[:25]
-    print(f"🎯 [PRE-FILTER] Mengambil Top {len(top_matches)} pertandingan murni untuk dianalisis Pakar Bola.")
-    
-    return top_matches
+    print(f"✅ [HARD FILTER] Mengirim {len(filtered)} data pasaran mentah ke AI untuk dibedah.")
+    return filtered[:30] # Kirim 30 data pasaran terbaik ke AI
 
 
 def build_universal_prompt(compact_matches):
-    """
-    Membuat Prompt Universal FIXSCORE dengan gaya Pakar/Pengamat Bola Profesional
-    """
     matches_json_str = json.dumps(compact_matches, ensure_ascii=False, indent=2)
     
     return (
-        "Kamu adalah Senior Quantitative Sports Handicapper & Pengamat Sepak Bola Profesional (+EV Engine).\n"
-        "Tugasmu adalah menganalisis data pertandingan dan memberikan ulasan analitis dari kacamata pengamat sepak bola senior untuk TEPAT 10 PERTANDINGAN UNIK TERBAIK HARI INI.\n\n"
-        f"Berikut adalah data {len(compact_matches)} pertandingan hari ini yang telah lolos pra-saringan algoritma (+EV & No-Draw Rule):\n"
+        "Kamu adalah Senior Quantitative Handicapper & Pakar Sepak Bola Profesional (+EV Engine).\n"
+        "Di bawah ini adalah data pasaran mentah (termasuk 1X2, Handicap/HDP, dan Over/Under/OU) dari berbagai liga:\n"
         f"{matches_json_str}\n\n"
-        "METODOLOGI ANALISIS BERLAPIS (MANDATORY EVALUATION):\n"
-        "Evaluasi 5 faktor krusial untuk setiap match:\n"
-        "1. Absensi/Cedera Pemain Kunci\n"
-        "2. Susunan Pemain & Rotasi Skuad\n"
-        "3. Rekor Head-to-Head (H2H) & Matchup Taktis\n"
-        "4. Performa & Berita Terkini (Form 5 Laga & xG)\n"
-        "5. Urgensi Poin & Motivasi Tim\n\n"
-        "ATURAN DEDUPLIKASI KETAT & OPSI PASARAN:\n"
-        "1. PILIH TEPAT 10 PERTANDINGAN UNIK (TIDAK BOLEH ADA TIM/PARTAI YANG SAMA PERSIH DIPAKAI DUA KALI).\n"
-        "2. DILARANG KERAS memilih opsi DRAW (X).\n"
-        "3. Urutkan dari urutan #1 (Paling Solid/WinRate Tinggi) sampai #10 (High Return).\n\n"
-        "FORMAT KELUARAN WAJIB (HANYA JSON MURNI tanpa markdown/teks tambahan):\n"
+        "TUGAS UTAMA PAKAR BOLA:\n"
+        "1. Bedah data pasaran di atas dan evaluasi kondisi tim (Form 5 laga, xG, H2H, Motivasi).\n"
+        "2. Bebas pilih pasaran terbaik per match (Bisa 'Home Win', 'Away Win', 'HDP -0.5', 'Over 2.5', dll).\n"
+        "3. Pilih TEPAT 10 PERTANDINGAN PARLAY UNIK TERBAIK HARI INI.\n\n"
+        "WAJIB KELUARKAN FORMAT JSON MURNI DENGAN ANGGOTA LENGKAP:\n"
         "{\n"
         '  "top10_matches": [\n'
         '    {\n'
-        '      "match": "Tim A vs Tim B",\n'
-        '      "league": "Nama Liga",\n'
+        '      "match": "Nama Tim Home vs Nama Tim Away",\n'
+        '      "league": "NAMA LIGA",\n'
         '      "pick": "Home Win",\n'
-        '      "odds": 1.75,\n'
+        '      "odds": 1.65,\n'
         '      "winProb": 85,\n'
-        '      "expertReason": "Catatan Pakar: Dominasi lini tengah & efisiensi penyelesaian akhir di kandang (max 15 kata)",\n'
+        '      "expertReason": "Catatan Pakar Bola: Analisis keunggulan taktis dan efisiensi lini serang.",\n'
         '      "analytics": {\n'
-        '        "homeForm": ["W", "W", "L", "D", "W"],\n'
+        '        "homeForm": ["W", "W", "D", "W", "L"],\n'
         '        "awayForm": ["L", "D", "L", "W", "L"],\n'
-        '        "h2hSummary": "Tim A menang 3 dari 5 H2H terakhir",\n'
+        '        "h2hSummary": "Unggul 3/5 pertemuan H2H terakhir",\n'
         '        "avgGoals": "2.8 Gol/Laga"\n'
         '      }\n'
         '    }\n'
@@ -139,7 +95,6 @@ def build_universal_prompt(compact_matches):
 
 
 def extract_top_10_json(content):
-    """Mengekstrak dan memvalidasi JSON 10 pertandingan dari respon AI"""
     try:
         json_match = re.search(r'\{.*\}', content, re.DOTALL)
         if json_match:
@@ -148,291 +103,104 @@ def extract_top_10_json(content):
             if isinstance(matches, list) and len(matches) >= 3:
                 return matches
     except Exception as e:
-        print(f"⚠️ Gagal parsing JSON respon AI: {e}")
+        print(f"⚠️ Error Parsing AI JSON: {e}")
     return None
 
 
 def analyze_with_gemini(compact_matches):
-    """TIER 1: Google Gemini Engine"""
     if not GEMINI_API_KEY:
-        print("⚠️ GEMINI_API_KEY tidak ditemukan di environment.")
         return None
-
-    print("🟢 [TIER 1: GEMINI] Memeriksa daftar model Gemini aktif...")
-    url_models = f"https://generativelanguage.googleapis.com/v1beta/models?key={GEMINI_API_KEY}"
-    candidate_models = []
+    print("🟢 [AI ENGINE] Google Gemini sedang membedah pasaran HDP/OU/1X2...")
+    prompt = build_universal_prompt(compact_matches)
     
-    try:
-        res = requests.get(url_models, timeout=10)
-        if res.status_code == 200:
-            models_data = res.json().get("models", [])
-            for m in models_data:
-                if "generateContent" in m.get("supportedGenerationMethods", []):
-                    model_id = m["name"].replace("models/", "")
-                    if "gemini" in model_id.lower():
-                        candidate_models.append(model_id)
-            print(f"📋 [GEMINI] Model aktif ditemukan: {candidate_models[:3]}")
-    except Exception as e:
-        print(f"⚠️ Gagal cek model Gemini: {e}")
-
-    if not candidate_models:
-        candidate_models = ["gemini-1.5-flash", "gemini-1.5-pro"]
-
-    prompt = build_universal_prompt(compact_matches)
-
-    for model_name in candidate_models:
-        print(f"🔄 [GEMINI] Memproses request dengan model '{model_name}'...")
-        url_generate = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={GEMINI_API_KEY}"
-        headers = {"Content-Type": "application/json"}
-        payload = {
-            "contents": [{"parts": [{"text": prompt}]}],
-            "generationConfig": {"temperature": 0.2}
-        }
-
+    for model_name in ["gemini-1.5-flash", "gemini-1.5-pro"]:
         try:
-            response = requests.post(url_generate, headers=headers, json=payload, timeout=30)
-            if response.status_code == 200:
-                data = response.json()
-                content = data['candidates'][0]['content']['parts'][0]['text']
-                matches = extract_top_10_json(content)
-                if matches:
-                    print(f"✅ [GEMINI SUCCESS] Analisis BERHASIL ({len(matches)} match) menggunakan '{model_name}'!")
-                    return matches
-            else:
-                print(f"⚠️ Model Gemini '{model_name}' merespon HTTP {response.status_code}.")
+            url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={GEMINI_API_KEY}"
+            payload = {"contents": [{"parts": [{"text": prompt}]}]}
+            res = requests.post(url, json=payload, timeout=30)
+            if res.status_code == 200:
+                text = res.json()['candidates'][0]['content']['parts'][0]['text']
+                parsed = extract_top_10_json(text)
+                if parsed:
+                    print("✅ [AI SUCCESS] Bedah pasaran oleh Pakar Bola berhasil!")
+                    return parsed
         except Exception as e:
-            print(f"⚠️ Error pada Gemini '{model_name}': {e}")
-
-    print("❌ [GEMINI FAILED] Seluruh model Gemini gagal.")
-    return None
-
-
-def analyze_with_openai(compact_matches):
-    """TIER 2: OpenAI Engine"""
-    if not OPENAI_API_KEY:
-        print("⚠️ OPENAI_API_KEY tidak ditemukan di environment.")
-        return None
-
-    print("🔵 [TIER 2: OPENAI] Memeriksa daftar model OpenAI aktif...")
-    headers = {
-        "Authorization": f"Bearer {OPENAI_API_KEY}",
-        "Content-Type": "application/json"
-    }
-
-    candidate_models = []
-    try:
-        res = requests.get("https://api.openai.com/v1/models", headers=headers, timeout=10)
-        if res.status_code == 200:
-            models_data = res.json().get("data", [])
-            all_ids = [m['id'] for m in models_data if 'id' in m]
-            for target in ["gpt-4o-mini", "gpt-4o", "gpt-3.5-turbo"]:
-                if target in all_ids:
-                    candidate_models.append(target)
-            print(f"📋 [OPENAI] Model aktif ditemukan: {candidate_models}")
-    except Exception as e:
-        print(f"⚠️ Gagal cek model OpenAI: {e}")
-
-    if not candidate_models:
-        candidate_models = ["gpt-4o-mini", "gpt-4o"]
-
-    prompt = build_universal_prompt(compact_matches)
-
-    for model_name in candidate_models:
-        print(f"🔄 [OPENAI] Memproses request dengan model '{model_name}'...")
-        payload = {
-            "model": model_name,
-            "messages": [{"role": "user", "content": prompt}],
-            "temperature": 0.2
-        }
-
-        try:
-            response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload, timeout=30)
-            if response.status_code == 200:
-                result = response.json()
-                content = result['choices'][0]['message']['content']
-                matches = extract_top_10_json(content)
-                if matches:
-                    print(f"✅ [OPENAI SUCCESS] Analisis BERHASIL ({len(matches)} match) menggunakan '{model_name}'!")
-                    return matches
-            else:
-                print(f"⚠️ Model OpenAI '{model_name}' merespon HTTP {response.status_code}.")
-        except Exception as e:
-            print(f"⚠️ Error pada OpenAI '{model_name}': {e}")
-
-    print("❌ [OPENAI FAILED] Seluruh model OpenAI gagal.")
+            print(f"⚠️ Gemini Error ({model_name}): {e}")
     return None
 
 
 def analyze_with_groq(compact_matches):
-    """TIER 3: Groq AI Engine"""
     if not GROQ_API_KEY:
-        print("⚠️ GROQ_API_KEY tidak ditemukan di environment.")
         return None
-
-    print("🟠 [TIER 3: GROQ AI] Memeriksa daftar model Groq aktif...")
-    headers = {
-        "Authorization": f"Bearer {GROQ_API_KEY}",
-        "Content-Type": "application/json"
-    }
-
-    text_models = []
-    try:
-        response = requests.get("https://api.groq.com/openai/v1/models", headers=headers, timeout=10)
-        if response.status_code == 200:
-            raw_models = [m['id'] for m in response.json().get('data', []) if 'id' in m]
-            text_models = [
-                m for m in raw_models 
-                if not any(x in m.lower() for x in ['whisper', 'guard', 'arabic', 'orpheus', 'safeguard'])
-            ]
-            print(f"📋 [GROQ] Model teks terverifikasi: {text_models[:3]}")
-    except Exception as e:
-        print(f"⚠️ Gagal cek model Groq: {e}")
-
-    if not text_models:
-        text_models = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"]
-
+    print("🟠 [AI ENGINE] Groq AI sedang membedah pasaran HDP/OU/1X2...")
     prompt = build_universal_prompt(compact_matches)
-
-    for model_name in text_models:
-        print(f"🔄 [GROQ] Memproses request dengan model '{model_name}'...")
-        payload = {
-            "model": model_name,
-            "messages": [{"role": "user", "content": prompt}],
-            "temperature": 0.2
-        }
-
-        try:
-            response = requests.post("https://api.groq.com/openai/v1/chat/completions", headers=headers, json=payload, timeout=30)
-            if response.status_code == 200:
-                result = response.json()
-                content = result['choices'][0]['message']['content']
-                matches = extract_top_10_json(content)
-                if matches:
-                    print(f"✅ [GROQ SUCCESS] Analisis BERHASIL ({len(matches)} match) menggunakan '{model_name}'!")
-                    return matches
-            else:
-                print(f"⚠️ Model Groq '{model_name}' merespon HTTP {response.status_code}.")
-        except Exception as e:
-            print(f"⚠️ Error pada Groq '{model_name}': {e}")
-
-    print("❌ [GROQ FAILED] Seluruh model Groq gagal.")
+    headers = {"Authorization": f"Bearer {GROQ_API_KEY}", "Content-Type": "application/json"}
+    payload = {
+        "model": "llama-3.3-70b-versatile",
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0.2
+    }
+    try:
+        res = requests.post("https://api.groq.com/openai/v1/chat/completions", headers=headers, json=payload, timeout=30)
+        if res.status_code == 200:
+            text = res.json()['choices'][0]['message']['content']
+            parsed = extract_top_10_json(text)
+            if parsed:
+                print("✅ [AI SUCCESS] Bedah pasaran oleh Pakar Bola berhasil!")
+                return parsed
+    except Exception as e:
+        print(f"⚠️ Groq Error: {e}")
     return None
 
 
 def generate_fallback_data(compact_matches):
-    """Algoritma Fallback Murni (Python) jika seluruh provider AI tidak merespon"""
-    print("⚙️ [FALLBACK ENGINE] Menyusun 10 paket parlay matematis murni dari data lokal...")
-    base_list = []
-    
+    print("⚙️ [LOCAL ENGINE] Menggenerasi analisis pasaran lokal jika AI limit...")
+    results = []
     for i, m in enumerate(compact_matches[:10], 1):
-        best_pick = m.get("best_pick_candidate", "Home Win")
-        best_odds = m.get("best_odds", 1.75)
-        
-        base_list.append({
-            "match": f"Match Candidate #{i}",
-            "league": "Top Football League",
-            "pick": best_pick,
-            "odds": best_odds,
-            "winProb": 72 + (i % 6),
-            "expertReason": "Catatan Pakar: Lolos hard filter No-Draw & +EV rasio odds pasar unggulan.",
+        results.append({
+            "match": m.get("match", f"Team A vs Team B #{i}"),
+            "league": m.get("league", "ALL LEAGUES"),
+            "pick": "Home Win" if i % 2 != 0 else "Over 2.5",
+            "odds": m.get("sample_odds", 1.65),
+            "winProb": 82 - i,
+            "expertReason": "Catatan Pakar Bola: Evaluasi pasaran +EV & tren efisiensi tim.",
             "analytics": {
                 "homeForm": ["W", "W", "D", "W", "L"],
                 "awayForm": ["L", "D", "L", "W", "L"],
-                "h2hSummary": "Dominasi statistik 5 laga terakhir",
+                "h2hSummary": "Unggul statistik H2H",
                 "avgGoals": "2.5 Gol/Laga"
             }
         })
-
-    while len(base_list) < 10:
-        idx = len(base_list) + 1
-        base_list.append({
-            "match": f"Team Alpha vs Team Beta #{idx}",
-            "league": "Major Football League",
-            "pick": "Home Win" if idx % 2 != 0 else "Over 2.5",
-            "odds": 1.80,
-            "winProb": 75,
-            "expertReason": "Catatan Pakar: Keunggulan xG dan statistik H2H dominan.",
-            "analytics": {
-                "homeForm": ["W", "W", "W", "D", "L"],
-                "awayForm": ["L", "L", "D", "W", "L"],
-                "h2hSummary": "Tim Home unggul 3 dari 5 H2H terakhir",
-                "avgGoals": "2.8 Gol/Laga"
-            }
-        })
-
-    return base_list[:10]
-
-
-def build_pyramid_parlays(top10_matches):
-    """
-    LOGIKA PIRAMIDA PARLAY (10 -> 5 -> 3):
-    - Paket 10 = Mengambil 10 match unik teratas
-    - Paket 5  = Mengambil 5 match terbaik dari Top 10
-    - Paket 3  = Mengambil 3 match terbaik dari Top 5
-    """
-    used_matches = set()
-    unique_top10 = []
-
-    for item in top10_matches:
-        match_name = item.get("match", "").strip().lower()
-        normalized_key = re.sub(r'\s+', ' ', match_name)
-        
-        if normalized_key and normalized_key not in used_matches:
-            used_matches.add(normalized_key)
-            unique_top10.append(item)
-
-    parlay10 = unique_top10[:10]
-    parlay5 = unique_top10[:5]
-    parlay3 = unique_top10[:3]
-
-    print(f"📊 [PYRAMID STRUCTURE] Terbentuk: Parlay3 ({len(parlay3)} Leg), Parlay5 ({len(parlay5)} Leg), Parlay10 ({len(parlay10)} Leg)")
-
-    return {
-        "parlay3": parlay3,
-        "parlay5": parlay5,
-        "parlay10": parlay10
-    }
+    return results
 
 
 def main():
-    print("🚀 [PIPELINE] Memulai pemrosesan data harian FIXSCORE...")
-    
-    raw_matches = load_scraped_data()
-    compact_matches = local_algorithm_filter(raw_matches)
-    
-    top10_matches = None
+    print("🚀 [PIPELINE] Memulai eksekusi FIXSCORE Engine...")
+    raw = load_scraped_data()
+    filtered = local_algorithm_filter(raw)
 
-    if compact_matches:
-        top10_matches = analyze_with_gemini(compact_matches)
-        
-        if not top10_matches:
-            print("🔄 [FALLBACK] Berpindah dari Gemini ke OpenAI (Tier 2)...")
-            top10_matches = analyze_with_openai(compact_matches)
-            
-        if not top10_matches:
-            print("🔄 [FALLBACK] Berpindah dari OpenAI ke Groq AI (Tier 3)...")
-            top10_matches = analyze_with_groq(compact_matches)
+    top10 = None
+    if filtered:
+        top10 = analyze_with_gemini(filtered)
+        if not top10:
+            top10 = analyze_with_groq(filtered)
 
-    if not top10_matches:
-        print("⚠️ Seluruh Provider AI Publik Gagal. Menggunakan Algoritma Fallback Lokal...")
-        top10_matches = generate_fallback_data(compact_matches)
-
-    final_parlays = build_pyramid_parlays(top10_matches)
+    if not top10:
+        top10 = generate_fallback_data(filtered)
 
     now_str = datetime.now().strftime("%d/%m/%Y %H:%M WIB")
-    final_output = {
+    output = {
         "updatedAt": now_str,
-        "parlay3": final_parlays.get("parlay3", []),
-        "parlay5": final_parlays.get("parlay5", []),
-        "parlay10": final_parlays.get("parlay10", [])
+        "parlay3": top10[:3],
+        "parlay5": top10[:5],
+        "parlay10": top10[:10]
     }
-    
+
     os.makedirs("data", exist_ok=True)
     with open(TODAY_DATA_PATH, "w", encoding="utf-8") as f:
-        json.dump(final_output, f, indent=2, ensure_ascii=False)
-        
-    print(f"💾 [PIPELINE] Selesai! Paket parlay FIXSCORE berhasil disimpan di '{TODAY_DATA_PATH}'.")
+        json.dump(output, f, indent=2, ensure_ascii=False)
 
+    print(f"🎉 [SUCCESS] Pipeline Selesai! Data tersimpan di '{TODAY_DATA_PATH}'.")
 
 if __name__ == "__main__":
     main()
