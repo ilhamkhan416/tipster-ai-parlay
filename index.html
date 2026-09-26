@@ -3,145 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FIXSCORE - Quantitative Sports Analytics & Parlay AI</title>
-  
-  <!-- Tailwind CSS via CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'flash-red': '#EF4444',
-          }
-        }
-      }
-    }
-  </script>
-  
-  <!-- Font Inter -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@700;800&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-    .font-mono { font-family: 'JetBrains Mono', monospace; }
-  </style>
+  <title>FIXSCORE PRO - Analysis & Football Handicapping</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="bg-slate-50 text-slate-900 min-h-screen pb-12">
+<body>
 
-  <!-- HEADER UTAMA -->
-  <header class="bg-white border-b border-slate-100 sticky top-0 z-50">
-    <div class="max-w-xl mx-auto px-4 py-3 flex justify-between items-center">
-      <div class="flex items-center gap-2">
-        <div class="w-8 h-8 bg-flash-red rounded-xl flex items-center justify-center font-black text-white text-base shadow-md shadow-red-500/20">
-          F
-        </div>
-        <div>
-          <h1 class="text-base font-black tracking-tight text-slate-900 leading-none">FIXSCORE <span class="text-flash-red text-[10px] font-extrabold uppercase px-1.5 py-0.5 bg-red-50 rounded border border-red-100">PRO +EV</span></h1>
-          <p class="text-[10px] font-bold text-slate-400 mt-0.5" id="last-updated-time">Diperbarui: Memuat data...</p>
-        </div>
+  <div class="container">
+    <!-- Header Aplikasi -->
+    <header class="app-header">
+      <div class="brand-title">
+        FIXSCORE <span>PRO</span>
       </div>
-      
-      <!-- NAVIGASI TAB UTAMA -->
-      <nav class="flex gap-1 bg-slate-100 p-1 rounded-xl">
-        <button id="nav-btn-today" onclick="switchMainTab('today')" class="px-3 py-1.5 text-xs font-extrabold text-flash-red border-b-2 border-flash-red transition-all">
-          Hari Ini
-        </button>
-        <button id="nav-btn-history" onclick="switchMainTab('history')" class="px-3 py-1.5 text-xs font-bold text-slate-400 hover:text-slate-600 transition-all">
-          History Rekap
-        </button>
-      </nav>
-    </div>
-  </header>
-
-  <!-- UTAMA CONTAINER -->
-  <main class="max-w-xl mx-auto px-4 mt-4">
-
-    <!-- TAB 1: REKOMENDASI HARI INI -->
-    <div id="tab-content-today" class="space-y-4">
-      
-      <!-- FILTER KATEGORI PAKET PARLAY -->
-      <div class="bg-white p-2 rounded-2xl border border-slate-100 shadow-sm flex items-center justify-between gap-1 overflow-x-auto">
-        <button onclick="switchParlayCategory(3)" id="btn-parlay-3" class="flex-1 py-2 px-3 rounded-xl text-xs font-extrabold transition-all bg-flash-red text-white shadow-md shadow-red-500/20 text-center">
-          🔥 3 Partai (Aman)
-        </button>
-        <button onclick="switchParlayCategory(5)" id="btn-parlay-5" class="flex-1 py-2 px-3 rounded-xl text-xs font-bold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200 text-center">
-          ⚡ 5 Partai (Medium)
-        </button>
-        <button onclick="switchParlayCategory(10)" id="btn-parlay-10" class="flex-1 py-2 px-3 rounded-xl text-xs font-bold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200 text-center">
-          🚀 10 Partai (High)
-        </button>
+      <div id="last-updated" style="font-size: 11px; color: var(--text-secondary); font-weight: 600;">
+        Diperbarui: -
       </div>
+    </header>
 
-      <!-- LIST MATCHES CONTAINER (RENDER VIA APP.JS) -->
-      <div id="matches-container" class="space-y-3">
-        <!-- Rendered dynamically -->
-        <div class="bg-white rounded-2xl p-8 text-center border border-slate-100">
-          <p class="text-slate-400 text-xs font-bold">Sedang memuat data rekomendasi AI...</p>
-        </div>
-      </div>
-
-      <!-- KALKULATOR RINGKASAN PARLAY SLIP -->
-      <div class="bg-slate-900 text-white rounded-2xl p-4 shadow-xl space-y-3">
-        <div class="flex justify-between items-center pb-2 border-b border-slate-800">
-          <span class="text-xs font-bold text-slate-400">RINGKASAN KOMBINASI SLIP</span>
-          <span id="summary-count" class="text-xs font-extrabold bg-slate-800 px-2 py-0.5 rounded text-emerald-400 font-mono">0 Leg</span>
-        </div>
-        
-        <div class="grid grid-cols-2 gap-4 my-2">
-          <div>
-            <span class="text-[10px] text-slate-400 uppercase font-bold block">TOTAL ODDS (+EV)</span>
-            <span id="summary-total-odds" class="text-lg font-black text-amber-400 font-mono">@1.00</span>
-          </div>
-          <div class="text-right">
-            <span class="text-[10px] text-slate-400 uppercase font-bold block">ESTIMASI PAYOUT (x100k)</span>
-            <span id="summary-est-win" class="text-lg font-black text-emerald-400 font-mono">Rp 0</span>
-          </div>
-        </div>
-
-        <div class="pt-2 border-t border-slate-800 flex items-center justify-between gap-2">
-          <label class="text-[10px] font-bold text-slate-400">SIMULASI MODAL (x1.000):</label>
-          <input type="number" id="stake-input" value="100" class="w-24 bg-slate-800 border border-slate-700 text-white font-mono text-xs font-bold px-2 py-1 rounded text-right focus:outline-none focus:border-flash-red">
-        </div>
-      </div>
-
+    <!-- Navigation Tab -->
+    <div style="display: flex; gap: 8px; margin-bottom: 16px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+      <button id="tab-today" style="background: var(--accent-red); color: white; border: none; padding: 6px 12px; border-radius: 4px; font-weight: 700; font-size: 12px; cursor: pointer;">
+        Rekomendasi Hari Ini
+      </button>
+      <button id="tab-history" style="background: transparent; color: var(--text-secondary); border: none; padding: 6px 12px; border-radius: 4px; font-weight: 700; font-size: 12px; cursor: pointer;">
+        History Rekap
+      </button>
     </div>
 
-    <!-- TAB 2: VALIDASI STATISTIK & HISTORY REKAP -->
-    <div id="tab-content-history" class="hidden space-y-4">
-      <div class="bg-white rounded-2xl p-4 border border-slate-100 shadow-sm">
-        <h2 class="text-sm font-extrabold text-slate-900 mb-1">Validasi Transparansi Performa</h2>
-        <p class="text-[11px] text-slate-400 leading-relaxed mb-4">
-          Rekap riwayat evaluasi matematis harian berdasarkan skor akhir nyata pertandingan.
-        </p>
-
-        <!-- TABEL REKAP HISTORY -->
-        <div class="overflow-x-auto">
-          <table id="tab-history" class="w-full text-left border-collapse">
-            <thead>
-              <tr class="border-b border-slate-100 text-[10px] font-black uppercase text-slate-400 bg-slate-50">
-                <th class="p-3 rounded-l-lg">Tanggal</th>
-                <th class="p-3">Ringkasan Hasil</th>
-                <th class="p-3">Leg</th>
-                <th class="p-3">Status</th>
-                <th class="p-3 rounded-r-lg">Yield Unit</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-slate-100 font-mono text-[11px]">
-              <!-- Rendered dynamically via app.js -->
-            </tbody>
-          </table>
-        </div>
+    <!-- Container Utama untuk Kartu Match -->
+    <main id="parlay-container">
+      <div style="text-align: center; padding: 20px; color: var(--text-muted); font-size: 13px;">
+        Memuat analisis pertandingan hari ini...
       </div>
-    </div>
+    </main>
+  </div>
 
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="max-w-xl mx-auto px-4 mt-8 text-center">
-    <p class="text-[10px] font-bold text-slate-400">FIXSCORE &copy; 2026 - Quantitative Sports Analytics & Backtest Engine.</p>
-  </footer>
-
-  <!-- SCRIPT UTAMA -->
-  <script src="./src/app.js"></script>
+  <!-- Script Penampil Data -->
+  <script src="src/app.js"></script>
 </body>
 </html>
