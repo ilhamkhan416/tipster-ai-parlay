@@ -2,7 +2,7 @@ name: Daily FIXSCORE Scraping & Multi-AI Pipeline
 
 on:
   schedule:
-    # Berjalan otomatis setiap hari pukul 02:50 UTC (09:50 WIB)
+    # Otomatis berjalan jam 02:50 UTC (09:50 WIB)
     - cron: '50 2 * * *'
   workflow_dispatch:
 
