@@ -5,48 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FIXSCORE PRO - Live Sports Handicapping & Analytics</title>
   
-  <!-- CSS Utama Flashscore Style -->
   <link rel="stylesheet" href="style.css">
-  
-  <!-- Font Standard High Readability -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <div class="container">
+  <div class="app-wrapper">
     
-    <!-- Header Aplikasi Hitam Akses Flashscore -->
-    <header class="app-header">
-      <div class="brand-title">
-        FIXSCORE <span>PRO</span>
+    <!-- Top Bar Navigation Flashscore Style -->
+    <header class="main-header">
+      <div class="brand">
+        FIXSCORE <span class="badge-pro">PRO</span>
       </div>
-      <div id="last-updated" style="font-size: 10px; color: #BBBBBB; font-weight: 500;">
+      <div id="last-updated" class="update-time">
         UPDATED: -
       </div>
     </header>
 
-    <!-- Navigasi Utama Tab (Rekomendasi vs History) -->
-    <div style="background: #1A212A; padding: 0 8px 8px 8px; display: flex; gap: 4px; border-bottom: 2px solid var(--accent-red);">
-      <button id="tab-today" style="flex: 1; background: var(--accent-red); color: #FFFFFF; border: none; padding: 8px 0; font-weight: 700; font-size: 11px; cursor: pointer; text-transform: uppercase; border-radius: 2px;">
-        Rekomendasi Hari Ini
-      </button>
-      <button id="tab-history" style="flex: 1; background: transparent; color: #AAAAAA; border: none; padding: 8px 0; font-weight: 700; font-size: 11px; cursor: pointer; text-transform: uppercase; border-radius: 2px;">
-        History Rekap (Status)
-      </button>
-    </div>
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs">
+      <button id="tab-today" class="tab-btn active">Rekomendasi Hari Ini</button>
+      <button id="tab-history" class="tab-btn">History Rekap</button>
+    </nav>
 
-    <!-- Main Container Tempat Render Kartu Match -->
-    <main id="parlay-container" style="margin-top: 8px;">
-      <div style="text-align: center; padding: 20px; color: var(--text-muted); font-size: 12px; font-weight: 500;">
+    <!-- Main Content Container -->
+    <main id="parlay-container" class="content-body">
+      <div class="loading-state">
         Memuat data pertandingan & analisis pasaran...
       </div>
     </main>
 
   </div>
 
-  <!-- JavaScript Controller -->
   <script src="src/app.js"></script>
 </body>
 </html>
