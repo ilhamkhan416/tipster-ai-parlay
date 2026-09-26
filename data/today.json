@@ -1,6 +1,477 @@
 {
-  "updatedAt": "26/09/2026 05:40 WIB",
-  "parlay3": [],
-  "parlay5": [],
-  "parlay10": []
+  "updatedAt": "26/09/2026 05:48 WIB",
+  "parlay3": [
+    {
+      "match": "Pakistan vs Thailand",
+      "league": "08:00",
+      "pick": "Home Win",
+      "odds": 1.62,
+      "winProb": 84,
+      "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Dominasi statistik 5 pertemuan H2H terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Vietnam vs Filipina",
+      "league": "11:30",
+      "pick": "Over 2.5",
+      "odds": 1.62,
+      "winProb": 83,
+      "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Dominasi statistik 5 pertemuan H2H terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "RRC U23 vs Thailand U23",
+      "league": "06:00",
+      "pick": "Home Win",
+      "odds": 1.62,
+      "winProb": 82,
+      "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Dominasi statistik 5 pertemuan H2H terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    }
+  ],
+  "parlay5": [
+    {
+      "match": "Pakistan vs Thailand",
+      "league": "08:00",
+      "pick": "Home Win",
+      "odds": 1.62,
+      "winProb": 84,
+      "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Dominasi statistik 5 pertemuan H2H terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Vietnam vs Filipina",
+      "league": "11:30",
+      "pick": "Over 2.5",
+      "odds": 1.62,
+      "winProb": 83,
+      "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Dominasi statistik 5 pertemuan H2H terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "RRC U23 vs Thailand U23",
+      "league": "06:00",
+      "pick": "Home Win",
+      "odds": 1.62,
+      "winProb": 82,
+      "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Dominasi statistik 5 pertemuan H2H terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Jepang U23 vs Korea Utara U23",
+      "league": "10:30",
+      "pick": "Over 2.5",
+      "odds": 1.62,
+      "winProb": 81,
+      "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Dominasi statistik 5 pertemuan H2H terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Italia U20 W vs Kolombia U20 W",
+      "league": "16:00",
+      "pick": "Home Win",
+      "odds": 1.62,
+      "winProb": 80,
+      "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Dominasi statistik 5 pertemuan H2H terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    }
+  ],
+  "parlay10": [
+    {
+      "match": "Pakistan vs Thailand",
+      "league": "08:00",
+      "pick": "Home Win",
+      "odds": 1.62,
+      "winProb": 84,
+      "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Dominasi statistik 5 pertemuan H2H terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Vietnam vs Filipina",
+      "league": "11:30",
+      "pick": "Over 2.5",
+      "odds": 1.62,
+      "winProb": 83,
+      "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Dominasi statistik 5 pertemuan H2H terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "RRC U23 vs Thailand U23",
+      "league": "06:00",
+      "pick": "Home Win",
+      "odds": 1.62,
+      "winProb": 82,
+      "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Dominasi statistik 5 pertemuan H2H terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Jepang U23 vs Korea Utara U23",
+      "league": "10:30",
+      "pick": "Over 2.5",
+      "odds": 1.62,
+      "winProb": 81,
+      "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Dominasi statistik 5 pertemuan H2H terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Italia U20 W vs Kolombia U20 W",
+      "league": "16:00",
+      "pick": "Home Win",
+      "odds": 1.62,
+      "winProb": 80,
+      "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Dominasi statistik 5 pertemuan H2H terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "PSGC Ciamis vs Semen Padang",
+      "league": "08:30",
+      "pick": "Over 2.5",
+      "odds": 1.62,
+      "winProb": 79,
+      "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Dominasi statistik 5 pertemuan H2H terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Sumsel United vs PSPS Riau",
+      "league": "08:30",
+      "pick": "Home Win",
+      "odds": 1.62,
+      "winProb": 78,
+      "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Dominasi statistik 5 pertemuan H2H terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Tornado Pekanbaru vs PS Barito Putera",
+      "league": "08:30",
+      "pick": "Over 2.5",
+      "odds": 1.62,
+      "winProb": 77,
+      "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Dominasi statistik 5 pertemuan H2H terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Persikad Depok vs Persiraja Banda Aceh",
+      "league": "12:00",
+      "pick": "Home Win",
+      "odds": 1.62,
+      "winProb": 76,
+      "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Dominasi statistik 5 pertemuan H2H terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Persipura Jayapura vs Persis Solo",
+      "league": "12:00",
+      "pick": "Over 2.5",
+      "odds": 1.62,
+      "winProb": 75,
+      "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Dominasi statistik 5 pertemuan H2H terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    }
+  ]
 }
