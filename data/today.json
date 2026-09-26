@@ -1,277 +1,39 @@
 {
-  "updatedAt": "26/09/2026 06:02 WIB",
+  "updatedAt": "26/09/2026 08:00 WIB",
   "parlay3": [
     {
-      "match": "Pakistan vs Thailand",
-      "league": "International Friendly",
-      "pick": "Away Win",
-      "odds": 1.6,
-      "winProb": 88,
-      "expertReason": "Catatan Pakar Bola: Thailand memiliki superioritas teknik dan kedalaman skuad yang jauh di atas Pakistan, didukung efisiensi transisi menyerang yang sangat solid.",
-      "analytics": {
-        "homeForm": [
-          "L",
-          "D",
-          "L",
-          "L",
-          "D"
-        ],
-        "awayForm": [
-          "W",
-          "W",
-          "D",
-          "W",
-          "L"
-        ],
-        "h2hSummary": "Thailand mendominasi rekor pertemuan",
-        "avgGoals": "3.1 Gol/Laga"
-      }
-    },
-    {
       "match": "Vietnam vs Filipina",
-      "league": "ASEAN Championship",
+      "league": "Kualifikasi Piala Dunia Asia",
       "pick": "Home Win",
       "odds": 1.6,
-      "winProb": 86,
-      "expertReason": "Catatan Pakar Bola: Vietnam tampil sangat disiplin di kandang dengan pressing ketat di lini tengah yang menyulitkan Filipina mengembangkan permainan.",
+      "winProb": 78,
+      "expertReason": "Catatan Pakar Bola: Keunggulan penguasaan bola lini tengah dan efektivitas serangan balik cepat Vietnam di My Dinh Stadium sangat dominan saat menghadapi struktur pertahanan blok rendah Filipina.",
       "analytics": {
         "homeForm": [
           "W",
-          "W",
-          "D",
           "L",
-          "W"
-        ],
-        "awayForm": [
-          "L",
-          "D",
           "L",
           "W",
           "L"
         ],
-        "h2hSummary": "Vietnam tak terkalahkan dalam 5 laga kandang terakhir vs Filipina",
-        "avgGoals": "2.6 Gol/Laga"
-      }
-    },
-    {
-      "match": "Jepang U23 vs Korea Utara U23",
-      "league": "AFC U23",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 89,
-      "expertReason": "Catatan Pakar Bola: Disiplin taktikal tingkat tinggi dan xG (expected goals) yang superior menjadikan Jepang U23 sangat dominan dalam penguasaan bola.",
-      "analytics": {
-        "homeForm": [
-          "W",
-          "W",
-          "W",
-          "D",
-          "W"
-        ],
-        "awayForm": [
-          "W",
-          "L",
-          "W",
-          "D",
-          "L"
-        ],
-        "h2hSummary": "Jepang unggul kualitas individu dan kolektivitas tim",
-        "avgGoals": "2.9 Gol/Laga"
-      }
-    }
-  ],
-  "parlay5": [
-    {
-      "match": "Pakistan vs Thailand",
-      "league": "International Friendly",
-      "pick": "Away Win",
-      "odds": 1.6,
-      "winProb": 88,
-      "expertReason": "Catatan Pakar Bola: Thailand memiliki superioritas teknik dan kedalaman skuad yang jauh di atas Pakistan, didukung efisiensi transisi menyerang yang sangat solid.",
-      "analytics": {
-        "homeForm": [
-          "L",
-          "D",
-          "L",
-          "L",
-          "D"
-        ],
-        "awayForm": [
-          "W",
-          "W",
-          "D",
-          "W",
-          "L"
-        ],
-        "h2hSummary": "Thailand mendominasi rekor pertemuan",
-        "avgGoals": "3.1 Gol/Laga"
-      }
-    },
-    {
-      "match": "Vietnam vs Filipina",
-      "league": "ASEAN Championship",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 86,
-      "expertReason": "Catatan Pakar Bola: Vietnam tampil sangat disiplin di kandang dengan pressing ketat di lini tengah yang menyulitkan Filipina mengembangkan permainan.",
-      "analytics": {
-        "homeForm": [
-          "W",
-          "W",
-          "D",
-          "L",
-          "W"
-        ],
         "awayForm": [
           "L",
+          "L",
           "D",
           "L",
-          "W",
           "L"
         ],
-        "h2hSummary": "Vietnam tak terkalahkan dalam 5 laga kandang terakhir vs Filipina",
-        "avgGoals": "2.6 Gol/Laga"
-      }
-    },
-    {
-      "match": "Jepang U23 vs Korea Utara U23",
-      "league": "AFC U23",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 89,
-      "expertReason": "Catatan Pakar Bola: Disiplin taktikal tingkat tinggi dan xG (expected goals) yang superior menjadikan Jepang U23 sangat dominan dalam penguasaan bola.",
-      "analytics": {
-        "homeForm": [
-          "W",
-          "W",
-          "W",
-          "D",
-          "W"
-        ],
-        "awayForm": [
-          "W",
-          "L",
-          "W",
-          "D",
-          "L"
-        ],
-        "h2hSummary": "Jepang unggul kualitas individu dan kolektivitas tim",
-        "avgGoals": "2.9 Gol/Laga"
-      }
-    },
-    {
-      "match": "Afrika Selatan vs Guinea",
-      "league": "AFCON Qualifiers",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 85,
-      "expertReason": "Catatan Pakar Bola: Keunggulan kandang dan performa lini pertahanan Afrika Selatan yang kokoh memberikan probabilitas tinggi untuk mengamankan 3 poin.",
-      "analytics": {
-        "homeForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "D"
-        ],
-        "awayForm": [
-          "L",
-          "W",
-          "L",
-          "D",
-          "L"
-        ],
-        "h2hSummary": "Bafana Bafana catat clean sheet di 3 laga kandang terakhir",
+        "h2hSummary": "Vietnam memenangkan 4 dari 5 pertemuan terakhir",
         "avgGoals": "2.4 Gol/Laga"
       }
     },
     {
-      "match": "Kenya vs Eritrea",
-      "league": "CECAFA",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 87,
-      "expertReason": "Catatan Pakar Bola: Kenya menunjukkan ketajaman lini depan yang konsisten serta motivasi tinggi bermain di hadapan pendukung sendiri.",
-      "analytics": {
-        "homeForm": [
-          "W",
-          "W",
-          "D",
-          "L",
-          "W"
-        ],
-        "awayForm": [
-          "L",
-          "L",
-          "D",
-          "L",
-          "L"
-        ],
-        "h2hSummary": "Kenya mendominasi penguasaan lini tengah",
-        "avgGoals": "2.7 Gol/Laga"
-      }
-    }
-  ],
-  "parlay10": [
-    {
-      "match": "Pakistan vs Thailand",
-      "league": "International Friendly",
-      "pick": "Away Win",
-      "odds": 1.6,
-      "winProb": 88,
-      "expertReason": "Catatan Pakar Bola: Thailand memiliki superioritas teknik dan kedalaman skuad yang jauh di atas Pakistan, didukung efisiensi transisi menyerang yang sangat solid.",
-      "analytics": {
-        "homeForm": [
-          "L",
-          "D",
-          "L",
-          "L",
-          "D"
-        ],
-        "awayForm": [
-          "W",
-          "W",
-          "D",
-          "W",
-          "L"
-        ],
-        "h2hSummary": "Thailand mendominasi rekor pertemuan",
-        "avgGoals": "3.1 Gol/Laga"
-      }
-    },
-    {
-      "match": "Vietnam vs Filipina",
-      "league": "ASEAN Championship",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 86,
-      "expertReason": "Catatan Pakar Bola: Vietnam tampil sangat disiplin di kandang dengan pressing ketat di lini tengah yang menyulitkan Filipina mengembangkan permainan.",
-      "analytics": {
-        "homeForm": [
-          "W",
-          "W",
-          "D",
-          "L",
-          "W"
-        ],
-        "awayForm": [
-          "L",
-          "D",
-          "L",
-          "W",
-          "L"
-        ],
-        "h2hSummary": "Vietnam tak terkalahkan dalam 5 laga kandang terakhir vs Filipina",
-        "avgGoals": "2.6 Gol/Laga"
-      }
-    },
-    {
       "match": "Jepang U23 vs Korea Utara U23",
-      "league": "AFC U23",
+      "league": "AFC U-23 Championship",
       "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 89,
-      "expertReason": "Catatan Pakar Bola: Disiplin taktikal tingkat tinggi dan xG (expected goals) yang superior menjadikan Jepang U23 sangat dominan dalam penguasaan bola.",
+      "odds": 1.62,
+      "winProb": 76,
+      "expertReason": "Catatan Pakar Bola: Transisi cepat dan disiplin taktis Samurai Muda menghasilkan rataan xG konsisten >1.85, unggul dalam penguasaan ruang dan pressing tinggi atas Korea Utara.",
       "analytics": {
         "homeForm": [
           "W",
@@ -282,152 +44,22 @@
         ],
         "awayForm": [
           "W",
-          "L",
-          "W",
-          "D",
-          "L"
-        ],
-        "h2hSummary": "Jepang unggul kualitas individu dan kolektivitas tim",
-        "avgGoals": "2.9 Gol/Laga"
-      }
-    },
-    {
-      "match": "Afrika Selatan vs Guinea",
-      "league": "AFCON Qualifiers",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 85,
-      "expertReason": "Catatan Pakar Bola: Keunggulan kandang dan performa lini pertahanan Afrika Selatan yang kokoh memberikan probabilitas tinggi untuk mengamankan 3 poin.",
-      "analytics": {
-        "homeForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "D"
-        ],
-        "awayForm": [
-          "L",
-          "W",
-          "L",
-          "D",
-          "L"
-        ],
-        "h2hSummary": "Bafana Bafana catat clean sheet di 3 laga kandang terakhir",
-        "avgGoals": "2.4 Gol/Laga"
-      }
-    },
-    {
-      "match": "Kenya vs Eritrea",
-      "league": "CECAFA",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 87,
-      "expertReason": "Catatan Pakar Bola: Kenya menunjukkan ketajaman lini depan yang konsisten serta motivasi tinggi bermain di hadapan pendukung sendiri.",
-      "analytics": {
-        "homeForm": [
-          "W",
-          "W",
-          "D",
-          "L",
-          "W"
-        ],
-        "awayForm": [
-          "L",
-          "L",
-          "D",
-          "L",
-          "L"
-        ],
-        "h2hSummary": "Kenya mendominasi penguasaan lini tengah",
-        "avgGoals": "2.7 Gol/Laga"
-      }
-    },
-    {
-      "match": "Atlanta Utd vs New York City",
-      "league": "MLS",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 86,
-      "expertReason": "Catatan Pakar Bola: Performa kandang Atlanta sangat impresif dengan tingkat konversi peluang yang tinggi dari sisi sayap penyerangan.",
-      "analytics": {
-        "homeForm": [
-          "W",
-          "W",
-          "D",
-          "W",
-          "L"
-        ],
-        "awayForm": [
-          "D",
           "L",
           "W",
           "L",
           "D"
         ],
-        "h2hSummary": "Atlanta selalu mencetak gol di kandang vs NYCFC",
-        "avgGoals": "3.2 Gol/Laga"
-      }
-    },
-    {
-      "match": "CF Montreal vs Cincinnati",
-      "league": "MLS",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 84,
-      "expertReason": "Catatan Pakar Bola: Montreal memiliki rekor kandang yang kuat dan keunggulan dalam duel udara serta efisiensi bola mati.",
-      "analytics": {
-        "homeForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "L"
-        ],
-        "awayForm": [
-          "L",
-          "W",
-          "D",
-          "L",
-          "W"
-        ],
-        "h2hSummary": "Montreal unggul secara agregat xG dalam 3 pertemuan",
-        "avgGoals": "3.0 Gol/Laga"
-      }
-    },
-    {
-      "match": "Philadelphia Union vs Orlando City",
-      "league": "MLS",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 88,
-      "expertReason": "Catatan Pakar Bola: Solidnya lini pertahanan Philadelphia dipadu dengan kecepatan serangan balik membuat mereka sangat difavoritkan.",
-      "analytics": {
-        "homeForm": [
-          "W",
-          "W",
-          "W",
-          "D",
-          "W"
-        ],
-        "awayForm": [
-          "L",
-          "D",
-          "L",
-          "W",
-          "L"
-        ],
-        "h2hSummary": "Philadelphia menang 4 dari 5 pertemuan terakhir",
-        "avgGoals": "2.8 Gol/Laga"
+        "h2hSummary": "Jepang U23 tidak terkalahkan dalam 3 pertemuan terakhir",
+        "avgGoals": "2.6 Gol/Laga"
       }
     },
     {
       "match": "Charleston vs Rhode Island",
       "league": "USL Championship",
       "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 87,
-      "expertReason": "Catatan Pakar Bola: Charleston menunjukkan dominasi total dalam penguasaan bola dan memiliki lini serang tertajam di kandang.",
+      "odds": 1.64,
+      "winProb": 75,
+      "expertReason": "Catatan Pakar Bola: Charleston Battery memiliki rekor kandang terkuat di liga dengan konversi peluang matang mencapai 22%, sementara tim tamu rentan terhadap umpan silang dan set-piece.",
       "analytics": {
         "homeForm": [
           "W",
@@ -437,29 +69,241 @@
           "W"
         ],
         "awayForm": [
+          "D",
+          "L",
+          "D",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Charleston Battery unggul agregat tanpa kebobolan di laga kandang",
+        "avgGoals": "2.9 Gol/Laga"
+      }
+    }
+  ],
+  "parlay5": [
+    {
+      "match": "Vietnam vs Filipina",
+      "league": "Kualifikasi Piala Dunia Asia",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 78,
+      "expertReason": "Catatan Pakar Bola: Keunggulan penguasaan bola lini tengah dan efektivitas serangan balik cepat Vietnam di My Dinh Stadium sangat dominan saat menghadapi struktur pertahanan blok rendah Filipina.",
+      "analytics": {
+        "homeForm": [
+          "W",
           "L",
           "L",
           "W",
-          "D",
           "L"
         ],
-        "h2hSummary": "Charleston superior dalam statistik possession & tembakan",
+        "awayForm": [
+          "L",
+          "L",
+          "D",
+          "L",
+          "L"
+        ],
+        "h2hSummary": "Vietnam memenangkan 4 dari 5 pertemuan terakhir",
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Jepang U23 vs Korea Utara U23",
+      "league": "AFC U-23 Championship",
+      "pick": "Home Win",
+      "odds": 1.62,
+      "winProb": 76,
+      "expertReason": "Catatan Pakar Bola: Transisi cepat dan disiplin taktis Samurai Muda menghasilkan rataan xG konsisten >1.85, unggul dalam penguasaan ruang dan pressing tinggi atas Korea Utara.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "W",
+          "D",
+          "W"
+        ],
+        "awayForm": [
+          "W",
+          "L",
+          "W",
+          "L",
+          "D"
+        ],
+        "h2hSummary": "Jepang U23 tidak terkalahkan dalam 3 pertemuan terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Charleston vs Rhode Island",
+      "league": "USL Championship",
+      "pick": "Home Win",
+      "odds": 1.64,
+      "winProb": 75,
+      "expertReason": "Catatan Pakar Bola: Charleston Battery memiliki rekor kandang terkuat di liga dengan konversi peluang matang mencapai 22%, sementara tim tamu rentan terhadap umpan silang dan set-piece.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "W"
+        ],
+        "awayForm": [
+          "D",
+          "L",
+          "D",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Charleston Battery unggul agregat tanpa kebobolan di laga kandang",
+        "avgGoals": "2.9 Gol/Laga"
+      }
+    },
+    {
+      "match": "Indy Eleven vs Miami FC",
+      "league": "USL Championship",
+      "pick": "Home Win",
+      "odds": 1.58,
+      "winProb": 79,
+      "expertReason": "Catatan Pakar Bola: Miami FC mengalami krisis pertahanan dengan rekor kebobolan tertinggi saat tandang. Indy Eleven berada dalam tren positif dengan xGA rendah di kandang.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "W",
+          "L",
+          "W"
+        ],
+        "awayForm": [
+          "L",
+          "L",
+          "L",
+          "L",
+          "D"
+        ],
+        "h2hSummary": "Indy Eleven menang 3 laga kandang beruntun vs Miami FC",
         "avgGoals": "3.1 Gol/Laga"
       }
     },
     {
-      "match": "Antigua dan Barbuda vs Anguilla",
-      "league": "CONCACAF Qualifiers",
+      "match": "Charlotte vs Chicago",
+      "league": "Major League Soccer",
+      "pick": "Home Win",
+      "odds": 1.65,
+      "winProb": 74,
+      "expertReason": "Catatan Pakar Bola: Charlotte FC sangat kokoh di Bank of America Stadium dengan intensitas pressing tinggi yang mengeksploitasi celah garis pertahanan lambat Chicago Fire.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "L",
+          "W"
+        ],
+        "h2hSummary": "Charlotte memenangkan 3 dari 4 pertemuan terakhir di kandang",
+        "avgGoals": "2.7 Gol/Laga"
+      }
+    }
+  ],
+  "parlay10": [
+    {
+      "match": "Vietnam vs Filipina",
+      "league": "Kualifikasi Piala Dunia Asia",
       "pick": "Home Win",
       "odds": 1.6,
-      "winProb": 90,
-      "expertReason": "Catatan Pakar Bola: Perbedaan kualitas kelas dunia antara kedua tim menjadikan Antigua pilihan mutlak untuk mendulang kemenangan telak.",
+      "winProb": 78,
+      "expertReason": "Catatan Pakar Bola: Keunggulan penguasaan bola lini tengah dan efektivitas serangan balik cepat Vietnam di My Dinh Stadium sangat dominan saat menghadapi struktur pertahanan blok rendah Filipina.",
       "analytics": {
         "homeForm": [
           "W",
           "L",
+          "L",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "L",
+          "D",
+          "L",
+          "L"
+        ],
+        "h2hSummary": "Vietnam memenangkan 4 dari 5 pertemuan terakhir",
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Jepang U23 vs Korea Utara U23",
+      "league": "AFC U-23 Championship",
+      "pick": "Home Win",
+      "odds": 1.62,
+      "winProb": 76,
+      "expertReason": "Catatan Pakar Bola: Transisi cepat dan disiplin taktis Samurai Muda menghasilkan rataan xG konsisten >1.85, unggul dalam penguasaan ruang dan pressing tinggi atas Korea Utara.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
           "W",
           "D",
+          "W"
+        ],
+        "awayForm": [
+          "W",
+          "L",
+          "W",
+          "L",
+          "D"
+        ],
+        "h2hSummary": "Jepang U23 tidak terkalahkan dalam 3 pertemuan terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Charleston vs Rhode Island",
+      "league": "USL Championship",
+      "pick": "Home Win",
+      "odds": 1.64,
+      "winProb": 75,
+      "expertReason": "Catatan Pakar Bola: Charleston Battery memiliki rekor kandang terkuat di liga dengan konversi peluang matang mencapai 22%, sementara tim tamu rentan terhadap umpan silang dan set-piece.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "W"
+        ],
+        "awayForm": [
+          "D",
+          "L",
+          "D",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Charleston Battery unggul agregat tanpa kebobolan di laga kandang",
+        "avgGoals": "2.9 Gol/Laga"
+      }
+    },
+    {
+      "match": "Indy Eleven vs Miami FC",
+      "league": "USL Championship",
+      "pick": "Home Win",
+      "odds": 1.58,
+      "winProb": 79,
+      "expertReason": "Catatan Pakar Bola: Miami FC mengalami krisis pertahanan dengan rekor kebobolan tertinggi saat tandang. Indy Eleven berada dalam tren positif dengan xGA rendah di kandang.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "W",
+          "L",
           "W"
         ],
         "awayForm": [
@@ -467,10 +311,166 @@
           "L",
           "L",
           "L",
+          "D"
+        ],
+        "h2hSummary": "Indy Eleven menang 3 laga kandang beruntun vs Miami FC",
+        "avgGoals": "3.1 Gol/Laga"
+      }
+    },
+    {
+      "match": "Charlotte vs Chicago",
+      "league": "Major League Soccer",
+      "pick": "Home Win",
+      "odds": 1.65,
+      "winProb": 74,
+      "expertReason": "Catatan Pakar Bola: Charlotte FC sangat kokoh di Bank of America Stadium dengan intensitas pressing tinggi yang mengeksploitasi celah garis pertahanan lambat Chicago Fire.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
           "L"
         ],
-        "h2hSummary": "Antigua selalu menang besar atas Anguilla",
-        "avgGoals": "3.5 Gol/Laga"
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "L",
+          "W"
+        ],
+        "h2hSummary": "Charlotte memenangkan 3 dari 4 pertemuan terakhir di kandang",
+        "avgGoals": "2.7 Gol/Laga"
+      }
+    },
+    {
+      "match": "CF Montreal vs Cincinnati",
+      "league": "Major League Soccer",
+      "pick": "Over 2.5",
+      "odds": 1.66,
+      "winProb": 76,
+      "expertReason": "Catatan Pakar Bola: Kedua tim bermain terbuka dengan volume tembakan rata-rata di atas 14 per laga. Indeks xG gabungan mencapai 3.20 yang menjamin tingginya peluang gol.",
+      "analytics": {
+        "homeForm": [
+          "D",
+          "W",
+          "L",
+          "D",
+          "W"
+        ],
+        "awayForm": [
+          "W",
+          "W",
+          "L",
+          "W",
+          "W"
+        ],
+        "h2hSummary": "4 dari 5 pertemuan terakhir menghasilkan Over 2.5 gol",
+        "avgGoals": "3.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Montserrat vs Kepulauan Virgin Inggris",
+      "league": "CONCACAF Nations League",
+      "pick": "Home Win",
+      "odds": 1.55,
+      "winProb": 82,
+      "expertReason": "Catatan Pakar Bola: Komposisi skuad Montserrat didukung pemain diaspora kompetitif di liga Inggris, jauh melampaui level teknis dan kedalaman taktik British Virgin Islands.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "L",
+          "W",
+          "L",
+          "D"
+        ],
+        "awayForm": [
+          "L",
+          "L",
+          "D",
+          "L",
+          "L"
+        ],
+        "h2hSummary": "Montserrat menang telak dalam 2 pertemuan terakhir",
+        "avgGoals": "3.2 Gol/Laga"
+      }
+    },
+    {
+      "match": "Saint Martin vs Kepuauan Virgin Amerika Serikat",
+      "league": "CONCACAF Nations League",
+      "pick": "Home Win",
+      "odds": 1.57,
+      "winProb": 80,
+      "expertReason": "Catatan Pakar Bola: Saint Martin memiliki ketajaman lini serang yang jauh lebih terorganisir, menghadapi lawan yang selalu kebobolan minimal 2 gol dalam 5 laga tandang resmi.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "L",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "L",
+          "L",
+          "D",
+          "L"
+        ],
+        "h2hSummary": "Saint Martin mendominasi rekor pertemuan terakhir",
+        "avgGoals": "3.0 Gol/Laga"
+      }
+    },
+    {
+      "match": "Antigua dan Barbuda vs Anguilla",
+      "league": "CONCACAF Nations League",
+      "pick": "Home Win",
+      "odds": 1.53,
+      "winProb": 83,
+      "expertReason": "Catatan Pakar Bola: Gap kualitas individu dan fisik sangat nyata. Antigua dan Barbuda memiliki keunggulan bola udara serta efisiensi serangan sayap yang sulit diredam Anguilla.",
+      "analytics": {
+        "homeForm": [
+          "L",
+          "W",
+          "L",
+          "D",
+          "W"
+        ],
+        "awayForm": [
+          "L",
+          "L",
+          "D",
+          "L",
+          "L"
+        ],
+        "h2hSummary": "Antigua dan Barbuda menyapu bersih kemenangan dalam sejarah H2H",
+        "avgGoals": "2.8 Gol/Laga"
+      }
+    },
+    {
+      "match": "Afrika Selatan vs Guinea",
+      "league": "Pertandingan Persahabatan Internasional",
+      "pick": "Home Win",
+      "odds": 1.68,
+      "winProb": 72,
+      "expertReason": "Catatan Pakar Bola: Bafana Bafana mempertahankan kontinuitas taktik pasca-turnamen besar dengan pertahanan solid, sementara Guinea tampil tanpa beberapa pilar utama lini tengah.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "D",
+          "W",
+          "D",
+          "W"
+        ],
+        "awayForm": [
+          "L",
+          "W",
+          "L",
+          "D",
+          "L"
+        ],
+        "h2hSummary": "Afrika Selatan tidak terkalahkan dalam 3 pertemuan terakhir",
+        "avgGoals": "2.0 Gol/Laga"
       }
     }
   ]

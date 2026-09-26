@@ -1,5 +1,100 @@
 [
   {
+    "date": "26/09/2026 06:02 WIB",
+    "matches": [
+      {
+        "match": "Pakistan vs Thailand",
+        "league": "International Friendly",
+        "pick": "Away Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Thailand memiliki superioritas teknik dan kedalaman skuad yang jauh di atas Pakistan, didukung efisiensi transisi menyerang yang sangat solid."
+      },
+      {
+        "match": "Vietnam vs Filipina",
+        "league": "ASEAN Championship",
+        "pick": "Home Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Vietnam tampil sangat disiplin di kandang dengan pressing ketat di lini tengah yang menyulitkan Filipina mengembangkan permainan."
+      },
+      {
+        "match": "Jepang U23 vs Korea Utara U23",
+        "league": "AFC U23",
+        "pick": "Home Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Disiplin taktikal tingkat tinggi dan xG (expected goals) yang superior menjadikan Jepang U23 sangat dominan dalam penguasaan bola."
+      },
+      {
+        "match": "Afrika Selatan vs Guinea",
+        "league": "AFCON Qualifiers",
+        "pick": "Home Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Keunggulan kandang dan performa lini pertahanan Afrika Selatan yang kokoh memberikan probabilitas tinggi untuk mengamankan 3 poin."
+      },
+      {
+        "match": "Kenya vs Eritrea",
+        "league": "CECAFA",
+        "pick": "Home Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Kenya menunjukkan ketajaman lini depan yang konsisten serta motivasi tinggi bermain di hadapan pendukung sendiri."
+      },
+      {
+        "match": "Atlanta Utd vs New York City",
+        "league": "MLS",
+        "pick": "Home Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Performa kandang Atlanta sangat impresif dengan tingkat konversi peluang yang tinggi dari sisi sayap penyerangan."
+      },
+      {
+        "match": "CF Montreal vs Cincinnati",
+        "league": "MLS",
+        "pick": "Home Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Montreal memiliki rekor kandang yang kuat dan keunggulan dalam duel udara serta efisiensi bola mati."
+      },
+      {
+        "match": "Philadelphia Union vs Orlando City",
+        "league": "MLS",
+        "pick": "Home Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Solidnya lini pertahanan Philadelphia dipadu dengan kecepatan serangan balik membuat mereka sangat difavoritkan."
+      },
+      {
+        "match": "Charleston vs Rhode Island",
+        "league": "USL Championship",
+        "pick": "Home Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Charleston menunjukkan dominasi total dalam penguasaan bola dan memiliki lini serang tertajam di kandang."
+      },
+      {
+        "match": "Antigua dan Barbuda vs Anguilla",
+        "league": "CONCACAF Qualifiers",
+        "pick": "Home Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Perbedaan kualitas kelas dunia antara kedua tim menjadikan Antigua pilihan mutlak untuk mendulang kemenangan telak."
+      }
+    ]
+  },
+  {
     "date": "26/09/2026 05:58 WIB",
     "matches": [
       {
