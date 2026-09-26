@@ -1,7 +1,0 @@
-[
-  { "date": "23 Sep", "league": "UEFA Champions League", "match": "Man City vs Inter Milan", "pick": "Over 2.5 Gol", "odds": 1.65, "score": "3 - 1", "status": "WIN" },
-  { "date": "23 Sep", "league": "UEFA Champions League", "match": "Real Madrid vs Stuttgart", "pick": "Real Madrid Menang", "odds": 1.55, "score": "3 - 1", "status": "WIN" },
-  { "date": "22 Sep", "league": "English Premier League", "match": "Man City vs Arsenal", "pick": "Over 2.5 Gol", "odds": 1.72, "score": "2 - 2", "status": "WIN" },
-  { "date": "22 Sep", "league": "Spanish La Liga", "match": "Villarreal vs Barcelona", "pick": "Over 2.5 Gol", "odds": 1.58, "score": "1 - 5", "status": "WIN" },
-  { "date": "21 Sep", "league": "French Ligue 1", "match": "Reims vs PSG", "pick": "PSG Menang", "odds": 1.50, "score": "1 - 1", "status": "LOST" }
-]
