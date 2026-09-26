@@ -2,6 +2,7 @@ name: Daily FIXSCORE Scraping & Multi-AI Pipeline
 
 on:
   schedule:
+    # Berjalan otomatis setiap hari pukul 02:50 UTC (09:50 WIB)
     - cron: '50 2 * * *'
   workflow_dispatch:
 
@@ -27,11 +28,15 @@ jobs:
         run: |
           playwright install chromium
 
-      - name: Step 1 - Scrape Web Parlay
+      - name: Step 1 - Arsipkan Rekomendasi Kemarin ke History (Auto-Result)
+        run: |
+          python src/update_history.py
+
+      - name: Step 2 - Scrape Web Parlay Hari Ini
         run: |
           python src/scrape_parlay.py
 
-      - name: Step 2 - Filter Algoritma & Generasi Multi-AI Engine
+      - name: Step 3 - Filter Algoritma & Generasi Multi-AI Engine (Pakar Bola)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -39,10 +44,10 @@ jobs:
         run: |
           python src/main.py
 
-      - name: Step 3 - Auto Commit & Push Changes
+      - name: Step 4 - Auto Commit & Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
-          git commit -m "chore: auto update daily parlay recommendations [skip ci]" || echo "Tidak ada perubahan data"
+          git commit -m "chore: auto update daily parlay & history rekap [skip ci]" || echo "Tidak ada perubahan data"
           git push
