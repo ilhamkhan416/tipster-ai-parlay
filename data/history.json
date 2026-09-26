@@ -1,5 +1,100 @@
 [
   {
+    "date": "26/09/2026 05:48 WIB",
+    "matches": [
+      {
+        "match": "Pakistan vs Thailand",
+        "league": "08:00",
+        "pick": "Home Win",
+        "odds": 1.62,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil."
+      },
+      {
+        "match": "Vietnam vs Filipina",
+        "league": "11:30",
+        "pick": "Over 2.5",
+        "odds": 1.62,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil."
+      },
+      {
+        "match": "RRC U23 vs Thailand U23",
+        "league": "06:00",
+        "pick": "Home Win",
+        "odds": 1.62,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil."
+      },
+      {
+        "match": "Jepang U23 vs Korea Utara U23",
+        "league": "10:30",
+        "pick": "Over 2.5",
+        "odds": 1.62,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil."
+      },
+      {
+        "match": "Italia U20 W vs Kolombia U20 W",
+        "league": "16:00",
+        "pick": "Home Win",
+        "odds": 1.62,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil."
+      },
+      {
+        "match": "PSGC Ciamis vs Semen Padang",
+        "league": "08:30",
+        "pick": "Over 2.5",
+        "odds": 1.62,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil."
+      },
+      {
+        "match": "Sumsel United vs PSPS Riau",
+        "league": "08:30",
+        "pick": "Home Win",
+        "odds": 1.62,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil."
+      },
+      {
+        "match": "Tornado Pekanbaru vs PS Barito Putera",
+        "league": "08:30",
+        "pick": "Over 2.5",
+        "odds": 1.62,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil."
+      },
+      {
+        "match": "Persikad Depok vs Persiraja Banda Aceh",
+        "league": "12:00",
+        "pick": "Home Win",
+        "odds": 1.62,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil."
+      },
+      {
+        "match": "Persipura Jayapura vs Persis Solo",
+        "league": "12:00",
+        "pick": "Over 2.5",
+        "odds": 1.62,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Memenuhi kriteria odds +EV (1.50 - 1.70) dan tren statistik stabil."
+      }
+    ]
+  },
+  {
     "date": "26/09/2026 05:40 WIB",
     "matches": []
   },
