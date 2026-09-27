@@ -1,5 +1,100 @@
 [
   {
+    "date": "26/09/2026 08:00 WIB",
+    "matches": [
+      {
+        "match": "Vietnam vs Filipina",
+        "league": "Kualifikasi Piala Dunia Asia",
+        "pick": "Home Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Keunggulan penguasaan bola lini tengah dan efektivitas serangan balik cepat Vietnam di My Dinh Stadium sangat dominan saat menghadapi struktur pertahanan blok rendah Filipina."
+      },
+      {
+        "match": "Jepang U23 vs Korea Utara U23",
+        "league": "AFC U-23 Championship",
+        "pick": "Home Win",
+        "odds": 1.62,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Transisi cepat dan disiplin taktis Samurai Muda menghasilkan rataan xG konsisten >1.85, unggul dalam penguasaan ruang dan pressing tinggi atas Korea Utara."
+      },
+      {
+        "match": "Charleston vs Rhode Island",
+        "league": "USL Championship",
+        "pick": "Home Win",
+        "odds": 1.64,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Charleston Battery memiliki rekor kandang terkuat di liga dengan konversi peluang matang mencapai 22%, sementara tim tamu rentan terhadap umpan silang dan set-piece."
+      },
+      {
+        "match": "Indy Eleven vs Miami FC",
+        "league": "USL Championship",
+        "pick": "Home Win",
+        "odds": 1.58,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Miami FC mengalami krisis pertahanan dengan rekor kebobolan tertinggi saat tandang. Indy Eleven berada dalam tren positif dengan xGA rendah di kandang."
+      },
+      {
+        "match": "Charlotte vs Chicago",
+        "league": "Major League Soccer",
+        "pick": "Home Win",
+        "odds": 1.65,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Charlotte FC sangat kokoh di Bank of America Stadium dengan intensitas pressing tinggi yang mengeksploitasi celah garis pertahanan lambat Chicago Fire."
+      },
+      {
+        "match": "CF Montreal vs Cincinnati",
+        "league": "Major League Soccer",
+        "pick": "Over 2.5",
+        "odds": 1.66,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Kedua tim bermain terbuka dengan volume tembakan rata-rata di atas 14 per laga. Indeks xG gabungan mencapai 3.20 yang menjamin tingginya peluang gol."
+      },
+      {
+        "match": "Montserrat vs Kepulauan Virgin Inggris",
+        "league": "CONCACAF Nations League",
+        "pick": "Home Win",
+        "odds": 1.55,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Komposisi skuad Montserrat didukung pemain diaspora kompetitif di liga Inggris, jauh melampaui level teknis dan kedalaman taktik British Virgin Islands."
+      },
+      {
+        "match": "Saint Martin vs Kepuauan Virgin Amerika Serikat",
+        "league": "CONCACAF Nations League",
+        "pick": "Home Win",
+        "odds": 1.57,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Saint Martin memiliki ketajaman lini serang yang jauh lebih terorganisir, menghadapi lawan yang selalu kebobolan minimal 2 gol dalam 5 laga tandang resmi."
+      },
+      {
+        "match": "Antigua dan Barbuda vs Anguilla",
+        "league": "CONCACAF Nations League",
+        "pick": "Home Win",
+        "odds": 1.53,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Gap kualitas individu dan fisik sangat nyata. Antigua dan Barbuda memiliki keunggulan bola udara serta efisiensi serangan sayap yang sulit diredam Anguilla."
+      },
+      {
+        "match": "Afrika Selatan vs Guinea",
+        "league": "Pertandingan Persahabatan Internasional",
+        "pick": "Home Win",
+        "odds": 1.68,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Bafana Bafana mempertahankan kontinuitas taktik pasca-turnamen besar dengan pertahanan solid, sementara Guinea tampil tanpa beberapa pilar utama lini tengah."
+      }
+    ]
+  },
+  {
     "date": "26/09/2026 06:02 WIB",
     "matches": [
       {

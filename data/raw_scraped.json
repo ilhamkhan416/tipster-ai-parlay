@@ -1,2679 +1,1691 @@
 [
   {
     "raw_info": [
-      "09:00",
-      "Pakistan",
-      "Thailand",
+      "07:00",
+      "Hong Kong",
+      "Laos",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "11:30",
-      "Vietnam",
-      "Filipina",
+      "10:00",
+      "Kamboja",
+      "Myanmar",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "RRC U23",
-      "Thailand U23",
-      "3",
-      "0"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "10:30",
-      "Jepang U23",
-      "Korea Utara U23",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "16:00",
-      "Italia U20 W",
-      "Kolombia U20 W",
+      "Spanyol U20 W",
+      "Korea Utara U20 W",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "08:30",
-      "PSGC Ciamis",
-      "Semen Padang",
+      "Persela Lamongan",
+      "PSBS Biak",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "08:30",
-      "Sumsel United",
-      "PSPS Riau",
+      "Persiku Kudus",
+      "PSIS Semarang",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "08:30",
-      "Tornado Pekanbaru",
-      "PS Barito Putera",
+      "RANS Nusantara",
+      "Deltras Sidoarjo",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "12:00",
-      "Persikad Depok",
-      "Persiraja Banda Aceh",
+      "Bekasi City",
+      "PSMS Medan",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "09:00",
+      "Zambia U20",
+      "Namibia U20",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "12:00",
-      "Persipura Jayapura",
-      "Persis Solo",
+      "Afrika Selatan U20",
+      "Mozambik U20",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "13:00",
-      "Afrika Selatan",
-      "Guinea",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "13:00",
-      "Kenya",
-      "Eritrea",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "23:30",
-      "Atlanta Utd",
-      "New York City",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "23:30",
-      "CF Montreal",
-      "Cincinnati",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "23:30",
-      "Charlotte",
-      "Chicago",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "23:30",
-      "New York",
-      "St. Louis City",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "23:30",
-      "Philadelphia Union",
-      "Orlando City",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "Selesai",
-      "El Paso",
-      "FC Tulsa",
-      "1",
-      "1"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "23:00",
-      "Charleston",
-      "Rhode Island",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "23:00",
-      "Detroit",
-      "Colorado Springs",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "23:00",
-      "Indy Eleven",
-      "Miami FC",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Jamaika",
-      "Guatemala",
+      "Austin FC",
+      "San Diego FC",
       "3",
-      "2"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Honduras",
-      "Suriname",
-      "2",
       "3"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "Selesai",
-      "El Salvador",
-      "Martinique",
-      "3",
-      "1"
+      "Dallas",
+      "Los Angeles FC",
+      "1",
+      "0"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "Selesai",
-      "Barbados",
-      "Saint Lucia",
+      "Houston",
+      "Kansas City",
+      "0",
+      "2"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "Selesai",
+      "Nashville SC",
+      "Toronto",
       "2",
       "0"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "Selesai",
-      "Bonaire",
-      "Saint Kitts dan Nevis",
-      "1",
-      "2"
+      "Seattle Sounders",
+      "Minnesota",
+      "3",
+      "1"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "21:00",
-      "Saint Vincent dan Grenadines",
-      "Guana Perancis",
+      "Selesai",
+      "Real Salt Lake",
+      "New England",
+      "3",
+      "0"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "Selesai",
+      "Los Angeles",
+      "Colorado",
+      "3",
+      "2"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "Selesai",
+      "San Jose",
+      "Portland Timbers",
+      "3",
+      "1"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "Selesai",
+      "Vancouver Whitecaps",
+      "DC United",
+      "3",
+      "3"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "23:00",
+      "Columbus",
+      "Inter Miami",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "Selesai",
+      "San Antonio",
+      "Tampa Bay",
+      "0",
+      "0"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "Selesai",
+      "New Mexico",
+      "Sacramento Republic",
+      "2",
+      "3"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "Selesai",
+      "Monterey Bay",
+      "Lexington",
+      "2",
+      "3"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "Selesai",
+      "Oakland Roots",
+      "Phoenix Rising",
+      "3",
+      "0"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "Selesai",
+      "OC Blues",
+      "Pittsburgh",
+      "1",
+      "0"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "23:00",
+      "Haiti",
+      "Kosta Rika",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "Selesai",
+      "Sint Maarten",
+      "Belize",
+      "0",
+      "1"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "19:00",
-      "Montserrat",
-      "Kepulauan Virgin Inggris",
+      "Guyana",
+      "Kepulauan Kayman",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "20:00",
-      "Saint Martin",
-      "Kepuauan Virgin Amerika Serikat",
+      "Racing Club",
+      "Boca Juniors",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "23:00",
-      "Antigua dan Barbuda",
-      "Anguilla",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "19:00",
-      "Estudiantes L.P.",
-      "Rosario Central",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "15:00",
-      "Kuwait",
-      "Iraq",
+      "Yaman",
+      "Qatar",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "18:00",
-      "Oman",
-      "Arab Saudi",
+      "Bahrain",
+      "Uni Emirat Arab",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:30",
-      "Heracles",
-      "Vitesse",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:00",
-      "Breda",
-      "Eindhoven FC",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:00",
-      "FC Emmen",
-      "Oss",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:00",
-      "FC Volendam",
-      "Venlo",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:00",
-      "Maastricht",
-      "Helmond",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:00",
-      "Roda",
-      "Waalwijk",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "12:30",
-      "GVVV",
-      "RKAV Volendam",
+      "Graafschap",
+      "Den Bosch",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "13:00",
-      "IJsselmeervogels",
-      "Rijnsburgse Boys",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "13:00",
-      "Jong Almere City",
-      "Barendrecht",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "13:00",
-      "Jong Sparta Rotterdam",
-      "Hoek",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "13:00",
-      "Kloetinge",
-      "Raalte",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "13:00",
-      "Kozakken Boys",
-      "HFC",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "13:00",
-      "Quick Boys",
-      "Hardenberg",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "13:15",
-      "AFC",
-      "Katwijk",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "16:00",
-      "De Treffers",
-      "Spakenburg",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "11:00",
-      "Niva Dolbizno",
-      "Volna Pinsk",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "11:30",
-      "Soligorsk",
-      "Minsk 2",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "12:00",
-      "SKA-1938",
-      "Orsa",
+      "Osipovici",
+      "BumProm Gomel",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "12:30",
-      "Slutsk",
-      "FC Gomel 2",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "13:00",
-      "Uni X Labs",
-      "Ostrovets",
+      "Din. Minsk 2",
+      "Molodecno",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "16:00",
-      "Diegem",
-      "Francs Borains",
+      "14:00",
+      "Knokke",
+      "Seraing",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "16:00",
-      "Londerzeel",
-      "Renaissance Mons",
+      "14:00",
+      "Merelbeke",
+      "Eupen",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "17:30",
-      "Oostkamp",
-      "Virton",
+      "14:00",
+      "RFC Liege",
+      "Wellen",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "18:00",
-      "Diksmuide Oostende",
-      "Lommel SK",
+      "14:00",
+      "Schaerbeek-Evere",
+      "Beerschot VA",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "18:00",
-      "Heist",
-      "Kortrijk",
+      "14:00",
+      "Union Rochefortoise",
+      "K. Lierse S.K.",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "18:00",
-      "Hoogstraten",
-      "Dender",
-      "-",
-      "-"
+      "Selesai",
+      "Universitario de Vinto",
+      "Oriente Petrolero",
+      "3",
+      "0"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:00",
-      "Mandel United",
-      "Hasselt",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:00",
-      "Nijlen",
-      "Boom",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:00",
-      "OC Charleroi",
-      "Habay La Neuve",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:00",
-      "SK Roeselare",
-      "Patro Eisden",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:00",
-      "Sporting Lokeren",
-      "Houtvenne",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "21:30",
-      "The Strongest",
-      "Guabira",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "19:30",
-      "Nautico",
-      "Sport Recife",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "19:30",
-      "Operario",
-      "Ceara",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "21:30",
-      "Goias",
-      "Atletico GO",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "19:00",
-      "Santiago City",
-      "Brujas Salamanca",
+      "GV San Jose",
+      "Independiente",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "21:15",
+      "Bolivar",
+      "Blooming",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "23:30",
+      "Tomayapo",
+      "Real Oruro",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "14:00",
+      "Criciuma",
+      "Avai",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "19:00",
+      "CRB",
+      "Cuiaba",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "21:30",
+      "Fortaleza",
+      "Athletic Club",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "20:00",
-      "Lota Schwager",
-      "Provincial Ovalle",
+      "Atletico Colina",
+      "Real San Joaquin",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "10:30",
+      "Selesai",
+      "Meksiko",
+      "Kolombia",
+      "1",
+      "1"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "04:00",
       "FRO",
-      "Cili U17",
-      "Italia U18",
+      "Kepulauan Cook",
+      "Tahiti",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "13:30",
-      "Italia U17",
-      "Turki U17",
-      "-",
-      "-"
+      "67",
+      "Vanuatu",
+      "Kaledonia Baru",
+      "1",
+      "1"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "14:00",
-      "Hungaria U19",
-      "Bulgaria U19",
+      "07:00",
+      "Fiji",
+      "Papua Nugini",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "14:00",
-      "Serbia U19",
-      "Romania U19",
+      "09:00",
+      "FRO",
+      "Kolombia U18",
+      "Korea Selatan U18",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "09:00",
+      "FRO",
+      "Polandia U17",
+      "Irlandia U17",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "Belarusia U19",
+      "Rusia U19",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "11:35",
+      "RRC",
+      "Selandia Baru",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "12:00",
+      "Moldova U19",
+      "Siprus U19",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "12:00",
+      "Seychelles",
+      "Sri Lanka",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "12:00",
+      "FRO",
+      "Ukraina U18",
+      "Austria U18",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "13:00",
+      "FRO",
+      "Mesir U18",
+      "Inggris U18",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "13:00",
+      "FRO",
+      "Republik Ceko U17",
+      "Georgia U17",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "13:00",
+      "Skotlandia U19",
+      "Republik Ceko U19",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "13:00",
+      "Swedia U19",
+      "Finlandia U19",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "16:00",
-      "Liechtenstein U19",
-      "Malta U19",
+      "Jerman U19",
+      "Ukraina U19",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "16:00",
+      "FRO",
+      "Perancis U18",
+      "Jepang U18",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "16:30",
+      "Malta",
+      "Liechtenstein",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "17:00",
+      "Jordan",
+      "Suriah",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "20:30",
-      "Amerika Serikat",
-      "Peru",
+      "Bolivia",
+      "Paraguay",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "23:00",
-      "Kanada",
-      "Cili",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "05:00",
+      "04:00",
       "FRO",
-      "WS Wanderers (Aus)",
-      "Central Coast Mariners (Aus)",
+      "Perth Glory (Aus)",
+      "Adelaide United (Aus)",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "08:00",
-      "Sepsi (Rou)",
-      "Gloria Bistrita (Rou)",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "08:00",
-      "Steaua Bucuresti (Rou)",
-      "Stefanesti (Rou)",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "09:00",
-      "Farul Constanta (Rou)",
-      "Popesti Leordeni (Rou)",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "10:00",
-      "Cherno More (Bul)",
-      "Dunav Ruse (Bul)",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "10:00",
-      "Monza (Ita)",
-      "Cremonese (Ita)",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "11:00",
-      "FK Panevezys (Ltu)",
-      "BFA Vilnius (Ltu)",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "12:00",
-      "Widzew Lodz (Pol)",
-      "Leczna (Pol)",
+      "CSKA Moskow (Rus)",
+      "Pari NN (Rus)",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "12:00",
-      "Zaglebie Sosnowiec (Pol)",
-      "Legia (Pol)",
+      "Shanghai Shenhua (Chn)",
+      "Zenit (Rus)",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "12:30",
-      "Dalin Myslenice (Pol)",
-      "Wisla (Pol)",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "13:00",
-      "Borac Banja Luka (Bih)",
-      "Radnik Bijeljina (Bih)",
+      "Lazio (Ita)",
+      "Arezzo (Ita)",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "13:00",
-      "Lokomotiv Moskow (Rus)",
-      "Arsenal Tula (Rus)",
+      "Ludogorets (Bul)",
+      "Ramnicu Valcea (Rou)",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Aris (Cyp)",
-      "Omonia 29th May (Cyp)",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Bohemians (Irl)",
-      "Bohemians (Cze)",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Dinamo City (Alb)",
-      "Otrant (Mne)",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Kamjani (Mkd)",
-      "Shkendija (Mkd)",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Vora (Alb)",
-      "Korabi Peshkopi (Alb)",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "15:30",
-      "Pogon Szczecin (Pol)",
-      "Udinese (Ita)",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "16:00",
-      "Zrinjski (Bih)",
-      "Vojvodina (Srb)",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "17:15",
-      "Rijeka (Cro)",
-      "Union Berlin (Ger)",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "21:00",
-      "Atl. Nacional (Col)",
-      "Chapecoense-SC (Bra)",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Kaledonia Baru W",
-      "Kepulauan Solomon W",
-      "0",
-      "1"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "Waktu Paruh",
-      "Papua Nugini W",
-      "Vanuatu W",
-      "0",
-      "0"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "13:00",
-      "Botswana W",
-      "Namibia W",
+      "Partizan (Srb)",
+      "Rodina Moscow (Rus)",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "18:45",
-      "Inggris",
-      "Spanyol",
+      "14:00",
+      "AEK Larnaca (Cyp)",
+      "Nea Salamis (Cyp)",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:45",
-      "Republik Ceko",
-      "Kroasia",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "13:00",
-      "Slovenia",
-      "Skotlandia",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:45",
-      "Masedonia Utara",
-      "Swiss",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "16:00",
-      "Bulgaria",
-      "Luxembourg",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "16:00",
-      "Islandia",
-      "Estonia",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "16:00",
-      "Kepulauan Faroe",
-      "Kazakhstan",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "16:00",
-      "San Marino",
-      "Finlandia",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:45",
-      "Albania",
-      "Belarusia",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:45",
-      "Slovakia",
-      "Moldova",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "15:00",
-      "Georgia U21",
-      "Yunani U21",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "15:00",
-      "Kroasia U21",
-      "Hungaria U21",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "16:00",
-      "Latvia U21",
-      "Jerman U21",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "16:00",
-      "Ukraina U21",
-      "Turki U21",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "17:00",
-      "Malta U21",
-      "Irlandia Utara U21",
+      "Drita (Kos)",
+      "Bashkimi (Mkd)",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "12:00",
-      "Islandia U17",
-      "Bosnia & Herzegovina U17",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "12:00",
-      "Yunani U17",
-      "Gibraltar U17",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "16:00",
-      "Portugal U20",
-      "Polandia U20",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "16:00",
-      "Republik Ceko U20",
-      "Swiss U20",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Minsk FK W",
-      "Fenerbahce W",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "12:00",
-      "Ekenas",
-      "SJK Akatemia",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "13:00",
-      "Jippo",
-      "PK-35",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "16:00",
-      "Klubi 04",
-      "JaPS",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "21:00",
-      "Guastatoya",
-      "Deportivo San Pedro",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "1",
-      "Eastern AA",
-      "Kitchee",
-      "0",
-      "0"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "09:00",
-      "Sreenidi Deccan",
-      "North East United",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "Ditunda",
-      "Bradford City",
-      "Barnsley",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Cambridge Utd",
-      "Wimbledon",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "Ditunda",
-      "Mansfield",
-      "Leyton Orient",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "Ditunda",
-      "Milton Keynes Dons",
-      "Bromley",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "Ditunda",
-      "Notts County",
-      "Blackpool",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Plymouth",
-      "Burton",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Stockport",
-      "Peterborough",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Wycombe",
-      "Reading",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "Ditunda",
-      "Crawley",
-      "Barnet",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Bristol Rovers",
-      "Exeter",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Cheltenham",
-      "Chesterfield",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Fleetwood",
-      "Rochdale",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Newport",
-      "Grimsby",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "Ditunda",
-      "Port Vale",
-      "Northampton",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Rotherham",
-      "Crewe",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Shrewsbury",
-      "Colchester",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Swindon",
-      "Accrington",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Tranmere",
-      "Walsall",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "York",
-      "Gillingham FC",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "16:30",
-      "Oldham",
-      "Salford",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Ballymena",
-      "Portadown",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Crusaders",
-      "Bangor FC",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Glentoran",
-      "C. Rangers",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Limavady",
-      "Cliftonville",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "FRO",
-      "Annagh",
-      "Institute",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "FRO",
-      "Ards",
-      "Strabane Athletic",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "FRO",
-      "Armagh",
-      "Dundela",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "FRO",
-      "Newington",
-      "Ballinamallard",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "FRO",
-      "Queens Univ.",
-      "Moyola",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "12:30",
-      "Giana Erminio",
-      "Pro Vercelli",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "12:30",
-      "Lumezzane",
-      "Folgore Caratese",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "12:30",
-      "Pergolettese",
-      "Trento",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "15:30",
-      "Desenzano",
-      "Juventus U23",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "15:30",
-      "Novara",
-      "Ospitaletto",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:30",
-      "Cittadella",
-      "Lecco",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "12:30",
-      "Pineto",
-      "Grosseto",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "12:30",
-      "Torres",
-      "Vado",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "15:30",
-      "Livorno",
-      "Pianese",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:30",
-      "Sambenedettese",
-      "Campobasso",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "12:30",
-      "Crotone",
-      "Salernitana",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "15:30",
-      "Bari",
-      "Cosenza",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "15:30",
-      "Picerno",
-      "Audace Cerignola",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:30",
-      "Cavese",
-      "Savoia",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "08:00",
-      "Blaublitz",
-      "Albirex Niigata",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "08:00",
-      "Imabari",
-      "Shonan",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "08:00",
-      "Iwaki",
-      "Vegalta Sendai",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "08:00",
-      "Iwata",
-      "Vanraure",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "08:00",
-      "Montedio Yamagata",
-      "Sagan Tosu",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "08:00",
-      "Oita",
-      "Fujieda MYFC",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "08:00",
-      "Omiya Ardija",
-      "Kofu",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "08:00",
-      "Tegevajaro Miyazaki",
-      "Sapporo",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "08:00",
-      "Tokushima",
-      "Tochigi City",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "08:00",
-      "Toyama",
-      "Yokohama",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Kanazawa",
-      "Gainare Tottori",
-      "4",
-      "1"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Renofa Yamaguchi",
-      "Sagamihara",
-      "2",
-      "2"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Nara Club",
-      "Reilac Shiga",
-      "4",
-      "1"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "08:00",
-      "Fukushima Utd",
-      "Nagano",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "08:00",
-      "Giravanz Kitakyushu",
-      "Kagoshima Utd",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "08:00",
-      "Kamatamare",
-      "Gifu",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "08:00",
-      "Kochi United",
-      "Osaka",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "08:00",
-      "Kusatsu",
-      "Kumamoto",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "08:00",
-      "Ryukyu",
-      "Ehime",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "08:00",
-      "Tochigi",
-      "Yamaga",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Cavalry",
-      "Supra du Quebec",
-      "6",
-      "0"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "20:00",
-      "HFX Wanderers",
-      "Atl. Ottawa",
+      "Uberlandia (Bra)",
+      "Mirassol (Bra)",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "23:00",
-      "Vancouver FC",
-      "Forge",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:00",
-      "AFC Toronto W",
-      "Ottawa Rapid W",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Once Caldas",
-      "Bucaramanga",
-      "1",
-      "3"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "21:00",
-      "Pereira",
-      "Inter Bogotá",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "23:15",
-      "Cucuta",
-      "Llaneros",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "11:00",
-      "Auda W",
-      "Metta W",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "11:00",
-      "Iecava/Olaine W",
-      "Riga FC W",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "16:00",
-      "Union Touarga",
-      "FUS Rabat",
+      "Denmark",
+      "Wales",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "18:00",
-      "Difaa El Jadidi",
-      "COD Meknes",
+      "16:00",
+      "Serbia",
+      "Belanda",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "20:00",
-      "Wydad AC",
-      "Widad Temara",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Atlante",
-      "Monterrey",
-      "4",
-      "2"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Club Tijuana",
-      "Atlas",
-      "2",
-      "3"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "22:50",
-      "Cruz Azul",
-      "Toluca",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "23:07",
-      "Guadalajara Chivas",
-      "Queretaro",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Correcaminos",
-      "Jaiba Brava",
-      "1",
-      "0"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:00",
-      "Cruz Azul Hidalgo",
-      "Leones Negros",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "22:00",
-      "Tlaxcala",
-      "Cancun",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "23:00",
-      "Venados",
-      "Atl. Morelia",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "15:00",
-      "Sporting Lagos",
-      "Barau",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "19:30",
-      "Rubio Nu",
-      "2 de Mayo",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "22:00",
-      "Sportivo Trinidense",
-      "Cerro Porteno",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "18:45",
-      "Bourg en Bresse",
-      "Concarneau",
+      "Jerman",
+      "Yunani",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "18:45",
-      "Fleury-Merogis",
-      "Aubagne",
+      "Norwegia",
+      "Portugal",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "16:00",
+      "Austria",
+      "Kosovo",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "18:45",
-      "Orleans",
-      "Cannes",
+      "Israel",
+      "Irlandia",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:45",
-      "Paris 13 Atl.",
-      "Bastia",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:45",
-      "Quevilly Rouen",
-      "Amiens",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:45",
-      "Thionville",
-      "La Roche",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:45",
-      "Valenciennes",
-      "Le Puy-en-Velay",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:45",
-      "Villefranche",
-      "Versailles",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "11:30",
-      "Nantong Zhiyun",
-      "Changchun Yatai",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "09:00",
-      "Chelyabinsk",
-      "Yenisey",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "11:30",
-      "S. Kostroma",
-      "Ural",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "13:00",
-      "Ulyanovsk",
-      "Leningradets",
+      "Lithuania",
+      "Azerbaijan",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "14:00",
-      "Airdrieonians",
-      "Berwick",
+      "16:00",
+      "Gibraltar",
+      "Andorra",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "14:00",
-      "Alloa",
-      "Gala Fairydean",
+      "07:00",
+      "Kaya",
+      "Philippine Army",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "14:00",
-      "Annan",
-      "Hibernian B",
+      "09:45",
+      "Manila Digger",
+      "Azkals",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "14:00",
-      "Bonnyrigg Rose",
-      "Motherwell B",
+      "12:30",
+      "Stallion",
+      "Maharlika",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "14:00",
-      "Clachnacuddin",
-      "Celtic B",
-      "-",
-      "-"
+      "Selesai",
+      "Marquense",
+      "Malacateco",
+      "1",
+      "0"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "14:00",
-      "Cove Rangers",
-      "Aberdeen B",
-      "-",
-      "-"
+      "Selesai",
+      "Xelaju",
+      "2",
+      "Comunicaciones",
+      "2",
+      "3"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Cowdenbeath",
-      "Clyde",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Cumbernauld Colts",
-      "St. Mirren B",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Dumbarton",
-      "Banks O' Dee",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "East Fife",
-      "Clydebank FC",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Forfar Athletic",
-      "Dundee Utd B",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Formartine Utd",
-      "Edinburgh City",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Fraserburgh",
-      "Stirling",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Hamilton",
-      "Kilmarnock B",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Kelty Hearts",
-      "Montrose",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Peterhead",
-      "Elgin City",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Ross County",
-      "Hearts B",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Stranraer",
-      "East Kilbride",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "19:00",
-      "Queen of South",
-      "Rangers B",
+      "Coban Imperial",
+      "Aurora F.C.",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "21:00",
+      "Deportivo Mixco",
+      "Antigua",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "08:00",
+      "Southern District U22",
+      "North District U22",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "09:00",
+      "Calcutta Customs",
+      "Punjab",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "12:30",
+      "Brescia",
+      "Dolomiti Bellunesi",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "15:30",
+      "Carpi",
+      "Arzignano",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "15:30",
+      "Renate",
+      "Treviso",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "18:30",
+      "AlbinoLeffe",
+      "Alcione Milano",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "12:30",
+      "Ostiamare",
+      "Forli",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "12:30",
+      "Ravenna",
+      "Gubbio",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "15:30",
+      "Perugia",
+      "Reggiana",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "15:30",
+      "Vis Pesaro",
+      "Guidonia",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "18:30",
+      "Pescara",
+      "Spezia",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "10:30",
+      "Barletta",
+      "Potenza",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "10:30",
+      "Casertana",
+      "Catania",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "15:30",
+      "Scafatese",
+      "Altamura",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "18:30",
+      "Casarano",
+      "Monopoli",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "18:30",
+      "Foggia",
+      "Sorrento",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "20:30",
+      "Cavalier",
+      "Arnett Gardens",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "20:30",
+      "Dunbeholden",
+      "Mount Pleasant",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "20:30",
+      "Molynes",
+      "Tru-Juice",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "20:30",
+      "Portmore",
+      "Humble Lions",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "20:30",
+      "Tivoli",
+      "Chapelton",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "22:05",
+      "Racing United",
+      "Montego Bay",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "18:00",
+      "Inter Toronto",
+      "Pacific FC",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "16:00",
+      "Halifax Tides W",
+      "Montreal Roses W",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "20:00",
+      "Calgary Wild W",
+      "Vancouver Rise W",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "Selesai",
+      "Junior",
+      "Ind. Medellin",
+      "2",
+      "0"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "21:00",
+      "Jaguares de Cordoba",
+      "Alianza",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "23:05",
+      "Fortaleza",
+      "Deportes Tolima",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "Gangwon",
+      "Incheon",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "11:00",
+      "RFS W",
+      "Rezekne W",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "16:00",
+      "Moghreb Tetouan",
+      "Berkane",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "18:00",
+      "Maghreb Fez",
+      "Renaissance Zemamra",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "20:00",
+      "Kawkab Marrakech",
+      "Hassania Agadir",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "Selesai",
+      "Santos Laguna",
+      "Pachuca",
+      "1",
+      "0"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "Selesai",
+      "U.A.N.L.- Tigres",
+      "Puebla",
+      "1",
+      "0"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "18:00",
+      "U.N.A.M.- Pumas",
+      "San Luis",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "Selesai",
+      "Dorados de Sinaloa",
+      "Alacranes de Durango",
+      "0",
+      "1"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "15:00",
+      "Abia Warriors",
+      "Bendel",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "15:00",
+      "Ikorodu City",
+      "Rangers Int'l",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "15:00",
+      "Kano",
+      "Enyimba",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "15:00",
+      "Katsina Utd",
+      "Doma United",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "15:00",
+      "Kun Khalifa",
+      "Kwara",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "15:00",
+      "Nasarawa",
+      "Niger Tornadoes",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "15:00",
+      "Plateau",
+      "Inter Lagos",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "15:00",
+      "Warri Wolves",
+      "Shooting",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "18:00",
+      "Sport Boys",
+      "Alianza Atl.",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "20:15",
+      "AD Tarma",
+      "Sporting Cristal",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "14:00",
+      "Camacha",
+      "Florgrade",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "11:00",
+      "Shaanxi Union",
+      "Dalian K'un City",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "09:30",
+      "Ufa",
+      "Torpedo Moscow",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "14:00",
+      "Shinnik Yaroslavl",
+      "SKA Khabarovsk",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "12:00",
-      "Ceuta",
-      "Real Sociedad B",
+      "Valladolid",
+      "Cordoba",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "14:15",
-      "Granada CF",
-      "FC Andorra",
+      "Mallorca",
+      "Almeria",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "16:30",
-      "Celta Vigo B",
-      "Sabadell",
+      "Burgos CF",
+      "Eldense",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "16:30",
-      "Tenerife",
-      "Cadiz",
+      "Eibar",
+      "Las Palmas",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "16:00",
-      "Anaitasuna FT",
-      "Tedeon",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "16:00",
-      "Atletico Calatayud",
-      "CD Baztan",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "16:00",
-      "Lebrijana",
-      "Ceuta 6 de Junio",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "17:00",
-      "Ribadesella CF",
-      "Noja",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:00",
-      "Pinatar",
-      "Atletico Melilla",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "14:00",
-      "Progreso",
-      "Racing Montevideo",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "18:00",
-      "Cerro Largo",
-      "Nacional",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "21:30",
-      "Penarol",
-      "Boston River",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
-  },
-  {
-    "raw_info": [
-      "16:00",
-      "Uruguay Montevideo",
-      "Rentistas",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
       "19:00",
-      "River Plate",
-      "Colon",
+      "Oviedo",
+      "Gijon",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "22:00",
-      "Oriental",
-      "Fenix",
+      "10:00",
+      "Auriense",
+      "San Jose",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "13:30",
-      "Barry",
-      "Connahs Q.",
+      "10:00",
+      "Hortaleza",
+      "Union Guimar",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "13:30",
-      "Cambrian United",
-      "Llandudno",
+      "14:00",
+      "El Espinar Sant Rafel",
+      "Prat",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "13:30",
-      "Cardiff Metropolitan",
-      "Caernarfon",
+      "15:30",
+      "Talayuela",
+      "Alcazar",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "13:30",
-      "Colwyn Bay",
-      "Haverfordwest",
+      "16:00",
+      "Maracena",
+      "Tavernes",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "13:30",
-      "Flint",
-      "Ammanford",
-      "-",
-      "-"
+      "Selesai",
+      "Montevideo City",
+      "Maldonado",
+      "0",
+      "2"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "13:30",
-      "Holywell",
-      "Briton Ferry",
+      "14:00",
+      "Central Esp.",
+      "Liverpool M.",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "13:30",
-      "Penybont",
-      "Airbus",
+      "18:00",
+      "Juventud",
+      "CA Cerro",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
   },
   {
     "raw_info": [
-      "13:30",
-      "Trefelin",
-      "TNS",
+      "21:00",
+      "Defensor Sp.",
+      "Danubio",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-26 08:00:44"
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "16:00",
+      "Atenas",
+      "Plaza Colonia",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "19:00",
+      "Cerrito",
+      "La Luz",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "23:00",
+      "Huracan FC",
+      "Miramar",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "13:00",
+      "Barry W",
+      "Cardiff City W",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "13:00",
+      "Briton Ferry W",
+      "Wrexham W",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "13:00",
+      "Cardiff Met. W",
+      "Aberystwyth W",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "13:00",
+      "TNS W",
+      "Swansea W",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "13:00",
+      "AEL Larissa",
+      "PAOK B",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "13:00",
+      "Kalamaria",
+      "Karditsa",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "13:00",
+      "Niki Volos",
+      "Chrisoupolis",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "13:00",
+      "Panionios",
+      "Zakynthos",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "14:00",
+      "Ellas Syrou",
+      "Pyrgos",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
+  },
+  {
+    "raw_info": [
+      "15:15",
+      "Panserraikos",
+      "Olympiakos Piraeus B",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-27 05:27:14"
   }
 ]
