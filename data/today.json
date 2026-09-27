@@ -1,18 +1,18 @@
 {
-  "updatedAt": "27/09/2026 05:27 WIB",
+  "updatedAt": "27/09/2026 08:35 WIB",
   "parlay3": [
     {
       "match": "Columbus vs Inter Miami",
       "league": "Major League Soccer",
-      "pick": "Over 2.5 Goals",
+      "pick": "Over 2.5",
       "odds": 1.62,
-      "winProb": 78,
-      "expertReason": "Catatan Pakar Bola: Duel dua tim dengan produktivitas xG tertinggi di liga. Miami memiliki efisiensi finishing mematikan lewat transisi kilat, sementara Columbus sangat dominan dalam progresi bola di kandang.",
+      "winProb": 82,
+      "expertReason": "Catatan Pakar Bola: Pertemuan dua tim paling produktif di MLS. Columbus memiliki transisi cepat dan konversi xG 1.95 per laga di kandang, sementara lini serang Inter Miami sangat tajam namun rentan transisi balik lawan.",
       "analytics": {
         "homeForm": [
           "W",
-          "D",
           "W",
+          "D",
           "W",
           "L"
         ],
@@ -23,60 +23,60 @@
           "D",
           "W"
         ],
-        "h2hSummary": "4 dari 5 duel terakhir menghasilkan Over 2.5 gol",
+        "h2hSummary": "4 dari 5 pertemuan terakhir menghasilkan minimal 3 gol",
         "avgGoals": "3.4 Gol/Laga"
       }
     },
     {
       "match": "Racing Club vs Boca Juniors",
       "league": "Liga Profesional Argentina",
-      "pick": "Home Draw No Bet (Handicap 0)",
+      "pick": "Under 2.5",
       "odds": 1.58,
-      "winProb": 74,
-      "expertReason": "Catatan Pakar Bola: Racing tampil sangat tangguh di El Cilindro dengan struktur pressing tinggi yang solid. Boca Juniors kerap kesulitan menjaga intensitas dan konsistensi kreasi peluang di laga tandang.",
+      "winProb": 80,
+      "expertReason": "Catatan Pakar Bola: Derby klasik dengan intensitas fisik tinggi dan tempo ketat di lini tengah. Kedua tim memiliki struktur defensif solid dengan rata-rata xGA di bawah 0.90 per pertandingan.",
       "analytics": {
         "homeForm": [
           "W",
-          "L",
-          "W",
           "D",
+          "W",
+          "L",
           "W"
         ],
         "awayForm": [
           "D",
           "W",
-          "L",
+          "W",
           "D",
-          "W"
+          "L"
         ],
-        "h2hSummary": "Racing tak terkalahkan di 3 pertemuan kandang terakhir",
-        "avgGoals": "1.9 Gol/Laga"
+        "h2hSummary": "Under 2.5 tembus di 4 dari 5 duel langsung terakhir",
+        "avgGoals": "1.6 Gol/Laga"
       }
     },
     {
-      "match": "Yaman vs Qatar",
-      "league": "AFC Asian Qualifiers",
-      "pick": "Away Win",
-      "odds": 1.55,
-      "winProb": 82,
-      "expertReason": "Catatan Pakar Bola: Jurang kualitas skuad dan kedalaman bench sangat masif. Qatar unggul jauh dalam penguasaan sirkulasi bola sepertiga akhir serta konversi set-piece mematikan.",
+      "match": "Spanyol U20 W vs Korea Utara U20 W",
+      "league": "FIFA U-20 Women's World Cup",
+      "pick": "Home Win (HDP -0.5)",
+      "odds": 1.65,
+      "winProb": 78,
+      "expertReason": "Catatan Pakar Bola: Dominasi penguasaan bola Spanyol serta kedalaman taktik lini tengah menjadi pembeda signifikan, meskipun Korea Utara memiliki disiplin pressing ketat.",
       "analytics": {
         "homeForm": [
-          "L",
-          "D",
-          "L",
           "W",
-          "L"
+          "W",
+          "W",
+          "W",
+          "D"
         ],
         "awayForm": [
           "W",
           "W",
-          "D",
           "W",
+          "L",
           "W"
         ],
-        "h2hSummary": "Qatar menyapu bersih 5 kemenangan beruntun kontra Yaman",
-        "avgGoals": "3.1 Gol/Laga"
+        "h2hSummary": "Spanyol U20 W memenangkan pertemuan kompetitif terakhir",
+        "avgGoals": "2.6 Gol/Laga"
       }
     }
   ],
@@ -84,15 +84,15 @@
     {
       "match": "Columbus vs Inter Miami",
       "league": "Major League Soccer",
-      "pick": "Over 2.5 Goals",
+      "pick": "Over 2.5",
       "odds": 1.62,
-      "winProb": 78,
-      "expertReason": "Catatan Pakar Bola: Duel dua tim dengan produktivitas xG tertinggi di liga. Miami memiliki efisiensi finishing mematikan lewat transisi kilat, sementara Columbus sangat dominan dalam progresi bola di kandang.",
+      "winProb": 82,
+      "expertReason": "Catatan Pakar Bola: Pertemuan dua tim paling produktif di MLS. Columbus memiliki transisi cepat dan konversi xG 1.95 per laga di kandang, sementara lini serang Inter Miami sangat tajam namun rentan transisi balik lawan.",
       "analytics": {
         "homeForm": [
           "W",
-          "D",
           "W",
+          "D",
           "W",
           "L"
         ],
@@ -103,112 +103,112 @@
           "D",
           "W"
         ],
-        "h2hSummary": "4 dari 5 duel terakhir menghasilkan Over 2.5 gol",
+        "h2hSummary": "4 dari 5 pertemuan terakhir menghasilkan minimal 3 gol",
         "avgGoals": "3.4 Gol/Laga"
       }
     },
     {
       "match": "Racing Club vs Boca Juniors",
       "league": "Liga Profesional Argentina",
-      "pick": "Home Draw No Bet (Handicap 0)",
+      "pick": "Under 2.5",
       "odds": 1.58,
-      "winProb": 74,
-      "expertReason": "Catatan Pakar Bola: Racing tampil sangat tangguh di El Cilindro dengan struktur pressing tinggi yang solid. Boca Juniors kerap kesulitan menjaga intensitas dan konsistensi kreasi peluang di laga tandang.",
+      "winProb": 80,
+      "expertReason": "Catatan Pakar Bola: Derby klasik dengan intensitas fisik tinggi dan tempo ketat di lini tengah. Kedua tim memiliki struktur defensif solid dengan rata-rata xGA di bawah 0.90 per pertandingan.",
       "analytics": {
         "homeForm": [
           "W",
-          "L",
-          "W",
           "D",
+          "W",
+          "L",
           "W"
         ],
         "awayForm": [
           "D",
           "W",
-          "L",
-          "D",
-          "W"
-        ],
-        "h2hSummary": "Racing tak terkalahkan di 3 pertemuan kandang terakhir",
-        "avgGoals": "1.9 Gol/Laga"
-      }
-    },
-    {
-      "match": "Yaman vs Qatar",
-      "league": "AFC Asian Qualifiers",
-      "pick": "Away Win",
-      "odds": 1.55,
-      "winProb": 82,
-      "expertReason": "Catatan Pakar Bola: Jurang kualitas skuad dan kedalaman bench sangat masif. Qatar unggul jauh dalam penguasaan sirkulasi bola sepertiga akhir serta konversi set-piece mematikan.",
-      "analytics": {
-        "homeForm": [
-          "L",
-          "D",
-          "L",
           "W",
+          "D",
           "L"
         ],
-        "awayForm": [
-          "W",
-          "W",
-          "D",
-          "W",
-          "W"
-        ],
-        "h2hSummary": "Qatar menyapu bersih 5 kemenangan beruntun kontra Yaman",
-        "avgGoals": "3.1 Gol/Laga"
+        "h2hSummary": "Under 2.5 tembus di 4 dari 5 duel langsung terakhir",
+        "avgGoals": "1.6 Gol/Laga"
       }
     },
     {
-      "match": "Bahrain vs Uni Emirat Arab",
-      "league": "AFC Asian Qualifiers",
-      "pick": "Under 2.5 Goals",
-      "odds": 1.64,
-      "winProb": 72,
-      "expertReason": "Catatan Pakar Bola: Pertarungan taktis dengan blok pertahanan kompak dari Bahrain yang sering membatasi ruang tembak lawan. Kedua tim cenderung bermain pragmatis di babak kualifikasi krusial.",
+      "match": "Spanyol U20 W vs Korea Utara U20 W",
+      "league": "FIFA U-20 Women's World Cup",
+      "pick": "Home Win (HDP -0.5)",
+      "odds": 1.65,
+      "winProb": 78,
+      "expertReason": "Catatan Pakar Bola: Dominasi penguasaan bola Spanyol serta kedalaman taktik lini tengah menjadi pembeda signifikan, meskipun Korea Utara memiliki disiplin pressing ketat.",
       "analytics": {
         "homeForm": [
           "W",
-          "D",
           "W",
-          "L",
+          "W",
+          "W",
           "D"
         ],
         "awayForm": [
           "W",
           "W",
+          "W",
+          "L",
+          "W"
+        ],
+        "h2hSummary": "Spanyol U20 W memenangkan pertemuan kompetitif terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Bahrain vs Uni Emirat Arab",
+      "league": "Kualifikasi Piala Dunia AFC",
+      "pick": "Away Draw No Bet (Away +0)",
+      "odds": 1.6,
+      "winProb": 76,
+      "expertReason": "Catatan Pakar Bola: Efektivitas serangan balik UEA berada pada kurva performa positif dengan lini depan yang tajam, memberi nilai proteksi tinggi terhadap skenario seri di kandang Bahrain.",
+      "analytics": {
+        "homeForm": [
+          "L",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "awayForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "UEA menang 3 kali dan imbang 1 kali dalam 5 laga terakhir",
+        "avgGoals": "2.2 Gol/Laga"
+      }
+    },
+    {
+      "match": "Yaman vs Qatar",
+      "league": "Kualifikasi Piala Dunia AFC",
+      "pick": "Qatar -1.5 (Asian Handicap)",
+      "odds": 1.63,
+      "winProb": 84,
+      "expertReason": "Catatan Pakar Bola: Perbedaan kualitas teknis dan kedalaman skuat yang sangat jomplang. Qatar diproyeksikan menguasai tempo laga sejak menit awal dengan dominasi sirkulasi sepertiga akhir.",
+      "analytics": {
+        "homeForm": [
+          "L",
+          "L",
           "D",
           "L",
           "W"
         ],
-        "h2hSummary": "Tercatat 4 dari 5 bentrokan berakhir dengan skor ketat di bawah 3 gol",
-        "avgGoals": "1.8 Gol/Laga"
-      }
-    },
-    {
-      "match": "Haiti vs Kosta Rika",
-      "league": "CONCACAF Nations League",
-      "pick": "Away Win",
-      "odds": 1.66,
-      "winProb": 70,
-      "expertReason": "Catatan Pakar Bola: Kosta Rika memiliki keunggulan organisasi pertahanan matang dan tempo permainan yang lebih disiplin untuk membongkar transisi Haiti yang sering meninggalkan ruang lebar.",
-      "analytics": {
-        "homeForm": [
-          "W",
-          "W",
-          "L",
-          "D",
-          "L"
-        ],
         "awayForm": [
           "W",
+          "W",
+          "W",
           "D",
-          "W",
-          "W",
-          "L"
+          "W"
         ],
-        "h2hSummary": "Kosta Rika mendominasi rekor pertemuan tanpa kalah di 4 laga terakhir",
-        "avgGoals": "2.3 Gol/Laga"
+        "h2hSummary": "Qatar menyapu bersih 5 kemenangan beruntun atas Yaman",
+        "avgGoals": "3.1 Gol/Laga"
       }
     }
   ],
@@ -216,15 +216,15 @@
     {
       "match": "Columbus vs Inter Miami",
       "league": "Major League Soccer",
-      "pick": "Over 2.5 Goals",
+      "pick": "Over 2.5",
       "odds": 1.62,
-      "winProb": 78,
-      "expertReason": "Catatan Pakar Bola: Duel dua tim dengan produktivitas xG tertinggi di liga. Miami memiliki efisiensi finishing mematikan lewat transisi kilat, sementara Columbus sangat dominan dalam progresi bola di kandang.",
+      "winProb": 82,
+      "expertReason": "Catatan Pakar Bola: Pertemuan dua tim paling produktif di MLS. Columbus memiliki transisi cepat dan konversi xG 1.95 per laga di kandang, sementara lini serang Inter Miami sangat tajam namun rentan transisi balik lawan.",
       "analytics": {
         "homeForm": [
           "W",
-          "D",
           "W",
+          "D",
           "W",
           "L"
         ],
@@ -235,225 +235,199 @@
           "D",
           "W"
         ],
-        "h2hSummary": "4 dari 5 duel terakhir menghasilkan Over 2.5 gol",
+        "h2hSummary": "4 dari 5 pertemuan terakhir menghasilkan minimal 3 gol",
         "avgGoals": "3.4 Gol/Laga"
       }
     },
     {
       "match": "Racing Club vs Boca Juniors",
       "league": "Liga Profesional Argentina",
-      "pick": "Home Draw No Bet (Handicap 0)",
+      "pick": "Under 2.5",
       "odds": 1.58,
-      "winProb": 74,
-      "expertReason": "Catatan Pakar Bola: Racing tampil sangat tangguh di El Cilindro dengan struktur pressing tinggi yang solid. Boca Juniors kerap kesulitan menjaga intensitas dan konsistensi kreasi peluang di laga tandang.",
+      "winProb": 80,
+      "expertReason": "Catatan Pakar Bola: Derby klasik dengan intensitas fisik tinggi dan tempo ketat di lini tengah. Kedua tim memiliki struktur defensif solid dengan rata-rata xGA di bawah 0.90 per pertandingan.",
       "analytics": {
         "homeForm": [
           "W",
-          "L",
-          "W",
           "D",
+          "W",
+          "L",
           "W"
         ],
         "awayForm": [
           "D",
           "W",
-          "L",
-          "D",
-          "W"
-        ],
-        "h2hSummary": "Racing tak terkalahkan di 3 pertemuan kandang terakhir",
-        "avgGoals": "1.9 Gol/Laga"
-      }
-    },
-    {
-      "match": "Yaman vs Qatar",
-      "league": "AFC Asian Qualifiers",
-      "pick": "Away Win",
-      "odds": 1.55,
-      "winProb": 82,
-      "expertReason": "Catatan Pakar Bola: Jurang kualitas skuad dan kedalaman bench sangat masif. Qatar unggul jauh dalam penguasaan sirkulasi bola sepertiga akhir serta konversi set-piece mematikan.",
-      "analytics": {
-        "homeForm": [
-          "L",
-          "D",
-          "L",
           "W",
+          "D",
           "L"
         ],
-        "awayForm": [
-          "W",
-          "W",
-          "D",
-          "W",
-          "W"
-        ],
-        "h2hSummary": "Qatar menyapu bersih 5 kemenangan beruntun kontra Yaman",
-        "avgGoals": "3.1 Gol/Laga"
+        "h2hSummary": "Under 2.5 tembus di 4 dari 5 duel langsung terakhir",
+        "avgGoals": "1.6 Gol/Laga"
       }
     },
     {
-      "match": "Bahrain vs Uni Emirat Arab",
-      "league": "AFC Asian Qualifiers",
-      "pick": "Under 2.5 Goals",
-      "odds": 1.64,
-      "winProb": 72,
-      "expertReason": "Catatan Pakar Bola: Pertarungan taktis dengan blok pertahanan kompak dari Bahrain yang sering membatasi ruang tembak lawan. Kedua tim cenderung bermain pragmatis di babak kualifikasi krusial.",
+      "match": "Spanyol U20 W vs Korea Utara U20 W",
+      "league": "FIFA U-20 Women's World Cup",
+      "pick": "Home Win (HDP -0.5)",
+      "odds": 1.65,
+      "winProb": 78,
+      "expertReason": "Catatan Pakar Bola: Dominasi penguasaan bola Spanyol serta kedalaman taktik lini tengah menjadi pembeda signifikan, meskipun Korea Utara memiliki disiplin pressing ketat.",
       "analytics": {
         "homeForm": [
           "W",
-          "D",
           "W",
-          "L",
+          "W",
+          "W",
           "D"
         ],
         "awayForm": [
           "W",
           "W",
+          "W",
+          "L",
+          "W"
+        ],
+        "h2hSummary": "Spanyol U20 W memenangkan pertemuan kompetitif terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Bahrain vs Uni Emirat Arab",
+      "league": "Kualifikasi Piala Dunia AFC",
+      "pick": "Away Draw No Bet (Away +0)",
+      "odds": 1.6,
+      "winProb": 76,
+      "expertReason": "Catatan Pakar Bola: Efektivitas serangan balik UEA berada pada kurva performa positif dengan lini depan yang tajam, memberi nilai proteksi tinggi terhadap skenario seri di kandang Bahrain.",
+      "analytics": {
+        "homeForm": [
+          "L",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "awayForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "UEA menang 3 kali dan imbang 1 kali dalam 5 laga terakhir",
+        "avgGoals": "2.2 Gol/Laga"
+      }
+    },
+    {
+      "match": "Yaman vs Qatar",
+      "league": "Kualifikasi Piala Dunia AFC",
+      "pick": "Qatar -1.5 (Asian Handicap)",
+      "odds": 1.63,
+      "winProb": 84,
+      "expertReason": "Catatan Pakar Bola: Perbedaan kualitas teknis dan kedalaman skuat yang sangat jomplang. Qatar diproyeksikan menguasai tempo laga sejak menit awal dengan dominasi sirkulasi sepertiga akhir.",
+      "analytics": {
+        "homeForm": [
+          "L",
+          "L",
           "D",
           "L",
           "W"
         ],
-        "h2hSummary": "Tercatat 4 dari 5 bentrokan berakhir dengan skor ketat di bawah 3 gol",
-        "avgGoals": "1.8 Gol/Laga"
+        "awayForm": [
+          "W",
+          "W",
+          "W",
+          "D",
+          "W"
+        ],
+        "h2hSummary": "Qatar menyapu bersih 5 kemenangan beruntun atas Yaman",
+        "avgGoals": "3.1 Gol/Laga"
       }
     },
     {
       "match": "Haiti vs Kosta Rika",
       "league": "CONCACAF Nations League",
       "pick": "Away Win",
-      "odds": 1.66,
-      "winProb": 70,
-      "expertReason": "Catatan Pakar Bola: Kosta Rika memiliki keunggulan organisasi pertahanan matang dan tempo permainan yang lebih disiplin untuk membongkar transisi Haiti yang sering meninggalkan ruang lebar.",
-      "analytics": {
-        "homeForm": [
-          "W",
-          "W",
-          "L",
-          "D",
-          "L"
-        ],
-        "awayForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "L"
-        ],
-        "h2hSummary": "Kosta Rika mendominasi rekor pertemuan tanpa kalah di 4 laga terakhir",
-        "avgGoals": "2.3 Gol/Laga"
-      }
-    },
-    {
-      "match": "Hong Kong vs Laos",
-      "league": "International Friendly",
-      "pick": "Home Win",
-      "odds": 1.52,
-      "winProb": 84,
-      "expertReason": "Catatan Pakar Bola: Hong Kong memiliki keunggulan fisik, tempo, dan kualitas pemain naturalisasi. Laos memiliki kelemahan kronis pada antisipasi umpan silang dan transisi bertahan.",
+      "odds": 1.67,
+      "winProb": 75,
+      "expertReason": "Catatan Pakar Bola: Kosta Rika memiliki keunggulan formasi taktis dan kestabilan lini pertahanan yang solid, mampu meredam transisi fisik Haiti yang sering meninggalkan ruang kosong di lini kedua.",
       "analytics": {
         "homeForm": [
           "D",
-          "W",
           "L",
+          "W",
           "L",
           "D"
         ],
         "awayForm": [
-          "L",
-          "L",
+          "W",
           "D",
-          "L",
-          "L"
-        ],
-        "h2hSummary": "Hong Kong menang meyakinkan di pertemuan kompetitif terakhir",
-        "avgGoals": "2.7 Gol/Laga"
-      }
-    },
-    {
-      "match": "Spanyol U20 W vs Korea Utara U20 W",
-      "league": "FIFA U-20 Women's World Cup",
-      "pick": "Both Teams to Score (Yes)",
-      "odds": 1.68,
-      "winProb": 71,
-      "expertReason": "Catatan Pakar Bola: Bentrokan dua raksasa muda dunia. Spanyol unggul dalam penguasaan bola progresif, sementara Korea Utara memiliki pressing agresif dan counter-attack paling mematikan di turnamen.",
-      "analytics": {
-        "homeForm": [
-          "W",
-          "W",
           "W",
           "W",
           "L"
         ],
-        "awayForm": [
-          "W",
-          "W",
-          "W",
-          "W",
-          "W"
-        ],
-        "h2hSummary": "Kedua tim rata-rata mencetak lebih dari 2 gol per laga di turnamen ini",
-        "avgGoals": "3.6 Gol/Laga"
+        "h2hSummary": "Kosta Rika tak terkalahkan dalam 4 dari 5 pertemuan terakhir",
+        "avgGoals": "2.4 Gol/Laga"
       }
     },
     {
       "match": "Guyana vs Kepulauan Kayman",
       "league": "CONCACAF Nations League",
-      "pick": "Home -1.5 Asian Handicap",
-      "odds": 1.6,
-      "winProb": 79,
-      "expertReason": "Catatan Pakar Bola: Perbedaan level teknik individu sangat kontras. Guyana dipersenjatai pemain diaspora berbasis liga Inggris yang memiliki akselerasi lini depan jauh melampaui barisan belakang Kayman.",
+      "pick": "Home Win (HDP -1.0)",
+      "odds": 1.55,
+      "winProb": 86,
+      "expertReason": "Catatan Pakar Bola: Guyana unggul telak dalam aspek penguasaan wilayah dan fisik. Lini belakang Kepulauan Kayman kerap kebobolan gol cepat saat menghadapi lawan bertempo tinggi.",
       "analytics": {
         "homeForm": [
           "W",
           "L",
           "W",
           "D",
-          "W"
+          "L"
         ],
         "awayForm": [
           "L",
           "L",
-          "D",
           "L",
+          "D",
           "L"
         ],
-        "h2hSummary": "Guyana memenangkan seluruh pertemuan dengan margin minimal 2 gol",
-        "avgGoals": "3.5 Gol/Laga"
+        "h2hSummary": "Guyana mencatatkan rekor clean sheet pada duel kandang sebelumnya",
+        "avgGoals": "3.0 Gol/Laga"
       }
     },
     {
-      "match": "Kamboja vs Myanmar",
-      "league": "International Friendly",
-      "pick": "Over 2.25 Goals",
-      "odds": 1.63,
-      "winProb": 73,
-      "expertReason": "Catatan Pakar Bola: Kedua tim mengusung garis pertahanan tinggi yang rentan terhadap bola terobosan. Pertemuan sesama wakil ASEAN ini selalu menyajikan jual-beli serangan terbuka.",
+      "match": "Afrika Selatan U20 vs Mozambik U20",
+      "league": "COSAFA U-20 Championship",
+      "pick": "Home Win",
+      "odds": 1.59,
+      "winProb": 81,
+      "expertReason": "Catatan Pakar Bola: Skuad muda Afrika Selatan menunjukkan koordinasi pressing modern dan konversi peluang yang sangat tinggi selama babak kualifikasi regional.",
       "analytics": {
         "homeForm": [
-          "L",
           "W",
-          "L",
+          "W",
           "D",
-          "L"
+          "W",
+          "W"
         ],
         "awayForm": [
           "L",
           "D",
           "L",
-          "L",
-          "W"
+          "W",
+          "L"
         ],
-        "h2hSummary": "Selalu tercipta gol dari kedua sisi dalam 4 perjumpaan terakhir",
-        "avgGoals": "3.0 Gol/Laga"
+        "h2hSummary": "Afrika Selatan U20 menang 3 dari 4 pertemuan terakhir",
+        "avgGoals": "2.5 Gol/Laga"
       }
     },
     {
       "match": "Bekasi City vs PSMS Medan",
       "league": "Liga 2 Indonesia",
-      "pick": "Home Draw No Bet (Handicap 0)",
-      "odds": 1.57,
-      "winProb": 75,
-      "expertReason": "Catatan Pakar Bola: Bekasi City sangat disiplin menjaga clean sheet di kandang dengan struktur compact midfield. PSMS kerap tumpul dalam penyelesaian akhir saat bermain tandang.",
+      "pick": "Home Win (Draw No Bet)",
+      "odds": 1.61,
+      "winProb": 77,
+      "expertReason": "Catatan Pakar Bola: Bekasi City memiliki rekor kandang yang kokoh dengan organisasi pertahanan rapat, sementara PSMS Medan sering mengalami penurunan efisiensi saat laga tandang.",
       "analytics": {
         "homeForm": [
           "W",
@@ -469,8 +443,34 @@
           "W",
           "L"
         ],
-        "h2hSummary": "Bekasi City mengamankan poin penuh pada pertemuan kandang sebelumnya",
-        "avgGoals": "1.7 Gol/Laga"
+        "h2hSummary": "Bekasi City tak terkalahkan di 2 pertemuan kandang terakhir",
+        "avgGoals": "1.9 Gol/Laga"
+      }
+    },
+    {
+      "match": "Kamboja vs Myanmar",
+      "league": "Persahabatan Internasional",
+      "pick": "Over 2.0 Goals",
+      "odds": 1.64,
+      "winProb": 79,
+      "expertReason": "Catatan Pakar Bola: Kedua tim menerapkan sepak bola menyerang terbuka namun sama-sama memiliki kelemahan mendasar dalam mengantisipasi set-piece dan transisi defensif.",
+      "analytics": {
+        "homeForm": [
+          "L",
+          "W",
+          "L",
+          "D",
+          "L"
+        ],
+        "awayForm": [
+          "L",
+          "L",
+          "D",
+          "L",
+          "W"
+        ],
+        "h2hSummary": "Rata-rata tercipta minimal 2 gol dalam seluruh 5 laga H2H terakhir",
+        "avgGoals": "2.9 Gol/Laga"
       }
     }
   ]

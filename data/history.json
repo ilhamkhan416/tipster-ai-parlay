@@ -1,5 +1,100 @@
 [
   {
+    "date": "27/09/2026 05:27 WIB",
+    "matches": [
+      {
+        "match": "Columbus vs Inter Miami",
+        "league": "Major League Soccer",
+        "pick": "Over 2.5 Goals",
+        "odds": 1.62,
+        "score": "0-1",
+        "status": "L",
+        "expertReason": "Catatan Pakar Bola: Duel dua tim dengan produktivitas xG tertinggi di liga. Miami memiliki efisiensi finishing mematikan lewat transisi kilat, sementara Columbus sangat dominan dalam progresi bola di kandang."
+      },
+      {
+        "match": "Racing Club vs Boca Juniors",
+        "league": "Liga Profesional Argentina",
+        "pick": "Home Draw No Bet (Handicap 0)",
+        "odds": 1.58,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Racing tampil sangat tangguh di El Cilindro dengan struktur pressing tinggi yang solid. Boca Juniors kerap kesulitan menjaga intensitas dan konsistensi kreasi peluang di laga tandang."
+      },
+      {
+        "match": "Yaman vs Qatar",
+        "league": "AFC Asian Qualifiers",
+        "pick": "Away Win",
+        "odds": 1.55,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Jurang kualitas skuad dan kedalaman bench sangat masif. Qatar unggul jauh dalam penguasaan sirkulasi bola sepertiga akhir serta konversi set-piece mematikan."
+      },
+      {
+        "match": "Bahrain vs Uni Emirat Arab",
+        "league": "AFC Asian Qualifiers",
+        "pick": "Under 2.5 Goals",
+        "odds": 1.64,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Pertarungan taktis dengan blok pertahanan kompak dari Bahrain yang sering membatasi ruang tembak lawan. Kedua tim cenderung bermain pragmatis di babak kualifikasi krusial."
+      },
+      {
+        "match": "Haiti vs Kosta Rika",
+        "league": "CONCACAF Nations League",
+        "pick": "Away Win",
+        "odds": 1.66,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Kosta Rika memiliki keunggulan organisasi pertahanan matang dan tempo permainan yang lebih disiplin untuk membongkar transisi Haiti yang sering meninggalkan ruang lebar."
+      },
+      {
+        "match": "Hong Kong vs Laos",
+        "league": "International Friendly",
+        "pick": "Home Win",
+        "odds": 1.52,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Hong Kong memiliki keunggulan fisik, tempo, dan kualitas pemain naturalisasi. Laos memiliki kelemahan kronis pada antisipasi umpan silang dan transisi bertahan."
+      },
+      {
+        "match": "Spanyol U20 W vs Korea Utara U20 W",
+        "league": "FIFA U-20 Women's World Cup",
+        "pick": "Both Teams to Score (Yes)",
+        "odds": 1.68,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Bentrokan dua raksasa muda dunia. Spanyol unggul dalam penguasaan bola progresif, sementara Korea Utara memiliki pressing agresif dan counter-attack paling mematikan di turnamen."
+      },
+      {
+        "match": "Guyana vs Kepulauan Kayman",
+        "league": "CONCACAF Nations League",
+        "pick": "Home -1.5 Asian Handicap",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Perbedaan level teknik individu sangat kontras. Guyana dipersenjatai pemain diaspora berbasis liga Inggris yang memiliki akselerasi lini depan jauh melampaui barisan belakang Kayman."
+      },
+      {
+        "match": "Kamboja vs Myanmar",
+        "league": "International Friendly",
+        "pick": "Over 2.25 Goals",
+        "odds": 1.63,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Kedua tim mengusung garis pertahanan tinggi yang rentan terhadap bola terobosan. Pertemuan sesama wakil ASEAN ini selalu menyajikan jual-beli serangan terbuka."
+      },
+      {
+        "match": "Bekasi City vs PSMS Medan",
+        "league": "Liga 2 Indonesia",
+        "pick": "Home Draw No Bet (Handicap 0)",
+        "odds": 1.57,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Bekasi City sangat disiplin menjaga clean sheet di kandang dengan struktur compact midfield. PSMS kerap tumpul dalam penyelesaian akhir saat bermain tandang."
+      }
+    ]
+  },
+  {
     "date": "26/09/2026 08:00 WIB",
     "matches": [
       {
