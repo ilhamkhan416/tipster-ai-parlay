@@ -1,438 +1,334 @@
 {
-  "updatedAt": "28/09/2026 08:59 WIB",
+  "updatedAt": "28/09/2026 14:38 WIB",
   "parlay3": [
     {
-      "match": "Singapura vs Bangladesh",
-      "league": "International Friendly",
+      "match": "Tunisia vs Botswana",
+      "league": "KUALIFIKASI AFCON",
       "pick": "Home Win",
       "odds": 1.6,
       "winProb": 82,
-      "expertReason": "Singapura menunjukkan progres signifikan pada xG kandang dan memiliki fleksibilitas transisi positif yang menyulitkan blok rendah Bangladesh.",
+      "expertReason": "Tunisia memiliki superioritas taktis dan rekor kandang yang sangat solid. Botswana kesulitan mencetak gol saat bermain tandang melawan tim papan atas Afrika.",
       "analytics": {
         "homeForm": [
           "W",
           "W",
           "D",
+          "W",
+          "W"
+        ],
+        "awayForm": [
+          "L",
+          "L",
+          "D",
+          "L",
+          "L"
+        ],
+        "h2hSummary": "Tunisia mendominasi 4 pertemuan terakhir",
+        "avgGoals": "2.1 Gol/Laga"
+      }
+    },
+    {
+      "match": "America MG vs Juventude",
+      "league": "BRASILEIRO SERIE B",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 78,
+      "expertReason": "America MG sangat kuat di kandang dengan xG yang konsisten. Juventude memiliki masalah pertahanan saat menghadapi tim dengan pressing tinggi.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "D",
+          "W",
           "W",
           "L"
         ],
         "awayForm": [
           "L",
-          "D",
           "L",
-          "W",
-          "L"
-        ],
-        "h2hSummary": "Singapura mendominasi rekor pertemuan kandang",
-        "avgGoals": "2.6 Gol/Laga"
-      }
-    },
-    {
-      "match": "Malaysia vs Indonesia",
-      "league": "ASEAN Cup",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 79,
-      "expertReason": "Keunggulan dukungan suporter kandang dan efisiensi lini tengah Malaysia memberi mereka keunggulan tipis dalam intensitas high-press.",
-      "analytics": {
-        "homeForm": [
-          "W",
-          "W",
-          "W",
+          "D",
           "L",
           "D"
         ],
-        "awayForm": [
-          "D",
-          "W",
-          "L",
-          "D",
-          "W"
-        ],
-        "h2hSummary": "Pertarungan ketat, Malaysia unggul tipis di kandang",
-        "avgGoals": "3.1 Gol/Laga"
+        "h2hSummary": "America MG unggul 3-1 dalam 5 laga terakhir",
+        "avgGoals": "2.4 Gol/Laga"
       }
     },
     {
-      "match": "Tunisia vs Botswana",
-      "league": "Africa Cup of Nations Qualifiers",
+      "match": "Suriname vs Martinique",
+      "league": "CONCACAF NATIONS LEAGUE",
       "pick": "Home Win",
       "odds": 1.6,
-      "winProb": 85,
-      "expertReason": "Tunisia memiliki rekor pertahanan solid (clean sheet tinggi) dan dominasi penguasaan bola yang efektif untuk membongkar pertahanan Botswana.",
+      "winProb": 75,
+      "expertReason": "Suriname sedang dalam tren positif dengan kedalaman skuad yang lebih baik. Martinique sering kebobolan di 15 menit terakhir.",
       "analytics": {
         "homeForm": [
           "W",
           "W",
-          "D",
+          "L",
           "W",
-          "W"
+          "D"
         ],
         "awayForm": [
           "L",
           "L",
           "D",
           "L",
-          "W"
+          "L"
         ],
-        "h2hSummary": "Tunisia menang 4 dari 5 pertemuan terakhir",
-        "avgGoals": "2.4 Gol/Laga"
+        "h2hSummary": "Suriname menang 2-1 di pertemuan terakhir",
+        "avgGoals": "2.6 Gol/Laga"
       }
     }
   ],
   "parlay5": [
     {
-      "match": "Singapura vs Bangladesh",
-      "league": "International Friendly",
+      "match": "Tunisia vs Botswana",
+      "league": "KUALIFIKASI AFCON",
       "pick": "Home Win",
       "odds": 1.6,
       "winProb": 82,
-      "expertReason": "Singapura menunjukkan progres signifikan pada xG kandang dan memiliki fleksibilitas transisi positif yang menyulitkan blok rendah Bangladesh.",
+      "expertReason": "Tunisia memiliki superioritas taktis dan rekor kandang yang sangat solid. Botswana kesulitan mencetak gol saat bermain tandang melawan tim papan atas Afrika.",
       "analytics": {
         "homeForm": [
           "W",
           "W",
           "D",
           "W",
+          "W"
+        ],
+        "awayForm": [
+          "L",
+          "L",
+          "D",
+          "L",
           "L"
         ],
-        "awayForm": [
-          "L",
-          "D",
-          "L",
-          "W",
-          "L"
-        ],
-        "h2hSummary": "Singapura mendominasi rekor pertemuan kandang",
-        "avgGoals": "2.6 Gol/Laga"
-      }
-    },
-    {
-      "match": "Malaysia vs Indonesia",
-      "league": "ASEAN Cup",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 79,
-      "expertReason": "Keunggulan dukungan suporter kandang dan efisiensi lini tengah Malaysia memberi mereka keunggulan tipis dalam intensitas high-press.",
-      "analytics": {
-        "homeForm": [
-          "W",
-          "W",
-          "W",
-          "L",
-          "D"
-        ],
-        "awayForm": [
-          "D",
-          "W",
-          "L",
-          "D",
-          "W"
-        ],
-        "h2hSummary": "Pertarungan ketat, Malaysia unggul tipis di kandang",
-        "avgGoals": "3.1 Gol/Laga"
-      }
-    },
-    {
-      "match": "Tunisia vs Botswana",
-      "league": "Africa Cup of Nations Qualifiers",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 85,
-      "expertReason": "Tunisia memiliki rekor pertahanan solid (clean sheet tinggi) dan dominasi penguasaan bola yang efektif untuk membongkar pertahanan Botswana.",
-      "analytics": {
-        "homeForm": [
-          "W",
-          "W",
-          "D",
-          "W",
-          "W"
-        ],
-        "awayForm": [
-          "L",
-          "L",
-          "D",
-          "L",
-          "W"
-        ],
-        "h2hSummary": "Tunisia menang 4 dari 5 pertemuan terakhir",
-        "avgGoals": "2.4 Gol/Laga"
+        "h2hSummary": "Tunisia mendominasi 4 pertemuan terakhir",
+        "avgGoals": "2.1 Gol/Laga"
       }
     },
     {
       "match": "America MG vs Juventude",
-      "league": "Brasileiro Serie B",
+      "league": "BRASILEIRO SERIE B",
       "pick": "Home Win",
       "odds": 1.6,
-      "winProb": 81,
-      "expertReason": "America MG sangat kuat secara kandang dengan xG creation di atas rata-rata liga, sementara Juventude rapuh dalam laga tandang.",
+      "winProb": 78,
+      "expertReason": "America MG sangat kuat di kandang dengan xG yang konsisten. Juventude memiliki masalah pertahanan saat menghadapi tim dengan pressing tinggi.",
       "analytics": {
         "homeForm": [
           "W",
-          "W",
           "D",
+          "W",
           "W",
           "L"
         ],
         "awayForm": [
           "L",
+          "L",
           "D",
           "L",
-          "L",
-          "W"
+          "D"
         ],
-        "h2hSummary": "America MG dominan saat bermain sebagai tuan rumah",
-        "avgGoals": "2.7 Gol/Laga"
+        "h2hSummary": "America MG unggul 3-1 dalam 5 laga terakhir",
+        "avgGoals": "2.4 Gol/Laga"
       }
     },
     {
-      "match": "Jepang vs Venezuela",
-      "league": "International Friendly",
+      "match": "Suriname vs Martinique",
+      "league": "CONCACAF NATIONS LEAGUE",
       "pick": "Home Win",
       "odds": 1.6,
-      "winProb": 86,
-      "expertReason": "Kedalaman skuad Samurai Biru serta pressing terstruktur di sepertiga akhir lapangan membuat mereka jauh diunggulkan atas Venezuela.",
+      "winProb": 75,
+      "expertReason": "Suriname sedang dalam tren positif dengan kedalaman skuad yang lebih baik. Martinique sering kebobolan di 15 menit terakhir.",
       "analytics": {
         "homeForm": [
           "W",
           "W",
+          "L",
+          "W",
+          "D"
+        ],
+        "awayForm": [
+          "L",
+          "L",
+          "D",
+          "L",
+          "L"
+        ],
+        "h2hSummary": "Suriname menang 2-1 di pertemuan terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Guadeloupe vs Barbados",
+      "league": "CONCACAF NATIONS LEAGUE",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 80,
+      "expertReason": "Guadeloupe memiliki efisiensi serangan yang jauh lebih tinggi dibandingkan Barbados yang memiliki pertahanan rapuh.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "L",
           "W",
           "W",
           "D"
         ],
         "awayForm": [
-          "D",
           "L",
+          "L",
+          "L",
+          "L",
+          "L"
+        ],
+        "h2hSummary": "Guadeloupe menang telak di pertemuan sebelumnya",
+        "avgGoals": "3.2 Gol/Laga"
+      }
+    },
+    {
+      "match": "Kuba vs Bonaire",
+      "league": "CONCACAF NATIONS LEAGUE",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 77,
+      "expertReason": "Kuba memiliki motivasi tinggi untuk mengamankan poin penuh di kandang. Bonaire kurang berpengalaman di level kompetitif ini.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "D",
           "W",
           "L",
-          "D"
+          "W"
         ],
-        "h2hSummary": "Jepang tampil konsisten di laga uji coba internasional",
-        "avgGoals": "3.2 Gol/Laga"
+        "awayForm": [
+          "L",
+          "L",
+          "L",
+          "D",
+          "L"
+        ],
+        "h2hSummary": "Kuba unggul secara statistik penguasaan bola",
+        "avgGoals": "2.3 Gol/Laga"
       }
     }
   ],
   "parlay10": [
     {
-      "match": "Singapura vs Bangladesh",
-      "league": "International Friendly",
+      "match": "Tunisia vs Botswana",
+      "league": "KUALIFIKASI AFCON",
       "pick": "Home Win",
       "odds": 1.6,
       "winProb": 82,
-      "expertReason": "Singapura menunjukkan progres signifikan pada xG kandang dan memiliki fleksibilitas transisi positif yang menyulitkan blok rendah Bangladesh.",
+      "expertReason": "Tunisia memiliki superioritas taktis dan rekor kandang yang sangat solid. Botswana kesulitan mencetak gol saat bermain tandang melawan tim papan atas Afrika.",
       "analytics": {
         "homeForm": [
           "W",
           "W",
           "D",
           "W",
+          "W"
+        ],
+        "awayForm": [
+          "L",
+          "L",
+          "D",
+          "L",
           "L"
         ],
-        "awayForm": [
-          "L",
-          "D",
-          "L",
-          "W",
-          "L"
-        ],
-        "h2hSummary": "Singapura mendominasi rekor pertemuan kandang",
-        "avgGoals": "2.6 Gol/Laga"
-      }
-    },
-    {
-      "match": "Malaysia vs Indonesia",
-      "league": "ASEAN Cup",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 79,
-      "expertReason": "Keunggulan dukungan suporter kandang dan efisiensi lini tengah Malaysia memberi mereka keunggulan tipis dalam intensitas high-press.",
-      "analytics": {
-        "homeForm": [
-          "W",
-          "W",
-          "W",
-          "L",
-          "D"
-        ],
-        "awayForm": [
-          "D",
-          "W",
-          "L",
-          "D",
-          "W"
-        ],
-        "h2hSummary": "Pertarungan ketat, Malaysia unggul tipis di kandang",
-        "avgGoals": "3.1 Gol/Laga"
-      }
-    },
-    {
-      "match": "Tunisia vs Botswana",
-      "league": "Africa Cup of Nations Qualifiers",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 85,
-      "expertReason": "Tunisia memiliki rekor pertahanan solid (clean sheet tinggi) dan dominasi penguasaan bola yang efektif untuk membongkar pertahanan Botswana.",
-      "analytics": {
-        "homeForm": [
-          "W",
-          "W",
-          "D",
-          "W",
-          "W"
-        ],
-        "awayForm": [
-          "L",
-          "L",
-          "D",
-          "L",
-          "W"
-        ],
-        "h2hSummary": "Tunisia menang 4 dari 5 pertemuan terakhir",
-        "avgGoals": "2.4 Gol/Laga"
+        "h2hSummary": "Tunisia mendominasi 4 pertemuan terakhir",
+        "avgGoals": "2.1 Gol/Laga"
       }
     },
     {
       "match": "America MG vs Juventude",
-      "league": "Brasileiro Serie B",
+      "league": "BRASILEIRO SERIE B",
       "pick": "Home Win",
       "odds": 1.6,
-      "winProb": 81,
-      "expertReason": "America MG sangat kuat secara kandang dengan xG creation di atas rata-rata liga, sementara Juventude rapuh dalam laga tandang.",
+      "winProb": 78,
+      "expertReason": "America MG sangat kuat di kandang dengan xG yang konsisten. Juventude memiliki masalah pertahanan saat menghadapi tim dengan pressing tinggi.",
       "analytics": {
         "homeForm": [
           "W",
-          "W",
           "D",
+          "W",
           "W",
           "L"
         ],
         "awayForm": [
           "L",
+          "L",
           "D",
           "L",
-          "L",
-          "W"
+          "D"
         ],
-        "h2hSummary": "America MG dominan saat bermain sebagai tuan rumah",
-        "avgGoals": "2.7 Gol/Laga"
+        "h2hSummary": "America MG unggul 3-1 dalam 5 laga terakhir",
+        "avgGoals": "2.4 Gol/Laga"
       }
     },
     {
-      "match": "Jepang vs Venezuela",
-      "league": "International Friendly",
+      "match": "Suriname vs Martinique",
+      "league": "CONCACAF NATIONS LEAGUE",
       "pick": "Home Win",
       "odds": 1.6,
-      "winProb": 86,
-      "expertReason": "Kedalaman skuad Samurai Biru serta pressing terstruktur di sepertiga akhir lapangan membuat mereka jauh diunggulkan atas Venezuela.",
+      "winProb": 75,
+      "expertReason": "Suriname sedang dalam tren positif dengan kedalaman skuad yang lebih baik. Martinique sering kebobolan di 15 menit terakhir.",
       "analytics": {
         "homeForm": [
           "W",
           "W",
+          "L",
+          "W",
+          "D"
+        ],
+        "awayForm": [
+          "L",
+          "L",
+          "D",
+          "L",
+          "L"
+        ],
+        "h2hSummary": "Suriname menang 2-1 di pertemuan terakhir",
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Guadeloupe vs Barbados",
+      "league": "CONCACAF NATIONS LEAGUE",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 80,
+      "expertReason": "Guadeloupe memiliki efisiensi serangan yang jauh lebih tinggi dibandingkan Barbados yang memiliki pertahanan rapuh.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "L",
           "W",
           "W",
           "D"
         ],
         "awayForm": [
-          "D",
           "L",
-          "W",
           "L",
-          "D"
+          "L",
+          "L",
+          "L"
         ],
-        "h2hSummary": "Jepang tampil konsisten di laga uji coba internasional",
+        "h2hSummary": "Guadeloupe menang telak di pertemuan sebelumnya",
         "avgGoals": "3.2 Gol/Laga"
       }
     },
     {
-      "match": "Korea Selatan vs Uruguay",
-      "league": "International Friendly",
+      "match": "Kuba vs Bonaire",
+      "league": "CONCACAF NATIONS LEAGUE",
       "pick": "Home Win",
       "odds": 1.6,
-      "winProb": 78,
-      "expertReason": "Kecepatan transisi sayap Korea Selatan menjadi kunci utama untuk mengeksploitasi celah di lini belakang Uruguay yang kehilangan beberapa pilar.",
+      "winProb": 77,
+      "expertReason": "Kuba memiliki motivasi tinggi untuk mengamankan poin penuh di kandang. Bonaire kurang berpengalaman di level kompetitif ini.",
       "analytics": {
         "homeForm": [
           "W",
           "D",
           "W",
-          "W",
-          "L"
-        ],
-        "awayForm": [
-          "W",
-          "L",
-          "D",
-          "W",
-          "L"
-        ],
-        "h2hSummary": "Pertemuan selalu berjalan ketat dengan tensi tinggi",
-        "avgGoals": "2.9 Gol/Laga"
-      }
-    },
-    {
-      "match": "Italia U19 vs Turki U19",
-      "league": "UEFA Under-19 Championship Qualifiers",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 83,
-      "expertReason": "Organisasi taktik bertahan Italia U19 sangat disiplin, ditunjang kreativitas lini tengah yang mendominasi penguasaan bola.",
-      "analytics": {
-        "homeForm": [
-          "W",
-          "W",
-          "D",
-          "W",
-          "W"
-        ],
-        "awayForm": [
-          "L",
-          "W",
-          "L",
-          "D",
-          "L"
-        ],
-        "h2hSummary": "Italia U19 unggul secara kualitas teknik individu",
-        "avgGoals": "3.0 Gol/Laga"
-      }
-    },
-    {
-      "match": "Kroasia U19 vs Perancis U19",
-      "league": "UEFA Under-19 Championship Qualifiers",
-      "pick": "Away Win",
-      "odds": 1.6,
-      "winProb": 80,
-      "expertReason": "Perancis U19 memiliki barisan penyerang dengan konversi peluang tertinggi di kelompok umur ini, unggul fisik dan kecepatan.",
-      "analytics": {
-        "homeForm": [
-          "D",
-          "W",
-          "L",
-          "W",
-          "L"
-        ],
-        "awayForm": [
-          "W",
-          "W",
-          "W",
-          "D",
-          "W"
-        ],
-        "h2hSummary": "Perancis U19 mendominasi rekor pertemuan muda",
-        "avgGoals": "3.4 Gol/Laga"
-      }
-    },
-    {
-      "match": "Kirgiztan vs Maldiv",
-      "league": "AFC Asian Cup Qualifiers",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 88,
-      "expertReason": "Perbedaan level kualitas fisik dan taktik yang kontras, Kirgiztan sangat dominan dalam duel udara dan set-piece.",
-      "analytics": {
-        "homeForm": [
-          "W",
-          "W",
-          "D",
           "L",
           "W"
         ],
@@ -443,17 +339,43 @@
           "D",
           "L"
         ],
-        "h2hSummary": "Kirgiztan menang telak pada pertemuan sebelumnya",
+        "h2hSummary": "Kuba unggul secara statistik penguasaan bola",
+        "avgGoals": "2.3 Gol/Laga"
+      }
+    },
+    {
+      "match": "Slovakia U19 vs Polandia U19",
+      "league": "U19 INTERNATIONAL FRIENDLY",
+      "pick": "Over 2.5",
+      "odds": 1.6,
+      "winProb": 72,
+      "expertReason": "Kedua tim memiliki gaya bermain terbuka. Pertahanan U19 seringkali tidak stabil, membuat laga ini berpotensi hujan gol.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "L",
+          "W",
+          "D",
+          "W"
+        ],
+        "awayForm": [
+          "W",
+          "W",
+          "L",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "3 dari 4 pertemuan terakhir berakhir Over 2.5",
         "avgGoals": "3.5 Gol/Laga"
       }
     },
     {
       "match": "Brazil U20 vs Denmark U20",
-      "league": "International Youth Friendly",
+      "league": "U20 INTERNATIONAL FRIENDLY",
       "pick": "Home Win",
       "odds": 1.6,
-      "winProb": 84,
-      "expertReason": "Talenta individu Brazil U20 di lini serang terlalu dinamis untuk diredam oleh struktur pertahanan zona Denmark U20.",
+      "winProb": 74,
+      "expertReason": "Brazil U20 memiliki talenta individu yang jauh lebih superior. Denmark U20 cenderung bermain defensif namun sering kewalahan menghadapi kecepatan pemain Brazil.",
       "analytics": {
         "homeForm": [
           "W",
@@ -463,14 +385,92 @@
           "W"
         ],
         "awayForm": [
-          "W",
+          "D",
           "L",
           "W",
           "L",
           "D"
         ],
-        "h2hSummary": "Brazil U20 superior dalam penguasaan bola dan agilitas",
-        "avgGoals": "3.8 Gol/Laga"
+        "h2hSummary": "Brazil unggul dalam penguasaan bola di laga persahabatan",
+        "avgGoals": "2.7 Gol/Laga"
+      }
+    },
+    {
+      "match": "Qatar U19 vs Azerbaijan U19",
+      "league": "U19 INTERNATIONAL FRIENDLY",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 70,
+      "expertReason": "Qatar U19 memiliki persiapan yang lebih matang dan keunggulan adaptasi iklim/kondisi lapangan.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "awayForm": [
+          "L",
+          "L",
+          "D",
+          "L",
+          "L"
+        ],
+        "h2hSummary": "Qatar unggul tipis dalam rekor pertemuan",
+        "avgGoals": "2.2 Gol/Laga"
+      }
+    },
+    {
+      "match": "Afrika Tengah vs Burkina Faso",
+      "league": "KUALIFIKASI AFCON",
+      "pick": "Away Win",
+      "odds": 1.6,
+      "winProb": 73,
+      "expertReason": "Burkina Faso adalah tim yang lebih mapan dengan banyak pemain yang berkarier di Eropa. Afrika Tengah sering kesulitan dalam transisi bertahan.",
+      "analytics": {
+        "homeForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "h2hSummary": "Burkina Faso menang 2-0 di pertemuan terakhir",
+        "avgGoals": "2.0 Gol/Laga"
+      }
+    },
+    {
+      "match": "Guinea Ekuatorial vs Sierra Leone",
+      "league": "KUALIFIKASI AFCON",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 76,
+      "expertReason": "Guinea Ekuatorial sangat kuat di kandang dengan dukungan suporter yang masif. Sierra Leone memiliki masalah konsistensi di lini tengah.",
+      "analytics": {
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "W"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "L",
+          "D"
+        ],
+        "h2hSummary": "Guinea Ekuatorial menang 3/5 laga terakhir",
+        "avgGoals": "1.9 Gol/Laga"
       }
     }
   ]

@@ -1,5 +1,100 @@
 [
   {
+    "date": "28/09/2026 08:59 WIB",
+    "matches": [
+      {
+        "match": "Singapura vs Bangladesh",
+        "league": "International Friendly",
+        "pick": "Home Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Singapura menunjukkan progres signifikan pada xG kandang dan memiliki fleksibilitas transisi positif yang menyulitkan blok rendah Bangladesh."
+      },
+      {
+        "match": "Malaysia vs Indonesia",
+        "league": "ASEAN Cup",
+        "pick": "Home Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Keunggulan dukungan suporter kandang dan efisiensi lini tengah Malaysia memberi mereka keunggulan tipis dalam intensitas high-press."
+      },
+      {
+        "match": "Tunisia vs Botswana",
+        "league": "Africa Cup of Nations Qualifiers",
+        "pick": "Home Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Tunisia memiliki rekor pertahanan solid (clean sheet tinggi) dan dominasi penguasaan bola yang efektif untuk membongkar pertahanan Botswana."
+      },
+      {
+        "match": "America MG vs Juventude",
+        "league": "Brasileiro Serie B",
+        "pick": "Home Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "America MG sangat kuat secara kandang dengan xG creation di atas rata-rata liga, sementara Juventude rapuh dalam laga tandang."
+      },
+      {
+        "match": "Jepang vs Venezuela",
+        "league": "International Friendly",
+        "pick": "Home Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Kedalaman skuad Samurai Biru serta pressing terstruktur di sepertiga akhir lapangan membuat mereka jauh diunggulkan atas Venezuela."
+      },
+      {
+        "match": "Korea Selatan vs Uruguay",
+        "league": "International Friendly",
+        "pick": "Home Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Kecepatan transisi sayap Korea Selatan menjadi kunci utama untuk mengeksploitasi celah di lini belakang Uruguay yang kehilangan beberapa pilar."
+      },
+      {
+        "match": "Italia U19 vs Turki U19",
+        "league": "UEFA Under-19 Championship Qualifiers",
+        "pick": "Home Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Organisasi taktik bertahan Italia U19 sangat disiplin, ditunjang kreativitas lini tengah yang mendominasi penguasaan bola."
+      },
+      {
+        "match": "Kroasia U19 vs Perancis U19",
+        "league": "UEFA Under-19 Championship Qualifiers",
+        "pick": "Away Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Perancis U19 memiliki barisan penyerang dengan konversi peluang tertinggi di kelompok umur ini, unggul fisik dan kecepatan."
+      },
+      {
+        "match": "Kirgiztan vs Maldiv",
+        "league": "AFC Asian Cup Qualifiers",
+        "pick": "Home Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Perbedaan level kualitas fisik dan taktik yang kontras, Kirgiztan sangat dominan dalam duel udara dan set-piece."
+      },
+      {
+        "match": "Brazil U20 vs Denmark U20",
+        "league": "International Youth Friendly",
+        "pick": "Home Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Talenta individu Brazil U20 di lini serang terlalu dinamis untuk diredam oleh struktur pertahanan zona Denmark U20."
+      }
+    ]
+  },
+  {
     "date": "28/09/2026 08:08 WIB",
     "matches": [
       {
