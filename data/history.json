@@ -1,5 +1,100 @@
 [
   {
+    "date": "27/09/2026 08:35 WIB",
+    "matches": [
+      {
+        "match": "Columbus vs Inter Miami",
+        "league": "Major League Soccer",
+        "pick": "Over 2.5",
+        "odds": 1.62,
+        "score": "0-1",
+        "status": "L",
+        "expertReason": "Catatan Pakar Bola: Pertemuan dua tim paling produktif di MLS. Columbus memiliki transisi cepat dan konversi xG 1.95 per laga di kandang, sementara lini serang Inter Miami sangat tajam namun rentan transisi balik lawan."
+      },
+      {
+        "match": "Racing Club vs Boca Juniors",
+        "league": "Liga Profesional Argentina",
+        "pick": "Under 2.5",
+        "odds": 1.58,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Derby klasik dengan intensitas fisik tinggi dan tempo ketat di lini tengah. Kedua tim memiliki struktur defensif solid dengan rata-rata xGA di bawah 0.90 per pertandingan."
+      },
+      {
+        "match": "Spanyol U20 W vs Korea Utara U20 W",
+        "league": "FIFA U-20 Women's World Cup",
+        "pick": "Home Win (HDP -0.5)",
+        "odds": 1.65,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Dominasi penguasaan bola Spanyol serta kedalaman taktik lini tengah menjadi pembeda signifikan, meskipun Korea Utara memiliki disiplin pressing ketat."
+      },
+      {
+        "match": "Bahrain vs Uni Emirat Arab",
+        "league": "Kualifikasi Piala Dunia AFC",
+        "pick": "Away Draw No Bet (Away +0)",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Efektivitas serangan balik UEA berada pada kurva performa positif dengan lini depan yang tajam, memberi nilai proteksi tinggi terhadap skenario seri di kandang Bahrain."
+      },
+      {
+        "match": "Yaman vs Qatar",
+        "league": "Kualifikasi Piala Dunia AFC",
+        "pick": "Qatar -1.5 (Asian Handicap)",
+        "odds": 1.63,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Perbedaan kualitas teknis dan kedalaman skuat yang sangat jomplang. Qatar diproyeksikan menguasai tempo laga sejak menit awal dengan dominasi sirkulasi sepertiga akhir."
+      },
+      {
+        "match": "Haiti vs Kosta Rika",
+        "league": "CONCACAF Nations League",
+        "pick": "Away Win",
+        "odds": 1.67,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Kosta Rika memiliki keunggulan formasi taktis dan kestabilan lini pertahanan yang solid, mampu meredam transisi fisik Haiti yang sering meninggalkan ruang kosong di lini kedua."
+      },
+      {
+        "match": "Guyana vs Kepulauan Kayman",
+        "league": "CONCACAF Nations League",
+        "pick": "Home Win (HDP -1.0)",
+        "odds": 1.55,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Guyana unggul telak dalam aspek penguasaan wilayah dan fisik. Lini belakang Kepulauan Kayman kerap kebobolan gol cepat saat menghadapi lawan bertempo tinggi."
+      },
+      {
+        "match": "Afrika Selatan U20 vs Mozambik U20",
+        "league": "COSAFA U-20 Championship",
+        "pick": "Home Win",
+        "odds": 1.59,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Skuad muda Afrika Selatan menunjukkan koordinasi pressing modern dan konversi peluang yang sangat tinggi selama babak kualifikasi regional."
+      },
+      {
+        "match": "Bekasi City vs PSMS Medan",
+        "league": "Liga 2 Indonesia",
+        "pick": "Home Win (Draw No Bet)",
+        "odds": 1.61,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Bekasi City memiliki rekor kandang yang kokoh dengan organisasi pertahanan rapat, sementara PSMS Medan sering mengalami penurunan efisiensi saat laga tandang."
+      },
+      {
+        "match": "Kamboja vs Myanmar",
+        "league": "Persahabatan Internasional",
+        "pick": "Over 2.0 Goals",
+        "odds": 1.64,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Catatan Pakar Bola: Kedua tim menerapkan sepak bola menyerang terbuka namun sama-sama memiliki kelemahan mendasar dalam mengantisipasi set-piece dan transisi defensif."
+      }
+    ]
+  },
+  {
     "date": "27/09/2026 05:27 WIB",
     "matches": [
       {
