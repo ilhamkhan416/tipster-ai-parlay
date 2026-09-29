@@ -2,9 +2,9 @@ name: Parlay AI Receipt Generator
 
 on:
   schedule:
-    # Berjalan otomatis setiap hari pukul 06:00 WIB (23:00 UTC)
+    # Berjalan otomatis pukul 06:00 WIB (23:00 UTC)
     - cron: '0 23 * * *'
-  workflow_dispatch: # Tombol manual 'Run workflow'
+  workflow_dispatch:
 
 jobs:
   build-and-run:
@@ -32,11 +32,11 @@ jobs:
         run: |
           python src/scrape_parlay.py
 
-      - name: 2. Enrich Data (Matching & Combine)
+      - name: 2. Enrich & Sync Match Data
         run: |
           python src/enrich_data.py
 
-      - name: 3. AI Analysis (Gemini/Groq)
+      - name: 3. AI Analysis (Gemini)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
