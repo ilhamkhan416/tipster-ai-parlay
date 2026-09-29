@@ -1,0 +1,228 @@
+{
+  "updatedAt": "29/09/2026 05:52 WIB",
+  "parlay3_total_odds": 4.1,
+  "parlay5_total_odds": 10.49,
+  "parlay10_total_odds": 109.95,
+  "parlay3": [
+    {
+      "match": "Filipina vs Pakistan",
+      "league": "08:00",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 79,
+      "expertReason": "Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.",
+      "analytics": {
+        "h2hSummary": "Data H2H terbatas",
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Thailand vs Vietnam",
+      "league": "11:30",
+      "pick": "Over 1.5",
+      "odds": 1.6,
+      "winProb": 78,
+      "expertReason": "Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.",
+      "analytics": {
+        "h2hSummary": "Belum ada catatan H2H",
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Komoro vs Namibia",
+      "league": "11:00",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 77,
+      "expertReason": "Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.",
+      "analytics": {
+        "h2hSummary": "Data H2H terbatas",
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    }
+  ],
+  "parlay5": [
+    {
+      "match": "Filipina vs Pakistan",
+      "league": "08:00",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 79,
+      "expertReason": "Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.",
+      "analytics": {
+        "h2hSummary": "Data H2H terbatas",
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Thailand vs Vietnam",
+      "league": "11:30",
+      "pick": "Over 1.5",
+      "odds": 1.6,
+      "winProb": 78,
+      "expertReason": "Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.",
+      "analytics": {
+        "h2hSummary": "Belum ada catatan H2H",
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Komoro vs Namibia",
+      "league": "11:00",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 77,
+      "expertReason": "Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.",
+      "analytics": {
+        "h2hSummary": "Data H2H terbatas",
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Burundi vs Aljazair",
+      "league": "13:00",
+      "pick": "Over 1.5",
+      "odds": 1.6,
+      "winProb": 76,
+      "expertReason": "Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.",
+      "analytics": {
+        "h2hSummary": "Data H2H terbatas",
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Ethiopia vs Senegal",
+      "league": "13:00",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 75,
+      "expertReason": "Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.",
+      "analytics": {
+        "h2hSummary": "H2H Seimbang",
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    }
+  ],
+  "parlay10": [
+    {
+      "match": "Filipina vs Pakistan",
+      "league": "08:00",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 79,
+      "expertReason": "Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.",
+      "analytics": {
+        "h2hSummary": "Data H2H terbatas",
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Thailand vs Vietnam",
+      "league": "11:30",
+      "pick": "Over 1.5",
+      "odds": 1.6,
+      "winProb": 78,
+      "expertReason": "Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.",
+      "analytics": {
+        "h2hSummary": "Belum ada catatan H2H",
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Komoro vs Namibia",
+      "league": "11:00",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 77,
+      "expertReason": "Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.",
+      "analytics": {
+        "h2hSummary": "Data H2H terbatas",
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Burundi vs Aljazair",
+      "league": "13:00",
+      "pick": "Over 1.5",
+      "odds": 1.6,
+      "winProb": 76,
+      "expertReason": "Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.",
+      "analytics": {
+        "h2hSummary": "Data H2H terbatas",
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Ethiopia vs Senegal",
+      "league": "13:00",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 75,
+      "expertReason": "Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.",
+      "analytics": {
+        "h2hSummary": "H2H Seimbang",
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Lesotho vs Maroko",
+      "league": "13:00",
+      "pick": "Over 1.5",
+      "odds": 1.6,
+      "winProb": 74,
+      "expertReason": "Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.",
+      "analytics": {
+        "h2hSummary": "Data H2H terbatas",
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Madagaskar vs Tanzania",
+      "league": "13:00",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 73,
+      "expertReason": "Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.",
+      "analytics": {
+        "h2hSummary": "Data H2H terbatas",
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Mozambik vs Sudan",
+      "league": "13:00",
+      "pick": "Over 1.5",
+      "odds": 1.6,
+      "winProb": 72,
+      "expertReason": "Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.",
+      "analytics": {
+        "h2hSummary": "Data H2H terbatas",
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Sudan Selatan vs Mesir",
+      "league": "13:00",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 71,
+      "expertReason": "Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.",
+      "analytics": {
+        "h2hSummary": "Data H2H terbatas",
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Cape Verde vs Rwanda",
+      "league": "16:00",
+      "pick": "Over 1.5",
+      "odds": 1.6,
+      "winProb": 70,
+      "expertReason": "Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.",
+      "analytics": {
+        "h2hSummary": "Data H2H terbatas",
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    }
+  ]
+}
