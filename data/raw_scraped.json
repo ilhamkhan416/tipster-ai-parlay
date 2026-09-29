@@ -4,20 +4,20 @@
     "time": "02:45",
     "home": "Czech Republic",
     "away": "England",
-    "odds": 1.75,
+    "odds": 1.73,
     "pick": "Home Win",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -31,15 +31,15 @@
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -48,20 +48,20 @@
     "time": "02:45",
     "home": "Scotland",
     "away": "Switzerland",
-    "odds": 1.62,
+    "odds": 1.8,
     "pick": "Over Goals",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -70,20 +70,20 @@
     "time": "02:45",
     "home": "Slovenia",
     "away": "North Macedonia",
-    "odds": 1.56,
+    "odds": 1.57,
     "pick": "Away Win",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -92,20 +92,20 @@
     "time": "00:00",
     "home": "Finland",
     "away": "Belarus",
-    "odds": 1.59,
+    "odds": 1.57,
     "pick": "Home Win",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -114,20 +114,20 @@
     "time": "00:00",
     "home": "Moldova",
     "away": "Faroe Islands",
-    "odds": 1.67,
-    "pick": "Home Win",
+    "odds": 1.79,
+    "pick": "Away Win",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -136,20 +136,20 @@
     "time": "02:45",
     "home": "Bulgaria",
     "away": "Estonia",
-    "odds": 1.8,
+    "odds": 1.78,
     "pick": "Over Goals",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -158,20 +158,20 @@
     "time": "02:45",
     "home": "Luxembourg",
     "away": "Iceland",
-    "odds": 1.64,
+    "odds": 1.62,
     "pick": "Home Win",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -180,20 +180,20 @@
     "time": "02:45",
     "home": "San Marino",
     "away": "Albania",
-    "odds": 1.66,
+    "odds": 1.8,
     "pick": "Over Goals",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -207,15 +207,15 @@
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -224,20 +224,20 @@
     "time": "18:00",
     "home": "Fujieda MYFC",
     "away": "Cerezo Osaka",
-    "odds": 1.62,
+    "odds": 1.57,
     "pick": "Over Goals",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -246,20 +246,20 @@
     "time": "18:00",
     "home": "Hokkaido Consadole Sapporo",
     "away": "Fagiano Okayama",
-    "odds": 1.62,
+    "odds": 1.8,
     "pick": "Home Win",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -268,20 +268,20 @@
     "time": "18:00",
     "home": "Jubilo Iwata",
     "away": "JEF United Ichihara Chiba",
-    "odds": 1.65,
+    "odds": 1.79,
     "pick": "Home Win",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -290,20 +290,20 @@
     "time": "18:00",
     "home": "Kataller Toyama",
     "away": "Urawa Red Diamonds",
-    "odds": 1.7,
+    "odds": 1.66,
     "pick": "Over Goals",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -317,15 +317,15 @@
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -334,20 +334,20 @@
     "time": "18:00",
     "home": "Sagan Tosu",
     "away": "Tokyo Verdy",
-    "odds": 1.78,
-    "pick": "Over Goals",
+    "odds": 1.8,
+    "pick": "Home Win",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -356,20 +356,20 @@
     "time": "18:00",
     "home": "Tochigi City FC",
     "away": "Sanfrecce Hiroshima",
-    "odds": 1.75,
+    "odds": 1.71,
     "pick": "Over Goals",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -378,20 +378,20 @@
     "time": "18:00",
     "home": "Ehime FC",
     "away": "FC Tokyo",
-    "odds": 1.67,
+    "odds": 1.75,
     "pick": "Over Goals",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -405,15 +405,15 @@
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -422,20 +422,20 @@
     "time": "18:00",
     "home": "Fukushima United FC",
     "away": "Mito Hollyhock",
-    "odds": 1.74,
+    "odds": 1.72,
     "pick": "Over Goals",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -444,20 +444,20 @@
     "time": "18:00",
     "home": "FC Osaka [n]",
     "away": "Avispa Fukuoka",
-    "odds": 1.52,
+    "odds": 1.5,
     "pick": "Over Goals",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -466,20 +466,20 @@
     "time": "18:00",
     "home": "Gainare Tottori",
     "away": "V Varen Nagasaki",
-    "odds": 1.79,
+    "odds": 1.77,
     "pick": "Home Win",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -488,20 +488,20 @@
     "time": "18:00",
     "home": "Giravanz Kitakyushu",
     "away": "Nagoya Grampus",
-    "odds": 1.65,
+    "odds": 1.66,
     "pick": "Over Goals",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -510,20 +510,20 @@
     "time": "18:00",
     "home": "Roasso Kumamoto",
     "away": "Kawasaki Frontale",
-    "odds": 1.79,
+    "odds": 1.77,
     "pick": "Over Goals",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -532,20 +532,20 @@
     "time": "18:00",
     "home": "Matsumoto Yamaga FC",
     "away": "Albirex Niigata",
-    "odds": 1.66,
+    "odds": 1.8,
     "pick": "Home Win",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -554,20 +554,20 @@
     "time": "18:00",
     "home": "FC Gifu",
     "away": "Yokohama FC",
-    "odds": 1.73,
+    "odds": 1.74,
     "pick": "Over Goals",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -581,15 +581,15 @@
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -598,20 +598,20 @@
     "time": "20:30",
     "home": "Thailand",
     "away": "Vietnam",
-    "odds": 1.68,
+    "odds": 1.64,
     "pick": "Home Win",
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -625,15 +625,15 @@
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   },
@@ -647,15 +647,15 @@
     "home_form": [
       "W",
       "D",
-      "L",
       "W",
-      "D"
+      "L",
+      "W"
     ],
     "away_form": [
+      "L",
+      "W",
       "D",
       "W",
-      "W",
-      "L",
       "D"
     ]
   }

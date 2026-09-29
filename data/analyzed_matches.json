@@ -4,22 +4,22 @@
     "time": "02:45",
     "home_team": "Czech Republic",
     "away_team": "England",
-    "selected_odds": 1.75,
+    "selected_odds": 1.73,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -37,15 +37,15 @@
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -56,22 +56,22 @@
     "time": "02:45",
     "home_team": "Scotland",
     "away_team": "Switzerland",
-    "selected_odds": 1.62,
+    "selected_odds": 1.8,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -82,22 +82,22 @@
     "time": "02:45",
     "home_team": "Slovenia",
     "away_team": "North Macedonia",
-    "selected_odds": 1.56,
+    "selected_odds": 1.57,
     "prediction": "Away Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -108,22 +108,22 @@
     "time": "00:00",
     "home_team": "Finland",
     "away_team": "Belarus",
-    "selected_odds": 1.59,
+    "selected_odds": 1.57,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -134,22 +134,22 @@
     "time": "00:00",
     "home_team": "Moldova",
     "away_team": "Faroe Islands",
-    "selected_odds": 1.67,
-    "prediction": "Home Win",
+    "selected_odds": 1.79,
+    "prediction": "Away Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -160,22 +160,22 @@
     "time": "02:45",
     "home_team": "Bulgaria",
     "away_team": "Estonia",
-    "selected_odds": 1.8,
+    "selected_odds": 1.78,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -186,22 +186,22 @@
     "time": "02:45",
     "home_team": "Luxembourg",
     "away_team": "Iceland",
-    "selected_odds": 1.64,
+    "selected_odds": 1.62,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -212,22 +212,22 @@
     "time": "02:45",
     "home_team": "San Marino",
     "away_team": "Albania",
-    "selected_odds": 1.66,
+    "selected_odds": 1.8,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -245,15 +245,15 @@
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -264,22 +264,22 @@
     "time": "18:00",
     "home_team": "Fujieda MYFC",
     "away_team": "Cerezo Osaka",
-    "selected_odds": 1.62,
+    "selected_odds": 1.57,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -290,22 +290,22 @@
     "time": "18:00",
     "home_team": "Hokkaido Consadole Sapporo",
     "away_team": "Fagiano Okayama",
-    "selected_odds": 1.62,
+    "selected_odds": 1.8,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -316,22 +316,22 @@
     "time": "18:00",
     "home_team": "Jubilo Iwata",
     "away_team": "JEF United Ichihara Chiba",
-    "selected_odds": 1.65,
+    "selected_odds": 1.79,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -342,22 +342,22 @@
     "time": "18:00",
     "home_team": "Kataller Toyama",
     "away_team": "Urawa Red Diamonds",
-    "selected_odds": 1.7,
+    "selected_odds": 1.66,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -375,15 +375,15 @@
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -394,22 +394,22 @@
     "time": "18:00",
     "home_team": "Sagan Tosu",
     "away_team": "Tokyo Verdy",
-    "selected_odds": 1.78,
-    "prediction": "Over Goals",
+    "selected_odds": 1.8,
+    "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -420,22 +420,22 @@
     "time": "18:00",
     "home_team": "Tochigi City FC",
     "away_team": "Sanfrecce Hiroshima",
-    "selected_odds": 1.75,
+    "selected_odds": 1.71,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -446,22 +446,22 @@
     "time": "18:00",
     "home_team": "Ehime FC",
     "away_team": "FC Tokyo",
-    "selected_odds": 1.67,
+    "selected_odds": 1.75,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -479,15 +479,15 @@
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -498,22 +498,22 @@
     "time": "18:00",
     "home_team": "Fukushima United FC",
     "away_team": "Mito Hollyhock",
-    "selected_odds": 1.74,
+    "selected_odds": 1.72,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -524,22 +524,22 @@
     "time": "18:00",
     "home_team": "FC Osaka [n]",
     "away_team": "Avispa Fukuoka",
-    "selected_odds": 1.52,
+    "selected_odds": 1.5,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -550,22 +550,22 @@
     "time": "18:00",
     "home_team": "Gainare Tottori",
     "away_team": "V Varen Nagasaki",
-    "selected_odds": 1.79,
+    "selected_odds": 1.77,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -576,22 +576,22 @@
     "time": "18:00",
     "home_team": "Giravanz Kitakyushu",
     "away_team": "Nagoya Grampus",
-    "selected_odds": 1.65,
+    "selected_odds": 1.66,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -602,22 +602,22 @@
     "time": "18:00",
     "home_team": "Roasso Kumamoto",
     "away_team": "Kawasaki Frontale",
-    "selected_odds": 1.79,
+    "selected_odds": 1.77,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -628,22 +628,22 @@
     "time": "18:00",
     "home_team": "Matsumoto Yamaga FC",
     "away_team": "Albirex Niigata",
-    "selected_odds": 1.66,
+    "selected_odds": 1.8,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -654,22 +654,22 @@
     "time": "18:00",
     "home_team": "FC Gifu",
     "away_team": "Yokohama FC",
-    "selected_odds": 1.73,
+    "selected_odds": 1.74,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -687,15 +687,15 @@
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -706,22 +706,22 @@
     "time": "20:30",
     "home_team": "Thailand",
     "away_team": "Vietnam",
-    "selected_odds": 1.68,
+    "selected_odds": 1.64,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -739,15 +739,15 @@
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
@@ -765,15 +765,15 @@
       "homeForm": [
         "W",
         "D",
-        "L",
         "W",
-        "D"
+        "L",
+        "W"
       ],
       "awayForm": [
+        "L",
+        "W",
         "D",
         "W",
-        "W",
-        "L",
         "D"
       ]
     },
