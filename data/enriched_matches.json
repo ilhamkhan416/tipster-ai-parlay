@@ -343,9 +343,9 @@
     }
   },
   {
-    "home_team": "Korea Utara W",
-    "away_team": "RRC W",
-    "league": "06:00",
+    "home_team": "RRC W",
+    "away_team": "Away Team #30",
+    "league": "KOREA UTARA W",
     "selected_odds": 1.6,
     "api_stats": {
       "h2h": "Data H2H terbatas",

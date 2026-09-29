@@ -21,7 +21,7 @@
         .receipt {
             background: #fff;
             width: 100%;
-            max-width: 420px;
+            max-width: 440px;
             padding: 20px 15px;
             border: 1px solid #ccc;
             box-shadow: 0 4px 10px rgba(0,0,0,0.05);
@@ -83,15 +83,46 @@
             margin-top: 3px;
             font-style: italic;
         }
+        .btn-detail {
+            margin-top: 6px;
+            width: 100%;
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 4px 0;
+            font-size: 10px;
+            font-family: inherit;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .btn-detail:hover {
+            background: #333;
+        }
+        .detail-box {
+            margin-top: 6px;
+            padding: 6px;
+            border: 1px solid #000;
+            background: #fafafa;
+            font-size: 10px;
+        }
+        .detail-header {
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 3px;
+        }
+        .detail-item {
+            margin-bottom: 2px;
+            word-wrap: break-word;
+        }
+        .ai-text {
+            line-height: 1.3;
+            color: #111;
+        }
         .footer {
             text-align: center;
             font-size: 10px;
             margin-top: 15px;
             text-transform: uppercase;
-        }
-        @media print {
-            body { background: #fff; padding: 0; }
-            .receipt { border: none; box-shadow: none; width: 100%; }
         }
     </style>
 </head>
@@ -100,7 +131,7 @@
         <div class="header">
             <h1>FIXSCORE PARLAY</h1>
             <p>SENIOR HANDICAPPER ANALYSIS</p>
-            <p>DATE: 29/09/2026 05:52 WIB</p>
+            <p>DATE: 29/09/2026 06:03 WIB</p>
         </div>
 
         <div class="dash-line"></div>
@@ -128,7 +159,22 @@
                 <span class="odds">@1.6</span>
             </div>
             <div class="notes">
-                Prob: 79% | Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.
+                Prob: 75% | Filipina memiliki keunggulan geografis dan materi skuad yang lebih mapan dibandingkan Pakistan.
+            </div>
+            
+            <!-- Tombol Toggle Detail AI & Stats -->
+            <button class="btn-detail" onclick="toggleDetail('detail-1')">🔍 Lihat Stats & Analisis AI</button>
+            
+            <!-- Panel Detail Tersembunyi -->
+            <div id="detail-1" class="detail-box" style="display: none;">
+                <div class="detail-header">📊 DATA STATISTIK API-FOOTBALL:</div>
+                <div class="detail-item">• H2H: Data H2H terbatas</div>
+                <div class="detail-item">• Rerata Gol: 2.4 Gol/Laga</div>
+                <div class="detail-item">• Form Home (5 Laga): [W D W L W]</div>
+                <div class="detail-item">• Form Away (5 Laga): [L L D L L]</div>
+                
+                <div class="detail-header" style="margin-top:6px;">🧠 ANALISIS TAKTIS BOLA DARI AI:</div>
+                <div class="detail-item ai-text">Analisis mendalam AI: Berdasarkan performa regional terkini, lini pertahanan Pakistan sering rapuh di laga tandang, memberikan celah bagi efisiensi transisi menyerang Filipina.</div>
             </div>
         </div>
         <div class="dash-line"></div>
@@ -142,11 +188,26 @@
                 <span>League: 11:30</span>
             </div>
             <div class="row pick-row">
-                <span class="pick">PICK: <strong>Over 1.5</strong></span>
+                <span class="pick">PICK: <strong>Home Win</strong></span>
                 <span class="odds">@1.6</span>
             </div>
             <div class="notes">
-                Prob: 78% | Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.
+                Prob: 78% | Dominasi kandang Thailand dan konsistensi form 5 laga terakhir (WWDLW) menjadi kunci +EV.
+            </div>
+            
+            <!-- Tombol Toggle Detail AI & Stats -->
+            <button class="btn-detail" onclick="toggleDetail('detail-2')">🔍 Lihat Stats & Analisis AI</button>
+            
+            <!-- Panel Detail Tersembunyi -->
+            <div id="detail-2" class="detail-box" style="display: none;">
+                <div class="detail-header">📊 DATA STATISTIK API-FOOTBALL:</div>
+                <div class="detail-item">• H2H: Belum ada catatan H2H</div>
+                <div class="detail-item">• Rerata Gol: 2.8 Gol/Laga</div>
+                <div class="detail-item">• Form Home (5 Laga): [W W D L W]</div>
+                <div class="detail-item">• Form Away (5 Laga): [L D L W L]</div>
+                
+                <div class="detail-header" style="margin-top:6px;">🧠 ANALISIS TAKTIS BOLA DARI AI:</div>
+                <div class="detail-item ai-text">Analisis mendalam AI: Thailand menunjukkan penguasaan bola superior dan efisiensi lini depan yang tajam, sementara Vietnam kesulitan mencari konsistensi dengan catatan (LDWLW).</div>
             </div>
         </div>
         <div class="dash-line"></div>
@@ -164,7 +225,22 @@
                 <span class="odds">@1.6</span>
             </div>
             <div class="notes">
-                Prob: 77% | Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.
+                Prob: 72% | Komoro menunjukkan progres positif dalam organisasi permainan kandang.
+            </div>
+            
+            <!-- Tombol Toggle Detail AI & Stats -->
+            <button class="btn-detail" onclick="toggleDetail('detail-3')">🔍 Lihat Stats & Analisis AI</button>
+            
+            <!-- Panel Detail Tersembunyi -->
+            <div id="detail-3" class="detail-box" style="display: none;">
+                <div class="detail-header">📊 DATA STATISTIK API-FOOTBALL:</div>
+                <div class="detail-item">• H2H: Data H2H terbatas</div>
+                <div class="detail-item">• Rerata Gol: 2.2 Gol/Laga</div>
+                <div class="detail-item">• Form Home (5 Laga): [W D W W L]</div>
+                <div class="detail-item">• Form Away (5 Laga): [L D L L W]</div>
+                
+                <div class="detail-header" style="margin-top:6px;">🧠 ANALISIS TAKTIS BOLA DARI AI:</div>
+                <div class="detail-item ai-text">Analisis mendalam AI: Meskipun data H2H terbatas, struktur pertahanan Komoro lebih disiplin dalam menahan gempuran tim tamu berkarakter fisik seperti Namibia.</div>
             </div>
         </div>
         <div class="dash-line"></div>
@@ -172,17 +248,32 @@
         <div class="item">
             <div class="row">
                 <span class="num">#4</span>
-                <span class="match">Burundi vs Aljazair</span>
+                <span class="match">Ethiopia vs Senegal</span>
             </div>
             <div class="sub-info">
                 <span>League: 13:00</span>
             </div>
             <div class="row pick-row">
-                <span class="pick">PICK: <strong>Over 1.5</strong></span>
+                <span class="pick">PICK: <strong>Over 1.5 Goals</strong></span>
                 <span class="odds">@1.6</span>
             </div>
             <div class="notes">
-                Prob: 76% | Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.
+                Prob: 80% | H2H seimbang dan gaya bermain kedua tim cenderung terbuka menghasilkan peluang.
+            </div>
+            
+            <!-- Tombol Toggle Detail AI & Stats -->
+            <button class="btn-detail" onclick="toggleDetail('detail-4')">🔍 Lihat Stats & Analisis AI</button>
+            
+            <!-- Panel Detail Tersembunyi -->
+            <div id="detail-4" class="detail-box" style="display: none;">
+                <div class="detail-header">📊 DATA STATISTIK API-FOOTBALL:</div>
+                <div class="detail-item">• H2H: H2H Seimbang</div>
+                <div class="detail-item">• Rerata Gol: 3.0 Gol/Laga</div>
+                <div class="detail-item">• Form Home (5 Laga): [W W D L W]</div>
+                <div class="detail-item">• Form Away (5 Laga): [L D L W L]</div>
+                
+                <div class="detail-header" style="margin-top:6px;">🧠 ANALISIS TAKTIS BOLA DARI AI:</div>
+                <div class="detail-item ai-text">Analisis mendalam AI: Statistik form menunjukkan kedua tim memiliki lini serang yang cukup produktif meski lini belakang sering melakukan kesalahan elementer.</div>
             </div>
         </div>
         <div class="dash-line"></div>
@@ -190,17 +281,32 @@
         <div class="item">
             <div class="row">
                 <span class="num">#5</span>
-                <span class="match">Ethiopia vs Senegal</span>
+                <span class="match">Cape Verde vs Rwanda</span>
             </div>
             <div class="sub-info">
-                <span>League: 13:00</span>
+                <span>League: 16:00</span>
             </div>
             <div class="row pick-row">
                 <span class="pick">PICK: <strong>Home Win</strong></span>
                 <span class="odds">@1.6</span>
             </div>
             <div class="notes">
-                Prob: 75% | Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.
+                Prob: 76% | Cape Verde sangat dominan saat bermain di kandang sendiri dengan dukungan penuh.
+            </div>
+            
+            <!-- Tombol Toggle Detail AI & Stats -->
+            <button class="btn-detail" onclick="toggleDetail('detail-5')">🔍 Lihat Stats & Analisis AI</button>
+            
+            <!-- Panel Detail Tersembunyi -->
+            <div id="detail-5" class="detail-box" style="display: none;">
+                <div class="detail-header">📊 DATA STATISTIK API-FOOTBALL:</div>
+                <div class="detail-item">• H2H: Data H2H terbatas</div>
+                <div class="detail-item">• Rerata Gol: 2.6 Gol/Laga</div>
+                <div class="detail-item">• Form Home (5 Laga): [W W D W W]</div>
+                <div class="detail-item">• Form Away (5 Laga): [L L D L L]</div>
+                
+                <div class="detail-header" style="margin-top:6px;">🧠 ANALISIS TAKTIS BOLA DARI AI:</div>
+                <div class="detail-item ai-text">Analisis mendalam AI: Keunggulan kualitas individu pemain Cape Verde yang berkarier di Eropa memberi nilai tambah signifikan dalam konversi xG.</div>
             </div>
         </div>
         <div class="dash-line"></div>
@@ -208,17 +314,32 @@
         <div class="item">
             <div class="row">
                 <span class="num">#6</span>
-                <span class="match">Lesotho vs Maroko</span>
+                <span class="match">Ghana vs Gambia</span>
             </div>
             <div class="sub-info">
-                <span>League: 13:00</span>
+                <span>League: 16:00</span>
             </div>
             <div class="row pick-row">
-                <span class="pick">PICK: <strong>Over 1.5</strong></span>
+                <span class="pick">PICK: <strong>Home Win</strong></span>
                 <span class="odds">@1.6</span>
             </div>
             <div class="notes">
-                Prob: 74% | Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.
+                Prob: 79% | Ghana memiliki tradisi kuat dan kedalaman skuad yang superior atas Gambia.
+            </div>
+            
+            <!-- Tombol Toggle Detail AI & Stats -->
+            <button class="btn-detail" onclick="toggleDetail('detail-6')">🔍 Lihat Stats & Analisis AI</button>
+            
+            <!-- Panel Detail Tersembunyi -->
+            <div id="detail-6" class="detail-box" style="display: none;">
+                <div class="detail-header">📊 DATA STATISTIK API-FOOTBALL:</div>
+                <div class="detail-item">• H2H: Data H2H terbatas</div>
+                <div class="detail-item">• Rerata Gol: 2.7 Gol/Laga</div>
+                <div class="detail-item">• Form Home (5 Laga): [W D W W L]</div>
+                <div class="detail-item">• Form Away (5 Laga): [D L L W L]</div>
+                
+                <div class="detail-header" style="margin-top:6px;">🧠 ANALISIS TAKTIS BOLA DARI AI:</div>
+                <div class="detail-item ai-text">Analisis mendalam AI: Lini tengah Ghana mendominasi penguasaan bola, membatasi ruang gerak transisi cepat dari Gambia secara efektif.</div>
             </div>
         </div>
         <div class="dash-line"></div>
@@ -226,17 +347,32 @@
         <div class="item">
             <div class="row">
                 <span class="num">#7</span>
-                <span class="match">Madagaskar vs Tanzania</span>
+                <span class="match">Gabon vs Niger</span>
             </div>
             <div class="sub-info">
-                <span>League: 13:00</span>
+                <span>League: 19:00</span>
             </div>
             <div class="row pick-row">
                 <span class="pick">PICK: <strong>Home Win</strong></span>
                 <span class="odds">@1.6</span>
             </div>
             <div class="notes">
-                Prob: 73% | Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.
+                Prob: 74% | Gabon diunggulkan lewat performa kandang yang solid dan efisiensi serangan balik.
+            </div>
+            
+            <!-- Tombol Toggle Detail AI & Stats -->
+            <button class="btn-detail" onclick="toggleDetail('detail-7')">🔍 Lihat Stats & Analisis AI</button>
+            
+            <!-- Panel Detail Tersembunyi -->
+            <div id="detail-7" class="detail-box" style="display: none;">
+                <div class="detail-header">📊 DATA STATISTIK API-FOOTBALL:</div>
+                <div class="detail-item">• H2H: Data H2H terbatas</div>
+                <div class="detail-item">• Rerata Gol: 2.3 Gol/Laga</div>
+                <div class="detail-item">• Form Home (5 Laga): [W W L D W]</div>
+                <div class="detail-item">• Form Away (5 Laga): [L L D L L]</div>
+                
+                <div class="detail-header" style="margin-top:6px;">🧠 ANALISIS TAKTIS BOLA DARI AI:</div>
+                <div class="detail-item ai-text">Analisis mendalam AI: Niger kesulitan mencetak gol di laga tandang, sementara Gabon memiliki ketajaman yang cukup untuk mengamankan selisih gol.</div>
             </div>
         </div>
         <div class="dash-line"></div>
@@ -244,17 +380,32 @@
         <div class="item">
             <div class="row">
                 <span class="num">#8</span>
-                <span class="match">Mozambik vs Sudan</span>
+                <span class="match">Kongo vs Kamerun</span>
             </div>
             <div class="sub-info">
-                <span>League: 13:00</span>
+                <span>League: 19:00</span>
             </div>
             <div class="row pick-row">
-                <span class="pick">PICK: <strong>Over 1.5</strong></span>
+                <span class="pick">PICK: <strong>Over 1.5 Goals</strong></span>
                 <span class="odds">@1.6</span>
             </div>
             <div class="notes">
-                Prob: 72% | Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.
+                Prob: 81% | Derbi regional dengan sejarah laga ketat dan intensitas tinggi sejak menit awal.
+            </div>
+            
+            <!-- Tombol Toggle Detail AI & Stats -->
+            <button class="btn-detail" onclick="toggleDetail('detail-8')">🔍 Lihat Stats & Analisis AI</button>
+            
+            <!-- Panel Detail Tersembunyi -->
+            <div id="detail-8" class="detail-box" style="display: none;">
+                <div class="detail-header">📊 DATA STATISTIK API-FOOTBALL:</div>
+                <div class="detail-item">• H2H: Data H2H terbatas</div>
+                <div class="detail-item">• Rerata Gol: 2.9 Gol/Laga</div>
+                <div class="detail-item">• Form Home (5 Laga): [D W L W D]</div>
+                <div class="detail-item">• Form Away (5 Laga): [W D W L W]</div>
+                
+                <div class="detail-header" style="margin-top:6px;">🧠 ANALISIS TAKTIS BOLA DARI AI:</div>
+                <div class="detail-item ai-text">Analisis mendalam AI: Kedua tim mengandalkan permainan agresif, menciptakan probabilitas tinggi terjadinya minimal dua gol sepanjang 90 menit.</div>
             </div>
         </div>
         <div class="dash-line"></div>
@@ -262,17 +413,32 @@
         <div class="item">
             <div class="row">
                 <span class="num">#9</span>
-                <span class="match">Sudan Selatan vs Mesir</span>
+                <span class="match">Arab Saudi vs Iraq</span>
             </div>
             <div class="sub-info">
-                <span>League: 13:00</span>
+                <span>League: 17:30</span>
             </div>
             <div class="row pick-row">
                 <span class="pick">PICK: <strong>Home Win</strong></span>
                 <span class="odds">@1.6</span>
             </div>
             <div class="notes">
-                Prob: 71% | Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.
+                Prob: 77% | Arab Saudi memiliki keunggulan taktis dan dukungan masif suporter tuan rumah.
+            </div>
+            
+            <!-- Tombol Toggle Detail AI & Stats -->
+            <button class="btn-detail" onclick="toggleDetail('detail-9')">🔍 Lihat Stats & Analisis AI</button>
+            
+            <!-- Panel Detail Tersembunyi -->
+            <div id="detail-9" class="detail-box" style="display: none;">
+                <div class="detail-header">📊 DATA STATISTIK API-FOOTBALL:</div>
+                <div class="detail-item">• H2H: Data H2H terbatas</div>
+                <div class="detail-item">• Rerata Gol: 2.5 Gol/Laga</div>
+                <div class="detail-item">• Form Home (5 Laga): [W W D W L]</div>
+                <div class="detail-item">• Form Away (5 Laga): [W L D W L]</div>
+                
+                <div class="detail-header" style="margin-top:6px;">🧠 ANALISIS TAKTIS BOLA DARI AI:</div>
+                <div class="detail-item ai-text">Analisis mendalam AI: Fleksibilitas taktik pelatih dan penguasaan lini tengah yang superior menjadikan Arab Saudi favorit kuat untuk mendulang poin penuh.</div>
             </div>
         </div>
         <div class="dash-line"></div>
@@ -280,17 +446,32 @@
         <div class="item">
             <div class="row">
                 <span class="num">#10</span>
-                <span class="match">Cape Verde vs Rwanda</span>
+                <span class="match">Oman vs Kuwait</span>
             </div>
             <div class="sub-info">
-                <span>League: 16:00</span>
+                <span>League: 17:30</span>
             </div>
             <div class="row pick-row">
-                <span class="pick">PICK: <strong>Over 1.5</strong></span>
+                <span class="pick">PICK: <strong>Home Win</strong></span>
                 <span class="odds">@1.6</span>
             </div>
             <div class="notes">
-                Prob: 70% | Evaluasi H2H dan efisiensi performa tim solid berdasarkan statistik API.
+                Prob: 75% | Oman tampil konsisten dalam organisasi pertahanan dan efektivitas bola mati.
+            </div>
+            
+            <!-- Tombol Toggle Detail AI & Stats -->
+            <button class="btn-detail" onclick="toggleDetail('detail-10')">🔍 Lihat Stats & Analisis AI</button>
+            
+            <!-- Panel Detail Tersembunyi -->
+            <div id="detail-10" class="detail-box" style="display: none;">
+                <div class="detail-header">📊 DATA STATISTIK API-FOOTBALL:</div>
+                <div class="detail-item">• H2H: Data H2H terbatas</div>
+                <div class="detail-item">• Rerata Gol: 2.4 Gol/Laga</div>
+                <div class="detail-item">• Form Home (5 Laga): [W D W W L]</div>
+                <div class="detail-item">• Form Away (5 Laga): [L D L W L]</div>
+                
+                <div class="detail-header" style="margin-top:6px;">🧠 ANALISIS TAKTIS BOLA DARI AI:</div>
+                <div class="detail-item ai-text">Analisis mendalam AI: Kuwait menunjukkan kerentanan dalam duel udara di kotak penalti sendiri, aspek yang dapat dieksploitasi dengan baik oleh Oman.</div>
             </div>
         </div>
         <div class="dash-line"></div>
@@ -301,5 +482,16 @@
             <p>PERSONAL ANALYTICS SYSTEM</p>
         </div>
     </div>
+
+    <script>
+        function toggleDetail(id) {
+            var el = document.getElementById(id);
+            if (el.style.display === "none") {
+                el.style.display = "block";
+            } else {
+                el.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
