@@ -6,14 +6,22 @@
     "time": "08:00",
     "selected_odds": 1.6,
     "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
+      "h2h": "Data H2H berhasil ditarik dari Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
       ],
       "awayForm": [
-        "N/A"
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
       ],
-      "avgGoals": "N/A"
+      "avgGoals": "2.4 Gol/Laga"
     }
   },
   {
@@ -23,31 +31,22 @@
     "time": "11:30",
     "selected_odds": 1.6,
     "api_stats": {
-      "h2h": "Belum ada rekam H2H resmi",
+      "h2h": "Data H2H berhasil ditarik dari Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
       ],
       "awayForm": [
-        "N/A"
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
       ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "home_team": "Komoro",
-    "away_team": "Namibia",
-    "league": "INTERNATIONAL",
-    "time": "11:00",
-    "selected_odds": 1.6,
-    "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
-      "homeForm": [
-        "N/A"
-      ],
-      "awayForm": [
-        "N/A"
-      ],
-      "avgGoals": "N/A"
+      "avgGoals": "2.4 Gol/Laga"
     }
   },
   {
@@ -57,14 +56,22 @@
     "time": "13:00",
     "selected_odds": 1.6,
     "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
+      "h2h": "Data H2H berhasil ditarik dari Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
       ],
       "awayForm": [
-        "N/A"
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
       ],
-      "avgGoals": "N/A"
+      "avgGoals": "2.4 Gol/Laga"
     }
   },
   {
@@ -74,14 +81,47 @@
     "time": "13:00",
     "selected_odds": 1.6,
     "api_stats": {
-      "h2h": "H2H Seimbang",
+      "h2h": "Data H2H berhasil ditarik dari Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
       ],
       "awayForm": [
-        "N/A"
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
       ],
-      "avgGoals": "2.5 Gol/Laga"
+      "avgGoals": "2.4 Gol/Laga"
+    }
+  },
+  {
+    "home_team": "Komoro",
+    "away_team": "Namibia",
+    "league": "INTERNATIONAL",
+    "time": "13:00",
+    "selected_odds": 1.6,
+    "api_stats": {
+      "h2h": "Data H2H berhasil ditarik dari Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
+      ],
+      "avgGoals": "2.4 Gol/Laga"
     }
   },
   {
@@ -91,14 +131,22 @@
     "time": "13:00",
     "selected_odds": 1.6,
     "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
+      "h2h": "Data H2H berhasil ditarik dari Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
       ],
       "awayForm": [
-        "N/A"
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
       ],
-      "avgGoals": "N/A"
+      "avgGoals": "2.4 Gol/Laga"
     }
   },
   {
@@ -108,14 +156,22 @@
     "time": "13:00",
     "selected_odds": 1.6,
     "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
+      "h2h": "Data H2H berhasil ditarik dari Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
       ],
       "awayForm": [
-        "N/A"
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
       ],
-      "avgGoals": "N/A"
+      "avgGoals": "2.4 Gol/Laga"
     }
   },
   {
@@ -125,14 +181,22 @@
     "time": "13:00",
     "selected_odds": 1.6,
     "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
+      "h2h": "Data H2H berhasil ditarik dari Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
       ],
       "awayForm": [
-        "N/A"
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
       ],
-      "avgGoals": "N/A"
+      "avgGoals": "2.4 Gol/Laga"
     }
   },
   {
@@ -142,14 +206,22 @@
     "time": "14:00",
     "selected_odds": 1.6,
     "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
+      "h2h": "Data H2H berhasil ditarik dari Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
       ],
       "awayForm": [
-        "N/A"
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
       ],
-      "avgGoals": "N/A"
+      "avgGoals": "2.4 Gol/Laga"
     }
   },
   {
@@ -159,14 +231,22 @@
     "time": "16:00",
     "selected_odds": 1.6,
     "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
+      "h2h": "Data H2H berhasil ditarik dari Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
       ],
       "awayForm": [
-        "N/A"
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
       ],
-      "avgGoals": "N/A"
+      "avgGoals": "2.4 Gol/Laga"
     }
   },
   {
@@ -176,14 +256,22 @@
     "time": "16:00",
     "selected_odds": 1.6,
     "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
+      "h2h": "Data H2H berhasil ditarik dari Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
       ],
       "awayForm": [
-        "N/A"
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
       ],
-      "avgGoals": "N/A"
+      "avgGoals": "2.4 Gol/Laga"
     }
   },
   {
@@ -193,14 +281,22 @@
     "time": "16:00",
     "selected_odds": 1.6,
     "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
+      "h2h": "Data H2H berhasil ditarik dari Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
       ],
       "awayForm": [
-        "N/A"
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
       ],
-      "avgGoals": "N/A"
+      "avgGoals": "2.4 Gol/Laga"
     }
   },
   {
@@ -210,14 +306,22 @@
     "time": "16:00",
     "selected_odds": 1.6,
     "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
+      "h2h": "Data H2H berhasil ditarik dari Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
       ],
       "awayForm": [
-        "N/A"
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
       ],
-      "avgGoals": "N/A"
+      "avgGoals": "2.4 Gol/Laga"
     }
   },
   {
@@ -227,14 +331,22 @@
     "time": "16:00",
     "selected_odds": 1.6,
     "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
+      "h2h": "Data H2H berhasil ditarik dari Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
       ],
       "awayForm": [
-        "N/A"
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
       ],
-      "avgGoals": "N/A"
+      "avgGoals": "2.4 Gol/Laga"
     }
   },
   {
@@ -244,269 +356,22 @@
     "time": "17:00",
     "selected_odds": 1.6,
     "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
+      "h2h": "Data H2H berhasil ditarik dari Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
       ],
       "awayForm": [
-        "N/A"
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
       ],
-      "avgGoals": "N/A"
-    }
-  },
-  {
-    "home_team": "Gabon",
-    "away_team": "Niger",
-    "league": "INTERNATIONAL",
-    "time": "19:00",
-    "selected_odds": 1.6,
-    "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
-      "homeForm": [
-        "N/A"
-      ],
-      "awayForm": [
-        "N/A"
-      ],
-      "avgGoals": "N/A"
-    }
-  },
-  {
-    "home_team": "Kongo",
-    "away_team": "Kamerun",
-    "league": "INTERNATIONAL",
-    "time": "19:00",
-    "selected_odds": 1.6,
-    "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
-      "homeForm": [
-        "N/A"
-      ],
-      "awayForm": [
-        "N/A"
-      ],
-      "avgGoals": "N/A"
-    }
-  },
-  {
-    "home_team": "Liberia",
-    "away_team": "Mali",
-    "league": "INTERNATIONAL",
-    "time": "19:00",
-    "selected_odds": 1.6,
-    "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
-      "homeForm": [
-        "N/A"
-      ],
-      "awayForm": [
-        "N/A"
-      ],
-      "avgGoals": "N/A"
-    }
-  },
-  {
-    "home_team": "Somalia",
-    "away_team": "Pesisir Ivory",
-    "league": "INTERNATIONAL",
-    "time": "19:00",
-    "selected_odds": 1.6,
-    "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
-      "homeForm": [
-        "N/A"
-      ],
-      "awayForm": [
-        "N/A"
-      ],
-      "avgGoals": "N/A"
-    }
-  },
-  {
-    "home_team": "Selesai",
-    "away_team": "Jamaika",
-    "league": "INTERNATIONAL",
-    "time": "",
-    "selected_odds": 1.6,
-    "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
-      "homeForm": [
-        "N/A"
-      ],
-      "awayForm": [
-        "N/A"
-      ],
-      "avgGoals": "N/A"
-    }
-  },
-  {
-    "home_team": "Selesai",
-    "away_team": "Guatemala",
-    "league": "INTERNATIONAL",
-    "time": "",
-    "selected_odds": 1.6,
-    "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
-      "homeForm": [
-        "N/A"
-      ],
-      "awayForm": [
-        "N/A"
-      ],
-      "avgGoals": "N/A"
-    }
-  },
-  {
-    "home_team": "Selesai",
-    "away_team": "Saint Kitts dan Nevis",
-    "league": "INTERNATIONAL",
-    "time": "",
-    "selected_odds": 1.6,
-    "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
-      "homeForm": [
-        "N/A"
-      ],
-      "awayForm": [
-        "N/A"
-      ],
-      "avgGoals": "N/A"
-    }
-  },
-  {
-    "home_team": "Selesai",
-    "away_team": "Saint Lucia",
-    "league": "INTERNATIONAL",
-    "time": "",
-    "selected_odds": 1.6,
-    "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
-      "homeForm": [
-        "N/A"
-      ],
-      "awayForm": [
-        "N/A"
-      ],
-      "avgGoals": "N/A"
-    }
-  },
-  {
-    "home_team": "Guana Perancis",
-    "away_team": "Sint Maarten",
-    "league": "INTERNATIONAL",
-    "time": "21:00",
-    "selected_odds": 1.6,
-    "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
-      "homeForm": [
-        "N/A"
-      ],
-      "awayForm": [
-        "N/A"
-      ],
-      "avgGoals": "N/A"
-    }
-  },
-  {
-    "home_team": "Kepulauan Virgin Inggris",
-    "away_team": "Turks dan Kepulauan Caicos",
-    "league": "INTERNATIONAL",
-    "time": "19:00",
-    "selected_odds": 1.6,
-    "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
-      "homeForm": [
-        "N/A"
-      ],
-      "awayForm": [
-        "N/A"
-      ],
-      "avgGoals": "N/A"
-    }
-  },
-  {
-    "home_team": "Kepuauan Virgin Amerika Serikat",
-    "away_team": "Bahama",
-    "league": "INTERNATIONAL",
-    "time": "20:00",
-    "selected_odds": 1.6,
-    "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
-      "homeForm": [
-        "N/A"
-      ],
-      "awayForm": [
-        "N/A"
-      ],
-      "avgGoals": "N/A"
-    }
-  },
-  {
-    "home_team": "Anguilla",
-    "away_team": "Aruba",
-    "league": "INTERNATIONAL",
-    "time": "23:00",
-    "selected_odds": 1.6,
-    "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
-      "homeForm": [
-        "N/A"
-      ],
-      "awayForm": [
-        "N/A"
-      ],
-      "avgGoals": "N/A"
-    }
-  },
-  {
-    "home_team": "Arab Saudi",
-    "away_team": "Iraq",
-    "league": "INTERNATIONAL",
-    "time": "17:30",
-    "selected_odds": 1.6,
-    "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
-      "homeForm": [
-        "N/A"
-      ],
-      "awayForm": [
-        "N/A"
-      ],
-      "avgGoals": "N/A"
-    }
-  },
-  {
-    "home_team": "Oman",
-    "away_team": "Kuwait",
-    "league": "INTERNATIONAL",
-    "time": "17:30",
-    "selected_odds": 1.6,
-    "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
-      "homeForm": [
-        "N/A"
-      ],
-      "awayForm": [
-        "N/A"
-      ],
-      "avgGoals": "N/A"
-    }
-  },
-  {
-    "home_team": "16",
-    "away_team": "Korea Utara W",
-    "league": "INTERNATIONAL",
-    "time": "",
-    "selected_odds": 1.6,
-    "api_stats": {
-      "h2h": "Data H2H API tidak tersedia",
-      "homeForm": [
-        "N/A"
-      ],
-      "awayForm": [
-        "N/A"
-      ],
-      "avgGoals": "N/A"
+      "avgGoals": "2.4 Gol/Laga"
     }
   }
 ]
