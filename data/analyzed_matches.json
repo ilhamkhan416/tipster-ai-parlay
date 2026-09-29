@@ -2,8 +2,8 @@
   {
     "league": "MAINBOLAKAKI PARLAY",
     "time": "02:45",
-    "home_team": "Mix",
-    "away_team": "TIME\tHOME/AWAY\t\tFIRST HALF",
+    "home_team": "UEFA NATIONS LEAGUE A",
+    "away_team": "Czech Republic",
     "selected_odds": 1.75,
     "prediction": "Home Win",
     "api_stats": {
@@ -15,25 +15,7 @@
         "N/A"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Mix dan TIME\tHOME/AWAY\t\tFIRST HALF di MAINBOLAKAKI PARLAY."
-  },
-  {
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "02:45",
-    "home_team": "TIME\tHOME/AWAY\t\tFIRST HALF",
-    "away_team": "HDP\tO/U\tO/E\t\tHDP\tO/U",
-    "selected_odds": 1.75,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "N/A"
-      ],
-      "awayForm": [
-        "N/A"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa TIME\tHOME/AWAY\t\tFIRST HALF dan HDP\tO/U\tO/E\t\tHDP\tO/U di MAINBOLAKAKI PARLAY."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa UEFA NATIONS LEAGUE A dan Czech Republic di MAINBOLAKAKI PARLAY."
   },
   {
     "league": "UEFA NATIONS LEAGUE A",
@@ -148,7 +130,7 @@
     "time": "02:45",
     "home_team": "Bulgaria",
     "away_team": "Estonia",
-    "selected_odds": 1.77,
+    "selected_odds": 1.78,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -292,7 +274,7 @@
     "time": "18:00",
     "home_team": "Montedio Yamagata",
     "away_team": "Yokohama F Marinos",
-    "selected_odds": 1.54,
+    "selected_odds": 1.55,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -310,7 +292,7 @@
     "time": "18:00",
     "home_team": "Sagan Tosu",
     "away_team": "Tokyo Verdy",
-    "selected_odds": 1.77,
+    "selected_odds": 1.78,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -400,7 +382,7 @@
     "time": "18:00",
     "home_team": "FC Osaka [n]",
     "away_team": "Avispa Fukuoka",
-    "selected_odds": 1.78,
+    "selected_odds": 1.52,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -472,7 +454,7 @@
     "time": "18:00",
     "home_team": "Matsumoto Yamaga FC",
     "away_team": "Albirex Niigata",
-    "selected_odds": 1.63,
+    "selected_odds": 1.66,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -526,7 +508,7 @@
     "time": "20:30",
     "home_team": "Thailand",
     "away_team": "Vietnam",
-    "selected_odds": 1.64,
+    "selected_odds": 1.72,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -538,5 +520,23 @@
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Thailand dan Vietnam di FIFA ASEAN CUP DIVISION 1 2026 [ IN INDONESIA ]."
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "22:00",
+    "home_team": "Slovenia U",
+    "away_team": "Israel U",
+    "selected_odds": 1.79,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "N/A"
+      ],
+      "awayForm": [
+        "N/A"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Slovenia U dan Israel U di UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS."
   }
 ]
