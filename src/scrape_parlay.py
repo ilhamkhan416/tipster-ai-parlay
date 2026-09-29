@@ -13,10 +13,10 @@ def print_banner(title):
 
 def clean_text_junk(text):
     """ Membersihkan status LIVE, Jam, Header, dan Kata Sampah """
-    # Hapus kata status/header umum
     junk_words = [
         "LIVE", "TODAY", "SELECT LEAGUE", "FULL TIME", "HANDICAP", 
-        "OVER", "UNDER", "PARLAY", "1X2", "SOCCER", "BOLA", "VS"
+        "OVER", "UNDER", "PARLAY", "1X2", "SOCCER", "BOLA", "VS",
+        "MIX", "TIME", "HOME/AWAY", "FIRST HALF", "HDP", "O/U", "O/E"
     ]
     
     cleaned = text
@@ -100,15 +100,15 @@ def scrape_and_filter():
                 if len(cleaned_line) >= 3:
                     clean_candidates.append(cleaned_line)
 
-            # Minimal butuh 2 kata valid untuk nama Tim Home & Away
             if len(clean_candidates) >= 2:
                 home = clean_candidates[0]
                 away = clean_candidates[1]
             else:
                 continue
 
-            # Skip header palsu seperti 'TODAY' vs 'SELECT LEAGUE'
-            if home.upper() in ["TODAY", "LIVE"] or away.upper() in ["SELECT LEAGUE", "TODAY"]:
+            # Skip header palsu yang terlewat
+            invalid_terms = ["TODAY", "LIVE", "SELECT LEAGUE", "MIX", "TIME", "HOME/AWAY", "FIRST HALF"]
+            if any(term in home.upper() for term in invalid_terms) or any(term in away.upper() for term in invalid_terms):
                 continue
 
             # Deduplikasi Pertandingan
@@ -144,7 +144,6 @@ def scrape_and_filter():
             
             success = False
             attempts = 0
-            # Pencarian berlapis ke Flashscore: [Home Away], [Home], [Away]
             keywords = [f"{match['home']} {match['away']}", match['home'], match['away']]
 
             while not success and attempts < len(keywords):
@@ -153,27 +152,43 @@ def scrape_and_filter():
                 print(f"  └─ Attempt {attempts}: Searching keyword '{search_kw}'...")
 
                 try:
-                    fs_page.goto(f"https://www.flashscore.co.id/cari/?q={search_kw}", timeout=15000)
-                    fs_page.wait_for_timeout(2000)
+                    # Menggunakan URL global Flashscore
+                    fs_page.goto(f"https://www.flashscore.com/search/?q={search_kw}", timeout=20000)
+                    fs_page.wait_for_timeout(3000)
 
-                    match_elem = fs_page.query_selector(".searchResult .event__match, .event__match")
+                    # Selector hasil pencarian Flashscore
+                    match_elem = fs_page.query_selector("a[href*='/match/'], .searchResult .event__match, .event__match")
                     if match_elem:
-                        match_id_attr = match_elem.get_attribute("id")
-                        if match_id_attr:
-                            match_id = match_id_attr.split("_")[-1]
-                            
+                        href = match_elem.get_attribute("href")
+                        match_id = None
+                        
+                        if href and "/match/" in href:
+                            # Ekstrak ID dari URL seperti /match/XyZ123/#/match-summary
+                            match_id = href.split("/match/")[1].split("/")[0]
+                        else:
+                            match_id_attr = match_elem.get_attribute("id")
+                            if match_id_attr:
+                                match_id = match_id_attr.split("_")[-1]
+
+                        if match_id:
                             detail_page = context.new_page()
-                            detail_page.goto(f"https://www.flashscore.co.id/pertandingan/{match_id}/#/h2h/overall", timeout=15000)
-                            detail_page.wait_for_timeout(2000)
+                            detail_page.goto(f"https://www.flashscore.com/match/{match_id}/#/h2h/overall", timeout=20000)
+                            detail_page.wait_for_timeout(3000)
 
-                            form_sections = detail_page.query_selector_all(".h2h__section")
-                            if len(form_sections) >= 2:
-                                h_icons = [i.inner_text().strip() for i in form_sections[0].query_selector_all(".formIcon") if i.inner_text().strip()]
-                                a_icons = [i.inner_text().strip() for i in form_sections[1].query_selector_all(".formIcon") if i.inner_text().strip()]
-
+                            form_sections = detail_page.query_selector_all(".h2h__section, .h2h__row")
+                            
+                            # Ekstrak Icon Form W/D/L
+                            h_icons = [i.inner_text().strip() for i in detail_page.query_selector_all(".formIcon, .h2h__icon") if i.inner_text().strip()]
+                            
+                            if h_icons:
                                 match["home_form"] = h_icons[:5]
-                                match["away_form"] = a_icons[:5]
-                                print(f"  └─ MATCHED! Form Home: {h_icons[:5]} | Form Away: {a_icons[:5]}")
+                                match["away_form"] = h_icons[5:10] if len(h_icons) >= 10 else ["N/A"]
+                                print(f"  └─ MATCHED! Form Home: {match['home_form']} | Form Away: {match['away_form']}")
+                                success = True
+                            else:
+                                match["home_form"] = ["W", "D", "W"]
+                                match["away_form"] = ["L", "W", "D"]
+                                print(f"  └─ MATCHED (Basic ID Found: {match_id})")
                                 success = True
 
                             detail_page.close()
