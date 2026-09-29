@@ -1,5 +1,100 @@
 [
   {
+    "date": "28/09/2026 22:39 WIB",
+    "matches": [
+      {
+        "match": "Singapura vs Bangladesh",
+        "league": "International Friendly",
+        "pick": "Home Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Singapura memiliki keunggulan penguasaan lini tengah dan rekor kandang yang solid menghadapi lawan dengan blok rendah. Bangladesh kerap kesulitan dalam transisi negatif dan rentan terhadap bola mati."
+      },
+      {
+        "match": "Tunisia vs Botswana",
+        "league": "AFCON Qualification",
+        "pick": "Home Win (-1 HDP)",
+        "odds": 1.62,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Tunisia menunjukkan dominasi xG kandang yang masif dengan soliditas pertahanan tingkat tinggi. Botswana memiliki catatan mencetak gol tandang yang sangat minim melawan tim Tier-1 Afrika."
+      },
+      {
+        "match": "Curacao vs Nikaragua",
+        "league": "CONCACAF Nations League",
+        "pick": "Home Win",
+        "odds": 1.65,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Curacao diperkuat pilar berpengalaman di kompetisi Eropa yang memberikan keunggulan teknik individu dan tempo permainan. Nikaragua kerap kebobolan dari serangan balik cepat saat bermain tandang."
+      },
+      {
+        "match": "Guadeloupe vs Barbados",
+        "league": "CONCACAF Nations League",
+        "pick": "Over 2.5 Goals",
+        "odds": 1.58,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Garis pertahanan Barbados rapuh saat ditekan intensif sejak menit awal. Guadeloupe memiliki konversi peluang di sepertiga akhir yang tajam dengan rataan xG kandang di atas 2.10."
+      },
+      {
+        "match": "Jepang vs Venezuela",
+        "league": "Kirin Challenge Cup",
+        "pick": "Home Win",
+        "odds": 1.6,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Intensitas pressing terstruktur dan fluiditas transisi menyerang Samurai Blue berada di level superior. Venezuela kerap kedodoran menghadapi sirkulasi bola dinamis dari sayap."
+      },
+      {
+        "match": "Kirgiztan vs Maldiv",
+        "league": "AFC International Match",
+        "pick": "Home Win (-1.25 HDP)",
+        "odds": 1.55,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Kekuatan fisik, disiplin organisasi bertahan, dan dominasi duel udara Kirgiztan jauh mengungguli Maldiv yang memiliki rekor tandang sangat buruk di level regional."
+      },
+      {
+        "match": "Kroasia U19 vs Perancis U19",
+        "league": "UEFA U19 Championship",
+        "pick": "Away Win",
+        "odds": 1.67,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Skuad muda Les Bleus unggul telak dalam aspek atletisisme, kedalaman bangku cadangan, serta kecepatan penetrasi inverted winger yang sulit dibendung backline Kroasia."
+      },
+      {
+        "match": "Brazil U20 vs Denmark U20",
+        "league": "U20 International Tour",
+        "pick": "Home Win",
+        "odds": 1.63,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Kreativitas lini serang Selecao muda berpotensi besar membongkar low block Denmark. Kemampuan 1v1 penyerang sayap Brazil menjadi ancaman konstan pada transisi cepat."
+      },
+      {
+        "match": "Inggris U17 vs Israel U17",
+        "league": "UEFA U17 Championship",
+        "pick": "Home Win (-1 HDP)",
+        "odds": 1.57,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Young Lions memiliki struktur counter-press dan kapasitas fisik elite di level kelompok umur. Israel U17 kerap kehilangan konsentrasi defensif di paruh kedua laga."
+      },
+      {
+        "match": "Malaysia vs Indonesia",
+        "league": "International Rivalry Match",
+        "pick": "Over 2.25 Goals",
+        "odds": 1.66,
+        "score": "N/A",
+        "status": "PENDING",
+        "expertReason": "Derby bertensi tinggi yang didukung skema ofensif agresif dari kedua kubu. Kedua tim memiliki produktivitas gol tinggi namun sama-sama menyisakan celah di transisi bertahan."
+      }
+    ]
+  },
+  {
     "date": "28/09/2026 14:38 WIB",
     "matches": [
       {

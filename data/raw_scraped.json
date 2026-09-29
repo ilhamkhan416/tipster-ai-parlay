@@ -1,604 +1,968 @@
 [
   {
     "raw_info": [
-      "Selesai",
-      "Singapura",
-      "Bangladesh",
-      "1",
-      "0"
+      "08:00",
+      "Filipina",
+      "Pakistan",
+      "-",
+      "-"
     ],
-    "scraped_at": "2026-09-28 22:39:32"
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "11:30",
+      "Thailand",
+      "Vietnam",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "11:00",
+      "Komoro",
+      "Namibia",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "13:00",
+      "Burundi",
+      "Aljazair",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "13:00",
+      "Ethiopia",
+      "Senegal",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "13:00",
+      "Lesotho",
+      "Maroko",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "13:00",
+      "Madagaskar",
+      "Tanzania",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "13:00",
+      "Mozambik",
+      "Sudan",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "13:00",
+      "Sudan Selatan",
+      "Mesir",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "16:00",
+      "Cape Verde",
+      "Rwanda",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "16:00",
+      "Ghana",
+      "Gambia",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "16:00",
+      "Guinea Bissau",
+      "Nigeria",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "16:00",
+      "Uganda",
+      "Libya",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "16:00",
+      "Zambia",
+      "Togo",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "17:00",
+      "Benin",
+      "Mauritania",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "19:00",
+      "Gabon",
+      "Niger",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "19:00",
+      "Kongo",
+      "Kamerun",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "19:00",
+      "Liberia",
+      "Mali",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "19:00",
+      "Somalia",
+      "Pesisir Ivory",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
   },
   {
     "raw_info": [
       "Selesai",
-      "Malaysia",
-      "Indonesia",
-      "0",
-      "0"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Afrika Tengah",
-      "Burkina Faso",
+      "Jamaika",
+      "Honduras",
       "0",
       "1"
     ],
-    "scraped_at": "2026-09-28 22:39:32"
+    "scraped_at": "2026-09-29 05:17:30"
   },
   {
     "raw_info": [
       "Selesai",
-      "Guinea Ekuatorial",
-      "Sierra Leone",
-      "1",
-      "0"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Zimbabwe",
-      "Kongo D.R.",
-      "1",
-      "2"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Tunisia",
-      "Botswana",
-      "2",
-      "2"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Curacao",
-      "Nikaragua",
+      "Guatemala",
+      "El Salvador",
       "6",
-      "1"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Trinidad & Tobago",
-      "2",
-      "Republik Dominika",
-      "1",
-      "2"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "40",
-      "Suriname",
-      "Martinique",
-      "0",
       "0"
     ],
-    "scraped_at": "2026-09-28 22:39:32"
+    "scraped_at": "2026-09-29 05:17:30"
   },
   {
     "raw_info": [
       "Selesai",
-      "Dominika",
-      "Puerto Riko",
-      "0",
-      "2"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Guadeloupe",
-      "Barbados",
-      "2",
-      "2"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "82",
-      "Kuba",
-      "Bonaire",
-      "2",
-      "0"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "9",
-      "America MG",
-      "Juventude",
-      "0",
-      "0"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Kepulauan Faroe U19",
-      "Irlandia U19",
-      "0",
-      "5"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Kazakhstan U19",
-      "Swiss U19",
-      "1",
-      "2"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Dibatalkan",
-      "Turkmenistan",
-      "Palestina",
-      "-",
-      "-"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Jepang",
-      "Venezuela",
-      "2",
-      "1"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Korea Selatan",
-      "Uruguay",
-      "1",
-      "4"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Tajikistan",
-      "Palestina",
-      "2",
-      "4"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Italia U19",
-      "Turki U19",
+      "Saint Kitts dan Nevis",
+      "Grenada",
       "3",
       "0"
     ],
-    "scraped_at": "2026-09-28 22:39:32"
+    "scraped_at": "2026-09-29 05:17:30"
   },
   {
     "raw_info": [
       "Selesai",
-      "Kroasia U19",
-      "Perancis U19",
-      "1",
-      "2"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Inggris U17",
-      "Israel U17",
-      "2",
-      "1"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Kirgiztan",
-      "Maldiv",
+      "Saint Lucia",
+      "Bermuda",
       "5",
-      "0"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Liechtenstein U19",
-      "Malta U19",
-      "0",
-      "4"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Masedonia Utara U21",
-      "Rusia U21",
-      "2",
-      "3"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Serbia U18",
-      "Rusia U18",
-      "0",
       "2"
     ],
-    "scraped_at": "2026-09-28 22:39:32"
+    "scraped_at": "2026-09-29 05:17:30"
   },
   {
     "raw_info": [
-      "14:30",
-      "FRO",
-      "Qatar U19",
-      "Azerbaijan U19",
+      "21:00",
+      "Guana Perancis",
+      "Sint Maarten",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-28 22:39:32"
+    "scraped_at": "2026-09-29 05:17:30"
   },
   {
     "raw_info": [
-      "Selesai",
-      "Slovenia U19",
-      "Uni Emirat Arab U19",
-      "3",
-      "0"
+      "19:00",
+      "Kepulauan Virgin Inggris",
+      "Turks dan Kepulauan Caicos",
+      "-",
+      "-"
     ],
-    "scraped_at": "2026-09-28 22:39:32"
+    "scraped_at": "2026-09-29 05:17:30"
   },
   {
     "raw_info": [
-      "Selesai",
-      "Slovakia U19",
-      "Polandia U19",
-      "1",
-      "2"
+      "20:00",
+      "Kepuauan Virgin Amerika Serikat",
+      "Bahama",
+      "-",
+      "-"
     ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Brazil U20",
-      "Denmark U20",
-      "4",
-      "1"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Serbia U21",
-      "Iraq U23",
-      "3",
-      "0"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Maribor (Slo)",
-      "Gorica (Cro)",
-      "1",
-      "1"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Petrovac (Mne)",
-      "Mladost DG (Mne)",
-      "0",
-      "1"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Belgia",
-      "Perancis",
-      "0",
-      "1"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Turki",
-      "Italia",
-      "1",
-      "4"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Georgia",
-      "Ukraina",
-      "0",
-      "0"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Irlandia Utara",
-      "Hungaria",
-      "0",
-      "0"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Romania",
-      "Bosnia & Herzegovina",
-      "2",
-      "4"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Swedia",
-      "Polandia",
-      "3",
-      "1"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Armenia",
-      "Montenegro",
-      "2",
-      "3"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Latvia",
-      "Siprus",
-      "0",
-      "0"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Denmark U21",
-      "Belarusia U21",
-      "2",
-      "0"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Irlandia U17 W",
-      "Azerbaijan U17 W",
-      "16",
-      "0"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Albania U17 W",
-      "Kosovo U17 W",
-      "0",
-      "0"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Eastern District U22",
-      "Kowloon City U22",
-      "2",
-      "0"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Shatin U22",
-      "Kitchee U22",
-      "1",
-      "3"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Waterhouse",
-      "Treasure Beach",
-      "2",
-      "0"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Dep. Cali",
-      "Aguilas",
-      "2",
-      "0"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Club Leon",
-      "Juarez",
-      "2",
-      "1"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Necaxa",
-      "Club America",
-      "2",
-      "4"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Ranchers Bees",
-      "Rivers United",
-      "0",
-      "0"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "San Lorenzo",
-      "Recoleta",
-      "0",
-      "0"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "25",
-      "Libertad Asuncion",
-      "Olimpia Asuncion",
-      "0",
-      "0"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Leganes",
-      "Castellon",
-      "0",
-      "2"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Al Arabi",
-      "Al Thaid",
-      "2",
-      "0"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
-  },
-  {
-    "raw_info": [
-      "Selesai",
-      "Al-Ittifaq",
-      "Al Urooba",
-      "1",
-      "2"
-    ],
-    "scraped_at": "2026-09-28 22:39:32"
+    "scraped_at": "2026-09-29 05:17:30"
   },
   {
     "raw_info": [
       "23:00",
-      "Wanderers",
-      "Albion",
+      "Anguilla",
+      "Aruba",
       "-",
       "-"
     ],
-    "scraped_at": "2026-09-28 22:39:32"
+    "scraped_at": "2026-09-29 05:17:30"
   },
   {
     "raw_info": [
-      "40",
-      "Paysandu FC",
-      "Tacuarembo",
-      "1",
-      "1"
+      "17:30",
+      "Arab Saudi",
+      "Iraq",
+      "-",
+      "-"
     ],
-    "scraped_at": "2026-09-28 22:39:32"
+    "scraped_at": "2026-09-29 05:17:30"
   },
   {
     "raw_info": [
-      "Selesai",
-      "Athens Kallithea",
-      "Asteras Tripolis B",
-      "2",
+      "17:30",
+      "Oman",
+      "Kuwait",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "06:00",
+      "Korea Utara W",
+      "RRC W",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:30",
+      "Jepang W",
+      "Korea Selatan W",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "19:00",
+      "Universitario de Vinto",
+      "Guabira",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "22:00",
+      "Real Potosi",
+      "Academia del Balompie",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "22:30",
+      "Botafogo SP",
+      "Ponte Preta",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "Amerika Serikat U19",
+      "Wales U19",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "Australia",
+      "Brazil",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "FRO",
+      "Romania U18",
+      "Turki U18",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:30",
+      "FRO",
+      "Italia U18",
+      "Denmark U18",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:30",
+      "FRO",
+      "Ukraina U17",
+      "Turki U17",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "11:00",
+      "FRO",
+      "Belanda U17",
+      "Amerika Serikat U17",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "12:00",
+      "Moldova U19",
+      "Siprus U19",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "12:30",
+      "Bulgaria U19",
+      "Romania U19",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "13:00",
+      "FRO",
+      "Hungaria U18",
+      "Qatar U18",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "14:00",
+      "Inggris U19",
+      "Norwegia U19",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "14:30",
+      "Serbia U19",
+      "Hungaria U19",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "16:00",
+      "Rusia",
+      "Iran",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "17:15",
+      "FRO",
+      "Portugal U18",
+      "Uzbekistan U18",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "13:00",
+      "Jagiellonia (Pol)",
+      "Suduva (Ltu)",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "16:00",
+      "Zehlendorf (Ger)",
+      "Hertha Berlin (Ger)",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "59",
+      "Papua Nugini W",
+      "Kepulauan Solomon W",
+      "3",
       "0"
     ],
-    "scraped_at": "2026-09-28 22:39:32"
+    "scraped_at": "2026-09-29 05:17:30"
   },
   {
     "raw_info": [
-      "Selesai",
-      "Marko",
-      "Panthrakikos",
-      "2",
-      "1"
+      "07:00",
+      "Fiji W",
+      "Kaledonia Baru W",
+      "-",
+      "-"
     ],
-    "scraped_at": "2026-09-28 22:39:32"
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "18:45",
+      "Republik Ceko",
+      "Inggris",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "18:45",
+      "Spanyol",
+      "Kroasia",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "18:45",
+      "Skotlandia",
+      "Swiss",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "18:45",
+      "Slovenia",
+      "Masedonia Utara",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "16:00",
+      "Finlandia",
+      "Belarusia",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "16:00",
+      "Moldova",
+      "Kepulauan Faroe",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "18:45",
+      "Bulgaria",
+      "Estonia",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "18:45",
+      "Luxembourg",
+      "Islandia",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "18:45",
+      "San Marino",
+      "Albania",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "18:45",
+      "Slovakia",
+      "Kazakhstan",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "14:00",
+      "Slovenia U21",
+      "Israel U21",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "15:00",
+      "Islandia U21",
+      "Swiss U21",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "16:00",
+      "Estonia U21",
+      "Perancis U21",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "16:00",
+      "Norwegia U21",
+      "Bosnia & Herzegovina U21",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "18:00",
+      "Belgia U21",
+      "Wales U21",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "18:00",
+      "Irlandia U21",
+      "Kazakhstan U21",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "12:00",
+      "Gibraltar U17",
+      "Bosnia & Herzegovina U17",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "12:00",
+      "Yunani U17",
+      "Islandia U17",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "09:30",
+      "Perancis U20",
+      "Inggris U20",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "Portugal U20",
+      "Swiss U20",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "15:30",
+      "Jerman U20",
+      "Italia U20",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "16:00",
+      "Polandia U20",
+      "Republik Ceko U20",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "09:00",
+      "Mohun Bagan",
+      "North East United",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "Ehime",
+      "FC Tokyo",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "Fujieda MYFC",
+      "C-Osaka",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "Fukushima Utd",
+      "Mito",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "Gainare Tottori",
+      "V-Varen Nagasaki",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "Gifu",
+      "Yokohama",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "Giravanz Kitakyushu",
+      "Nagoya",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "Iwata",
+      "Chiba",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "Kanazawa",
+      "Shimizu",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "Kumamoto",
+      "Kawasaki Frontale",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "Montedio Yamagata",
+      "Yokohama M.",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "Osaka",
+      "Avispa Fukuoka",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "Sagan Tosu",
+      "Verdy",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "Sapporo",
+      "Okayama",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "Tochigi City",
+      "Hiroshima",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "Toyama",
+      "Urawa",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "10:00",
+      "Yamaga",
+      "Albirex Niigata",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "20:30",
+      "Pereira",
+      "Santa Fe",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "11:00",
+      "Wuxi Wugou",
+      "Ningbo Professional",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "18:45",
+      "Forfar Athletic",
+      "Formartine Utd",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "14:35",
+      "Al-Fujairah",
+      "Al Jazira Hamra",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "14:40",
+      "Palm City",
+      "Dibba",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
+  },
+  {
+    "raw_info": [
+      "18:45",
+      "Cardiff Metropolitan",
+      "Haverfordwest",
+      "-",
+      "-"
+    ],
+    "scraped_at": "2026-09-29 05:17:30"
   }
 ]
