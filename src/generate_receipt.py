@@ -17,6 +17,10 @@ def generate_receipt_html():
 
     items_html = ""
     for idx, item in enumerate(parlay10, 1):
+        stats = item.get("apiStatsUsed", {})
+        home_form = " ".join(stats.get("homeForm", [])) if isinstance(stats.get("homeForm"), list) else "-"
+        away_form = " ".join(stats.get("awayForm", [])) if isinstance(stats.get("awayForm"), list) else "-"
+        
         items_html += f"""
         <div class="item">
             <div class="row">
@@ -32,6 +36,21 @@ def generate_receipt_html():
             </div>
             <div class="notes">
                 Prob: {item.get('winProb')}% | {item.get('expertReason')}
+            </div>
+            
+            <!-- Tombol Toggle Detail AI & Stats -->
+            <button class="btn-detail" onclick="toggleDetail('detail-{idx}')">🔍 Lihat Stats & Analisis AI</button>
+            
+            <!-- Panel Detail Tersembunyi -->
+            <div id="detail-{idx}" class="detail-box" style="display: none;">
+                <div class="detail-header">📊 DATA STATISTIK API-FOOTBALL:</div>
+                <div class="detail-item">• H2H: {stats.get('h2hSummary', item.get('analytics', {}).get('h2hSummary', '-'))}</div>
+                <div class="detail-item">• Rerata Gol: {stats.get('avgGoals', item.get('analytics', {}).get('avgGoals', '-'))}</div>
+                <div class="detail-item">• Form Home (5 Laga): [{home_form}]</div>
+                <div class="detail-item">• Form Away (5 Laga): [{away_form}]</div>
+                
+                <div class="detail-header" style="margin-top:6px;">🧠 ANALISIS TAKTIS BOLA DARI AI:</div>
+                <div class="detail-item ai-text">{item.get('aiAnalysisDetail', item.get('expertReason'))}</div>
             </div>
         </div>
         <div class="dash-line"></div>
@@ -60,7 +79,7 @@ def generate_receipt_html():
         .receipt {{
             background: #fff;
             width: 100%;
-            max-width: 420px;
+            max-width: 440px;
             padding: 20px 15px;
             border: 1px solid #ccc;
             box-shadow: 0 4px 10px rgba(0,0,0,0.05);
@@ -122,15 +141,46 @@ def generate_receipt_html():
             margin-top: 3px;
             font-style: italic;
         }}
+        .btn-detail {{
+            margin-top: 6px;
+            width: 100%;
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 4px 0;
+            font-size: 10px;
+            font-family: inherit;
+            cursor: pointer;
+            text-transform: uppercase;
+        }}
+        .btn-detail:hover {{
+            background: #333;
+        }}
+        .detail-box {{
+            margin-top: 6px;
+            padding: 6px;
+            border: 1px solid #000;
+            background: #fafafa;
+            font-size: 10px;
+        }}
+        .detail-header {{
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 3px;
+        }}
+        .detail-item {{
+            margin-bottom: 2px;
+            word-wrap: break-word;
+        }}
+        .ai-text {{
+            line-height: 1.3;
+            color: #111;
+        }}
         .footer {{
             text-align: center;
             font-size: 10px;
             margin-top: 15px;
             text-transform: uppercase;
-        }}
-        @media print {{
-            body {{ background: #fff; padding: 0; }}
-            .receipt {{ border: none; box-shadow: none; width: 100%; }}
         }}
     </style>
 </head>
@@ -160,6 +210,17 @@ def generate_receipt_html():
             <p>PERSONAL ANALYTICS SYSTEM</p>
         </div>
     </div>
+
+    <script>
+        function toggleDetail(id) {{
+            var el = document.getElementById(id);
+            if (el.style.display === "none") {{
+                el.style.display = "block";
+            }} else {{
+                el.style.display = "none";
+            }}
+        }}
+    </script>
 </body>
 </html>
 """
@@ -167,7 +228,7 @@ def generate_receipt_html():
     with open(OUTPUT_HTML_PATH, "w", encoding="utf-8") as f:
         f.write(html_content)
 
-    print(f"📄 Halaman struk parlay berhasil digenerasi ke '{OUTPUT_HTML_PATH}'.")
+    print(f"📄 Struk parlay interaktif berhasil digenerasi ke '{OUTPUT_HTML_PATH}'.")
 
 if __name__ == "__main__":
     generate_receipt_html()
