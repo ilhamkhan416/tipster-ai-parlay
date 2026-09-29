@@ -2,8 +2,22 @@
   {
     "league": "MAINBOLAKAKI PARLAY",
     "time": "02:45",
-    "home": "TODAY",
-    "away": "Select League",
+    "home": "Mix",
+    "away": "TIME\tHOME/AWAY\t\tFIRST HALF",
+    "odds": 1.75,
+    "pick": "Home Win",
+    "home_form": [
+      "N/A"
+    ],
+    "away_form": [
+      "N/A"
+    ]
+  },
+  {
+    "league": "MAINBOLAKAKI PARLAY",
+    "time": "02:45",
+    "home": "TIME\tHOME/AWAY\t\tFIRST HALF",
+    "away": "HDP\tO/U\tO/E\t\tHDP\tO/U",
     "odds": 1.75,
     "pick": "Home Win",
     "home_form": [
@@ -16,8 +30,8 @@
   {
     "league": "UEFA NATIONS LEAGUE A",
     "time": "02:45",
-    "home": "LIVE",
-    "away": "02:45\t  Czech Republic",
+    "home": "Czech Republic",
+    "away": "England",
     "odds": 1.75,
     "pick": "Over Goals",
     "home_form": [
@@ -30,8 +44,8 @@
   {
     "league": "UEFA NATIONS LEAGUE A",
     "time": "02:45",
-    "home": "LIVE",
-    "away": "02:45\t  Spain",
+    "home": "Spain",
+    "away": "Croatia",
     "odds": 1.76,
     "pick": "Over Goals",
     "home_form": [
@@ -44,8 +58,8 @@
   {
     "league": "UEFA NATIONS LEAGUE B",
     "time": "02:45",
-    "home": "LIVE",
-    "away": "02:45\t  Scotland",
+    "home": "Scotland",
+    "away": "Switzerland",
     "odds": 1.62,
     "pick": "Over Goals",
     "home_form": [
@@ -58,8 +72,8 @@
   {
     "league": "UEFA NATIONS LEAGUE B",
     "time": "02:45",
-    "home": "LIVE",
-    "away": "02:45\t  Slovenia",
+    "home": "Slovenia",
+    "away": "North Macedonia",
     "odds": 1.56,
     "pick": "Away Win",
     "home_form": [
@@ -72,8 +86,8 @@
   {
     "league": "UEFA NATIONS LEAGUE C",
     "time": "00:00",
-    "home": "LIVE",
-    "away": "00:00\t  Finland",
+    "home": "Finland",
+    "away": "Belarus",
     "odds": 1.59,
     "pick": "Home Win",
     "home_form": [
@@ -86,8 +100,8 @@
   {
     "league": "UEFA NATIONS LEAGUE C",
     "time": "00:00",
-    "home": "LIVE",
-    "away": "00:00\t  Moldova",
+    "home": "Moldova",
+    "away": "Faroe Islands",
     "odds": 1.66,
     "pick": "Home Win",
     "home_form": [
@@ -100,8 +114,8 @@
   {
     "league": "UEFA NATIONS LEAGUE C",
     "time": "02:45",
-    "home": "LIVE",
-    "away": "02:45\t  Bulgaria",
+    "home": "Bulgaria",
+    "away": "Estonia",
     "odds": 1.77,
     "pick": "Over Goals",
     "home_form": [
@@ -114,8 +128,8 @@
   {
     "league": "UEFA NATIONS LEAGUE C",
     "time": "02:45",
-    "home": "LIVE",
-    "away": "02:45\t  Luxembourg",
+    "home": "Luxembourg",
+    "away": "Iceland",
     "odds": 1.64,
     "pick": "Home Win",
     "home_form": [
@@ -128,8 +142,8 @@
   {
     "league": "UEFA NATIONS LEAGUE C",
     "time": "02:45",
-    "home": "LIVE",
-    "away": "02:45\t  San Marino",
+    "home": "San Marino",
+    "away": "Albania",
     "odds": 1.66,
     "pick": "Over Goals",
     "home_form": [
@@ -142,8 +156,8 @@
   {
     "league": "UEFA NATIONS LEAGUE C",
     "time": "02:45",
-    "home": "LIVE",
-    "away": "02:45\t  Slovakia",
+    "home": "Slovakia",
+    "away": "Kazakhstan",
     "odds": 1.78,
     "pick": "Home Win",
     "home_form": [
@@ -156,8 +170,8 @@
   {
     "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "home": "LIVE",
-    "away": "18:00\t  Fujieda MYFC",
+    "home": "Fujieda MYFC",
+    "away": "Cerezo Osaka",
     "odds": 1.62,
     "pick": "Over Goals",
     "home_form": [
@@ -170,8 +184,8 @@
   {
     "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "home": "LIVE",
-    "away": "18:00\t  Hokkaido Consadole Sapporo",
+    "home": "Hokkaido Consadole Sapporo",
+    "away": "Fagiano Okayama",
     "odds": 1.62,
     "pick": "Over Goals",
     "home_form": [
@@ -184,8 +198,8 @@
   {
     "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "home": "LIVE",
-    "away": "18:00\t  Jubilo Iwata",
+    "home": "Jubilo Iwata",
+    "away": "JEF United Ichihara Chiba",
     "odds": 1.8,
     "pick": "Over Goals",
     "home_form": [
@@ -198,8 +212,8 @@
   {
     "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "home": "LIVE",
-    "away": "18:00\t  Kataller Toyama",
+    "home": "Kataller Toyama",
+    "away": "Urawa Red Diamonds",
     "odds": 1.7,
     "pick": "Home Win",
     "home_form": [
@@ -212,8 +226,8 @@
   {
     "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "home": "LIVE",
-    "away": "18:00\t  Montedio Yamagata",
+    "home": "Montedio Yamagata",
+    "away": "Yokohama F Marinos",
     "odds": 1.54,
     "pick": "Home Win",
     "home_form": [
@@ -226,9 +240,9 @@
   {
     "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "home": "LIVE",
-    "away": "18:00\t  Sagan Tosu",
-    "odds": 1.8,
+    "home": "Sagan Tosu",
+    "away": "Tokyo Verdy",
+    "odds": 1.77,
     "pick": "Home Win",
     "home_form": [
       "N/A"
@@ -240,9 +254,9 @@
   {
     "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "home": "LIVE",
-    "away": "18:00\t  Tochigi City FC",
-    "odds": 1.76,
+    "home": "Tochigi City FC",
+    "away": "Sanfrecce Hiroshima",
+    "odds": 1.74,
     "pick": "Over Goals",
     "home_form": [
       "N/A"
@@ -254,9 +268,9 @@
   {
     "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "home": "LIVE",
-    "away": "18:00\t  Ehime FC",
-    "odds": 1.8,
+    "home": "Ehime FC",
+    "away": "FC Tokyo",
+    "odds": 1.67,
     "pick": "Over Goals",
     "home_form": [
       "N/A"
@@ -268,8 +282,8 @@
   {
     "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "home": "LIVE",
-    "away": "18:00\t  Zweigen Kanazawa",
+    "home": "Zweigen Kanazawa",
+    "away": "Shimizu S Pulse",
     "odds": 1.75,
     "pick": "Over Goals",
     "home_form": [
@@ -282,9 +296,9 @@
   {
     "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "home": "LIVE",
-    "away": "18:00\t  Fukushima United FC",
-    "odds": 1.79,
+    "home": "Fukushima United FC",
+    "away": "Mito Hollyhock",
+    "odds": 1.74,
     "pick": "Over Goals",
     "home_form": [
       "N/A"
@@ -296,8 +310,8 @@
   {
     "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "home": "LIVE",
-    "away": "18:00\t  FC Osaka [n]",
+    "home": "FC Osaka [n]",
+    "away": "Avispa Fukuoka",
     "odds": 1.78,
     "pick": "Over Goals",
     "home_form": [
@@ -310,9 +324,9 @@
   {
     "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "home": "LIVE",
-    "away": "18:00\t  Gainare Tottori",
-    "odds": 1.65,
+    "home": "Gainare Tottori",
+    "away": "V Varen Nagasaki",
+    "odds": 1.64,
     "pick": "Home Win",
     "home_form": [
       "N/A"
@@ -324,8 +338,22 @@
   {
     "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "home": "LIVE",
-    "away": "18:00\t  Giravanz Kitakyushu",
+    "home": "Giravanz Kitakyushu",
+    "away": "Nagoya Grampus",
+    "odds": 1.65,
+    "pick": "Over Goals",
+    "home_form": [
+      "N/A"
+    ],
+    "away_form": [
+      "N/A"
+    ]
+  },
+  {
+    "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
+    "time": "18:00",
+    "home": "Roasso Kumamoto",
+    "away": "Kawasaki Frontale",
     "odds": 1.69,
     "pick": "Over Goals",
     "home_form": [
@@ -338,23 +366,9 @@
   {
     "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "home": "LIVE",
-    "away": "18:00\t  Roasso Kumamoto",
-    "odds": 1.76,
-    "pick": "Over Goals",
-    "home_form": [
-      "N/A"
-    ],
-    "away_form": [
-      "N/A"
-    ]
-  },
-  {
-    "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
-    "time": "18:00",
-    "home": "LIVE",
-    "away": "18:00\t  Matsumoto Yamaga FC",
-    "odds": 1.75,
+    "home": "Matsumoto Yamaga FC",
+    "away": "Albirex Niigata",
+    "odds": 1.63,
     "pick": "Home Win",
     "home_form": [
       "N/A"
@@ -366,8 +380,8 @@
   {
     "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "home": "LIVE",
-    "away": "18:00\t  FC Gifu",
+    "home": "FC Gifu",
+    "away": "Yokohama FC",
     "odds": 1.73,
     "pick": "Over Goals",
     "home_form": [
@@ -380,8 +394,8 @@
   {
     "league": "FIFA ASEAN CUP DIVISION 1 2026 [ IN INDONESIA ]",
     "time": "17:00",
-    "home": "LIVE",
-    "away": "17:00\t  Philippines",
+    "home": "Philippines",
+    "away": "Pakistan",
     "odds": 1.8,
     "pick": "Over Goals",
     "home_form": [
@@ -394,23 +408,9 @@
   {
     "league": "FIFA ASEAN CUP DIVISION 1 2026 [ IN INDONESIA ]",
     "time": "20:30",
-    "home": "LIVE",
-    "away": "20:30\t  Thailand",
-    "odds": 1.62,
-    "pick": "Home Win",
-    "home_form": [
-      "N/A"
-    ],
-    "away_form": [
-      "N/A"
-    ]
-  },
-  {
-    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
-    "time": "22:00",
-    "home": "LIVE",
-    "away": "22:00\t  Slovenia U21",
-    "odds": 1.79,
+    "home": "Thailand",
+    "away": "Vietnam",
+    "odds": 1.64,
     "pick": "Home Win",
     "home_form": [
       "N/A"
