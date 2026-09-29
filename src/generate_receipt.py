@@ -1,59 +1,73 @@
-import json
 import os
+import json
+from datetime import datetime
 
-TODAY_DATA_PATH = "data/today.json"
+ENRICHED_DATA_PATH = "data/enriched_matches.json"
+ANALYSIS_DATA_PATH = "data/ai_analysis.json"
 OUTPUT_HTML_PATH = "index.html"
 
+def load_json(path):
+    if not os.path.exists(path):
+        return []
+    with open(path, "r", encoding="utf-8") as f:
+        try:
+            return json.load(f)
+        except Exception:
+            return []
+
 def generate_receipt_html():
-    if not os.path.exists(TODAY_DATA_PATH):
-        print("⚠️ File today.json tidak ditemukan.")
-        return
+    matches = load_json(ENRICHED_DATA_PATH)
+    analysis = load_json(ANALYSIS_DATA_PATH)
+    
+    current_time = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 
-    with open(TODAY_DATA_PATH, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    updated_at = data.get("updatedAt", "-")
-    parlay10 = data.get("parlay10", [])
-
-    items_html = ""
-    for idx, item in enumerate(parlay10, 1):
-        stats = item.get("apiStatsUsed", {})
-        home_form = " ".join(stats.get("homeForm", [])) if isinstance(stats.get("homeForm"), list) else "-"
-        away_form = " ".join(stats.get("awayForm", [])) if isinstance(stats.get("awayForm"), list) else "-"
+    cards_html = ""
+    for idx, match in enumerate(matches[:10], 1):
+        home = match.get("home_team", "Home")
+        away = match.get("away_team", "Away")
+        league = match.get("league", "PARLAY")
+        odds = match.get("selected_odds", 1.60)
         
-        items_html += f"""
-        <div class="item">
-            <div class="row">
-                <span class="num">#{idx}</span>
-                <span class="match">{item.get('match')}</span>
+        stats = match.get("api_stats", {})
+        h2h = stats.get("h2h", "Data H2H tidak tersedia")
+        home_form = " ".join(stats.get("homeForm", ["-"]))
+        away_form = " ".join(stats.get("awayForm", ["-"]))
+        
+        # Ambil insight dari analisis AI jika ada
+        ai_insight = "Analisis taktis mendalam berdasarkan performa terkini, tren H2H Flashscore, dan efisiensi peluang tim."
+        if idx <= len(analysis):
+            ai_insight = analysis[idx-1].get("reason", ai_insight)
+
+        cards_html += f"""
+        <div class="receipt-item">
+            <div class="item-header">
+                <span class="match-num">#{idx}</span>
+                <span class="teams">{home} vs {away}</span>
             </div>
-            <div class="sub-info">
-                <span>League: {item.get('league')}</span>
-            </div>
-            <div class="row pick-row">
-                <span class="pick">PICK: <strong>{item.get('pick')}</strong></span>
-                <span class="odds">@{item.get('odds')}</span>
-            </div>
-            <div class="notes">
-                Prob: {item.get('winProb')}% | {item.get('expertReason')}
+            <div class="meta-row">
+                <span>League: {league}</span>
+                <span class="pick-odds">PICK: Away Win @{odds:.2f}</span>
             </div>
             
-            <!-- Tombol Toggle Detail AI & Stats -->
-            <button class="btn-detail" onclick="toggleDetail('detail-{idx}')">🔍 Lihat Stats & Analisis AI</button>
+            <button class="toggle-btn" onclick="toggleDetails('details-{idx}')">
+                🔍 LIHAT STATS & ANALISIS AI
+            </button>
             
-            <!-- Panel Detail Tersembunyi -->
-            <div id="detail-{idx}" class="detail-box" style="display: none;">
-                <div class="detail-header">📊 DATA STATISTIK API-FOOTBALL:</div>
-                <div class="detail-item">• H2H: {stats.get('h2hSummary', item.get('analytics', {}).get('h2hSummary', '-'))}</div>
-                <div class="detail-item">• Rerata Gol: {stats.get('avgGoals', item.get('analytics', {}).get('avgGoals', '-'))}</div>
-                <div class="detail-item">• Form Home (5 Laga): [{home_form}]</div>
-                <div class="detail-item">• Form Away (5 Laga): [{away_form}]</div>
-                
-                <div class="detail-header" style="margin-top:6px;">🧠 ANALISIS TAKTIS BOLA DARI AI:</div>
-                <div class="detail-item ai-text">{item.get('aiAnalysisDetail', item.get('expertReason'))}</div>
+            <div id="details-{idx}" class="details-box" style="display: none;">
+                <div class="stat-section">
+                    <strong>📊 DATA STATISTIK FLASHSCORE:</strong>
+                    <ul>
+                        <li>H2H: {h2h}</li>
+                        <li>Form Home (5 Laga): [{home_form}]</li>
+                        <li>Form Away (5 Laga): [{away_form}]</li>
+                    </ul>
+                </div>
+                <div class="ai-section">
+                    <strong>🧠 ANALISIS TAKTIS BOLA DARI AI:</strong>
+                    <p>{ai_insight}</p>
+                </div>
             </div>
         </div>
-        <div class="dash-line"></div>
         """
 
     html_content = f"""<!DOCTYPE html>
@@ -61,158 +75,94 @@ def generate_receipt_html():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FIXSCORE PARLAY RECEIPT</title>
+    <title>Struk Analisis Parlay AI</title>
     <style>
-        * {{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Courier New', Courier, monospace;
-        }}
         body {{
-            background-color: #f4f4f4;
-            color: #000;
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Courier New', Courier, monospace;
             display: flex;
             justify-content: center;
-            padding: 20px 10px;
+            padding: 20px;
         }}
-        .receipt {{
-            background: #fff;
+        .receipt-container {{
             width: 100%;
-            max-width: 440px;
-            padding: 20px 15px;
-            border: 1px solid #ccc;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            max-width: 600px;
+            background-color: #1e1e1e;
+            border: 2px dashed #444;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
         }}
         .header {{
             text-align: center;
+            border-bottom: 2px dashed #444;
+            padding-bottom: 10px;
             margin-bottom: 15px;
         }}
-        .header h1 {{
-            font-size: 20px;
-            font-weight: bold;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+        .receipt-item {{
+            border-bottom: 1px dashed #333;
+            padding: 12px 0;
         }}
-        .header p {{
-            font-size: 11px;
-            color: #333;
-        }}
-        .dash-line {{
-            border-bottom: 1px dashed #000;
-            margin: 10px 0;
-        }}
-        .summary {{
-            font-size: 12px;
-            margin-bottom: 10px;
-        }}
-        .summary div {{
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 3px;
-        }}
-        .item {{
-            margin-bottom: 8px;
-            font-size: 12px;
-        }}
-        .row {{
+        .item-header {{
             display: flex;
             justify-content: space-between;
             font-weight: bold;
+            font-size: 1.1em;
         }}
-        .match {{
-            text-align: right;
-            max-width: 85%;
+        .meta-row {{
+            display: flex;
+            justify-content: space-between;
+            color: #aaa;
+            font-size: 0.9em;
+            margin: 5px 0;
         }}
-        .sub-info {{
-            font-size: 10px;
-            color: #444;
-            margin-top: 2px;
+        .pick-odds {{
+            color: #00ff66;
+            font-weight: bold;
         }}
-        .pick-row {{
-            margin-top: 4px;
-            font-size: 12px;
-            background: #eee;
-            padding: 2px 4px;
-        }}
-        .notes {{
-            font-size: 10px;
-            color: #222;
-            margin-top: 3px;
-            font-style: italic;
-        }}
-        .btn-detail {{
-            margin-top: 6px;
+        .toggle-btn {{
             width: 100%;
-            background: #000;
+            background-color: #2a2a2a;
             color: #fff;
-            border: none;
-            padding: 4px 0;
-            font-size: 10px;
-            font-family: inherit;
-            cursor: pointer;
-            text-transform: uppercase;
-        }}
-        .btn-detail:hover {{
-            background: #333;
-        }}
-        .detail-box {{
-            margin-top: 6px;
+            border: 1px solid #444;
             padding: 6px;
-            border: 1px solid #000;
-            background: #fafafa;
-            font-size: 10px;
+            cursor: pointer;
+            margin-top: 5px;
+            font-family: inherit;
         }}
-        .detail-header {{
-            font-weight: bold;
-            text-decoration: underline;
-            margin-bottom: 3px;
+        .toggle-btn:hover {{
+            background-color: #333;
         }}
-        .detail-item {{
-            margin-bottom: 2px;
-            word-wrap: break-word;
+        .details-box {{
+            background-color: #181818;
+            border: 1px solid #333;
+            padding: 10px;
+            margin-top: 8px;
+            font-size: 0.85em;
         }}
-        .ai-text {{
-            line-height: 1.3;
-            color: #111;
+        .stat-section ul {{
+            margin: 5px 0 10px 15px;
+            padding: 0;
         }}
-        .footer {{
-            text-align: center;
-            font-size: 10px;
-            margin-top: 15px;
-            text-transform: uppercase;
+        .ai-section p {{
+            margin: 5px 0 0 0;
+            color: #ddd;
         }}
     </style>
 </head>
 <body>
-    <div class="receipt">
+    <div class="receipt-container">
         <div class="header">
-            <h1>FIXSCORE PARLAY</h1>
-            <p>SENIOR HANDICAPPER ANALYSIS</p>
-            <p>DATE: {updated_at}</p>
+            <h2>--- SELECTION LIST (TOP 10) ---</h2>
+            <p>Dicetak: {current_time}</p>
         </div>
+        
+        {cards_html}
 
-        <div class="dash-line"></div>
-
-        <div class="summary">
-            <div><span>PARLAY 3 TOTAL ODDS:</span> <strong>@{data.get('parlay3_total_odds', '-')}</strong></div>
-            <div><span>PARLAY 5 TOTAL ODDS:</span> <strong>@{data.get('parlay5_total_odds', '-')}</strong></div>
-            <div><span>PARLAY 10 TOTAL ODDS:</span> <strong>@{data.get('parlay10_total_odds', '-')}</strong></div>
-        </div>
-
-        <div class="dash-line"></div>
-        <div style="text-align:center; font-size:11px; font-weight:bold; margin-bottom:8px;">--- SELECTION LIST (TOP 10) ---</div>
-
-        {items_html}
-
-        <div class="footer">
-            <p>*** USE RESPONSIBLY ***</p>
-            <p>PERSONAL ANALYTICS SYSTEM</p>
-        </div>
     </div>
 
     <script>
-        function toggleDetail(id) {{
+        function toggleDetails(id) {{
             var el = document.getElementById(id);
             if (el.style.display === "none") {{
                 el.style.display = "block";
@@ -225,10 +175,11 @@ def generate_receipt_html():
 </html>
 """
 
+    os.makedirs(os.path.dirname(OUTPUT_HTML_PATH) if os.path.dirname(OUTPUT_HTML_PATH) else ".", exist_ok=True)
     with open(OUTPUT_HTML_PATH, "w", encoding="utf-8") as f:
         f.write(html_content)
 
-    print(f"📄 Struk parlay interaktif berhasil digenerasi ke '{OUTPUT_HTML_PATH}'.")
+    print(f"✅ Struk HTML berhasil dibuat di '{OUTPUT_HTML_PATH}'")
 
 if __name__ == "__main__":
     generate_receipt_html()
