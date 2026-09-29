@@ -1,0 +1,56 @@
+name: Daily FIXSCORE Scraping & Multi-AI Pipeline
+
+on:
+  schedule:
+    - cron: '50 2 * * *'  # Berjalan jam 09:50 WIB
+  workflow_dispatch:
+
+jobs:
+  run-fixscore-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright requests
+
+      - name: Install Playwright Browsers
+        run: |
+          playwright install chromium
+
+      - name: Step 1 - Scrape Web Parlay Hari Ini
+        run: |
+          python src/scrape_parlay.py
+
+      - name: Step 2 - Enrichment Statistik via API-Football
+        run: |
+          python src/enrich_data.py
+
+      - name: Step 3 - Filter Algoritma & Generasi Multi-AI Engine
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          python src/main.py
+
+      - name: Step 4 - Generate Struk Parlay HTML
+        run: |
+          python src/generate_receipt.py
+
+      - name: Step 5 - Auto Commit & Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ index.html
+          git commit -m "chore: auto update daily parlay receipt [skip ci]" || echo "Tidak ada perubahan data"
+          git push
