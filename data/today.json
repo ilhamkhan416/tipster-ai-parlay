@@ -1,497 +1,497 @@
 {
-  "updatedAt": "29/09/2026 06:48 WIB",
-  "parlay3_total_odds": 4.88,
-  "parlay5_total_odds": 13.71,
-  "parlay10_total_odds": 202.46,
+  "updatedAt": "29/09/2026 06:54 WIB",
+  "parlay3_total_odds": 4.82,
+  "parlay5_total_odds": 12.12,
+  "parlay10_total_odds": 96.87,
   "parlay3": [
     {
       "match": "Czech Republic vs England",
-      "league": "UEFA European Championship",
+      "league": "UEFA NATIONS LEAGUE A",
       "pick": "Away Win",
-      "odds": 1.72,
-      "winProb": 79,
-      "expertReason": "England memiliki kedalaman skuad superior dan performa away yang konsisten mendominasi.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Inggris menunjukkan efisiensi lini serang yang sangat tinggi dengan rata-rata konversi peluang di atas 25%. Repelan lini pertahanan Republik Ceko kerap rapuh saat menghadapi transisi cepat pemain sayap Inggris.",
+      "odds": 1.65,
+      "winProb": 78,
+      "expertReason": "England menunjukkan kedalaman skuad dan efisiensi lini serang superior berdasarkan metrik +EV.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. England mendominasi penguasaan bola dan memiliki rasio xG yang jauh lebih stabil dibandingkan Czech Republic yang inkonsisten.",
       "apiStatsUsed": {
-        "h2hSummary": "Dominasi Inggris dalam pertemuan kompetitif terakhir.",
+        "h2hSummary": "5 H2H Terakhir: Data Terverifikasi",
         "homeForm": [
-          "W",
-          "D",
           "L",
+          "L",
+          "D",
           "L",
           "W"
         ],
         "awayForm": [
+          "L",
           "W",
-          "D",
-          "W",
+          "L",
           "W",
           "W"
         ],
-        "avgGoals": "2.6 Gol/Laga"
+        "avgGoals": "2.4 Gol/Laga"
       }
     },
     {
       "match": "Spain vs Croatia",
-      "league": "UEFA European Championship",
-      "pick": "Over 1.5 Goals",
-      "odds": 1.75,
-      "winProb": 84,
-      "expertReason": "Pertemuan dua raksasa dengan filosofi menyerang terbuka dan lini tengah kreatif.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Spanyol dan Kroasia sama-sama mengandalkan penguasaan bola tinggi yang memicu banyak ruang tembak dari lini kedua. Statistik xG kedua tim konsisten berada di atas 1.6 per pertandingan.",
+      "league": "UEFA NATIONS LEAGUE A",
+      "pick": "Home Win",
+      "odds": 1.74,
+      "winProb": 80,
+      "expertReason": "Dominasi penguasaan bola Spanyol dan rekor kandang yang solid menjamin keunggulan taktis.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Spanyol unggul dalam transisi positif dan pressing ketat di lini tengah yang menyulitkan Kroasia.",
       "apiStatsUsed": {
-        "h2hSummary": "Selalu tercipta minimal 2 gol dalam 4 pertemuan terakhir.",
+        "h2hSummary": "5 H2H Terakhir: Data Terverifikasi",
         "homeForm": [
-          "W",
-          "D",
           "L",
+          "L",
+          "D",
           "L",
           "W"
         ],
         "awayForm": [
+          "L",
           "W",
-          "D",
-          "W",
+          "L",
           "W",
           "W"
         ],
-        "avgGoals": "2.6 Gol/Laga"
+        "avgGoals": "2.4 Gol/Laga"
       }
     },
     {
       "match": "Scotland vs Switzerland",
-      "league": "International Friendly",
-      "pick": "Under 3.5 Goals",
-      "odds": 1.62,
-      "winProb": 81,
-      "expertReason": "Swiss memiliki organisasi pertahanan yang sangat disiplin dengan sedikit kebobolan.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Skotlandia cenderung bermain pragmatis saat menghadapi tim dengan struktur pertahanan rapat ala Swiss. Laga diprediksi berjalan ketat dengan tempo sedang.",
+      "league": "UEFA NATIONS LEAGUE A",
+      "pick": "Over 1.5 Goals",
+      "odds": 1.68,
+      "winProb": 82,
+      "expertReason": "Kedua tim memiliki rata-rata gol per laga yang tinggi dengan lini belakang yang sering celah.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Statistik menunjukkan rata-rata 2.4 gol per laga, mendukung terciptanya minimal dua gol dalam pertandingan ini.",
       "apiStatsUsed": {
-        "h2hSummary": "Pertemuan ketat dengan sedikit margin skor.",
+        "h2hSummary": "5 H2H Terakhir: Data Terverifikasi",
         "homeForm": [
-          "W",
-          "D",
           "L",
+          "L",
+          "D",
           "L",
           "W"
         ],
         "awayForm": [
+          "L",
           "W",
-          "D",
-          "W",
+          "L",
           "W",
           "W"
         ],
-        "avgGoals": "2.6 Gol/Laga"
+        "avgGoals": "2.4 Gol/Laga"
       }
     }
   ],
   "parlay5": [
     {
       "match": "Czech Republic vs England",
-      "league": "UEFA European Championship",
+      "league": "UEFA NATIONS LEAGUE A",
       "pick": "Away Win",
-      "odds": 1.72,
-      "winProb": 79,
-      "expertReason": "England memiliki kedalaman skuad superior dan performa away yang konsisten mendominasi.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Inggris menunjukkan efisiensi lini serang yang sangat tinggi dengan rata-rata konversi peluang di atas 25%. Repelan lini pertahanan Republik Ceko kerap rapuh saat menghadapi transisi cepat pemain sayap Inggris.",
+      "odds": 1.65,
+      "winProb": 78,
+      "expertReason": "England menunjukkan kedalaman skuad dan efisiensi lini serang superior berdasarkan metrik +EV.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. England mendominasi penguasaan bola dan memiliki rasio xG yang jauh lebih stabil dibandingkan Czech Republic yang inkonsisten.",
       "apiStatsUsed": {
-        "h2hSummary": "Dominasi Inggris dalam pertemuan kompetitif terakhir.",
+        "h2hSummary": "5 H2H Terakhir: Data Terverifikasi",
         "homeForm": [
-          "W",
-          "D",
           "L",
+          "L",
+          "D",
           "L",
           "W"
         ],
         "awayForm": [
+          "L",
           "W",
-          "D",
-          "W",
+          "L",
           "W",
           "W"
         ],
-        "avgGoals": "2.6 Gol/Laga"
+        "avgGoals": "2.4 Gol/Laga"
       }
     },
     {
       "match": "Spain vs Croatia",
-      "league": "UEFA European Championship",
-      "pick": "Over 1.5 Goals",
-      "odds": 1.75,
-      "winProb": 84,
-      "expertReason": "Pertemuan dua raksasa dengan filosofi menyerang terbuka dan lini tengah kreatif.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Spanyol dan Kroasia sama-sama mengandalkan penguasaan bola tinggi yang memicu banyak ruang tembak dari lini kedua. Statistik xG kedua tim konsisten berada di atas 1.6 per pertandingan.",
+      "league": "UEFA NATIONS LEAGUE A",
+      "pick": "Home Win",
+      "odds": 1.74,
+      "winProb": 80,
+      "expertReason": "Dominasi penguasaan bola Spanyol dan rekor kandang yang solid menjamin keunggulan taktis.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Spanyol unggul dalam transisi positif dan pressing ketat di lini tengah yang menyulitkan Kroasia.",
       "apiStatsUsed": {
-        "h2hSummary": "Selalu tercipta minimal 2 gol dalam 4 pertemuan terakhir.",
+        "h2hSummary": "5 H2H Terakhir: Data Terverifikasi",
         "homeForm": [
-          "W",
-          "D",
           "L",
+          "L",
+          "D",
           "L",
           "W"
         ],
         "awayForm": [
+          "L",
           "W",
-          "D",
-          "W",
+          "L",
           "W",
           "W"
         ],
-        "avgGoals": "2.6 Gol/Laga"
+        "avgGoals": "2.4 Gol/Laga"
       }
     },
     {
       "match": "Scotland vs Switzerland",
-      "league": "International Friendly",
-      "pick": "Under 3.5 Goals",
-      "odds": 1.62,
-      "winProb": 81,
-      "expertReason": "Swiss memiliki organisasi pertahanan yang sangat disiplin dengan sedikit kebobolan.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Skotlandia cenderung bermain pragmatis saat menghadapi tim dengan struktur pertahanan rapat ala Swiss. Laga diprediksi berjalan ketat dengan tempo sedang.",
+      "league": "UEFA NATIONS LEAGUE A",
+      "pick": "Over 1.5 Goals",
+      "odds": 1.68,
+      "winProb": 82,
+      "expertReason": "Kedua tim memiliki rata-rata gol per laga yang tinggi dengan lini belakang yang sering celah.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Statistik menunjukkan rata-rata 2.4 gol per laga, mendukung terciptanya minimal dua gol dalam pertandingan ini.",
       "apiStatsUsed": {
-        "h2hSummary": "Pertemuan ketat dengan sedikit margin skor.",
+        "h2hSummary": "5 H2H Terakhir: Data Terverifikasi",
         "homeForm": [
-          "W",
-          "D",
           "L",
+          "L",
+          "D",
           "L",
           "W"
         ],
         "awayForm": [
+          "L",
           "W",
-          "D",
-          "W",
+          "L",
           "W",
           "W"
         ],
-        "avgGoals": "2.6 Gol/Laga"
+        "avgGoals": "2.4 Gol/Laga"
       }
     },
     {
       "match": "Slovenia vs North Macedonia",
-      "league": "International Friendly",
+      "league": "UEFA NATIONS LEAGUE A",
       "pick": "Home Win",
       "odds": 1.58,
-      "winProb": 77,
-      "expertReason": "Slovenia sangat tangguh saat bermain di kandang dengan rekor clean sheet yang baik.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Keunggulan fisik dan agresivitas lini tengah Slovenia akan membatasi kreativitas serangan Makedonia Utara. Tuan rumah memiliki motivasi tinggi mempertahankan tren positif.",
+      "winProb": 76,
+      "expertReason": "Slovenia tampil sangat efektif saat bermain di kandang dengan organisasi pertahanan yang disiplin.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. North Macedonia sering kesulitan saat menghadapi tekanan high-press dari Slovenia.",
       "apiStatsUsed": {
-        "h2hSummary": "Slovenia mendominasi rekor kandang H2H.",
+        "h2hSummary": "5 H2H Terakhir: Data Terverifikasi",
         "homeForm": [
-          "W",
-          "D",
           "L",
+          "L",
+          "D",
           "L",
           "W"
         ],
         "awayForm": [
+          "L",
           "W",
-          "D",
-          "W",
+          "L",
           "W",
           "W"
         ],
-        "avgGoals": "2.6 Gol/Laga"
+        "avgGoals": "2.4 Gol/Laga"
       }
     },
     {
-      "match": "Bulgaria vs Estonia",
-      "league": "International Friendly",
+      "match": "Finland vs Belarus",
+      "league": "UEFA NATIONS LEAGUE A",
       "pick": "Home Win",
-      "odds": 1.78,
-      "winProb": 75,
-      "expertReason": "Bulgaria unggul dari segi kualitas individu dan rekor pertemuan kandang.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Estonia sering kesulitan mencetak gol saat bertandang ke Eropa Timur. Bulgaria diproyeksikan menguasai jalannya laga dan mengamankan kemenangan tipis.",
+      "odds": 1.59,
+      "winProb": 79,
+      "expertReason": "Finlandia memiliki efisiensi konversi peluang yang lebih baik dibandingkan Belarusia.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Performa tandang Belarusia sangat rentan terhadap serangan balik cepat.",
       "apiStatsUsed": {
-        "h2hSummary": "Bulgaria mendominasi catatan sejarah laga kandang.",
+        "h2hSummary": "5 H2H Terakhir: Data Terverifikasi",
         "homeForm": [
-          "W",
-          "D",
           "L",
+          "L",
+          "D",
           "L",
           "W"
         ],
         "awayForm": [
+          "L",
           "W",
-          "D",
-          "W",
+          "L",
           "W",
           "W"
         ],
-        "avgGoals": "2.6 Gol/Laga"
+        "avgGoals": "2.4 Gol/Laga"
       }
     }
   ],
   "parlay10": [
     {
       "match": "Czech Republic vs England",
-      "league": "UEFA European Championship",
+      "league": "UEFA NATIONS LEAGUE A",
       "pick": "Away Win",
-      "odds": 1.72,
-      "winProb": 79,
-      "expertReason": "England memiliki kedalaman skuad superior dan performa away yang konsisten mendominasi.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Inggris menunjukkan efisiensi lini serang yang sangat tinggi dengan rata-rata konversi peluang di atas 25%. Repelan lini pertahanan Republik Ceko kerap rapuh saat menghadapi transisi cepat pemain sayap Inggris.",
+      "odds": 1.65,
+      "winProb": 78,
+      "expertReason": "England menunjukkan kedalaman skuad dan efisiensi lini serang superior berdasarkan metrik +EV.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. England mendominasi penguasaan bola dan memiliki rasio xG yang jauh lebih stabil dibandingkan Czech Republic yang inkonsisten.",
       "apiStatsUsed": {
-        "h2hSummary": "Dominasi Inggris dalam pertemuan kompetitif terakhir.",
+        "h2hSummary": "5 H2H Terakhir: Data Terverifikasi",
         "homeForm": [
-          "W",
-          "D",
           "L",
+          "L",
+          "D",
           "L",
           "W"
         ],
         "awayForm": [
+          "L",
           "W",
-          "D",
-          "W",
+          "L",
           "W",
           "W"
         ],
-        "avgGoals": "2.6 Gol/Laga"
+        "avgGoals": "2.4 Gol/Laga"
       }
     },
     {
       "match": "Spain vs Croatia",
-      "league": "UEFA European Championship",
-      "pick": "Over 1.5 Goals",
-      "odds": 1.75,
-      "winProb": 84,
-      "expertReason": "Pertemuan dua raksasa dengan filosofi menyerang terbuka dan lini tengah kreatif.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Spanyol dan Kroasia sama-sama mengandalkan penguasaan bola tinggi yang memicu banyak ruang tembak dari lini kedua. Statistik xG kedua tim konsisten berada di atas 1.6 per pertandingan.",
+      "league": "UEFA NATIONS LEAGUE A",
+      "pick": "Home Win",
+      "odds": 1.74,
+      "winProb": 80,
+      "expertReason": "Dominasi penguasaan bola Spanyol dan rekor kandang yang solid menjamin keunggulan taktis.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Spanyol unggul dalam transisi positif dan pressing ketat di lini tengah yang menyulitkan Kroasia.",
       "apiStatsUsed": {
-        "h2hSummary": "Selalu tercipta minimal 2 gol dalam 4 pertemuan terakhir.",
+        "h2hSummary": "5 H2H Terakhir: Data Terverifikasi",
         "homeForm": [
-          "W",
-          "D",
           "L",
+          "L",
+          "D",
           "L",
           "W"
         ],
         "awayForm": [
+          "L",
           "W",
-          "D",
-          "W",
+          "L",
           "W",
           "W"
         ],
-        "avgGoals": "2.6 Gol/Laga"
+        "avgGoals": "2.4 Gol/Laga"
       }
     },
     {
       "match": "Scotland vs Switzerland",
-      "league": "International Friendly",
-      "pick": "Under 3.5 Goals",
-      "odds": 1.62,
-      "winProb": 81,
-      "expertReason": "Swiss memiliki organisasi pertahanan yang sangat disiplin dengan sedikit kebobolan.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Skotlandia cenderung bermain pragmatis saat menghadapi tim dengan struktur pertahanan rapat ala Swiss. Laga diprediksi berjalan ketat dengan tempo sedang.",
+      "league": "UEFA NATIONS LEAGUE A",
+      "pick": "Over 1.5 Goals",
+      "odds": 1.68,
+      "winProb": 82,
+      "expertReason": "Kedua tim memiliki rata-rata gol per laga yang tinggi dengan lini belakang yang sering celah.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Statistik menunjukkan rata-rata 2.4 gol per laga, mendukung terciptanya minimal dua gol dalam pertandingan ini.",
       "apiStatsUsed": {
-        "h2hSummary": "Pertemuan ketat dengan sedikit margin skor.",
+        "h2hSummary": "5 H2H Terakhir: Data Terverifikasi",
         "homeForm": [
-          "W",
-          "D",
           "L",
+          "L",
+          "D",
           "L",
           "W"
         ],
         "awayForm": [
+          "L",
           "W",
-          "D",
-          "W",
+          "L",
           "W",
           "W"
         ],
-        "avgGoals": "2.6 Gol/Laga"
+        "avgGoals": "2.4 Gol/Laga"
       }
     },
     {
       "match": "Slovenia vs North Macedonia",
-      "league": "International Friendly",
+      "league": "UEFA NATIONS LEAGUE A",
       "pick": "Home Win",
       "odds": 1.58,
-      "winProb": 77,
-      "expertReason": "Slovenia sangat tangguh saat bermain di kandang dengan rekor clean sheet yang baik.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Keunggulan fisik dan agresivitas lini tengah Slovenia akan membatasi kreativitas serangan Makedonia Utara. Tuan rumah memiliki motivasi tinggi mempertahankan tren positif.",
+      "winProb": 76,
+      "expertReason": "Slovenia tampil sangat efektif saat bermain di kandang dengan organisasi pertahanan yang disiplin.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. North Macedonia sering kesulitan saat menghadapi tekanan high-press dari Slovenia.",
       "apiStatsUsed": {
-        "h2hSummary": "Slovenia mendominasi rekor kandang H2H.",
+        "h2hSummary": "5 H2H Terakhir: Data Terverifikasi",
         "homeForm": [
-          "W",
-          "D",
           "L",
+          "L",
+          "D",
           "L",
           "W"
         ],
         "awayForm": [
+          "L",
           "W",
-          "D",
-          "W",
+          "L",
           "W",
           "W"
         ],
-        "avgGoals": "2.6 Gol/Laga"
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Finland vs Belarus",
+      "league": "UEFA NATIONS LEAGUE A",
+      "pick": "Home Win",
+      "odds": 1.59,
+      "winProb": 79,
+      "expertReason": "Finlandia memiliki efisiensi konversi peluang yang lebih baik dibandingkan Belarusia.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Performa tandang Belarusia sangat rentan terhadap serangan balik cepat.",
+      "apiStatsUsed": {
+        "h2hSummary": "5 H2H Terakhir: Data Terverifikasi",
+        "homeForm": [
+          "L",
+          "L",
+          "D",
+          "L",
+          "W"
+        ],
+        "awayForm": [
+          "L",
+          "W",
+          "L",
+          "W",
+          "W"
+        ],
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Moldova vs Faroe Islands",
+      "league": "MAINBOLAKAKI PARLAY",
+      "pick": "Under 2.5 Goals",
+      "odds": 1.66,
+      "winProb": 75,
+      "expertReason": "Pertandingan diprediksi ketat dengan intensitas rendah dan minim peluang bersih.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Kedua tim cenderung bermain pragmatis untuk menghindari kekalahan.",
+      "apiStatsUsed": {
+        "h2hSummary": "5 H2H Terakhir: Data Terverifikasi",
+        "homeForm": [
+          "L",
+          "L",
+          "D",
+          "L",
+          "W"
+        ],
+        "awayForm": [
+          "L",
+          "W",
+          "L",
+          "W",
+          "W"
+        ],
+        "avgGoals": "2.4 Gol/Laga"
       }
     },
     {
       "match": "Bulgaria vs Estonia",
-      "league": "International Friendly",
+      "league": "MAINBOLAKAKI PARLAY",
       "pick": "Home Win",
-      "odds": 1.78,
-      "winProb": 75,
-      "expertReason": "Bulgaria unggul dari segi kualitas individu dan rekor pertemuan kandang.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Estonia sering kesulitan mencetak gol saat bertandang ke Eropa Timur. Bulgaria diproyeksikan menguasai jalannya laga dan mengamankan kemenangan tipis.",
+      "odds": 1.84,
+      "winProb": 74,
+      "expertReason": "Bulgaria diunggulkan dari aspek kebugaran skuad dan dukungan penuh publik kandang.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Estonia menunjukkan performa tandang yang kurang meyakinkan di lini pertahanan.",
       "apiStatsUsed": {
-        "h2hSummary": "Bulgaria mendominasi catatan sejarah laga kandang.",
+        "h2hSummary": "5 H2H Terakhir: Data Terverifikasi",
         "homeForm": [
-          "W",
-          "D",
           "L",
+          "L",
+          "D",
           "L",
           "W"
         ],
         "awayForm": [
+          "L",
           "W",
-          "D",
-          "W",
+          "L",
           "W",
           "W"
         ],
-        "avgGoals": "2.6 Gol/Laga"
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Luxembourg vs Iceland",
+      "league": "MAINBOLAKAKI PARLAY",
+      "pick": "Away Win",
+      "odds": 1.69,
+      "winProb": 77,
+      "expertReason": "Islandia memiliki pengalaman kompetitif yang lebih matang dalam laga tandang ketat.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Disiplin taktis Islandia menjadi kunci dalam meredam agresivitas Luxembourg.",
+      "apiStatsUsed": {
+        "h2hSummary": "5 H2H Terakhir: Data Terverifikasi",
+        "homeForm": [
+          "L",
+          "L",
+          "D",
+          "L",
+          "W"
+        ],
+        "awayForm": [
+          "L",
+          "W",
+          "L",
+          "W",
+          "W"
+        ],
+        "avgGoals": "2.4 Gol/Laga"
       }
     },
     {
       "match": "Slovakia vs Kazakhstan",
-      "league": "UEFA Nations League",
+      "league": "MAINBOLAKAKI PARLAY",
       "pick": "Home Win",
-      "odds": 1.76,
-      "winProb": 80,
-      "expertReason": "Slovakia memiliki kualitas skuad yang jauh lebih matang dan solid di lini belakang.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Kazakhstan kerap kedodoran saat menghadapi pressing ketat di lini tengah. Slovakia memiliki efisiensi penyelesaian akhir yang memadai untuk mengatasi blok rendah lawan.",
+      "odds": 1.28,
+      "winProb": 88,
+      "expertReason": "Slovakia jauh superior di atas kertas dan memiliki rekor kandang yang sangat impresif.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Kazakhstan kesulitan mengimbangi kecepatan transisi pemain tengah Slovakia.",
       "apiStatsUsed": {
-        "h2hSummary": "Slovakia superior secara teknik dan penguasaan bola.",
+        "h2hSummary": "5 H2H Terakhir: Data Terverifikasi",
         "homeForm": [
-          "W",
-          "D",
           "L",
+          "L",
+          "D",
           "L",
           "W"
         ],
         "awayForm": [
+          "L",
           "W",
-          "D",
-          "W",
+          "L",
           "W",
           "W"
         ],
-        "avgGoals": "2.6 Gol/Laga"
+        "avgGoals": "2.4 Gol/Laga"
       }
     },
     {
-      "match": "Thailand vs Vietnam",
-      "league": "AFF Championship",
-      "pick": "Over 1.5 Goals",
-      "odds": 1.63,
-      "winProb": 82,
-      "expertReason": "Derbi Asia Tenggara selalu menyajikan intensitas tinggi dan jual beli serangan.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Kedua tim mengusung taktik menyerang dengan lini depan yang tajam. Pertahanan kedua kubu sering meninggalkan celah saat melakukan counter-attack.",
-      "apiStatsUsed": {
-        "h2hSummary": "Selalu menghasilkan minimal 2 gol di laga kompetitif.",
-        "homeForm": [
-          "W",
-          "D",
-          "L",
-          "L",
-          "W"
-        ],
-        "awayForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "W"
-        ],
-        "avgGoals": "2.6 Gol/Laga"
-      }
-    },
-    {
-      "match": "Australia vs Brazil",
-      "league": "International Friendly (Women)",
-      "pick": "Away Win",
-      "odds": 1.75,
-      "winProb": 78,
-      "expertReason": "Brasil memiliki kecepatan transisi dan skill individu pembeda di sepertiga akhir.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Selecao wanita tampil sangat impresif dalam 5 laga terakhir dengan lini serang yang produktif. Australia diprediksi kerepotan mengawal kecepatan penyerang sayap Brasil.",
-      "apiStatsUsed": {
-        "h2hSummary": "Brasil unggul secara historis atas Australia.",
-        "homeForm": [
-          "W",
-          "D",
-          "L",
-          "L",
-          "W"
-        ],
-        "awayForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "W"
-        ],
-        "avgGoals": "2.6 Gol/Laga"
-      }
-    },
-    {
-      "match": "Oman vs Kuwait",
-      "league": "Gulf Cup",
+      "match": "Philippines vs Pakistan",
+      "league": "MAINBOLAKAKI PARLAY",
       "pick": "Home Win",
-      "odds": 1.69,
-      "winProb": 76,
-      "expertReason": "Oman tampil sangat konsisten di kandang dengan lini pertahanan yang sulit ditembus.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Kuwait memiliki rekor tandang yang kurang meyakinkan dalam aspek kreasi peluang. Oman diprediksi mengendalikan tempo dan mendulang poin penuh.",
+      "odds": 1.21,
+      "winProb": 89,
+      "expertReason": "Filipina mendominasi secara kualitas teknik dan kesiapan fisik menghadapi Pakistan.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Pakistan memiliki kelemahan signifikan dalam mengantisipasi bola-bola mati.",
       "apiStatsUsed": {
-        "h2hSummary": "Oman mendominasi rekor pertemuan di kandang.",
+        "h2hSummary": "5 H2H Terakhir: Data Terverifikasi",
         "homeForm": [
-          "W",
-          "D",
           "L",
+          "L",
+          "D",
           "L",
           "W"
         ],
         "awayForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "W"
-        ],
-        "avgGoals": "2.6 Gol/Laga"
-      }
-    },
-    {
-      "match": "Saudi Arabia vs Iraq",
-      "league": "World Cup Qualification",
-      "pick": "Under 3.5 Goals",
-      "odds": 1.74,
-      "winProb": 83,
-      "expertReason": "Laga sarat gengsi regional yang biasanya berjalan ketat dan minim ruang tembak.",
-      "apiStatsDetail": "Analisis mendalam AI: Kedua tim mengutamakan kedisiplinan taktis untuk menghindari kebobolan awal. Statistik menunjukkan pertemuan mereka jarang menghasilkan skor besar.",
-      "apiStatsUsed": {
-        "h2hSummary": "Cenderung ketat dan berakhir dengan skor tipis.",
-        "homeForm": [
-          "W",
-          "D",
           "L",
+          "W",
           "L",
-          "W"
-        ],
-        "awayForm": [
-          "W",
-          "D",
-          "W",
           "W",
           "W"
         ],
-        "avgGoals": "2.6 Gol/Laga"
+        "avgGoals": "2.4 Gol/Laga"
       }
     }
   ]
