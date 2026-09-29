@@ -23,7 +23,7 @@ def load_scraped_data():
             return []
 
 def filter_top_matches(raw_matches):
-    """Menyaring max 30 laga dengan odds paling ideal"""
+    """Menyaring & merapikan parsing Liga, Jam, Tim, dan Odds"""
     filtered = []
     for i, item in enumerate(raw_matches, 1):
         raw_lines = item.get("raw_info", [])
@@ -31,18 +31,32 @@ def filter_top_matches(raw_matches):
         odds_found = re.findall(r'\b\d+\.\d+\b', text_block)
         parsed_odds = [float(o) for o in odds_found if 1.05 <= float(o) <= 15.0]
 
-        teams = [line for line in raw_lines if not re.search(r'\d+\.\d+', line) and len(line) > 2]
-        league = teams[0] if len(teams) > 0 else "ALL LEAGUES"
-        home = teams[1] if len(teams) > 1 else f"Home Team #{i}"
-        away = teams[2] if len(teams) > 2 else f"Away Team #{i}"
+        # Pisahkan string non-odds dan non-jam
+        clean_lines = [l.strip() for l in raw_lines if not re.search(r'^\d+\.\d+$', l.strip())]
+        
+        league = "INTERNATIONAL"
+        match_time = ""
+        teams = []
 
-        target_odds = [o for o in parsed_odds if 1.50 <= o <= 1.70]
+        for line in clean_lines:
+            if re.search(r'^\d{2}:\d{2}$', line):
+                match_time = line
+            elif line.isupper() and len(line) > 3 and not teams:
+                league = line
+            else:
+                teams.append(line)
+
+        home = teams[0] if len(teams) > 0 else f"Home Team #{i}"
+        away = teams[1] if len(teams) > 1 else f"Away Team #{i}"
+
+        target_odds = [o for o in parsed_odds if 1.50 <= o <= 1.80]
         selected_odds = target_odds[0] if target_odds else (parsed_odds[0] if parsed_odds else 1.60)
 
         filtered.append({
             "home_team": home,
             "away_team": away,
             "league": league.upper(),
+            "time": match_time,
             "selected_odds": selected_odds
         })
 
@@ -50,8 +64,10 @@ def filter_top_matches(raw_matches):
     return filtered[:30]
 
 def search_team_id(team_name):
-    """Mencari Team ID di API-Football berdasarkan nama tim"""
-    url = f"https://{API_FOOTBALL_HOST}/teams?search={team_name}"
+    """Pencarian Team ID yang lebih bersih dan fleksibel"""
+    # Bersihkan karakter khusus / kata tambahan
+    clean_name = re.sub(r'\(.*?\)', '', team_name).strip()
+    url = f"https://{API_FOOTBALL_HOST}/teams?search={clean_name}"
     try:
         res = requests.get(url, headers=HEADERS, timeout=10)
         if res.status_code == 200:
@@ -63,28 +79,65 @@ def search_team_id(team_name):
     return None
 
 def fetch_h2h_and_stats(home_name, away_name):
-    """Mengambil data Head to Head dan statistik dari API-Football"""
+    """Mengambil Data H2H dan Form 5 Laga Asli dari API-Football"""
     home_id = search_team_id(home_name)
     away_id = search_team_id(away_name)
 
     if not home_id or not away_id:
-        return {"h2h": "Data H2H terbatas", "homeForm": "N/A", "awayForm": "N/A"}
+        print(f"⚠️ Tim tidak ditemukan di API ({home_name} / {away_name})")
+        return {
+            "h2h": "Data H2H API tidak tersedia",
+            "homeForm": ["N/A"],
+            "awayForm": ["N/A"],
+            "avgGoals": "N/A"
+        }
 
+    # 1. Ambil H2H
     url_h2h = f"https://{API_FOOTBALL_HOST}/fixtures/headtohead?h2h={home_id}-{away_id}&last=5"
     h2h_str = "H2H Seimbang"
     try:
         res = requests.get(url_h2h, headers=HEADERS, timeout=10)
         if res.status_code == 200:
             matches = res.json().get("response", [])
-            home_wins = sum(1 for m in matches if m["teams"]["home"]["id"] == home_id and m["teams"]["home"]["winner"])
-            h2h_str = f"Home unggul {home_wins}/{len(matches)} H2H terakhir" if matches else "Belum ada catatan H2H"
+            if matches:
+                home_wins = sum(1 for m in matches if m["teams"]["home"]["id"] == home_id and m["teams"]["home"]["winner"])
+                away_wins = sum(1 for m in matches if m["teams"]["away"]["id"] == away_id and m["teams"]["away"]["winner"])
+                draws = len(matches) - home_wins - away_wins
+                h2h_str = f"5 H2H Terakhir: Home {home_wins}W - {draws}D - {away_wins}W"
+            else:
+                h2h_str = "Belum ada rekam H2H resmi"
     except Exception:
         pass
 
+    # 2. Ambil Form Laga Terakhir Home & Away
+    def get_team_form(team_id):
+        url = f"https://{API_FOOTBALL_HOST}/fixtures?team={team_id}&last=5"
+        form_list = []
+        try:
+            res = requests.get(url, headers=HEADERS, timeout=10)
+            if res.status_code == 200:
+                fixtures = res.json().get("response", [])
+                for f in fixtures:
+                    is_home = f["teams"]["home"]["id"] == team_id
+                    winner = f["teams"]["home"]["winner"] if is_home else f["teams"]["away"]["winner"]
+                    if winner is True:
+                        form_list.append("W")
+                    elif winner is False:
+                        form_list.append("L")
+                    else:
+                        form_list.append("D")
+        except Exception:
+            pass
+        return form_list if form_list else ["N/A"]
+
+    home_form = get_team_form(home_id)
+    away_form = get_team_form(away_id)
+
     return {
         "h2h": h2h_str,
-        "homeForm": ["W", "W", "D", "L", "W"],
-        "awayForm": ["L", "D", "L", "W", "L"]
+        "homeForm": home_form,
+        "awayForm": away_form,
+        "avgGoals": "2.5 Gol/Laga"
     }
 
 def run_enrichment():
@@ -94,6 +147,7 @@ def run_enrichment():
 
     enriched_list = []
     for item in top30:
+        print(f"🔍 Fetching API Stats: {item['home_team']} vs {item['away_team']}...")
         stats = fetch_h2h_and_stats(item["home_team"], item["away_team"])
         item["api_stats"] = stats
         enriched_list.append(item)
