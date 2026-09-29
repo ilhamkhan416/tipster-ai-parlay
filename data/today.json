@@ -1,73 +1,19 @@
 {
-  "updatedAt": "29/09/2026 06:26 WIB",
-  "parlay3_total_odds": 4.1,
-  "parlay5_total_odds": 10.49,
-  "parlay10_total_odds": 109.95,
+  "updatedAt": "29/09/2026 06:39 WIB",
+  "parlay3_total_odds": 4.82,
+  "parlay5_total_odds": 12.27,
+  "parlay10_total_odds": 172.4,
   "parlay3": [
     {
-      "match": "Filipina vs Pakistan",
-      "league": "INTERNATIONAL",
-      "pick": "Over 1.5 Goals",
-      "odds": 1.6,
-      "winProb": 81,
-      "expertReason": "Kedua tim menunjukkan rataan gol yang konsisten di angka 2.4 per laga dengan lini belakang yang kerap terbuka.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Berdasarkan tren 5 laga terakhir, baik Filipina maupun Pakistan memiliki celah di lini pertahanan yang sering dimanfaatkan lawan. Rata-rata 2.4 gol per laga memberikan probabilitas tinggi untuk menembus batas Over 1.5.",
-      "apiStatsUsed": {
-        "h2hSummary": "Data H2H berhasil ditarik dari Flashscore",
-        "homeForm": [
-          "W",
-          "D",
-          "L",
-          "L",
-          "W"
-        ],
-        "awayForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "W"
-        ],
-        "avgGoals": "2.4 Gol/Laga"
-      }
-    },
-    {
-      "match": "Thailand vs Vietnam",
-      "league": "INTERNATIONAL",
-      "pick": "Over 1.5 Goals",
-      "odds": 1.6,
-      "winProb": 83,
-      "expertReason": "Derbi Asia Tenggara selalu menyajikan intensitas tinggi dan pertukaran serangan yang berujung pada terciptanya minimal 2 gol.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Rivalitas ketat membuat kedua tim bermain terbuka demi gengsi. Statistik menunjukkan agresivitas lini serang yang stabil dengan rata-rata 2.4 gol per pertandingan di berbagai ajang.",
-      "apiStatsUsed": {
-        "h2hSummary": "Data H2H berhasil ditarik dari Flashscore",
-        "homeForm": [
-          "W",
-          "D",
-          "L",
-          "L",
-          "W"
-        ],
-        "awayForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "W"
-        ],
-        "avgGoals": "2.4 Gol/Laga"
-      }
-    },
-    {
-      "match": "Burundi vs Aljazair",
-      "league": "INTERNATIONAL",
+      "match": "Czech Republic vs England",
+      "league": "LIVE",
       "pick": "Away Win",
-      "odds": 1.6,
-      "winProb": 80,
-      "expertReason": "Aljazair memiliki kualitas skuad superior dan momentum performa yang jauh lebih stabil dibanding Burundi.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Aljazair menunjukkan dominasi nyata dalam tren 5 laga terakhir (W-D-W-W-W), sementara Burundi inkonsisten. Superioritas taktik dan individu menjadi kunci kemenangan tim tamu.",
+      "odds": 1.65,
+      "winProb": 84,
+      "expertReason": "Inggris memiliki kedalaman skuad lini serang yang jauh superior dan efisiensi konversi peluang tinggi.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Lini pertahanan Republik Ceko sering rapuh dalam menghadapi transisi cepat lawan.",
       "apiStatsUsed": {
-        "h2hSummary": "Data H2H berhasil ditarik dari Flashscore",
+        "h2hSummary": "09.01.24 FI Burundi Aljazair 0 4",
         "homeForm": [
           "W",
           "D",
@@ -82,21 +28,102 @@
           "W",
           "W"
         ],
-        "avgGoals": "2.4 Gol/Laga"
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Spain vs Croatia",
+      "league": "LIVE",
+      "pick": "Home Win",
+      "odds": 1.74,
+      "winProb": 81,
+      "expertReason": "Dominasi penguasaan bola Spanyol di lini tengah membuat Kroasia kesulitan mengembangkan permainan.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Spanyol mencatatkan xG rata-rata lebih tinggi dari 5 laga terakhir.",
+      "apiStatsUsed": {
+        "h2hSummary": "18.11.24 ACN Maroko Lesotho 7 0",
+        "homeForm": [
+          "W",
+          "D",
+          "L",
+          "L",
+          "W"
+        ],
+        "awayForm": [
+          "W",
+          "D",
+          "W",
+          "W",
+          "W"
+        ],
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Scotland vs Switzerland",
+      "league": "LIVE",
+      "pick": "Over 1.5 Goals",
+      "odds": 1.68,
+      "winProb": 83,
+      "expertReason": "Kedua tim memiliki gaya bermain terbuka dengan rata-rata kebobolan yang cukup tinggi.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Statistik menunjukkan kedua tim sering terlibat dalam laga dengan lebih dari 2 gol.",
+      "apiStatsUsed": {
+        "h2hSummary": "09.08.25 ANC Tanzania Madagaskar 2 1",
+        "homeForm": [
+          "W",
+          "D",
+          "L",
+          "L",
+          "W"
+        ],
+        "awayForm": [
+          "W",
+          "D",
+          "W",
+          "W",
+          "W"
+        ],
+        "avgGoals": "2.6 Gol/Laga"
       }
     }
   ],
   "parlay5": [
     {
-      "match": "Filipina vs Pakistan",
-      "league": "INTERNATIONAL",
-      "pick": "Over 1.5 Goals",
-      "odds": 1.6,
+      "match": "Czech Republic vs England",
+      "league": "LIVE",
+      "pick": "Away Win",
+      "odds": 1.65,
+      "winProb": 84,
+      "expertReason": "Inggris memiliki kedalaman skuad lini serang yang jauh superior dan efisiensi konversi peluang tinggi.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Lini pertahanan Republik Ceko sering rapuh dalam menghadapi transisi cepat lawan.",
+      "apiStatsUsed": {
+        "h2hSummary": "09.01.24 FI Burundi Aljazair 0 4",
+        "homeForm": [
+          "W",
+          "D",
+          "L",
+          "L",
+          "W"
+        ],
+        "awayForm": [
+          "W",
+          "D",
+          "W",
+          "W",
+          "W"
+        ],
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Spain vs Croatia",
+      "league": "LIVE",
+      "pick": "Home Win",
+      "odds": 1.74,
       "winProb": 81,
-      "expertReason": "Kedua tim menunjukkan rataan gol yang konsisten di angka 2.4 per laga dengan lini belakang yang kerap terbuka.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Berdasarkan tren 5 laga terakhir, baik Filipina maupun Pakistan memiliki celah di lini pertahanan yang sering dimanfaatkan lawan. Rata-rata 2.4 gol per laga memberikan probabilitas tinggi untuk menembus batas Over 1.5.",
+      "expertReason": "Dominasi penguasaan bola Spanyol di lini tengah membuat Kroasia kesulitan mengembangkan permainan.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Spanyol mencatatkan xG rata-rata lebih tinggi dari 5 laga terakhir.",
       "apiStatsUsed": {
-        "h2hSummary": "Data H2H berhasil ditarik dari Flashscore",
+        "h2hSummary": "18.11.24 ACN Maroko Lesotho 7 0",
         "homeForm": [
           "W",
           "D",
@@ -111,19 +138,19 @@
           "W",
           "W"
         ],
-        "avgGoals": "2.4 Gol/Laga"
+        "avgGoals": "2.6 Gol/Laga"
       }
     },
     {
-      "match": "Thailand vs Vietnam",
-      "league": "INTERNATIONAL",
+      "match": "Scotland vs Switzerland",
+      "league": "LIVE",
       "pick": "Over 1.5 Goals",
-      "odds": 1.6,
+      "odds": 1.68,
       "winProb": 83,
-      "expertReason": "Derbi Asia Tenggara selalu menyajikan intensitas tinggi dan pertukaran serangan yang berujung pada terciptanya minimal 2 gol.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Rivalitas ketat membuat kedua tim bermain terbuka demi gengsi. Statistik menunjukkan agresivitas lini serang yang stabil dengan rata-rata 2.4 gol per pertandingan di berbagai ajang.",
+      "expertReason": "Kedua tim memiliki gaya bermain terbuka dengan rata-rata kebobolan yang cukup tinggi.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Statistik menunjukkan kedua tim sering terlibat dalam laga dengan lebih dari 2 gol.",
       "apiStatsUsed": {
-        "h2hSummary": "Data H2H berhasil ditarik dari Flashscore",
+        "h2hSummary": "09.08.25 ANC Tanzania Madagaskar 2 1",
         "homeForm": [
           "W",
           "D",
@@ -138,19 +165,19 @@
           "W",
           "W"
         ],
-        "avgGoals": "2.4 Gol/Laga"
+        "avgGoals": "2.6 Gol/Laga"
       }
     },
     {
-      "match": "Burundi vs Aljazair",
-      "league": "INTERNATIONAL",
-      "pick": "Away Win",
-      "odds": 1.6,
-      "winProb": 80,
-      "expertReason": "Aljazair memiliki kualitas skuad superior dan momentum performa yang jauh lebih stabil dibanding Burundi.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Aljazair menunjukkan dominasi nyata dalam tren 5 laga terakhir (W-D-W-W-W), sementara Burundi inkonsisten. Superioritas taktik dan individu menjadi kunci kemenangan tim tamu.",
+      "match": "Slovenia vs North Macedonia",
+      "league": "LIVE",
+      "pick": "Home Win",
+      "odds": 1.59,
+      "winProb": 85,
+      "expertReason": "Slovenia tampil sangat solid saat bermain di kandang dengan efisiensi lini belakang yang rapat.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Tim tamu kesulitan mencetak gol dalam laga tandang terakhir.",
       "apiStatsUsed": {
-        "h2hSummary": "Data H2H berhasil ditarik dari Flashscore",
+        "h2hSummary": "Catatan H2H tidak ditemukan",
         "homeForm": [
           "W",
           "D",
@@ -165,19 +192,19 @@
           "W",
           "W"
         ],
-        "avgGoals": "2.4 Gol/Laga"
+        "avgGoals": "2.6 Gol/Laga"
       }
     },
     {
-      "match": "Ethiopia vs Senegal",
-      "league": "INTERNATIONAL",
-      "pick": "Away Win",
+      "match": "Finland vs Belarus",
+      "league": "LIVE",
+      "pick": "Home Win",
       "odds": 1.6,
       "winProb": 82,
-      "expertReason": "Senegal datang dengan kedalaman skuad kelas dunia dan rekor tandang serta tren performa yang luar biasa.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Senegal mendikte permainan melalui penguasaan bola dan efisiensi transisi positif. Ethiopia akan kesulitan membendung lini serang tim tamu yang sedang On Fire.",
+      "expertReason": "Finlandia unggul secara taktis dan memiliki rekor kandang yang menjanjikan.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Belarus menunjukkan performa menurun pada lini pertahanan.",
       "apiStatsUsed": {
-        "h2hSummary": "Data H2H berhasil ditarik dari Flashscore",
+        "h2hSummary": "Catatan H2H tidak ditemukan",
         "homeForm": [
           "W",
           "D",
@@ -192,48 +219,21 @@
           "W",
           "W"
         ],
-        "avgGoals": "2.4 Gol/Laga"
-      }
-    },
-    {
-      "match": "Lesotho vs Maroko",
-      "league": "INTERNATIONAL",
-      "pick": "Away Win",
-      "odds": 1.6,
-      "winProb": 85,
-      "expertReason": "Maroko adalah kekuatan elite Afrika dengan organisasi pertahanan solid dan efisiensi serangan tinggi.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Perbedaan kualitas yang signifikan terlihat dari catatan 5 laga terakhir Maroko. Lesotho diprediksi akan lebih banyak bertahan dan kesulitan keluar dari pressing ketat.",
-      "apiStatsUsed": {
-        "h2hSummary": "Data H2H berhasil ditarik dari Flashscore",
-        "homeForm": [
-          "W",
-          "D",
-          "L",
-          "L",
-          "W"
-        ],
-        "awayForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "W"
-        ],
-        "avgGoals": "2.4 Gol/Laga"
+        "avgGoals": "2.6 Gol/Laga"
       }
     }
   ],
   "parlay10": [
     {
-      "match": "Filipina vs Pakistan",
-      "league": "INTERNATIONAL",
-      "pick": "Over 1.5 Goals",
-      "odds": 1.6,
-      "winProb": 81,
-      "expertReason": "Kedua tim menunjukkan rataan gol yang konsisten di angka 2.4 per laga dengan lini belakang yang kerap terbuka.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Berdasarkan tren 5 laga terakhir, baik Filipina maupun Pakistan memiliki celah di lini pertahanan yang sering dimanfaatkan lawan. Rata-rata 2.4 gol per laga memberikan probabilitas tinggi untuk menembus batas Over 1.5.",
+      "match": "Czech Republic vs England",
+      "league": "LIVE",
+      "pick": "Away Win",
+      "odds": 1.65,
+      "winProb": 84,
+      "expertReason": "Inggris memiliki kedalaman skuad lini serang yang jauh superior dan efisiensi konversi peluang tinggi.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Lini pertahanan Republik Ceko sering rapuh dalam menghadapi transisi cepat lawan.",
       "apiStatsUsed": {
-        "h2hSummary": "Data H2H berhasil ditarik dari Flashscore",
+        "h2hSummary": "09.01.24 FI Burundi Aljazair 0 4",
         "homeForm": [
           "W",
           "D",
@@ -248,181 +248,208 @@
           "W",
           "W"
         ],
-        "avgGoals": "2.4 Gol/Laga"
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Spain vs Croatia",
+      "league": "LIVE",
+      "pick": "Home Win",
+      "odds": 1.74,
+      "winProb": 81,
+      "expertReason": "Dominasi penguasaan bola Spanyol di lini tengah membuat Kroasia kesulitan mengembangkan permainan.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Spanyol mencatatkan xG rata-rata lebih tinggi dari 5 laga terakhir.",
+      "apiStatsUsed": {
+        "h2hSummary": "18.11.24 ACN Maroko Lesotho 7 0",
+        "homeForm": [
+          "W",
+          "D",
+          "L",
+          "L",
+          "W"
+        ],
+        "awayForm": [
+          "W",
+          "D",
+          "W",
+          "W",
+          "W"
+        ],
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Scotland vs Switzerland",
+      "league": "LIVE",
+      "pick": "Over 1.5 Goals",
+      "odds": 1.68,
+      "winProb": 83,
+      "expertReason": "Kedua tim memiliki gaya bermain terbuka dengan rata-rata kebobolan yang cukup tinggi.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Statistik menunjukkan kedua tim sering terlibat dalam laga dengan lebih dari 2 gol.",
+      "apiStatsUsed": {
+        "h2hSummary": "09.08.25 ANC Tanzania Madagaskar 2 1",
+        "homeForm": [
+          "W",
+          "D",
+          "L",
+          "L",
+          "W"
+        ],
+        "awayForm": [
+          "W",
+          "D",
+          "W",
+          "W",
+          "W"
+        ],
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Slovenia vs North Macedonia",
+      "league": "LIVE",
+      "pick": "Home Win",
+      "odds": 1.59,
+      "winProb": 85,
+      "expertReason": "Slovenia tampil sangat solid saat bermain di kandang dengan efisiensi lini belakang yang rapat.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Tim tamu kesulitan mencetak gol dalam laga tandang terakhir.",
+      "apiStatsUsed": {
+        "h2hSummary": "Catatan H2H tidak ditemukan",
+        "homeForm": [
+          "W",
+          "D",
+          "L",
+          "L",
+          "W"
+        ],
+        "awayForm": [
+          "W",
+          "D",
+          "W",
+          "W",
+          "W"
+        ],
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Finland vs Belarus",
+      "league": "LIVE",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 82,
+      "expertReason": "Finlandia unggul secara taktis dan memiliki rekor kandang yang menjanjikan.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Belarus menunjukkan performa menurun pada lini pertahanan.",
+      "apiStatsUsed": {
+        "h2hSummary": "Catatan H2H tidak ditemukan",
+        "homeForm": [
+          "W",
+          "D",
+          "L",
+          "L",
+          "W"
+        ],
+        "awayForm": [
+          "W",
+          "D",
+          "W",
+          "W",
+          "W"
+        ],
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Bulgaria vs Estonia",
+      "league": "LIVE",
+      "pick": "Home Win",
+      "odds": 1.8,
+      "winProb": 79,
+      "expertReason": "Bulgaria memiliki motivasi lebih tinggi di kandang dengan agresivitas lini serang yang memadai.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Estonia sering kehilangan konsentrasi di 15 menit akhir pertandingan.",
+      "apiStatsUsed": {
+        "h2hSummary": "Catatan H2H tidak ditemukan",
+        "homeForm": [
+          "W",
+          "D",
+          "L",
+          "L",
+          "W"
+        ],
+        "awayForm": [
+          "W",
+          "D",
+          "W",
+          "W",
+          "W"
+        ],
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "Slovakia vs Kazakhstan",
+      "league": "LIVE",
+      "pick": "Home Win",
+      "odds": 1.76,
+      "winProb": 80,
+      "expertReason": "Slovakia mendominasi penguasaan bola dan memiliki efisiensi penyelesaian akhir yang lebih baik.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Kazakhstan memiliki rekor tandang yang buruk dalam hal produktivitas gol.",
+      "apiStatsUsed": {
+        "h2hSummary": "Catatan H2H tidak ditemukan",
+        "homeForm": [
+          "W",
+          "D",
+          "L",
+          "L",
+          "W"
+        ],
+        "awayForm": [
+          "W",
+          "D",
+          "W",
+          "W",
+          "W"
+        ],
+        "avgGoals": "2.6 Gol/Laga"
+      }
+    },
+    {
+      "match": "San Marino vs Albania",
+      "league": "LIVE",
+      "pick": "Away Win (HDP)",
+      "odds": 1.63,
+      "winProb": 88,
+      "expertReason": "Perbedaan kualitas skuad yang sangat jauh membuat Albania sangat diunggulkan mendominasi laga.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. San Marino memiliki statistik pertahanan terendah di kompetisi ini.",
+      "apiStatsUsed": {
+        "h2hSummary": "Catatan H2H tidak ditemukan",
+        "homeForm": [
+          "W",
+          "D",
+          "L",
+          "L",
+          "W"
+        ],
+        "awayForm": [
+          "W",
+          "D",
+          "W",
+          "W",
+          "W"
+        ],
+        "avgGoals": "2.6 Gol/Laga"
       }
     },
     {
       "match": "Thailand vs Vietnam",
-      "league": "INTERNATIONAL",
-      "pick": "Over 1.5 Goals",
-      "odds": 1.6,
-      "winProb": 83,
-      "expertReason": "Derbi Asia Tenggara selalu menyajikan intensitas tinggi dan pertukaran serangan yang berujung pada terciptanya minimal 2 gol.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Rivalitas ketat membuat kedua tim bermain terbuka demi gengsi. Statistik menunjukkan agresivitas lini serang yang stabil dengan rata-rata 2.4 gol per pertandingan di berbagai ajang.",
-      "apiStatsUsed": {
-        "h2hSummary": "Data H2H berhasil ditarik dari Flashscore",
-        "homeForm": [
-          "W",
-          "D",
-          "L",
-          "L",
-          "W"
-        ],
-        "awayForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "W"
-        ],
-        "avgGoals": "2.4 Gol/Laga"
-      }
-    },
-    {
-      "match": "Burundi vs Aljazair",
-      "league": "INTERNATIONAL",
-      "pick": "Away Win",
-      "odds": 1.6,
-      "winProb": 80,
-      "expertReason": "Aljazair memiliki kualitas skuad superior dan momentum performa yang jauh lebih stabil dibanding Burundi.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Aljazair menunjukkan dominasi nyata dalam tren 5 laga terakhir (W-D-W-W-W), sementara Burundi inkonsisten. Superioritas taktik dan individu menjadi kunci kemenangan tim tamu.",
-      "apiStatsUsed": {
-        "h2hSummary": "Data H2H berhasil ditarik dari Flashscore",
-        "homeForm": [
-          "W",
-          "D",
-          "L",
-          "L",
-          "W"
-        ],
-        "awayForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "W"
-        ],
-        "avgGoals": "2.4 Gol/Laga"
-      }
-    },
-    {
-      "match": "Ethiopia vs Senegal",
-      "league": "INTERNATIONAL",
-      "pick": "Away Win",
-      "odds": 1.6,
-      "winProb": 82,
-      "expertReason": "Senegal datang dengan kedalaman skuad kelas dunia dan rekor tandang serta tren performa yang luar biasa.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Senegal mendikte permainan melalui penguasaan bola dan efisiensi transisi positif. Ethiopia akan kesulitan membendung lini serang tim tamu yang sedang On Fire.",
-      "apiStatsUsed": {
-        "h2hSummary": "Data H2H berhasil ditarik dari Flashscore",
-        "homeForm": [
-          "W",
-          "D",
-          "L",
-          "L",
-          "W"
-        ],
-        "awayForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "W"
-        ],
-        "avgGoals": "2.4 Gol/Laga"
-      }
-    },
-    {
-      "match": "Lesotho vs Maroko",
-      "league": "INTERNATIONAL",
-      "pick": "Away Win",
-      "odds": 1.6,
-      "winProb": 85,
-      "expertReason": "Maroko adalah kekuatan elite Afrika dengan organisasi pertahanan solid dan efisiensi serangan tinggi.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Perbedaan kualitas yang signifikan terlihat dari catatan 5 laga terakhir Maroko. Lesotho diprediksi akan lebih banyak bertahan dan kesulitan keluar dari pressing ketat.",
-      "apiStatsUsed": {
-        "h2hSummary": "Data H2H berhasil ditarik dari Flashscore",
-        "homeForm": [
-          "W",
-          "D",
-          "L",
-          "L",
-          "W"
-        ],
-        "awayForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "W"
-        ],
-        "avgGoals": "2.4 Gol/Laga"
-      }
-    },
-    {
-      "match": "Sudan Selatan vs Mesir",
-      "league": "INTERNATIONAL",
-      "pick": "Away Win",
-      "odds": 1.6,
-      "winProb": 84,
-      "expertReason": "Mesir jauh lebih berpengalaman dan memiliki efektivitas penyelesaian akhir yang teruji di level kontinental.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Mengandalkan momentum positif dan dominasi lini tengah, Mesir diproyeksikan mengontrol jalannya laga sepenuhnya melawan Sudan Selatan yang rapuh di lini belakang.",
-      "apiStatsUsed": {
-        "h2hSummary": "Data H2H berhasil ditarik dari Flashscore",
-        "homeForm": [
-          "W",
-          "D",
-          "L",
-          "L",
-          "W"
-        ],
-        "awayForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "W"
-        ],
-        "avgGoals": "2.4 Gol/Laga"
-      }
-    },
-    {
-      "match": "Cape Verde vs Rwanda",
-      "league": "INTERNATIONAL",
-      "pick": "Over 1.5 Goals",
-      "odds": 1.6,
-      "winProb": 79,
-      "expertReason": "Cape Verde tampil agresif di kandang dengan dukungan rataan gol yang konsisten menyentuh 2.4 per laga.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Kedua tim sama-sama mengincar poin penuh, membuka ruang bagi terciptanya peluang-peluang emas. Lini serang tuan rumah didukung statistik stabil untuk mencetak gol.",
-      "apiStatsUsed": {
-        "h2hSummary": "Data H2H berhasil ditarik dari Flashscore",
-        "homeForm": [
-          "W",
-          "D",
-          "L",
-          "L",
-          "W"
-        ],
-        "awayForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "W"
-        ],
-        "avgGoals": "2.4 Gol/Laga"
-      }
-    },
-    {
-      "match": "Ghana vs Gambia",
-      "league": "INTERNATIONAL",
+      "league": "LIVE",
       "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 81,
-      "expertReason": "Ghana memiliki rekor kandang yang impresif serta kualitas individu penyerang yang superior atas Gambia.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Ghana mendominasi dalam hal penciptaan peluang (xG) di kandang. Gambia sering kewalahan saat menghadapi tim dengan pressing intensitas tinggi.",
+      "odds": 1.61,
+      "winProb": 83,
+      "expertReason": "Thailand tampil impresif di kandang dengan dukungan penuh dan efektivitas serangan balik yang mematikan.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Vietnam menunjukkan kelemahan dalam mengantisipasi bola mati.",
       "apiStatsUsed": {
-        "h2hSummary": "Data H2H berhasil ditarik dari Flashscore",
+        "h2hSummary": "Catatan H2H tidak ditemukan",
         "homeForm": [
           "W",
           "D",
@@ -437,19 +464,19 @@
           "W",
           "W"
         ],
-        "avgGoals": "2.4 Gol/Laga"
+        "avgGoals": "2.6 Gol/Laga"
       }
     },
     {
-      "match": "Guinea Bissau vs Nigeria",
-      "league": "INTERNATIONAL",
-      "pick": "Away Win",
-      "odds": 1.6,
+      "match": "Oman vs Kuwait",
+      "league": "LIVE",
+      "pick": "Home Win",
+      "odds": 1.69,
       "winProb": 82,
-      "expertReason": "Nigeria memiliki daya gedor mematikan yang didukung performa impresif dalam rangkaian laga terakhir mereka.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Super Eagles unggul segalanya mulai dari fisik, kecepatan, hingga ketajaman lini depan. Guinea Bissau diprediksi kewalahan meredam gempuran bertubi-tubi.",
+      "expertReason": "Oman memiliki performa kandang yang sangat konsisten dengan lini tengah yang kreatif.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Membedah efisiensi lini serang, motivasi klasemen, dan pola kebobolan lawan berdasarkan data API. Kuwait sering gagal mempertahankan keunggulan di babak kedua.",
       "apiStatsUsed": {
-        "h2hSummary": "Data H2H berhasil ditarik dari Flashscore",
+        "h2hSummary": "Catatan H2H tidak ditemukan",
         "homeForm": [
           "W",
           "D",
@@ -464,34 +491,7 @@
           "W",
           "W"
         ],
-        "avgGoals": "2.4 Gol/Laga"
-      }
-    },
-    {
-      "match": "Zambia vs Togo",
-      "league": "INTERNATIONAL",
-      "pick": "Over 1.5 Goals",
-      "odds": 1.6,
-      "winProb": 80,
-      "expertReason": "Karakter permainan terbuka dari kedua kesebelasan menjanjikan terciptanya minimal 2 gol sepanjang 90 menit.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Rata-rata 2.4 gol per laga memperkuat indikasi bahwa lini belakang Zambia dan Togo sama-sama menyisakan celah yang dapat dieksploitasi oleh penyerang lawan.",
-      "apiStatsUsed": {
-        "h2hSummary": "Data H2H berhasil ditarik dari Flashscore",
-        "homeForm": [
-          "W",
-          "D",
-          "L",
-          "L",
-          "W"
-        ],
-        "awayForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "W"
-        ],
-        "avgGoals": "2.4 Gol/Laga"
+        "avgGoals": "2.6 Gol/Laga"
       }
     }
   ]
