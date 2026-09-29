@@ -1,114 +1,176 @@
 import json
 import os
 import time
+import re
 from playwright.sync_api import sync_playwright
 
 RAW_DATA_PATH = "data/raw_scraped.json"
 MAINBOLAKAKI_URL = "https://mainbolakaki.pro/_view/odds4.aspx"
 
-IGNORE_KEYWORDS = [
-    "SOCCER", "MIX PARLAY", "SELECT LEAGUE", "FULL TIME", 
-    "FIRST HALF", "TODAY", "TIME", "HOME/AWAY", "HANDICAP", 
-    "OVER/UNDER", "1X2", "ODDS", "LIVE", "UPDATE"
-]
+def print_banner(title):
+    print("\n" + "=" * 60)
+    print(f"⚽ {title}")
+    print("=" * 60)
 
-def is_clean_text(text):
-    text_upper = text.upper()
-    for kw in IGNORE_KEYWORDS:
-        if kw in text_upper:
-            return False
-    return True
+def is_valid_odds(odds_val):
+    return 1.50 <= odds_val <= 1.80
 
-def scrape_mainbolakaki_and_flashscore():
-    print("🌐 [SCRAPER] Membuka mainbolakaki.pro & Flashscore...")
-    raw_matches = []
+def scrape_and_filter():
+    print_banner("STEP 1: SCRAPE FULL MAINBOLAKAKI.PRO")
+    all_raw_rows = []
 
-    try:
-        with sync_playwright() as p:
-            browser = p.chromium.launch(headless=True)
-            context = browser.new_context(
-                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-            )
-            page = context.new_page()
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        context = browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        )
+        page = context.new_page()
 
-            # 1. Scraping data mainbolakaki.pro
-            try:
-                page.goto(MAINBOLAKAKI_URL, timeout=45000)
-                page.wait_for_timeout(4000)
-                rows = page.query_selector_all("tr")
+        try:
+            page.goto(MAINBOLAKAKI_URL, timeout=60000)
+            page.wait_for_timeout(5000)
+            rows = page.query_selector_all("tr")
+            print(f"[INFO] Ditemukan {len(rows)} baris tabel pada mainbolakaki.pro")
 
-                for row in rows:
-                    text_content = row.inner_text()
-                    lines = [line.strip() for line in text_content.split("\n") if line.strip() and is_clean_text(line)]
+            current_league = "MAINBOLAKAKI PARLAY"
+            for row in rows:
+                text = row.inner_text().strip()
+                lines = [l.strip() for l in text.split("\n") if l.strip()]
 
-                    if len(lines) >= 3:
-                        raw_matches.append({
-                            "source": "mainbolakaki.pro",
-                            "raw_info": lines,
-                            "scraped_at": time.strftime("%Y-%m-%d %H:%M:%S")
-                        })
-            except Exception as e:
-                print(f"⚠️ Gagal akses mainbolakaki.pro: {e}")
+                # Cek jika baris adalah nama Liga
+                if len(lines) == 1 and any(kw in lines[0].upper() for kw in ["LEAGUE", "CUP", "NATIONS", "SERIE", "LIGA", "CHAMPIONS"]):
+                    current_league = lines[0].upper()
+                    continue
 
-            # 2. Deep Scrape Flashscore untuk Form & H2H
-            fs_page = context.new_page()
-            try:
-                fs_page.goto("https://www.flashscore.co.id/", timeout=35000)
-                fs_page.wait_for_timeout(3000)
-                
-                match_elements = fs_page.query_selector_all(".event__match")
+                if len(lines) >= 3:
+                    all_raw_rows.append({
+                        "league": current_league,
+                        "lines": lines
+                    })
+        except Exception as e:
+            print(f"⚠️ Error Scraping Mainbolakaki: {e}")
 
-                for item in raw_matches[:15]:
-                    raw_lines = item.get("raw_info", [])
-                    home_candidate = raw_lines[1] if len(raw_lines) > 1 else ""
+        print_banner("STEP 2: ALGORITMA FILTER PERTANDINGAN POTENSIAL (ODDS 1.50 - 1.80 | NON-UNDER)")
+        potential_matches = []
+        seen_pairs = set()
 
-                    matched_id = None
-                    if home_candidate:
-                        for elem in match_elements:
-                            if home_candidate.lower() in elem.inner_text().lower():
-                                match_id_attr = elem.get_attribute("id")
-                                matched_id = match_id_attr.split("_")[-1] if match_id_attr else None
-                                break
+        for item in all_raw_rows:
+            lines = item["lines"]
+            text_block = " ".join(lines)
 
-                    if matched_id:
-                        detail_page = context.new_page()
-                        try:
-                            detail_page.goto(f"https://www.flashscore.co.id/pertandingan/{matched_id}/#/h2h/overall", timeout=15000)
-                            detail_page.wait_for_timeout(2500)
+            # 1. Filter Eksklusi Pasaran UNDER
+            if "UNDER" in text_block.upper() or "Bawah" in text_block:
+                continue
 
-                            # H2H Rows
-                            h2h_rows = detail_page.query_selector_all(".h2h__row")
-                            h2h_list = [r.inner_text().replace("\n", " ") for r in h2h_rows[:5]]
-                            item["flashscore_h2h_full"] = h2h_list
+            # 2. Extract Jam
+            time_search = re.search(r'\b\d{2}:\d{2}\b', text_block)
+            match_time = time_search.group(0) if time_search else "00:00"
 
-                            # Form W/D/L
+            # 3. Extract Odds (1.50 - 1.80)
+            all_odds = [float(o) for o in re.findall(r'\b\d+\.\d+\b', text_block)]
+            target_odds = [o for o in all_odds if is_valid_odds(o)]
+
+            if not target_odds:
+                continue
+
+            selected_odds = target_odds[0]
+
+            # 4. Extract Nama Tim
+            clean_names = []
+            for l in lines:
+                if not re.search(r'^\d+\.\d+$', l) and not re.search(r'^\d{2}:\d{2}$', l):
+                    if not any(kw in l.upper() for kw in ["FULL TIME", "HANDICAP", "OVER", "1X2", "PARLAY"]):
+                        clean_names.append(l)
+
+            if len(clean_names) >= 2:
+                home = clean_names[0]
+                away = clean_names[1]
+            else:
+                continue
+
+            # Unique Match Deduplication
+            pair_key = f"{home.lower()}_vs_{away.lower()}"
+            if pair_key in seen_pairs:
+                continue
+            seen_pairs.add(pair_key)
+
+            # Tentukan Jenis Pick Pasaran (HDC / Over / 1X2)
+            pick_type = "Home Win" if "1" in lines else ("Away Win" if "2" in lines else "Over Goals")
+
+            potential_matches.append({
+                "league": item["league"],
+                "time": match_time,
+                "home": home,
+                "away": away,
+                "odds": selected_odds,
+                "pick": pick_type
+            })
+
+            print(f"[OK] #{len(potential_matches):02d} | [{item['league']}] {home} vs {away} | Pick: {pick_type} @{selected_odds}")
+
+            if len(potential_matches) >= 30: # Limit Target 25-30 Match
+                break
+
+        print(f"------------------------------------------------------------")
+        print(f"[SUCCESS] Terkumpul {len(potential_matches)} Pertandingan Potensial Unik!")
+
+        print_banner("STEP 3: RETRY LOOP MATCHING 1-BY-1 FLASHSCORE")
+        fs_page = context.new_page()
+
+        for idx, match in enumerate(potential_matches, 1):
+            print(f"\n[MATCH {idx}/{len(potential_matches)}] Matching Flashscore: {match['home']} vs {match['away']}...")
+            
+            success = False
+            attempts = 0
+            keywords = [f"{match['home']} {match['away']}", match['home'], match['away']]
+
+            while not success and attempts < len(keywords):
+                search_kw = keywords[attempts]
+                attempts += 1
+                print(f"  └─ Attempt {attempts}: Searching keyword '{search_kw}'...")
+
+                try:
+                    fs_page.goto(f"https://www.flashscore.co.id/cari/?q={search_kw}", timeout=15000)
+                    fs_page.wait_for_timeout(2000)
+
+                    match_elem = fs_page.query_selector(".searchResult .event__match, .event__match")
+                    if match_elem:
+                        match_id_attr = match_elem.get_attribute("id")
+                        if match_id_attr:
+                            match_id = match_id_attr.split("_")[-1]
+                            
+                            # Buka H2H Detail
+                            detail_page = context.new_page()
+                            detail_page.goto(f"https://www.flashscore.co.id/pertandingan/{match_id}/#/h2h/overall", timeout=15000)
+                            detail_page.wait_for_timeout(2000)
+
                             form_sections = detail_page.query_selector_all(".h2h__section")
                             if len(form_sections) >= 2:
-                                home_icons = form_sections[0].query_selector_all(".formIcon")
-                                away_icons = form_sections[1].query_selector_all(".formIcon")
+                                h_icons = [i.inner_text().strip() for i in form_sections[0].query_selector_all(".formIcon") if i.inner_text().strip()]
+                                a_icons = [i.inner_text().strip() for i in form_sections[1].query_selector_all(".formIcon") if i.inner_text().strip()]
 
-                                item["home_form"] = [icon.inner_text().strip() for icon in home_icons[:5] if icon.inner_text().strip()]
-                                item["away_form"] = [icon.inner_text().strip() for icon in away_icons[:5] if icon.inner_text().strip()]
+                                match["home_form"] = h_icons[:5]
+                                match["away_form"] = a_icons[:5]
+                                print(f"  └─ MATCHED! Form Home: {h_icons[:5]} | Form Away: {a_icons[:5]}")
+                                success = True
 
-                        except Exception as err:
-                            print(f"⚠️ Skip detail match ID {matched_id}: {err}")
-                        finally:
                             detail_page.close()
+                except Exception as err:
+                    print(f"  └─ Retry Error: {err}")
 
-            except Exception as e:
-                print(f"⚠️ Flashscore Scrape Error: {e}")
-            finally:
-                fs_page.close()
+            if not success:
+                print(f"  └─ [WARNING] Flashscore sync failed, dipasang status N/A.")
+                match["home_form"] = ["N/A"]
+                match["away_form"] = ["N/A"]
 
-            browser.close()
-    except Exception as e:
-        print(f"⚠️ Error Scraper Engine: {e}")
+        fs_page.close()
+        browser.close()
 
     os.makedirs(os.path.dirname(RAW_DATA_PATH), exist_ok=True)
     with open(RAW_DATA_PATH, "w", encoding="utf-8") as f:
-        json.dump(raw_matches, f, indent=2, ensure_ascii=False)
+        json.dump(potential_matches, f, indent=2, ensure_ascii=False)
 
-    print(f"💾 [SCRAPER] Simpan {len(raw_matches)} baris data mentah.")
+    print_banner(f"STEP 1-3 SELESAI: {len(potential_matches)} DATA SIAP DI-ENRICH")
 
 if __name__ == "__main__":
-    scrape_mainbolakaki_and_flashscore()
+    scrape_and_filter()
