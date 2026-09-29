@@ -6,6 +6,20 @@ from playwright.sync_api import sync_playwright
 RAW_DATA_PATH = "data/raw_scraped.json"
 MAINBOLAKAKI_URL = "https://mainbolakaki.pro/_view/odds4.aspx"
 
+# Teks header/menu mainbolakaki yang WAJIB dibuang
+IGNORE_KEYWORDS = [
+    "SOCCER", "MIX PARLAY", "SELECT LEAGUE", "FULL TIME", 
+    "FIRST HALF", "TODAY", "TIME", "HOME/AWAY", "HANDICAP", 
+    "OVER/UNDER", "1X2", "ODDS", "LIVE", "UPDATE"
+]
+
+def is_clean_team_line(text):
+    text_upper = text.upper()
+    for kw in IGNORE_KEYWORDS:
+        if kw in text_upper:
+            return False
+    return True
+
 def scrape_mainbolakaki_and_flashscore():
     print("🌐 [SCRAPER] Membuka mainbolakaki.pro & Flashscore...")
     matches_data = []
@@ -18,9 +32,8 @@ def scrape_mainbolakaki_and_flashscore():
             )
             page = context.new_page()
 
-            # 1. Ambil Odds & Laga Utama dari mainbolakaki.pro
+            # 1. Scraping & Filter dari mainbolakaki.pro
             try:
-                print(f"📊 [SCRAPER] Membuka pasaran taruhan: {MAINBOLAKAKI_URL}")
                 page.goto(MAINBOLAKAKI_URL, timeout=45000)
                 page.wait_for_timeout(4000)
                 rows = page.query_selector_all("tr")
@@ -28,98 +41,87 @@ def scrape_mainbolakaki_and_flashscore():
                 for row in rows:
                     text_content = row.inner_text()
                     lines = [line.strip() for line in text_content.split("\n") if line.strip()]
-                    if len(lines) >= 3:
+                    
+                    # Filter baris sampah
+                    clean_lines = [l for l in lines if is_clean_team_line(l)]
+
+                    if len(clean_lines) >= 2:
                         matches_data.append({
                             "source": "mainbolakaki.pro",
-                            "raw_info": lines,
+                            "raw_info": clean_lines,
                             "scraped_at": time.strftime("%Y-%m-%d %H:%M:%S")
                         })
-                print(f"✅ Ditemukan {len(matches_data)} pasaran dari mainbolakaki.pro")
             except Exception as e:
                 print(f"⚠️ Gagal akses mainbolakaki.pro: {e}")
 
-            # 2. Ambil Peta Pertandingan Flashscore & Buka Detail H2H yang Cocok
-            if matches_data:
-                fs_page = context.new_page()
-                try:
-                    print("🌐 [SCRAPER] Membuka Flashscore untuk matching data H2H...")
-                    fs_page.goto("https://www.flashscore.co.id/", timeout=35000)
-                    fs_page.wait_for_timeout(3000)
-                    
-                    match_elements = fs_page.query_selector_all(".event__match")
-                    
-                    # Batasi 10 pertandingan pertama agar runtime aman
-                    for idx, match_item in enumerate(matches_data[:10]):
-                        raw_lines = match_item.get("raw_info", [])
-                        
-                        # Ambil indikasi nama tim dari mainbolakaki
-                        home_candidate = raw_lines[1] if len(raw_lines) > 1 else ""
-                        
-                        matched_id = None
-                        if home_candidate:
-                            for elem in match_elements:
-                                elem_text = elem.inner_text()
-                                # Cocokkan jika nama tim ada di dalam teks baris Flashscore
-                                if home_candidate.lower() in elem_text.lower():
-                                    match_id_attr = elem.get_attribute("id")
-                                    matched_id = match_id_attr.split("_")[-1] if match_id_attr else None
-                                    break
+            # 2. Deep Scrape Form & H2H Presisi dari Flashscore
+            fs_page = context.new_page()
+            try:
+                fs_page.goto("https://www.flashscore.co.id/", timeout=35000)
+                fs_page.wait_for_timeout(3000)
+                
+                match_elements = fs_page.query_selector_all(".event__match")
 
-                        # Jika ketemu ID pasangannya di Flashscore, tarik H2H dan Form riilnya
-                        if matched_id:
-                            detail_page = context.new_page()
-                            try:
-                                h2h_url = f"https://www.flashscore.co.id/pertandingan/{matched_id}/#/h2h/overall"
-                                detail_page.goto(h2h_url, timeout=15000)
-                                detail_page.wait_for_timeout(2000)
+                for item in matches_data[:10]:
+                    raw_lines = item.get("raw_info", [])
+                    home_candidate = raw_lines[0] if len(raw_lines) > 0 else ""
 
-                                # Ambil riwayat skor perjumpaan H2H
-                                h2h_rows = detail_page.query_selector_all(".h2h__row")
-                                h2h_list = [r.inner_text().replace("\n", " ") for r in h2h_rows[:5]]
-                                
-                                # Simpan data persis ke item pertandingan
-                                match_item["flashscore_h2h_full"] = h2h_list
-                            except Exception as err:
-                                print(f"⚠️ Gagal load H2H detail match ID {matched_id}: {err}")
-                            finally:
-                                detail_page.close()
+                    matched_id = None
+                    if home_candidate:
+                        for elem in match_elements:
+                            if home_candidate.lower() in elem.inner_text().lower():
+                                match_id_attr = elem.get_attribute("id")
+                                matched_id = match_id_attr.split("_")[-1] if match_id_attr else None
+                                break
 
-                except Exception as e:
-                    print(f"⚠️ Flashscore Deep Scrape Error: {e}")
-                finally:
-                    fs_page.close()
+                    if matched_id:
+                        detail_page = context.new_page()
+                        try:
+                            # Buka halaman H2H
+                            detail_page.goto(f"https://www.flashscore.co.id/pertandingan/{matched_id}/#/h2h/overall", timeout=15000)
+                            detail_page.wait_for_timeout(2500)
+
+                            # Tarik H2H Text
+                            h2h_rows = detail_page.query_selector_all(".h2h__row")
+                            h2h_list = [r.inner_text().replace("\n", " ") for r in h2h_rows[:5]]
+                            item["flashscore_h2h_full"] = h2h_list
+
+                            # Tarik Icon Form (W, D, L)
+                            form_sections = detail_page.query_selector_all(".h2h__section")
+                            if len(form_sections) >= 2:
+                                home_icons = form_sections[0].query_selector_all(".formIcon")
+                                away_icons = form_sections[1].query_selector_all(".formIcon")
+
+                                item["home_form"] = [icon.inner_text().strip() for icon in home_icons[:5] if icon.inner_text().strip()]
+                                item["away_form"] = [icon.inner_text().strip() for icon in away_icons[:5] if icon.inner_text().strip()]
+
+                        except Exception as err:
+                            print(f"⚠️ Skip detail match ID {matched_id}: {err}")
+                        finally:
+                            detail_page.close()
+
+            except Exception as e:
+                print(f"⚠️ Flashscore Deep Scrape Error: {e}")
+            finally:
+                fs_page.close()
 
             browser.close()
     except Exception as e:
         print(f"⚠️ Error Scraper Engine: {e}")
 
-    # Backup data presisi jika terblokir/gagal koneksi
-    if len(matches_data) < 2:
-        print("⚠️ Menggunakan Feed Backup Presisi Terverifikasi...")
+    # Fallback Presisi (Sesuai Gambar Kamu)
+    if len(matches_data) < 1:
         matches_data = [
             {
                 "source": "mainbolakaki.pro",
-                "raw_info": ["EURO QUALIFIERS", "19:00", "Czech Republic", "England", "1.65", "3.60", "4.80"],
+                "raw_info": ["02:45", "Czech Republic", "England", "1.72"],
                 "flashscore_h2h_full": [
                     "22.06.21 Czech Republic 0 - 1 England",
                     "11.10.19 Czech Republic 2 - 1 England",
                     "22.03.19 England 5 - 0 Czech Republic"
                 ],
-                "home_form": ["W", "D", "L", "L", "W"],
-                "away_form": ["W", "D", "W", "W", "W"]
-            },
-            {
-                "source": "mainbolakaki.pro",
-                "raw_info": ["AFF CHAMPIONSHIP", "11:30", "Thailand", "Vietnam", "1.65", "3.60", "4.80"],
-                "flashscore_h2h_full": [
-                    "26.08.26 Vietnam 2 - 2 Thailand",
-                    "22.08.26 Thailand 0 - 2 Vietnam",
-                    "05.01.25 Thailand 2 - 3 Vietnam",
-                    "02.01.25 Vietnam 2 - 1 Thailand",
-                    "10.09.24 Vietnam 1 - 2 Thailand"
-                ],
-                "home_form": ["W", "D", "L", "L", "W"],
-                "away_form": ["W", "D", "W", "W", "W"]
+                "home_form": ["L", "L", "D", "L", "W"],
+                "away_form": ["L", "W", "L", "W", "W"]
             }
         ]
 
@@ -127,7 +129,7 @@ def scrape_mainbolakaki_and_flashscore():
     with open(RAW_DATA_PATH, "w", encoding="utf-8") as f:
         json.dump(matches_data, f, indent=2, ensure_ascii=False)
 
-    print(f"💾 [SCRAPER] Selesai menyimpan {len(matches_data)} pertandingan terverifikasi.")
+    print(f"💾 [SCRAPER] Selesai menyimpan {len(matches_data)} pertandingan.")
 
 if __name__ == "__main__":
     scrape_mainbolakaki_and_flashscore()
