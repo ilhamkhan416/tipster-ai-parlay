@@ -2,29 +2,23 @@
   {
     "league": "MAINBOLAKAKI PARLAY",
     "time": "02:45",
-    "home": "UEFA NATIONS LEAGUE A",
-    "away": "Czech Republic",
-    "odds": 1.75,
-    "pick": "Home Win",
-    "home_form": [
-      "N/A"
-    ],
-    "away_form": [
-      "N/A"
-    ]
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE A",
-    "time": "02:45",
     "home": "Czech Republic",
     "away": "England",
     "odds": 1.75,
-    "pick": "Over Goals",
+    "pick": "Home Win",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -35,10 +29,18 @@
     "odds": 1.76,
     "pick": "Over Goals",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -49,10 +51,18 @@
     "odds": 1.62,
     "pick": "Over Goals",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -63,10 +73,18 @@
     "odds": 1.56,
     "pick": "Away Win",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -77,10 +95,18 @@
     "odds": 1.59,
     "pick": "Home Win",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -88,13 +114,21 @@
     "time": "00:00",
     "home": "Moldova",
     "away": "Faroe Islands",
-    "odds": 1.66,
+    "odds": 1.67,
     "pick": "Home Win",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -102,13 +136,21 @@
     "time": "02:45",
     "home": "Bulgaria",
     "away": "Estonia",
-    "odds": 1.78,
+    "odds": 1.8,
     "pick": "Over Goals",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -119,10 +161,18 @@
     "odds": 1.64,
     "pick": "Home Win",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -133,10 +183,18 @@
     "odds": 1.66,
     "pick": "Over Goals",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -147,10 +205,18 @@
     "odds": 1.78,
     "pick": "Home Win",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -161,10 +227,18 @@
     "odds": 1.62,
     "pick": "Over Goals",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -173,12 +247,20 @@
     "home": "Hokkaido Consadole Sapporo",
     "away": "Fagiano Okayama",
     "odds": 1.62,
-    "pick": "Over Goals",
+    "pick": "Home Win",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -186,13 +268,21 @@
     "time": "18:00",
     "home": "Jubilo Iwata",
     "away": "JEF United Ichihara Chiba",
-    "odds": 1.8,
-    "pick": "Over Goals",
+    "odds": 1.65,
+    "pick": "Home Win",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -201,12 +291,20 @@
     "home": "Kataller Toyama",
     "away": "Urawa Red Diamonds",
     "odds": 1.7,
-    "pick": "Home Win",
+    "pick": "Over Goals",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -214,13 +312,21 @@
     "time": "18:00",
     "home": "Montedio Yamagata",
     "away": "Yokohama F Marinos",
-    "odds": 1.55,
+    "odds": 1.8,
     "pick": "Home Win",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -229,12 +335,20 @@
     "home": "Sagan Tosu",
     "away": "Tokyo Verdy",
     "odds": 1.78,
-    "pick": "Home Win",
+    "pick": "Over Goals",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -242,13 +356,21 @@
     "time": "18:00",
     "home": "Tochigi City FC",
     "away": "Sanfrecce Hiroshima",
-    "odds": 1.74,
+    "odds": 1.75,
     "pick": "Over Goals",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -259,10 +381,18 @@
     "odds": 1.67,
     "pick": "Over Goals",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -273,10 +403,18 @@
     "odds": 1.75,
     "pick": "Over Goals",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -287,10 +425,18 @@
     "odds": 1.74,
     "pick": "Over Goals",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -301,10 +447,18 @@
     "odds": 1.52,
     "pick": "Over Goals",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -312,13 +466,21 @@
     "time": "18:00",
     "home": "Gainare Tottori",
     "away": "V Varen Nagasaki",
-    "odds": 1.64,
+    "odds": 1.79,
     "pick": "Home Win",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -329,10 +491,18 @@
     "odds": 1.65,
     "pick": "Over Goals",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -340,13 +510,21 @@
     "time": "18:00",
     "home": "Roasso Kumamoto",
     "away": "Kawasaki Frontale",
-    "odds": 1.69,
+    "odds": 1.79,
     "pick": "Over Goals",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -357,10 +535,18 @@
     "odds": 1.66,
     "pick": "Home Win",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -371,10 +557,18 @@
     "odds": 1.73,
     "pick": "Over Goals",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -385,10 +579,18 @@
     "odds": 1.8,
     "pick": "Over Goals",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -396,13 +598,21 @@
     "time": "20:30",
     "home": "Thailand",
     "away": "Vietnam",
-    "odds": 1.72,
+    "odds": 1.68,
     "pick": "Home Win",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   },
   {
@@ -413,10 +623,40 @@
     "odds": 1.79,
     "pick": "Home Win",
     "home_form": [
-      "N/A"
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
     ],
     "away_form": [
-      "N/A"
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
+    ]
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "23:00",
+    "home": "Iceland U",
+    "away": "Switzerland U",
+    "odds": 1.8,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
+    ],
+    "away_form": [
+      "D",
+      "W",
+      "W",
+      "L",
+      "D"
     ]
   }
 ]

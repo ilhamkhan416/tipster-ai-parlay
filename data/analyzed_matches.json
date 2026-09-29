@@ -2,38 +2,28 @@
   {
     "league": "MAINBOLAKAKI PARLAY",
     "time": "02:45",
-    "home_team": "UEFA NATIONS LEAGUE A",
-    "away_team": "Czech Republic",
+    "home_team": "Czech Republic",
+    "away_team": "England",
     "selected_odds": 1.75,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa UEFA NATIONS LEAGUE A dan Czech Republic di MAINBOLAKAKI PARLAY."
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE A",
-    "time": "02:45",
-    "home_team": "Czech Republic",
-    "away_team": "England",
-    "selected_odds": 1.75,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "N/A"
-      ],
-      "awayForm": [
-        "N/A"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Czech Republic dan England di UEFA NATIONS LEAGUE A."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Czech Republic dan England di MAINBOLAKAKI PARLAY."
   },
   {
     "league": "UEFA NATIONS LEAGUE A",
@@ -45,10 +35,18 @@
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Spain dan Croatia di UEFA NATIONS LEAGUE A."
@@ -63,10 +61,18 @@
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Scotland dan Switzerland di UEFA NATIONS LEAGUE B."
@@ -81,10 +87,18 @@
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Slovenia dan North Macedonia di UEFA NATIONS LEAGUE B."
@@ -99,10 +113,18 @@
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Finland dan Belarus di UEFA NATIONS LEAGUE C."
@@ -112,15 +134,23 @@
     "time": "00:00",
     "home_team": "Moldova",
     "away_team": "Faroe Islands",
-    "selected_odds": 1.66,
+    "selected_odds": 1.67,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Moldova dan Faroe Islands di UEFA NATIONS LEAGUE C."
@@ -130,15 +160,23 @@
     "time": "02:45",
     "home_team": "Bulgaria",
     "away_team": "Estonia",
-    "selected_odds": 1.78,
+    "selected_odds": 1.8,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Bulgaria dan Estonia di UEFA NATIONS LEAGUE C."
@@ -153,10 +191,18 @@
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Luxembourg dan Iceland di UEFA NATIONS LEAGUE C."
@@ -171,10 +217,18 @@
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa San Marino dan Albania di UEFA NATIONS LEAGUE C."
@@ -189,10 +243,18 @@
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Slovakia dan Kazakhstan di UEFA NATIONS LEAGUE C."
@@ -207,10 +269,18 @@
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Fujieda MYFC dan Cerezo Osaka di JAPAN J-LEAGUE YBC LEVAIN CUP."
@@ -221,14 +291,22 @@
     "home_team": "Hokkaido Consadole Sapporo",
     "away_team": "Fagiano Okayama",
     "selected_odds": 1.62,
-    "prediction": "Over Goals",
+    "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Hokkaido Consadole Sapporo dan Fagiano Okayama di JAPAN J-LEAGUE YBC LEVAIN CUP."
@@ -238,15 +316,23 @@
     "time": "18:00",
     "home_team": "Jubilo Iwata",
     "away_team": "JEF United Ichihara Chiba",
-    "selected_odds": 1.8,
-    "prediction": "Over Goals",
+    "selected_odds": 1.65,
+    "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Jubilo Iwata dan JEF United Ichihara Chiba di JAPAN J-LEAGUE YBC LEVAIN CUP."
@@ -257,14 +343,22 @@
     "home_team": "Kataller Toyama",
     "away_team": "Urawa Red Diamonds",
     "selected_odds": 1.7,
-    "prediction": "Home Win",
+    "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Kataller Toyama dan Urawa Red Diamonds di JAPAN J-LEAGUE YBC LEVAIN CUP."
@@ -274,15 +368,23 @@
     "time": "18:00",
     "home_team": "Montedio Yamagata",
     "away_team": "Yokohama F Marinos",
-    "selected_odds": 1.55,
+    "selected_odds": 1.8,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Montedio Yamagata dan Yokohama F Marinos di JAPAN J-LEAGUE YBC LEVAIN CUP."
@@ -293,14 +395,22 @@
     "home_team": "Sagan Tosu",
     "away_team": "Tokyo Verdy",
     "selected_odds": 1.78,
-    "prediction": "Home Win",
+    "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Sagan Tosu dan Tokyo Verdy di JAPAN J-LEAGUE YBC LEVAIN CUP."
@@ -310,15 +420,23 @@
     "time": "18:00",
     "home_team": "Tochigi City FC",
     "away_team": "Sanfrecce Hiroshima",
-    "selected_odds": 1.74,
+    "selected_odds": 1.75,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Tochigi City FC dan Sanfrecce Hiroshima di JAPAN J-LEAGUE YBC LEVAIN CUP."
@@ -333,10 +451,18 @@
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Ehime FC dan FC Tokyo di JAPAN J-LEAGUE YBC LEVAIN CUP."
@@ -351,10 +477,18 @@
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Zweigen Kanazawa dan Shimizu S Pulse di JAPAN J-LEAGUE YBC LEVAIN CUP."
@@ -369,10 +503,18 @@
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Fukushima United FC dan Mito Hollyhock di JAPAN J-LEAGUE YBC LEVAIN CUP."
@@ -387,10 +529,18 @@
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa FC Osaka [n] dan Avispa Fukuoka di JAPAN J-LEAGUE YBC LEVAIN CUP."
@@ -400,15 +550,23 @@
     "time": "18:00",
     "home_team": "Gainare Tottori",
     "away_team": "V Varen Nagasaki",
-    "selected_odds": 1.64,
+    "selected_odds": 1.79,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Gainare Tottori dan V Varen Nagasaki di JAPAN J-LEAGUE YBC LEVAIN CUP."
@@ -423,10 +581,18 @@
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Giravanz Kitakyushu dan Nagoya Grampus di JAPAN J-LEAGUE YBC LEVAIN CUP."
@@ -436,15 +602,23 @@
     "time": "18:00",
     "home_team": "Roasso Kumamoto",
     "away_team": "Kawasaki Frontale",
-    "selected_odds": 1.69,
+    "selected_odds": 1.79,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Roasso Kumamoto dan Kawasaki Frontale di JAPAN J-LEAGUE YBC LEVAIN CUP."
@@ -459,10 +633,18 @@
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Matsumoto Yamaga FC dan Albirex Niigata di JAPAN J-LEAGUE YBC LEVAIN CUP."
@@ -477,10 +659,18 @@
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa FC Gifu dan Yokohama FC di JAPAN J-LEAGUE YBC LEVAIN CUP."
@@ -495,10 +685,18 @@
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Philippines dan Pakistan di FIFA ASEAN CUP DIVISION 1 2026 [ IN INDONESIA ]."
@@ -508,15 +706,23 @@
     "time": "20:30",
     "home_team": "Thailand",
     "away_team": "Vietnam",
-    "selected_odds": 1.72,
+    "selected_odds": 1.68,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Thailand dan Vietnam di FIFA ASEAN CUP DIVISION 1 2026 [ IN INDONESIA ]."
@@ -531,12 +737,46 @@
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "N/A"
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
       ],
       "awayForm": [
-        "N/A"
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
       ]
     },
     "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Slovenia U dan Israel U di UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS."
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "23:00",
+    "home_team": "Iceland U",
+    "away_team": "Switzerland U",
+    "selected_odds": 1.8,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
+      ],
+      "awayForm": [
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Iceland U dan Switzerland U di UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS."
   }
 ]
