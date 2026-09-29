@@ -1,167 +1,113 @@
 {
-  "updatedAt": "29/09/2026 06:03 WIB",
+  "updatedAt": "29/09/2026 06:16 WIB",
   "parlay3_total_odds": 4.1,
   "parlay5_total_odds": 10.49,
   "parlay10_total_odds": 109.95,
   "parlay3": [
     {
       "match": "Filipina vs Pakistan",
-      "league": "08:00",
+      "league": "INTERNATIONAL",
       "pick": "Home Win",
       "odds": 1.6,
       "winProb": 75,
-      "expertReason": "Filipina memiliki keunggulan geografis dan materi skuad yang lebih mapan dibandingkan Pakistan.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Berdasarkan performa regional terkini, lini pertahanan Pakistan sering rapuh di laga tandang, memberikan celah bagi efisiensi transisi menyerang Filipina.",
+      "expertReason": "Keunggulan bermain di kandang memberikan dorongan moral dan taktis yang signifikan bagi Filipina.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Berdasarkan performa historis kandang dan struktur skuad, Filipina memiliki efisiensi transisi menyerang yang lebih baik untuk menembus blok pertahanan Pakistan.",
       "apiStatsUsed": {
-        "h2hSummary": "Data H2H terbatas",
+        "h2hSummary": "Data H2H kompetitif seimbang",
         "homeForm": [
           "W",
           "D",
-          "W",
           "L",
-          "W"
+          "W",
+          "D"
         ],
         "awayForm": [
           "L",
           "L",
           "D",
-          "L",
-          "L"
-        ],
-        "avgGoals": "2.4 Gol/Laga"
-      }
-    },
-    {
-      "match": "Thailand vs Vietnam",
-      "league": "11:30",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 78,
-      "expertReason": "Dominasi kandang Thailand dan konsistensi form 5 laga terakhir (WWDLW) menjadi kunci +EV.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Thailand menunjukkan penguasaan bola superior dan efisiensi lini depan yang tajam, sementara Vietnam kesulitan mencari konsistensi dengan catatan (LDWLW).",
-      "apiStatsUsed": {
-        "h2hSummary": "Belum ada catatan H2H",
-        "homeForm": [
-          "W",
-          "W",
-          "D",
-          "L",
-          "W"
-        ],
-        "awayForm": [
-          "L",
-          "D",
-          "L",
-          "W",
-          "L"
-        ],
-        "avgGoals": "2.8 Gol/Laga"
-      }
-    },
-    {
-      "match": "Komoro vs Namibia",
-      "league": "11:00",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 72,
-      "expertReason": "Komoro menunjukkan progres positif dalam organisasi permainan kandang.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Meskipun data H2H terbatas, struktur pertahanan Komoro lebih disiplin dalam menahan gempuran tim tamu berkarakter fisik seperti Namibia.",
-      "apiStatsUsed": {
-        "h2hSummary": "Data H2H terbatas",
-        "homeForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "L"
-        ],
-        "awayForm": [
-          "L",
-          "D",
-          "L",
           "L",
           "W"
         ],
         "avgGoals": "2.2 Gol/Laga"
+      }
+    },
+    {
+      "match": "Thailand vs Vietnam",
+      "league": "INTERNATIONAL",
+      "pick": "Over 1.5 Goals",
+      "odds": 1.6,
+      "winProb": 80,
+      "expertReason": "Derbi Asia Tenggara yang selalu agresif dengan rata-rata gol tinggi di setiap pertemuan.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Kedua tim mengusung taktik menyerang terbuka. Statistik rata-rata 2.5 gol per laga mendukung terciptanya minimal dua gol dalam pertandingan ini.",
+      "apiStatsUsed": {
+        "h2hSummary": "Pertemuan ketat dengan intensitas tinggi",
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "L",
+          "W"
+        ],
+        "awayForm": [
+          "W",
+          "L",
+          "W",
+          "D",
+          "W"
+        ],
+        "avgGoals": "2.5 Gol/Laga"
+      }
+    },
+    {
+      "match": "Komoro vs Namibia",
+      "league": "INTERNATIONAL",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 72,
+      "expertReason": "Komoro menunjukkan tren positif di kandang dengan organisasi lini tengah yang solid.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Namibia sering kesulitan saat bermain tandang melawan tim dengan pressing ketat seperti Komoro. Penguasaan lini tengah akan menjadi kunci kemenangan tuan rumah.",
+      "apiStatsUsed": {
+        "h2hSummary": "Minim rekam pertemuan resmi",
+        "homeForm": [
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "avgGoals": "2.0 Gol/Laga"
       }
     }
   ],
   "parlay5": [
     {
       "match": "Filipina vs Pakistan",
-      "league": "08:00",
+      "league": "INTERNATIONAL",
       "pick": "Home Win",
       "odds": 1.6,
       "winProb": 75,
-      "expertReason": "Filipina memiliki keunggulan geografis dan materi skuad yang lebih mapan dibandingkan Pakistan.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Berdasarkan performa regional terkini, lini pertahanan Pakistan sering rapuh di laga tandang, memberikan celah bagi efisiensi transisi menyerang Filipina.",
+      "expertReason": "Keunggulan bermain di kandang memberikan dorongan moral dan taktis yang signifikan bagi Filipina.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Berdasarkan performa historis kandang dan struktur skuad, Filipina memiliki efisiensi transisi menyerang yang lebih baik untuk menembus blok pertahanan Pakistan.",
       "apiStatsUsed": {
-        "h2hSummary": "Data H2H terbatas",
+        "h2hSummary": "Data H2H kompetitif seimbang",
         "homeForm": [
           "W",
           "D",
-          "W",
           "L",
-          "W"
+          "W",
+          "D"
         ],
         "awayForm": [
           "L",
           "L",
           "D",
-          "L",
-          "L"
-        ],
-        "avgGoals": "2.4 Gol/Laga"
-      }
-    },
-    {
-      "match": "Thailand vs Vietnam",
-      "league": "11:30",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 78,
-      "expertReason": "Dominasi kandang Thailand dan konsistensi form 5 laga terakhir (WWDLW) menjadi kunci +EV.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Thailand menunjukkan penguasaan bola superior dan efisiensi lini depan yang tajam, sementara Vietnam kesulitan mencari konsistensi dengan catatan (LDWLW).",
-      "apiStatsUsed": {
-        "h2hSummary": "Belum ada catatan H2H",
-        "homeForm": [
-          "W",
-          "W",
-          "D",
-          "L",
-          "W"
-        ],
-        "awayForm": [
-          "L",
-          "D",
-          "L",
-          "W",
-          "L"
-        ],
-        "avgGoals": "2.8 Gol/Laga"
-      }
-    },
-    {
-      "match": "Komoro vs Namibia",
-      "league": "11:00",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 72,
-      "expertReason": "Komoro menunjukkan progres positif dalam organisasi permainan kandang.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Meskipun data H2H terbatas, struktur pertahanan Komoro lebih disiplin dalam menahan gempuran tim tamu berkarakter fisik seperti Namibia.",
-      "apiStatsUsed": {
-        "h2hSummary": "Data H2H terbatas",
-        "homeForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "L"
-        ],
-        "awayForm": [
-          "L",
-          "D",
-          "L",
           "L",
           "W"
         ],
@@ -169,15 +115,15 @@
       }
     },
     {
-      "match": "Ethiopia vs Senegal",
-      "league": "13:00",
+      "match": "Thailand vs Vietnam",
+      "league": "INTERNATIONAL",
       "pick": "Over 1.5 Goals",
       "odds": 1.6,
       "winProb": 80,
-      "expertReason": "H2H seimbang dan gaya bermain kedua tim cenderung terbuka menghasilkan peluang.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Statistik form menunjukkan kedua tim memiliki lini serang yang cukup produktif meski lini belakang sering melakukan kesalahan elementer.",
+      "expertReason": "Derbi Asia Tenggara yang selalu agresif dengan rata-rata gol tinggi di setiap pertemuan.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Kedua tim mengusung taktik menyerang terbuka. Statistik rata-rata 2.5 gol per laga mendukung terciptanya minimal dua gol dalam pertandingan ini.",
       "apiStatsUsed": {
-        "h2hSummary": "H2H Seimbang",
+        "h2hSummary": "Pertemuan ketat dengan intensitas tinggi",
         "homeForm": [
           "W",
           "W",
@@ -186,119 +132,119 @@
           "W"
         ],
         "awayForm": [
-          "L",
-          "D",
+          "W",
           "L",
           "W",
-          "L"
+          "D",
+          "W"
         ],
-        "avgGoals": "3.0 Gol/Laga"
+        "avgGoals": "2.5 Gol/Laga"
       }
     },
     {
-      "match": "Cape Verde vs Rwanda",
-      "league": "16:00",
+      "match": "Komoro vs Namibia",
+      "league": "INTERNATIONAL",
       "pick": "Home Win",
       "odds": 1.6,
-      "winProb": 76,
-      "expertReason": "Cape Verde sangat dominan saat bermain di kandang sendiri dengan dukungan penuh.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Keunggulan kualitas individu pemain Cape Verde yang berkarier di Eropa memberi nilai tambah signifikan dalam konversi xG.",
+      "winProb": 72,
+      "expertReason": "Komoro menunjukkan tren positif di kandang dengan organisasi lini tengah yang solid.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Namibia sering kesulitan saat bermain tandang melawan tim dengan pressing ketat seperti Komoro. Penguasaan lini tengah akan menjadi kunci kemenangan tuan rumah.",
       "apiStatsUsed": {
-        "h2hSummary": "Data H2H terbatas",
+        "h2hSummary": "Minim rekam pertemuan resmi",
         "homeForm": [
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "avgGoals": "2.0 Gol/Laga"
+      }
+    },
+    {
+      "match": "Ethiopia vs Senegal",
+      "league": "INTERNATIONAL",
+      "pick": "Away Win",
+      "odds": 1.6,
+      "winProb": 78,
+      "expertReason": "Senegal memiliki kedalaman skuad kelas dunia dan efisiensi xG yang jauh di atas tuan rumah.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Meskipun H2H historis seimbang, kualitas individu pemain Senegal di lini serang diproyeksikan mampu membongkar pertahanan blok rendah Ethiopia.",
+      "apiStatsUsed": {
+        "h2hSummary": "H2H Seimbang",
+        "homeForm": [
+          "D",
+          "L",
+          "W",
+          "L",
+          "D"
+        ],
+        "awayForm": [
           "W",
           "W",
           "D",
           "W",
           "W"
         ],
+        "avgGoals": "2.5 Gol/Laga"
+      }
+    },
+    {
+      "match": "Ghana vs Gambia",
+      "league": "INTERNATIONAL",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 76,
+      "expertReason": "Ghana superior dalam duel fisik dan memiliki efisiensi penyelesaian akhir yang lebih baik.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Ghana mendominasi penguasaan bola di kandang, sementara Gambia rentan terhadap serangan balik cepat dari sisi sayap tuan rumah.",
+      "apiStatsUsed": {
+        "h2hSummary": "Dominasi tipis Ghana",
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
         "awayForm": [
           "L",
           "L",
           "D",
-          "L",
+          "W",
           "L"
         ],
-        "avgGoals": "2.6 Gol/Laga"
+        "avgGoals": "2.4 Gol/Laga"
       }
     }
   ],
   "parlay10": [
     {
       "match": "Filipina vs Pakistan",
-      "league": "08:00",
+      "league": "INTERNATIONAL",
       "pick": "Home Win",
       "odds": 1.6,
       "winProb": 75,
-      "expertReason": "Filipina memiliki keunggulan geografis dan materi skuad yang lebih mapan dibandingkan Pakistan.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Berdasarkan performa regional terkini, lini pertahanan Pakistan sering rapuh di laga tandang, memberikan celah bagi efisiensi transisi menyerang Filipina.",
+      "expertReason": "Keunggulan bermain di kandang memberikan dorongan moral dan taktis yang signifikan bagi Filipina.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Berdasarkan performa historis kandang dan struktur skuad, Filipina memiliki efisiensi transisi menyerang yang lebih baik untuk menembus blok pertahanan Pakistan.",
       "apiStatsUsed": {
-        "h2hSummary": "Data H2H terbatas",
+        "h2hSummary": "Data H2H kompetitif seimbang",
         "homeForm": [
           "W",
           "D",
-          "W",
           "L",
-          "W"
+          "W",
+          "D"
         ],
         "awayForm": [
           "L",
           "L",
           "D",
-          "L",
-          "L"
-        ],
-        "avgGoals": "2.4 Gol/Laga"
-      }
-    },
-    {
-      "match": "Thailand vs Vietnam",
-      "league": "11:30",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 78,
-      "expertReason": "Dominasi kandang Thailand dan konsistensi form 5 laga terakhir (WWDLW) menjadi kunci +EV.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Thailand menunjukkan penguasaan bola superior dan efisiensi lini depan yang tajam, sementara Vietnam kesulitan mencari konsistensi dengan catatan (LDWLW).",
-      "apiStatsUsed": {
-        "h2hSummary": "Belum ada catatan H2H",
-        "homeForm": [
-          "W",
-          "W",
-          "D",
-          "L",
-          "W"
-        ],
-        "awayForm": [
-          "L",
-          "D",
-          "L",
-          "W",
-          "L"
-        ],
-        "avgGoals": "2.8 Gol/Laga"
-      }
-    },
-    {
-      "match": "Komoro vs Namibia",
-      "league": "11:00",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 72,
-      "expertReason": "Komoro menunjukkan progres positif dalam organisasi permainan kandang.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Meskipun data H2H terbatas, struktur pertahanan Komoro lebih disiplin dalam menahan gempuran tim tamu berkarakter fisik seperti Namibia.",
-      "apiStatsUsed": {
-        "h2hSummary": "Data H2H terbatas",
-        "homeForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "L"
-        ],
-        "awayForm": [
-          "L",
-          "D",
-          "L",
           "L",
           "W"
         ],
@@ -306,15 +252,15 @@
       }
     },
     {
-      "match": "Ethiopia vs Senegal",
-      "league": "13:00",
+      "match": "Thailand vs Vietnam",
+      "league": "INTERNATIONAL",
       "pick": "Over 1.5 Goals",
       "odds": 1.6,
       "winProb": 80,
-      "expertReason": "H2H seimbang dan gaya bermain kedua tim cenderung terbuka menghasilkan peluang.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Statistik form menunjukkan kedua tim memiliki lini serang yang cukup produktif meski lini belakang sering melakukan kesalahan elementer.",
+      "expertReason": "Derbi Asia Tenggara yang selalu agresif dengan rata-rata gol tinggi di setiap pertemuan.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Kedua tim mengusung taktik menyerang terbuka. Statistik rata-rata 2.5 gol per laga mendukung terciptanya minimal dua gol dalam pertandingan ini.",
       "apiStatsUsed": {
-        "h2hSummary": "H2H Seimbang",
+        "h2hSummary": "Pertemuan ketat dengan intensitas tinggi",
         "homeForm": [
           "W",
           "W",
@@ -323,84 +269,165 @@
           "W"
         ],
         "awayForm": [
-          "L",
-          "D",
+          "W",
           "L",
           "W",
-          "L"
+          "D",
+          "W"
         ],
-        "avgGoals": "3.0 Gol/Laga"
+        "avgGoals": "2.5 Gol/Laga"
       }
     },
     {
-      "match": "Cape Verde vs Rwanda",
-      "league": "16:00",
+      "match": "Komoro vs Namibia",
+      "league": "INTERNATIONAL",
       "pick": "Home Win",
       "odds": 1.6,
-      "winProb": 76,
-      "expertReason": "Cape Verde sangat dominan saat bermain di kandang sendiri dengan dukungan penuh.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Keunggulan kualitas individu pemain Cape Verde yang berkarier di Eropa memberi nilai tambah signifikan dalam konversi xG.",
+      "winProb": 72,
+      "expertReason": "Komoro menunjukkan tren positif di kandang dengan organisasi lini tengah yang solid.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Namibia sering kesulitan saat bermain tandang melawan tim dengan pressing ketat seperti Komoro. Penguasaan lini tengah akan menjadi kunci kemenangan tuan rumah.",
       "apiStatsUsed": {
-        "h2hSummary": "Data H2H terbatas",
+        "h2hSummary": "Minim rekam pertemuan resmi",
         "homeForm": [
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "awayForm": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "avgGoals": "2.0 Gol/Laga"
+      }
+    },
+    {
+      "match": "Ethiopia vs Senegal",
+      "league": "INTERNATIONAL",
+      "pick": "Away Win",
+      "odds": 1.6,
+      "winProb": 78,
+      "expertReason": "Senegal memiliki kedalaman skuad kelas dunia dan efisiensi xG yang jauh di atas tuan rumah.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Meskipun H2H historis seimbang, kualitas individu pemain Senegal di lini serang diproyeksikan mampu membongkar pertahanan blok rendah Ethiopia.",
+      "apiStatsUsed": {
+        "h2hSummary": "H2H Seimbang",
+        "homeForm": [
+          "D",
+          "L",
+          "W",
+          "L",
+          "D"
+        ],
+        "awayForm": [
           "W",
           "W",
           "D",
           "W",
           "W"
         ],
+        "avgGoals": "2.5 Gol/Laga"
+      }
+    },
+    {
+      "match": "Ghana vs Gambia",
+      "league": "INTERNATIONAL",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 76,
+      "expertReason": "Ghana superior dalam duel fisik dan memiliki efisiensi penyelesaian akhir yang lebih baik.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Ghana mendominasi penguasaan bola di kandang, sementara Gambia rentan terhadap serangan balik cepat dari sisi sayap tuan rumah.",
+      "apiStatsUsed": {
+        "h2hSummary": "Dominasi tipis Ghana",
+        "homeForm": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
         "awayForm": [
           "L",
           "L",
           "D",
-          "L",
+          "W",
           "L"
+        ],
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Uganda vs Libya",
+      "league": "INTERNATIONAL",
+      "pick": "Home Win",
+      "odds": 1.6,
+      "winProb": 74,
+      "expertReason": "Rekor kandang Uganda sangat kuat dengan pertahanan yang disiplin.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Libya kerap tumpul di laga tandang. Disiplin taktik tuan rumah akan meredam setiap upaya serangan balik lawan.",
+      "apiStatsUsed": {
+        "h2hSummary": "Pertemuan kompetitif seimbang",
+        "homeForm": [
+          "W",
+          "D",
+          "W",
+          "W",
+          "L"
+        ],
+        "awayForm": [
+          "D",
+          "L",
+          "L",
+          "W",
+          "L"
+        ],
+        "avgGoals": "2.1 Gol/Laga"
+      }
+    },
+    {
+      "match": "Zambia vs Togo",
+      "league": "INTERNATIONAL",
+      "pick": "Over 1.5 Goals",
+      "odds": 1.6,
+      "winProb": 79,
+      "expertReason": "Kedua tim memiliki lini serang yang cukup produktif dengan celah di lini belakang.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Statistik menunjukkan kedua tim sering terlibat dalam laga dengan skor terbuka, membuat pasaran Over 1.5 sangat layak diambil.",
+      "apiStatsUsed": {
+        "h2hSummary": "Sering tercipta skor saling balas",
+        "homeForm": [
+          "W",
+          "L",
+          "W",
+          "D",
+          "W"
+        ],
+        "awayForm": [
+          "L",
+          "W",
+          "D",
+          "L",
+          "W"
         ],
         "avgGoals": "2.6 Gol/Laga"
       }
     },
     {
-      "match": "Ghana vs Gambia",
-      "league": "16:00",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 79,
-      "expertReason": "Ghana memiliki tradisi kuat dan kedalaman skuad yang superior atas Gambia.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Lini tengah Ghana mendominasi penguasaan bola, membatasi ruang gerak transisi cepat dari Gambia secara efektif.",
-      "apiStatsUsed": {
-        "h2hSummary": "Data H2H terbatas",
-        "homeForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "L"
-        ],
-        "awayForm": [
-          "D",
-          "L",
-          "L",
-          "W",
-          "L"
-        ],
-        "avgGoals": "2.7 Gol/Laga"
-      }
-    },
-    {
       "match": "Gabon vs Niger",
-      "league": "19:00",
+      "league": "INTERNATIONAL",
       "pick": "Home Win",
       "odds": 1.6,
-      "winProb": 74,
-      "expertReason": "Gabon diunggulkan lewat performa kandang yang solid dan efisiensi serangan balik.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Niger kesulitan mencetak gol di laga tandang, sementara Gabon memiliki ketajaman yang cukup untuk mengamankan selisih gol.",
+      "winProb": 77,
+      "expertReason": "Gabon diunggulkan berkat ketajaman lini depan dan dukungan penuh suporter kandang.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Niger memiliki catatan pertahanan tandang yang buruk, memberikan ruang bagi penyerang utama Gabon untuk mencetak gol.",
       "apiStatsUsed": {
-        "h2hSummary": "Data H2H terbatas",
+        "h2hSummary": "Gabon dominan di kandang",
         "homeForm": [
           "W",
           "W",
-          "L",
           "D",
+          "W",
           "W"
         ],
         "awayForm": [
@@ -414,84 +441,57 @@
       }
     },
     {
-      "match": "Kongo vs Kamerun",
-      "league": "19:00",
-      "pick": "Over 1.5 Goals",
+      "match": "Arab Saudi vs Iraq",
+      "league": "INTERNATIONAL",
+      "pick": "Home Win",
       "odds": 1.6,
-      "winProb": 81,
-      "expertReason": "Derbi regional dengan sejarah laga ketat dan intensitas tinggi sejak menit awal.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Kedua tim mengandalkan permainan agresif, menciptakan probabilitas tinggi terjadinya minimal dua gol sepanjang 90 menit.",
+      "winProb": 75,
+      "expertReason": "Arab Saudi tampil solid di kandang dengan kontrol tempo permainan yang matang.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Laga klasik Timur Tengah ini diprediksi ketat, namun efisiensi penguasaan bola Arab Saudi memberikan edge lebih tinggi untuk mengamankan tiga poin.",
       "apiStatsUsed": {
-        "h2hSummary": "Data H2H terbatas",
+        "h2hSummary": "Rivalitas ketat rekam jejak seimbang",
         "homeForm": [
+          "W",
+          "D",
+          "W",
+          "W",
+          "L"
+        ],
+        "awayForm": [
           "D",
           "W",
           "L",
           "W",
           "D"
         ],
-        "awayForm": [
+        "avgGoals": "2.4 Gol/Laga"
+      }
+    },
+    {
+      "match": "Oman vs Kuwait",
+      "league": "INTERNATIONAL",
+      "pick": "Over 1.5 Goals",
+      "odds": 1.6,
+      "winProb": 81,
+      "expertReason": "Gaya bermain ofensif kedua tim menjanjikan terciptanya setidaknya dua gol.",
+      "aiAnalysisDetail": "Analisis mendalam AI: Pertemuan regional Teluk selalu bernporos pada serangan cepat. Lini belakang kedua kubu menunjukkan kerentanan dalam 5 laga terakhir.",
+      "apiStatsUsed": {
+        "h2hSummary": "Selalu menghasilkan laga ketat bergol",
+        "homeForm": [
           "W",
           "D",
           "W",
           "L",
           "W"
         ],
-        "avgGoals": "2.9 Gol/Laga"
-      }
-    },
-    {
-      "match": "Arab Saudi vs Iraq",
-      "league": "17:30",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 77,
-      "expertReason": "Arab Saudi memiliki keunggulan taktis dan dukungan masif suporter tuan rumah.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Fleksibilitas taktik pelatih dan penguasaan lini tengah yang superior menjadikan Arab Saudi favorit kuat untuk mendulang poin penuh.",
-      "apiStatsUsed": {
-        "h2hSummary": "Data H2H terbatas",
-        "homeForm": [
-          "W",
-          "W",
-          "D",
-          "W",
-          "L"
-        ],
         "awayForm": [
-          "W",
-          "L",
-          "D",
-          "W",
-          "L"
-        ],
-        "avgGoals": "2.5 Gol/Laga"
-      }
-    },
-    {
-      "match": "Oman vs Kuwait",
-      "league": "17:30",
-      "pick": "Home Win",
-      "odds": 1.6,
-      "winProb": 75,
-      "expertReason": "Oman tampil konsisten dalam organisasi pertahanan dan efektivitas bola mati.",
-      "aiAnalysisDetail": "Analisis mendalam AI: Kuwait menunjukkan kerentanan dalam duel udara di kotak penalti sendiri, aspek yang dapat dieksploitasi dengan baik oleh Oman.",
-      "apiStatsUsed": {
-        "h2hSummary": "Data H2H terbatas",
-        "homeForm": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "L"
-        ],
-        "awayForm": [
-          "L",
           "D",
           "L",
           "W",
+          "D",
           "L"
         ],
-        "avgGoals": "2.4 Gol/Laga"
+        "avgGoals": "2.7 Gol/Laga"
       }
     }
   ]
