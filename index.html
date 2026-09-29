@@ -3,401 +3,815 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Struk Analisis Parlay AI</title>
+    <title>Struk AI Parlay</title>
     <style>
         body {
             background-color: #121212;
             color: #e0e0e0;
             font-family: 'Courier New', Courier, monospace;
+            padding: 20px;
             display: flex;
             justify-content: center;
-            padding: 20px;
         }
-        .receipt-container {
-            width: 100%;
-            max-width: 600px;
+        .receipt {
             background-color: #1e1e1e;
-            border: 2px dashed #444;
+            border: 1px dashed #444;
             padding: 20px;
+            max-width: 600px;
+            width: 100%;
+            border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.5);
         }
-        .header {
+        .title {
             text-align: center;
-            border-bottom: 2px dashed #444;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
         }
-        .receipt-item {
-            border-bottom: 1px dashed #333;
-            padding: 12px 0;
+        .subtitle {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 20px;
         }
-        .item-header {
+        .card {
+            border-bottom: 1px solid #333;
+            padding: 15px 0;
+        }
+        .card-header {
             display: flex;
             justify-content: space-between;
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-        .meta-row {
-            display: flex;
-            justify-content: space-between;
-            color: #aaa;
-            font-size: 0.9em;
-            margin: 5px 0;
-        }
-        .pick-odds {
-            color: #00ff66;
+            align-items: center;
             font-weight: bold;
         }
-        .toggle-btn {
-            width: 100%;
-            background-color: #2a2a2a;
-            color: #fff;
-            border: 1px solid #444;
-            padding: 6px;
-            cursor: pointer;
-            margin-top: 5px;
-            font-family: inherit;
-        }
-        .toggle-btn:hover {
-            background-color: #333;
-        }
-        .details-box {
-            background-color: #181818;
-            border: 1px solid #333;
-            padding: 10px;
-            margin-top: 8px;
-            font-size: 0.85em;
-        }
-        .stat-section ul {
-            margin: 5px 0 10px 15px;
-            padding: 0;
-        }
-        .ai-section p {
-            margin: 5px 0 0 0;
-            color: #ddd;
-        }
+        .num { color: #ff9800; margin-right: 8px; }
+        .time { color: #aaa; margin-right: 8px; }
+        .teams { color: #fff; }
+        .pick { color: #4caf50; font-weight: bold; }
+        .league { font-size: 0.8rem; color: #777; margin-top: 4px; }
+        details { margin-top: 10px; cursor: pointer; }
+        summary { font-size: 0.85rem; color: #64b5f6; outline: none; }
+        .stats { background: #252525; padding: 10px; border-radius: 5px; margin-top: 8px; font-size: 0.8rem; }
+        .stats ul { padding-left: 15px; margin: 5px 0; }
+        .analysis-text { color: #bbb; font-style: italic; margin-top: 5px; }
     </style>
 </head>
 <body>
-    <div class="receipt-container">
-        <div class="header">
-            <h2>--- SELECTION LIST (TOP 10) ---</h2>
-            <p>Dicetak: 29/09/2026 07:05:00</p>
-        </div>
+    <div class="receipt">
+        <div class="title">--- SELECTION LIST (POTENTIAL MATCHES) ---</div>
+        <div class="subtitle">Dicetak: 29/09/2026 07:31:36</div>
         
-        
-        <div class="receipt-item">
-            <div class="item-header">
-                <span class="match-num">#1</span>
-                <span class="teams">02:45	  Czech Republic vs England</span>
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#1</span>
+                    <span class="time">02:45</span>
+                    <span class="teams">TODAY vs Select League</span>
+                </div>
+                <div class="pick">PICK: Home Win @1.75</div>
             </div>
-            <div class="meta-row">
-                <span>League: BRAZIL SERIE B</span>
-                <span class="pick-odds">PICK: Away Win @9.02</span>
-            </div>
+            <div class="league">League: MAINBOLAKAKI PARLAY</div>
             
-            <button class="toggle-btn" onclick="toggleDetails('details-1')">
-                🔍 LIHAT STATS & ANALISIS AI
-            </button>
-            
-            <div id="details-1" class="details-box" style="display: none;">
-                <div class="stat-section">
-                    <strong>📊 DATA STATISTIK FLASHSCORE:</strong>
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
                     <ul>
-                        <li>H2H: Catatan H2H Terverifikasi Auto-Sync</li>
-                        <li>Form Home (5 Laga): [W D L W W]</li>
-                        <li>Form Away (5 Laga): [L W W D L]</li>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
                     </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa TODAY dan Select League di MAINBOLAKAKI PARLAY.</p>
                 </div>
-                <div class="ai-section">
-                    <strong>🧠 ANALISIS TAKTIS BOLA DARI AI:</strong>
-                    <p>Analisis taktis mendalam berdasarkan performa terkini, tren H2H Flashscore, dan efisiensi peluang tim.</p>
-                </div>
-            </div>
+            </details>
         </div>
         
-        <div class="receipt-item">
-            <div class="item-header">
-                <span class="match-num">#2</span>
-                <span class="teams">02:45	  Spain vs Croatia</span>
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#2</span>
+                    <span class="time">02:45</span>
+                    <span class="teams">LIVE vs 02:45	  Czech Republic</span>
+                </div>
+                <div class="pick">PICK: Over Goals @1.75</div>
             </div>
-            <div class="meta-row">
-                <span>League: MAINBOLAKAKI PARLAY</span>
-                <span class="pick-odds">PICK: Away Win @1.15</span>
-            </div>
+            <div class="league">League: UEFA NATIONS LEAGUE A</div>
             
-            <button class="toggle-btn" onclick="toggleDetails('details-2')">
-                🔍 LIHAT STATS & ANALISIS AI
-            </button>
-            
-            <div id="details-2" class="details-box" style="display: none;">
-                <div class="stat-section">
-                    <strong>📊 DATA STATISTIK FLASHSCORE:</strong>
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
                     <ul>
-                        <li>H2H: Catatan H2H Terverifikasi Auto-Sync</li>
-                        <li>Form Home (5 Laga): [W D L W W]</li>
-                        <li>Form Away (5 Laga): [L W W D L]</li>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
                     </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 02:45	  Czech Republic di UEFA NATIONS LEAGUE A.</p>
                 </div>
-                <div class="ai-section">
-                    <strong>🧠 ANALISIS TAKTIS BOLA DARI AI:</strong>
-                    <p>Analisis taktis mendalam berdasarkan performa terkini, tren H2H Flashscore, dan efisiensi peluang tim.</p>
-                </div>
-            </div>
+            </details>
         </div>
         
-        <div class="receipt-item">
-            <div class="item-header">
-                <span class="match-num">#3</span>
-                <span class="teams">02:45	  Scotland vs Switzerland</span>
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#3</span>
+                    <span class="time">02:45</span>
+                    <span class="teams">LIVE vs 02:45	  Spain</span>
+                </div>
+                <div class="pick">PICK: Over Goals @1.76</div>
             </div>
-            <div class="meta-row">
-                <span>League: MAINBOLAKAKI PARLAY</span>
-                <span class="pick-odds">PICK: Away Win @4.17</span>
-            </div>
+            <div class="league">League: UEFA NATIONS LEAGUE A</div>
             
-            <button class="toggle-btn" onclick="toggleDetails('details-3')">
-                🔍 LIHAT STATS & ANALISIS AI
-            </button>
-            
-            <div id="details-3" class="details-box" style="display: none;">
-                <div class="stat-section">
-                    <strong>📊 DATA STATISTIK FLASHSCORE:</strong>
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
                     <ul>
-                        <li>H2H: Catatan H2H Terverifikasi Auto-Sync</li>
-                        <li>Form Home (5 Laga): [W D L W W]</li>
-                        <li>Form Away (5 Laga): [L W W D L]</li>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
                     </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 02:45	  Spain di UEFA NATIONS LEAGUE A.</p>
                 </div>
-                <div class="ai-section">
-                    <strong>🧠 ANALISIS TAKTIS BOLA DARI AI:</strong>
-                    <p>Analisis taktis mendalam berdasarkan performa terkini, tren H2H Flashscore, dan efisiensi peluang tim.</p>
-                </div>
-            </div>
+            </details>
         </div>
         
-        <div class="receipt-item">
-            <div class="item-header">
-                <span class="match-num">#4</span>
-                <span class="teams">02:45	  Slovenia vs North Macedonia</span>
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#4</span>
+                    <span class="time">02:45</span>
+                    <span class="teams">LIVE vs 02:45	  Scotland</span>
+                </div>
+                <div class="pick">PICK: Over Goals @1.62</div>
             </div>
-            <div class="meta-row">
-                <span>League: MAINBOLAKAKI PARLAY</span>
-                <span class="pick-odds">PICK: Away Win @1.58</span>
-            </div>
+            <div class="league">League: UEFA NATIONS LEAGUE B</div>
             
-            <button class="toggle-btn" onclick="toggleDetails('details-4')">
-                🔍 LIHAT STATS & ANALISIS AI
-            </button>
-            
-            <div id="details-4" class="details-box" style="display: none;">
-                <div class="stat-section">
-                    <strong>📊 DATA STATISTIK FLASHSCORE:</strong>
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
                     <ul>
-                        <li>H2H: Catatan H2H Terverifikasi Auto-Sync</li>
-                        <li>Form Home (5 Laga): [W D L W W]</li>
-                        <li>Form Away (5 Laga): [L W W D L]</li>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
                     </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 02:45	  Scotland di UEFA NATIONS LEAGUE B.</p>
                 </div>
-                <div class="ai-section">
-                    <strong>🧠 ANALISIS TAKTIS BOLA DARI AI:</strong>
-                    <p>Analisis taktis mendalam berdasarkan performa terkini, tren H2H Flashscore, dan efisiensi peluang tim.</p>
-                </div>
-            </div>
+            </details>
         </div>
         
-        <div class="receipt-item">
-            <div class="item-header">
-                <span class="match-num">#5</span>
-                <span class="teams">00:00	  Finland vs Belarus</span>
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#5</span>
+                    <span class="time">02:45</span>
+                    <span class="teams">LIVE vs 02:45	  Slovenia</span>
+                </div>
+                <div class="pick">PICK: Away Win @1.56</div>
             </div>
-            <div class="meta-row">
-                <span>League: MAINBOLAKAKI PARLAY</span>
-                <span class="pick-odds">PICK: Away Win @1.59</span>
-            </div>
+            <div class="league">League: UEFA NATIONS LEAGUE B</div>
             
-            <button class="toggle-btn" onclick="toggleDetails('details-5')">
-                🔍 LIHAT STATS & ANALISIS AI
-            </button>
-            
-            <div id="details-5" class="details-box" style="display: none;">
-                <div class="stat-section">
-                    <strong>📊 DATA STATISTIK FLASHSCORE:</strong>
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
                     <ul>
-                        <li>H2H: Catatan H2H Terverifikasi Auto-Sync</li>
-                        <li>Form Home (5 Laga): [W D L W W]</li>
-                        <li>Form Away (5 Laga): [L W W D L]</li>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
                     </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 02:45	  Slovenia di UEFA NATIONS LEAGUE B.</p>
                 </div>
-                <div class="ai-section">
-                    <strong>🧠 ANALISIS TAKTIS BOLA DARI AI:</strong>
-                    <p>Analisis taktis mendalam berdasarkan performa terkini, tren H2H Flashscore, dan efisiensi peluang tim.</p>
-                </div>
-            </div>
+            </details>
         </div>
         
-        <div class="receipt-item">
-            <div class="item-header">
-                <span class="match-num">#6</span>
-                <span class="teams">00:00	  Moldova vs Faroe Islands</span>
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#6</span>
+                    <span class="time">00:00</span>
+                    <span class="teams">LIVE vs 00:00	  Finland</span>
+                </div>
+                <div class="pick">PICK: Home Win @1.59</div>
             </div>
-            <div class="meta-row">
-                <span>League: MAINBOLAKAKI PARLAY</span>
-                <span class="pick-odds">PICK: Away Win @2.92</span>
-            </div>
+            <div class="league">League: UEFA NATIONS LEAGUE C</div>
             
-            <button class="toggle-btn" onclick="toggleDetails('details-6')">
-                🔍 LIHAT STATS & ANALISIS AI
-            </button>
-            
-            <div id="details-6" class="details-box" style="display: none;">
-                <div class="stat-section">
-                    <strong>📊 DATA STATISTIK FLASHSCORE:</strong>
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
                     <ul>
-                        <li>H2H: Catatan H2H Terverifikasi Auto-Sync</li>
-                        <li>Form Home (5 Laga): [W D L W W]</li>
-                        <li>Form Away (5 Laga): [L W W D L]</li>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
                     </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 00:00	  Finland di UEFA NATIONS LEAGUE C.</p>
                 </div>
-                <div class="ai-section">
-                    <strong>🧠 ANALISIS TAKTIS BOLA DARI AI:</strong>
-                    <p>Analisis taktis mendalam berdasarkan performa terkini, tren H2H Flashscore, dan efisiensi peluang tim.</p>
-                </div>
-            </div>
+            </details>
         </div>
         
-        <div class="receipt-item">
-            <div class="item-header">
-                <span class="match-num">#7</span>
-                <span class="teams">02:45	  Bulgaria vs Estonia</span>
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#7</span>
+                    <span class="time">00:00</span>
+                    <span class="teams">LIVE vs 00:00	  Moldova</span>
+                </div>
+                <div class="pick">PICK: Home Win @1.66</div>
             </div>
-            <div class="meta-row">
-                <span>League: MAINBOLAKAKI PARLAY</span>
-                <span class="pick-odds">PICK: Away Win @1.84</span>
-            </div>
+            <div class="league">League: UEFA NATIONS LEAGUE C</div>
             
-            <button class="toggle-btn" onclick="toggleDetails('details-7')">
-                🔍 LIHAT STATS & ANALISIS AI
-            </button>
-            
-            <div id="details-7" class="details-box" style="display: none;">
-                <div class="stat-section">
-                    <strong>📊 DATA STATISTIK FLASHSCORE:</strong>
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
                     <ul>
-                        <li>H2H: Catatan H2H Terverifikasi Auto-Sync</li>
-                        <li>Form Home (5 Laga): [W D L W W]</li>
-                        <li>Form Away (5 Laga): [L W W D L]</li>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
                     </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 00:00	  Moldova di UEFA NATIONS LEAGUE C.</p>
                 </div>
-                <div class="ai-section">
-                    <strong>🧠 ANALISIS TAKTIS BOLA DARI AI:</strong>
-                    <p>Analisis taktis mendalam berdasarkan performa terkini, tren H2H Flashscore, dan efisiensi peluang tim.</p>
-                </div>
-            </div>
+            </details>
         </div>
         
-        <div class="receipt-item">
-            <div class="item-header">
-                <span class="match-num">#8</span>
-                <span class="teams">02:45	  Luxembourg vs Iceland</span>
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#8</span>
+                    <span class="time">02:45</span>
+                    <span class="teams">LIVE vs 02:45	  Bulgaria</span>
+                </div>
+                <div class="pick">PICK: Over Goals @1.77</div>
             </div>
-            <div class="meta-row">
-                <span>League: MAINBOLAKAKI PARLAY</span>
-                <span class="pick-odds">PICK: Away Win @3.25</span>
-            </div>
+            <div class="league">League: UEFA NATIONS LEAGUE C</div>
             
-            <button class="toggle-btn" onclick="toggleDetails('details-8')">
-                🔍 LIHAT STATS & ANALISIS AI
-            </button>
-            
-            <div id="details-8" class="details-box" style="display: none;">
-                <div class="stat-section">
-                    <strong>📊 DATA STATISTIK FLASHSCORE:</strong>
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
                     <ul>
-                        <li>H2H: Catatan H2H Terverifikasi Auto-Sync</li>
-                        <li>Form Home (5 Laga): [W D L W W]</li>
-                        <li>Form Away (5 Laga): [L W W D L]</li>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
                     </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 02:45	  Bulgaria di UEFA NATIONS LEAGUE C.</p>
                 </div>
-                <div class="ai-section">
-                    <strong>🧠 ANALISIS TAKTIS BOLA DARI AI:</strong>
-                    <p>Analisis taktis mendalam berdasarkan performa terkini, tren H2H Flashscore, dan efisiensi peluang tim.</p>
-                </div>
-            </div>
+            </details>
         </div>
         
-        <div class="receipt-item">
-            <div class="item-header">
-                <span class="match-num">#9</span>
-                <span class="teams">02:45	  San Marino vs Albania</span>
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#9</span>
+                    <span class="time">02:45</span>
+                    <span class="teams">LIVE vs 02:45	  Luxembourg</span>
+                </div>
+                <div class="pick">PICK: Home Win @1.64</div>
             </div>
-            <div class="meta-row">
-                <span>League: MAINBOLAKAKI PARLAY</span>
-                <span class="pick-odds">PICK: Away Win @2.08</span>
-            </div>
+            <div class="league">League: UEFA NATIONS LEAGUE C</div>
             
-            <button class="toggle-btn" onclick="toggleDetails('details-9')">
-                🔍 LIHAT STATS & ANALISIS AI
-            </button>
-            
-            <div id="details-9" class="details-box" style="display: none;">
-                <div class="stat-section">
-                    <strong>📊 DATA STATISTIK FLASHSCORE:</strong>
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
                     <ul>
-                        <li>H2H: Catatan H2H Terverifikasi Auto-Sync</li>
-                        <li>Form Home (5 Laga): [W D L W W]</li>
-                        <li>Form Away (5 Laga): [L W W D L]</li>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
                     </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 02:45	  Luxembourg di UEFA NATIONS LEAGUE C.</p>
                 </div>
-                <div class="ai-section">
-                    <strong>🧠 ANALISIS TAKTIS BOLA DARI AI:</strong>
-                    <p>Analisis taktis mendalam berdasarkan performa terkini, tren H2H Flashscore, dan efisiensi peluang tim.</p>
-                </div>
-            </div>
+            </details>
         </div>
         
-        <div class="receipt-item">
-            <div class="item-header">
-                <span class="match-num">#10</span>
-                <span class="teams">02:45	  Slovakia vs Kazakhstan</span>
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#10</span>
+                    <span class="time">02:45</span>
+                    <span class="teams">LIVE vs 02:45	  San Marino</span>
+                </div>
+                <div class="pick">PICK: Over Goals @1.66</div>
             </div>
-            <div class="meta-row">
-                <span>League: MAINBOLAKAKI PARLAY</span>
-                <span class="pick-odds">PICK: Away Win @1.27</span>
-            </div>
+            <div class="league">League: UEFA NATIONS LEAGUE C</div>
             
-            <button class="toggle-btn" onclick="toggleDetails('details-10')">
-                🔍 LIHAT STATS & ANALISIS AI
-            </button>
-            
-            <div id="details-10" class="details-box" style="display: none;">
-                <div class="stat-section">
-                    <strong>📊 DATA STATISTIK FLASHSCORE:</strong>
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
                     <ul>
-                        <li>H2H: Catatan H2H Terverifikasi Auto-Sync</li>
-                        <li>Form Home (5 Laga): [W D L W W]</li>
-                        <li>Form Away (5 Laga): [L W W D L]</li>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
                     </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 02:45	  San Marino di UEFA NATIONS LEAGUE C.</p>
                 </div>
-                <div class="ai-section">
-                    <strong>🧠 ANALISIS TAKTIS BOLA DARI AI:</strong>
-                    <p>Analisis taktis mendalam berdasarkan performa terkini, tren H2H Flashscore, dan efisiensi peluang tim.</p>
-                </div>
-            </div>
+            </details>
         </div>
         
-
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#11</span>
+                    <span class="time">02:45</span>
+                    <span class="teams">LIVE vs 02:45	  Slovakia</span>
+                </div>
+                <div class="pick">PICK: Home Win @1.78</div>
+            </div>
+            <div class="league">League: UEFA NATIONS LEAGUE C</div>
+            
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
+                    <ul>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
+                    </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 02:45	  Slovakia di UEFA NATIONS LEAGUE C.</p>
+                </div>
+            </details>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#12</span>
+                    <span class="time">18:00</span>
+                    <span class="teams">LIVE vs 18:00	  Fujieda MYFC</span>
+                </div>
+                <div class="pick">PICK: Over Goals @1.62</div>
+            </div>
+            <div class="league">League: JAPAN J-LEAGUE YBC LEVAIN CUP</div>
+            
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
+                    <ul>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
+                    </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 18:00	  Fujieda MYFC di JAPAN J-LEAGUE YBC LEVAIN CUP.</p>
+                </div>
+            </details>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#13</span>
+                    <span class="time">18:00</span>
+                    <span class="teams">LIVE vs 18:00	  Hokkaido Consadole Sapporo</span>
+                </div>
+                <div class="pick">PICK: Over Goals @1.62</div>
+            </div>
+            <div class="league">League: JAPAN J-LEAGUE YBC LEVAIN CUP</div>
+            
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
+                    <ul>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
+                    </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 18:00	  Hokkaido Consadole Sapporo di JAPAN J-LEAGUE YBC LEVAIN CUP.</p>
+                </div>
+            </details>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#14</span>
+                    <span class="time">18:00</span>
+                    <span class="teams">LIVE vs 18:00	  Jubilo Iwata</span>
+                </div>
+                <div class="pick">PICK: Over Goals @1.8</div>
+            </div>
+            <div class="league">League: JAPAN J-LEAGUE YBC LEVAIN CUP</div>
+            
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
+                    <ul>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
+                    </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 18:00	  Jubilo Iwata di JAPAN J-LEAGUE YBC LEVAIN CUP.</p>
+                </div>
+            </details>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#15</span>
+                    <span class="time">18:00</span>
+                    <span class="teams">LIVE vs 18:00	  Kataller Toyama</span>
+                </div>
+                <div class="pick">PICK: Home Win @1.7</div>
+            </div>
+            <div class="league">League: JAPAN J-LEAGUE YBC LEVAIN CUP</div>
+            
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
+                    <ul>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
+                    </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 18:00	  Kataller Toyama di JAPAN J-LEAGUE YBC LEVAIN CUP.</p>
+                </div>
+            </details>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#16</span>
+                    <span class="time">18:00</span>
+                    <span class="teams">LIVE vs 18:00	  Montedio Yamagata</span>
+                </div>
+                <div class="pick">PICK: Home Win @1.54</div>
+            </div>
+            <div class="league">League: JAPAN J-LEAGUE YBC LEVAIN CUP</div>
+            
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
+                    <ul>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
+                    </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 18:00	  Montedio Yamagata di JAPAN J-LEAGUE YBC LEVAIN CUP.</p>
+                </div>
+            </details>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#17</span>
+                    <span class="time">18:00</span>
+                    <span class="teams">LIVE vs 18:00	  Sagan Tosu</span>
+                </div>
+                <div class="pick">PICK: Home Win @1.8</div>
+            </div>
+            <div class="league">League: JAPAN J-LEAGUE YBC LEVAIN CUP</div>
+            
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
+                    <ul>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
+                    </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 18:00	  Sagan Tosu di JAPAN J-LEAGUE YBC LEVAIN CUP.</p>
+                </div>
+            </details>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#18</span>
+                    <span class="time">18:00</span>
+                    <span class="teams">LIVE vs 18:00	  Tochigi City FC</span>
+                </div>
+                <div class="pick">PICK: Over Goals @1.76</div>
+            </div>
+            <div class="league">League: JAPAN J-LEAGUE YBC LEVAIN CUP</div>
+            
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
+                    <ul>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
+                    </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 18:00	  Tochigi City FC di JAPAN J-LEAGUE YBC LEVAIN CUP.</p>
+                </div>
+            </details>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#19</span>
+                    <span class="time">18:00</span>
+                    <span class="teams">LIVE vs 18:00	  Ehime FC</span>
+                </div>
+                <div class="pick">PICK: Over Goals @1.8</div>
+            </div>
+            <div class="league">League: JAPAN J-LEAGUE YBC LEVAIN CUP</div>
+            
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
+                    <ul>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
+                    </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 18:00	  Ehime FC di JAPAN J-LEAGUE YBC LEVAIN CUP.</p>
+                </div>
+            </details>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#20</span>
+                    <span class="time">18:00</span>
+                    <span class="teams">LIVE vs 18:00	  Zweigen Kanazawa</span>
+                </div>
+                <div class="pick">PICK: Over Goals @1.75</div>
+            </div>
+            <div class="league">League: JAPAN J-LEAGUE YBC LEVAIN CUP</div>
+            
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
+                    <ul>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
+                    </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 18:00	  Zweigen Kanazawa di JAPAN J-LEAGUE YBC LEVAIN CUP.</p>
+                </div>
+            </details>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#21</span>
+                    <span class="time">18:00</span>
+                    <span class="teams">LIVE vs 18:00	  Fukushima United FC</span>
+                </div>
+                <div class="pick">PICK: Over Goals @1.79</div>
+            </div>
+            <div class="league">League: JAPAN J-LEAGUE YBC LEVAIN CUP</div>
+            
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
+                    <ul>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
+                    </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 18:00	  Fukushima United FC di JAPAN J-LEAGUE YBC LEVAIN CUP.</p>
+                </div>
+            </details>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#22</span>
+                    <span class="time">18:00</span>
+                    <span class="teams">LIVE vs 18:00	  FC Osaka [n]</span>
+                </div>
+                <div class="pick">PICK: Over Goals @1.78</div>
+            </div>
+            <div class="league">League: JAPAN J-LEAGUE YBC LEVAIN CUP</div>
+            
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
+                    <ul>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
+                    </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 18:00	  FC Osaka [n] di JAPAN J-LEAGUE YBC LEVAIN CUP.</p>
+                </div>
+            </details>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#23</span>
+                    <span class="time">18:00</span>
+                    <span class="teams">LIVE vs 18:00	  Gainare Tottori</span>
+                </div>
+                <div class="pick">PICK: Home Win @1.65</div>
+            </div>
+            <div class="league">League: JAPAN J-LEAGUE YBC LEVAIN CUP</div>
+            
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
+                    <ul>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
+                    </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 18:00	  Gainare Tottori di JAPAN J-LEAGUE YBC LEVAIN CUP.</p>
+                </div>
+            </details>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#24</span>
+                    <span class="time">18:00</span>
+                    <span class="teams">LIVE vs 18:00	  Giravanz Kitakyushu</span>
+                </div>
+                <div class="pick">PICK: Over Goals @1.69</div>
+            </div>
+            <div class="league">League: JAPAN J-LEAGUE YBC LEVAIN CUP</div>
+            
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
+                    <ul>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
+                    </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 18:00	  Giravanz Kitakyushu di JAPAN J-LEAGUE YBC LEVAIN CUP.</p>
+                </div>
+            </details>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#25</span>
+                    <span class="time">18:00</span>
+                    <span class="teams">LIVE vs 18:00	  Roasso Kumamoto</span>
+                </div>
+                <div class="pick">PICK: Over Goals @1.76</div>
+            </div>
+            <div class="league">League: JAPAN J-LEAGUE YBC LEVAIN CUP</div>
+            
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
+                    <ul>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
+                    </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 18:00	  Roasso Kumamoto di JAPAN J-LEAGUE YBC LEVAIN CUP.</p>
+                </div>
+            </details>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#26</span>
+                    <span class="time">18:00</span>
+                    <span class="teams">LIVE vs 18:00	  Matsumoto Yamaga FC</span>
+                </div>
+                <div class="pick">PICK: Home Win @1.75</div>
+            </div>
+            <div class="league">League: JAPAN J-LEAGUE YBC LEVAIN CUP</div>
+            
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
+                    <ul>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
+                    </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 18:00	  Matsumoto Yamaga FC di JAPAN J-LEAGUE YBC LEVAIN CUP.</p>
+                </div>
+            </details>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#27</span>
+                    <span class="time">18:00</span>
+                    <span class="teams">LIVE vs 18:00	  FC Gifu</span>
+                </div>
+                <div class="pick">PICK: Over Goals @1.73</div>
+            </div>
+            <div class="league">League: JAPAN J-LEAGUE YBC LEVAIN CUP</div>
+            
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
+                    <ul>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
+                    </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 18:00	  FC Gifu di JAPAN J-LEAGUE YBC LEVAIN CUP.</p>
+                </div>
+            </details>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#28</span>
+                    <span class="time">17:00</span>
+                    <span class="teams">LIVE vs 17:00	  Philippines</span>
+                </div>
+                <div class="pick">PICK: Over Goals @1.8</div>
+            </div>
+            <div class="league">League: FIFA ASEAN CUP DIVISION 1 2026 [ IN INDONESIA ]</div>
+            
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
+                    <ul>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
+                    </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 17:00	  Philippines di FIFA ASEAN CUP DIVISION 1 2026 [ IN INDONESIA ].</p>
+                </div>
+            </details>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#29</span>
+                    <span class="time">20:30</span>
+                    <span class="teams">LIVE vs 20:30	  Thailand</span>
+                </div>
+                <div class="pick">PICK: Home Win @1.62</div>
+            </div>
+            <div class="league">League: FIFA ASEAN CUP DIVISION 1 2026 [ IN INDONESIA ]</div>
+            
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
+                    <ul>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
+                    </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 20:30	  Thailand di FIFA ASEAN CUP DIVISION 1 2026 [ IN INDONESIA ].</p>
+                </div>
+            </details>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="num">#30</span>
+                    <span class="time">22:00</span>
+                    <span class="teams">LIVE vs 22:00	  Slovenia U21</span>
+                </div>
+                <div class="pick">PICK: Home Win @1.79</div>
+            </div>
+            <div class="league">League: UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS</div>
+            
+            <details>
+                <summary>🔍 LIHAT STATS & ANALISIS AI</summary>
+                <div class="stats">
+                    <p>📊 <strong>DATA STATISTIK FLASHSCORE:</strong></p>
+                    <ul>
+                        <li>Form Home (5 Laga): [N/A]</li>
+                        <li>Form Away (5 Laga): [N/A]</li>
+                    </ul>
+                    <p>🧠 <strong>ANALISIS TAKTIS BOLA DARI AI:</strong></p>
+                    <p class="analysis-text">Analisis taktis mendalam berdasarkan tren performa LIVE dan 22:00	  Slovenia U21 di UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS.</p>
+                </div>
+            </details>
+        </div>
+        
     </div>
-
-    <script>
-        function toggleDetails(id) {
-            var el = document.getElementById(id);
-            if (el.style.display === "none") {
-                el.style.display = "block";
-            } else {
-                el.style.display = "none";
-            }
-        }
-    </script>
 </body>
 </html>

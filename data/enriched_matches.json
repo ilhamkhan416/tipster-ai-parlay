@@ -1,2082 +1,512 @@
 [
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:45\t  Czech Republic",
-    "away_team": "England",
-    "league": "BRAZIL SERIE B",
+    "league": "MAINBOLAKAKI PARLAY",
     "time": "02:45",
-    "selected_odds": 9.02,
+    "home_team": "TODAY",
+    "away_team": "Select League",
+    "selected_odds": 1.75,
+    "prediction": "Home Win",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:45\t  Spain",
-    "away_team": "Croatia",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "UEFA NATIONS LEAGUE A",
     "time": "02:45",
-    "selected_odds": 1.15,
+    "home_team": "LIVE",
+    "away_team": "02:45\t  Czech Republic",
+    "selected_odds": 1.75,
+    "prediction": "Over Goals",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:45\t  Scotland",
-    "away_team": "Switzerland",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "UEFA NATIONS LEAGUE A",
     "time": "02:45",
-    "selected_odds": 4.17,
+    "home_team": "LIVE",
+    "away_team": "02:45\t  Spain",
+    "selected_odds": 1.76,
+    "prediction": "Over Goals",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:45\t  Slovenia",
-    "away_team": "North Macedonia",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "UEFA NATIONS LEAGUE B",
     "time": "02:45",
-    "selected_odds": 1.58,
+    "home_team": "LIVE",
+    "away_team": "02:45\t  Scotland",
+    "selected_odds": 1.62,
+    "prediction": "Over Goals",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "00:00\t  Finland",
-    "away_team": "Belarus",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "UEFA NATIONS LEAGUE B",
+    "time": "02:45",
+    "home_team": "LIVE",
+    "away_team": "02:45\t  Slovenia",
+    "selected_odds": 1.56,
+    "prediction": "Away Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "N/A"
+      ],
+      "awayForm": [
+        "N/A"
+      ]
+    }
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE C",
     "time": "00:00",
+    "home_team": "LIVE",
+    "away_team": "00:00\t  Finland",
     "selected_odds": 1.59,
+    "prediction": "Home Win",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "00:00\t  Moldova",
-    "away_team": "Faroe Islands",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "UEFA NATIONS LEAGUE C",
     "time": "00:00",
-    "selected_odds": 2.92,
+    "home_team": "LIVE",
+    "away_team": "00:00\t  Moldova",
+    "selected_odds": 1.66,
+    "prediction": "Home Win",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:45\t  Bulgaria",
-    "away_team": "Estonia",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "UEFA NATIONS LEAGUE C",
     "time": "02:45",
-    "selected_odds": 1.84,
+    "home_team": "LIVE",
+    "away_team": "02:45\t  Bulgaria",
+    "selected_odds": 1.77,
+    "prediction": "Over Goals",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:45\t  Luxembourg",
-    "away_team": "Iceland",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "UEFA NATIONS LEAGUE C",
     "time": "02:45",
-    "selected_odds": 3.25,
+    "home_team": "LIVE",
+    "away_team": "02:45\t  Luxembourg",
+    "selected_odds": 1.64,
+    "prediction": "Home Win",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:45\t  San Marino",
-    "away_team": "Albania",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "UEFA NATIONS LEAGUE C",
     "time": "02:45",
-    "selected_odds": 2.08,
+    "home_team": "LIVE",
+    "away_team": "02:45\t  San Marino",
+    "selected_odds": 1.66,
+    "prediction": "Over Goals",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:45\t  Slovakia",
-    "away_team": "Kazakhstan",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "UEFA NATIONS LEAGUE C",
     "time": "02:45",
-    "selected_odds": 1.27,
+    "home_team": "LIVE",
+    "away_team": "02:45\t  Slovakia",
+    "selected_odds": 1.78,
+    "prediction": "Home Win",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "18:00\t  Fujieda MYFC",
-    "away_team": "Cerezo Osaka",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "selected_odds": 6.18,
+    "home_team": "LIVE",
+    "away_team": "18:00\t  Fujieda MYFC",
+    "selected_odds": 1.62,
+    "prediction": "Over Goals",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "18:00\t  Hokkaido Consadole Sapporo",
-    "away_team": "Fagiano Okayama",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "selected_odds": 5.38,
+    "home_team": "LIVE",
+    "away_team": "18:00\t  Hokkaido Consadole Sapporo",
+    "selected_odds": 1.62,
+    "prediction": "Over Goals",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "18:00\t  Jubilo Iwata",
-    "away_team": "JEF United Ichihara Chiba",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "selected_odds": 2.34,
+    "home_team": "LIVE",
+    "away_team": "18:00\t  Jubilo Iwata",
+    "selected_odds": 1.8,
+    "prediction": "Over Goals",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "18:00\t  Kataller Toyama",
-    "away_team": "Urawa Red Diamonds",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "selected_odds": 4.13,
+    "home_team": "LIVE",
+    "away_team": "18:00\t  Kataller Toyama",
+    "selected_odds": 1.7,
+    "prediction": "Home Win",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "18:00\t  Montedio Yamagata",
-    "away_team": "Yokohama F Marinos",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "selected_odds": 5.28,
+    "home_team": "LIVE",
+    "away_team": "18:00\t  Montedio Yamagata",
+    "selected_odds": 1.54,
+    "prediction": "Home Win",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "18:00\t  Sagan Tosu",
-    "away_team": "Tokyo Verdy",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "selected_odds": 3.13,
+    "home_team": "LIVE",
+    "away_team": "18:00\t  Sagan Tosu",
+    "selected_odds": 1.8,
+    "prediction": "Home Win",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "18:00\t  Tochigi City FC",
-    "away_team": "Sanfrecce Hiroshima",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "selected_odds": 8.88,
+    "home_team": "LIVE",
+    "away_team": "18:00\t  Tochigi City FC",
+    "selected_odds": 1.76,
+    "prediction": "Over Goals",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "18:00\t  Ehime FC",
-    "away_team": "FC Tokyo",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "selected_odds": 9.28,
+    "home_team": "LIVE",
+    "away_team": "18:00\t  Ehime FC",
+    "selected_odds": 1.8,
+    "prediction": "Over Goals",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "18:00\t  Zweigen Kanazawa",
-    "away_team": "Shimizu S-Pulse",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "selected_odds": 3.58,
+    "home_team": "LIVE",
+    "away_team": "18:00\t  Zweigen Kanazawa",
+    "selected_odds": 1.75,
+    "prediction": "Over Goals",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "18:00\t  Fukushima United FC",
-    "away_team": "Mito Hollyhock",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "selected_odds": 7.48,
+    "home_team": "LIVE",
+    "away_team": "18:00\t  Fukushima United FC",
+    "selected_odds": 1.79,
+    "prediction": "Over Goals",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "18:00\t  FC Osaka [n]",
-    "away_team": "Avispa Fukuoka",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "selected_odds": 5.88,
+    "home_team": "LIVE",
+    "away_team": "18:00\t  FC Osaka [n]",
+    "selected_odds": 1.78,
+    "prediction": "Over Goals",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "18:00\t  Gainare Tottori",
-    "away_team": "V-Varen Nagasaki",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "selected_odds": 6.28,
+    "home_team": "LIVE",
+    "away_team": "18:00\t  Gainare Tottori",
+    "selected_odds": 1.65,
+    "prediction": "Home Win",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "18:00\t  Giravanz Kitakyushu",
-    "away_team": "Nagoya Grampus",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "selected_odds": 8.18,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "18:00\t  Roasso Kumamoto",
-    "away_team": "Kawasaki Frontale",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "18:00",
-    "selected_odds": 8.48,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "18:00\t  Matsumoto Yamaga FC",
-    "away_team": "Albirex Niigata",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "18:00",
-    "selected_odds": 2.74,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "18:00\t  FC Gifu",
-    "away_team": "Yokohama FC",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "18:00",
-    "selected_odds": 3.58,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "17:00\t  Philippines",
-    "away_team": "Pakistan",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "17:00",
-    "selected_odds": 1.21,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "20:30\t  Thailand",
-    "away_team": "Vietnam",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "20:30",
-    "selected_odds": 2.16,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "22:00\t  Slovenia U21",
-    "away_team": "Israel U21",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "22:00",
-    "selected_odds": 2.07,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "23:00\t  Iceland U21",
-    "away_team": "Switzerland U21",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "23:00",
-    "selected_odds": 3.1,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "00:00\t  Norway U21",
-    "away_team": "Bosnia-Herzegovina U21",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "00:00",
-    "selected_odds": 1.27,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "00:00\t  Estonia U21",
-    "away_team": "France U21",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "00:00",
-    "selected_odds": 1.96,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:00\t  Belgium U21",
-    "away_team": "Wales U21",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "02:00",
-    "selected_odds": 1.2,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:00\t  Ireland U21",
-    "away_team": "Kazakhstan U21",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "02:00",
-    "selected_odds": 1.24,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "18:00\t  Portugal U20",
-    "away_team": "Switzerland U20",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "18:00",
-    "selected_odds": 1.35,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "00:00\t  Poland U20 [n]",
-    "away_team": "Czech Republic U20",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "00:00",
-    "selected_odds": 2.23,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "19:00\t  Wuxi Wugo",
-    "away_team": "Ningbo Professional",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "19:00",
-    "selected_odds": 2.11,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "01:30\t  Oman",
-    "away_team": "Kuwait",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "01:30",
+    "home_team": "LIVE",
+    "away_team": "18:00\t  Giravanz Kitakyushu",
     "selected_odds": 1.69,
+    "prediction": "Over Goals",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "01:30\t  Saudi Arabia",
-    "away_team": "Iraq",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "01:30",
-    "selected_odds": 2.05,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:45\t  Cardiff Met",
-    "away_team": "Haverfordwest County",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "02:45",
-    "selected_odds": 2.04,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "19:00\t  Comoros",
-    "away_team": "Namibia",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "19:00",
-    "selected_odds": 1.9,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "21:00\t  Burundi",
-    "away_team": "Algeria",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "21:00",
-    "selected_odds": 9.0,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "21:00\t  Ethiopia",
-    "away_team": "Senegal",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "21:00",
-    "selected_odds": 9.0,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "21:00\t  Lesotho [n]",
-    "away_team": "Morocco",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "21:00",
-    "selected_odds": 1.93,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "21:00\t  Madagascar [n]",
-    "away_team": "Tanzania",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "21:00",
-    "selected_odds": 2.34,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "21:00\t  Mozambique",
-    "away_team": "Sudan",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "21:00",
-    "selected_odds": 1.96,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "21:00\t  South Sudan",
-    "away_team": "Egypt",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "21:00",
-    "selected_odds": 1.17,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "00:00\t  Cape Verde",
-    "away_team": "Rwanda",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "00:00",
-    "selected_odds": 1.46,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "00:00\t  Ghana",
-    "away_team": "Gambia",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "00:00",
-    "selected_odds": 1.46,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "00:00\t  Guinea-Bissau",
-    "away_team": "Nigeria",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "00:00",
-    "selected_odds": 6.1,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "00:00\t  Uganda",
-    "away_team": "Libya",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "00:00",
-    "selected_odds": 1.98,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "00:00\t  Zambia",
-    "away_team": "Togo",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "00:00",
-    "selected_odds": 1.97,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "03:00\t  Benin [n]",
-    "away_team": "Mauritania",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "03:00",
-    "selected_odds": 2.52,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "03:00\t  Congo",
-    "away_team": "Cameroon",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "03:00",
-    "selected_odds": 5.8,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "03:00\t  Gabon",
-    "away_team": "Niger",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "03:00",
-    "selected_odds": 1.55,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "03:00\t  Liberia",
-    "away_team": "Mali",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "03:00",
-    "selected_odds": 6.0,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "03:00\t  Somalia [n]",
-    "away_team": "Ivory Coast",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "03:00",
-    "selected_odds": 10.0,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:00\t  Boreham Wood",
-    "away_team": "Kidderminster Harriers",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "02:00",
-    "selected_odds": 1.38,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:45\t  AFC Fylde",
-    "away_team": "Carlisle United",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "02:45",
-    "selected_odds": 2.16,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:45\t  Barrow",
-    "away_team": "Scunthorpe United",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "02:45",
-    "selected_odds": 2.0,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:45\t  Forest Green Rovers",
-    "away_team": "Wealdstone",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "02:45",
-    "selected_odds": 1.67,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:45\t  Gateshead",
-    "away_team": "Altrincham",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "02:45",
-    "selected_odds": 4.0,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:45\t  Halifax Town",
-    "away_team": "Boston United",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "02:45",
-    "selected_odds": 1.93,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:45\t  Hartlepool United",
-    "away_team": "Harrogate Town",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "02:45",
-    "selected_odds": 3.35,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:45\t  Hornchurch FC",
-    "away_team": "Aldershot Town",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "02:45",
-    "selected_odds": 1.97,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:45\t  Woking",
-    "away_team": "Solihull Moors",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "02:45",
-    "selected_odds": 1.84,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:45\t  Yeovil Town",
-    "away_team": "Worthing",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "02:45",
-    "selected_odds": 1.98,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "02:45\t  Slough Town",
-    "away_team": "Ebbsfleet United",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "02:45",
-    "selected_odds": 5.2,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "18:30\t  Japan [w]",
-    "away_team": "Korea Republic [w]",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "18:30",
-    "selected_odds": 1.2,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "00:00\t  Vozdovac Belgrade",
-    "away_team": "Napredak Krusevac",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "00:00",
-    "selected_odds": 2.4,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "19:00\t  CD Santa Clara U23",
-    "away_team": "FC Felgueiras 1932 U23",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "19:00",
-    "selected_odds": 2.02,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "03:15\t  Rio Ave U23",
-    "away_team": "Penafiel U23",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "03:15",
-    "selected_odds": 1.81,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "18:00\t  Australia",
-    "away_team": "Brazil",
-    "league": "MAINBOLAKAKI PARLAY",
+    "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
     "time": "18:00",
-    "selected_odds": 7.18,
+    "home_team": "LIVE",
+    "away_team": "18:00\t  Roasso Kumamoto",
+    "selected_odds": 1.76,
+    "prediction": "Over Goals",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "00:00\t  Russia",
-    "away_team": "Iran",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "00:00",
+    "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
+    "time": "18:00",
+    "home_team": "LIVE",
+    "away_team": "18:00\t  Matsumoto Yamaga FC",
+    "selected_odds": 1.75,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "N/A"
+      ],
+      "awayForm": [
+        "N/A"
+      ]
+    }
+  },
+  {
+    "league": "JAPAN J-LEAGUE YBC LEVAIN CUP",
+    "time": "18:00",
+    "home_team": "LIVE",
+    "away_team": "18:00\t  FC Gifu",
     "selected_odds": 1.73,
+    "prediction": "Over Goals",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "08:00\t  USA",
-    "away_team": "Chile",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "08:00",
-    "selected_odds": 1.37,
+    "league": "FIFA ASEAN CUP DIVISION 1 2026 [ IN INDONESIA ]",
+    "time": "17:00",
+    "home_team": "LIVE",
+    "away_team": "17:00\t  Philippines",
+    "selected_odds": 1.8,
+    "prediction": "Over Goals",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "09:00\t  Mexico [n]",
-    "away_team": "Peru",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "09:00",
-    "selected_odds": 1.41,
+    "league": "FIFA ASEAN CUP DIVISION 1 2026 [ IN INDONESIA ]",
+    "time": "20:30",
+    "home_team": "LIVE",
+    "away_team": "20:30\t  Thailand",
+    "selected_odds": 1.62,
+    "prediction": "Home Win",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   },
   {
-    "source": "mainbolakaki.pro",
-    "home_team": "06:30\t  Botafogo SP",
-    "away_team": "Ponte Preta SP",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "06:30",
-    "selected_odds": 1.25,
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "22:00",
+    "home_team": "LIVE",
+    "away_team": "22:00\t  Slovenia U21",
+    "selected_odds": 1.79,
+    "prediction": "Home Win",
     "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
+      "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
+        "N/A"
       ],
       "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "04:30\t  Deportivo Pereira",
-    "away_team": "Independiente Santa Fe",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "04:30",
-    "selected_odds": 3.5,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "09:05\t  Independiente Medellin",
-    "away_team": "Millonarios",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "09:05",
-    "selected_odds": 2.16,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
-    }
-  },
-  {
-    "source": "mainbolakaki.pro",
-    "home_team": "07:00\t  Union Magdalena",
-    "away_team": "Real Cartagena",
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "07:00",
-    "selected_odds": 2.17,
-    "api_stats": {
-      "h2h": "Catatan H2H Terverifikasi Auto-Sync",
-      "homeForm": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ],
-      "avgGoals": "2.5 Gol/Laga"
+        "N/A"
+      ]
     }
   }
 ]
