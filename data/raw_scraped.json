@@ -1,32 +1,76 @@
 [
   {
     "league": "MAINBOLAKAKI PARLAY",
+    "time": "14:30",
+    "home": "KIRIN CUP [ IN JAPAN ]",
+    "away": "Ecuador",
+    "odds": 1.63,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "KIRIN CUP [ IN JAPAN ]",
+    "time": "14:30",
+    "home": "Ecuador",
+    "away": "Panama",
+    "odds": 1.63,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "KIRIN CUP [ IN JAPAN ]",
+    "time": "18:30",
+    "home": "New Zealand",
+    "away": "Draw",
+    "odds": 1.55,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE A",
     "time": "02:45",
-    "home": "Greece",
-    "away": "Germany",
+    "home": "France",
+    "away": "Belgium",
     "odds": 1.78,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE A",
-    "time": "02:45",
-    "home": "Netherlands",
-    "away": "Serbia",
-    "odds": 1.69,
     "pick": "Over Goals",
     "home_form": [
       "W",
@@ -46,32 +90,10 @@
   {
     "league": "UEFA NATIONS LEAGUE A",
     "time": "02:45",
-    "home": "Portugal",
-    "away": "Norway",
-    "odds": 1.6,
+    "home": "Italy",
+    "away": "Turkey",
+    "odds": 1.78,
     "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE A",
-    "time": "02:45",
-    "home": "Wales",
-    "away": "Denmark",
-    "odds": 1.69,
-    "pick": "Home Win",
     "home_form": [
       "W",
       "D",
@@ -89,10 +111,10 @@
   },
   {
     "league": "UEFA NATIONS LEAGUE B",
-    "time": "00:00",
-    "home": "Kosovo",
-    "away": "Austria",
-    "odds": 1.79,
+    "time": "02:45",
+    "home": "Bosnia Herzegovina",
+    "away": "Poland",
+    "odds": 1.76,
     "pick": "Home Win",
     "home_form": [
       "W",
@@ -112,31 +134,9 @@
   {
     "league": "UEFA NATIONS LEAGUE B",
     "time": "02:45",
-    "home": "Ireland [n]",
-    "away": "Israel",
-    "odds": 1.79,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE D",
-    "time": "21:00",
-    "home": "Azerbaijan",
-    "away": "Lithuania",
-    "odds": 1.6,
+    "home": "Northern Ireland",
+    "away": "Georgia",
+    "odds": 1.69,
     "pick": "Away Win",
     "home_form": [
       "W",
@@ -154,54 +154,10 @@
     ]
   },
   {
-    "league": "UEFA NATIONS LEAGUE D",
-    "time": "00:00",
-    "home": "Malta",
-    "away": "Andorra",
-    "odds": 1.67,
-    "pick": "Away Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE D",
-    "time": "22:00",
-    "home": "Kyrgyzstan",
-    "away": "Lebanon",
-    "odds": 1.77,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE D",
-    "time": "02:00",
-    "home": "Egypt",
-    "away": "South Africa",
+    "league": "UEFA NATIONS LEAGUE B",
+    "time": "02:45",
+    "home": "Romania",
+    "away": "Sweden",
     "odds": 1.72,
     "pick": "Over Goals",
     "home_form": [
@@ -220,11 +176,11 @@
     ]
   },
   {
-    "league": "UEFA NATIONS LEAGUE D",
-    "time": "02:00",
-    "home": "Morocco",
-    "away": "Mali",
-    "odds": 1.76,
+    "league": "UEFA NATIONS LEAGUE B",
+    "time": "02:45",
+    "home": "Ukraine [n]",
+    "away": "Hungary",
+    "odds": 1.79,
     "pick": "Home Win",
     "home_form": [
       "W",
@@ -242,11 +198,11 @@
     ]
   },
   {
-    "league": "JAPAN J2 LEAGUE",
-    "time": "12:00",
-    "home": "Hokkaido Consadole Sapporo",
-    "away": "Iwaki FC",
-    "odds": 1.76,
+    "league": "UEFA NATIONS LEAGUE C",
+    "time": "00:00",
+    "home": "Cyprus",
+    "away": "Latvia",
+    "odds": 1.59,
     "pick": "Home Win",
     "home_form": [
       "W",
@@ -264,12 +220,34 @@
     ]
   },
   {
-    "league": "JAPAN J2 LEAGUE",
-    "time": "12:00",
-    "home": "Vanraure Hachinohe FC",
-    "away": "Yokohama FC",
+    "league": "UEFA NATIONS LEAGUE C",
+    "time": "02:45",
+    "home": "Montenegro",
+    "away": "Armenia",
+    "odds": 1.66,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE C",
+    "time": "23:59",
+    "home": "Rwanda",
+    "away": "Kenya",
     "odds": 1.77,
-    "pick": "Home Win",
+    "pick": "Away Win",
     "home_form": [
       "W",
       "D",
@@ -286,252 +264,10 @@
     ]
   },
   {
-    "league": "JAPAN J2 LEAGUE",
-    "time": "13:00",
-    "home": "Blaublitz Akita",
-    "away": "Sagan Tosu",
-    "odds": 1.68,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "JAPAN J2 LEAGUE",
-    "time": "14:00",
-    "home": "Vegalta Sendai",
-    "away": "Jubilo Iwata",
-    "odds": 1.67,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "JAPAN J2 LEAGUE",
-    "time": "18:00",
-    "home": "Tegevajaro Miyazaki",
-    "away": "RB Omiya Ardija",
-    "odds": 1.79,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "20:00",
-    "home": "Real Sociedad B",
-    "away": "Granada CF",
-    "odds": 1.69,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "22:15",
-    "home": "Sporting Gijon",
-    "away": "Celta Fortuna",
-    "odds": 1.54,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "00:30",
-    "home": "CD Castellon",
-    "away": "AD Ceuta",
-    "odds": 1.57,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "00:30",
-    "home": "Las Palmas",
-    "away": "Real Valladolid",
-    "odds": 1.8,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "03:00",
-    "home": "Girona",
-    "away": "RCD Mallorca",
-    "odds": 1.67,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "20:30",
-    "home": "VVV Venlo",
-    "away": "Roda JC",
-    "odds": 1.79,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "LIGA PORTUGAL 2",
-    "time": "18:00",
-    "home": "SC Farense",
-    "away": "Chaves",
-    "odds": 1.68,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "JAPAN J3 LEAGUE",
-    "time": "13:00",
-    "home": "Kamatamare Sanuki",
-    "away": "Tochigi SC",
-    "odds": 1.78,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "JAPAN J3 LEAGUE",
-    "time": "17:00",
-    "home": "Kagoshima United",
-    "away": "Fukushima United FC",
+    "league": "UEFA NATIONS LEAGUE C",
+    "time": "02:45",
+    "home": "Liechtenstein",
+    "away": "Gibraltar",
     "odds": 1.75,
     "pick": "Over Goals",
     "home_form": [
@@ -550,11 +286,11 @@
     ]
   },
   {
-    "league": "RUSSIA FIRST LEAGUE",
-    "time": "19:30",
-    "home": "FC Veles Moscow",
-    "away": "Volga Ulyanovsk",
-    "odds": 1.79,
+    "league": "FIFA ASEAN CUP DIVISION 1 2026 [ IN INDONESIA ]",
+    "time": "17:00",
+    "home": "Malaysia",
+    "away": "Vietnam",
+    "odds": 1.77,
     "pick": "Home Win",
     "home_form": [
       "W",
@@ -572,54 +308,10 @@
     ]
   },
   {
-    "league": "CROATIA CUP",
-    "time": "22:00",
-    "home": "HNK Vukovar",
-    "away": "NK Dinamo Zagreb",
-    "odds": 1.79,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "CROATIA CUP",
-    "time": "21:30",
-    "home": "Hamburger SV",
-    "away": "FC Copenhagen",
-    "odds": 1.66,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "CROATIA CUP",
-    "time": "18:00",
-    "home": "Athletic Bilbao B",
-    "away": "CD Extremadura",
+    "league": "FIFA ASEAN CUP DIVISION 1 2026 [ IN INDONESIA ]",
+    "time": "21:00",
+    "home": "Thailand",
+    "away": "Draw",
     "odds": 1.76,
     "pick": "Home Win",
     "home_form": [
@@ -638,12 +330,320 @@
     ]
   },
   {
-    "league": "CROATIA CUP",
-    "time": "18:00",
-    "home": "Real Murcia",
-    "away": "Gimnastic Tarragona",
-    "odds": 1.66,
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "22:30",
+    "home": "Montenegro U",
+    "away": "Armenia U",
+    "odds": 1.65,
     "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "00:15",
+    "home": "Italy U",
+    "away": "Poland U",
+    "odds": 1.8,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "00:30",
+    "home": "Sweden U",
+    "away": "North Macedonia U",
+    "odds": 1.76,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "SPAIN LA LIGA 2",
+    "time": "02:30",
+    "home": "Cordoba CF",
+    "away": "Tenerife",
+    "odds": 1.72,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "SPAIN LA LIGA 2",
+    "time": "01:00",
+    "home": "Moss",
+    "away": "Kongsvinger",
+    "odds": 1.69,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ARGENTINA LIGA PROFESIONAL",
+    "time": "03:45",
+    "home": "Deportivo Riestra",
+    "away": "Central Cordoba Santiago del Estero",
+    "odds": 1.68,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ARGENTINA LIGA PROFESIONAL",
+    "time": "06:00",
+    "home": "Estudiantes La Plata",
+    "away": "Gimnasia Mendoza",
+    "odds": 1.69,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ARGENTINA LIGA PROFESIONAL",
+    "time": "06:00",
+    "home": "Velez Sarsfield",
+    "away": "CA Platense",
+    "odds": 1.74,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ARGENTINA LIGA PROFESIONAL",
+    "time": "08:15",
+    "home": "Banfield",
+    "away": "Rosario Central",
+    "odds": 1.8,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "CONCACAF NATIONS LEAGUE A",
+    "time": "06:00",
+    "home": "Martinique",
+    "away": "El Salvador",
+    "odds": 1.79,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "CONCACAF NATIONS LEAGUE A",
+    "time": "08:00",
+    "home": "Guatemala",
+    "away": "Suriname",
+    "odds": 1.72,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "CONCACAF NATIONS LEAGUE A",
+    "time": "10:00",
+    "home": "Honduras",
+    "away": "Jamaica",
+    "odds": 1.8,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "CONCACAF NATIONS LEAGUE A",
+    "time": "10:00",
+    "home": "Nicaragua",
+    "away": "Dominican Republic",
+    "odds": 1.56,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "CONCACAF NATIONS LEAGUE B",
+    "time": "03:00",
+    "home": "Guadeloupe [n]",
+    "away": "St  Lucia",
+    "odds": 1.76,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "CONCACAF NATIONS LEAGUE B",
+    "time": "05:00",
+    "home": "Cuba [n]",
+    "away": "St  Kitts & Nevis",
+    "odds": 1.62,
+    "pick": "Over Goals",
     "home_form": [
       "W",
       "D",

@@ -1,36 +1,88 @@
 [
   {
     "league": "MAINBOLAKAKI PARLAY",
+    "time": "14:30",
+    "home_team": "KIRIN CUP [ IN JAPAN ]",
+    "away_team": "Ecuador",
+    "selected_odds": 1.63,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa KIRIN CUP [ IN JAPAN ] dan Ecuador di MAINBOLAKAKI PARLAY."
+  },
+  {
+    "league": "KIRIN CUP [ IN JAPAN ]",
+    "time": "14:30",
+    "home_team": "Ecuador",
+    "away_team": "Panama",
+    "selected_odds": 1.63,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Ecuador dan Panama di KIRIN CUP [ IN JAPAN ]."
+  },
+  {
+    "league": "KIRIN CUP [ IN JAPAN ]",
+    "time": "18:30",
+    "home_team": "New Zealand",
+    "away_team": "Draw",
+    "selected_odds": 1.55,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa New Zealand dan Draw di KIRIN CUP [ IN JAPAN ]."
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE A",
     "time": "02:45",
-    "home_team": "Greece",
-    "away_team": "Germany",
+    "home_team": "France",
+    "away_team": "Belgium",
     "selected_odds": 1.78,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Greece dan Germany di MAINBOLAKAKI PARLAY."
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE A",
-    "time": "02:45",
-    "home_team": "Netherlands",
-    "away_team": "Serbia",
-    "selected_odds": 1.69,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -49,14 +101,14 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Netherlands dan Serbia di UEFA NATIONS LEAGUE A."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa France dan Belgium di UEFA NATIONS LEAGUE A."
   },
   {
     "league": "UEFA NATIONS LEAGUE A",
     "time": "02:45",
-    "home_team": "Portugal",
-    "away_team": "Norway",
-    "selected_odds": 1.6,
+    "home_team": "Italy",
+    "away_team": "Turkey",
+    "selected_odds": 1.78,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -75,92 +127,40 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Portugal dan Norway di UEFA NATIONS LEAGUE A."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Italy dan Turkey di UEFA NATIONS LEAGUE A."
   },
   {
-    "league": "UEFA NATIONS LEAGUE A",
+    "league": "UEFA NATIONS LEAGUE B",
     "time": "02:45",
-    "home_team": "Wales",
-    "away_team": "Denmark",
+    "home_team": "Bosnia Herzegovina",
+    "away_team": "Poland",
+    "selected_odds": 1.76,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Bosnia Herzegovina dan Poland di UEFA NATIONS LEAGUE B."
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE B",
+    "time": "02:45",
+    "home_team": "Northern Ireland",
+    "away_team": "Georgia",
     "selected_odds": 1.69,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Wales dan Denmark di UEFA NATIONS LEAGUE A."
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "00:00",
-    "home_team": "Kosovo",
-    "away_team": "Austria",
-    "selected_odds": 1.79,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Kosovo dan Austria di UEFA NATIONS LEAGUE B."
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "02:45",
-    "home_team": "Ireland [n]",
-    "away_team": "Israel",
-    "selected_odds": 1.79,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Ireland [n] dan Israel di UEFA NATIONS LEAGUE B."
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE D",
-    "time": "21:00",
-    "home_team": "Azerbaijan",
-    "away_team": "Lithuania",
-    "selected_odds": 1.6,
     "prediction": "Away Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -179,65 +179,13 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Azerbaijan dan Lithuania di UEFA NATIONS LEAGUE D."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Northern Ireland dan Georgia di UEFA NATIONS LEAGUE B."
   },
   {
-    "league": "UEFA NATIONS LEAGUE D",
-    "time": "00:00",
-    "home_team": "Malta",
-    "away_team": "Andorra",
-    "selected_odds": 1.67,
-    "prediction": "Away Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Malta dan Andorra di UEFA NATIONS LEAGUE D."
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE D",
-    "time": "22:00",
-    "home_team": "Kyrgyzstan",
-    "away_team": "Lebanon",
-    "selected_odds": 1.77,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Kyrgyzstan dan Lebanon di UEFA NATIONS LEAGUE D."
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE D",
-    "time": "02:00",
-    "home_team": "Egypt",
-    "away_team": "South Africa",
+    "league": "UEFA NATIONS LEAGUE B",
+    "time": "02:45",
+    "home_team": "Romania",
+    "away_team": "Sweden",
     "selected_odds": 1.72,
     "prediction": "Over Goals",
     "api_stats": {
@@ -257,14 +205,14 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Egypt dan South Africa di UEFA NATIONS LEAGUE D."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Romania dan Sweden di UEFA NATIONS LEAGUE B."
   },
   {
-    "league": "UEFA NATIONS LEAGUE D",
-    "time": "02:00",
-    "home_team": "Morocco",
-    "away_team": "Mali",
-    "selected_odds": 1.76,
+    "league": "UEFA NATIONS LEAGUE B",
+    "time": "02:45",
+    "home_team": "Ukraine [n]",
+    "away_team": "Hungary",
+    "selected_odds": 1.79,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -283,14 +231,14 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Morocco dan Mali di UEFA NATIONS LEAGUE D."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Ukraine [n] dan Hungary di UEFA NATIONS LEAGUE B."
   },
   {
-    "league": "JAPAN J2 LEAGUE",
-    "time": "12:00",
-    "home_team": "Hokkaido Consadole Sapporo",
-    "away_team": "Iwaki FC",
-    "selected_odds": 1.76,
+    "league": "UEFA NATIONS LEAGUE C",
+    "time": "00:00",
+    "home_team": "Cyprus",
+    "away_team": "Latvia",
+    "selected_odds": 1.59,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -309,15 +257,41 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Hokkaido Consadole Sapporo dan Iwaki FC di JAPAN J2 LEAGUE."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Cyprus dan Latvia di UEFA NATIONS LEAGUE C."
   },
   {
-    "league": "JAPAN J2 LEAGUE",
-    "time": "12:00",
-    "home_team": "Vanraure Hachinohe FC",
-    "away_team": "Yokohama FC",
+    "league": "UEFA NATIONS LEAGUE C",
+    "time": "02:45",
+    "home_team": "Montenegro",
+    "away_team": "Armenia",
+    "selected_odds": 1.66,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Montenegro dan Armenia di UEFA NATIONS LEAGUE C."
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE C",
+    "time": "23:59",
+    "home_team": "Rwanda",
+    "away_team": "Kenya",
     "selected_odds": 1.77,
-    "prediction": "Home Win",
+    "prediction": "Away Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
@@ -335,299 +309,13 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Vanraure Hachinohe FC dan Yokohama FC di JAPAN J2 LEAGUE."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Rwanda dan Kenya di UEFA NATIONS LEAGUE C."
   },
   {
-    "league": "JAPAN J2 LEAGUE",
-    "time": "13:00",
-    "home_team": "Blaublitz Akita",
-    "away_team": "Sagan Tosu",
-    "selected_odds": 1.68,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Blaublitz Akita dan Sagan Tosu di JAPAN J2 LEAGUE."
-  },
-  {
-    "league": "JAPAN J2 LEAGUE",
-    "time": "14:00",
-    "home_team": "Vegalta Sendai",
-    "away_team": "Jubilo Iwata",
-    "selected_odds": 1.67,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Vegalta Sendai dan Jubilo Iwata di JAPAN J2 LEAGUE."
-  },
-  {
-    "league": "JAPAN J2 LEAGUE",
-    "time": "18:00",
-    "home_team": "Tegevajaro Miyazaki",
-    "away_team": "RB Omiya Ardija",
-    "selected_odds": 1.79,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Tegevajaro Miyazaki dan RB Omiya Ardija di JAPAN J2 LEAGUE."
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "20:00",
-    "home_team": "Real Sociedad B",
-    "away_team": "Granada CF",
-    "selected_odds": 1.69,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Real Sociedad B dan Granada CF di SPAIN LA LIGA 2."
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "22:15",
-    "home_team": "Sporting Gijon",
-    "away_team": "Celta Fortuna",
-    "selected_odds": 1.54,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Sporting Gijon dan Celta Fortuna di SPAIN LA LIGA 2."
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "00:30",
-    "home_team": "CD Castellon",
-    "away_team": "AD Ceuta",
-    "selected_odds": 1.57,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa CD Castellon dan AD Ceuta di SPAIN LA LIGA 2."
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "00:30",
-    "home_team": "Las Palmas",
-    "away_team": "Real Valladolid",
-    "selected_odds": 1.8,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Las Palmas dan Real Valladolid di SPAIN LA LIGA 2."
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "03:00",
-    "home_team": "Girona",
-    "away_team": "RCD Mallorca",
-    "selected_odds": 1.67,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Girona dan RCD Mallorca di SPAIN LA LIGA 2."
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "20:30",
-    "home_team": "VVV Venlo",
-    "away_team": "Roda JC",
-    "selected_odds": 1.79,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa VVV Venlo dan Roda JC di SPAIN LA LIGA 2."
-  },
-  {
-    "league": "LIGA PORTUGAL 2",
-    "time": "18:00",
-    "home_team": "SC Farense",
-    "away_team": "Chaves",
-    "selected_odds": 1.68,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa SC Farense dan Chaves di LIGA PORTUGAL 2."
-  },
-  {
-    "league": "JAPAN J3 LEAGUE",
-    "time": "13:00",
-    "home_team": "Kamatamare Sanuki",
-    "away_team": "Tochigi SC",
-    "selected_odds": 1.78,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Kamatamare Sanuki dan Tochigi SC di JAPAN J3 LEAGUE."
-  },
-  {
-    "league": "JAPAN J3 LEAGUE",
-    "time": "17:00",
-    "home_team": "Kagoshima United",
-    "away_team": "Fukushima United FC",
+    "league": "UEFA NATIONS LEAGUE C",
+    "time": "02:45",
+    "home_team": "Liechtenstein",
+    "away_team": "Gibraltar",
     "selected_odds": 1.75,
     "prediction": "Over Goals",
     "api_stats": {
@@ -647,14 +335,14 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Kagoshima United dan Fukushima United FC di JAPAN J3 LEAGUE."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Liechtenstein dan Gibraltar di UEFA NATIONS LEAGUE C."
   },
   {
-    "league": "RUSSIA FIRST LEAGUE",
-    "time": "19:30",
-    "home_team": "FC Veles Moscow",
-    "away_team": "Volga Ulyanovsk",
-    "selected_odds": 1.79,
+    "league": "FIFA ASEAN CUP DIVISION 1 2026 [ IN INDONESIA ]",
+    "time": "17:00",
+    "home_team": "Malaysia",
+    "away_team": "Vietnam",
+    "selected_odds": 1.77,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -673,65 +361,13 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa FC Veles Moscow dan Volga Ulyanovsk di RUSSIA FIRST LEAGUE."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Malaysia dan Vietnam di FIFA ASEAN CUP DIVISION 1 2026 [ IN INDONESIA ]."
   },
   {
-    "league": "CROATIA CUP",
-    "time": "22:00",
-    "home_team": "HNK Vukovar",
-    "away_team": "NK Dinamo Zagreb",
-    "selected_odds": 1.79,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa HNK Vukovar dan NK Dinamo Zagreb di CROATIA CUP."
-  },
-  {
-    "league": "CROATIA CUP",
-    "time": "21:30",
-    "home_team": "Hamburger SV",
-    "away_team": "FC Copenhagen",
-    "selected_odds": 1.66,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Hamburger SV dan FC Copenhagen di CROATIA CUP."
-  },
-  {
-    "league": "CROATIA CUP",
-    "time": "18:00",
-    "home_team": "Athletic Bilbao B",
-    "away_team": "CD Extremadura",
+    "league": "FIFA ASEAN CUP DIVISION 1 2026 [ IN INDONESIA ]",
+    "time": "21:00",
+    "home_team": "Thailand",
+    "away_team": "Draw",
     "selected_odds": 1.76,
     "prediction": "Home Win",
     "api_stats": {
@@ -751,14 +387,14 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Athletic Bilbao B dan CD Extremadura di CROATIA CUP."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Thailand dan Draw di FIFA ASEAN CUP DIVISION 1 2026 [ IN INDONESIA ]."
   },
   {
-    "league": "CROATIA CUP",
-    "time": "18:00",
-    "home_team": "Real Murcia",
-    "away_team": "Gimnastic Tarragona",
-    "selected_odds": 1.66,
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "22:30",
+    "home_team": "Montenegro U",
+    "away_team": "Armenia U",
+    "selected_odds": 1.65,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -777,6 +413,370 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Real Murcia dan Gimnastic Tarragona di CROATIA CUP."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Montenegro U dan Armenia U di UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS."
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "00:15",
+    "home_team": "Italy U",
+    "away_team": "Poland U",
+    "selected_odds": 1.8,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Italy U dan Poland U di UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS."
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "00:30",
+    "home_team": "Sweden U",
+    "away_team": "North Macedonia U",
+    "selected_odds": 1.76,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Sweden U dan North Macedonia U di UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS."
+  },
+  {
+    "league": "SPAIN LA LIGA 2",
+    "time": "02:30",
+    "home_team": "Cordoba CF",
+    "away_team": "Tenerife",
+    "selected_odds": 1.72,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Cordoba CF dan Tenerife di SPAIN LA LIGA 2."
+  },
+  {
+    "league": "SPAIN LA LIGA 2",
+    "time": "01:00",
+    "home_team": "Moss",
+    "away_team": "Kongsvinger",
+    "selected_odds": 1.69,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Moss dan Kongsvinger di SPAIN LA LIGA 2."
+  },
+  {
+    "league": "ARGENTINA LIGA PROFESIONAL",
+    "time": "03:45",
+    "home_team": "Deportivo Riestra",
+    "away_team": "Central Cordoba Santiago del Estero",
+    "selected_odds": 1.68,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Deportivo Riestra dan Central Cordoba Santiago del Estero di ARGENTINA LIGA PROFESIONAL."
+  },
+  {
+    "league": "ARGENTINA LIGA PROFESIONAL",
+    "time": "06:00",
+    "home_team": "Estudiantes La Plata",
+    "away_team": "Gimnasia Mendoza",
+    "selected_odds": 1.69,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Estudiantes La Plata dan Gimnasia Mendoza di ARGENTINA LIGA PROFESIONAL."
+  },
+  {
+    "league": "ARGENTINA LIGA PROFESIONAL",
+    "time": "06:00",
+    "home_team": "Velez Sarsfield",
+    "away_team": "CA Platense",
+    "selected_odds": 1.74,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Velez Sarsfield dan CA Platense di ARGENTINA LIGA PROFESIONAL."
+  },
+  {
+    "league": "ARGENTINA LIGA PROFESIONAL",
+    "time": "08:15",
+    "home_team": "Banfield",
+    "away_team": "Rosario Central",
+    "selected_odds": 1.8,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Banfield dan Rosario Central di ARGENTINA LIGA PROFESIONAL."
+  },
+  {
+    "league": "CONCACAF NATIONS LEAGUE A",
+    "time": "06:00",
+    "home_team": "Martinique",
+    "away_team": "El Salvador",
+    "selected_odds": 1.79,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Martinique dan El Salvador di CONCACAF NATIONS LEAGUE A."
+  },
+  {
+    "league": "CONCACAF NATIONS LEAGUE A",
+    "time": "08:00",
+    "home_team": "Guatemala",
+    "away_team": "Suriname",
+    "selected_odds": 1.72,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Guatemala dan Suriname di CONCACAF NATIONS LEAGUE A."
+  },
+  {
+    "league": "CONCACAF NATIONS LEAGUE A",
+    "time": "10:00",
+    "home_team": "Honduras",
+    "away_team": "Jamaica",
+    "selected_odds": 1.8,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Honduras dan Jamaica di CONCACAF NATIONS LEAGUE A."
+  },
+  {
+    "league": "CONCACAF NATIONS LEAGUE A",
+    "time": "10:00",
+    "home_team": "Nicaragua",
+    "away_team": "Dominican Republic",
+    "selected_odds": 1.56,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Nicaragua dan Dominican Republic di CONCACAF NATIONS LEAGUE A."
+  },
+  {
+    "league": "CONCACAF NATIONS LEAGUE B",
+    "time": "03:00",
+    "home_team": "Guadeloupe [n]",
+    "away_team": "St  Lucia",
+    "selected_odds": 1.76,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Guadeloupe [n] dan St  Lucia di CONCACAF NATIONS LEAGUE B."
+  },
+  {
+    "league": "CONCACAF NATIONS LEAGUE B",
+    "time": "05:00",
+    "home_team": "Cuba [n]",
+    "away_team": "St  Kitts & Nevis",
+    "selected_odds": 1.62,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Cuba [n] dan St  Kitts & Nevis di CONCACAF NATIONS LEAGUE B."
   }
 ]
