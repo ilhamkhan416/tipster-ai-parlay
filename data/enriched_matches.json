@@ -1,60 +1,10 @@
 [
   {
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "14:30",
-    "home_team": "KIRIN CUP [ IN JAPAN ]",
-    "away_team": "Ecuador",
-    "selected_odds": 1.63,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "KIRIN CUP [ IN JAPAN ]",
-    "time": "14:30",
-    "home_team": "Ecuador",
-    "away_team": "Panama",
-    "selected_odds": 1.63,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "KIRIN CUP [ IN JAPAN ]",
-    "time": "18:30",
-    "home_team": "New Zealand",
-    "away_team": "Draw",
-    "selected_odds": 1.55,
+    "league": "UEFA NATIONS LEAGUE A",
+    "time": "02:45",
+    "home_team": "Croatia",
+    "away_team": "Spain",
+    "selected_odds": 1.65,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -77,210 +27,10 @@
   {
     "league": "UEFA NATIONS LEAGUE A",
     "time": "02:45",
-    "home_team": "France",
-    "away_team": "Belgium",
-    "selected_odds": 1.78,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE A",
-    "time": "02:45",
-    "home_team": "Italy",
-    "away_team": "Turkey",
-    "selected_odds": 1.78,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "02:45",
-    "home_team": "Bosnia Herzegovina",
-    "away_team": "Poland",
-    "selected_odds": 1.76,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "02:45",
-    "home_team": "Northern Ireland",
-    "away_team": "Georgia",
-    "selected_odds": 1.69,
-    "prediction": "Away Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "02:45",
-    "home_team": "Romania",
-    "away_team": "Sweden",
-    "selected_odds": 1.72,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "02:45",
-    "home_team": "Ukraine [n]",
-    "away_team": "Hungary",
-    "selected_odds": 1.79,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE C",
-    "time": "00:00",
-    "home_team": "Cyprus",
-    "away_team": "Latvia",
-    "selected_odds": 1.59,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE C",
-    "time": "02:45",
-    "home_team": "Montenegro",
-    "away_team": "Armenia",
-    "selected_odds": 1.66,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE C",
-    "time": "23:59",
-    "home_team": "Rwanda",
-    "away_team": "Kenya",
+    "home_team": "England",
+    "away_team": "Czech Republic",
     "selected_odds": 1.77,
-    "prediction": "Away Win",
+    "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
@@ -300,10 +50,35 @@
     }
   },
   {
-    "league": "UEFA NATIONS LEAGUE C",
+    "league": "UEFA NATIONS LEAGUE B",
     "time": "02:45",
-    "home_team": "Liechtenstein",
-    "away_team": "Gibraltar",
+    "home_team": "Scotland",
+    "away_team": "Slovenia",
+    "selected_odds": 1.77,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE B",
+    "time": "02:45",
+    "home_team": "Switzerland",
+    "away_team": "North Macedonia",
     "selected_odds": 1.75,
     "prediction": "Over Goals",
     "api_stats": {
@@ -325,11 +100,86 @@
     }
   },
   {
-    "league": "FIFA ASEAN CUP DIVISION 1 2026 [ IN INDONESIA ]",
-    "time": "17:00",
-    "home_team": "Malaysia",
-    "away_team": "Vietnam",
-    "selected_odds": 1.77,
+    "league": "UEFA NATIONS LEAGUE C",
+    "time": "22:00",
+    "home_team": "Kazakhstan",
+    "away_team": "Faroe Islands",
+    "selected_odds": 1.7,
+    "prediction": "Away Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE C",
+    "time": "02:45",
+    "home_team": "Albania",
+    "away_team": "San Marino",
+    "selected_odds": 1.78,
+    "prediction": "Away Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE C",
+    "time": "02:45",
+    "home_team": "Belarus [n]",
+    "away_team": "Finland",
+    "selected_odds": 1.74,
+    "prediction": "Away Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE C",
+    "time": "02:45",
+    "home_team": "Estonia",
+    "away_team": "Iceland",
+    "selected_odds": 1.53,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -350,11 +200,36 @@
     }
   },
   {
-    "league": "FIFA ASEAN CUP DIVISION 1 2026 [ IN INDONESIA ]",
-    "time": "21:00",
-    "home_team": "Thailand",
-    "away_team": "Draw",
-    "selected_odds": 1.76,
+    "league": "UEFA NATIONS LEAGUE C",
+    "time": "02:45",
+    "home_team": "Luxembourg",
+    "away_team": "Bulgaria",
+    "selected_odds": 1.67,
+    "prediction": "Away Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE C",
+    "time": "02:45",
+    "home_team": "Moldova",
+    "away_team": "Slovakia",
+    "selected_odds": 1.72,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -376,9 +251,109 @@
   },
   {
     "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
-    "time": "22:30",
-    "home_team": "Montenegro U",
-    "away_team": "Armenia U",
+    "time": "21:45",
+    "home_team": "Azerbaijan U",
+    "away_team": "Gibraltar U",
+    "selected_odds": 1.8,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "22:00",
+    "home_team": "Moldova U",
+    "away_team": "Kazakhstan U",
+    "selected_odds": 1.77,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "00:00",
+    "home_team": "Germany U",
+    "away_team": "Georgia U",
+    "selected_odds": 1.77,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "00:00",
+    "home_team": "Latvia U",
+    "away_team": "Malta U",
+    "selected_odds": 1.7,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "00:00",
+    "home_team": "Northern Ireland U",
+    "away_team": "Greece U",
     "selected_odds": 1.65,
     "prediction": "Home Win",
     "api_stats": {
@@ -401,10 +376,60 @@
   },
   {
     "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
-    "time": "00:15",
-    "home_team": "Italy U",
-    "away_team": "Poland U",
-    "selected_odds": 1.8,
+    "time": "00:30",
+    "home_team": "Bulgaria U",
+    "away_team": "Scotland U",
+    "selected_odds": 1.63,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "00:30",
+    "home_team": "Denmark U",
+    "away_team": "Belgium U",
+    "selected_odds": 1.65,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "00:30",
+    "home_team": "Portugal U",
+    "away_team": "Czech Republic U",
+    "selected_odds": 1.65,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -427,109 +452,9 @@
   {
     "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
     "time": "00:30",
-    "home_team": "Sweden U",
-    "away_team": "North Macedonia U",
-    "selected_odds": 1.76,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "02:30",
-    "home_team": "Cordoba CF",
-    "away_team": "Tenerife",
-    "selected_odds": 1.72,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "01:00",
-    "home_team": "Moss",
-    "away_team": "Kongsvinger",
-    "selected_odds": 1.69,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "ARGENTINA LIGA PROFESIONAL",
-    "time": "03:45",
-    "home_team": "Deportivo Riestra",
-    "away_team": "Central Cordoba Santiago del Estero",
-    "selected_odds": 1.68,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "ARGENTINA LIGA PROFESIONAL",
-    "time": "06:00",
-    "home_team": "Estudiantes La Plata",
-    "away_team": "Gimnasia Mendoza",
-    "selected_odds": 1.69,
+    "home_team": "Wales U",
+    "away_team": "Austria U",
+    "selected_odds": 1.75,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -550,111 +475,11 @@
     }
   },
   {
-    "league": "ARGENTINA LIGA PROFESIONAL",
-    "time": "06:00",
-    "home_team": "Velez Sarsfield",
-    "away_team": "CA Platense",
-    "selected_odds": 1.74,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "ARGENTINA LIGA PROFESIONAL",
-    "time": "08:15",
-    "home_team": "Banfield",
-    "away_team": "Rosario Central",
-    "selected_odds": 1.8,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "CONCACAF NATIONS LEAGUE A",
-    "time": "06:00",
-    "home_team": "Martinique",
-    "away_team": "El Salvador",
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "00:45",
+    "home_team": "Netherlands U",
+    "away_team": "Bosnia Herzegovina U",
     "selected_odds": 1.79,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "CONCACAF NATIONS LEAGUE A",
-    "time": "08:00",
-    "home_team": "Guatemala",
-    "away_team": "Suriname",
-    "selected_odds": 1.72,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "CONCACAF NATIONS LEAGUE A",
-    "time": "10:00",
-    "home_team": "Honduras",
-    "away_team": "Jamaica",
-    "selected_odds": 1.8,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -675,11 +500,36 @@
     }
   },
   {
-    "league": "CONCACAF NATIONS LEAGUE A",
-    "time": "10:00",
-    "home_team": "Nicaragua",
-    "away_team": "Dominican Republic",
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "00:45",
+    "home_team": "Norway U",
+    "away_team": "Israel U",
     "selected_odds": 1.56,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "01:00",
+    "home_team": "Andorra U",
+    "away_team": "Slovakia U",
+    "selected_odds": 1.53,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -700,11 +550,11 @@
     }
   },
   {
-    "league": "CONCACAF NATIONS LEAGUE B",
-    "time": "03:00",
-    "home_team": "Guadeloupe [n]",
-    "away_team": "St  Lucia",
-    "selected_odds": 1.76,
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "01:00",
+    "home_team": "Cyprus U",
+    "away_team": "San Marino U",
+    "selected_odds": 1.6,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -725,11 +575,161 @@
     }
   },
   {
-    "league": "CONCACAF NATIONS LEAGUE B",
-    "time": "05:00",
-    "home_team": "Cuba [n]",
-    "away_team": "St  Kitts & Nevis",
-    "selected_odds": 1.62,
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "01:00",
+    "home_team": "Faroe Islands U",
+    "away_team": "Iceland U",
+    "selected_odds": 1.77,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "01:00",
+    "home_team": "France U",
+    "away_team": "Switzerland U",
+    "selected_odds": 1.5,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "01:00",
+    "home_team": "Ireland U",
+    "away_team": "England U",
+    "selected_odds": 1.52,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "01:00",
+    "home_team": "Kosovo U",
+    "away_team": "Finland U",
+    "selected_odds": 1.8,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "01:00",
+    "home_team": "Lithuania U",
+    "away_team": "Croatia U",
+    "selected_odds": 1.58,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "01:00",
+    "home_team": "Luxembourg U",
+    "away_team": "Estonia U",
+    "selected_odds": 1.68,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS",
+    "time": "01:00",
+    "home_team": "Spain U",
+    "away_team": "Romania U",
+    "selected_odds": 1.75,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
