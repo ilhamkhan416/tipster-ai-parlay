@@ -1,11 +1,33 @@
 [
   {
     "league": "MAINBOLAKAKI PARLAY",
-    "time": "00:00",
+    "time": "23:00",
     "home": "FINLAND VEIKKAUSLIIGA PLAYOFF",
-    "away": "Gnistan Helsinki",
-    "odds": 1.74,
+    "away": "HJK Helsinki",
+    "odds": 1.54,
     "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "MAINBOLAKAKI PARLAY",
+    "time": "23:00",
+    "home": "HJK Helsinki",
+    "away": "Vaasa VPS",
+    "odds": 1.54,
+    "pick": "Over Goals",
     "home_form": [
       "W",
       "D",
@@ -24,9 +46,9 @@
   {
     "league": "MAINBOLAKAKI PARLAY",
     "time": "00:00",
-    "home": "Gnistan Helsinki",
-    "away": "Inter Turku",
-    "odds": 1.74,
+    "home": "KuPS",
+    "away": "AC Oulu",
+    "odds": 1.6,
     "pick": "Home Win",
     "home_form": [
       "W",
@@ -45,98 +67,10 @@
   },
   {
     "league": "MAINBOLAKAKI PARLAY",
-    "time": "10:30",
-    "home": "Mexico [n]",
-    "away": "Chile",
-    "odds": 1.51,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "JAPAN EMPEROR CUP",
-    "time": "17:00",
-    "home": "RB Omiya Ardija",
-    "away": "Urawa Red Diamonds",
-    "odds": 1.76,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "JAPAN EMPEROR CUP",
-    "time": "17:30",
-    "home": "Yokohama FC",
-    "away": "Avispa Fukuoka",
-    "odds": 1.61,
-    "pick": "Away Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "JAPAN EMPEROR CUP",
-    "time": "17:30",
-    "home": "Cerezo Osaka",
-    "away": "Kagoshima United",
-    "odds": 1.54,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "JAPAN EMPEROR CUP",
-    "time": "17:30",
-    "home": "Iwaki FC",
-    "away": "Sanfrecce Hiroshima",
-    "odds": 1.72,
+    "time": "03:00",
+    "home": "Shamrock Rovers",
+    "away": "Drogheda United",
+    "odds": 1.69,
     "pick": "Over Goals",
     "home_form": [
       "W",
@@ -154,11 +88,11 @@
     ]
   },
   {
-    "league": "JAPAN EMPEROR CUP",
-    "time": "18:00",
-    "home": "JEF United Ichihara Chiba",
-    "away": "Fagiano Okayama",
-    "odds": 1.71,
+    "league": "ROMANIA SUPERLIGA",
+    "time": "01:30",
+    "home": "CFR Cluj",
+    "away": "Universitatea Cluj",
+    "odds": 1.77,
     "pick": "Home Win",
     "home_form": [
       "W",
@@ -176,33 +110,11 @@
     ]
   },
   {
-    "league": "JAPAN EMPEROR CUP",
-    "time": "18:00",
-    "home": "Shonan Bellmare",
-    "away": "FC Tokyo",
-    "odds": 1.54,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "JAPAN EMPEROR CUP",
-    "time": "18:00",
-    "home": "Tokyo Verdy",
-    "away": "Gainare Tottori",
-    "odds": 1.72,
+    "league": "QATAR STARS LEAGUE",
+    "time": "01:00",
+    "home": "Al Wakrah",
+    "away": "Al Gharafa SC",
+    "odds": 1.77,
     "pick": "Over Goals",
     "home_form": [
       "W",
@@ -220,11 +132,11 @@
     ]
   },
   {
-    "league": "JAPAN EMPEROR CUP",
-    "time": "18:00",
-    "home": "Tegevajaro Miyazaki",
-    "away": "Kawasaki Frontale",
-    "odds": 1.67,
+    "league": "QATAR STARS LEAGUE",
+    "time": "22:45",
+    "home": "Al Shamal",
+    "away": "Al Duhail SC",
+    "odds": 1.8,
     "pick": "Over Goals",
     "home_form": [
       "W",
@@ -242,11 +154,11 @@
     ]
   },
   {
-    "league": "JAPAN EMPEROR CUP",
-    "time": "18:00",
-    "home": "Shimizu S Pulse",
-    "away": "V Varen Nagasaki",
-    "odds": 1.78,
+    "league": "ASEAN CLUB CHAMPIONSHIP",
+    "time": "19:30",
+    "home": "Lion City Sailors FC",
+    "away": "Cong An Ha Noi FC",
+    "odds": 1.74,
     "pick": "Home Win",
     "home_form": [
       "W",
@@ -266,9 +178,9 @@
   {
     "league": "ASEAN CLUB CHAMPIONSHIP",
     "time": "20:00",
-    "home": "Buriram United",
-    "away": "Borneo FC Samarinda",
-    "odds": 1.6,
+    "home": "Johor Darul Takzim",
+    "away": "Preah Khan Reach Svay Rieng",
+    "odds": 1.66,
     "pick": "Over Goals",
     "home_form": [
       "W",
@@ -288,52 +200,8 @@
   {
     "league": "ASEAN CLUB CHAMPIONSHIP",
     "time": "20:00",
-    "home": "Ratchaburi FC",
-    "away": "Cong An Ho Chi Minh City FC",
-    "odds": 1.51,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "ASEAN CLUB CHAMPIONSHIP",
-    "time": "21:00",
-    "home": "Kuching City FC",
-    "away": "Tampines Rovers",
-    "odds": 1.56,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "CHINA LEAGUE 1",
-    "time": "19:00",
-    "home": "Shenzhen Juniors",
-    "away": "Guangdong GZ Power",
+    "home": "Port FC [n]",
+    "away": "Persib Bandung",
     "odds": 1.8,
     "pick": "Home Win",
     "home_form": [
@@ -352,10 +220,10 @@
     ]
   },
   {
-    "league": "CHINA LEAGUE 1",
-    "time": "19:30",
-    "home": "Foshan Nanshi",
-    "away": "Guangxi Hengchen",
+    "league": "ASEAN CLUB CHAMPIONSHIP",
+    "time": "00:00",
+    "home": "UTS Rabat",
+    "away": "Renaissance de Berkane",
     "odds": 1.75,
     "pick": "Over Goals",
     "home_form": [
@@ -374,76 +242,10 @@
     ]
   },
   {
-    "league": "CHINA LEAGUE 1",
-    "time": "19:30",
-    "home": "Nanjing City",
-    "away": "Shaanxi Union",
-    "odds": 1.8,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "CHINA LEAGUE 1",
-    "time": "02:30",
-    "home": "FC Cartagena",
-    "away": "Real Murcia",
-    "odds": 1.7,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "BRAZIL SERIE A",
-    "time": "06:30",
-    "home": "Internacional RS",
-    "away": "Corinthians SP",
-    "odds": 1.66,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "BRAZIL SERIE A",
-    "time": "06:30",
-    "home": "Red Bull Bragantino SP",
-    "away": "Mirassol SP",
+    "league": "ASEAN CLUB CHAMPIONSHIP",
+    "time": "02:00",
+    "home": "FAR Rabat",
+    "away": "Wydad Temara",
     "odds": 1.69,
     "pick": "Home Win",
     "home_form": [
@@ -462,11 +264,55 @@
     ]
   },
   {
+    "league": "ASEAN CLUB CHAMPIONSHIP",
+    "time": "02:00",
+    "home": "Renaissance Zemamra",
+    "away": "Hassania Agadir",
+    "odds": 1.79,
+    "pick": "Away Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ASEAN CLUB CHAMPIONSHIP",
+    "time": "04:00",
+    "home": "Maghreb de Fes",
+    "away": "Raja Casablanca",
+    "odds": 1.77,
+    "pick": "Away Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
     "league": "BRAZIL SERIE A",
     "time": "06:30",
-    "home": "Remo PA",
-    "away": "Gremio Porto Alegrense",
-    "odds": 1.67,
+    "home": "Santos SP",
+    "away": "Flamengo RJ",
+    "odds": 1.73,
     "pick": "Home Win",
     "home_form": [
       "W",
@@ -486,31 +332,9 @@
   {
     "league": "BRAZIL SERIE A",
     "time": "07:00",
-    "home": "Vitoria BA",
-    "away": "Chapecoense SC",
-    "odds": 1.64,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "BRAZIL SERIE A",
-    "time": "07:30",
-    "home": "Botafogo RJ",
-    "away": "Vasco da Gama RJ",
-    "odds": 1.76,
+    "home": "Atl Paranaense",
+    "away": "Atletico Mineiro",
+    "odds": 1.79,
     "pick": "Home Win",
     "home_form": [
       "W",
@@ -530,9 +354,31 @@
   {
     "league": "BRAZIL SERIE A",
     "time": "08:30",
-    "home": "Cruzeiro MG",
-    "away": "Sao Paulo SP",
-    "odds": 1.74,
+    "home": "Fluminense RJ",
+    "away": "Coritiba PR",
+    "odds": 1.72,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "BRAZIL SERIE A",
+    "time": "08:30",
+    "home": "Palmeiras SP",
+    "away": "Bahia EC BA",
+    "odds": 1.54,
     "pick": "Over Goals",
     "home_form": [
       "W",
@@ -552,8 +398,96 @@
   {
     "league": "BRAZIL SERIE B",
     "time": "06:30",
-    "home": "Avai SC",
-    "away": "Londrina PR",
+    "home": "Ceara CE",
+    "away": "Criciuma EC SC",
+    "odds": 1.78,
+    "pick": "Away Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "BRAZIL SERIE B",
+    "time": "06:30",
+    "home": "Nautico PE",
+    "away": "Gremio Novorizontino SP",
+    "odds": 1.64,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "BRAZIL SERIE B",
+    "time": "07:05",
+    "home": "Atletico Nacional",
+    "away": "Deportes Tolima",
+    "odds": 1.55,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "BRAZIL SERIE B",
+    "time": "09:10",
+    "home": "Fortaleza CEIF",
+    "away": "Millonarios",
+    "odds": 1.67,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "MEXICO LIGA DE EXPANSION",
+    "time": "09:00",
+    "home": "Alebrijes de Oaxaca",
+    "away": "Correcaminos de la UAT",
     "odds": 1.69,
     "pick": "Over Goals",
     "home_form": [
@@ -572,77 +506,77 @@
     ]
   },
   {
-    "league": "BRAZIL SERIE B",
-    "time": "06:30",
-    "home": "Operario Ferroviario EC",
-    "away": "Botafogo SP",
+    "league": "PERU LIGA 1",
+    "time": "02:00",
+    "home": "Deportivo Moquegua",
+    "away": "Cienciano",
+    "odds": 1.78,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "PERU LIGA 1",
+    "time": "04:30",
+    "home": "Atletico Grau",
+    "away": "CD Los Chankas",
+    "odds": 1.61,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "PERU LIGA 1",
+    "time": "04:30",
+    "home": "Atletico FC",
+    "away": "Real Cartagena",
+    "odds": 1.59,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "PERU LIGA 1",
+    "time": "04:30",
+    "home": "Independiente Valle del Cauca",
+    "away": "Tigres FC",
     "odds": 1.8,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "BRAZIL SERIE B",
-    "time": "07:30",
-    "home": "America Mineiro",
-    "away": "Fortaleza CE",
-    "odds": 1.76,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "BRAZIL SERIE B",
-    "time": "07:30",
-    "home": "CRB Maceio",
-    "away": "AC Goianiense GO",
-    "odds": 1.8,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "BRAZIL SERIE B",
-    "time": "07:30",
-    "home": "Vila Nova GO",
-    "away": "Cuiaba MT",
-    "odds": 1.64,
     "pick": "Away Win",
     "home_form": [
       "W",
