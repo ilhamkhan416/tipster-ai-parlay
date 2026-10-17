@@ -1,9 +1,35 @@
 [
   {
-    "league": "MAINBOLAKAKI PARLAY",
-    "time": "02:45",
-    "home_team": "ITALY SERIE A",
-    "away_team": "Frosinone",
+    "league": "ENGLISH PREMIER LEAGUE",
+    "time": "19:30",
+    "home_team": "Everton",
+    "away_team": "Chelsea",
+    "selected_odds": 1.7,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Everton dan Chelsea di ENGLISH PREMIER LEAGUE."
+  },
+  {
+    "league": "ENGLISH PREMIER LEAGUE",
+    "time": "22:00",
+    "home_team": "Fulham",
+    "away_team": "Hull City",
     "selected_odds": 1.72,
     "prediction": "Home Win",
     "api_stats": {
@@ -23,221 +49,13 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa ITALY SERIE A dan Frosinone di MAINBOLAKAKI PARLAY."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Fulham dan Hull City di ENGLISH PREMIER LEAGUE."
   },
   {
-    "league": "ITALY SERIE A",
-    "time": "02:45",
-    "home_team": "Frosinone",
-    "away_team": "Sassuolo",
-    "selected_odds": 1.72,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Frosinone dan Sassuolo di ITALY SERIE A."
-  },
-  {
-    "league": "SPAIN LA LIGA",
-    "time": "03:00",
-    "home_team": "Deportivo La Coruna",
-    "away_team": "Levante UD",
-    "selected_odds": 1.74,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Deportivo La Coruna dan Levante UD di SPAIN LA LIGA."
-  },
-  {
-    "league": "GERMANY BUNDESLIGA",
-    "time": "02:30",
-    "home_team": "Eintracht Frankfurt",
-    "away_team": "FC Koln",
-    "selected_odds": 1.73,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Eintracht Frankfurt dan FC Koln di GERMANY BUNDESLIGA."
-  },
-  {
-    "league": "GERMANY BUNDESLIGA",
-    "time": "02:45",
-    "home_team": "Le Mans",
-    "away_team": "Toulouse",
-    "selected_odds": 1.74,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Le Mans dan Toulouse di GERMANY BUNDESLIGA."
-  },
-  {
-    "league": "ENGLISH CHAMPIONSHIP",
-    "time": "03:00",
-    "home_team": "Burnley",
-    "away_team": "Wolverhampton Wanderers",
-    "selected_odds": 1.76,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Burnley dan Wolverhampton Wanderers di ENGLISH CHAMPIONSHIP."
-  },
-  {
-    "league": "GERMANY BUNDESLIGA 2",
-    "time": "00:30",
-    "home_team": "Energie Cottbus",
-    "away_team": "Nurnberg",
-    "selected_odds": 1.79,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Energie Cottbus dan Nurnberg di GERMANY BUNDESLIGA 2."
-  },
-  {
-    "league": "GERMANY BUNDESLIGA 2",
-    "time": "00:30",
-    "home_team": "Holstein Kiel",
-    "away_team": "Hertha Berlin",
-    "selected_odds": 1.76,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Holstein Kiel dan Hertha Berlin di GERMANY BUNDESLIGA 2."
-  },
-  {
-    "league": "AUSTRALIA A LEAGUE",
-    "time": "17:00",
-    "home_team": "Sydney FC",
-    "away_team": "Western Sydney Wanderers FC",
-    "selected_odds": 1.71,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Sydney FC dan Western Sydney Wanderers FC di AUSTRALIA A LEAGUE."
-  },
-  {
-    "league": "AUSTRALIA A LEAGUE",
-    "time": "02:00",
-    "home_team": "SC Heerenveen",
-    "away_team": "SBV Excelsior",
+    "league": "ENGLISH PREMIER LEAGUE",
+    "time": "22:00",
+    "home_team": "Manchester City",
+    "away_team": "Ipswich Town",
     "selected_odds": 1.6,
     "prediction": "Over Goals",
     "api_stats": {
@@ -257,14 +75,14 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa SC Heerenveen dan SBV Excelsior di AUSTRALIA A LEAGUE."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Manchester City dan Ipswich Town di ENGLISH PREMIER LEAGUE."
   },
   {
-    "league": "AUSTRALIA A LEAGUE",
-    "time": "01:00",
-    "home_team": "Brommapojkarna",
-    "away_team": "Djurgardens",
-    "selected_odds": 1.78,
+    "league": "ENGLISH PREMIER LEAGUE",
+    "time": "00:30",
+    "home_team": "Newcastle United",
+    "away_team": "Aston Villa",
+    "selected_odds": 1.73,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -283,14 +101,14 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Brommapojkarna dan Djurgardens di AUSTRALIA A LEAGUE."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Newcastle United dan Aston Villa di ENGLISH PREMIER LEAGUE."
   },
   {
-    "league": "DENMARK SUPER LEAGUE",
-    "time": "01:00",
-    "home_team": "AC Horsens",
-    "away_team": "Randers FC",
-    "selected_odds": 1.8,
+    "league": "ITALY SERIE A",
+    "time": "21:00",
+    "home_team": "Venezia",
+    "away_team": "Napoli",
+    "selected_odds": 1.7,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -309,40 +127,14 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa AC Horsens dan Randers FC di DENMARK SUPER LEAGUE."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Venezia dan Napoli di ITALY SERIE A."
   },
   {
-    "league": "SPAIN LA LIGA 2",
-    "time": "02:30",
-    "home_team": "Leganes",
-    "away_team": "Cordoba CF",
-    "selected_odds": 1.68,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Leganes dan Cordoba CF di SPAIN LA LIGA 2."
-  },
-  {
-    "league": "TURKIYE SUPER LEAGUE",
-    "time": "01:00",
-    "home_team": "Corum FK",
-    "away_team": "Caykur Rizespor",
-    "selected_odds": 1.76,
+    "league": "ITALY SERIE A",
+    "time": "23:59",
+    "home_team": "Bologna",
+    "away_team": "Inter Milan",
+    "selected_odds": 1.55,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -361,40 +153,14 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Corum FK dan Caykur Rizespor di TURKIYE SUPER LEAGUE."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Bologna dan Inter Milan di ITALY SERIE A."
   },
   {
-    "league": "AUSTRIA BUNDESLIGA",
-    "time": "01:30",
-    "home_team": "Rapid Wien",
-    "away_team": "TSV Hartberg",
-    "selected_odds": 1.69,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Rapid Wien dan TSV Hartberg di AUSTRIA BUNDESLIGA."
-  },
-  {
-    "league": "ITALY SERIE B",
-    "time": "02:30",
-    "home_team": "Hellas Verona",
-    "away_team": "Catanzaro",
-    "selected_odds": 1.8,
+    "league": "ITALY SERIE A",
+    "time": "02:45",
+    "home_team": "AS Roma",
+    "away_team": "Genoa",
+    "selected_odds": 1.56,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -413,143 +179,13 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Hellas Verona dan Catanzaro di ITALY SERIE B."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa AS Roma dan Genoa di ITALY SERIE A."
   },
   {
-    "league": "ITALY SERIE B",
-    "time": "02:00",
-    "home_team": "FC Annecy",
-    "away_team": "Nancy",
-    "selected_odds": 1.8,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa FC Annecy dan Nancy di ITALY SERIE B."
-  },
-  {
-    "league": "ITALY SERIE B",
-    "time": "02:00",
-    "home_team": "Grenoble Foot",
-    "away_team": "US Boulogne",
-    "selected_odds": 1.8,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Grenoble Foot dan US Boulogne di ITALY SERIE B."
-  },
-  {
-    "league": "ITALY SERIE B",
-    "time": "02:00",
-    "home_team": "Guingamp",
-    "away_team": "Pau FC",
-    "selected_odds": 1.68,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Guingamp dan Pau FC di ITALY SERIE B."
-  },
-  {
-    "league": "ITALY SERIE B",
-    "time": "02:00",
-    "home_team": "Reims",
-    "away_team": "Dijon",
-    "selected_odds": 1.74,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Reims dan Dijon di ITALY SERIE B."
-  },
-  {
-    "league": "ITALY SERIE B",
-    "time": "02:00",
-    "home_team": "Stade Lavallois",
-    "away_team": "Clermont Foot",
-    "selected_odds": 1.8,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Stade Lavallois dan Clermont Foot di ITALY SERIE B."
-  },
-  {
-    "league": "INDONESIA SUPER LEAGUE",
-    "time": "16:30",
-    "home_team": "PSIM Yogyakarta",
-    "away_team": "PSM Makassar",
+    "league": "SPAIN LA LIGA",
+    "time": "20:00",
+    "home_team": "RCD Espanyol",
+    "away_team": "Atletico de Madrid",
     "selected_odds": 1.71,
     "prediction": "Home Win",
     "api_stats": {
@@ -569,14 +205,14 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa PSIM Yogyakarta dan PSM Makassar di INDONESIA SUPER LEAGUE."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa RCD Espanyol dan Atletico de Madrid di SPAIN LA LIGA."
   },
   {
-    "league": "INDONESIA SUPER LEAGUE",
-    "time": "20:00",
-    "home_team": "Java United FC",
-    "away_team": "Bali United",
-    "selected_odds": 1.78,
+    "league": "SPAIN LA LIGA",
+    "time": "22:15",
+    "home_team": "Villarreal CF",
+    "away_team": "Elche",
+    "selected_odds": 1.7,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -595,40 +231,40 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Java United FC dan Bali United di INDONESIA SUPER LEAGUE."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Villarreal CF dan Elche di SPAIN LA LIGA."
   },
   {
-    "league": "INDONESIA SUPER LEAGUE",
-    "time": "20:00",
-    "home_team": "Madura United",
-    "away_team": "Bhayangkara Presisi Lampung",
-    "selected_odds": 1.75,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Madura United dan Bhayangkara Presisi Lampung di INDONESIA SUPER LEAGUE."
-  },
-  {
-    "league": "INDONESIA SUPER LEAGUE",
-    "time": "20:00",
-    "home_team": "Persijap Jepara",
-    "away_team": "Isenmulang Kalteng FC",
+    "league": "SPAIN LA LIGA",
+    "time": "00:30",
+    "home_team": "Real Betis",
+    "away_team": "Barcelona",
     "selected_odds": 1.79,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Real Betis dan Barcelona di SPAIN LA LIGA."
+  },
+  {
+    "league": "SPAIN LA LIGA",
+    "time": "03:00",
+    "home_team": "Valencia CF",
+    "away_team": "Athletic Bilbao",
+    "selected_odds": 1.65,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -647,13 +283,221 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Persijap Jepara dan Isenmulang Kalteng FC di INDONESIA SUPER LEAGUE."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Valencia CF dan Athletic Bilbao di SPAIN LA LIGA."
   },
   {
-    "league": "THAILAND LEAGUE 1",
-    "time": "20:00",
-    "home_team": "Ayutthaya United",
-    "away_team": "Lamphun Warrior FC",
+    "league": "GERMANY BUNDESLIGA",
+    "time": "21:30",
+    "home_team": "Hamburger SV",
+    "away_team": "VfB Stuttgart",
+    "selected_odds": 1.8,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Hamburger SV dan VfB Stuttgart di GERMANY BUNDESLIGA."
+  },
+  {
+    "league": "GERMANY BUNDESLIGA",
+    "time": "21:30",
+    "home_team": "Schalke",
+    "away_team": "FSV Mainz",
+    "selected_odds": 1.75,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Schalke dan FSV Mainz di GERMANY BUNDESLIGA."
+  },
+  {
+    "league": "GERMANY BUNDESLIGA",
+    "time": "21:30",
+    "home_team": "SV Elversberg",
+    "away_team": "Augsburg",
+    "selected_odds": 1.77,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa SV Elversberg dan Augsburg di GERMANY BUNDESLIGA."
+  },
+  {
+    "league": "GERMANY BUNDESLIGA",
+    "time": "21:30",
+    "home_team": "Union Berlin",
+    "away_team": "Borussia Dortmund",
+    "selected_odds": 1.57,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Union Berlin dan Borussia Dortmund di GERMANY BUNDESLIGA."
+  },
+  {
+    "league": "GERMANY BUNDESLIGA",
+    "time": "21:30",
+    "home_team": "Werder Bremen",
+    "away_team": "SC Paderborn",
+    "selected_odds": 1.77,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Werder Bremen dan SC Paderborn di GERMANY BUNDESLIGA."
+  },
+  {
+    "league": "GERMANY BUNDESLIGA",
+    "time": "00:30",
+    "home_team": "Bayern Munchen",
+    "away_team": "RB Leipzig",
+    "selected_odds": 1.79,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Bayern Munchen dan RB Leipzig di GERMANY BUNDESLIGA."
+  },
+  {
+    "league": "GERMANY BUNDESLIGA",
+    "time": "23:15",
+    "home_team": "Strasbourg",
+    "away_team": "Paris Saint Germain",
+    "selected_odds": 1.74,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Strasbourg dan Paris Saint Germain di GERMANY BUNDESLIGA."
+  },
+  {
+    "league": "GERMANY BUNDESLIGA",
+    "time": "02:45",
+    "home_team": "Lille",
+    "away_team": "Brest",
+    "selected_odds": 1.8,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Lille dan Brest di GERMANY BUNDESLIGA."
+  },
+  {
+    "league": "GERMANY BUNDESLIGA",
+    "time": "02:45",
+    "home_team": "Troyes",
+    "away_team": "Lens",
     "selected_odds": 1.73,
     "prediction": "Home Win",
     "api_stats": {
@@ -673,13 +517,91 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Ayutthaya United dan Lamphun Warrior FC di THAILAND LEAGUE 1."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Troyes dan Lens di GERMANY BUNDESLIGA."
   },
   {
-    "league": "CHINA FOOTBALL SUPER LEAGUE",
-    "time": "19:35",
-    "home_team": "Henan FC",
-    "away_team": "Tianjin Jinmen Tiger",
+    "league": "ENGLISH CHAMPIONSHIP",
+    "time": "19:30",
+    "home_team": "Middlesbrough",
+    "away_team": "Cardiff City",
+    "selected_odds": 1.78,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Middlesbrough dan Cardiff City di ENGLISH CHAMPIONSHIP."
+  },
+  {
+    "league": "ENGLISH CHAMPIONSHIP",
+    "time": "19:30",
+    "home_team": "Millwall",
+    "away_team": "Lincoln City",
+    "selected_odds": 1.51,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Millwall dan Lincoln City di ENGLISH CHAMPIONSHIP."
+  },
+  {
+    "league": "ENGLISH CHAMPIONSHIP",
+    "time": "19:30",
+    "home_team": "Watford",
+    "away_team": "Charlton Athletic",
+    "selected_odds": 1.74,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Watford dan Charlton Athletic di ENGLISH CHAMPIONSHIP."
+  },
+  {
+    "league": "ENGLISH CHAMPIONSHIP",
+    "time": "22:00",
+    "home_team": "Birmingham City",
+    "away_team": "Queens Park Rangers",
     "selected_odds": 1.78,
     "prediction": "Home Win",
     "api_stats": {
@@ -699,40 +621,14 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Henan FC dan Tianjin Jinmen Tiger di CHINA FOOTBALL SUPER LEAGUE."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Birmingham City dan Queens Park Rangers di ENGLISH CHAMPIONSHIP."
   },
   {
-    "league": "CHINA FOOTBALL SUPER LEAGUE",
-    "time": "02:45",
-    "home_team": "Bohemians",
-    "away_team": "Waterford FC",
-    "selected_odds": 1.52,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Bohemians dan Waterford FC di CHINA FOOTBALL SUPER LEAGUE."
-  },
-  {
-    "league": "CHINA FOOTBALL SUPER LEAGUE",
-    "time": "02:45",
-    "home_team": "Drogheda United",
-    "away_team": "Derry City",
-    "selected_odds": 1.74,
+    "league": "ENGLISH CHAMPIONSHIP",
+    "time": "22:00",
+    "home_team": "Bristol City",
+    "away_team": "Sheffield United",
+    "selected_odds": 1.8,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -751,13 +647,39 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Drogheda United dan Derry City di CHINA FOOTBALL SUPER LEAGUE."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Bristol City dan Sheffield United di ENGLISH CHAMPIONSHIP."
   },
   {
-    "league": "CHINA FOOTBALL SUPER LEAGUE",
-    "time": "02:45",
-    "home_team": "Galway United",
-    "away_team": "Shamrock Rovers",
+    "league": "ENGLISH CHAMPIONSHIP",
+    "time": "22:00",
+    "home_team": "Derby County",
+    "away_team": "Stoke City",
+    "selected_odds": 1.71,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Derby County dan Stoke City di ENGLISH CHAMPIONSHIP."
+  },
+  {
+    "league": "ENGLISH CHAMPIONSHIP",
+    "time": "22:00",
+    "home_team": "Norwich City",
+    "away_team": "Portsmouth",
     "selected_odds": 1.76,
     "prediction": "Home Win",
     "api_stats": {
@@ -777,6 +699,84 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Galway United dan Shamrock Rovers di CHINA FOOTBALL SUPER LEAGUE."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Norwich City dan Portsmouth di ENGLISH CHAMPIONSHIP."
+  },
+  {
+    "league": "ENGLISH CHAMPIONSHIP",
+    "time": "22:00",
+    "home_team": "Southampton",
+    "away_team": "Bolton Wanderers",
+    "selected_odds": 1.74,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Southampton dan Bolton Wanderers di ENGLISH CHAMPIONSHIP."
+  },
+  {
+    "league": "ENGLISH CHAMPIONSHIP",
+    "time": "22:00",
+    "home_team": "Swansea City",
+    "away_team": "West Ham United",
+    "selected_odds": 1.74,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Swansea City dan West Ham United di ENGLISH CHAMPIONSHIP."
+  },
+  {
+    "league": "ENGLISH CHAMPIONSHIP",
+    "time": "22:00",
+    "home_team": "West Bromwich Albion",
+    "away_team": "Blackburn Rovers",
+    "selected_odds": 1.7,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa West Bromwich Albion dan Blackburn Rovers di ENGLISH CHAMPIONSHIP."
   }
 ]
