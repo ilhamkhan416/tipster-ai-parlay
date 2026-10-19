@@ -1,54 +1,10 @@
 [
   {
-    "league": "AUSTRALIA A LEAGUE",
-    "time": "10:00",
-    "home": "Wellington Phoenix FC",
-    "away": "Melbourne Victory",
-    "odds": 1.75,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "USA MAJOR LEAGUE SOCCER",
-    "time": "10:30",
-    "home": "L A Galaxy",
-    "away": "San Diego FC",
-    "odds": 1.78,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "USA MAJOR LEAGUE SOCCER",
-    "time": "10:30",
-    "home": "Portland Timbers",
-    "away": "Colorado Rapids",
-    "odds": 1.74,
+    "league": "MAINBOLAKAKI PARLAY",
+    "time": "09:00",
+    "home": "MEXICO PRIMERA DIVISION",
+    "away": "Monterrey",
+    "odds": 1.59,
     "pick": "Home Win",
     "home_form": [
       "W",
@@ -66,252 +22,10 @@
     ]
   },
   {
-    "league": "USA MAJOR LEAGUE SOCCER",
-    "time": "10:30",
-    "home": "San Jose Earthquakes",
-    "away": "Nashville SC",
-    "odds": 1.74,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "USA MAJOR LEAGUE SOCCER",
+    "league": "MAINBOLAKAKI PARLAY",
     "time": "09:00",
-    "home": "Club Leon",
-    "away": "Club America",
-    "odds": 1.76,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "USA MAJOR LEAGUE SOCCER",
-    "time": "09:00",
-    "home": "Deportivo Toluca",
-    "away": "Atletico San Luis",
-    "odds": 1.79,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "USA MAJOR LEAGUE SOCCER",
-    "time": "11:00",
-    "home": "Cruz Azul",
-    "away": "FC Juarez",
-    "odds": 1.79,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "USA MAJOR LEAGUE SOCCER",
-    "time": "09:10",
-    "home": "Independiente Medellin",
-    "away": "Once Caldas",
-    "odds": 1.76,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "MEXICO LIGA DE EXPANSION",
-    "time": "09:00",
-    "home": "Atletico Morelia",
-    "away": "Jaiba Brava",
-    "odds": 1.79,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "MEXICO LIGA DE EXPANSION",
-    "time": "09:00",
-    "home": "Cancun FC",
-    "away": "Venados FC",
-    "odds": 1.76,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "MEXICO LIGA DE EXPANSION",
-    "time": "09:00",
-    "home": "Piratas FC",
-    "away": "Tepatitlan FC",
-    "odds": 1.69,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "MEXICO LIGA DE EXPANSION",
-    "time": "11:00",
-    "home": "Alacranes de Durango",
-    "away": "CD Tapatio",
-    "odds": 1.71,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "PERU LIGA 1",
-    "time": "09:30",
-    "home": "Alianza Lima",
-    "away": "Atletico Grau",
-    "odds": 1.68,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "PERU LIGA 1",
-    "time": "10:00",
-    "home": "Inter de San Carlos",
-    "away": "Alajuelense",
-    "odds": 1.62,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "USL CHAMPIONSHIP",
-    "time": "10:00",
-    "home": "Monterey Bay FC",
-    "away": "Colorado Springs Switchbacks FC",
+    "home": "Monterrey",
+    "away": "Pachuca",
     "odds": 1.59,
     "pick": "Over Goals",
     "home_form": [
@@ -330,12 +44,12 @@
     ]
   },
   {
-    "league": "USL CHAMPIONSHIP",
-    "time": "10:00",
-    "home": "Orange County SC",
-    "away": "Phoenix Rising FC",
-    "odds": 1.78,
-    "pick": "Over Goals",
+    "league": "MAINBOLAKAKI PARLAY",
+    "time": "09:10",
+    "home": "Deportivo Cali",
+    "away": "Junior Barranquilla",
+    "odds": 1.62,
+    "pick": "Home Win",
     "home_form": [
       "W",
       "D",
@@ -352,34 +66,12 @@
     ]
   },
   {
-    "league": "USL CHAMPIONSHIP",
-    "time": "10:30",
-    "home": "Las Vegas Lights FC",
-    "away": "Lexington SC",
-    "odds": 1.72,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "NICARAGUA LIGA PRIMERA",
-    "time": "09:00",
-    "home": "Managua FC",
-    "away": "Matagalpa FC",
-    "odds": 1.58,
-    "pick": "Over Goals",
+    "league": "GUATEMALA LIGA NATIONAL",
+    "time": "10:10",
+    "home": "Marquense",
+    "away": "CSD Suchitepequez",
+    "odds": 1.77,
+    "pick": "Home Win",
     "home_form": [
       "W",
       "D",
@@ -398,9 +90,9 @@
   {
     "league": "NICARAGUA LIGA PRIMERA",
     "time": "09:00",
-    "home": "Monterrey [w]",
-    "away": "Cruz Azul [w]",
-    "odds": 1.64,
+    "home": "Rancho Santana FC",
+    "away": "Diriangen FC",
+    "odds": 1.65,
     "pick": "Over Goals",
     "home_form": [
       "W",
