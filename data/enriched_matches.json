@@ -1,86 +1,11 @@
 [
   {
-    "league": "ENGLISH PREMIER LEAGUE",
-    "time": "04:00",
-    "home_team": "Newcastle United",
-    "away_team": "Everton",
-    "selected_odds": 1.74,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "ITALY SERIE A",
-    "time": "01:30",
-    "home_team": "Sassuolo",
-    "away_team": "Fiorentina",
-    "selected_odds": 1.78,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "ITALY SERIE A",
-    "time": "03:45",
-    "home_team": "Atalanta",
-    "away_team": "Parma",
-    "selected_odds": 1.77,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "SPAIN LA LIGA",
-    "time": "04:00",
-    "home_team": "Deportivo La Coruna",
-    "away_team": "CA Osasuna",
+    "league": "UEFA CHAMPIONS LEAGUE",
+    "time": "01:45",
+    "home_team": "Galatasaray",
+    "away_team": "VfB Stuttgart",
     "selected_odds": 1.72,
-    "prediction": "Home Win",
+    "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
@@ -100,36 +25,211 @@
     }
   },
   {
-    "league": "SPAIN LA LIGA",
+    "league": "UEFA CHAMPIONS LEAGUE",
+    "time": "01:45",
+    "home_team": "Shakhtar Donetsk [n]",
+    "away_team": "Sporting Lisbon",
+    "selected_odds": 1.8,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA CHAMPIONS LEAGUE",
+    "time": "04:00",
+    "home_team": "Atletico de Madrid",
+    "away_team": "Bayern Munchen",
+    "selected_odds": 1.79,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA CHAMPIONS LEAGUE",
+    "time": "04:00",
+    "home_team": "Barcelona",
+    "away_team": "Aston Villa",
+    "selected_odds": 1.58,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA CHAMPIONS LEAGUE",
+    "time": "04:00",
+    "home_team": "Bodo Glimt",
+    "away_team": "Lille",
+    "selected_odds": 1.78,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA CHAMPIONS LEAGUE",
+    "time": "04:00",
+    "home_team": "Feyenoord",
+    "away_team": "Inter Milan",
+    "selected_odds": 1.8,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA CHAMPIONS LEAGUE",
+    "time": "04:00",
+    "home_team": "LASK Linz",
+    "away_team": "Slovan Bratislava",
+    "selected_odds": 1.79,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA CHAMPIONS LEAGUE",
+    "time": "04:00",
+    "home_team": "Manchester United",
+    "away_team": "AS Roma",
+    "selected_odds": 1.78,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA CHAMPIONS LEAGUE",
+    "time": "04:00",
+    "home_team": "Villarreal CF",
+    "away_team": "Paris Saint Germain",
+    "selected_odds": 1.66,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "ENGLISH CHAMPIONSHIP",
     "time": "03:45",
-    "home_team": "Lorient",
-    "away_team": "Brest",
-    "selected_odds": 1.78,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "SPAIN LA LIGA",
-    "time": "02:00",
-    "home_team": "GAIS Goteborg",
-    "away_team": "AIK Fotboll",
-    "selected_odds": 1.79,
+    "home_team": "Blackburn Rovers",
+    "away_team": "Stoke City",
+    "selected_odds": 1.65,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -150,185 +250,10 @@
     }
   },
   {
-    "league": "SPAIN LA LIGA",
-    "time": "02:00",
-    "home_team": "Mjallby",
-    "away_team": "Kalmar",
-    "selected_odds": 1.79,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "DENMARK SUPER LEAGUE",
-    "time": "02:00",
-    "home_team": "Sonderjyske",
-    "away_team": "FC Copenhagen",
-    "selected_odds": 1.7,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "DENMARK SUPER LEAGUE",
-    "time": "00:00",
-    "home_team": "Inter Turku",
-    "away_team": "Gnistan Helsinki",
-    "selected_odds": 1.7,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "DENMARK SUPER LEAGUE",
-    "time": "00:00",
-    "home_team": "Vaasa VPS",
-    "away_team": "HJK Helsinki",
-    "selected_odds": 1.78,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "LIGA PORTUGAL",
-    "time": "04:15",
-    "home_team": "Benfica",
-    "away_team": "FC Alverca",
-    "selected_odds": 1.79,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "LIGA PORTUGAL",
-    "time": "04:15",
-    "home_team": "Gil Vicente",
-    "away_team": "Vitoria Guimaraes",
-    "selected_odds": 1.69,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "21:00",
-    "home_team": "Tenerife",
-    "away_team": "FC Andorra",
-    "selected_odds": 1.67,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "23:15",
-    "home_team": "Real Oviedo",
-    "away_team": "Las Palmas",
+    "league": "ENGLISH CHAMPIONSHIP",
+    "time": "03:45",
+    "home_team": "Charlton Athletic",
+    "away_team": "Bolton Wanderers",
     "selected_odds": 1.71,
     "prediction": "Home Win",
     "api_stats": {
@@ -350,11 +275,36 @@
     }
   },
   {
-    "league": "SPAIN LA LIGA 2",
-    "time": "01:30",
-    "home_team": "Real Valladolid",
-    "away_team": "Leganes",
-    "selected_odds": 1.8,
+    "league": "ENGLISH CHAMPIONSHIP",
+    "time": "03:45",
+    "home_team": "Derby County",
+    "away_team": "Norwich City",
+    "selected_odds": 1.73,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "ENGLISH CHAMPIONSHIP",
+    "time": "03:45",
+    "home_team": "Portsmouth",
+    "away_team": "Swansea City",
+    "selected_odds": 1.7,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -375,61 +325,111 @@
     }
   },
   {
-    "league": "SPAIN LA LIGA 2",
+    "league": "ENGLISH CHAMPIONSHIP",
+    "time": "03:45",
+    "home_team": "Preston North End",
+    "away_team": "Sheffield United",
+    "selected_odds": 1.7,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "ENGLISH CHAMPIONSHIP",
+    "time": "03:45",
+    "home_team": "Queens Park Rangers",
+    "away_team": "Burnley",
+    "selected_odds": 1.76,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "ENGLISH CHAMPIONSHIP",
+    "time": "03:45",
+    "home_team": "Watford",
+    "away_team": "Lincoln City",
+    "selected_odds": 1.76,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "ENGLISH CHAMPIONSHIP",
     "time": "04:00",
-    "home_team": "RCD Mallorca",
-    "away_team": "Cadiz",
-    "selected_odds": 1.68,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "AFC CHAMPIONS LEAGUE ELITE",
-    "time": "21:45",
-    "home_team": "Pakhtakor Tashkent",
-    "away_team": "Al Nassr Riyadh",
-    "selected_odds": 1.75,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "AFC CHAMPIONS LEAGUE ELITE",
-    "time": "00:00",
-    "home_team": "Al Sadd Doha",
-    "away_team": "Al Ahli Jeddah",
+    "home_team": "Birmingham City",
+    "away_team": "Millwall",
     "selected_odds": 1.79,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "ENGLISH CHAMPIONSHIP",
+    "time": "04:00",
+    "home_team": "West Bromwich Albion",
+    "away_team": "Southampton",
+    "selected_odds": 1.76,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -450,11 +450,11 @@
     }
   },
   {
-    "league": "AFC CHAMPIONS LEAGUE ELITE",
-    "time": "00:00",
-    "home_team": "Al Wasl",
-    "away_team": "Al Quwa Al Jawiya",
-    "selected_odds": 1.64,
+    "league": "ENGLISH CHAMPIONSHIP",
+    "time": "02:00",
+    "home_team": "IK Sirius FK",
+    "away_team": "Halmstads",
+    "selected_odds": 1.61,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -475,11 +475,86 @@
     }
   },
   {
-    "league": "AFC CHAMPIONS LEAGUE ELITE",
-    "time": "00:00",
-    "home_team": "Tractor Sazi [n]",
-    "away_team": "FC Neftchi Fergana",
-    "selected_odds": 1.62,
+    "league": "JAPAN J2 LEAGUE",
+    "time": "12:55",
+    "home_team": "Kataller Toyama",
+    "away_team": "Vegalta Sendai",
+    "selected_odds": 1.78,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "JAPAN J2 LEAGUE",
+    "time": "13:00",
+    "home_team": "Fujieda MYFC",
+    "away_team": "Jubilo Iwata",
+    "selected_odds": 1.75,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "JAPAN J2 LEAGUE",
+    "time": "13:00",
+    "home_team": "Montedio Yamagata",
+    "away_team": "Tokushima Vortis",
+    "selected_odds": 1.7,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "JAPAN J2 LEAGUE",
+    "time": "13:00",
+    "home_team": "Oita Trinita",
+    "away_team": "Vanraure Hachinohe FC",
+    "selected_odds": 1.78,
     "prediction": "Away Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -500,11 +575,11 @@
     }
   },
   {
-    "league": "AFC CHAMPIONS LEAGUE ELITE",
-    "time": "02:15",
-    "home_team": "Al Gharafa SC",
-    "away_team": "Al Qadisiya Al Khubar",
-    "selected_odds": 1.71,
+    "league": "JAPAN J2 LEAGUE",
+    "time": "13:00",
+    "home_team": "RB Omiya Ardija",
+    "away_team": "Iwaki FC",
+    "selected_odds": 1.79,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -525,86 +600,11 @@
     }
   },
   {
-    "league": "AFC CHAMPIONS LEAGUE ELITE",
-    "time": "02:15",
-    "home_team": "Al Ittihad Jeddah",
-    "away_team": "Al Ain Abu Dhabi",
-    "selected_odds": 1.8,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "TURKIYE SUPER LEAGUE",
-    "time": "01:00",
-    "home_team": "Genclerbirligi",
-    "away_team": "Alanyaspor",
-    "selected_odds": 1.68,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "RUSSIA PREMIER LEAGUE",
-    "time": "23:00",
-    "home_team": "PFC Krylia Sovetov",
-    "away_team": "Zenit St  Petersburg",
-    "selected_odds": 1.5,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "RUSSIA PREMIER LEAGUE",
-    "time": "03:45",
-    "home_team": "Red Star Saint Ouen",
-    "away_team": "Nancy",
-    "selected_odds": 1.68,
+    "league": "JAPAN J2 LEAGUE",
+    "time": "13:00",
+    "home_team": "Shonan Bellmare",
+    "away_team": "Sagan Tosu",
+    "selected_odds": 1.75,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -625,36 +625,36 @@
     }
   },
   {
-    "league": "RUSSIA PREMIER LEAGUE",
-    "time": "03:45",
-    "home_team": "Reims",
-    "away_team": "Sochaux",
-    "selected_odds": 1.7,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "RUSSIA PREMIER LEAGUE",
-    "time": "02:00",
-    "home_team": "Osters",
-    "away_team": "Helsingborgs",
+    "league": "JAPAN J2 LEAGUE",
+    "time": "13:00",
+    "home_team": "Tegevajaro Miyazaki",
+    "away_team": "Tochigi City FC",
     "selected_odds": 1.76,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "JAPAN J2 LEAGUE",
+    "time": "13:00",
+    "home_team": "Ventforet Kofu",
+    "away_team": "Albirex Niigata",
+    "selected_odds": 1.79,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -675,11 +675,36 @@
     }
   },
   {
-    "league": "RUSSIA PREMIER LEAGUE",
-    "time": "02:05",
-    "home_team": "Landskrona BoIS",
-    "away_team": "Orebro",
+    "league": "JAPAN J2 LEAGUE",
+    "time": "13:00",
+    "home_team": "Yokohama FC",
+    "away_team": "Blaublitz Akita",
     "selected_odds": 1.69,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "JAPAN J2 LEAGUE",
+    "time": "13:50",
+    "home_team": "FC Imabari",
+    "away_team": "Hokkaido Consadole Sapporo",
+    "selected_odds": 1.68,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -700,36 +725,11 @@
     }
   },
   {
-    "league": "THAILAND LEAGUE 1",
-    "time": "01:00",
-    "home_team": "Radomiak Radom",
-    "away_team": "Slask Wroclaw",
-    "selected_odds": 1.67,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "THAILAND LEAGUE 1",
-    "time": "01:00",
-    "home_team": "Zaglebie Lubin",
-    "away_team": "Korona Kielce",
-    "selected_odds": 1.74,
+    "league": "AFC CHAMPIONS LEAGUE ELITE",
+    "time": "15:45",
+    "home_team": "Newcastle Jets",
+    "away_team": "Shanghai Port FC",
+    "selected_odds": 1.7,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
