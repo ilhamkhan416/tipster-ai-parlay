@@ -1,10 +1,10 @@
 [
   {
-    "league": "UEFA EUROPA LEAGUE",
-    "time": "01:45",
-    "home": "AC Milan",
-    "away": "Ferencvarosi TC",
-    "odds": 1.79,
+    "league": "ENGLISH PREMIER LEAGUE",
+    "time": "04:00",
+    "home": "Everton",
+    "away": "Coventry City",
+    "odds": 1.71,
     "pick": "Over Goals",
     "home_form": [
       "W",
@@ -22,33 +22,11 @@
     ]
   },
   {
-    "league": "UEFA EUROPA LEAGUE",
-    "time": "01:45",
-    "home": "Crystal Palace",
-    "away": "TSG   Hoffenheim",
-    "odds": 1.75,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA EUROPA LEAGUE",
-    "time": "01:45",
-    "home": "Levski Sofia",
-    "away": "Jagiellonia Bialystok",
-    "odds": 1.78,
+    "league": "ITALY SERIE A",
+    "time": "03:45",
+    "home": "Venezia",
+    "away": "Udinese",
+    "odds": 1.68,
     "pick": "Home Win",
     "home_form": [
       "W",
@@ -66,99 +44,11 @@
     ]
   },
   {
-    "league": "UEFA EUROPA LEAGUE",
-    "time": "01:45",
-    "home": "Lillestrom",
-    "away": "Viktoria Plzen",
-    "odds": 1.7,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA EUROPA LEAGUE",
-    "time": "01:45",
-    "home": "NEC Nijmegen",
-    "away": "Omonia Nicosia",
-    "odds": 1.76,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA EUROPA LEAGUE",
-    "time": "01:45",
-    "home": "Real Sociedad",
-    "away": "Lyon",
-    "odds": 1.65,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA EUROPA LEAGUE",
-    "time": "01:45",
-    "home": "RSC Anderlecht",
-    "away": "Red Bull Salzburg",
-    "odds": 1.79,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA EUROPA LEAGUE",
-    "time": "01:45",
-    "home": "Sparta Praha",
-    "away": "Bournemouth AFC",
-    "odds": 1.75,
+    "league": "SPAIN LA LIGA",
+    "time": "04:00",
+    "home": "Sevilla",
+    "away": "Deportivo Alaves",
+    "odds": 1.8,
     "pick": "Home Win",
     "home_form": [
       "W",
@@ -176,296 +66,10 @@
     ]
   },
   {
-    "league": "UEFA EUROPA LEAGUE",
-    "time": "04:00",
-    "home": "AZ Alkmaar",
-    "away": "Juventus",
-    "odds": 1.79,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA EUROPA LEAGUE",
-    "time": "04:00",
-    "home": "Bayer   Leverkusen",
-    "away": "Marseille",
-    "odds": 1.79,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA EUROPA LEAGUE",
-    "time": "04:00",
-    "home": "Benfica",
-    "away": "Lech Poznan",
-    "odds": 1.73,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA EUROPA LEAGUE",
-    "time": "04:00",
-    "home": "Celta Vigo",
-    "away": "Union Saint Gilloise",
-    "odds": 1.69,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA EUROPA LEAGUE",
-    "time": "04:00",
-    "home": "Celtic",
-    "away": "Besiktas",
-    "odds": 1.69,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA EUROPA LEAGUE",
-    "time": "04:00",
-    "home": "Hapoel Beer Sheva [n]",
-    "away": "OFI Crete",
-    "odds": 1.59,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA EUROPA LEAGUE",
-    "time": "04:00",
-    "home": "SCU Torreense [n]",
-    "away": "FC Ararat Armenia",
-    "odds": 1.79,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA EUROPA LEAGUE",
-    "time": "04:00",
-    "home": "Sturm Graz",
-    "away": "NK Celje",
-    "odds": 1.76,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA CONFERENCE LEAGUE",
-    "time": "01:45",
-    "home": "AGF Aarhus [n]",
-    "away": "Sporting Braga",
-    "odds": 1.79,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA CONFERENCE LEAGUE",
-    "time": "01:45",
-    "home": "Atalanta",
-    "away": "Kairat Almaty",
-    "odds": 1.72,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA CONFERENCE LEAGUE",
-    "time": "01:45",
-    "home": "Crvena Zvezda",
-    "away": "Inter Club D Escaldes",
-    "odds": 1.78,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA CONFERENCE LEAGUE",
-    "time": "01:45",
-    "home": "KuPS [n]",
-    "away": "KAA Gent",
-    "odds": 1.58,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA CONFERENCE LEAGUE",
-    "time": "01:45",
-    "home": "Lincoln Red Imps FC [n]",
-    "away": "Hajduk Split",
-    "odds": 1.78,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA CONFERENCE LEAGUE",
-    "time": "01:45",
-    "home": "Midtjylland",
-    "away": "Ajax",
+    "league": "GERMANY BUNDESLIGA",
+    "time": "03:30",
+    "home": "Hamburger SV",
+    "away": "Borussia Monchengladbach",
     "odds": 1.8,
     "pick": "Over Goals",
     "home_form": [
@@ -484,33 +88,11 @@
     ]
   },
   {
-    "league": "UEFA CONFERENCE LEAGUE",
-    "time": "01:45",
-    "home": "Mjallby [n]",
-    "away": "FK Borac Banja Luka",
-    "odds": 1.67,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA CONFERENCE LEAGUE",
-    "time": "01:45",
-    "home": "Thun",
-    "away": "Heart of Midlothian",
-    "odds": 1.79,
+    "league": "ENGLISH FA CUP",
+    "time": "03:30",
+    "home": "Bristol Rovers",
+    "away": "Cambridge United",
+    "odds": 1.8,
     "pick": "Over Goals",
     "home_form": [
       "W",
@@ -528,32 +110,10 @@
     ]
   },
   {
-    "league": "UEFA CONFERENCE LEAGUE",
-    "time": "01:45",
-    "home": "Trabzonspor",
-    "away": "SC Freiburg",
-    "odds": 1.73,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "UEFA CONFERENCE LEAGUE",
-    "time": "04:00",
-    "home": "AS Monaco",
-    "away": "Nordsjaelland",
+    "league": "ENGLISH FA CUP",
+    "time": "03:45",
+    "home": "Oxford City",
+    "away": "Leicester City",
     "odds": 1.78,
     "pick": "Over Goals",
     "home_form": [
@@ -572,11 +132,11 @@
     ]
   },
   {
-    "league": "UEFA CONFERENCE LEAGUE",
-    "time": "04:00",
-    "home": "CS Universitatea Craiova",
-    "away": "Egnatia Rrogozhine",
-    "odds": 1.65,
+    "league": "ENGLISH FA CUP",
+    "time": "03:45",
+    "home": "Toulouse",
+    "away": "Strasbourg",
+    "odds": 1.75,
     "pick": "Over Goals",
     "home_form": [
       "W",
@@ -594,10 +154,208 @@
     ]
   },
   {
-    "league": "UEFA CONFERENCE LEAGUE",
+    "league": "ENGLISH CHAMPIONSHIP",
     "time": "04:00",
-    "home": "FC Copenhagen",
-    "away": "Iberia",
+    "home": "Derby County",
+    "away": "Bolton Wanderers",
+    "odds": 1.75,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "GERMANY BUNDESLIGA 2",
+    "time": "01:30",
+    "home": "Dynamo Dresden",
+    "away": "Greuther Furth",
+    "odds": 1.8,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "GERMANY BUNDESLIGA 2",
+    "time": "01:30",
+    "home": "Eintracht Braunschweig",
+    "away": "Energie Cottbus",
+    "odds": 1.78,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "AUSTRALIA A LEAGUE",
+    "time": "16:40",
+    "home": "Sydney FC",
+    "away": "Central Coast Mariners",
+    "odds": 1.51,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "AUSTRALIA A LEAGUE",
+    "time": "03:00",
+    "home": "Willem II",
+    "away": "PEC Zwolle",
+    "odds": 1.76,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "AUSTRALIA A LEAGUE",
+    "time": "02:00",
+    "home": "Hammarby",
+    "away": "Elfsborg",
+    "odds": 1.78,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "DENMARK SUPER LEAGUE",
+    "time": "02:00",
+    "home": "Silkeborg",
+    "away": "Lyngby",
+    "odds": 1.73,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "LIGA PORTUGAL",
+    "time": "04:45",
+    "home": "Famalicao",
+    "away": "Arouca",
+    "odds": 1.71,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "LIGA PORTUGAL",
+    "time": "03:45",
+    "home": "Standard Liege",
+    "away": "SK Beveren",
+    "odds": 1.78,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "TURKIYE SUPER LEAGUE",
+    "time": "01:00",
+    "home": "Gaziantep FK",
+    "away": "Kasimpasa",
     "odds": 1.67,
     "pick": "Over Goals",
     "home_form": [
@@ -616,11 +374,11 @@
     ]
   },
   {
-    "league": "UEFA CONFERENCE LEAGUE",
-    "time": "04:00",
-    "home": "Getafe CF",
-    "away": "Brighton & Hove Albion",
-    "odds": 1.75,
+    "league": "RUSSIA PREMIER LEAGUE",
+    "time": "00:30",
+    "home": "Lokomotiv Moscow",
+    "away": "Rubin Kazan",
+    "odds": 1.71,
     "pick": "Home Win",
     "home_form": [
       "W",
@@ -638,11 +396,253 @@
     ]
   },
   {
-    "league": "UEFA CONFERENCE LEAGUE",
-    "time": "04:00",
-    "home": "Lugano",
-    "away": "Kauno Zalgiris",
+    "league": "AUSTRIA BUNDESLIGA",
+    "time": "02:30",
+    "home": "Rapid Wien",
+    "away": "Wolfsberger AC",
+    "odds": 1.59,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ITALY SERIE B",
+    "time": "03:30",
+    "home": "Ascoli",
+    "away": "Palermo",
+    "odds": 1.7,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ITALY SERIE B",
+    "time": "03:00",
+    "home": "Nancy",
+    "away": "Sochaux",
+    "odds": 1.62,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ITALY SERIE B",
+    "time": "03:00",
+    "home": "US Boulogne",
+    "away": "FC Annecy",
+    "odds": 1.78,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ITALY SERIE B",
+    "time": "03:00",
+    "home": "Dijon",
+    "away": "Red Star Saint Ouen",
+    "odds": 1.73,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ITALY SERIE B",
+    "time": "03:00",
+    "home": "Grenoble Foot",
+    "away": "Reims",
+    "odds": 1.8,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ITALY SERIE B",
+    "time": "03:00",
+    "home": "Montpellier",
+    "away": "Metz",
+    "odds": 1.79,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ITALY SERIE B",
+    "time": "03:00",
+    "home": "USL Dunkerque",
+    "away": "Guingamp",
+    "odds": 1.78,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "INDONESIA SUPER LEAGUE",
+    "time": "16:30",
+    "home": "PSIM Yogyakarta",
+    "away": "Dewa United FC",
+    "odds": 1.71,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "INDONESIA SUPER LEAGUE",
+    "time": "20:00",
+    "home": "Madura United",
+    "away": "Arema FC",
     "odds": 1.74,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "THAILAND LEAGUE 1",
+    "time": "20:00",
+    "home": "Lamphun Warrior FC",
+    "away": "Sukhothai FC",
+    "odds": 1.57,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "THAILAND LEAGUE 1",
+    "time": "01:00",
+    "home": "Motor Lublin",
+    "away": "Wisla Plock",
+    "odds": 1.8,
     "pick": "Over Goals",
     "home_form": [
       "W",
