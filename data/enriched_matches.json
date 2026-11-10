@@ -2,9 +2,9 @@
   {
     "league": "MAINBOLAKAKI PARLAY",
     "time": "02:00",
-    "home_team": "NORWAY ELITESERIEN",
-    "away_team": "Kristiansund",
-    "selected_odds": 1.79,
+    "home_team": "SPAIN CUP",
+    "away_team": "CD Pamplona [n]",
+    "selected_odds": 1.76,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -25,10 +25,185 @@
     }
   },
   {
-    "league": "NORWAY ELITESERIEN",
+    "league": "SPAIN CUP",
     "time": "02:00",
-    "home_team": "Kristiansund",
-    "away_team": "Valerenga",
+    "home_team": "CD Pamplona [n]",
+    "away_team": "SD Eibar",
+    "selected_odds": 1.76,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "SPAIN CUP",
+    "time": "03:00",
+    "home_team": "CP Mijas Las Lagunas [n]",
+    "away_team": "Real Jaen",
+    "selected_odds": 1.75,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "SPAIN CUP",
+    "time": "03:00",
+    "home_team": "Leganes",
+    "away_team": "Trival Valderas",
+    "selected_odds": 1.75,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "SPAIN CUP",
+    "time": "03:00",
+    "home_team": "SD Amorebieta",
+    "away_team": "UD Logrones",
+    "selected_odds": 1.73,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "EGYPT CUP",
+    "time": "23:00",
+    "home_team": "Arab Contractors [n]",
+    "away_team": "Telecom Egypt SC",
+    "selected_odds": 1.61,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "FOUR NATIONS TOURNAMENT U23 [ IN VIETNAM ]",
+    "time": "16:00",
+    "home_team": "Qatar U",
+    "away_team": "Singapore U",
+    "selected_odds": 1.59,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "FOUR NATIONS TOURNAMENT U23 [ IN VIETNAM ]",
+    "time": "20:00",
+    "home_team": "Vietnam U",
+    "away_team": "Thailand U",
+    "selected_odds": 1.76,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Barnet",
+    "away_team": "Leyton Orient",
     "selected_odds": 1.79,
     "prediction": "Over Goals",
     "api_stats": {
@@ -50,61 +225,61 @@
     }
   },
   {
-    "league": "SPAIN LA LIGA 2",
-    "time": "03:30",
-    "home_team": "CE Sabadell FC",
-    "away_team": "Real Sociedad B",
-    "selected_odds": 1.78,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "03:30",
-    "home_team": "Las Palmas",
-    "away_team": "CD Eldense",
-    "selected_odds": 1.79,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "02:00",
-    "home_team": "Hvidovre",
-    "away_team": "Aarhus Fremad",
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Bristol Rovers",
+    "away_team": "Reading",
     "selected_odds": 1.77,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Burton Albion",
+    "away_team": "Notts County",
+    "selected_odds": 1.74,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Crewe Alexandra",
+    "away_team": "Wigan Athletic",
+    "selected_odds": 1.66,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -125,12 +300,137 @@
     }
   },
   {
-    "league": "ROMANIA SUPERLIGA",
-    "time": "02:00",
-    "home_team": "Botosani",
-    "away_team": "Otelul Galati",
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Grimsby Town",
+    "away_team": "Nottingham Forest U",
+    "selected_odds": 1.71,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Leicester City",
+    "away_team": "Walsall",
+    "selected_odds": 1.66,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Mansfield Town",
+    "away_team": "Chesterfield",
+    "selected_odds": 1.65,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Northampton Town",
+    "away_team": "Gillingham",
+    "selected_odds": 1.76,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Oxford United",
+    "away_team": "Cheltenham Town",
+    "selected_odds": 1.76,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Plymouth Argyle",
+    "away_team": "Swindon Town",
     "selected_odds": 1.8,
-    "prediction": "Home Win",
+    "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
@@ -150,10 +450,85 @@
     }
   },
   {
-    "league": "ENGLISH FA CUP",
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Stevenage FC",
+    "away_team": "Fulham U",
+    "selected_odds": 1.75,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Stockport County",
+    "away_team": "Tranmere Rovers",
+    "selected_odds": 1.78,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
     "time": "03:30",
-    "home_team": "Plymouth Parkway",
-    "away_team": "Berkhamsted",
+    "home_team": "Bradford City",
+    "away_team": "York City",
+    "selected_odds": 1.68,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:30",
+    "home_team": "Bromley",
+    "away_team": "Milton Keynes Dons",
     "selected_odds": 1.8,
     "prediction": "Over Goals",
     "api_stats": {
@@ -175,11 +550,61 @@
     }
   },
   {
-    "league": "LIGA PORTUGAL 2",
-    "time": "04:15",
-    "home_team": "SCU Torreense",
-    "away_team": "Uniao Leiria",
-    "selected_odds": 1.67,
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:30",
+    "home_team": "Crawley Town",
+    "away_team": "Brentford U",
+    "selected_odds": 1.78,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:45",
+    "home_team": "Colchester United",
+    "away_team": "Ipswich Town U",
+    "selected_odds": 1.74,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "ROMANIA LIGA 2",
+    "time": "01:30",
+    "home_team": "Metalul Buzau",
+    "away_team": "CSA Steaua Bucuresti",
+    "selected_odds": 1.72,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -200,10 +625,35 @@
     }
   },
   {
-    "league": "GEORGIA EROVNULI LIGA",
-    "time": "00:00",
-    "home_team": "Iberia",
-    "away_team": "FC Gagra",
+    "league": "ENGLISH NATIONAL LEAGUE NORTH",
+    "time": "03:45",
+    "home_team": "Darlington",
+    "away_team": "Oxford City",
+    "selected_odds": 1.79,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "ENGLISH NATIONAL LEAGUE NORTH",
+    "time": "03:45",
+    "home_team": "Morecambe",
+    "away_team": "Hereford",
     "selected_odds": 1.8,
     "prediction": "Over Goals",
     "api_stats": {
@@ -225,11 +675,11 @@
     }
   },
   {
-    "league": "RUSSIA FIRST LEAGUE",
-    "time": "00:30",
-    "home_team": "FC Veles Moscow",
-    "away_team": "KAMAZ Naberezhnye Chelny",
-    "selected_odds": 1.72,
+    "league": "ENGLISH NATIONAL LEAGUE NORTH",
+    "time": "03:45",
+    "home_team": "Scarborough Athletic",
+    "away_team": "Marine",
+    "selected_odds": 1.6,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -252,9 +702,9 @@
   {
     "league": "ENGLISH NATIONAL LEAGUE SOUTH",
     "time": "03:45",
-    "home_team": "Chelmsford City",
-    "away_team": "Ebbsfleet United",
-    "selected_odds": 1.73,
+    "home_team": "Salisbury",
+    "away_team": "Braintree Town",
+    "selected_odds": 1.72,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -275,261 +725,11 @@
     }
   },
   {
-    "league": "ENGLISH NATIONAL LEAGUE SOUTH",
-    "time": "02:00",
-    "home_team": "Atletico de Madrid [w]",
-    "away_team": "FC Badalona [w]",
-    "selected_odds": 1.57,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "ENGLISH NATIONAL LEAGUE SOUTH",
-    "time": "04:00",
-    "home_team": "Deportivo La Coruna [w]",
-    "away_team": "Valencia CF [w]",
-    "selected_odds": 1.63,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "GERMANY WOMEN BUNDESLIGA",
-    "time": "01:00",
-    "home_team": "FC Koln [w]",
-    "away_team": "RB Leipzig [w]",
-    "selected_odds": 1.76,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "GERMANY WOMEN BUNDESLIGA",
-    "time": "08:00",
-    "home_team": "Junior Barranquilla",
-    "away_team": "Cucuta Deportivo",
-    "selected_odds": 1.77,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "ECUADOR LIGA PRO SERIE A PLAYOFF",
-    "time": "02:00",
-    "home_team": "Mushuc Runa SC",
-    "away_team": "Delfin SC",
-    "selected_odds": 1.64,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "ECUADOR LIGA PRO SERIE A PLAYOFF",
-    "time": "04:30",
-    "home_team": "Tecnico Universitario",
-    "away_team": "Manta FC",
-    "selected_odds": 1.57,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "ECUADOR LIGA PRO SERIE A PLAYOFF",
-    "time": "04:00",
-    "home_team": "Sportivo San Lorenzo",
-    "away_team": "Rubio Nu",
-    "selected_odds": 1.79,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "ECUADOR LIGA PRO SERIE A PLAYOFF",
-    "time": "06:30",
-    "home_team": "Sportivo Luqueno",
-    "away_team": "de Mayo",
-    "selected_odds": 1.74,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "URUGUAY CUP",
-    "time": "03:30",
-    "home_team": "Centro Atletico Lito [n]",
-    "away_team": "Danubio",
-    "selected_odds": 1.7,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "URUGUAY CUP",
-    "time": "08:00",
-    "home_team": "Deportivo Maldonado",
-    "away_team": "Nacional Montevideo",
-    "selected_odds": 1.7,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "URUGUAY CUP",
-    "time": "04:30",
-    "home_team": "Independiente Valle del Cauca",
-    "away_team": "Union Magdalena",
-    "selected_odds": 1.74,
+    "league": "PORTUGAL LIGA NEXT GEN U23",
+    "time": "19:00",
+    "home_team": "CD Santa Clara U",
+    "away_team": "SCU Torreense U",
+    "selected_odds": 1.75,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",

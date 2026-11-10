@@ -2,9 +2,9 @@
   {
     "league": "MAINBOLAKAKI PARLAY",
     "time": "02:00",
-    "home_team": "NORWAY ELITESERIEN",
-    "away_team": "Kristiansund",
-    "selected_odds": 1.79,
+    "home_team": "SPAIN CUP",
+    "away_team": "CD Pamplona [n]",
+    "selected_odds": 1.76,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -23,325 +23,13 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa NORWAY ELITESERIEN dan Kristiansund di MAINBOLAKAKI PARLAY."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa SPAIN CUP dan CD Pamplona [n] di MAINBOLAKAKI PARLAY."
   },
   {
-    "league": "NORWAY ELITESERIEN",
+    "league": "SPAIN CUP",
     "time": "02:00",
-    "home_team": "Kristiansund",
-    "away_team": "Valerenga",
-    "selected_odds": 1.79,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Kristiansund dan Valerenga di NORWAY ELITESERIEN."
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "03:30",
-    "home_team": "CE Sabadell FC",
-    "away_team": "Real Sociedad B",
-    "selected_odds": 1.78,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa CE Sabadell FC dan Real Sociedad B di SPAIN LA LIGA 2."
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "03:30",
-    "home_team": "Las Palmas",
-    "away_team": "CD Eldense",
-    "selected_odds": 1.79,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Las Palmas dan CD Eldense di SPAIN LA LIGA 2."
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "02:00",
-    "home_team": "Hvidovre",
-    "away_team": "Aarhus Fremad",
-    "selected_odds": 1.77,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Hvidovre dan Aarhus Fremad di SPAIN LA LIGA 2."
-  },
-  {
-    "league": "ROMANIA SUPERLIGA",
-    "time": "02:00",
-    "home_team": "Botosani",
-    "away_team": "Otelul Galati",
-    "selected_odds": 1.8,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Botosani dan Otelul Galati di ROMANIA SUPERLIGA."
-  },
-  {
-    "league": "ENGLISH FA CUP",
-    "time": "03:30",
-    "home_team": "Plymouth Parkway",
-    "away_team": "Berkhamsted",
-    "selected_odds": 1.8,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Plymouth Parkway dan Berkhamsted di ENGLISH FA CUP."
-  },
-  {
-    "league": "LIGA PORTUGAL 2",
-    "time": "04:15",
-    "home_team": "SCU Torreense",
-    "away_team": "Uniao Leiria",
-    "selected_odds": 1.67,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa SCU Torreense dan Uniao Leiria di LIGA PORTUGAL 2."
-  },
-  {
-    "league": "GEORGIA EROVNULI LIGA",
-    "time": "00:00",
-    "home_team": "Iberia",
-    "away_team": "FC Gagra",
-    "selected_odds": 1.8,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Iberia dan FC Gagra di GEORGIA EROVNULI LIGA."
-  },
-  {
-    "league": "RUSSIA FIRST LEAGUE",
-    "time": "00:30",
-    "home_team": "FC Veles Moscow",
-    "away_team": "KAMAZ Naberezhnye Chelny",
-    "selected_odds": 1.72,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa FC Veles Moscow dan KAMAZ Naberezhnye Chelny di RUSSIA FIRST LEAGUE."
-  },
-  {
-    "league": "ENGLISH NATIONAL LEAGUE SOUTH",
-    "time": "03:45",
-    "home_team": "Chelmsford City",
-    "away_team": "Ebbsfleet United",
-    "selected_odds": 1.73,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Chelmsford City dan Ebbsfleet United di ENGLISH NATIONAL LEAGUE SOUTH."
-  },
-  {
-    "league": "ENGLISH NATIONAL LEAGUE SOUTH",
-    "time": "02:00",
-    "home_team": "Atletico de Madrid [w]",
-    "away_team": "FC Badalona [w]",
-    "selected_odds": 1.57,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Atletico de Madrid [w] dan FC Badalona [w] di ENGLISH NATIONAL LEAGUE SOUTH."
-  },
-  {
-    "league": "ENGLISH NATIONAL LEAGUE SOUTH",
-    "time": "04:00",
-    "home_team": "Deportivo La Coruna [w]",
-    "away_team": "Valencia CF [w]",
-    "selected_odds": 1.63,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Deportivo La Coruna [w] dan Valencia CF [w] di ENGLISH NATIONAL LEAGUE SOUTH."
-  },
-  {
-    "league": "GERMANY WOMEN BUNDESLIGA",
-    "time": "01:00",
-    "home_team": "FC Koln [w]",
-    "away_team": "RB Leipzig [w]",
+    "home_team": "CD Pamplona [n]",
+    "away_team": "SD Eibar",
     "selected_odds": 1.76,
     "prediction": "Over Goals",
     "api_stats": {
@@ -361,13 +49,195 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa FC Koln [w] dan RB Leipzig [w] di GERMANY WOMEN BUNDESLIGA."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa CD Pamplona [n] dan SD Eibar di SPAIN CUP."
   },
   {
-    "league": "GERMANY WOMEN BUNDESLIGA",
-    "time": "08:00",
-    "home_team": "Junior Barranquilla",
-    "away_team": "Cucuta Deportivo",
+    "league": "SPAIN CUP",
+    "time": "03:00",
+    "home_team": "CP Mijas Las Lagunas [n]",
+    "away_team": "Real Jaen",
+    "selected_odds": 1.75,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa CP Mijas Las Lagunas [n] dan Real Jaen di SPAIN CUP."
+  },
+  {
+    "league": "SPAIN CUP",
+    "time": "03:00",
+    "home_team": "Leganes",
+    "away_team": "Trival Valderas",
+    "selected_odds": 1.75,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Leganes dan Trival Valderas di SPAIN CUP."
+  },
+  {
+    "league": "SPAIN CUP",
+    "time": "03:00",
+    "home_team": "SD Amorebieta",
+    "away_team": "UD Logrones",
+    "selected_odds": 1.73,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa SD Amorebieta dan UD Logrones di SPAIN CUP."
+  },
+  {
+    "league": "EGYPT CUP",
+    "time": "23:00",
+    "home_team": "Arab Contractors [n]",
+    "away_team": "Telecom Egypt SC",
+    "selected_odds": 1.61,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Arab Contractors [n] dan Telecom Egypt SC di EGYPT CUP."
+  },
+  {
+    "league": "FOUR NATIONS TOURNAMENT U23 [ IN VIETNAM ]",
+    "time": "16:00",
+    "home_team": "Qatar U",
+    "away_team": "Singapore U",
+    "selected_odds": 1.59,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Qatar U dan Singapore U di FOUR NATIONS TOURNAMENT U23 [ IN VIETNAM ]."
+  },
+  {
+    "league": "FOUR NATIONS TOURNAMENT U23 [ IN VIETNAM ]",
+    "time": "20:00",
+    "home_team": "Vietnam U",
+    "away_team": "Thailand U",
+    "selected_odds": 1.76,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Vietnam U dan Thailand U di FOUR NATIONS TOURNAMENT U23 [ IN VIETNAM ]."
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Barnet",
+    "away_team": "Leyton Orient",
+    "selected_odds": 1.79,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Barnet dan Leyton Orient di ENGLISH FOOTBALL LEAGUE TROPHY."
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Bristol Rovers",
+    "away_team": "Reading",
     "selected_odds": 1.77,
     "prediction": "Over Goals",
     "api_stats": {
@@ -387,40 +257,14 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Junior Barranquilla dan Cucuta Deportivo di GERMANY WOMEN BUNDESLIGA."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Bristol Rovers dan Reading di ENGLISH FOOTBALL LEAGUE TROPHY."
   },
   {
-    "league": "ECUADOR LIGA PRO SERIE A PLAYOFF",
-    "time": "02:00",
-    "home_team": "Mushuc Runa SC",
-    "away_team": "Delfin SC",
-    "selected_odds": 1.64,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Mushuc Runa SC dan Delfin SC di ECUADOR LIGA PRO SERIE A PLAYOFF."
-  },
-  {
-    "league": "ECUADOR LIGA PRO SERIE A PLAYOFF",
-    "time": "04:30",
-    "home_team": "Tecnico Universitario",
-    "away_team": "Manta FC",
-    "selected_odds": 1.57,
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Burton Albion",
+    "away_team": "Notts County",
+    "selected_odds": 1.74,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -439,14 +283,14 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Tecnico Universitario dan Manta FC di ECUADOR LIGA PRO SERIE A PLAYOFF."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Burton Albion dan Notts County di ENGLISH FOOTBALL LEAGUE TROPHY."
   },
   {
-    "league": "ECUADOR LIGA PRO SERIE A PLAYOFF",
-    "time": "04:00",
-    "home_team": "Sportivo San Lorenzo",
-    "away_team": "Rubio Nu",
-    "selected_odds": 1.79,
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Crewe Alexandra",
+    "away_team": "Wigan Athletic",
+    "selected_odds": 1.66,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -465,14 +309,92 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Sportivo San Lorenzo dan Rubio Nu di ECUADOR LIGA PRO SERIE A PLAYOFF."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Crewe Alexandra dan Wigan Athletic di ENGLISH FOOTBALL LEAGUE TROPHY."
   },
   {
-    "league": "ECUADOR LIGA PRO SERIE A PLAYOFF",
-    "time": "06:30",
-    "home_team": "Sportivo Luqueno",
-    "away_team": "de Mayo",
-    "selected_odds": 1.74,
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Grimsby Town",
+    "away_team": "Nottingham Forest U",
+    "selected_odds": 1.71,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Grimsby Town dan Nottingham Forest U di ENGLISH FOOTBALL LEAGUE TROPHY."
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Leicester City",
+    "away_team": "Walsall",
+    "selected_odds": 1.66,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Leicester City dan Walsall di ENGLISH FOOTBALL LEAGUE TROPHY."
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Mansfield Town",
+    "away_team": "Chesterfield",
+    "selected_odds": 1.65,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Mansfield Town dan Chesterfield di ENGLISH FOOTBALL LEAGUE TROPHY."
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Northampton Town",
+    "away_team": "Gillingham",
+    "selected_odds": 1.76,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -491,14 +413,118 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Sportivo Luqueno dan de Mayo di ECUADOR LIGA PRO SERIE A PLAYOFF."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Northampton Town dan Gillingham di ENGLISH FOOTBALL LEAGUE TROPHY."
   },
   {
-    "league": "URUGUAY CUP",
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Oxford United",
+    "away_team": "Cheltenham Town",
+    "selected_odds": 1.76,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Oxford United dan Cheltenham Town di ENGLISH FOOTBALL LEAGUE TROPHY."
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Plymouth Argyle",
+    "away_team": "Swindon Town",
+    "selected_odds": 1.8,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Plymouth Argyle dan Swindon Town di ENGLISH FOOTBALL LEAGUE TROPHY."
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Stevenage FC",
+    "away_team": "Fulham U",
+    "selected_odds": 1.75,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Stevenage FC dan Fulham U di ENGLISH FOOTBALL LEAGUE TROPHY."
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home_team": "Stockport County",
+    "away_team": "Tranmere Rovers",
+    "selected_odds": 1.78,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Stockport County dan Tranmere Rovers di ENGLISH FOOTBALL LEAGUE TROPHY."
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
     "time": "03:30",
-    "home_team": "Centro Atletico Lito [n]",
-    "away_team": "Danubio",
-    "selected_odds": 1.7,
+    "home_team": "Bradford City",
+    "away_team": "York City",
+    "selected_odds": 1.68,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -517,14 +543,14 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Centro Atletico Lito [n] dan Danubio di URUGUAY CUP."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Bradford City dan York City di ENGLISH FOOTBALL LEAGUE TROPHY."
   },
   {
-    "league": "URUGUAY CUP",
-    "time": "08:00",
-    "home_team": "Deportivo Maldonado",
-    "away_team": "Nacional Montevideo",
-    "selected_odds": 1.7,
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:30",
+    "home_team": "Bromley",
+    "away_team": "Milton Keynes Dons",
+    "selected_odds": 1.8,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -543,13 +569,39 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Deportivo Maldonado dan Nacional Montevideo di URUGUAY CUP."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Bromley dan Milton Keynes Dons di ENGLISH FOOTBALL LEAGUE TROPHY."
   },
   {
-    "league": "URUGUAY CUP",
-    "time": "04:30",
-    "home_team": "Independiente Valle del Cauca",
-    "away_team": "Union Magdalena",
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:30",
+    "home_team": "Crawley Town",
+    "away_team": "Brentford U",
+    "selected_odds": 1.78,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Crawley Town dan Brentford U di ENGLISH FOOTBALL LEAGUE TROPHY."
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:45",
+    "home_team": "Colchester United",
+    "away_team": "Ipswich Town U",
     "selected_odds": 1.74,
     "prediction": "Over Goals",
     "api_stats": {
@@ -569,6 +621,162 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Independiente Valle del Cauca dan Union Magdalena di URUGUAY CUP."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Colchester United dan Ipswich Town U di ENGLISH FOOTBALL LEAGUE TROPHY."
+  },
+  {
+    "league": "ROMANIA LIGA 2",
+    "time": "01:30",
+    "home_team": "Metalul Buzau",
+    "away_team": "CSA Steaua Bucuresti",
+    "selected_odds": 1.72,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Metalul Buzau dan CSA Steaua Bucuresti di ROMANIA LIGA 2."
+  },
+  {
+    "league": "ENGLISH NATIONAL LEAGUE NORTH",
+    "time": "03:45",
+    "home_team": "Darlington",
+    "away_team": "Oxford City",
+    "selected_odds": 1.79,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Darlington dan Oxford City di ENGLISH NATIONAL LEAGUE NORTH."
+  },
+  {
+    "league": "ENGLISH NATIONAL LEAGUE NORTH",
+    "time": "03:45",
+    "home_team": "Morecambe",
+    "away_team": "Hereford",
+    "selected_odds": 1.8,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Morecambe dan Hereford di ENGLISH NATIONAL LEAGUE NORTH."
+  },
+  {
+    "league": "ENGLISH NATIONAL LEAGUE NORTH",
+    "time": "03:45",
+    "home_team": "Scarborough Athletic",
+    "away_team": "Marine",
+    "selected_odds": 1.6,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Scarborough Athletic dan Marine di ENGLISH NATIONAL LEAGUE NORTH."
+  },
+  {
+    "league": "ENGLISH NATIONAL LEAGUE SOUTH",
+    "time": "03:45",
+    "home_team": "Salisbury",
+    "away_team": "Braintree Town",
+    "selected_odds": 1.72,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Salisbury dan Braintree Town di ENGLISH NATIONAL LEAGUE SOUTH."
+  },
+  {
+    "league": "PORTUGAL LIGA NEXT GEN U23",
+    "time": "19:00",
+    "home_team": "CD Santa Clara U",
+    "away_team": "SCU Torreense U",
+    "selected_odds": 1.75,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa CD Santa Clara U dan SCU Torreense U di PORTUGAL LIGA NEXT GEN U23."
   }
 ]

@@ -2,9 +2,9 @@
   {
     "league": "MAINBOLAKAKI PARLAY",
     "time": "02:00",
-    "home": "NORWAY ELITESERIEN",
-    "away": "Kristiansund",
-    "odds": 1.79,
+    "home": "SPAIN CUP",
+    "away": "CD Pamplona [n]",
+    "odds": 1.76,
     "pick": "Home Win",
     "home_form": [
       "W",
@@ -22,10 +22,164 @@
     ]
   },
   {
-    "league": "NORWAY ELITESERIEN",
+    "league": "SPAIN CUP",
     "time": "02:00",
-    "home": "Kristiansund",
-    "away": "Valerenga",
+    "home": "CD Pamplona [n]",
+    "away": "SD Eibar",
+    "odds": 1.76,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "SPAIN CUP",
+    "time": "03:00",
+    "home": "CP Mijas Las Lagunas [n]",
+    "away": "Real Jaen",
+    "odds": 1.75,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "SPAIN CUP",
+    "time": "03:00",
+    "home": "Leganes",
+    "away": "Trival Valderas",
+    "odds": 1.75,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "SPAIN CUP",
+    "time": "03:00",
+    "home": "SD Amorebieta",
+    "away": "UD Logrones",
+    "odds": 1.73,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "EGYPT CUP",
+    "time": "23:00",
+    "home": "Arab Contractors [n]",
+    "away": "Telecom Egypt SC",
+    "odds": 1.61,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "FOUR NATIONS TOURNAMENT U23 [ IN VIETNAM ]",
+    "time": "16:00",
+    "home": "Qatar U",
+    "away": "Singapore U",
+    "odds": 1.59,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "FOUR NATIONS TOURNAMENT U23 [ IN VIETNAM ]",
+    "time": "20:00",
+    "home": "Vietnam U",
+    "away": "Thailand U",
+    "odds": 1.76,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home": "Barnet",
+    "away": "Leyton Orient",
     "odds": 1.79,
     "pick": "Over Goals",
     "home_form": [
@@ -44,55 +198,55 @@
     ]
   },
   {
-    "league": "SPAIN LA LIGA 2",
-    "time": "03:30",
-    "home": "CE Sabadell FC",
-    "away": "Real Sociedad B",
-    "odds": 1.78,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "03:30",
-    "home": "Las Palmas",
-    "away": "CD Eldense",
-    "odds": 1.79,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "SPAIN LA LIGA 2",
-    "time": "02:00",
-    "home": "Hvidovre",
-    "away": "Aarhus Fremad",
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home": "Bristol Rovers",
+    "away": "Reading",
     "odds": 1.77,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home": "Burton Albion",
+    "away": "Notts County",
+    "odds": 1.74,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home": "Crewe Alexandra",
+    "away": "Wigan Athletic",
+    "odds": 1.66,
     "pick": "Home Win",
     "home_form": [
       "W",
@@ -110,12 +264,122 @@
     ]
   },
   {
-    "league": "ROMANIA SUPERLIGA",
-    "time": "02:00",
-    "home": "Botosani",
-    "away": "Otelul Galati",
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home": "Grimsby Town",
+    "away": "Nottingham Forest U",
+    "odds": 1.71,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home": "Leicester City",
+    "away": "Walsall",
+    "odds": 1.66,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home": "Mansfield Town",
+    "away": "Chesterfield",
+    "odds": 1.65,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home": "Northampton Town",
+    "away": "Gillingham",
+    "odds": 1.76,
+    "pick": "Home Win",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home": "Oxford United",
+    "away": "Cheltenham Town",
+    "odds": 1.76,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home": "Plymouth Argyle",
+    "away": "Swindon Town",
     "odds": 1.8,
-    "pick": "Home Win",
+    "pick": "Over Goals",
     "home_form": [
       "W",
       "D",
@@ -132,10 +396,76 @@
     ]
   },
   {
-    "league": "ENGLISH FA CUP",
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home": "Stevenage FC",
+    "away": "Fulham U",
+    "odds": 1.75,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:00",
+    "home": "Stockport County",
+    "away": "Tranmere Rovers",
+    "odds": 1.78,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
     "time": "03:30",
-    "home": "Plymouth Parkway",
-    "away": "Berkhamsted",
+    "home": "Bradford City",
+    "away": "York City",
+    "odds": 1.68,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:30",
+    "home": "Bromley",
+    "away": "Milton Keynes Dons",
     "odds": 1.8,
     "pick": "Over Goals",
     "home_form": [
@@ -154,11 +484,55 @@
     ]
   },
   {
-    "league": "LIGA PORTUGAL 2",
-    "time": "04:15",
-    "home": "SCU Torreense",
-    "away": "Uniao Leiria",
-    "odds": 1.67,
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:30",
+    "home": "Crawley Town",
+    "away": "Brentford U",
+    "odds": 1.78,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ENGLISH FOOTBALL LEAGUE TROPHY",
+    "time": "03:45",
+    "home": "Colchester United",
+    "away": "Ipswich Town U",
+    "odds": 1.74,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ROMANIA LIGA 2",
+    "time": "01:30",
+    "home": "Metalul Buzau",
+    "away": "CSA Steaua Bucuresti",
+    "odds": 1.72,
     "pick": "Home Win",
     "home_form": [
       "W",
@@ -176,10 +550,32 @@
     ]
   },
   {
-    "league": "GEORGIA EROVNULI LIGA",
-    "time": "00:00",
-    "home": "Iberia",
-    "away": "FC Gagra",
+    "league": "ENGLISH NATIONAL LEAGUE NORTH",
+    "time": "03:45",
+    "home": "Darlington",
+    "away": "Oxford City",
+    "odds": 1.79,
+    "pick": "Over Goals",
+    "home_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W"
+    ],
+    "away_form": [
+      "L",
+      "W",
+      "D",
+      "W",
+      "D"
+    ]
+  },
+  {
+    "league": "ENGLISH NATIONAL LEAGUE NORTH",
+    "time": "03:45",
+    "home": "Morecambe",
+    "away": "Hereford",
     "odds": 1.8,
     "pick": "Over Goals",
     "home_form": [
@@ -198,11 +594,11 @@
     ]
   },
   {
-    "league": "RUSSIA FIRST LEAGUE",
-    "time": "00:30",
-    "home": "FC Veles Moscow",
-    "away": "KAMAZ Naberezhnye Chelny",
-    "odds": 1.72,
+    "league": "ENGLISH NATIONAL LEAGUE NORTH",
+    "time": "03:45",
+    "home": "Scarborough Athletic",
+    "away": "Marine",
+    "odds": 1.6,
     "pick": "Over Goals",
     "home_form": [
       "W",
@@ -222,9 +618,9 @@
   {
     "league": "ENGLISH NATIONAL LEAGUE SOUTH",
     "time": "03:45",
-    "home": "Chelmsford City",
-    "away": "Ebbsfleet United",
-    "odds": 1.73,
+    "home": "Salisbury",
+    "away": "Braintree Town",
+    "odds": 1.72,
     "pick": "Over Goals",
     "home_form": [
       "W",
@@ -242,231 +638,11 @@
     ]
   },
   {
-    "league": "ENGLISH NATIONAL LEAGUE SOUTH",
-    "time": "02:00",
-    "home": "Atletico de Madrid [w]",
-    "away": "FC Badalona [w]",
-    "odds": 1.57,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "ENGLISH NATIONAL LEAGUE SOUTH",
-    "time": "04:00",
-    "home": "Deportivo La Coruna [w]",
-    "away": "Valencia CF [w]",
-    "odds": 1.63,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "GERMANY WOMEN BUNDESLIGA",
-    "time": "01:00",
-    "home": "FC Koln [w]",
-    "away": "RB Leipzig [w]",
-    "odds": 1.76,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "GERMANY WOMEN BUNDESLIGA",
-    "time": "08:00",
-    "home": "Junior Barranquilla",
-    "away": "Cucuta Deportivo",
-    "odds": 1.77,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "ECUADOR LIGA PRO SERIE A PLAYOFF",
-    "time": "02:00",
-    "home": "Mushuc Runa SC",
-    "away": "Delfin SC",
-    "odds": 1.64,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "ECUADOR LIGA PRO SERIE A PLAYOFF",
-    "time": "04:30",
-    "home": "Tecnico Universitario",
-    "away": "Manta FC",
-    "odds": 1.57,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "ECUADOR LIGA PRO SERIE A PLAYOFF",
-    "time": "04:00",
-    "home": "Sportivo San Lorenzo",
-    "away": "Rubio Nu",
-    "odds": 1.79,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "ECUADOR LIGA PRO SERIE A PLAYOFF",
-    "time": "06:30",
-    "home": "Sportivo Luqueno",
-    "away": "de Mayo",
-    "odds": 1.74,
-    "pick": "Home Win",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "URUGUAY CUP",
-    "time": "03:30",
-    "home": "Centro Atletico Lito [n]",
-    "away": "Danubio",
-    "odds": 1.7,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "URUGUAY CUP",
-    "time": "08:00",
-    "home": "Deportivo Maldonado",
-    "away": "Nacional Montevideo",
-    "odds": 1.7,
-    "pick": "Over Goals",
-    "home_form": [
-      "W",
-      "D",
-      "W",
-      "L",
-      "W"
-    ],
-    "away_form": [
-      "L",
-      "W",
-      "D",
-      "W",
-      "D"
-    ]
-  },
-  {
-    "league": "URUGUAY CUP",
-    "time": "04:30",
-    "home": "Independiente Valle del Cauca",
-    "away": "Union Magdalena",
-    "odds": 1.74,
+    "league": "PORTUGAL LIGA NEXT GEN U23",
+    "time": "19:00",
+    "home": "CD Santa Clara U",
+    "away": "SCU Torreense U",
+    "odds": 1.75,
     "pick": "Over Goals",
     "home_form": [
       "W",
