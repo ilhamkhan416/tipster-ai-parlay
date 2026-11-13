@@ -1,583 +1,11 @@
 [
   {
     "league": "MAINBOLAKAKI PARLAY",
-    "time": "01:00",
-    "home_team": "Turkey",
-    "away_team": "Belgium",
-    "selected_odds": 1.8,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Turkey dan Belgium di MAINBOLAKAKI PARLAY."
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE A",
     "time": "03:45",
-    "home_team": "Czech Republic",
-    "away_team": "Spain",
-    "selected_odds": 1.55,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Czech Republic dan Spain di UEFA NATIONS LEAGUE A."
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE A",
-    "time": "03:45",
-    "home_team": "England",
-    "away_team": "Croatia",
-    "selected_odds": 1.63,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa England dan Croatia di UEFA NATIONS LEAGUE A."
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE A",
-    "time": "03:45",
-    "home_team": "Italy",
-    "away_team": "France",
-    "selected_odds": 1.8,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Italy dan France di UEFA NATIONS LEAGUE A."
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE C",
-    "time": "01:00",
-    "home_team": "Armenia",
-    "away_team": "Cyprus",
-    "selected_odds": 1.8,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Armenia dan Cyprus di UEFA NATIONS LEAGUE C."
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE C",
-    "time": "03:45",
-    "home_team": "Albania",
-    "away_team": "Finland",
-    "selected_odds": 1.75,
-    "prediction": "Away Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Albania dan Finland di UEFA NATIONS LEAGUE C."
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE C",
-    "time": "03:45",
-    "home_team": "Montenegro",
-    "away_team": "Latvia",
-    "selected_odds": 1.78,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Montenegro dan Latvia di UEFA NATIONS LEAGUE C."
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE C",
-    "time": "03:45",
-    "home_team": "San Marino",
-    "away_team": "Belarus",
-    "selected_odds": 1.78,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa San Marino dan Belarus di UEFA NATIONS LEAGUE C."
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE C",
-    "time": "14:00",
-    "home_team": "New Zealand",
-    "away_team": "India",
-    "selected_odds": 1.59,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa New Zealand dan India di UEFA NATIONS LEAGUE C."
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE C",
-    "time": "23:00",
-    "home_team": "Uzbekistan",
-    "away_team": "Russia",
-    "selected_odds": 1.79,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Uzbekistan dan Russia di UEFA NATIONS LEAGUE C."
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE C",
-    "time": "01:00",
-    "home_team": "Lithuania",
-    "away_team": "Suriname",
-    "selected_odds": 1.75,
-    "prediction": "Away Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Lithuania dan Suriname di UEFA NATIONS LEAGUE C."
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE C",
-    "time": "01:30",
-    "home_team": "Malta",
-    "away_team": "Eswatini",
-    "selected_odds": 1.55,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Malta dan Eswatini di UEFA NATIONS LEAGUE C."
-  },
-  {
-    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS PLAYOFF",
-    "time": "21:00",
-    "home_team": "Iceland U",
-    "away_team": "Greece U",
-    "selected_odds": 1.8,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Iceland U dan Greece U di UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS PLAYOFF."
-  },
-  {
-    "league": "AUSTRALIA CHAMPIONSHIP",
-    "time": "16:30",
-    "home_team": "APIA Leichhardt FC",
-    "away_team": "Adelaide City",
-    "selected_odds": 1.78,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa APIA Leichhardt FC dan Adelaide City di AUSTRALIA CHAMPIONSHIP."
-  },
-  {
-    "league": "AUSTRALIA CHAMPIONSHIP",
-    "time": "21:00",
-    "home_team": "Scotland U  [n]",
-    "away_team": "Ukraine U",
-    "selected_odds": 1.62,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Scotland U  [n] dan Ukraine U di AUSTRALIA CHAMPIONSHIP."
-  },
-  {
-    "league": "AUSTRALIA CHAMPIONSHIP",
-    "time": "21:00",
-    "home_team": "Serbia U",
-    "away_team": "North Macedonia U",
-    "selected_odds": 1.7,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Serbia U dan North Macedonia U di AUSTRALIA CHAMPIONSHIP."
-  },
-  {
-    "league": "AUSTRALIA CHAMPIONSHIP",
-    "time": "00:00",
-    "home_team": "France U",
-    "away_team": "Denmark U",
-    "selected_odds": 1.72,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa France U dan Denmark U di AUSTRALIA CHAMPIONSHIP."
-  },
-  {
-    "league": "AUSTRALIA CHAMPIONSHIP",
-    "time": "00:00",
-    "home_team": "Italy U",
-    "away_team": "Portugal U",
-    "selected_odds": 1.77,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Italy U dan Portugal U di AUSTRALIA CHAMPIONSHIP."
-  },
-  {
-    "league": "AUSTRALIA CHAMPIONSHIP",
-    "time": "03:30",
-    "home_team": "England U",
-    "away_team": "Czech Republic U",
-    "selected_odds": 1.8,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa England U dan Czech Republic U di AUSTRALIA CHAMPIONSHIP."
-  },
-  {
-    "league": "FOUR NATIONS TOURNAMENT U23 [ IN VIETNAM ]",
-    "time": "16:00",
-    "home_team": "Thailand U",
-    "away_team": "Qatar U",
-    "selected_odds": 1.57,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Thailand U dan Qatar U di FOUR NATIONS TOURNAMENT U23 [ IN VIETNAM ]."
-  },
-  {
-    "league": "FOUR NATIONS TOURNAMENT U23 [ IN VIETNAM ]",
-    "time": "20:00",
-    "home_team": "Vietnam U",
-    "away_team": "Singapore U",
-    "selected_odds": 1.5,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Vietnam U dan Singapore U di FOUR NATIONS TOURNAMENT U23 [ IN VIETNAM ]."
-  },
-  {
-    "league": "UEFA U19 CHAMPIONSHIP 2027 QUALIFIERS LEAGUE A",
-    "time": "21:00",
-    "home_team": "Germany U  [n]",
-    "away_team": "Sweden U",
-    "selected_odds": 1.5,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Germany U  [n] dan Sweden U di UEFA U19 CHAMPIONSHIP 2027 QUALIFIERS LEAGUE A."
-  },
-  {
-    "league": "UEFA U19 CHAMPIONSHIP 2027 QUALIFIERS LEAGUE A",
-    "time": "23:00",
-    "home_team": "Portugal U",
-    "away_team": "Lithuania U",
+    "home_team": "Netherlands",
+    "away_team": "Greece",
     "selected_odds": 1.71,
-    "prediction": "Over Goals",
+    "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
@@ -595,117 +23,13 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Portugal U dan Lithuania U di UEFA U19 CHAMPIONSHIP 2027 QUALIFIERS LEAGUE A."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Netherlands dan Greece di MAINBOLAKAKI PARLAY."
   },
   {
-    "league": "SPAIN CUP",
-    "time": "01:30",
-    "home_team": "Calvo Sotelo Puertollano CF",
-    "away_team": "Albacete Balompie",
-    "selected_odds": 1.51,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Calvo Sotelo Puertollano CF dan Albacete Balompie di SPAIN CUP."
-  },
-  {
-    "league": "AFRICA CUP OF NATIONS 2027 QUALIFIERS",
-    "time": "23:00",
-    "home_team": "Ghana",
-    "away_team": "Somalia",
-    "selected_odds": 1.8,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Ghana dan Somalia di AFRICA CUP OF NATIONS 2027 QUALIFIERS."
-  },
-  {
-    "league": "AFRICA CUP OF NATIONS 2027 QUALIFIERS",
-    "time": "00:00",
-    "home_team": "DR Congo",
-    "away_team": "Sierra Leone",
-    "selected_odds": 1.69,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa DR Congo dan Sierra Leone di AFRICA CUP OF NATIONS 2027 QUALIFIERS."
-  },
-  {
-    "league": "AFRICA CUP OF NATIONS 2027 QUALIFIERS",
-    "time": "00:00",
-    "home_team": "Equatorial Guinea",
-    "away_team": "Zimbabwe",
-    "selected_odds": 1.68,
-    "prediction": "Away Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Equatorial Guinea dan Zimbabwe di AFRICA CUP OF NATIONS 2027 QUALIFIERS."
-  },
-  {
-    "league": "AFRICA CUP OF NATIONS 2027 QUALIFIERS",
-    "time": "00:00",
-    "home_team": "Guinea",
-    "away_team": "Eritrea",
+    "league": "UEFA NATIONS LEAGUE A",
+    "time": "03:45",
+    "home_team": "Serbia",
+    "away_team": "Germany",
     "selected_odds": 1.64,
     "prediction": "Over Goals",
     "api_stats": {
@@ -725,40 +49,14 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Guinea dan Eritrea di AFRICA CUP OF NATIONS 2027 QUALIFIERS."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Serbia dan Germany di UEFA NATIONS LEAGUE A."
   },
   {
-    "league": "AFRICA CUP OF NATIONS 2027 QUALIFIERS",
-    "time": "00:00",
-    "home_team": "Madagascar [n]",
-    "away_team": "Guinea Bissau",
+    "league": "UEFA NATIONS LEAGUE B",
+    "time": "03:45",
+    "home_team": "Scotland",
+    "away_team": "North Macedonia",
     "selected_odds": 1.8,
-    "prediction": "Away Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Madagascar [n] dan Guinea Bissau di AFRICA CUP OF NATIONS 2027 QUALIFIERS."
-  },
-  {
-    "league": "AFRICA CUP OF NATIONS 2027 QUALIFIERS",
-    "time": "03:00",
-    "home_team": "Benin [n]",
-    "away_team": "Central African Republic",
-    "selected_odds": 1.54,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -777,6 +75,708 @@
         "D"
       ]
     },
-    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Benin [n] dan Central African Republic di AFRICA CUP OF NATIONS 2027 QUALIFIERS."
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Scotland dan North Macedonia di UEFA NATIONS LEAGUE B."
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE B",
+    "time": "03:45",
+    "home_team": "Slovenia",
+    "away_team": "Switzerland",
+    "selected_odds": 1.71,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Slovenia dan Switzerland di UEFA NATIONS LEAGUE B."
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE C",
+    "time": "01:00",
+    "home_team": "Moldova",
+    "away_team": "Kazakhstan",
+    "selected_odds": 1.73,
+    "prediction": "Away Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Moldova dan Kazakhstan di UEFA NATIONS LEAGUE C."
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE C",
+    "time": "03:45",
+    "home_team": "Bulgaria",
+    "away_team": "Iceland",
+    "selected_odds": 1.76,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Bulgaria dan Iceland di UEFA NATIONS LEAGUE C."
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE C",
+    "time": "03:45",
+    "home_team": "Luxembourg",
+    "away_team": "Estonia",
+    "selected_odds": 1.61,
+    "prediction": "Away Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Luxembourg dan Estonia di UEFA NATIONS LEAGUE C."
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE C",
+    "time": "03:45",
+    "home_team": "Slovakia",
+    "away_team": "Faroe Islands",
+    "selected_odds": 1.8,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Slovakia dan Faroe Islands di UEFA NATIONS LEAGUE C."
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE D",
+    "time": "03:45",
+    "home_team": "Andorra",
+    "away_team": "Gibraltar",
+    "selected_odds": 1.66,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Andorra dan Gibraltar di UEFA NATIONS LEAGUE D."
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE D",
+    "time": "03:45",
+    "home_team": "Liechtenstein",
+    "away_team": "Azerbaijan",
+    "selected_odds": 1.7,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Liechtenstein dan Azerbaijan di UEFA NATIONS LEAGUE D."
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE D",
+    "time": "22:00",
+    "home_team": "Kuwait",
+    "away_team": "Syria",
+    "selected_odds": 1.63,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Kuwait dan Syria di UEFA NATIONS LEAGUE D."
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE D",
+    "time": "22:30",
+    "home_team": "Saudi Arabia [n]",
+    "away_team": "Korea Republic",
+    "selected_odds": 1.63,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Saudi Arabia [n] dan Korea Republic di UEFA NATIONS LEAGUE D."
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE D",
+    "time": "22:45",
+    "home_team": "Qatar",
+    "away_team": "Australia",
+    "selected_odds": 1.76,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Qatar dan Australia di UEFA NATIONS LEAGUE D."
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE D",
+    "time": "07:00",
+    "home_team": "Argentina",
+    "away_team": "Uruguay",
+    "selected_odds": 1.51,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Argentina dan Uruguay di UEFA NATIONS LEAGUE D."
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE D",
+    "time": "08:00",
+    "home_team": "Colombia",
+    "away_team": "Chile",
+    "selected_odds": 1.8,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Colombia dan Chile di UEFA NATIONS LEAGUE D."
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE D",
+    "time": "08:00",
+    "home_team": "Ecuador",
+    "away_team": "Costa Rica",
+    "selected_odds": 1.63,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Ecuador dan Costa Rica di UEFA NATIONS LEAGUE D."
+  },
+  {
+    "league": "UEFA NATIONS LEAGUE D",
+    "time": "09:00",
+    "home_team": "Peru",
+    "away_team": "Bolivia",
+    "selected_odds": 1.76,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Peru dan Bolivia di UEFA NATIONS LEAGUE D."
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS PLAYOFF",
+    "time": "00:00",
+    "home_team": "Turkey U",
+    "away_team": "Czech Republic U",
+    "selected_odds": 1.72,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Turkey U dan Czech Republic U di UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS PLAYOFF."
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS PLAYOFF",
+    "time": "00:15",
+    "home_team": "Finland U",
+    "away_team": "Ireland U",
+    "selected_odds": 1.78,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Finland U dan Ireland U di UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS PLAYOFF."
+  },
+  {
+    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS PLAYOFF",
+    "time": "01:30",
+    "home_team": "Denmark U",
+    "away_team": "Netherlands U",
+    "selected_odds": 1.75,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Denmark U dan Netherlands U di UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS PLAYOFF."
+  },
+  {
+    "league": "AUSTRALIA CHAMPIONSHIP",
+    "time": "16:30",
+    "home_team": "Oakleigh Cannons",
+    "away_team": "Marconi Stallions",
+    "selected_odds": 1.52,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Oakleigh Cannons dan Marconi Stallions di AUSTRALIA CHAMPIONSHIP."
+  },
+  {
+    "league": "AUSTRALIA CHAMPIONSHIP",
+    "time": "16:30",
+    "home_team": "Preston Lions",
+    "away_team": "Lions FC",
+    "selected_odds": 1.74,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Preston Lions dan Lions FC di AUSTRALIA CHAMPIONSHIP."
+  },
+  {
+    "league": "AUSTRALIA CHAMPIONSHIP",
+    "time": "21:00",
+    "home_team": "Montenegro U  [n]",
+    "away_team": "Bosnia Herzegovina U",
+    "selected_odds": 1.8,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Montenegro U  [n] dan Bosnia Herzegovina U di AUSTRALIA CHAMPIONSHIP."
+  },
+  {
+    "league": "AUSTRALIA CHAMPIONSHIP",
+    "time": "01:00",
+    "home_team": "Germany U",
+    "away_team": "Belgium U",
+    "selected_odds": 1.62,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Germany U dan Belgium U di AUSTRALIA CHAMPIONSHIP."
+  },
+  {
+    "league": "AUSTRALIA CHAMPIONSHIP",
+    "time": "01:30",
+    "home_team": "France U",
+    "away_team": "Italy U",
+    "selected_odds": 1.76,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa France U dan Italy U di AUSTRALIA CHAMPIONSHIP."
+  },
+  {
+    "league": "AUSTRALIA CHAMPIONSHIP",
+    "time": "02:00",
+    "home_team": "Spain U",
+    "away_team": "Japan U",
+    "selected_odds": 1.59,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Spain U dan Japan U di AUSTRALIA CHAMPIONSHIP."
+  },
+  {
+    "league": "AUSTRALIA CHAMPIONSHIP",
+    "time": "03:30",
+    "home_team": "England U",
+    "away_team": "Portugal U",
+    "selected_odds": 1.73,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa England U dan Portugal U di AUSTRALIA CHAMPIONSHIP."
+  },
+  {
+    "league": "AUSTRALIA CHAMPIONSHIP",
+    "time": "19:00",
+    "home_team": "Uzbekistan U",
+    "away_team": "Venezuela U",
+    "selected_odds": 1.76,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Uzbekistan U dan Venezuela U di AUSTRALIA CHAMPIONSHIP."
+  },
+  {
+    "league": "AUSTRALIA CHAMPIONSHIP",
+    "time": "03:00",
+    "home_team": "Chile U",
+    "away_team": "Mexico U",
+    "selected_odds": 1.78,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Chile U dan Mexico U di AUSTRALIA CHAMPIONSHIP."
+  },
+  {
+    "league": "AUSTRALIA CHAMPIONSHIP",
+    "time": "03:00",
+    "home_team": "Poland U",
+    "away_team": "Germany U",
+    "selected_odds": 1.66,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "ai_analysis": "Analisis taktis mendalam berdasarkan tren performa Poland U dan Germany U di AUSTRALIA CHAMPIONSHIP."
   }
 ]
