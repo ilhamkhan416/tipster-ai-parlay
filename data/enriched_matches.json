@@ -1,10 +1,10 @@
 [
   {
     "league": "MAINBOLAKAKI PARLAY",
-    "time": "03:45",
-    "home_team": "Denmark",
-    "away_team": "Norway",
-    "selected_odds": 1.76,
+    "time": "19:00",
+    "home_team": "ASEAN CLUB CHAMPIONSHIP",
+    "away_team": "Cong An Ho Chi Minh City FC",
+    "selected_odds": 1.63,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -25,36 +25,11 @@
     }
   },
   {
-    "league": "UEFA NATIONS LEAGUE A",
-    "time": "03:45",
-    "home_team": "Wales",
-    "away_team": "Portugal",
-    "selected_odds": 1.71,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "03:45",
-    "home_team": "Bosnia Herzegovina",
-    "away_team": "Romania",
-    "selected_odds": 1.78,
+    "league": "ASEAN CLUB CHAMPIONSHIP",
+    "time": "19:00",
+    "home_team": "Cong An Ho Chi Minh City FC",
+    "away_team": "Buriram United",
+    "selected_odds": 1.63,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -75,61 +50,11 @@
     }
   },
   {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "03:45",
-    "home_team": "Hungary",
-    "away_team": "Northern Ireland",
-    "selected_odds": 1.77,
-    "prediction": "Away Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "03:45",
-    "home_team": "Ireland",
-    "away_team": "Kosovo",
-    "selected_odds": 1.76,
-    "prediction": "Away Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "03:45",
-    "home_team": "Israel [n]",
-    "away_team": "Austria",
-    "selected_odds": 1.79,
+    "league": "ASEAN CLUB CHAMPIONSHIP",
+    "time": "19:30",
+    "home_team": "Tampines Rovers [n]",
+    "away_team": "Ratchaburi FC",
+    "selected_odds": 1.6,
     "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -150,35 +75,10 @@
     }
   },
   {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "03:45",
-    "home_team": "Poland",
-    "away_team": "Sweden",
-    "selected_odds": 1.75,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "03:45",
-    "home_team": "Ukraine [n]",
-    "away_team": "Georgia",
+    "league": "ASEAN CLUB CHAMPIONSHIP",
+    "time": "20:00",
+    "home_team": "Borneo FC Samarinda",
+    "away_team": "Manila Digger FC",
     "selected_odds": 1.78,
     "prediction": "Over Goals",
     "api_stats": {
@@ -200,11 +100,11 @@
     }
   },
   {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "22:00",
-    "home_team": "Qatar",
-    "away_team": "Korea Republic",
-    "selected_odds": 1.79,
+    "league": "SPAIN CUP",
+    "time": "02:00",
+    "home_team": "Portugalete",
+    "away_team": "Real Union",
+    "selected_odds": 1.74,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -225,12 +125,12 @@
     }
   },
   {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "22:10",
-    "home_team": "United Arab Emirates",
-    "away_team": "Syria",
-    "selected_odds": 1.72,
-    "prediction": "Over Goals",
+    "league": "SPAIN CUP",
+    "time": "02:00",
+    "home_team": "Utebo FC",
+    "away_team": "CE Sabadell FC",
+    "selected_odds": 1.74,
+    "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
@@ -250,10 +150,60 @@
     }
   },
   {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "23:30",
-    "home_team": "Saudi Arabia",
-    "away_team": "Uzbekistan",
+    "league": "SPAIN CUP",
+    "time": "03:00",
+    "home_team": "Alcoyano",
+    "away_team": "RCD Mallorca",
+    "selected_odds": 1.78,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "SPAIN CUP",
+    "time": "03:00",
+    "home_team": "Badajoz",
+    "away_team": "Tenerife",
+    "selected_odds": 1.66,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "SPAIN CUP",
+    "time": "03:30",
+    "home_team": "CD Minera",
+    "away_team": "FC Cartagena",
     "selected_odds": 1.74,
     "prediction": "Over Goals",
     "api_stats": {
@@ -275,260 +225,10 @@
     }
   },
   {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "00:00",
-    "home_team": "Jordan",
-    "away_team": "Australia",
-    "selected_odds": 1.76,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "00:00",
-    "home_team": "Russia",
-    "away_team": "Venezuela",
-    "selected_odds": 1.59,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "00:30",
-    "home_team": "Kuwait",
-    "away_team": "Honduras",
-    "selected_odds": 1.79,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "07:00",
-    "home_team": "Argentina",
-    "away_team": "Costa Rica",
-    "selected_odds": 1.8,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "07:00",
-    "home_team": "Chile",
-    "away_team": "Colombia",
-    "selected_odds": 1.8,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "07:30",
-    "home_team": "Ecuador",
-    "away_team": "Bolivia",
-    "selected_odds": 1.78,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "UEFA NATIONS LEAGUE B",
-    "time": "07:30",
-    "home_team": "Uruguay",
-    "away_team": "Dominican Republic",
-    "selected_odds": 1.72,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS PLAYOFF",
-    "time": "00:00",
-    "home_team": "Czech Republic U",
-    "away_team": "Turkey U",
-    "selected_odds": 1.64,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS PLAYOFF",
-    "time": "01:30",
-    "home_team": "Netherlands U",
-    "away_team": "Denmark U",
-    "selected_odds": 1.51,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "UEFA U21 CHAMPIONSHIP 2027 QUALIFIERS PLAYOFF",
-    "time": "01:45",
-    "home_team": "Ireland U",
-    "away_team": "Finland U",
-    "selected_odds": 1.64,
-    "prediction": "Home Win",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "FOUR NATIONS TOURNAMENT [ IN SINGAPORE ]",
-    "time": "18:00",
-    "home_team": "Brazil",
-    "away_team": "Draw",
+    "league": "SPAIN CUP",
+    "time": "03:30",
+    "home_team": "Reus FC Reddis",
+    "away_team": "Barakaldo CF",
     "selected_odds": 1.69,
     "prediction": "Over Goals",
     "api_stats": {
@@ -550,12 +250,12 @@
     }
   },
   {
-    "league": "FOUR NATIONS TOURNAMENT [ IN SINGAPORE ]",
-    "time": "21:10",
-    "home_team": "Japan",
-    "away_team": "Paraguay",
-    "selected_odds": 1.73,
-    "prediction": "Home Win",
+    "league": "UEFA WOMEN'S CHAMPIONS LEAGUE",
+    "time": "01:45",
+    "home_team": "BK Hacken [w]",
+    "away_team": "Manchester City [w]",
+    "selected_odds": 1.61,
+    "prediction": "Over Goals",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
@@ -575,10 +275,85 @@
     }
   },
   {
-    "league": "KING'S CUP [ IN THAILAND ]",
-    "time": "20:30",
-    "home_team": "Tajikistan",
-    "away_team": "Draw",
+    "league": "UEFA WOMEN'S CHAMPIONS LEAGUE",
+    "time": "01:45",
+    "home_team": "Real Madrid [w]",
+    "away_team": "Inter Milan [w]",
+    "selected_odds": 1.68,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA WOMEN'S CHAMPIONS LEAGUE",
+    "time": "04:00",
+    "home_team": "Chelsea [w]",
+    "away_team": "Paris Saint Germain [w]",
+    "selected_odds": 1.65,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "UEFA WOMEN'S CHAMPIONS LEAGUE",
+    "time": "04:00",
+    "home_team": "Juventus [w]",
+    "away_team": "Oud Heverlee Leuven [w]",
+    "selected_odds": 1.67,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "ENGLISH WOMEN LEAGUE CUP",
+    "time": "03:00",
+    "home_team": "Manchester United [w]",
+    "away_team": "Everton [w]",
     "selected_odds": 1.77,
     "prediction": "Over Goals",
     "api_stats": {
@@ -600,11 +375,61 @@
     }
   },
   {
-    "league": "KING'S CUP [ IN THAILAND ]",
-    "time": "20:00",
-    "home_team": "Vietnam",
-    "away_team": "Kyrgyzstan",
-    "selected_odds": 1.77,
+    "league": "BRAZIL SERIE A",
+    "time": "06:30",
+    "home_team": "Coritiba PR",
+    "away_team": "Santos SP",
+    "selected_odds": 1.74,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "BRAZIL SERIE A",
+    "time": "07:00",
+    "home_team": "Remo PA",
+    "away_team": "Chapecoense SC",
+    "selected_odds": 1.52,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "BRAZIL SERIE A",
+    "time": "07:30",
+    "home_team": "Cruzeiro MG",
+    "away_team": "Palmeiras SP",
+    "selected_odds": 1.68,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -625,11 +450,36 @@
     }
   },
   {
-    "league": "KING'S CUP [ IN THAILAND ]",
-    "time": "14:00",
-    "home_team": "Malaysia",
-    "away_team": "Yemen",
-    "selected_odds": 1.76,
+    "league": "BRAZIL SERIE A",
+    "time": "07:30",
+    "home_team": "Flamengo RJ",
+    "away_team": "Atl Paranaense",
+    "selected_odds": 1.78,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "BRAZIL SERIE A",
+    "time": "08:30",
+    "home_team": "Corinthians SP",
+    "away_team": "Botafogo RJ",
+    "selected_odds": 1.78,
     "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
@@ -650,12 +500,62 @@
     }
   },
   {
-    "league": "KING'S CUP [ IN THAILAND ]",
-    "time": "20:00",
-    "home_team": "China",
-    "away_team": "Bahrain",
+    "league": "BRAZIL SERIE A",
+    "time": "08:30",
+    "home_team": "Gremio Porto Alegrense",
+    "away_team": "Bahia EC BA",
+    "selected_odds": 1.7,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "PERU LIGA 1",
+    "time": "04:00",
+    "home_team": "Alianza Atletico",
+    "away_team": "FBC Melgar",
+    "selected_odds": 1.65,
+    "prediction": "Over Goals",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "JAPAN WOMEN EMPOWERMENT LEAGUE",
+    "time": "13:00",
+    "home_team": "Albirex Niigata [w]",
+    "away_team": "Chifure AS Elfen Saitama [w]",
     "selected_odds": 1.8,
-    "prediction": "Over Goals",
+    "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
@@ -675,12 +575,37 @@
     }
   },
   {
-    "league": "KING'S CUP [ IN THAILAND ]",
-    "time": "01:00",
-    "home_team": "Croatia U",
-    "away_team": "Germany U",
+    "league": "JAPAN WOMEN EMPOWERMENT LEAGUE",
+    "time": "13:00",
+    "home_team": "Mynavi Sendai [w]",
+    "away_team": "NTV Tokyo Verdy Beleza [w]",
+    "selected_odds": 1.51,
+    "prediction": "Home Win",
+    "api_stats": {
+      "h2h": "Catatan Terverifikasi Flashscore",
+      "homeForm": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "awayForm": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "D"
+      ]
+    }
+  },
+  {
+    "league": "JAPAN WOMEN EMPOWERMENT LEAGUE",
+    "time": "17:30",
+    "home_team": "Cerezo Osaka [w]",
+    "away_team": "Urawa Red Diamonds [w]",
     "selected_odds": 1.79,
-    "prediction": "Over Goals",
+    "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
@@ -700,37 +625,12 @@
     }
   },
   {
-    "league": "KING'S CUP [ IN THAILAND ]",
-    "time": "01:00",
-    "home_team": "Poland U  [n]",
-    "away_team": "Serbia U",
-    "selected_odds": 1.79,
-    "prediction": "Over Goals",
-    "api_stats": {
-      "h2h": "Catatan Terverifikasi Flashscore",
-      "homeForm": [
-        "W",
-        "D",
-        "W",
-        "L",
-        "W"
-      ],
-      "awayForm": [
-        "L",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
-    }
-  },
-  {
-    "league": "KING'S CUP [ IN THAILAND ]",
-    "time": "01:30",
-    "home_team": "Portugal U",
-    "away_team": "Norway U",
-    "selected_odds": 1.77,
-    "prediction": "Over Goals",
+    "league": "JAPAN WOMEN EMPOWERMENT LEAGUE",
+    "time": "18:00",
+    "home_team": "Sanfrecce Hiroshima Regina [w]",
+    "away_team": "Nojima Stella Kanagawa Sagamihara [w]",
+    "selected_odds": 1.65,
+    "prediction": "Home Win",
     "api_stats": {
       "h2h": "Catatan Terverifikasi Flashscore",
       "homeForm": [
